@@ -46,6 +46,48 @@ bili_video_db/
 # 日志
 *.log
 
-# Dify 的敏感文件（如果你不想把 Dify 的密钥也提交了）
+# Dify 的敏感文件（不想把 Dify 的密钥也提交了）
 dify/.env
 dify/*.pem
+
+# 向量数据库
+*.sqlite3
+
+# 图片/媒体
+*.webp
+*.gif
+*.ico
+
+# 压缩包
+*.zip
+*.tar.gz
+*.7z
+
+# Jupyter 检查点
+.ipynb_checkpoints/
+
+# 日志（保险起见，日志目录也忽略）
+logs/
+*.log
+*.log.*
+
+# 模型/结构文件
+*.pdb
+
+# 生成输出
+dream_outputs/
+exports/
+
+# 测试结果/历史数据
+*_results.json
+*_comparison*.json
+search_history.json
+final_results.json
+
+# 训练/样本数据（不想传）
+train_text.txt
+sample_text.txt
+custom_dict.txt
+
+# 未知文件
+2.0
