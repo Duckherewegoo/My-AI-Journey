@@ -95,6 +95,5 @@ custom_dict.txt
 
 # 并非应该进入这个项目的东西
 python_preview/dify/
-python_preview/doubao/LangChain-ChatGLM-RAG-QA/
 docs/*
 web_ref/*
