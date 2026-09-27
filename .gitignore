@@ -77,6 +77,7 @@ logs/
 # 生成输出
 dream_outputs/
 exports/
+*.pdf
 
 # 测试结果/历史数据
 *_results.json
@@ -91,3 +92,7 @@ custom_dict.txt
 
 # 未知文件
 2.0
+
+# 并非应该进入这个项目的东西
+python_preview/dify/
+python_preview/doubao/LangChain-ChatGLM-RAG-QA/

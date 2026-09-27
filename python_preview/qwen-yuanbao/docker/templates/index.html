@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>任务规划看板</title>
+	<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+			display: flex;
+			height: 100vh;
+			overflow: hidden;
+			background-color: #f4f6f9;
+			color: #333;
+		}
+
+		/* 左侧绘图区 */
+		#graph-container {
+			flex: 3;
+			position: relative;
+			border-right: 2px solid #ddd;
+			background: #fff;
+		}
+
+		#network {
+			width: 100%;
+			height: 100%;
+		}
+
+		/* 右侧详情区 */
+		#detail-panel {
+			flex: 1;
+			padding: 20px;
+			background: #fff;
+			overflow-y: auto;
+			min-width: 300px;
+		}
+
+		#detail-panel h2 {
+			margin-bottom: 20px;
+			color: #2c3e50;
+			border-bottom: 2px solid #3498db;
+			padding-bottom: 10px;
+		}
+
+		.placeholder {
+			color: #95a5a6;
+			text-align: center;
+			margin-top: 50px;
+			font-style: italic;
+		}
+
+		.step-title {
+			font-size: 1.5em;
+			font-weight: bold;
+			color: #2980b9;
+			margin-bottom: 15px;
+		}
+
+		.step-desc {
+			font-size: 1em;
+			line-height: 1.6;
+			color: #555;
+			background: #ecf0f1;
+			padding: 15px;
+			border-radius: 5px;
+		}
+
+		.meta-info {
+			margin-top: 20px;
+			font-size: 0.85em;
+			color: #7f8c8d;
+		}
+
+		/* 顶部状态栏 */
+		#top-bar {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			background: rgba(255, 255, 255, 0.9);
+			padding: 10px 15px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			z-index: 10;
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="graph-container">
+		<div id="top-bar">任务规划看板 - 点击节点查看详细步骤</div>
+		<div id="network"></div>
+	</div>
+
+	<div id="detail-panel">
+		<h2>步骤详情</h2>
+		<div id="details-content">
+			<p class="placeholder">请在左侧图表中点击任意节点<br>以查看该步骤的详细信息</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let network = null;
+
+		function initNetwork(nodes, edges, title) {
+			const container = document.getElementById('network');
+			document.getElementById('top-bar').innerText = `当前计划: ${title || '未命名任务'}`;
+
+			const data = {
+				nodes: new vis.DataSet(nodes),
+				edges: new vis.DataSet(edges)
+			};
+
+			const options = {
+				layout: {
+					hierarchical: {
+						direction: 'UD', // 从上到下
+						sortMethod: 'directed'
+					}
+				},
+				nodes: {
+					shape: 'box',
+					font: {size: 14, face: 'Microsoft YaHei'},
+					color: {background: '#e3f2fd', border: '#2196f3', highlight: {background: '#bbdefb'}},
+					margin: 10,
+					shadow: true
+				},
+				edges: {
+					color: {color: '#90a4ae'},
+					smooth: {type: 'cubicBezier'},
+					width: 2,
+					arrows: {to: {enabled: true, scaleFactor: 0.5}}
+				},
+				interaction: {hover: true, selectConnectedEdges: false}
+			};
+
+			if (network) network.destroy();
+			network = new vis.Network(container, data, options);
+
+			// 绑定点击事件
+			network.on("click", function (params) {
+				const detailsDiv = document.getElementById('details-content');
+				if (params.nodes.length > 0) {
+					const nodeId = params.nodes[0];
+					const nodeData = data.nodes.get(nodeId);
+
+					if (nodeData) {
+						detailsDiv.innerHTML = `
+                            <div class="step-title">${nodeData.label}</div>
+                            <div class="step-desc">${nodeData.detail || '暂无详细描述。'}</div>
+                            <div class="meta-info">节点 ID: ${nodeId}</div>
+                        `;
+					}
+				} else {
+					detailsDiv.innerHTML = '<p class="placeholder">请在左侧图表中点击任意节点<br>以查看该步骤的详细信息</p>';
+				}
+			});
+		}
+
+		// 页面加载时渲染模拟数据
+		window.onload = function () {
+			const mockNodes = [
+				{id: 1, label: '准备食材', detail: '去市场购买新鲜的鸡腿肉、干辣椒、花椒、葱姜蒜等配料。'},
+				{id: 2, label: '切配处理', detail: '将鸡腿肉切成小块，加入料酒、生抽、淀粉腌制15分钟。葱姜蒜切末备用。'},
+				{id: 3, label: '油炸定型', detail: '锅中宽油，烧至六成热，下入鸡块炸至金黄酥脆，捞出控油。'},
+				{id: 4, label: '炒制底料', detail: '锅留底油，下入干辣椒、花椒爆香，加入葱姜蒜末翻炒出香味。'},
+				{id: 5, label: '混合调味', detail: '倒入炸好的鸡块，加入盐、糖、鸡精快速翻炒均匀，出锅前撒上白芝麻。'}
+			];
+			const mockEdges = [
+				{from: 1, to: 2},
+				{from: 2, to: 3},
+				{from: 3, to: 4},
+				{from: 4, to: 5}
+			];
+
+			initNetwork(mockNodes, mockEdges, '辣子鸡丁制作计划');
+		};
+	</script>
+</body>
+
+</html>

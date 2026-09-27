@@ -1,0 +1,35 @@
+# NanoHarness - Python 依赖
+# ==========================================
+# 核心框架
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+
+# API服务
+fastapi>=0.110.0
+uvicorn>=0.29.0
+pydantic>=2.6.0
+
+# 多模态处理 - 图片
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# 多模态处理 - 视频
+opencv-python>=4.9.0
+
+# 多模态处理 - 音频
+pydub>=0.25.1
+SpeechRecognition>=3.10.0
+# whisper>=1.0  # 可选，语音识别（需要ffmpeg）
+
+# 配置文件
+PyYAML>=6.0
+
+# 工具库
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# 开发依赖（可选）
+# pytest>=8.0.0
+# black>=24.0.0
+# isort>=5.13.0

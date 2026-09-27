@@ -1,0 +1,79 @@
+# NanoHarness 配置文件
+# ==========================================
+
+# LLM 配置
+llm:
+  provider: "openai"  # openai / anthropic / ollama / local
+  model: "gpt-4o-mini"
+  api_key: ""
+  base_url: ""
+  temperature: 0.7
+  max_tokens: 4096
+
+# Harness 核心配置
+harness:
+  max_iterations: 3          # 最大迭代次数（反思循环）
+  confidence_threshold: 0.7  # 置信度阈值
+  enable_reflection: true    # 启用反思循环
+  enable_user_confirm: true  # 启用用户确认
+  enable_critic: true        # 启用批评家Agent
+  enable_coordinator: true   # 启用协调器Agent
+
+# Skill 配置
+skills:
+  auto_load_builtin: true    # 自动加载内置Skill
+  work_dir: "./workspace"    # 工作目录
+  bash:
+    enabled: true
+    timeout: 30              # 命令超时（秒）
+    max_output_length: 10000 # 最大输出长度
+    auto_confirm_low_risk: true  # 自动确认低风险命令
+  file:
+    enabled: true
+  image:
+    enabled: true
+  video:
+    enabled: true
+  audio:
+    enabled: true
+
+# MCP 配置
+mcp:
+  enabled: true
+  server_name: "nano-harness"
+  server_version: "1.0.0"
+  # 外部MCP服务连接配置
+  external_servers: []
+    # - name: "example-mcp"
+    #   transport: "stdio"  # stdio / http
+    #   command: "npx -y @modelcontextprotocol/server-example"
+    #   url: "http://localhost:3000/mcp"
+
+# API 服务配置
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins:
+    - "*"
+  enable_docs: true
+  enable_web_ui: true
+
+# 多模态配置
+multimodal:
+  image:
+    enabled: true
+    ocr_enabled: true
+    ocr_language: "chi_sim+eng"
+  video:
+    enabled: true
+    default_max_frames: 10
+  audio:
+    enabled: true
+    stt_enabled: true
+    default_language: "auto"
+
+# 日志配置
+logging:
+  level: "INFO"  # DEBUG / INFO / WARNING / ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "nano-harness.log"

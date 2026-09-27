@@ -1,0 +1,30 @@
+# ============================================================
+# Task Planner — 生产依赖
+# ============================================================
+# 推荐使用 pyproject.toml 管理（pip install .）
+# 此文件保留为兼容旧部署方式
+
+# ── Web UI ──
+gradio>=4.0.0
+
+# ── LLM SDK ──
+dashscope>=1.14.0
+
+# ── 数据库 ──
+mongoengine>=0.27.0
+pymongo>=4.5.0
+
+# ── 流程图渲染 ──
+pyvis>=0.3.2
+networkx>=3.0
+
+# ── 导出（SVG / PNG / PDF / DOT） ──
+cairosvg>=2.7.0
+lxml>=4.9.0
+pydot>=1.4.2
+Pillow>=10.0.0
+
+# ── 工具库 ──
+python-dotenv>=1.0.0
+httpx>=0.24.0
+pydantic>=2.0.0

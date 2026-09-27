@@ -1,0 +1,155 @@
+/home/dake/Documents/Project/Life/My-AI-Journey/python_preview/qwen-yuanbao/
+├── app_dec.py
+├── app_final.py
+├── app_v0.py
+├── app_v1.py
+├── app_v2.py
+├── docker
+│   ├── dash_app_v1.py
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   ├── exports
+│   │   ├── task_task_1786596220_f9b95b_1786596220.svg
+│   │   └── task_task_1786597779_dfeaa5_1786597780.svg
+│   ├── logs
+│   │   ├── task_planner.log
+│   │   └── task_planner.log.2026-08-12
+│   ├── Makefile
+│   ├── _project_context_aggregated.py
+│   ├── project_context_aggregated.py
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── requirements-dev.txt
+│   ├── src
+│   │   ├── lib
+│   │   │   ├── bindings
+│   │   │   │   └── utils.js
+│   │   │   ├── tom-select
+│   │   │   │   ├── tom-select.complete.min.js
+│   │   │   │   └── tom-select.css
+│   │   │   └── vis-9.1.2
+│   │   │       ├── vis-network.css
+│   │   │       └── vis-network.min.js
+│   │   ├── logs
+│   │   │   ├── task_planner.log
+│   │   │   ├── task_planner.log.2026-08-15
+│   │   │   ├── task_planner.log.2026-08-16
+│   │   │   ├── task_planner.log.2026-08-18
+│   │   │   ├── task_planner.log.2026-08-19
+│   │   │   └── task_planner.log.2026-08-20
+│   │   ├── task_planner
+│   │   │   ├── abandon
+│   │   │   │   ├── config_old.py
+│   │   │   │   ├── dash_app_v2.py
+│   │   │   │   ├── gradio_app.py
+│   │   │   │   └── __init__.py
+│   │   │   ├── coming_soon
+│   │   │   │   ├── clientsides.py
+│   │   │   │   ├── config_not_now.py
+│   │   │   │   ├── prompts.py
+│   │   │   │   └── ui_styles.py
+│   │   │   ├── core
+│   │   │   │   ├── database.py
+│   │   │   │   ├── graph
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── nodes.py
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── state.py
+│   │   │   │   │   └── workflow.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── __pycache__
+│   │   │   ├── infrastructure
+│   │   │   │   ├── config.py
+│   │   │   │   ├── llm_client.py
+│   │   │   │   ├── logger_setup.py
+│   │   │   │   └── __pycache__
+│   │   │   ├── __init__.py
+│   │   │   ├── main
+│   │   │   │   ├── dash_app.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── __pycache__
+│   │   │   ├── __pycache__
+│   │   │   ├── requirements.txt
+│   │   │   ├── services
+│   │   │   │   ├── agent.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __pycache__
+│   │   │   │   └── stream_manager.py
+│   │   │   └── utils
+│   │   │       ├── context.py
+│   │   │       ├── cytoscape_adapter.py
+│   │   │       ├── flowchart_pro.py
+│   │   │       ├── good_addons.py
+│   │   │       ├── __init__.py
+│   │   │       ├── presention_utils.py
+│   │   │       ├── __pycache__
+│   │   │       └── pyvis_export.py
+│   │   └── task_planner.egg-info
+│   │       ├── dependency_links.txt
+│   │       ├── entry_points.txt
+│   │       ├── PKG-INFO
+│   │       ├── requires.txt
+│   │       ├── SOURCES.txt
+│   │       └── top_level.txt
+│   ├── task_planner_sturcture.txt
+│   ├── templates
+│   │   └── index.html
+│   └── tests
+│       ├── abandon
+│       │   ├── crucible_eval.py
+│       │   └── harness
+│       │       ├── agent_harness.py
+│       │       ├── conftest.py
+│       │       ├── evaluators.py
+│       │       ├── reporters.py
+│       │       ├── run_eval.py
+│       │       └── test_agent_harness.py
+│       ├── eval_suite
+│       │   ├── crucible_eval.py
+│       │   ├── dataset_manager.py
+│       │   ├── hitl_reviewer.py
+│       │   ├── __init__.py
+│       │   └── run_evaluation.py
+│       ├── gitlab-ci.yml
+│       ├── __pycache__
+│       │   ├── conftest.cpython-312-pytest-8.4.2.pyc
+│       │   └── test_agent_harness.cpython-312-pytest-8.4.2.pyc
+│       └── test_wrapper
+│           └── test_eval_suite_wrapper.py
+├── images
+├── qwen_planner_visual.py
+├── README.md
+└── task-planner-project
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── Makefile
+    ├── pyproject.toml
+    ├── README.md
+    ├── requirements-dev.txt
+    ├── requirements.txt
+    └── task_planner
+        ├── agent.py
+        ├── app.py
+        ├── config.py
+        ├── database.py
+        ├── flowchart_pro.py
+        ├── flowchart.py
+        ├── __init__.py
+        ├── llm_client.py
+        ├── logger_setup.py
+        └── tests
+            ├── conftest.py
+            ├── harness
+            │   ├── agent_harness.py
+            │   ├── evaluators.py
+            │   ├── __init__.py
+            │   └── reporters.py
+            ├── __init__.py
+            ├── mock_llm.py
+            ├── output
+            ├── run_eval.py
+            ├── test_agent_harness.py
+            ├── test_agent.py
+            └── test_flowchart.py
+
+40 directories, 113 files

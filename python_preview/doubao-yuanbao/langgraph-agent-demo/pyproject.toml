@@ -1,0 +1,21 @@
+[project]
+name = "langgraph-agent-demo"
+version = "0.1.0"
+description = "全特性LangGraph智能体工程化Demo"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.30",
+    "langchain>=0.3.10",
+    "langchain-openai>=0.2.12",
+    "langchain-core>=0.3.20",
+    "pydantic>=2.10.0",
+    "pandas>=2.2.0",
+    "numexpr>=2.10.0",
+    "python-dotenv>=1.0.1",
+    "typing-extensions>=4.12.0",
+    "pyahocorasick>=2.3.1"
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

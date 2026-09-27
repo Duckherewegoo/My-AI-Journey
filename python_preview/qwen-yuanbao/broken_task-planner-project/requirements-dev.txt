@@ -1,0 +1,14 @@
+# ============================================================
+# Task Planner — 开发/测试/CI 依赖
+# ============================================================
+# 安装：pip install -r requirements-dev.txt
+# 或：   pip install .[dev]
+
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+black>=23.0.0
+ruff>=0.1.0
+pyright>=1.1.0
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0

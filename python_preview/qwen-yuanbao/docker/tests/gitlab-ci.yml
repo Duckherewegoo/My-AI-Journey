@@ -1,0 +1,16 @@
+# .gitlab-ci.yml
+eval-mock:
+  stage: test
+  image: python:3.12-slim
+  script:
+    - pip install -r requirements.txt
+    - pytest tests/test_eval_suite_wrapper.py -v --junitxml=eval-results.xml
+    - python -m eval_suite.run_evaluation --mock
+  artifacts:
+    when: always
+    reports:
+      junit: eval-results.xml
+    paths:
+      - eval_reports/
+    expire_in: 7 days
+  timeout: 5m

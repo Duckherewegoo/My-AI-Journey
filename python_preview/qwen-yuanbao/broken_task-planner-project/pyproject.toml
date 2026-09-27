@@ -1,0 +1,203 @@
+[project]
+name = "task-planner"
+version = "1.0.0"
+description = "通用任务规划助手 —— 基于 LLM 的意图识别 → DAG 规划 → 节点执行 → 流程图渲染"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Task Planner Team"},
+]
+keywords = ["llm", "agent", "dag", "task-planning", "gradio", "dashscope", "qwen"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Gradio",
+]
+
+# ═════════════════════════════════════════════
+#  运行时依赖（和 requirements.txt 对齐）
+# ═════════════════════════════════════════════
+dependencies = [
+    # Web UI
+    "gradio>=4.0.0",
+
+    # LLM SDK
+    "dashscope>=1.14.0",
+
+    # 数据库
+    "mongoengine>=0.27.0",
+    "pymongo>=4.5.0",
+
+    # 流程图渲染
+    "pyvis>=0.3.2",
+    "networkx>=3.0",
+
+    # 导出（SVG / PNG / PDF / DOT）
+    "cairosvg>=2.7.0",
+    "lxml>=4.9.0",
+    "pydot>=1.4.2",
+    "Pillow>=10.0.0",
+
+    # 工具库
+    "python-dotenv>=1.0.0",
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+]
+
+# ═════════════════════════════════════════════
+#  可选依赖组
+# ═════════════════════════════════════════════
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "pyright>=1.1.0",
+]
+
+# 文档生成（可选）
+docs = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/task-planner"
+Repository = "https://github.com/your-org/task-planner"
+Issues = "https://github.com/your-org/task-planner/issues"
+
+# ═════════════════════════════════════════════
+#  入口点（命令行可直接调用）
+# ═════════════════════════════════════════════
+[project.scripts]
+task-planner = "task_planner.app:main"
+task-planner-eval = "tests.run_eval:main"
+
+# ═════════════════════════════════════════════
+#  包发现（告诉 pip 去哪找源码）
+# ═════════════════════════════════════════════
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["task_planner*", "tests*"]
+exclude = ["tests/output*", "**/__pycache__*"]
+
+# ═════════════════════════════════════════════
+#  Ruff（代码风格 + 质量检查）
+# ═════════════════════════════════════════════
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["task_planner", "tests"]
+extend-exclude = ["**/__pycache__", "tests/output", "**/*.pyc"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle 错误
+    "W",    # pycodestyle 警告
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff 自有规则
+]
+ignore = [
+    "E501",  # 行太长（让 formatter 处理）
+    "B008",  # 函数参数默认值调用（FastAPI 风格需要）
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["B", "SIM"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+# ═════════════════════════════════════════════
+#  Black（代码格式化）
+# ═════════════════════════════════════════════
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  | .git
+  | .venv
+  | __pycache__
+  | build
+  | dist
+  | tests/output
+)/
+'''
+
+# ═════════════════════════════════════════════
+#  Pyright（静态类型检查，严格模式）
+# ═════════════════════════════════════════════
+[tool.pyright]
+typeCheckingMode = "strict"
+include = ["task_planner"]
+exclude = ["**/__pycache__", "tests/output", "**/*.pyc"]
+reportAttributeAccessIssue = true
+reportGeneralTypeIssues = true
+reportMissingTypeStubs = false
+reportImportCycles = true
+reportUnusedImport = true
+reportUnusedVariable = true
+pythonVersion = "3.11"
+
+# ═════════════════════════════════════════════
+#  pytest（测试框架）
+# ═════════════════════════════════════════════
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+    "--cov=task_planner",
+    "--cov-report=term-missing",
+    "--cov-report=html:tests/output/coverage",
+]
+markers = [
+    "slow: 标记耗时较长的用例（真实 LLM 调用）",
+    "mock: 使用 Mock 的单元测试",
+    "integration: 集成测试",
+]
+
+# ═════════════════════════════════════════════
+#  Coverage（覆盖率配置）
+# ═════════════════════════════════════════════
+[tool.coverage.run]
+source = ["task_planner"]
+omit = [
+    "*/__pycache__/*",
+    "tests/*",
+    "*/tests/*",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.",
+    "pass",
+    "\\.\\.\\.",
+]
+
+# ═════════════════════════════════════════════
+#  Docker 构建辅助（让 Dockerfile 更简洁）
+# ═════════════════════════════════════════════
+# Dockerfile 只需：
+#   RUN pip install --no-cache-dir .[dev]
+# 即可一次性装好运行时 + 开发依赖

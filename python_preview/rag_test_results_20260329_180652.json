@@ -1,0 +1,302 @@
+[
+  {
+    "question": "千问API如何调用？",
+    "native": {
+      "system_name": "Native RAG",
+      "question": "千问API如何调用？",
+      "answer": "",
+      "response_time": 1.182358741760254,
+      "source_count": 3,
+      "sources": [
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "chunk_index": 1,
+            "start_index": 0,
+            "source": "langchain_changes.txt",
+            "topic": "版本变化",
+            "chunk_hash": "3cd1c87c",
+            "total_chunks": 4
+          }
+        },
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "chunk_hash": "ab31b95d",
+            "source": "qwen_api.txt",
+            "total_chunks": 4,
+            "chunk_index": 0,
+            "topic": "API调用",
+            "start_index": 0
+          }
+        },
+        {
+          "content": "RAG系统架构包括四个核心组件:\n                1. 文档加载和预处理\n                2. 向量化存储和检索\n                3. 查询处理和优化\n                4. 生成和响应返回\n                高级RAG会加入查询扩展、重排序、混合检索等技术。",
+          "metadata": {
+            "chunk_hash": "8ddb5af1",
+            "source": "rag_architecture.txt",
+            "topic": "RAG架构",
+            "start_index": 0,
+            "chunk_index": 2,
+            "total_chunks": 4
+          }
+        }
+      ]
+    },
+    "advanced": {
+      "system_name": "Advanced RAG",
+      "question": "千问API如何调用？",
+      "answer": "",
+      "response_time": 1.205359697341919,
+      "source_count": 4,
+      "sources": [
+        {
+          "content": "RAG系统架构包括四个核心组件:\n                1. 文档加载和预处理\n                2. 向量化存储和检索\n                3. 查询处理和优化\n                4. 生成和响应返回\n                高级RAG会加入查询扩展、重排序、混合检索等技术。",
+          "metadata": {
+            "chunk_hash": "8ddb5af1",
+            "source": "rag_architecture.txt",
+            "total_chunks": 4,
+            "topic": "RAG架构",
+            "start_index": 0,
+            "chunk_index": 2
+          }
+        },
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "source": "qwen_api.txt",
+            "total_chunks": 4,
+            "chunk_hash": "ab31b95d",
+            "chunk_index": 0,
+            "topic": "API调用",
+            "start_index": 0
+          }
+        },
+        {
+          "content": "Chroma是一个开源的向量数据库，专为AI应用设计。\n                支持多种嵌入模型，提供高效的相似性搜索。\n                在RAG系统中，Chroma用于存储和检索文档的向量表示。",
+          "metadata": {
+            "source": "chroma_db.txt",
+            "total_chunks": 4,
+            "start_index": 0,
+            "chunk_hash": "7b1d0796",
+            "topic": "向量数据库",
+            "chunk_index": 3
+          }
+        },
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "chunk_hash": "3cd1c87c",
+            "source": "langchain_changes.txt",
+            "chunk_index": 1,
+            "topic": "版本变化",
+            "start_index": 0,
+            "total_chunks": 4
+          }
+        }
+      ],
+      "confidence": 0.63,
+      "optimized_query": ""
+    }
+  },
+  {
+    "question": "LangChain 1.2.x有什么变化？",
+    "native": {
+      "system_name": "Native RAG",
+      "question": "LangChain 1.2.x有什么变化？",
+      "answer": "",
+      "response_time": 0.22642254829406738,
+      "source_count": 3,
+      "sources": [
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "topic": "API调用",
+            "total_chunks": 4,
+            "start_index": 0,
+            "chunk_index": 0,
+            "source": "qwen_api.txt",
+            "chunk_hash": "ab31b95d"
+          }
+        },
+        {
+          "content": "Chroma是一个开源的向量数据库，专为AI应用设计。\n                支持多种嵌入模型，提供高效的相似性搜索。\n                在RAG系统中，Chroma用于存储和检索文档的向量表示。",
+          "metadata": {
+            "chunk_hash": "7b1d0796",
+            "chunk_index": 3,
+            "start_index": 0,
+            "total_chunks": 4,
+            "source": "chroma_db.txt",
+            "topic": "向量数据库"
+          }
+        },
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "chunk_index": 1,
+            "chunk_hash": "3cd1c87c",
+            "topic": "版本变化",
+            "total_chunks": 4,
+            "source": "langchain_changes.txt",
+            "start_index": 0
+          }
+        }
+      ]
+    },
+    "advanced": {
+      "system_name": "Advanced RAG",
+      "question": "LangChain 1.2.x有什么变化？",
+      "answer": "",
+      "response_time": 0.9996170997619629,
+      "source_count": 4,
+      "sources": [
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "chunk_index": 1,
+            "total_chunks": 4,
+            "source": "langchain_changes.txt",
+            "start_index": 0,
+            "topic": "版本变化",
+            "chunk_hash": "3cd1c87c"
+          }
+        },
+        {
+          "content": "RAG系统架构包括四个核心组件:\n                1. 文档加载和预处理\n                2. 向量化存储和检索\n                3. 查询处理和优化\n                4. 生成和响应返回\n                高级RAG会加入查询扩展、重排序、混合检索等技术。",
+          "metadata": {
+            "start_index": 0,
+            "topic": "RAG架构",
+            "chunk_hash": "8ddb5af1",
+            "total_chunks": 4,
+            "source": "rag_architecture.txt",
+            "chunk_index": 2
+          }
+        },
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "topic": "API调用",
+            "chunk_index": 0,
+            "chunk_hash": "ab31b95d",
+            "total_chunks": 4,
+            "start_index": 0,
+            "source": "qwen_api.txt"
+          }
+        },
+        {
+          "content": "Chroma是一个开源的向量数据库，专为AI应用设计。\n                支持多种嵌入模型，提供高效的相似性搜索。\n                在RAG系统中，Chroma用于存储和检索文档的向量表示。",
+          "metadata": {
+            "start_index": 0,
+            "source": "chroma_db.txt",
+            "total_chunks": 4,
+            "chunk_hash": "7b1d0796",
+            "chunk_index": 3,
+            "topic": "向量数据库"
+          }
+        }
+      ],
+      "confidence": 0.63,
+      "optimized_query": ""
+    }
+  },
+  {
+    "question": "什么是RAG系统？",
+    "native": {
+      "system_name": "Native RAG",
+      "question": "什么是RAG系统？",
+      "answer": "",
+      "response_time": 0.34150147438049316,
+      "source_count": 3,
+      "sources": [
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "chunk_index": 1,
+            "source": "langchain_changes.txt",
+            "total_chunks": 4,
+            "chunk_hash": "3cd1c87c",
+            "start_index": 0,
+            "topic": "版本变化"
+          }
+        },
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "total_chunks": 4,
+            "chunk_index": 0,
+            "source": "qwen_api.txt",
+            "chunk_hash": "ab31b95d",
+            "topic": "API调用",
+            "start_index": 0
+          }
+        },
+        {
+          "content": "RAG系统架构包括四个核心组件:\n                1. 文档加载和预处理\n                2. 向量化存储和检索\n                3. 查询处理和优化\n                4. 生成和响应返回\n                高级RAG会加入查询扩展、重排序、混合检索等技术。",
+          "metadata": {
+            "chunk_hash": "8ddb5af1",
+            "source": "rag_architecture.txt",
+            "topic": "RAG架构",
+            "chunk_index": 2,
+            "total_chunks": 4,
+            "start_index": 0
+          }
+        }
+      ]
+    },
+    "advanced": {
+      "system_name": "Advanced RAG",
+      "question": "什么是RAG系统？",
+      "answer": "",
+      "response_time": 0.4589698314666748,
+      "source_count": 4,
+      "sources": [
+        {
+          "content": "RAG系统架构包括四个核心组件:\n                1. 文档加载和预处理\n                2. 向量化存储和检索\n                3. 查询处理和优化\n                4. 生成和响应返回\n                高级RAG会加入查询扩展、重排序、混合检索等技术。",
+          "metadata": {
+            "chunk_index": 2,
+            "total_chunks": 4,
+            "source": "rag_architecture.txt",
+            "start_index": 0,
+            "topic": "RAG架构",
+            "chunk_hash": "8ddb5af1"
+          }
+        },
+        {
+          "content": "LangChain 1.2.x 中，模块结构发生了变化:\n                1. 移除了 langchain.text_splitter，使用独立的 langchain_text_splitters\n                2. 移除了 langchain.retrievers，相关功能移到 langchain_classic.retrievers\n             ...",
+          "metadata": {
+            "source": "langchain_changes.txt",
+            "chunk_hash": "3cd1c87c",
+            "chunk_index": 1,
+            "topic": "版本变化",
+            "total_chunks": 4,
+            "start_index": 0
+          }
+        },
+        {
+          "content": "Chroma是一个开源的向量数据库，专为AI应用设计。\n                支持多种嵌入模型，提供高效的相似性搜索。\n                在RAG系统中，Chroma用于存储和检索文档的向量表示。",
+          "metadata": {
+            "total_chunks": 4,
+            "chunk_index": 3,
+            "source": "chroma_db.txt",
+            "topic": "向量数据库",
+            "start_index": 0,
+            "chunk_hash": "7b1d0796"
+          }
+        },
+        {
+          "content": "千问API是阿里云提供的通义千问大模型服务。\n                调用方式: 使用OpenAI SDK，但base_url要设置为 https://dashscope.aliyuncs.com/api/v2/apps/protocols/compatible-mode/v1\n                使用client.responses.create()方法，而不是client....",
+          "metadata": {
+            "chunk_index": 0,
+            "topic": "API调用",
+            "start_index": 0,
+            "chunk_hash": "ab31b95d",
+            "source": "qwen_api.txt",
+            "total_chunks": 4
+          }
+        }
+      ],
+      "confidence": 0.63,
+      "optimized_query": ""
+    }
+  }
+]
