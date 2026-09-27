@@ -1,0 +1,51 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 向量数据库（chroma 数据目录）
+chroma_db/
+chroma_db_advanced/
+chroma_db_native/
+agent_memory/*.sqlite3
+bili_video_db/
+
+# 模型文件
+*.pth
+*.pt
+*.bin
+
+# 图片/媒体（实验用的）
+*.jpg
+*.png
+*.jpeg
+*.mp4
+*.mp3
+
+# 笔记本
+*.ipynb
+
+# 环境与密钥
+.env
+.env.local
+
+# 编辑器
+*.swp
+*.swo
+.idea/
+.vscode/
+.DS_Store
+
+# 日志
+*.log
+
+# Dify 的敏感文件（如果你不想把 Dify 的密钥也提交了）
+dify/.env
+dify/*.pem
