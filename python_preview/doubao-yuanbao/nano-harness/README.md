@@ -520,7 +520,7 @@ class MySkill(BaseSkill):
 
 ## 📄 许可证
 
-MIT License
+GPL-3.0
 
 ---
 

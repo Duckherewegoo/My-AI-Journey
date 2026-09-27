@@ -138,4 +138,4 @@ langgraph-multi-agent/
 
 ## 许可证
 
-MIT License
+GPL-3.0
