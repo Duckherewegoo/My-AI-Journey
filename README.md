@@ -1,6 +1,6 @@
 # My-AI-Journey
 
-> 我的 AI 学习之旅 — 探索大模型、Agent、RAG 与多模态应用的实验田
+> 我的 AI 学习之旅 — 探索大模型、Agent、RAG 与多模态应用的实验田(含Vibe-Coding)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
