@@ -63,7 +63,8 @@ from task_planner.infrastructure.config import (
     EMPTY_BAR_STYLE,
     EMPTY_BAR_MINI_STYLE,
     MARKDOWN_PRE_STYLE,
-    VALID_PORT_RANGE
+    VALID_PORT_RANGE,
+    WERKZEUG_RUN_MAIN,
 )
 from task_planner.infrastructure.logger_setup import get_logger
 
@@ -2068,7 +2069,7 @@ def main() -> None:
 
     # ── 3. 进程感知启动日志 ──
     mode = "debug" if debug else "production"
-    is_reloader = os.environ.get("WERKZEUG_RUN_MAIN") == "true"
+    is_reloader = WERKZEUG_RUN_MAIN == "true"
     process_tag = " [reloader]" if is_reloader else ""
 
     logger.info(
