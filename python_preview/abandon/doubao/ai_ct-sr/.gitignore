@@ -10,12 +10,10 @@
 *.ckp
 *epoch*
 *node_modules*
-.store
 
 # 日志文件
 *log*
 logs
-
 
 # 缓存
 *cache*
@@ -25,11 +23,11 @@ logs
 *.disable
 recovered
 recovered_all
+*copy*
 
 # 工具
 pycdas
 pycdcc
-
 
 # 不排除的文件
 !experiment/bicubic-learnable/bicubic_cut.png
