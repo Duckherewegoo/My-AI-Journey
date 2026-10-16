@@ -1,0 +1,36 @@
+# 许多图像文件
+*.jpg
+*.png
+*.webp
+*.jpeg
+*.bmp
+
+# 太大的文件
+*.pth
+*.ckp
+*epoch*
+*node_modules*
+.store
+
+# 日志文件
+*log*
+logs
+
+
+# 缓存
+*cache*
+
+# 备份文件
+*.bak
+*.disable
+recovered
+recovered_all
+
+# 工具
+pycdas
+pycdcc
+
+
+# 不排除的文件
+!experiment/bicubic-learnable/bicubic_cut.png
+!platforms/frontend/ct-sr/assets/default.png
