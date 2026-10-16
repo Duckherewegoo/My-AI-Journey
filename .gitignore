@@ -75,6 +75,7 @@ logs/
 *.pdb
 
 # 生成输出
+outputs/*
 dream_outputs/
 exports/
 *.pdf
@@ -90,8 +91,6 @@ train_text.txt
 sample_text.txt
 custom_dict.txt
 
-# 未知文件
-2.0
 
 # 并非应该进入这个项目的东西
 python_preview/dify/
