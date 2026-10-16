@@ -1,0 +1,3499 @@
+.
+├── web_ref
+│   ├── open_deep_research
+│   │   ├── tests
+│   │   │   └── expt_results
+│   │   ├── src
+│   │   │   ├── security
+│   │   │   ├── open_deep_research
+│   │   │   └── legacy
+│   │   │       ├── tests
+│   │   │       └── files
+│   │   ├── open_deep_research.egg-info
+│   │   └── examples
+│   └── deepresearch
+│       └── src
+├── tool_demos
+├── python_preview
+│   ├── video_database
+│   │   └── 5bb81c9e-8d02-4afa-959a-5705ee0c4bdf
+│   ├── uploads
+│   ├── qwen-yuanbao
+│   │   ├── images
+│   │   ├── docker
+│   │   │   ├── tests
+│   │   │   │   ├── test_wrapper
+│   │   │   │   ├── __pycache__
+│   │   │   │   ├── eval_suite
+│   │   │   │   └── abandon
+│   │   │   │       └── harness
+│   │   │   ├── templates
+│   │   │   ├── src
+│   │   │   │   ├── task_planner.egg-info
+│   │   │   │   ├── task_planner
+│   │   │   │   │   ├── utils
+│   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   ├── services
+│   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── main
+│   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   ├── infrastructure
+│   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   ├── core
+│   │   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── graph
+│   │   │   │   │   │       └── __pycache__
+│   │   │   │   │   ├── coming_soon
+│   │   │   │   │   └── abandon
+│   │   │   │   ├── logs
+│   │   │   │   └── lib
+│   │   │   │       ├── vis-9.1.2
+│   │   │   │       ├── tom-select
+│   │   │   │       └── bindings
+│   │   │   ├── logs
+│   │   │   └── exports
+│   │   └── abandon
+│   │       └── broken_task-planner-project
+│   │           └── task_planner
+│   │               └── tests
+│   │                   ├── output
+│   │                   └── harness
+│   ├── qwen
+│   │   ├── chroma_db_native_qwen
+│   │   │   └── 325e24bc-37d8-4c2f-8973-3b32ed67a0bf
+│   │   └── chroma_db_advanced_qwen
+│   │       └── 37d84fe3-3834-43ef-b9f4-1bac6bf67a9d
+│   ├── py_lab
+│   ├── protein_structures
+│   ├── outputs
+│   ├── logs
+│   ├── ipy_lab
+│   ├── dream_outputs
+│   ├── doubao-yuanbao
+│   │   └── abandon
+│   │       ├── nano-harness
+│   │       │   ├── web
+│   │       │   ├── nano_harness
+│   │       │   │   ├── tools
+│   │       │   │   ├── skills
+│   │       │   │   │   └── builtin
+│   │       │   │   ├── __pycache__
+│   │       │   │   ├── prompts
+│   │       │   │   ├── multimodal
+│   │       │   │   ├── mcp
+│   │       │   │   ├── api
+│   │       │   │   └── agent
+│   │       │   │       └── __pycache__
+│   │       │   └── examples
+│   │       ├── langgraph-multi-agent
+│   │       │   ├── utils
+│   │       │   │   └── __pycache__
+│   │       │   ├── outputs
+│   │       │   ├── graph
+│   │       │   │   └── __pycache__
+│   │       │   └── agents
+│   │       │       └── __pycache__
+│   │       ├── langgraph-agent-demo
+│   │       │   └── src
+│   │       │       ├── utils
+│   │       │       ├── tools
+│   │       │       ├── mcp
+│   │       │       │   └── __pycache__
+│   │       │       ├── langgraph_agent_demo.egg-info
+│   │       │       ├── docs
+│   │       │       └── core
+│   │       └── deepdream
+│   │           ├── deepdream_project
+│   │           │   ├── uploads
+│   │           │   ├── dream_outputs
+│   │           │   ├── deepdream_langgraph.egg-info
+│   │           │   └── deepdream
+│   │           │       ├── test
+│   │           │       ├── src
+│   │           │       │   ├── utils
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── tools
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── state
+│   │           │       │   ├── __pycache__
+│   │           │       │   ├── node
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── deepdream
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── core
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── config
+│   │           │       │   │   └── __pycache__
+│   │           │       │   └── agent
+│   │           │       │       └── __pycache__
+│   │           │       └── __pycache__
+│   │           ├── broken_too_deepdream_project (1)
+│   │           │   └── deepdream_project
+│   │           │       ├── uploads
+│   │           │       ├── dream_outputs
+│   │           │       ├── deepdream_langgraph.egg-info
+│   │           │       └── deepdream
+│   │           │           ├── src
+│   │           │           │   ├── tools
+│   │           │           │   │   └── __pycache__
+│   │           │           │   ├── __pycache__
+│   │           │           │   ├── node
+│   │           │           │   │   └── __pycache__
+│   │           │           │   ├── deepdream
+│   │           │           │   │   └── __pycache__
+│   │           │           │   ├── core
+│   │           │           │   │   └── __pycache__
+│   │           │           │   ├── config
+│   │           │           │   │   └── __pycache__
+│   │           │           │   └── agent
+│   │           │           │       └── __pycache__
+│   │           │           └── __pycache__
+│   │           ├── broken_deepdream_project
+│   │           │   ├── uploads
+│   │           │   ├── dream_outputs
+│   │           │   ├── deepdream_langgraph.egg-info
+│   │           │   └── deepdream
+│   │           │       ├── src
+│   │           │       │   ├── tools
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── __pycache__
+│   │           │       │   ├── node
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── deepdream
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── core
+│   │           │       │   │   └── __pycache__
+│   │           │       │   ├── config
+│   │           │       │   │   └── __pycache__
+│   │           │       │   └── agent
+│   │           │       │       └── __pycache__
+│   │           │       └── __pycache__
+│   │           └── broke_deepdream_project
+│   │               ├── uploads
+│   │               ├── dream_outputs
+│   │               ├── deepdream_langgraph.egg-info
+│   │               └── deepdream
+│   │                   ├── src
+│   │                   │   ├── tools
+│   │                   │   │   └── __pycache__
+│   │                   │   ├── __pycache__
+│   │                   │   ├── node
+│   │                   │   │   └── __pycache__
+│   │                   │   ├── deepdream
+│   │                   │   │   └── __pycache__
+│   │                   │   ├── core
+│   │                   │   │   └── __pycache__
+│   │                   │   ├── config
+│   │                   │   │   └── __pycache__
+│   │                   │   └── agent
+│   │                   │       └── __pycache__
+│   │                   └── __pycache__
+│   ├── doubao
+│   ├── dify
+│   │   ├── web
+│   │   │   ├── utils
+│   │   │   │   └── __tests__
+│   │   │   ├── types
+│   │   │   ├── themes
+│   │   │   ├── __tests__
+│   │   │   │   ├── workflow
+│   │   │   │   │   └── workflow-generator
+│   │   │   │   ├── utils
+│   │   │   │   ├── tools
+│   │   │   │   ├── share
+│   │   │   │   ├── rag-pipeline
+│   │   │   │   ├── plugins
+│   │   │   │   ├── header
+│   │   │   │   ├── goto-anything
+│   │   │   │   ├── explore
+│   │   │   │   ├── develop
+│   │   │   │   ├── datasets
+│   │   │   │   ├── custom
+│   │   │   │   ├── billing
+│   │   │   │   ├── base
+│   │   │   │   ├── app-sidebar
+│   │   │   │   ├── apps
+│   │   │   │   └── app
+│   │   │   ├── test
+│   │   │   ├── service
+│   │   │   │   ├── __tests__
+│   │   │   │   └── knowledge
+│   │   │   ├── scripts
+│   │   │   ├── public
+│   │   │   │   ├── vs
+│   │   │   │   │   ├── language
+│   │   │   │   │   │   ├── typescript
+│   │   │   │   │   │   ├── json
+│   │   │   │   │   │   ├── html
+│   │   │   │   │   │   └── css
+│   │   │   │   │   ├── editor
+│   │   │   │   │   ├── basic-languages
+│   │   │   │   │   │   ├── yaml
+│   │   │   │   │   │   ├── xml
+│   │   │   │   │   │   ├── wgsl
+│   │   │   │   │   │   ├── vb
+│   │   │   │   │   │   ├── typespec
+│   │   │   │   │   │   ├── typescript
+│   │   │   │   │   │   ├── twig
+│   │   │   │   │   │   ├── tcl
+│   │   │   │   │   │   ├── systemverilog
+│   │   │   │   │   │   ├── swift
+│   │   │   │   │   │   ├── st
+│   │   │   │   │   │   ├── sql
+│   │   │   │   │   │   ├── sparql
+│   │   │   │   │   │   ├── sophia
+│   │   │   │   │   │   ├── solidity
+│   │   │   │   │   │   ├── shell
+│   │   │   │   │   │   ├── scss
+│   │   │   │   │   │   ├── scheme
+│   │   │   │   │   │   ├── scala
+│   │   │   │   │   │   ├── sb
+│   │   │   │   │   │   ├── rust
+│   │   │   │   │   │   ├── ruby
+│   │   │   │   │   │   ├── restructuredtext
+│   │   │   │   │   │   ├── redshift
+│   │   │   │   │   │   ├── redis
+│   │   │   │   │   │   ├── razor
+│   │   │   │   │   │   ├── r
+│   │   │   │   │   │   ├── qsharp
+│   │   │   │   │   │   ├── python
+│   │   │   │   │   │   ├── pug
+│   │   │   │   │   │   ├── protobuf
+│   │   │   │   │   │   ├── powershell
+│   │   │   │   │   │   ├── powerquery
+│   │   │   │   │   │   ├── postiats
+│   │   │   │   │   │   ├── pla
+│   │   │   │   │   │   ├── php
+│   │   │   │   │   │   ├── pgsql
+│   │   │   │   │   │   ├── perl
+│   │   │   │   │   │   ├── pascaligo
+│   │   │   │   │   │   ├── pascal
+│   │   │   │   │   │   ├── objective-c
+│   │   │   │   │   │   ├── mysql
+│   │   │   │   │   │   ├── msdax
+│   │   │   │   │   │   ├── mips
+│   │   │   │   │   │   ├── mdx
+│   │   │   │   │   │   ├── markdown
+│   │   │   │   │   │   ├── m3
+│   │   │   │   │   │   ├── lua
+│   │   │   │   │   │   ├── liquid
+│   │   │   │   │   │   ├── lexon
+│   │   │   │   │   │   ├── less
+│   │   │   │   │   │   ├── kotlin
+│   │   │   │   │   │   ├── julia
+│   │   │   │   │   │   ├── javascript
+│   │   │   │   │   │   ├── java
+│   │   │   │   │   │   ├── ini
+│   │   │   │   │   │   ├── html
+│   │   │   │   │   │   ├── hcl
+│   │   │   │   │   │   ├── handlebars
+│   │   │   │   │   │   ├── graphql
+│   │   │   │   │   │   ├── go
+│   │   │   │   │   │   ├── fsharp
+│   │   │   │   │   │   ├── freemarker2
+│   │   │   │   │   │   ├── flow9
+│   │   │   │   │   │   ├── elixir
+│   │   │   │   │   │   ├── ecl
+│   │   │   │   │   │   ├── dockerfile
+│   │   │   │   │   │   ├── dart
+│   │   │   │   │   │   ├── cypher
+│   │   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── csp
+│   │   │   │   │   │   ├── csharp
+│   │   │   │   │   │   ├── cpp
+│   │   │   │   │   │   ├── coffee
+│   │   │   │   │   │   ├── clojure
+│   │   │   │   │   │   ├── cameligo
+│   │   │   │   │   │   ├── bicep
+│   │   │   │   │   │   ├── bat
+│   │   │   │   │   │   ├── azcli
+│   │   │   │   │   │   ├── apex
+│   │   │   │   │   │   └── abap
+│   │   │   │   │   └── base
+│   │   │   │   │       ├── worker
+│   │   │   │   │       └── browser
+│   │   │   │   │           └── ui
+│   │   │   │   │               └── codicons
+│   │   │   │   │                   └── codicon
+│   │   │   │   ├── screenshots
+│   │   │   │   │   ├── light
+│   │   │   │   │   └── dark
+│   │   │   │   ├── marketplace
+│   │   │   │   ├── logo
+│   │   │   │   ├── in-site-message
+│   │   │   │   └── education
+│   │   │   ├── plugins
+│   │   │   │   ├── vite
+│   │   │   │   └── eslint
+│   │   │   │       └── rules
+│   │   │   ├── next
+│   │   │   ├── models
+│   │   │   ├── __mocks__
+│   │   │   │   ├── __tests__
+│   │   │   │   └── @tanstack
+│   │   │   ├── i18n-config
+│   │   │   ├── i18n
+│   │   │   │   ├── zh-Hant
+│   │   │   │   ├── zh-Hans
+│   │   │   │   ├── vi-VN
+│   │   │   │   ├── uk-UA
+│   │   │   │   ├── tr-TR
+│   │   │   │   ├── th-TH
+│   │   │   │   ├── sl-SI
+│   │   │   │   ├── ru-RU
+│   │   │   │   ├── ro-RO
+│   │   │   │   ├── pt-BR
+│   │   │   │   ├── pl-PL
+│   │   │   │   ├── nl-NL
+│   │   │   │   ├── ko-KR
+│   │   │   │   ├── ja-JP
+│   │   │   │   ├── it-IT
+│   │   │   │   ├── id-ID
+│   │   │   │   ├── hi-IN
+│   │   │   │   ├── fr-FR
+│   │   │   │   ├── fa-IR
+│   │   │   │   ├── es-ES
+│   │   │   │   ├── en-US
+│   │   │   │   ├── de-DE
+│   │   │   │   └── ar-TN
+│   │   │   ├── hooks
+│   │   │   ├── features
+│   │   │   │   ├── tag-management
+│   │   │   │   │   ├── __tests__
+│   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── __tests__
+│   │   │   │   │   └── components
+│   │   │   │   │       └── __tests__
+│   │   │   │   ├── system-features
+│   │   │   │   │   └── __tests__
+│   │   │   │   └── account-profile
+│   │   │   │       └── __tests__
+│   │   │   ├── docs
+│   │   │   ├── docker
+│   │   │   ├── contract
+│   │   │   │   └── console
+│   │   │   ├── context
+│   │   │   │   └── hooks
+│   │   │   ├── constants
+│   │   │   ├── config
+│   │   │   │   └── __tests__
+│   │   │   ├── bin
+│   │   │   ├── assets
+│   │   │   └── app
+│   │   │       ├── styles
+│   │   │       │   └── plugins
+│   │   │       ├── signup
+│   │   │       │   ├── set-password
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── components
+│   │   │       │   └── check-code
+│   │   │       ├── signin
+│   │   │       │   ├── utils
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── __tests__
+│   │   │       │   ├── invite-settings
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── components
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── check-code
+│   │   │       │   └── assets
+│   │   │       ├── (shareLayout)
+│   │   │       │   ├── workflow
+│   │   │       │   │   └── [token]
+│   │   │       │   ├── webapp-signin
+│   │   │       │   │   ├── components
+│   │   │       │   │   └── check-code
+│   │   │       │   ├── webapp-reset-password
+│   │   │       │   │   ├── set-password
+│   │   │       │   │   └── check-code
+│   │   │       │   ├── components
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── completion
+│   │   │       │   │   └── [token]
+│   │   │       │   ├── chatbot
+│   │   │       │   │   └── [token]
+│   │   │       │   └── chat
+│   │   │       │       └── [token]
+│   │   │       ├── reset-password
+│   │   │       │   ├── set-password
+│   │   │       │   └── check-code
+│   │   │       ├── oauth-callback
+│   │   │       ├── install
+│   │   │       ├── init
+│   │   │       ├── (humanInputLayout)
+│   │   │       │   └── form
+│   │   │       │       └── [token]
+│   │   │       │           └── __tests__
+│   │   │       ├── forgot-password
+│   │   │       ├── education-apply
+│   │   │       │   └── __tests__
+│   │   │       ├── device
+│   │   │       │   ├── utils
+│   │   │       │   ├── __tests__
+│   │   │       │   └── components
+│   │   │       │       └── __tests__
+│   │   │       ├── components
+│   │   │       │   ├── workflow-app
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── store
+│   │   │       │   │   │   └── workflow
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── components
+│   │   │       │   │       ├── workflow-onboarding-modal
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       ├── workflow-header
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── workflow
+│   │   │       │   │   ├── workflow-preview
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── components
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── note-node
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       └── nodes
+│   │   │       │   │   │           ├── __tests__
+│   │   │       │   │   │           ├── question-classifier
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           ├── loop-start
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           ├── loop
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           ├── iteration-start
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           ├── iteration
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           ├── if-else
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           └── human-input
+│   │   │       │   │   │               └── __tests__
+│   │   │       │   │   ├── workflow-generator
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── variable-inspect
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── utils
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── store
+│   │   │       │   │   │   ├── workflow
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── debug
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── simple-node
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── shortcuts
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── run
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   └── format-log
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── retry
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── parallel
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── loop
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── iteration
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── human-input
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── agent
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── retry-log
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── loop-log
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── iteration-log
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── assets
+│   │   │       │   │   │   └── agent-log
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── plugin-dependency
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── persistence
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── panel
+│   │   │       │   │   │   ├── version-history-panel
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── loading
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── filter
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── action-menu
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── global-variable-panel
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── env-panel
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── debug-and-preview
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   │       └── hooks
+│   │   │       │   │   │   ├── comments-panel
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── chat-variable-panel
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── chat-record
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── operator
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── note-node
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── note-editor
+│   │   │       │   │   │       ├── toolbar
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── theme
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       └── plugins
+│   │   │       │   │   │           ├── link-editor-plugin
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           └── format-detector-plugin
+│   │   │       │   │   │               └── __tests__
+│   │   │       │   │   ├── nodes
+│   │   │       │   │   │   ├── variable-assigner
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── var-list
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── add-variable
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── trigger-webhook
+│   │   │       │   │   │   │   ├── utils
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── trigger-schedule
+│   │   │       │   │   │   │   ├── utils
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── trigger-plugin
+│   │   │       │   │   │   │   ├── utils
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── trigger-form
+│   │   │       │   │   │   ├── tool
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── tool-form
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── mixed-variable-text-input
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── template-transform
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── start-placeholder
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── start
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── question-classifier
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── parameter-extractor
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── extract-parameter
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── loop-start
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── loop-end
+│   │   │       │   │   │   ├── loop
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── loop-variables
+│   │   │       │   │   │   │       └── condition-list
+│   │   │       │   │   │   ├── llm
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── json-schema-config-modal
+│   │   │       │   │   │   │           ├── visual-editor
+│   │   │       │   │   │   │           │   └── edit-card
+│   │   │       │   │   │   │           ├── __tests__
+│   │   │       │   │   │   │           └── json-schema-generator
+│   │   │       │   │   │   │               └── assets
+│   │   │       │   │   │   ├── list-operator
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── knowledge-retrieval
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── metadata
+│   │   │       │   │   │   │           ├── metadata-filter
+│   │   │       │   │   │   │           └── condition-list
+│   │   │       │   │   │   ├── knowledge-base
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── retrieval-setting
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── chunk-structure
+│   │   │       │   │   │   │           ├── __tests__
+│   │   │       │   │   │   │           └── instruction
+│   │   │       │   │   │   │               └── __tests__
+│   │   │       │   │   │   ├── iteration-start
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── iteration
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── if-else
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── condition-list
+│   │   │       │   │   │   ├── human-input
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── delivery-method
+│   │   │       │   │   │   │           ├── __tests__
+│   │   │       │   │   │   │           └── recipient
+│   │   │       │   │   │   │               └── __tests__
+│   │   │       │   │   │   ├── http
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── timeout
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── key-value
+│   │   │       │   │   │   │       │   ├── key-value-edit
+│   │   │       │   │   │   │       │   └── bulk-edit
+│   │   │       │   │   │   │       ├── edit-body
+│   │   │       │   │   │   │       └── authorization
+│   │   │       │   │   │   ├── end
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── document-extractor
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── data-source-empty
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── data-source
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── hooks
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── code
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── _base
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── workflow-panel
+│   │   │       │   │   │   │       │   ├── __tests__
+│   │   │       │   │   │   │       │   └── last-run
+│   │   │       │   │   │   │       │       └── __tests__
+│   │   │       │   │   │   │       ├── variable
+│   │   │       │   │   │   │       │   ├── variable-label
+│   │   │       │   │   │   │       │   │   ├── __tests__
+│   │   │       │   │   │   │       │   │   └── base
+│   │   │       │   │   │   │       │   ├── __tests__
+│   │   │       │   │   │   │       │   └── object-child-tree-panel
+│   │   │       │   │   │   │       │       ├── show
+│   │   │       │   │   │   │       │       └── picker
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── support-var-input
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── retry
+│   │   │       │   │   │   │       ├── prompt
+│   │   │       │   │   │   │       ├── next-step
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── mixed-variable-text-input
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── layout
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── input-field
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── error-handle
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       ├── editor
+│   │   │       │   │   │   │       │   └── code-editor
+│   │   │       │   │   │   │       ├── collapse
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── before-run-form
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── assigner
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       ├── var-list
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── answer
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── agent
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       └── components
+│   │   │       │   │   │           └── __tests__
+│   │   │       │   │   ├── node-actions-menu
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── hooks-store
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   ├── use-workflow-run-event
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── help-line
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── header
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── checklist
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── datasets-detail-store
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── constants
+│   │   │       │   │   ├── comment
+│   │   │       │   │   ├── collaboration
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   ├── types
+│   │   │       │   │   │   ├── services
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── core
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── components
+│   │   │       │   │   └── block-selector
+│   │   │       │   │       ├── trigger-plugin
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       ├── tool
+│   │   │       │   │       │   ├── tool-list-tree-view
+│   │   │       │   │       │   │   └── __tests__
+│   │   │       │   │       │   ├── tool-list-flat-view
+│   │   │       │   │       │   │   └── __tests__
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       ├── __tests__
+│   │   │       │   │       ├── snippets
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       ├── rag-tool-recommendations
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       └── market-place-plugin
+│   │   │       │   │           └── __tests__
+│   │   │       │   ├── tools
+│   │   │       │   │   ├── workflow-tool
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── confirm-modal
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── utils
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── setting
+│   │   │       │   │   │   └── build-in
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── provider
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── mcp
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── sections
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── detail
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── marketplace
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── labels
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── edit-custom-collection-modal
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── __tests__
+│   │   │       │   ├── snippets
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── store
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── components
+│   │   │       │   │       ├── __tests__
+│   │   │       │   │       ├── snippet-header
+│   │   │       │   │       │   └── __tests__
+│   │   │       │   │       └── hooks
+│   │   │       │   │           └── __tests__
+│   │   │       │   ├── snippet-list
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── components
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── signin
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── share
+│   │   │       │   │   ├── text-generation
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── run-once
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── run-batch
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── res-download
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── csv-reader
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── csv-download
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── result
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── hooks
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── no-data
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── icons
+│   │   │       │   │   │   └── hooks
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── rag-pipeline
+│   │   │       │   │   ├── utils
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── store
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── components
+│   │   │       │   │       ├── __tests__
+│   │   │       │   │       ├── rag-pipeline-header
+│   │   │       │   │       │   ├── __tests__
+│   │   │       │   │       │   └── publisher
+│   │   │       │   │       │       └── __tests__
+│   │   │       │   │       ├── panel
+│   │   │       │   │       │   ├── __tests__
+│   │   │       │   │       │   ├── test-run
+│   │   │       │   │       │   │   ├── __tests__
+│   │   │       │   │       │   │   ├── result
+│   │   │       │   │       │   │   │   ├── __tests__
+│   │   │       │   │       │   │   │   ├── tabs
+│   │   │       │   │       │   │   │   │   └── __tests__
+│   │   │       │   │       │   │   │   └── result-preview
+│   │   │       │   │       │   │   │       └── __tests__
+│   │   │       │   │       │   │   └── preparation
+│   │   │       │   │       │   │       ├── __tests__
+│   │   │       │   │       │   │       ├── document-processing
+│   │   │       │   │       │   │       │   └── __tests__
+│   │   │       │   │       │   │       ├── data-source-options
+│   │   │       │   │       │   │       │   └── __tests__
+│   │   │       │   │       │   │       └── actions
+│   │   │       │   │       │   │           └── __tests__
+│   │   │       │   │       │   └── input-field
+│   │   │       │   │       │       ├── __tests__
+│   │   │       │   │       │       ├── preview
+│   │   │       │   │       │       │   └── __tests__
+│   │   │       │   │       │       ├── label-right-content
+│   │   │       │   │       │       │   └── __tests__
+│   │   │       │   │       │       ├── field-list
+│   │   │       │   │       │       │   └── __tests__
+│   │   │       │   │       │       └── editor
+│   │   │       │   │       │           ├── __tests__
+│   │   │       │   │       │           └── form
+│   │   │       │   │       │               └── __tests__
+│   │   │       │   │       └── chunk-card-list
+│   │   │       │   │           └── __tests__
+│   │   │       │   ├── provider
+│   │   │       │   ├── plugins
+│   │   │       │   │   ├── update-plugin
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── reference-setting-modal
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── auto-update-setting
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── readme-panel
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── plugin-page
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── plugin-tasks
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── list
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── filter-management
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── empty
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── plugin-mutation-model
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── plugin-item
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── plugin-detail-panel
+│   │   │       │   │   │   ├── trigger
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── tool-selector
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── subscription-list
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── edit
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── create
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── hooks
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── components
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── multiple-tool-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── model-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── detail-header
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── app-selector
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       └── hooks
+│   │   │       │   │   │           └── __tests__
+│   │   │       │   │   ├── plugin-auth
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── authorized
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── authorize
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── marketplace
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── sort-dropdown
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── search-box
+│   │   │       │   │   │   │   ├── trigger
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── list
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── empty
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── description
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── install-plugin
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── install-from-marketplace
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── steps
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── install-from-local-package
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── steps
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── install-from-github
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── steps
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── install-bundle
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── steps
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── hooks
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   └── item
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── base
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── card
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── base
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   └── base
+│   │   │       │   │       ├── __tests__
+│   │   │       │   │       └── badges
+│   │   │       │   │           └── __tests__
+│   │   │       │   ├── main-nav
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   └── components
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── integrations
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   └── hooks
+│   │   │       │   ├── header
+│   │   │       │   │   ├── utils
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── tools-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── plugins-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── plan-badge
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── nav
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── nav-selector
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── license-env
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── github-star
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── explore-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── env-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── dataset-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── assets
+│   │   │       │   │   ├── app-nav
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── app-back
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── account-setting
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── plugin-page
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── model-provider-page
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── system-model-selector
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── provider-icon
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── provider-added-card
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── model-auth-dropdown
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   ├── model-selector
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── model-parameter-modal
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── model-name
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── model-modal
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── model-icon
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── model-badge
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── model-auth
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── hooks
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── authorized
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   ├── members-page
+│   │   │       │   │   │   │   ├── transfer-ownership-modal
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── operation
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── invite-modal
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── invited-modal
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── assets
+│   │   │       │   │   │   │   └── edit-workspace-modal
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── language-page
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── key-validator
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── Integrations-page
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── data-source-page-new
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── hooks
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── collapse
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── api-based-extension-page
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── account-dropdown
+│   │   │       │   │   │   ├── workplace-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── account-about
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── goto-anything
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── components
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── actions
+│   │   │       │   │       ├── __tests__
+│   │   │       │   │       └── commands
+│   │   │       │   │           └── __tests__
+│   │   │       │   ├── explore
+│   │   │       │   │   ├── try-app
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── preview
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── app-info
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── app
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── sidebar
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── no-apps
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── app-nav-item
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── learn-dify
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── item-operation
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── installed-app
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── create-app-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── continue-work
+│   │   │       │   │   ├── banner
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── app-list
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── app-card
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── devtools
+│   │   │       │   │   └── react-scan
+│   │   │       │   ├── develop
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── template
+│   │   │       │   │   ├── secret-key
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   └── hooks
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── datasets
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── settings
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── permission-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── index-method
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── form
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── chunk-structure
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── rename-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── preview
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── metadata
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── metadata-document
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── metadata-dataset
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── edit-metadata-batch
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── base
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── list
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── new-dataset-card
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── first-empty-state
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── dataset-card
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── hooks
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       └── components
+│   │   │       │   │   │           └── __tests__
+│   │   │       │   │   ├── hit-testing
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── components
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── query-input
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   ├── formatted-text
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── flavours
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── extra-info
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── service-api
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── api-access
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── external-knowledge-base
+│   │   │       │   │   │   ├── create
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── connector
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── external-api
+│   │   │       │   │   │   ├── external-knowledge-api-card
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── external-api-panel
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── external-api-modal
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── documents
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── status-item
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── detail
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── settings
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── pipeline-settings
+│   │   │       │   │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │   │       └── process-documents
+│   │   │       │   │   │   │   │           └── __tests__
+│   │   │       │   │   │   │   ├── segment-add
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── metadata
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   └── components
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   ├── embedding
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   ├── skeleton
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   └── components
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   ├── completed
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   ├── skeleton
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   ├── segment-card
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   ├── components
+│   │   │       │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   └── common
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   └── batch-modal
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── create-from-pipeline
+│   │   │       │   │   │   │   ├── utils
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── steps
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── processing
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── embedding-process
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   ├── process-documents
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── preview
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── data-source-options
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── data-source
+│   │   │       │   │   │   │   │   ├── website-crawl
+│   │   │       │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   └── base
+│   │   │       │   │   │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │   │   │       └── options
+│   │   │       │   │   │   │   │   │           └── __tests__
+│   │   │       │   │   │   │   │   ├── store
+│   │   │       │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   └── slices
+│   │   │       │   │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   │   ├── online-drive
+│   │   │       │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   ├── file-list
+│   │   │       │   │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   │   ├── list
+│   │   │       │   │   │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   │   │   └── header
+│   │   │       │   │   │   │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │   │   │   │       └── breadcrumbs
+│   │   │       │   │   │   │   │   │   │           ├── __tests__
+│   │   │       │   │   │   │   │   │   │           └── dropdown
+│   │   │       │   │   │   │   │   │   │               └── __tests__
+│   │   │       │   │   │   │   │   │   └── connect
+│   │   │       │   │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   │   ├── online-documents
+│   │   │       │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   └── page-selector
+│   │   │       │   │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   │   ├── local-file
+│   │   │       │   │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   │   │   └── components
+│   │   │       │   │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   │   └── base
+│   │   │       │   │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │   │       └── credential-selector
+│   │   │       │   │   │   │   │           └── __tests__
+│   │   │       │   │   │   │   └── actions
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── components
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── document-list
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       ├── hooks
+│   │   │       │   │   │   │       │   └── __tests__
+│   │   │       │   │   │   │       └── components
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   ├── create-from-pipeline
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── list
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── template-card
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── details
+│   │   │       │   │   │   │           └── __tests__
+│   │   │       │   │   │   └── create-options
+│   │   │       │   │   │       └── create-from-dsl-modal
+│   │   │       │   │   │           ├── __tests__
+│   │   │       │   │   │           ├── tab
+│   │   │       │   │   │           │   └── __tests__
+│   │   │       │   │   │           └── hooks
+│   │   │       │   │   │               └── __tests__
+│   │   │       │   │   ├── create
+│   │   │       │   │   │   ├── website
+│   │   │       │   │   │   │   ├── watercrawl
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── jina-reader
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── base
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   ├── firecrawl
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── base
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── top-bar
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── stop-embedding-modal
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── step-two
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── preview-item
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── language-select
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── step-three
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── stepper
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── step-one
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── notion-page-preview
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── file-uploader
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── hooks
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── components
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── file-preview
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── empty-dataset-creation-modal
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── embedding-process
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   ├── common
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── retrieval-param-config
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── retrieval-method-info
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── retrieval-method-config
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── image-uploader
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── image-uploader-in-retrieval-testing
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── image-uploader-in-chunk
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── hooks
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── image-previewer
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── image-list
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── economical-retrieval-method-config
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── document-status-with-action
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── document-picker
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   └── api
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── custom
+│   │   │       │   │   ├── custom-web-app-brand
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── components
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   └── custom-page
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── billing
+│   │   │       │   │   ├── vector-space-full
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── utils
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── usage-info
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── upgrade-btn
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── trigger-events-limit-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── priority-label
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── pricing
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── plan-switcher
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── plans
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── self-hosted-plan-item
+│   │   │       │   │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   │   └── list
+│   │   │       │   │   │   │   │       └── __tests__
+│   │   │       │   │   │   │   └── cloud-plan-item
+│   │   │       │   │   │   │       ├── __tests__
+│   │   │       │   │   │   │       └── list
+│   │   │       │   │   │   │           ├── __tests__
+│   │   │       │   │   │   │           └── item
+│   │   │       │   │   │   │               └── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── plan-upgrade-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── plan
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── partner-stack
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   ├── header-billing-btn
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── billing-page
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── apps-full-in-dialog
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── annotation-full
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── base
+│   │   │       │   │   ├── zendesk
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── with-input-validation
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── voice-input
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── video-gallery
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── user-avatar-list
+│   │   │       │   │   ├── upgrade-modal
+│   │   │       │   │   ├── timezone-label
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── text-generation
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── tag-input
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── tag
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── tab-slider-plain
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── tab-slider-new
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── tab-slider
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── svg-gallery
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── svg
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── spinner
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── sort
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── skeleton
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── simple-pie-chart
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── search-input
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── radio-card
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── qrcode
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── prompt-log-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── prompt-editor
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── plugins
+│   │   │       │   │   │       ├── workflow-variable-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── variable-value-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── variable-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── shortcuts-popup-plugin
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── request-url-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── query-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── last-run-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── hitl-input-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── history-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── error-message-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── draggable-plugin
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── custom-text
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── current-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── context-block
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       └── component-picker-block
+│   │   │       │   │   │           └── __tests__
+│   │   │       │   │   ├── premium-badge
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── permission-selector
+│   │   │       │   │   ├── param-item
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── notion-page-selector
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── search-input
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── page-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── credential-selector
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   ├── notion-icon
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── notion-connector
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── node-status
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── new-audio-button
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── message-log-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── mermaid
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── markdown-with-directive
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── components
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── markdown-blocks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── markdown
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── logo
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── loading
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── list-empty
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── linked-apps-panel
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── input-with-copy
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── input
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── inline-delete-confirm
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── infotip
+│   │   │       │   │   ├── image-uploader
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── image-gallery
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── icons
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── src
+│   │   │       │   │   │   │   ├── vender
+│   │   │       │   │   │   │   │   ├── workflow
+│   │   │       │   │   │   │   │   ├── system
+│   │   │       │   │   │   │   │   ├── solid
+│   │   │       │   │   │   │   │   │   ├── users
+│   │   │       │   │   │   │   │   │   ├── shapes
+│   │   │       │   │   │   │   │   │   ├── security
+│   │   │       │   │   │   │   │   │   ├── mediaAndDevices
+│   │   │       │   │   │   │   │   │   ├── layout
+│   │   │       │   │   │   │   │   │   ├── general
+│   │   │       │   │   │   │   │   │   ├── FinanceAndECommerce
+│   │   │       │   │   │   │   │   │   ├── files
+│   │   │       │   │   │   │   │   │   ├── education
+│   │   │       │   │   │   │   │   │   ├── editor
+│   │   │       │   │   │   │   │   │   ├── development
+│   │   │       │   │   │   │   │   │   ├── communication
+│   │   │       │   │   │   │   │   │   ├── arrows
+│   │   │       │   │   │   │   │   │   └── alertsAndFeedback
+│   │   │       │   │   │   │   │   ├── plugin
+│   │   │       │   │   │   │   │   ├── pipeline
+│   │   │       │   │   │   │   │   ├── other
+│   │   │       │   │   │   │   │   ├── line
+│   │   │       │   │   │   │   │   │   ├── weather
+│   │   │       │   │   │   │   │   │   ├── users
+│   │   │       │   │   │   │   │   │   ├── time
+│   │   │       │   │   │   │   │   │   ├── shapes
+│   │   │       │   │   │   │   │   │   ├── others
+│   │   │       │   │   │   │   │   │   ├── mediaAndDevices
+│   │   │       │   │   │   │   │   │   ├── layout
+│   │   │       │   │   │   │   │   │   ├── images
+│   │   │       │   │   │   │   │   │   ├── general
+│   │   │       │   │   │   │   │   │   ├── financeAndECommerce
+│   │   │       │   │   │   │   │   │   ├── files
+│   │   │       │   │   │   │   │   │   ├── education
+│   │   │       │   │   │   │   │   │   ├── editor
+│   │   │       │   │   │   │   │   │   ├── development
+│   │   │       │   │   │   │   │   │   ├── communication
+│   │   │       │   │   │   │   │   │   ├── arrows
+│   │   │       │   │   │   │   │   │   └── alertsAndFeedback
+│   │   │       │   │   │   │   │   ├── knowledge
+│   │   │       │   │   │   │   │   └── features
+│   │   │       │   │   │   │   ├── public
+│   │   │       │   │   │   │   │   ├── tracing
+│   │   │       │   │   │   │   │   ├── thought
+│   │   │       │   │   │   │   │   ├── plugins
+│   │   │       │   │   │   │   │   ├── other
+│   │   │       │   │   │   │   │   ├── model
+│   │   │       │   │   │   │   │   ├── llm
+│   │   │       │   │   │   │   │   ├── knowledge
+│   │   │       │   │   │   │   │   │   ├── online-drive
+│   │   │       │   │   │   │   │   │   └── dataset-card
+│   │   │       │   │   │   │   │   ├── files
+│   │   │       │   │   │   │   │   ├── education
+│   │   │       │   │   │   │   │   ├── common
+│   │   │       │   │   │   │   │   ├── billing
+│   │   │       │   │   │   │   │   └── avatar
+│   │   │       │   │   │   │   └── image
+│   │   │       │   │   │   │       └── llm
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   │       └── image
+│   │   │       │   │   │           └── llm
+│   │   │       │   │   ├── grid-mask
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── ga
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── form
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── secret-input
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── form-scenarios
+│   │   │       │   │   │   │   ├── node-panel
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── input-field
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── demo
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── base
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── auth
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── components
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── form
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── field
+│   │   │       │   │   │       │   ├── __tests__
+│   │   │       │   │   │       │   ├── mixed-variable-text-input
+│   │   │       │   │   │       │   │   └── __tests__
+│   │   │       │   │   │       │   └── input-type-select
+│   │   │       │   │   │       │       └── __tests__
+│   │   │       │   │   │       └── base
+│   │   │       │   │   │           └── __tests__
+│   │   │       │   │   ├── float-right-container
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── filter-empty-state
+│   │   │       │   │   ├── file-uploader
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── file-uploader-in-chat-input
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── file-uploader-in-attachment
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── file-from-link-or-local
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── file-thumb
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── file-icon
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── features
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   └── new-feature-panel
+│   │   │       │   │   │       ├── text-to-speech
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── moderation
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── image-upload
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── file-upload
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── conversation-opener
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       └── annotation-reply
+│   │   │       │   │   │           ├── __tests__
+│   │   │       │   │   │           └── score-slider
+│   │   │       │   │   │               └── __tests__
+│   │   │       │   │   ├── error-boundary
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── encrypted-bottom
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── emoji-picker
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── effect
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── divider
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── date-and-time-picker
+│   │   │       │   │   │   ├── year-and-month-picker
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── utils
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── time-picker
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   ├── date-picker
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   ├── common
+│   │   │       │   │   │   │   └── __tests__
+│   │   │       │   │   │   └── calendar
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   ├── corner-label
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── copy-icon
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── copy-feedback
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── chip
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── checkbox-list
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── chat
+│   │   │       │   │   │   ├── __tests__
+│   │   │       │   │   │   │   └── __snapshots__
+│   │   │       │   │   │   ├── embedded-chatbot
+│   │   │       │   │   │   │   ├── theme
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── inputs-form
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── header
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   ├── chat-with-history
+│   │   │       │   │   │   │   ├── __tests__
+│   │   │       │   │   │   │   ├── sidebar
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   ├── inputs-form
+│   │   │       │   │   │   │   │   └── __tests__
+│   │   │       │   │   │   │   └── header
+│   │   │       │   │   │   │       └── __tests__
+│   │   │       │   │   │   └── chat
+│   │   │       │   │   │       ├── thought
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── log
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── loading-anim
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── citation
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       ├── chat-input-area
+│   │   │       │   │   │       │   └── __tests__
+│   │   │       │   │   │       └── answer
+│   │   │       │   │   │           ├── __tests__
+│   │   │       │   │   │           ├── __mocks__
+│   │   │       │   │   │           └── human-input-content
+│   │   │       │   │   │               └── __tests__
+│   │   │       │   │   ├── carousel
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── block-input
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── badge
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── auto-height-textarea
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── audio-gallery
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── audio-btn
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── app-icon-picker
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── app-icon
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── answer-icon
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── amplitude
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── agent-log-modal
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── action-button
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── app-sidebar
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── snippet-info
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── nav-link
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   ├── dataset-info
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── app-info
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── apps
+│   │   │       │   │   ├── __tests__
+│   │   │       │   │   ├── hooks
+│   │   │       │   │   │   └── __tests__
+│   │   │       │   │   └── first-empty-state
+│   │   │       │   └── app
+│   │   │       │       ├── workflow-log
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── type-selector
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── text-generate
+│   │   │       │       │   ├── saved-items
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   └── no-data
+│   │   │       │       │   │       └── __tests__
+│   │   │       │       │   └── item
+│   │   │       │       │       └── __tests__
+│   │   │       │       ├── __tests__
+│   │   │       │       ├── switch-app-modal
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── overview
+│   │   │       │       │   ├── __tests__
+│   │   │       │       │   ├── settings
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── embedded
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── customize
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── assets
+│   │   │       │       │   └── apikey-info-panel
+│   │   │       │       │       └── __tests__
+│   │   │       │       ├── log-annotation
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── log
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── in-site-message
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── duplicate-modal
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── create-from-dsl-modal
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── create-app-modal
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── create-app-dialog
+│   │   │       │       │   ├── __tests__
+│   │   │       │       │   ├── app-list
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   └── app-card
+│   │   │       │       │       └── __tests__
+│   │   │       │       ├── configuration
+│   │   │       │       │   ├── tools
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── __tests__
+│   │   │       │       │   ├── prompt-value-panel
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── images
+│   │   │       │       │   ├── hooks
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── debug
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   ├── debug-with-single-model
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   └── debug-with-multiple-model
+│   │   │       │       │   │       └── __tests__
+│   │   │       │       │   ├── dataset-config
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   ├── settings-modal
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── select-dataset
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── params-config
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── context-var
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   └── card-item
+│   │   │       │       │   │       └── __tests__
+│   │   │       │       │   ├── ctrl-btn-group
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── config-vision
+│   │   │       │       │   │   └── __tests__
+│   │   │       │       │   ├── config-var
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   ├── select-type-item
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── config-string
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── config-select
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   └── config-modal
+│   │   │       │       │   │       └── __tests__
+│   │   │       │       │   ├── config-prompt
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   ├── conversation-history
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   └── confirm-add-var
+│   │   │       │       │   │       └── __tests__
+│   │   │       │       │   ├── config
+│   │   │       │       │   │   ├── __tests__
+│   │   │       │       │   │   ├── code-generator
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── automatic
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   ├── assistant-type-picker
+│   │   │       │       │   │   │   └── __tests__
+│   │   │       │       │   │   └── agent
+│   │   │       │       │   │       ├── agent-tools
+│   │   │       │       │   │       │   └── __tests__
+│   │   │       │       │   │       └── agent-setting
+│   │   │       │       │   │           └── __tests__
+│   │   │       │       │   └── base
+│   │   │       │       │       ├── warning-mask
+│   │   │       │       │       │   └── __tests__
+│   │   │       │       │       ├── var-highlight
+│   │   │       │       │       │   └── __tests__
+│   │   │       │       │       ├── operation-btn
+│   │   │       │       │       │   └── __tests__
+│   │   │       │       │       ├── group-name
+│   │   │       │       │       │   └── __tests__
+│   │   │       │       │       └── feature-panel
+│   │   │       │       │           └── __tests__
+│   │   │       │       ├── app-publisher
+│   │   │       │       │   └── __tests__
+│   │   │       │       ├── app-access-control
+│   │   │       │       │   └── __tests__
+│   │   │       │       └── annotation
+│   │   │       │           ├── view-annotation-modal
+│   │   │       │           │   └── __tests__
+│   │   │       │           ├── __tests__
+│   │   │       │           ├── remove-annotation-confirm-modal
+│   │   │       │           │   └── __tests__
+│   │   │       │           ├── header-opts
+│   │   │       │           │   └── __tests__
+│   │   │       │           ├── edit-annotation-modal
+│   │   │       │           │   ├── __tests__
+│   │   │       │           │   └── edit-item
+│   │   │       │           │       └── __tests__
+│   │   │       │           ├── clear-all-annotations-confirm-modal
+│   │   │       │           │   └── __tests__
+│   │   │       │           ├── batch-add-annotation-modal
+│   │   │       │           │   └── __tests__
+│   │   │       │           └── add-annotation-modal
+│   │   │       │               ├── __tests__
+│   │   │       │               └── edit-item
+│   │   │       │                   └── __tests__
+│   │   │       ├── (commonLayout)
+│   │   │       │   ├── tools
+│   │   │       │   ├── __tests__
+│   │   │       │   ├── snippets
+│   │   │       │   │   └── [snippetId]
+│   │   │       │   │       └── orchestrate
+│   │   │       │   ├── plugins
+│   │   │       │   ├── marketplace
+│   │   │       │   │   └── __tests__
+│   │   │       │   ├── integrations
+│   │   │       │   │   └── [[...slug]]
+│   │   │       │   ├── installed
+│   │   │       │   │   └── [appId]
+│   │   │       │   │       └── __tests__
+│   │   │       │   ├── explore
+│   │   │       │   │   ├── installed
+│   │   │       │   │   │   └── [appId]
+│   │   │       │   │   │       └── __tests__
+│   │   │       │   │   └── apps
+│   │   │       │   ├── education-apply
+│   │   │       │   ├── datasets
+│   │   │       │   │   ├── (datasetDetailLayout)
+│   │   │       │   │   │   └── [datasetId]
+│   │   │       │   │   │       ├── __tests__
+│   │   │       │   │   │       ├── settings
+│   │   │       │   │   │       ├── pipeline
+│   │   │       │   │   │       ├── hitTesting
+│   │   │       │   │   │       ├── documents
+│   │   │       │   │   │       │   ├── [documentId]
+│   │   │       │   │   │       │   │   └── settings
+│   │   │       │   │   │       │   ├── create-from-pipeline
+│   │   │       │   │   │       │   └── create
+│   │   │       │   │   │       └── api
+│   │   │       │   │   ├── create-from-pipeline
+│   │   │       │   │   ├── create
+│   │   │       │   │   └── connect
+│   │   │       │   ├── apps
+│   │   │       │   └── app
+│   │   │       │       └── (appDetailLayout)
+│   │   │       │           └── [appId]
+│   │   │       │               ├── workflow
+│   │   │       │               ├── __tests__
+│   │   │       │               ├── overview
+│   │   │       │               │   ├── tracing
+│   │   │       │               │   │   └── __tests__
+│   │   │       │               │   └── time-range-picker
+│   │   │       │               ├── logs
+│   │   │       │               ├── develop
+│   │   │       │               ├── configuration
+│   │   │       │               └── annotations
+│   │   │       ├── auth
+│   │   │       │   └── refresh
+│   │   │       │       └── __tests__
+│   │   │       ├── activate
+│   │   │       └── account
+│   │   │           ├── oauth
+│   │   │           │   └── authorize
+│   │   │           └── (commonLayout)
+│   │   │               ├── delete-account
+│   │   │               │   └── components
+│   │   │               └── account-page
+│   │   ├── sdks
+│   │   │   ├── php-client
+│   │   │   └── nodejs-client
+│   │   │       ├── tests
+│   │   │       ├── src
+│   │   │       │   ├── types
+│   │   │       │   ├── internal
+│   │   │       │   ├── http
+│   │   │       │   ├── errors
+│   │   │       │   └── client
+│   │   │       └── scripts
+│   │   ├── scripts
+│   │   │   └── stress-test
+│   │   │       ├── setup
+│   │   │       │   └── dsl
+│   │   │       └── common
+│   │   ├── packages
+│   │   │   ├── tsconfig
+│   │   │   ├── migrate-no-unchecked-indexed-access
+│   │   │   │   ├── src
+│   │   │   │   │   └── no-unchecked-indexed-access
+│   │   │   │   └── bin
+│   │   │   ├── iconify-collections
+│   │   │   │   ├── scripts
+│   │   │   │   ├── custom-vender
+│   │   │   │   ├── custom-public
+│   │   │   │   └── assets
+│   │   │   │       ├── vender
+│   │   │   │       │   ├── workflow
+│   │   │   │       │   ├── system
+│   │   │   │       │   ├── solid
+│   │   │   │       │   │   ├── users
+│   │   │   │       │   │   ├── shapes
+│   │   │   │       │   │   ├── security
+│   │   │   │       │   │   ├── mediaAndDevices
+│   │   │   │       │   │   ├── layout
+│   │   │   │       │   │   ├── general
+│   │   │   │       │   │   ├── FinanceAndECommerce
+│   │   │   │       │   │   ├── files
+│   │   │   │       │   │   ├── education
+│   │   │   │       │   │   ├── editor
+│   │   │   │       │   │   ├── development
+│   │   │   │       │   │   ├── communication
+│   │   │   │       │   │   ├── arrows
+│   │   │   │       │   │   └── alertsAndFeedback
+│   │   │   │       │   ├── plugin
+│   │   │   │       │   ├── pipeline
+│   │   │   │       │   ├── other
+│   │   │   │       │   ├── main-nav
+│   │   │   │       │   ├── line
+│   │   │   │       │   │   ├── weather
+│   │   │   │       │   │   ├── users
+│   │   │   │       │   │   ├── time
+│   │   │   │       │   │   ├── shapes
+│   │   │   │       │   │   ├── others
+│   │   │   │       │   │   ├── mediaAndDevices
+│   │   │   │       │   │   ├── layout
+│   │   │   │       │   │   ├── images
+│   │   │   │       │   │   ├── general
+│   │   │   │       │   │   ├── financeAndECommerce
+│   │   │   │       │   │   ├── files
+│   │   │   │       │   │   ├── education
+│   │   │   │       │   │   ├── editor
+│   │   │   │       │   │   ├── development
+│   │   │   │       │   │   ├── communication
+│   │   │   │       │   │   ├── arrows
+│   │   │   │       │   │   └── alertsAndFeedback
+│   │   │   │       │   ├── knowledge
+│   │   │   │       │   ├── integrations
+│   │   │   │       │   └── features
+│   │   │   │       └── public
+│   │   │   │           ├── tracing
+│   │   │   │           ├── thought
+│   │   │   │           ├── plugins
+│   │   │   │           ├── other
+│   │   │   │           ├── model
+│   │   │   │           ├── llm
+│   │   │   │           ├── knowledge
+│   │   │   │           │   ├── online-drive
+│   │   │   │           │   └── dataset-card
+│   │   │   │           ├── files
+│   │   │   │           ├── education
+│   │   │   │           ├── common
+│   │   │   │           ├── billing
+│   │   │   │           └── avatar
+│   │   │   ├── dify-ui
+│   │   │   │   └── src
+│   │   │   │       ├── tooltip
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── toast
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── themes
+│   │   │   │       ├── textarea
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── tabs
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── switch
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── styles
+│   │   │   │       ├── status-dot
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── slider
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── select
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── segmented-control
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── scroll-area
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── radio-group
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── radio
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── progress
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── preview-card
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── popover
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── plugins
+│   │   │   │       ├── pagination
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── number-field
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── meter
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── kbd
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── internals
+│   │   │   │       ├── input
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── form
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── file-tree
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── fieldset
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── field
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── dropdown-menu
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── drawer
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── dialog
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── context-menu
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── combobox
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── collapsible
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── checkbox-group
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── checkbox
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── button
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── avatar
+│   │   │   │       │   └── __tests__
+│   │   │   │       ├── autocomplete
+│   │   │   │       │   └── __tests__
+│   │   │   │       └── alert-dialog
+│   │   │   │           └── __tests__
+│   │   │   ├── dev-proxy
+│   │   │   │   ├── src
+│   │   │   │   └── bin
+│   │   │   └── contracts
+│   │   │       └── generated
+│   │   │           ├── enterprise
+│   │   │           └── api
+│   │   │               ├── web
+│   │   │               ├── service
+│   │   │               ├── openapi
+│   │   │               └── console
+│   │   │                   ├── workspaces
+│   │   │                   ├── workflow-generate
+│   │   │                   ├── workflow
+│   │   │                   ├── website
+│   │   │                   ├── trial-models
+│   │   │                   ├── trial-apps
+│   │   │                   ├── test
+│   │   │                   ├── tags
+│   │   │                   ├── tag-bindings
+│   │   │                   ├── system-features
+│   │   │                   ├── spec
+│   │   │                   ├── snippets
+│   │   │                   ├── rule-structured-output-generate
+│   │   │                   ├── rule-generate
+│   │   │                   ├── rule-code-generate
+│   │   │                   ├── reset-password
+│   │   │                   ├── remote-files
+│   │   │                   ├── refresh-token
+│   │   │                   ├── rag
+│   │   │                   ├── oauth
+│   │   │                   ├── notion
+│   │   │                   ├── notification
+│   │   │                   ├── logout
+│   │   │                   ├── login
+│   │   │                   ├── instruction-generate
+│   │   │                   ├── installed-apps
+│   │   │                   ├── info
+│   │   │                   ├── form
+│   │   │                   ├── forgot-password
+│   │   │                   ├── files
+│   │   │                   ├── features
+│   │   │                   ├── explore
+│   │   │                   ├── email-register
+│   │   │                   ├── email-code-login
+│   │   │                   ├── data-source
+│   │   │                   ├── datasets
+│   │   │                   ├── compliance
+│   │   │                   ├── code-based-extension
+│   │   │                   ├── billing
+│   │   │                   ├── auth
+│   │   │                   ├── apps
+│   │   │                   ├── app-dsl-version
+│   │   │                   ├── app
+│   │   │                   ├── api-key-auth
+│   │   │                   ├── api-based-extension
+│   │   │                   ├── all-workspaces
+│   │   │                   ├── agent
+│   │   │                   ├── activate
+│   │   │                   └── account
+│   │   ├── images
+│   │   ├── e2e
+│   │   │   ├── support
+│   │   │   ├── scripts
+│   │   │   ├── fixtures
+│   │   │   └── features
+│   │   │       ├── support
+│   │   │       ├── step-definitions
+│   │   │       │   ├── smoke
+│   │   │       │   ├── common
+│   │   │       │   ├── auth
+│   │   │       │   └── apps
+│   │   │       ├── smoke
+│   │   │       ├── auth
+│   │   │       └── apps
+│   │   ├── docs
+│   │   │   ├── zh-TW
+│   │   │   ├── zh-CN
+│   │   │   ├── weaviate
+│   │   │   │   └── WEAVIATE_MIGRATION_GUIDE
+│   │   │   ├── vi-VN
+│   │   │   ├── tr-TR
+│   │   │   ├── tlh
+│   │   │   ├── sl-SI
+│   │   │   ├── pt-BR
+│   │   │   ├── ko-KR
+│   │   │   ├── ja-JP
+│   │   │   ├── it-IT
+│   │   │   ├── hi-IN
+│   │   │   ├── fr-FR
+│   │   │   ├── es-ES
+│   │   │   ├── design
+│   │   │   │   └── human-in-the-loop
+│   │   │   ├── de-DE
+│   │   │   ├── cross-env-app-migration
+│   │   │   ├── bn-BD
+│   │   │   └── ar-SA
+│   │   ├── docker
+│   │   │   ├── volumes
+│   │   │   │   ├── weaviate
+│   │   │   │   │   └── raft
+│   │   │   │   │       └── snapshots
+│   │   │   │   ├── sandbox
+│   │   │   │   │   ├── dependencies
+│   │   │   │   │   └── conf
+│   │   │   │   ├── redis
+│   │   │   │   │   └── data
+│   │   │   │   ├── plugin_daemon
+│   │   │   │   ├── opensearch
+│   │   │   │   ├── oceanbase
+│   │   │   │   │   └── init.d
+│   │   │   │   ├── myscale
+│   │   │   │   │   └── config
+│   │   │   │   │       └── users.d
+│   │   │   │   ├── db
+│   │   │   │   │   └── data
+│   │   │   │   │       └── pgdata
+│   │   │   │   ├── certbot
+│   │   │   │   │   ├── www
+│   │   │   │   │   └── conf
+│   │   │   │   │       └── live
+│   │   │   │   └── app
+│   │   │   │       └── storage
+│   │   │   ├── tidb
+│   │   │   │   └── config
+│   │   │   ├── startupscripts
+│   │   │   ├── ssrf_proxy
+│   │   │   ├── pgvector
+│   │   │   ├── nginx
+│   │   │   │   ├── ssl
+│   │   │   │   └── conf.d
+│   │   │   ├── iris
+│   │   │   ├── envs
+│   │   │   │   ├── vectorstores
+│   │   │   │   ├── infrastructure
+│   │   │   │   ├── databases
+│   │   │   │   └── core-services
+│   │   │   ├── elasticsearch
+│   │   │   ├── couchbase-server
+│   │   │   └── certbot
+│   │   ├── dify-agent
+│   │   │   ├── tests
+│   │   │   │   ├── local
+│   │   │   │   │   ├── examples
+│   │   │   │   │   ├── dify_agent
+│   │   │   │   │   │   ├── storage
+│   │   │   │   │   │   ├── server
+│   │   │   │   │   │   ├── runtime
+│   │   │   │   │   │   ├── protocol
+│   │   │   │   │   │   ├── layers
+│   │   │   │   │   │   │   ├── shell
+│   │   │   │   │   │   │   ├── output
+│   │   │   │   │   │   │   ├── execution_context
+│   │   │   │   │   │   │   ├── drive
+│   │   │   │   │   │   │   ├── dify_plugin
+│   │   │   │   │   │   │   └── ask_human
+│   │   │   │   │   │   ├── client
+│   │   │   │   │   │   ├── agent_stub
+│   │   │   │   │   │   │   ├── server
+│   │   │   │   │   │   │   │   └── tokens
+│   │   │   │   │   │   │   ├── protocol
+│   │   │   │   │   │   │   ├── client
+│   │   │   │   │   │   │   └── cli
+│   │   │   │   │   │   └── adapters
+│   │   │   │   │   │       └── llm
+│   │   │   │   │   ├── agenton_collections
+│   │   │   │   │   │   ├── transformers
+│   │   │   │   │   │   └── layers
+│   │   │   │   │   │       ├── pydantic_ai
+│   │   │   │   │   │       └── plain
+│   │   │   │   │   └── agenton
+│   │   │   │   │       ├── layers
+│   │   │   │   │       └── compositor
+│   │   │   │   └── docs
+│   │   │   ├── src
+│   │   │   │   ├── dify_agent
+│   │   │   │   │   ├── storage
+│   │   │   │   │   ├── server
+│   │   │   │   │   │   └── routes
+│   │   │   │   │   ├── runtime
+│   │   │   │   │   ├── protocol
+│   │   │   │   │   ├── layers
+│   │   │   │   │   │   ├── shell
+│   │   │   │   │   │   ├── output
+│   │   │   │   │   │   ├── execution_context
+│   │   │   │   │   │   ├── drive
+│   │   │   │   │   │   ├── dify_plugin
+│   │   │   │   │   │   └── ask_human
+│   │   │   │   │   ├── client
+│   │   │   │   │   ├── agent_stub
+│   │   │   │   │   │   ├── server
+│   │   │   │   │   │   │   ├── tokens
+│   │   │   │   │   │   │   └── routes
+│   │   │   │   │   │   ├── protocol
+│   │   │   │   │   │   ├── grpc
+│   │   │   │   │   │   │   └── _generated
+│   │   │   │   │   │   ├── client
+│   │   │   │   │   │   └── cli
+│   │   │   │   │   └── adapters
+│   │   │   │   │       └── llm
+│   │   │   │   ├── agenton_collections
+│   │   │   │   │   ├── transformers
+│   │   │   │   │   └── layers
+│   │   │   │   │       ├── pydantic_ai
+│   │   │   │   │       └── plain
+│   │   │   │   └── agenton
+│   │   │   │       ├── layers
+│   │   │   │       └── compositor
+│   │   │   ├── proto
+│   │   │   │   └── dify
+│   │   │   │       └── agent
+│   │   │   │           └── stub
+│   │   │   │               └── v1
+│   │   │   ├── examples
+│   │   │   │   ├── dify_agent
+│   │   │   │   │   └── dify_agent_examples
+│   │   │   │   └── agenton
+│   │   │   │       └── agenton_examples
+│   │   │   ├── docs
+│   │   │   │   ├── dify-agent
+│   │   │   │   │   ├── user-manual
+│   │   │   │   │   │   ├── structured-output-layer
+│   │   │   │   │   │   ├── shell-layer
+│   │   │   │   │   │   ├── prompt-layer
+│   │   │   │   │   │   ├── plugin-tool-layer
+│   │   │   │   │   │   ├── plugin-llm-layer
+│   │   │   │   │   │   ├── history-layer
+│   │   │   │   │   │   ├── execution-context-layer
+│   │   │   │   │   │   └── ask-human-layer
+│   │   │   │   │   ├── guide
+│   │   │   │   │   ├── get-started
+│   │   │   │   │   ├── examples
+│   │   │   │   │   └── concepts
+│   │   │   │   │       └── run-lifecycle
+│   │   │   │   └── agenton
+│   │   │   │       ├── guide
+│   │   │   │       └── examples
+│   │   │   └── docker
+│   │   │       └── shellctl
+│   │   ├── dev
+│   │   ├── cli
+│   │   │   ├── test
+│   │   │   │   ├── scripts
+│   │   │   │   ├── fixtures
+│   │   │   │   │   └── dify-mock
+│   │   │   │   └── e2e
+│   │   │   │       ├── suites
+│   │   │   │       │   ├── run
+│   │   │   │       │   ├── output
+│   │   │   │       │   ├── framework
+│   │   │   │       │   ├── error-handling
+│   │   │   │       │   ├── dsl
+│   │   │   │       │   ├── discovery
+│   │   │   │       │   ├── auth
+│   │   │   │       │   └── agent
+│   │   │   │       ├── setup
+│   │   │   │       ├── helpers
+│   │   │   │       └── fixtures
+│   │   │   │           └── apps
+│   │   │   ├── src
+│   │   │   │   ├── workspace
+│   │   │   │   ├── version
+│   │   │   │   ├── util
+│   │   │   │   ├── types
+│   │   │   │   ├── sys
+│   │   │   │   │   └── io
+│   │   │   │   ├── store
+│   │   │   │   ├── limit
+│   │   │   │   ├── http
+│   │   │   │   ├── help
+│   │   │   │   ├── framework
+│   │   │   │   ├── errors
+│   │   │   │   ├── env
+│   │   │   │   ├── config
+│   │   │   │   ├── commands
+│   │   │   │   │   ├── version
+│   │   │   │   │   ├── use
+│   │   │   │   │   │   ├── workspace
+│   │   │   │   │   │   ├── host
+│   │   │   │   │   │   └── account
+│   │   │   │   │   ├── skills
+│   │   │   │   │   │   └── install
+│   │   │   │   │   ├── _shared
+│   │   │   │   │   ├── set
+│   │   │   │   │   │   └── member
+│   │   │   │   │   ├── run
+│   │   │   │   │   │   └── app
+│   │   │   │   │   │       └── _strategies
+│   │   │   │   │   ├── resume
+│   │   │   │   │   │   └── app
+│   │   │   │   │   ├── import
+│   │   │   │   │   │   └── app
+│   │   │   │   │   ├── get
+│   │   │   │   │   │   ├── workspace
+│   │   │   │   │   │   ├── member
+│   │   │   │   │   │   └── app
+│   │   │   │   │   ├── export
+│   │   │   │   │   │   └── app
+│   │   │   │   │   ├── env
+│   │   │   │   │   │   └── list
+│   │   │   │   │   ├── describe
+│   │   │   │   │   │   └── app
+│   │   │   │   │   ├── delete
+│   │   │   │   │   │   └── member
+│   │   │   │   │   ├── create
+│   │   │   │   │   │   └── member
+│   │   │   │   │   ├── config
+│   │   │   │   │   │   ├── view
+│   │   │   │   │   │   ├── unset
+│   │   │   │   │   │   ├── set
+│   │   │   │   │   │   ├── path
+│   │   │   │   │   │   └── get
+│   │   │   │   │   └── auth
+│   │   │   │   │       ├── whoami
+│   │   │   │   │       ├── logout
+│   │   │   │   │       ├── login
+│   │   │   │   │       ├── list
+│   │   │   │   │       └── devices
+│   │   │   │   │           ├── _shared
+│   │   │   │   │           ├── revoke
+│   │   │   │   │           └── list
+│   │   │   │   ├── cache
+│   │   │   │   ├── auth
+│   │   │   │   └── api
+│   │   │   ├── scripts
+│   │   │   │   └── lib
+│   │   │   └── bin
+│   │   └── api
+│   │       ├── tests
+│   │       │   ├── unit_tests
+│   │       │   │   ├── utils
+│   │       │   │   │   ├── yaml
+│   │       │   │   │   ├── structured_output_parser
+│   │       │   │   │   ├── position_helper
+│   │       │   │   │   ├── http_parser
+│   │       │   │   │   └── encryption
+│   │       │   │   ├── tools
+│   │       │   │   ├── tasks
+│   │       │   │   ├── services
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   ├── tools
+│   │       │   │   │   ├── retention
+│   │       │   │   │   │   └── workflow_run
+│   │       │   │   │   ├── recommend_app
+│   │       │   │   │   ├── rag_pipeline
+│   │       │   │   │   │   └── pipeline_template
+│   │       │   │   │   ├── plugin
+│   │       │   │   │   ├── openapi
+│   │       │   │   │   ├── enterprise
+│   │       │   │   │   ├── data_migration
+│   │       │   │   │   ├── auth
+│   │       │   │   │   └── agent
+│   │       │   │   ├── repositories
+│   │       │   │   ├── oss
+│   │       │   │   │   ├── volcengine_tos
+│   │       │   │   │   ├── tencent_cos
+│   │       │   │   │   ├── opendal
+│   │       │   │   │   ├── __mock
+│   │       │   │   │   ├── baidu_obs
+│   │       │   │   │   └── aliyun_oss
+│   │       │   │   │       └── aliyun_oss
+│   │       │   │   ├── models
+│   │       │   │   ├── libs
+│   │       │   │   │   ├── _human_input
+│   │       │   │   │   └── broadcast_channel
+│   │       │   │   │       └── redis
+│   │       │   │   ├── fields
+│   │       │   │   ├── factories
+│   │       │   │   ├── extensions
+│   │       │   │   │   ├── storage
+│   │       │   │   │   ├── otel
+│   │       │   │   │   │   └── decorators
+│   │       │   │   │   │       └── handlers
+│   │       │   │   │   └── logstore
+│   │       │   │   ├── events
+│   │       │   │   │   └── event_handlers
+│   │       │   │   ├── enums
+│   │       │   │   ├── enterprise
+│   │       │   │   │   └── telemetry
+│   │       │   │   ├── core
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   │   ├── nodes
+│   │       │   │   │   │   │   ├── webhook
+│   │       │   │   │   │   │   ├── trigger_plugin
+│   │       │   │   │   │   │   ├── tool
+│   │       │   │   │   │   │   ├── template_transform
+│   │       │   │   │   │   │   ├── parameter_extractor
+│   │       │   │   │   │   │   ├── llm
+│   │       │   │   │   │   │   ├── list_operator
+│   │       │   │   │   │   │   ├── knowledge_retrieval
+│   │       │   │   │   │   │   ├── knowledge_index
+│   │       │   │   │   │   │   ├── iteration
+│   │       │   │   │   │   │   ├── human_input
+│   │       │   │   │   │   │   ├── http_request
+│   │       │   │   │   │   │   ├── datasource
+│   │       │   │   │   │   │   ├── code
+│   │       │   │   │   │   │   ├── base
+│   │       │   │   │   │   │   ├── answer
+│   │       │   │   │   │   │   ├── agent_v2
+│   │       │   │   │   │   │   └── agent
+│   │       │   │   │   │   ├── graph_engine
+│   │       │   │   │   │   │   └── layers
+│   │       │   │   │   │   ├── generator
+│   │       │   │   │   │   ├── entities
+│   │       │   │   │   │   └── context
+│   │       │   │   │   ├── variables
+│   │       │   │   │   ├── trigger
+│   │       │   │   │   │   ├── utils
+│   │       │   │   │   │   └── debug
+│   │       │   │   │   ├── tools
+│   │       │   │   │   │   ├── workflow_as_tool
+│   │       │   │   │   │   ├── utils
+│   │       │   │   │   │   └── entities
+│   │       │   │   │   ├── telemetry
+│   │       │   │   │   ├── schemas
+│   │       │   │   │   ├── repositories
+│   │       │   │   │   ├── rag
+│   │       │   │   │   │   ├── splitter
+│   │       │   │   │   │   ├── retrieval
+│   │       │   │   │   │   ├── rerank
+│   │       │   │   │   │   ├── pipeline
+│   │       │   │   │   │   ├── indexing
+│   │       │   │   │   │   │   └── processor
+│   │       │   │   │   │   ├── extractor
+│   │       │   │   │   │   │   ├── watercrawl
+│   │       │   │   │   │   │   ├── unstructured
+│   │       │   │   │   │   │   ├── firecrawl
+│   │       │   │   │   │   │   └── blob
+│   │       │   │   │   │   ├── embedding
+│   │       │   │   │   │   ├── docstore
+│   │       │   │   │   │   ├── datasource
+│   │       │   │   │   │   │   ├── vdb
+│   │       │   │   │   │   │   └── keyword
+│   │       │   │   │   │   │       └── jieba
+│   │       │   │   │   │   ├── data_post_processor
+│   │       │   │   │   │   └── cleaner
+│   │       │   │   │   ├── prompt
+│   │       │   │   │   ├── plugin
+│   │       │   │   │   │   ├── utils
+│   │       │   │   │   │   ├── impl
+│   │       │   │   │   │   └── entities
+│   │       │   │   │   ├── ops
+│   │       │   │   │   ├── moderation
+│   │       │   │   │   │   └── api
+│   │       │   │   │   ├── model_runtime
+│   │       │   │   │   ├── memory
+│   │       │   │   │   ├── mcp
+│   │       │   │   │   │   ├── session
+│   │       │   │   │   │   ├── server
+│   │       │   │   │   │   ├── client
+│   │       │   │   │   │   └── auth
+│   │       │   │   │   ├── logging
+│   │       │   │   │   ├── llm_generator
+│   │       │   │   │   │   └── output_parser
+│   │       │   │   │   ├── helper
+│   │       │   │   │   │   └── code_executor
+│   │       │   │   │   │       ├── python3
+│   │       │   │   │   │       ├── jinja2
+│   │       │   │   │   │       └── javascript
+│   │       │   │   │   ├── file
+│   │       │   │   │   ├── external_data_tool
+│   │       │   │   │   │   └── api
+│   │       │   │   │   ├── extension
+│   │       │   │   │   ├── entities
+│   │       │   │   │   ├── datasource
+│   │       │   │   │   │   ├── website_crawl
+│   │       │   │   │   │   ├── utils
+│   │       │   │   │   │   ├── online_drive
+│   │       │   │   │   │   ├── online_document
+│   │       │   │   │   │   ├── local_file
+│   │       │   │   │   │   ├── entities
+│   │       │   │   │   │   └── __base
+│   │       │   │   │   ├── callback_handler
+│   │       │   │   │   ├── base
+│   │       │   │   │   ├── app
+│   │       │   │   │   │   ├── workflow
+│   │       │   │   │   │   │   └── layers
+│   │       │   │   │   │   ├── task_pipeline
+│   │       │   │   │   │   ├── layers
+│   │       │   │   │   │   ├── features
+│   │       │   │   │   │   │   └── rate_limiting
+│   │       │   │   │   │   ├── entities
+│   │       │   │   │   │   ├── apps
+│   │       │   │   │   │   │   ├── workflow
+│   │       │   │   │   │   │   ├── pipeline
+│   │       │   │   │   │   │   ├── completion
+│   │       │   │   │   │   │   ├── common
+│   │       │   │   │   │   │   ├── chat
+│   │       │   │   │   │   │   ├── agent_chat
+│   │       │   │   │   │   │   ├── agent_app
+│   │       │   │   │   │   │   └── advanced_chat
+│   │       │   │   │   │   └── app_config
+│   │       │   │   │   │       ├── workflow_ui_based_app
+│   │       │   │   │   │       ├── features
+│   │       │   │   │   │       │   └── file_upload
+│   │       │   │   │   │       ├── easy_ui_based_app
+│   │       │   │   │   │       └── common
+│   │       │   │   │   └── agent
+│   │       │   │   │       ├── strategy
+│   │       │   │   │       └── output_parser
+│   │       │   │   ├── controllers
+│   │       │   │   │   ├── web
+│   │       │   │   │   ├── trigger
+│   │       │   │   │   ├── service_api
+│   │       │   │   │   │   ├── end_user
+│   │       │   │   │   │   ├── dataset
+│   │       │   │   │   │   │   └── rag_pipeline
+│   │       │   │   │   │   └── app
+│   │       │   │   │   ├── openapi
+│   │       │   │   │   │   └── auth
+│   │       │   │   │   ├── inner_api
+│   │       │   │   │   │   ├── workspace
+│   │       │   │   │   │   ├── plugin
+│   │       │   │   │   │   └── app
+│   │       │   │   │   ├── files
+│   │       │   │   │   ├── console
+│   │       │   │   │   │   ├── workspace
+│   │       │   │   │   │   ├── tag
+│   │       │   │   │   │   ├── snippets
+│   │       │   │   │   │   ├── explore
+│   │       │   │   │   │   ├── datasets
+│   │       │   │   │   │   │   └── rag_pipeline
+│   │       │   │   │   │   ├── billing
+│   │       │   │   │   │   ├── auth
+│   │       │   │   │   │   ├── app
+│   │       │   │   │   │   └── agent
+│   │       │   │   │   └── common
+│   │       │   │   ├── configs
+│   │       │   │   ├── commands
+│   │       │   │   └── clients
+│   │       │   │       └── agent_backend
+│   │       │   ├── test_containers_integration_tests
+│   │       │   │   ├── workflow
+│   │       │   │   │   └── nodes
+│   │       │   │   │       └── code_executor
+│   │       │   │   ├── trigger
+│   │       │   │   ├── tasks
+│   │       │   │   ├── services
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   ├── tools
+│   │       │   │   │   ├── recommend_app
+│   │       │   │   │   ├── rag_pipeline
+│   │       │   │   │   ├── plugin
+│   │       │   │   │   ├── enterprise
+│   │       │   │   │   └── auth
+│   │       │   │   ├── repositories
+│   │       │   │   ├── models
+│   │       │   │   ├── libs
+│   │       │   │   │   └── broadcast_channel
+│   │       │   │   │       └── redis
+│   │       │   │   ├── helpers
+│   │       │   │   ├── factories
+│   │       │   │   ├── core
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   ├── repositories
+│   │       │   │   │   ├── rag
+│   │       │   │   │   │   ├── retrieval
+│   │       │   │   │   │   └── pipeline
+│   │       │   │   │   └── app
+│   │       │   │   │       └── layers
+│   │       │   │   ├── controllers
+│   │       │   │   │   ├── web
+│   │       │   │   │   ├── service_api
+│   │       │   │   │   │   └── dataset
+│   │       │   │   │   ├── openapi
+│   │       │   │   │   ├── mcp
+│   │       │   │   │   └── console
+│   │       │   │   │       ├── workspace
+│   │       │   │   │       ├── explore
+│   │       │   │   │       ├── datasets
+│   │       │   │   │       │   └── rag_pipeline
+│   │       │   │   │       ├── auth
+│   │       │   │   │       └── app
+│   │       │   │   └── commands
+│   │       │   ├── integration_tests
+│   │       │   │   ├── workflow
+│   │       │   │   │   └── nodes
+│   │       │   │   │       ├── __mock
+│   │       │   │   │       ├── knowledge_retrieval
+│   │       │   │   │       ├── knowledge_index
+│   │       │   │   │       └── code_executor
+│   │       │   │   ├── vdb
+│   │       │   │   ├── utils
+│   │       │   │   ├── tools
+│   │       │   │   │   ├── __mock_server
+│   │       │   │   │   ├── __mock
+│   │       │   │   │   ├── code
+│   │       │   │   │   └── api_tool
+│   │       │   │   ├── tasks
+│   │       │   │   ├── storage
+│   │       │   │   ├── services
+│   │       │   │   │   ├── retention
+│   │       │   │   │   └── plugin
+│   │       │   │   ├── plugin
+│   │       │   │   │   ├── tools
+│   │       │   │   │   └── __mock
+│   │       │   │   ├── model_runtime
+│   │       │   │   │   └── __mock
+│   │       │   │   ├── libs
+│   │       │   │   │   └── broadcast_channel
+│   │       │   │   │       └── redis
+│   │       │   │   │           └── utils
+│   │       │   │   ├── factories
+│   │       │   │   ├── core
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   │   └── nodes
+│   │       │   │   │   │       └── datasource
+│   │       │   │   │   └── datasource
+│   │       │   │   └── controllers
+│   │       │   │       ├── openapi
+│   │       │   │       └── console
+│   │       │   │           └── app
+│   │       │   ├── helpers
+│   │       │   └── fixtures
+│   │       │       └── workflow
+│   │       ├── templates
+│   │       │   └── without-brand
+│   │       ├── tasks
+│   │       │   ├── workflow_cfs_scheduler
+│   │       │   ├── rag_pipeline
+│   │       │   ├── app_generate
+│   │       │   └── annotation
+│   │       ├── services
+│   │       │   ├── workflow
+│   │       │   ├── trigger
+│   │       │   ├── tools
+│   │       │   ├── retention
+│   │       │   │   ├── workflow_run
+│   │       │   │   └── conversation
+│   │       │   ├── recommend_app
+│   │       │   │   ├── remote
+│   │       │   │   ├── database
+│   │       │   │   └── buildin
+│   │       │   ├── rag_pipeline
+│   │       │   │   ├── transform
+│   │       │   │   ├── pipeline_template
+│   │       │   │   │   ├── remote
+│   │       │   │   │   ├── database
+│   │       │   │   │   ├── customized
+│   │       │   │   │   └── built_in
+│   │       │   │   └── entity
+│   │       │   ├── plugin
+│   │       │   ├── openapi
+│   │       │   ├── errors
+│   │       │   ├── entities
+│   │       │   │   ├── knowledge_entities
+│   │       │   │   └── external_knowledge_entities
+│   │       │   ├── enterprise
+│   │       │   ├── document_indexing_proxy
+│   │       │   ├── data_migration
+│   │       │   ├── auth
+│   │       │   │   ├── watercrawl
+│   │       │   │   ├── jina
+│   │       │   │   └── firecrawl
+│   │       │   └── agent
+│   │       ├── schedule
+│   │       ├── repositories
+│   │       │   └── entities
+│   │       ├── providers
+│   │       │   ├── vdb
+│   │       │   │   ├── vdb-weaviate
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_weaviate
+│   │       │   │   ├── vdb-vikingdb
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_vikingdb
+│   │       │   │   ├── vdb-vastbase
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_vastbase
+│   │       │   │   ├── vdb-upstash
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_upstash
+│   │       │   │   ├── vdb-tidb-vector
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_tidb_vector
+│   │       │   │   ├── vdb-tidb-on-qdrant
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   └── unit_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_tidb_on_qdrant
+│   │       │   │   ├── vdb-tencent
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_tencent
+│   │       │   │   ├── vdb-tablestore
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_tablestore
+│   │       │   │   ├── vdb-relyt
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   └── unit_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_relyt
+│   │       │   │   ├── vdb-qdrant
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_qdrant
+│   │       │   │   ├── vdb-pgvecto-rs
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_pgvecto_rs
+│   │       │   │   ├── vdb-pgvector
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_pgvector
+│   │       │   │   ├── vdb-oracle
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_oracle
+│   │       │   │   ├── vdb-opensearch
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   └── unit_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_opensearch
+│   │       │   │   ├── vdb-opengauss
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_opengauss
+│   │       │   │   ├── vdb-oceanbase
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_oceanbase
+│   │       │   │   ├── vdb-myscale
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_myscale
+│   │       │   │   ├── vdb-milvus
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_milvus
+│   │       │   │   ├── vdb-matrixone
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_matrixone
+│   │       │   │   ├── vdb-lindorm
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_lindorm
+│   │       │   │   ├── vdb-iris
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_iris
+│   │       │   │   ├── vdb-huawei-cloud
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_huawei_cloud
+│   │       │   │   ├── vdb-hologres
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_hologres
+│   │       │   │   ├── vdb-elasticsearch
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_elasticsearch
+│   │       │   │   ├── vdb-couchbase
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_couchbase
+│   │       │   │   ├── vdb-clickzetta
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_clickzetta
+│   │       │   │   ├── vdb-chroma
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_chroma
+│   │       │   │   ├── vdb-baidu
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_baidu
+│   │       │   │   ├── vdb-analyticdb
+│   │       │   │   │   ├── tests
+│   │       │   │   │   │   ├── unit_tests
+│   │       │   │   │   │   └── integration_tests
+│   │       │   │   │   └── src
+│   │       │   │   │       └── dify_vdb_analyticdb
+│   │       │   │   └── vdb-alibabacloud-mysql
+│   │       │   │       ├── tests
+│   │       │   │       │   └── unit_tests
+│   │       │   │       └── src
+│   │       │   │           └── dify_vdb_alibabacloud_mysql
+│   │       │   └── trace
+│   │       │       ├── trace-weave
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── weave_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_weave
+│   │       │       │           └── entities
+│   │       │       ├── trace-tencent
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── tencent_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_tencent
+│   │       │       │           └── entities
+│   │       │       ├── trace-opik
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── opik_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_opik
+│   │       │       ├── trace-mlflow
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── mlflow_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_mlflow
+│   │       │       ├── trace-langsmith
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── langsmith_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_langsmith
+│   │       │       │           └── entities
+│   │       │       ├── trace-langfuse
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── langfuse_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_langfuse
+│   │       │       │           └── entities
+│   │       │       ├── trace-arize-phoenix
+│   │       │       │   ├── tests
+│   │       │       │   │   └── unit_tests
+│   │       │       │   │       └── arize_phoenix_trace
+│   │       │       │   └── src
+│   │       │       │       └── dify_trace_arize_phoenix
+│   │       │       └── trace-aliyun
+│   │       │           ├── tests
+│   │       │           │   └── unit_tests
+│   │       │           │       └── aliyun_trace
+│   │       │           │           ├── entities
+│   │       │           │           └── data_exporter
+│   │       │           └── src
+│   │       │               └── dify_trace_aliyun
+│   │       │                   ├── entities
+│   │       │                   └── data_exporter
+│   │       ├── openapi
+│   │       │   └── markdown
+│   │       ├── models
+│   │       │   └── utils
+│   │       ├── migrations
+│   │       │   └── versions
+│   │       ├── libs
+│   │       │   └── broadcast_channel
+│   │       │       └── redis
+│   │       ├── fields
+│   │       ├── factories
+│   │       │   └── file_factory
+│   │       ├── extensions
+│   │       │   ├── storage
+│   │       │   │   └── clickzetta_volume
+│   │       │   ├── otel
+│   │       │   │   ├── semconv
+│   │       │   │   ├── parser
+│   │       │   │   └── decorators
+│   │       │   │       └── handlers
+│   │       │   └── logstore
+│   │       │       └── repositories
+│   │       ├── events
+│   │       │   └── event_handlers
+│   │       ├── enums
+│   │       ├── enterprise
+│   │       │   └── telemetry
+│   │       │       └── entities
+│   │       ├── docker
+│   │       ├── dev
+│   │       ├── core
+│   │       │   ├── workflow
+│   │       │   │   ├── nodes
+│   │       │   │   │   ├── trigger_webhook
+│   │       │   │   │   ├── trigger_schedule
+│   │       │   │   │   ├── trigger_plugin
+│   │       │   │   │   ├── knowledge_retrieval
+│   │       │   │   │   ├── knowledge_index
+│   │       │   │   │   ├── datasource
+│   │       │   │   │   ├── agent_v2
+│   │       │   │   │   └── agent
+│   │       │   │   └── generator
+│   │       │   │       └── prompts
+│   │       │   ├── trigger
+│   │       │   │   ├── utils
+│   │       │   │   ├── entities
+│   │       │   │   └── debug
+│   │       │   ├── tools
+│   │       │   │   ├── workflow_as_tool
+│   │       │   │   ├── utils
+│   │       │   │   │   └── dataset_retriever
+│   │       │   │   ├── plugin_tool
+│   │       │   │   ├── mcp_tool
+│   │       │   │   ├── entities
+│   │       │   │   ├── custom_tool
+│   │       │   │   ├── builtin_tool
+│   │       │   │   │   └── providers
+│   │       │   │   │       ├── webscraper
+│   │       │   │   │       │   ├── tools
+│   │       │   │   │       │   └── _assets
+│   │       │   │   │       ├── time
+│   │       │   │   │       │   ├── tools
+│   │       │   │   │       │   └── _assets
+│   │       │   │   │       ├── code
+│   │       │   │   │       │   ├── tools
+│   │       │   │   │       │   └── _assets
+│   │       │   │   │       └── audio
+│   │       │   │   │           ├── tools
+│   │       │   │   │           └── _assets
+│   │       │   │   └── __base
+│   │       │   ├── telemetry
+│   │       │   ├── schemas
+│   │       │   │   └── builtin
+│   │       │   │       └── schemas
+│   │       │   │           └── v1
+│   │       │   ├── repositories
+│   │       │   ├── rbac
+│   │       │   ├── rag
+│   │       │   │   ├── summary_index
+│   │       │   │   ├── splitter
+│   │       │   │   ├── retrieval
+│   │       │   │   │   ├── router
+│   │       │   │   │   └── output_parser
+│   │       │   │   ├── rerank
+│   │       │   │   │   └── entity
+│   │       │   │   ├── pipeline
+│   │       │   │   ├── models
+│   │       │   │   ├── index_processor
+│   │       │   │   │   ├── processor
+│   │       │   │   │   └── constant
+│   │       │   │   ├── extractor
+│   │       │   │   │   ├── watercrawl
+│   │       │   │   │   ├── unstructured
+│   │       │   │   │   ├── firecrawl
+│   │       │   │   │   ├── entity
+│   │       │   │   │   └── blob
+│   │       │   │   ├── entities
+│   │       │   │   ├── embedding
+│   │       │   │   ├── docstore
+│   │       │   │   ├── datasource
+│   │       │   │   │   ├── vdb
+│   │       │   │   │   └── keyword
+│   │       │   │   │       └── jieba
+│   │       │   │   ├── data_post_processor
+│   │       │   │   └── cleaner
+│   │       │   ├── prompt
+│   │       │   │   ├── utils
+│   │       │   │   ├── prompt_templates
+│   │       │   │   └── entities
+│   │       │   ├── plugin
+│   │       │   │   ├── utils
+│   │       │   │   ├── impl
+│   │       │   │   ├── entities
+│   │       │   │   ├── endpoint
+│   │       │   │   └── backwards_invocation
+│   │       │   ├── ops
+│   │       │   │   └── entities
+│   │       │   ├── moderation
+│   │       │   │   ├── openai_moderation
+│   │       │   │   ├── keywords
+│   │       │   │   └── api
+│   │       │   ├── memory
+│   │       │   ├── mcp
+│   │       │   │   ├── session
+│   │       │   │   ├── server
+│   │       │   │   ├── client
+│   │       │   │   └── auth
+│   │       │   ├── logging
+│   │       │   ├── llm_generator
+│   │       │   │   └── output_parser
+│   │       │   ├── helper
+│   │       │   │   └── code_executor
+│   │       │   │       ├── python3
+│   │       │   │       ├── jinja2
+│   │       │   │       └── javascript
+│   │       │   ├── file
+│   │       │   ├── external_data_tool
+│   │       │   │   └── api
+│   │       │   ├── extension
+│   │       │   ├── errors
+│   │       │   ├── entities
+│   │       │   ├── db
+│   │       │   ├── datasource
+│   │       │   │   ├── website_crawl
+│   │       │   │   ├── utils
+│   │       │   │   ├── online_drive
+│   │       │   │   ├── online_document
+│   │       │   │   ├── local_file
+│   │       │   │   ├── entities
+│   │       │   │   └── __base
+│   │       │   ├── callback_handler
+│   │       │   ├── base
+│   │       │   │   └── tts
+│   │       │   ├── app
+│   │       │   │   ├── workflow
+│   │       │   │   │   └── layers
+│   │       │   │   ├── task_pipeline
+│   │       │   │   ├── llm
+│   │       │   │   ├── layers
+│   │       │   │   ├── file_access
+│   │       │   │   ├── features
+│   │       │   │   │   ├── rate_limiting
+│   │       │   │   │   ├── hosting_moderation
+│   │       │   │   │   └── annotation_reply
+│   │       │   │   ├── entities
+│   │       │   │   ├── apps
+│   │       │   │   │   ├── workflow
+│   │       │   │   │   ├── pipeline
+│   │       │   │   │   ├── completion
+│   │       │   │   │   ├── common
+│   │       │   │   │   ├── chat
+│   │       │   │   │   ├── agent_chat
+│   │       │   │   │   ├── agent_app
+│   │       │   │   │   └── advanced_chat
+│   │       │   │   └── app_config
+│   │       │   │       ├── workflow_ui_based_app
+│   │       │   │       │   └── variables
+│   │       │   │       ├── features
+│   │       │   │       │   ├── text_to_speech
+│   │       │   │       │   ├── suggested_questions_after_answer
+│   │       │   │       │   ├── speech_to_text
+│   │       │   │       │   ├── retrieval_resource
+│   │       │   │       │   ├── opening_statement
+│   │       │   │       │   ├── more_like_this
+│   │       │   │       │   └── file_upload
+│   │       │   │       ├── easy_ui_based_app
+│   │       │   │       │   ├── variables
+│   │       │   │       │   ├── prompt_template
+│   │       │   │       │   ├── model_config
+│   │       │   │       │   ├── dataset
+│   │       │   │       │   └── agent
+│   │       │   │       └── common
+│   │       │   │           ├── sensitive_word_avoidance
+│   │       │   │           └── parameters_mapping
+│   │       │   └── agent
+│   │       │       ├── strategy
+│   │       │       ├── prompt
+│   │       │       └── output_parser
+│   │       ├── controllers
+│   │       │   ├── web
+│   │       │   ├── trigger
+│   │       │   ├── service_api
+│   │       │   │   ├── workspace
+│   │       │   │   ├── end_user
+│   │       │   │   ├── dataset
+│   │       │   │   │   └── rag_pipeline
+│   │       │   │   └── app
+│   │       │   ├── openapi
+│   │       │   │   └── auth
+│   │       │   ├── mcp
+│   │       │   ├── inner_api
+│   │       │   │   ├── workspace
+│   │       │   │   ├── plugin
+│   │       │   │   └── app
+│   │       │   ├── files
+│   │       │   ├── console
+│   │       │   │   ├── workspace
+│   │       │   │   ├── tag
+│   │       │   │   ├── socketio
+│   │       │   │   ├── snippets
+│   │       │   │   ├── explore
+│   │       │   │   ├── datasets
+│   │       │   │   │   └── rag_pipeline
+│   │       │   │   ├── billing
+│   │       │   │   ├── auth
+│   │       │   │   ├── app
+│   │       │   │   └── agent
+│   │       │   └── common
+│   │       ├── contexts
+│   │       ├── context
+│   │       ├── constants
+│   │       ├── configs
+│   │       │   ├── remote_settings_sources
+│   │       │   │   ├── nacos
+│   │       │   │   └── apollo
+│   │       │   ├── packaging
+│   │       │   ├── observability
+│   │       │   │   └── otel
+│   │       │   ├── middleware
+│   │       │   │   ├── vdb
+│   │       │   │   ├── storage
+│   │       │   │   └── cache
+│   │       │   ├── feature
+│   │       │   │   └── hosted_service
+│   │       │   ├── extra
+│   │       │   ├── enterprise
+│   │       │   └── deploy
+│   │       ├── commands
+│   │       └── clients
+│   │           └── agent_backend
+│   ├── deepseek-qwen
+│   │   └── abandon
+│   │       └── new_task_planner
+│   │           ├── tests
+│   │           │   ├── test_package
+│   │           │   │   └── __pycache__
+│   │           │   ├── __pycache__
+│   │           │   ├── eval_suite
+│   │           │   │   └── __pycache__
+│   │           │   └── abandon
+│   │           │       ├── __pycache__
+│   │           │       └── old_eval_suite
+│   │           │           ├── __pycache__
+│   │           │           ├── harness
+│   │           │           │   └── __pycache__
+│   │           │           └── data
+│   │           ├── src
+│   │           │   ├── task_planner.egg-info
+│   │           │   ├── task_planner
+│   │           │   │   ├── utils
+│   │           │   │   │   └── __pycache__
+│   │           │   │   ├── services
+│   │           │   │   │   ├── stream
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── __pycache__
+│   │           │   │   │   └── agent
+│   │           │   │   │       └── __pycache__
+│   │           │   │   ├── __pycache__
+│   │           │   │   ├── main
+│   │           │   │   │   ├── ui
+│   │           │   │   │   │   ├── __pycache__
+│   │           │   │   │   │   └── callbacks
+│   │           │   │   │   │       └── __pycache__
+│   │           │   │   │   ├── __pycache__
+│   │           │   │   │   └── assets
+│   │           │   │   ├── logs
+│   │           │   │   ├── infrastructure
+│   │           │   │   │   ├── session_store
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── __pycache__
+│   │           │   │   │   ├── prompts
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── llm
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── cog
+│   │           │   │   │   │   ├── sections
+│   │           │   │   │   │   │   └── __pycache__
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   └── assets
+│   │           │   │   │       └── __pycache__
+│   │           │   │   ├── eval_suite
+│   │           │   │   │   ├── scorers
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── runners
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── report
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── __pycache__
+│   │           │   │   │   ├── jury
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   ├── hil
+│   │           │   │   │   │   └── __pycache__
+│   │           │   │   │   └── golden
+│   │           │   │   │       └── __pycache__
+│   │           │   │   ├── core
+│   │           │   │   │   ├── __pycache__
+│   │           │   │   │   ├── graph
+│   │           │   │   │   │   ├── __pycache__
+│   │           │   │   │   │   └── nodes
+│   │           │   │   │   │       └── __pycache__
+│   │           │   │   │   └── db
+│   │           │   │   │       └── __pycache__
+│   │           │   │   ├── config_ui
+│   │           │   │   │   └── __pycache__
+│   │           │   │   └── abandon
+│   │           │   └── logs
+│   │           ├── scripts
+│   │           ├── logs
+│   │           ├── examples
+│   │           ├── eval_reports
+│   │           ├── docs
+│   │           ├── data
+│   │           │   └── blocked_words
+│   │           └── config
+│   ├── data
+│   ├── chroma_db_native
+│   │   └── a1fc9e40-715b-42a4-8b72-5609bf3d22f0
+│   ├── chroma_db_advanced
+│   │   └── f4968679-8e25-4f58-a619-1662027a4500
+│   ├── chroma_db
+│   ├── bili_video_db
+│   │   └── 4fb98698-ea43-4927-b186-91bd99cc5955
+│   └── agent_memory
+├── notes
+└── docs
+
+3497 directories
