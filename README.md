@@ -45,14 +45,18 @@
 
 ## 已拆分的独立项目
 
-以下项目已孵化成熟，拥有各自的仓库与维护节奏：
+以下项目已经孵化成熟，拥有各自的仓库与维护节奏：
 
 | 项目 | 独立仓库 | 说明 |
 |------|---------|------|
 | **Task Planner** | [task-planner](https://github.com/Duckherewegoo/task-planner) | 基于 LangGraph 的智能任务规划引擎（DAG 编排 + 流式执行 + 评估套件） |
+| **Nano Harness** | [nano-harness](https://github.com/Duckherewegoo/Nano-Harness) | 功能完整的 AI 系统框架，集成了多智能体协作、MCP 协议、Skill 插件、提示词工程、多模态处理、Bash 执行等核心能力 |
+| **Deepdream Agent** | [deepdream-agent](https://github.com/Duckherewegoo/deepdream-agent) | 基于 LangGraph + PyTorch 的工程化重构版本，使用千问大模型驱动的智能梦境生成助手  |
+| **Langgraph Writer Multiagent** | [langgraph-writer-multiagent](https://github.com/Duckherewegoo/langgraph-writer-multiagent) | 包含 ReAct 循环、审核机制、人机交互、MCP 协议、CSV 分析、计算器、天气查询的工程化智能体 |
+| **Langgraph Multi Agent** | [langgraph-multi-agent](https://github.com/Duckherewegoo/langgraph-multi-agent) | 基于 LangGraph 的智能任务规划引擎（DAG 编排 + 流式执行 + 评估套件） |
 
 > 本仓库对应目录下保留最后版本的快照（`abandon/`），用于追溯历史。
-> 具体维护、Issue、PR 请走独立仓库。
+> 具体维护走独立仓库。
 
 ---
 
@@ -145,6 +149,7 @@
 - LangGraph Agent 演示（含 MCP 工具集成）
 - 多 Agent 协作系统（Researcher / Writer / Reviewer / Editor）
 - Nano Harness（轻量 Agent 评估框架）
+**说明** : 以上均分离作为独立项目进行进一步开发
 
 ### 千问 / 元宝大模型实验
 
@@ -155,6 +160,10 @@
 
 **目录**：`abandon/qwen/`、`abandon/rag_comparison_*.json`
 **包含**：不同向量检索策略对比（HNSW / FAISS / 混合）、RAG 效果评估、中文检索优化
+
+### 毕设
+**目录** : `abandon/doubao/ct-sr`
+**包含** : 根据本人毕设论文还原的代码（源代码因为sed失误导致数字和模型函数全部丢失,使用豆包从论文超参数和相关模型描述，基于残缺代码还原而成）, 目前还不能正常使用
 
 ### 独立脚本与工具
 
