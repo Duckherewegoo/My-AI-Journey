@@ -1,0 +1,119 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/__pycache__/__init__.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.827202
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1768797095 (2026-01-19 12:31:35)
+# Source code size mod 2**32: 384 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/__init__.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: 1
+#    1: ('LPIPS',)
+#    2: ('calc_ssim', 'calc_psnr', 'calc_ssim_torch', 'calc_psnr_torch')
+#    3: ('AverageMeter',)
+#    4: ('AddGaussianNoise',)
+#    5: ('_dwt_haar', '_iwt_haar', 'DWT_Haar', 'IWT_Haar')
+#    6: ('deeplesion_collate_fn',)
+#    7: None
+# Names:
+#    0: lpips
+#    1: LPIPS
+#    2: metrics
+#    3: calc_ssim
+#    4: calc_psnr
+#    5: calc_ssim_torch
+#    6: calc_psnr_torch
+#    7: imetrics
+#    8: meters
+#    9: AverageMeter
+#   10: transforms
+#   11: AddGaussianNoise
+#   12: wavelet
+#   13: _dwt_haar
+#   14: _iwt_haar
+#   15: DWT_Haar
+#   16: IWT_Haar
+#   17: collate_fn
+#   18: deeplesion_collate_fn
+
+  0:           0 RESUME               0
+
+  2:           2 LOAD_CONST           (1)
+               4 LOAD_CONST           (('LPIPS',))
+               6 IMPORT_NAME          (lpips)
+               8 IMPORT_FROM          (LPIPS)
+              10 STORE_NAME           (LPIPS)
+              12 POP_TOP
+
+  3:          14 LOAD_CONST           (1)
+              16 LOAD_CONST           (('calc_ssim', 'calc_psnr', 'calc_ssim_torch', 'calc_psnr_torch'))
+              18 IMPORT_NAME          (metrics)
+              20 IMPORT_FROM          (calc_ssim)
+              22 STORE_NAME           (calc_ssim)
+              24 IMPORT_FROM          (calc_psnr)
+              26 STORE_NAME           (calc_psnr)
+              28 IMPORT_FROM          (calc_ssim_torch)
+              30 STORE_NAME           (calc_ssim_torch)
+              32 IMPORT_FROM          (calc_psnr_torch)
+              34 STORE_NAME           (calc_psnr_torch)
+              36 POP_TOP
+
+  4:          38 LOAD_CONST           (1)
+              40 LOAD_CONST           (('calc_ssim', 'calc_psnr', 'calc_ssim_torch', 'calc_psnr_torch'))
+              42 IMPORT_NAME          (imetrics)
+              44 IMPORT_FROM          (calc_ssim)
+              46 STORE_NAME           (calc_ssim)
+              48 IMPORT_FROM          (calc_psnr)
+              50 STORE_NAME           (calc_psnr)
+              52 IMPORT_FROM          (calc_ssim_torch)
+              54 STORE_NAME           (calc_ssim_torch)
+              56 IMPORT_FROM          (calc_psnr_torch)
+              58 STORE_NAME           (calc_psnr_torch)
+              60 POP_TOP
+
+  5:          62 LOAD_CONST           (1)
+              64 LOAD_CONST           (('AverageMeter',))
+              66 IMPORT_NAME          (meters)
+              68 IMPORT_FROM          (AverageMeter)
+              70 STORE_NAME           (AverageMeter)
+              72 POP_TOP
+
+  6:          74 LOAD_CONST           (1)
+              76 LOAD_CONST           (('AddGaussianNoise',))
+              78 IMPORT_NAME          (transforms)
+              80 IMPORT_FROM          (AddGaussianNoise)
+              82 STORE_NAME           (AddGaussianNoise)
+              84 POP_TOP
+
+  7:          86 LOAD_CONST           (1)
+              88 LOAD_CONST           (('_dwt_haar', '_iwt_haar', 'DWT_Haar', 'IWT_Haar'))
+              90 IMPORT_NAME          (wavelet)
+              92 IMPORT_FROM          (_dwt_haar)
+              94 STORE_NAME           (_dwt_haar)
+              96 IMPORT_FROM          (_iwt_haar)
+              98 STORE_NAME           (_iwt_haar)
+             100 IMPORT_FROM          (DWT_Haar)
+             102 STORE_NAME           (DWT_Haar)
+             104 IMPORT_FROM          (IWT_Haar)
+             106 STORE_NAME           (IWT_Haar)
+             108 POP_TOP
+
+  8:         110 LOAD_CONST           (1)
+             112 LOAD_CONST           (('deeplesion_collate_fn',))
+             114 IMPORT_NAME          (collate_fn)
+             116 IMPORT_FROM          (deeplesion_collate_fn)
+             118 STORE_NAME           (deeplesion_collate_fn)
+             120 POP_TOP
+             122 LOAD_CONST           (None)
+             124 RETURN_VALUE
+

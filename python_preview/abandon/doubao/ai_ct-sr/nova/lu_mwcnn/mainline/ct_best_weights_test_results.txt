@@ -1,0 +1,1671 @@
+================================================================================
+📊 CT最佳权重测试结果（极速10张图评估）
+================================================================================
+[best_covid] best_covid_ct_loss_epoch_1.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_loss_epoch_2.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_loss_epoch_3.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_lpips_epoch_1.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_lpips_epoch_3.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_psnr_epoch_1.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_psnr_epoch_2.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_psnr_epoch_3.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_psnr_epoch_9.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_ssim_epoch_1.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_ssim_epoch_2.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4673
+--------------------------------------------------------------------------------
+[best_covid] best_covid_ct_ssim_epoch_3.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_77.pth | PSNR: 14.99 | SSIM: 0.2494 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_78.pth | PSNR: 14.92 | SSIM: 0.2501 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_8.pth | PSNR: 17.21 | SSIM: 0.3081 | LPIPS: 0.481
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_80.pth | PSNR: 14.84 | SSIM: 0.2513 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_81.pth | PSNR: 14.8 | SSIM: 0.2519 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_82.pth | PSNR: 14.75 | SSIM: 0.2525 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_83.pth | PSNR: 14.71 | SSIM: 0.253 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_84.pth | PSNR: 14.67 | SSIM: 0.2536 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_85.pth | PSNR: 14.63 | SSIM: 0.2541 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_86.pth | PSNR: 14.59 | SSIM: 0.2547 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_87.pth | PSNR: 14.54 | SSIM: 0.2551 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_89.pth | PSNR: 14.47 | SSIM: 0.2562 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_9.pth | PSNR: 17.25 | SSIM: 0.3017 | LPIPS: 0.4816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_90.pth | PSNR: 14.43 | SSIM: 0.2566 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_91.pth | PSNR: 14.4 | SSIM: 0.2571 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_92.pth | PSNR: 14.36 | SSIM: 0.2576 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_94.pth | PSNR: 14.3 | SSIM: 0.2584 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_95.pth | PSNR: 14.27 | SSIM: 0.2589 | LPIPS: 0.5876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_96.pth | PSNR: 14.23 | SSIM: 0.2592 | LPIPS: 0.5873
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_97.pth | PSNR: 14.22 | SSIM: 0.2597 | LPIPS: 0.5872
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_98.pth | PSNR: 14.19 | SSIM: 0.2601 | LPIPS: 0.5871
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_99.pth | PSNR: 14.16 | SSIM: 0.2604 | LPIPS: 0.5868
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_35.pth | PSNR: 17.04 | SSIM: 0.2375 | LPIPS: 0.5639
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_36.pth | PSNR: 16.98 | SSIM: 0.2372 | LPIPS: 0.5663
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_4.pth | PSNR: 16.93 | SSIM: 0.3584 | LPIPS: 0.4791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_40.pth | PSNR: 16.74 | SSIM: 0.2364 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_41.pth | PSNR: 16.69 | SSIM: 0.2363 | LPIPS: 0.5763
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_42.pth | PSNR: 16.64 | SSIM: 0.2362 | LPIPS: 0.5774
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_44.pth | PSNR: 16.55 | SSIM: 0.2363 | LPIPS: 0.5785
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_45.pth | PSNR: 16.51 | SSIM: 0.2364 | LPIPS: 0.5791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_46.pth | PSNR: 16.47 | SSIM: 0.2365 | LPIPS: 0.5796
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_47.pth | PSNR: 16.43 | SSIM: 0.2366 | LPIPS: 0.5801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_48.pth | PSNR: 16.39 | SSIM: 0.2367 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_49.pth | PSNR: 16.36 | SSIM: 0.2368 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_5.pth | PSNR: 17.02 | SSIM: 0.3408 | LPIPS: 0.4802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_54.pth | PSNR: 16.21 | SSIM: 0.2373 | LPIPS: 0.5823
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_55.pth | PSNR: 16.19 | SSIM: 0.2374 | LPIPS: 0.5825
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_57.pth | PSNR: 16.14 | SSIM: 0.2376 | LPIPS: 0.5828
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_58.pth | PSNR: 16.12 | SSIM: 0.2377 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_59.pth | PSNR: 16.1 | SSIM: 0.2378 | LPIPS: 0.583
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_50.pth | PSNR: 16.33 | SSIM: 0.2369 | LPIPS: 0.5813
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_51.pth | PSNR: 16.3 | SSIM: 0.237 | LPIPS: 0.5816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_52.pth | PSNR: 16.27 | SSIM: 0.2372 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_53.pth | PSNR: 16.24 | SSIM: 0.2373 | LPIPS: 0.582
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_54.pth | PSNR: 16.21 | SSIM: 0.2373 | LPIPS: 0.5823
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_55.pth | PSNR: 16.19 | SSIM: 0.2374 | LPIPS: 0.5825
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_56.pth | PSNR: 16.16 | SSIM: 0.2376 | LPIPS: 0.5826
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_57.pth | PSNR: 16.14 | SSIM: 0.2376 | LPIPS: 0.5828
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_58.pth | PSNR: 16.12 | SSIM: 0.2377 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_59.pth | PSNR: 16.1 | SSIM: 0.2378 | LPIPS: 0.583
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_6.pth | PSNR: 17.09 | SSIM: 0.3271 | LPIPS: 0.4801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_60.pth | PSNR: 16.08 | SSIM: 0.2379 | LPIPS: 0.5831
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_61.pth | PSNR: 15.99 | SSIM: 0.2384 | LPIPS: 0.5836
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_62.pth | PSNR: 15.91 | SSIM: 0.239 | LPIPS: 0.584
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_63.pth | PSNR: 15.83 | SSIM: 0.2396 | LPIPS: 0.5845
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_64.pth | PSNR: 15.75 | SSIM: 0.2403 | LPIPS: 0.585
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_65.pth | PSNR: 15.67 | SSIM: 0.2409 | LPIPS: 0.5853
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_66.pth | PSNR: 15.61 | SSIM: 0.2415 | LPIPS: 0.5855
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_67.pth | PSNR: 15.54 | SSIM: 0.2422 | LPIPS: 0.5857
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_68.pth | PSNR: 15.47 | SSIM: 0.2429 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_69.pth | PSNR: 15.42 | SSIM: 0.2437 | LPIPS: 0.5864
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_53.pth | PSNR: 16.24 | SSIM: 0.2373 | LPIPS: 0.582
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_54.pth | PSNR: 16.21 | SSIM: 0.2373 | LPIPS: 0.5823
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_55.pth | PSNR: 16.19 | SSIM: 0.2374 | LPIPS: 0.5825
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_56.pth | PSNR: 16.16 | SSIM: 0.2376 | LPIPS: 0.5826
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_57.pth | PSNR: 16.14 | SSIM: 0.2376 | LPIPS: 0.5828
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_58.pth | PSNR: 16.12 | SSIM: 0.2377 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_59.pth | PSNR: 16.1 | SSIM: 0.2378 | LPIPS: 0.583
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_6.pth | PSNR: 17.09 | SSIM: 0.3271 | LPIPS: 0.4801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_60.pth | PSNR: 16.08 | SSIM: 0.2379 | LPIPS: 0.5831
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_61.pth | PSNR: 15.99 | SSIM: 0.2384 | LPIPS: 0.5836
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_62.pth | PSNR: 15.91 | SSIM: 0.239 | LPIPS: 0.584
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_63.pth | PSNR: 15.83 | SSIM: 0.2396 | LPIPS: 0.5845
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_64.pth | PSNR: 15.75 | SSIM: 0.2403 | LPIPS: 0.585
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_65.pth | PSNR: 15.67 | SSIM: 0.2409 | LPIPS: 0.5853
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_66.pth | PSNR: 15.61 | SSIM: 0.2415 | LPIPS: 0.5855
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_67.pth | PSNR: 15.54 | SSIM: 0.2422 | LPIPS: 0.5857
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_68.pth | PSNR: 15.47 | SSIM: 0.2429 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_69.pth | PSNR: 15.42 | SSIM: 0.2437 | LPIPS: 0.5864
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_28.pth | PSNR: 17.4 | SSIM: 0.2432 | LPIPS: 0.5462
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_39.pth | PSNR: 16.8 | SSIM: 0.2365 | LPIPS: 0.5731
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_5.pth | PSNR: 17.02 | SSIM: 0.3408 | LPIPS: 0.4802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_7.pth | PSNR: 17.15 | SSIM: 0.3159 | LPIPS: 0.4805
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_80.pth | PSNR: 14.84 | SSIM: 0.2513 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_91.pth | PSNR: 14.4 | SSIM: 0.2571 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_101.pth | PSNR: 14.11 | SSIM: 0.2612 | LPIPS: 0.5865
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_112.pth | PSNR: 13.86 | SSIM: 0.2643 | LPIPS: 0.5838
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_126.pth | PSNR: 13.68 | SSIM: 0.2666 | LPIPS: 0.5804
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_142.pth | PSNR: 13.49 | SSIM: 0.2694 | LPIPS: 0.5775
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_153.pth | PSNR: 13.11 | SSIM: 0.2742 | LPIPS: 0.5729
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_18.pth | PSNR: 17.43 | SSIM: 0.2686 | LPIPS: 0.4998
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_3.pth | PSNR: 16.92 | SSIM: 0.3894 | LPIPS: 0.4745
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_40.pth | PSNR: 16.74 | SSIM: 0.2364 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_53.pth | PSNR: 16.24 | SSIM: 0.2373 | LPIPS: 0.582
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_65.pth | PSNR: 15.67 | SSIM: 0.2409 | LPIPS: 0.5853
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_76.pth | PSNR: 15.04 | SSIM: 0.2488 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_154.pth | PSNR: 13.11 | SSIM: 0.2745 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_155.pth | PSNR: 13.05 | SSIM: 0.2749 | LPIPS: 0.5717
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_156.pth | PSNR: 12.99 | SSIM: 0.2755 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_157.pth | PSNR: 12.93 | SSIM: 0.276 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_158.pth | PSNR: 12.89 | SSIM: 0.2767 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_159.pth | PSNR: 12.84 | SSIM: 0.2772 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_16.pth | PSNR: 17.41 | SSIM: 0.2723 | LPIPS: 0.4956
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_160.pth | PSNR: 12.8 | SSIM: 0.2778 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_161.pth | PSNR: 12.76 | SSIM: 0.2783 | LPIPS: 0.5714
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_162.pth | PSNR: 12.72 | SSIM: 0.2789 | LPIPS: 0.5713
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_163.pth | PSNR: 12.68 | SSIM: 0.2794 | LPIPS: 0.571
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_164.pth | PSNR: 12.64 | SSIM: 0.2799 | LPIPS: 0.5708
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_165.pth | PSNR: 12.6 | SSIM: 0.2805 | LPIPS: 0.5707
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_166.pth | PSNR: 12.57 | SSIM: 0.281 | LPIPS: 0.5706
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_167.pth | PSNR: 12.53 | SSIM: 0.2814 | LPIPS: 0.5705
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_168.pth | PSNR: 12.49 | SSIM: 0.2819 | LPIPS: 0.5704
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_169.pth | PSNR: 12.46 | SSIM: 0.2823 | LPIPS: 0.5702
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_17.pth | PSNR: 17.42 | SSIM: 0.2704 | LPIPS: 0.4979
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_170.pth | PSNR: 12.42 | SSIM: 0.2827 | LPIPS: 0.5699
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_171.pth | PSNR: 12.39 | SSIM: 0.2831 | LPIPS: 0.5697
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_153.pth | PSNR: 13.11 | SSIM: 0.2742 | LPIPS: 0.5729
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_154.pth | PSNR: 13.11 | SSIM: 0.2745 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_155.pth | PSNR: 13.05 | SSIM: 0.2749 | LPIPS: 0.5717
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_156.pth | PSNR: 12.99 | SSIM: 0.2755 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_157.pth | PSNR: 12.93 | SSIM: 0.276 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_158.pth | PSNR: 12.89 | SSIM: 0.2767 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_159.pth | PSNR: 12.84 | SSIM: 0.2772 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_16.pth | PSNR: 17.41 | SSIM: 0.2723 | LPIPS: 0.4956
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_160.pth | PSNR: 12.8 | SSIM: 0.2778 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_161.pth | PSNR: 12.76 | SSIM: 0.2783 | LPIPS: 0.5714
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_162.pth | PSNR: 12.72 | SSIM: 0.2789 | LPIPS: 0.5713
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_163.pth | PSNR: 12.68 | SSIM: 0.2794 | LPIPS: 0.571
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_164.pth | PSNR: 12.64 | SSIM: 0.2799 | LPIPS: 0.5708
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_165.pth | PSNR: 12.6 | SSIM: 0.2805 | LPIPS: 0.5707
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_166.pth | PSNR: 12.57 | SSIM: 0.281 | LPIPS: 0.5706
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_167.pth | PSNR: 12.53 | SSIM: 0.2814 | LPIPS: 0.5705
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_168.pth | PSNR: 12.49 | SSIM: 0.2819 | LPIPS: 0.5704
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_169.pth | PSNR: 12.46 | SSIM: 0.2823 | LPIPS: 0.5702
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_157.pth | PSNR: 12.93 | SSIM: 0.276 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_158.pth | PSNR: 12.89 | SSIM: 0.2767 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_159.pth | PSNR: 12.84 | SSIM: 0.2772 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_16.pth | PSNR: 17.41 | SSIM: 0.2723 | LPIPS: 0.4956
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_160.pth | PSNR: 12.8 | SSIM: 0.2778 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_161.pth | PSNR: 12.76 | SSIM: 0.2783 | LPIPS: 0.5714
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_162.pth | PSNR: 12.72 | SSIM: 0.2789 | LPIPS: 0.5713
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_163.pth | PSNR: 12.68 | SSIM: 0.2794 | LPIPS: 0.571
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_164.pth | PSNR: 12.64 | SSIM: 0.2799 | LPIPS: 0.5708
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_165.pth | PSNR: 12.6 | SSIM: 0.2805 | LPIPS: 0.5707
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_166.pth | PSNR: 12.57 | SSIM: 0.281 | LPIPS: 0.5706
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_167.pth | PSNR: 12.53 | SSIM: 0.2814 | LPIPS: 0.5705
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_168.pth | PSNR: 12.49 | SSIM: 0.2819 | LPIPS: 0.5704
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_169.pth | PSNR: 12.46 | SSIM: 0.2823 | LPIPS: 0.5702
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_17.pth | PSNR: 17.42 | SSIM: 0.2704 | LPIPS: 0.4979
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_170.pth | PSNR: 12.42 | SSIM: 0.2827 | LPIPS: 0.5699
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_171.pth | PSNR: 12.39 | SSIM: 0.2831 | LPIPS: 0.5697
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_18.pth | PSNR: 17.43 | SSIM: 0.2686 | LPIPS: 0.4998
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_19.pth | PSNR: 17.44 | SSIM: 0.2672 | LPIPS: 0.5015
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_154.pth | PSNR: 13.11 | SSIM: 0.2745 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_155.pth | PSNR: 13.05 | SSIM: 0.2749 | LPIPS: 0.5717
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_156.pth | PSNR: 12.99 | SSIM: 0.2755 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_157.pth | PSNR: 12.93 | SSIM: 0.276 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_158.pth | PSNR: 12.89 | SSIM: 0.2767 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_159.pth | PSNR: 12.84 | SSIM: 0.2772 | LPIPS: 0.5716
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_16.pth | PSNR: 17.41 | SSIM: 0.2723 | LPIPS: 0.4956
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_160.pth | PSNR: 12.8 | SSIM: 0.2778 | LPIPS: 0.5718
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_161.pth | PSNR: 12.76 | SSIM: 0.2783 | LPIPS: 0.5714
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_162.pth | PSNR: 12.72 | SSIM: 0.2789 | LPIPS: 0.5713
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_163.pth | PSNR: 12.68 | SSIM: 0.2794 | LPIPS: 0.571
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_164.pth | PSNR: 12.64 | SSIM: 0.2799 | LPIPS: 0.5708
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_165.pth | PSNR: 12.6 | SSIM: 0.2805 | LPIPS: 0.5707
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_166.pth | PSNR: 12.57 | SSIM: 0.281 | LPIPS: 0.5706
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_167.pth | PSNR: 12.53 | SSIM: 0.2814 | LPIPS: 0.5705
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_168.pth | PSNR: 12.49 | SSIM: 0.2819 | LPIPS: 0.5704
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_169.pth | PSNR: 12.46 | SSIM: 0.2823 | LPIPS: 0.5702
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_17.pth | PSNR: 17.42 | SSIM: 0.2704 | LPIPS: 0.4979
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_170.pth | PSNR: 12.42 | SSIM: 0.2827 | LPIPS: 0.5699
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_171.pth | PSNR: 12.39 | SSIM: 0.2831 | LPIPS: 0.5697
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_2.pth | PSNR: 16.79 | SSIM: 0.4339 | LPIPS: 0.4664
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_20.pth | PSNR: 17.44 | SSIM: 0.2659 | LPIPS: 0.503
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_21.pth | PSNR: 17.47 | SSIM: 0.2612 | LPIPS: 0.5092
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_22.pth | PSNR: 17.48 | SSIM: 0.257 | LPIPS: 0.5154
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_23.pth | PSNR: 17.48 | SSIM: 0.2535 | LPIPS: 0.5213
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_24.pth | PSNR: 17.48 | SSIM: 0.2506 | LPIPS: 0.5268
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_25.pth | PSNR: 17.47 | SSIM: 0.2483 | LPIPS: 0.5321
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_26.pth | PSNR: 17.45 | SSIM: 0.2463 | LPIPS: 0.537
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_27.pth | PSNR: 17.43 | SSIM: 0.2446 | LPIPS: 0.5418
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_28.pth | PSNR: 17.4 | SSIM: 0.2432 | LPIPS: 0.5462
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_29.pth | PSNR: 17.36 | SSIM: 0.242 | LPIPS: 0.55
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_170.pth | PSNR: 12.42 | SSIM: 0.2827 | LPIPS: 0.5699
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_171.pth | PSNR: 12.39 | SSIM: 0.2831 | LPIPS: 0.5697
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_18.pth | PSNR: 17.43 | SSIM: 0.2686 | LPIPS: 0.4998
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_19.pth | PSNR: 17.44 | SSIM: 0.2672 | LPIPS: 0.5015
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_2.pth | PSNR: 16.79 | SSIM: 0.4339 | LPIPS: 0.4664
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_20.pth | PSNR: 17.44 | SSIM: 0.2659 | LPIPS: 0.503
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_21.pth | PSNR: 17.47 | SSIM: 0.2612 | LPIPS: 0.5092
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_22.pth | PSNR: 17.48 | SSIM: 0.257 | LPIPS: 0.5154
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_23.pth | PSNR: 17.48 | SSIM: 0.2535 | LPIPS: 0.5213
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_24.pth | PSNR: 17.48 | SSIM: 0.2506 | LPIPS: 0.5268
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_25.pth | PSNR: 17.47 | SSIM: 0.2483 | LPIPS: 0.5321
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_26.pth | PSNR: 17.45 | SSIM: 0.2463 | LPIPS: 0.537
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_27.pth | PSNR: 17.43 | SSIM: 0.2446 | LPIPS: 0.5418
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_20.pth | PSNR: 17.44 | SSIM: 0.2659 | LPIPS: 0.503
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_21.pth | PSNR: 17.47 | SSIM: 0.2612 | LPIPS: 0.5092
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_22.pth | PSNR: 17.48 | SSIM: 0.257 | LPIPS: 0.5154
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_23.pth | PSNR: 17.48 | SSIM: 0.2535 | LPIPS: 0.5213
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_24.pth | PSNR: 17.48 | SSIM: 0.2506 | LPIPS: 0.5268
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_25.pth | PSNR: 17.47 | SSIM: 0.2483 | LPIPS: 0.5321
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_26.pth | PSNR: 17.45 | SSIM: 0.2463 | LPIPS: 0.537
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_27.pth | PSNR: 17.43 | SSIM: 0.2446 | LPIPS: 0.5418
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_28.pth | PSNR: 17.4 | SSIM: 0.2432 | LPIPS: 0.5462
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_29.pth | PSNR: 17.36 | SSIM: 0.242 | LPIPS: 0.55
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_3.pth | PSNR: 16.92 | SSIM: 0.3894 | LPIPS: 0.4745
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_19.pth | PSNR: 17.44 | SSIM: 0.2672 | LPIPS: 0.5015
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_2.pth | PSNR: 16.79 | SSIM: 0.4339 | LPIPS: 0.4664
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_20.pth | PSNR: 17.44 | SSIM: 0.2659 | LPIPS: 0.503
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_21.pth | PSNR: 17.47 | SSIM: 0.2612 | LPIPS: 0.5092
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_22.pth | PSNR: 17.48 | SSIM: 0.257 | LPIPS: 0.5154
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_24.pth | PSNR: 17.48 | SSIM: 0.2506 | LPIPS: 0.5268
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_25.pth | PSNR: 17.47 | SSIM: 0.2483 | LPIPS: 0.5321
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_29.pth | PSNR: 17.36 | SSIM: 0.242 | LPIPS: 0.55
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_3.pth | PSNR: 16.92 | SSIM: 0.3894 | LPIPS: 0.4745
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_30.pth | PSNR: 17.32 | SSIM: 0.2411 | LPIPS: 0.5528
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_33.pth | PSNR: 17.17 | SSIM: 0.2387 | LPIPS: 0.5596
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_29.pth | PSNR: 17.36 | SSIM: 0.242 | LPIPS: 0.55
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_3.pth | PSNR: 16.92 | SSIM: 0.3894 | LPIPS: 0.4745
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_30.pth | PSNR: 17.32 | SSIM: 0.2411 | LPIPS: 0.5528
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_31.pth | PSNR: 17.27 | SSIM: 0.2402 | LPIPS: 0.5553
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_32.pth | PSNR: 17.22 | SSIM: 0.2394 | LPIPS: 0.5575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_33.pth | PSNR: 17.17 | SSIM: 0.2387 | LPIPS: 0.5596
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_34.pth | PSNR: 17.11 | SSIM: 0.2381 | LPIPS: 0.5615
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_35.pth | PSNR: 17.04 | SSIM: 0.2375 | LPIPS: 0.5639
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_36.pth | PSNR: 16.98 | SSIM: 0.2372 | LPIPS: 0.5663
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_37.pth | PSNR: 16.92 | SSIM: 0.2369 | LPIPS: 0.5687
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_38.pth | PSNR: 16.86 | SSIM: 0.2366 | LPIPS: 0.5709
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_30.pth | PSNR: 17.32 | SSIM: 0.2411 | LPIPS: 0.5528
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_31.pth | PSNR: 17.27 | SSIM: 0.2402 | LPIPS: 0.5553
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_32.pth | PSNR: 17.22 | SSIM: 0.2394 | LPIPS: 0.5575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_33.pth | PSNR: 17.17 | SSIM: 0.2387 | LPIPS: 0.5596
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_34.pth | PSNR: 17.11 | SSIM: 0.2381 | LPIPS: 0.5615
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_35.pth | PSNR: 17.04 | SSIM: 0.2375 | LPIPS: 0.5639
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_36.pth | PSNR: 16.98 | SSIM: 0.2372 | LPIPS: 0.5663
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_37.pth | PSNR: 16.92 | SSIM: 0.2369 | LPIPS: 0.5687
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_38.pth | PSNR: 16.86 | SSIM: 0.2366 | LPIPS: 0.5709
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_39.pth | PSNR: 16.8 | SSIM: 0.2365 | LPIPS: 0.5731
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_4.pth | PSNR: 16.93 | SSIM: 0.3584 | LPIPS: 0.4791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_31.pth | PSNR: 17.27 | SSIM: 0.2402 | LPIPS: 0.5553
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_32.pth | PSNR: 17.22 | SSIM: 0.2394 | LPIPS: 0.5575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_33.pth | PSNR: 17.17 | SSIM: 0.2387 | LPIPS: 0.5596
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_34.pth | PSNR: 17.11 | SSIM: 0.2381 | LPIPS: 0.5615
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_35.pth | PSNR: 17.04 | SSIM: 0.2375 | LPIPS: 0.5639
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_36.pth | PSNR: 16.98 | SSIM: 0.2372 | LPIPS: 0.5663
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_37.pth | PSNR: 16.92 | SSIM: 0.2369 | LPIPS: 0.5687
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_38.pth | PSNR: 16.86 | SSIM: 0.2366 | LPIPS: 0.5709
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_39.pth | PSNR: 16.8 | SSIM: 0.2365 | LPIPS: 0.5731
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_4.pth | PSNR: 16.93 | SSIM: 0.3584 | LPIPS: 0.4791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_40.pth | PSNR: 16.74 | SSIM: 0.2364 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_4.pth | PSNR: 16.93 | SSIM: 0.3584 | LPIPS: 0.4791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_40.pth | PSNR: 16.74 | SSIM: 0.2364 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_41.pth | PSNR: 16.69 | SSIM: 0.2363 | LPIPS: 0.5763
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_42.pth | PSNR: 16.64 | SSIM: 0.2362 | LPIPS: 0.5774
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_43.pth | PSNR: 16.59 | SSIM: 0.2362 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_44.pth | PSNR: 16.55 | SSIM: 0.2363 | LPIPS: 0.5785
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_45.pth | PSNR: 16.51 | SSIM: 0.2364 | LPIPS: 0.5791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_46.pth | PSNR: 16.47 | SSIM: 0.2365 | LPIPS: 0.5796
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_47.pth | PSNR: 16.43 | SSIM: 0.2366 | LPIPS: 0.5801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_48.pth | PSNR: 16.39 | SSIM: 0.2367 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_49.pth | PSNR: 16.36 | SSIM: 0.2368 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_41.pth | PSNR: 16.69 | SSIM: 0.2363 | LPIPS: 0.5763
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_42.pth | PSNR: 16.64 | SSIM: 0.2362 | LPIPS: 0.5774
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_43.pth | PSNR: 16.59 | SSIM: 0.2362 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_44.pth | PSNR: 16.55 | SSIM: 0.2363 | LPIPS: 0.5785
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_45.pth | PSNR: 16.51 | SSIM: 0.2364 | LPIPS: 0.5791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_46.pth | PSNR: 16.47 | SSIM: 0.2365 | LPIPS: 0.5796
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_48.pth | PSNR: 16.39 | SSIM: 0.2367 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_49.pth | PSNR: 16.36 | SSIM: 0.2368 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_5.pth | PSNR: 17.02 | SSIM: 0.3408 | LPIPS: 0.4802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_50.pth | PSNR: 16.33 | SSIM: 0.2369 | LPIPS: 0.5813
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_52.pth | PSNR: 16.27 | SSIM: 0.2372 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_42.pth | PSNR: 16.64 | SSIM: 0.2362 | LPIPS: 0.5774
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_43.pth | PSNR: 16.59 | SSIM: 0.2362 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_44.pth | PSNR: 16.55 | SSIM: 0.2363 | LPIPS: 0.5785
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_45.pth | PSNR: 16.51 | SSIM: 0.2364 | LPIPS: 0.5791
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_46.pth | PSNR: 16.47 | SSIM: 0.2365 | LPIPS: 0.5796
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_47.pth | PSNR: 16.43 | SSIM: 0.2366 | LPIPS: 0.5801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_48.pth | PSNR: 16.39 | SSIM: 0.2367 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_49.pth | PSNR: 16.36 | SSIM: 0.2368 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_5.pth | PSNR: 17.02 | SSIM: 0.3408 | LPIPS: 0.4802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_50.pth | PSNR: 16.33 | SSIM: 0.2369 | LPIPS: 0.5813
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_51.pth | PSNR: 16.3 | SSIM: 0.237 | LPIPS: 0.5816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_54.pth | PSNR: 16.21 | SSIM: 0.2373 | LPIPS: 0.5823
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_55.pth | PSNR: 16.19 | SSIM: 0.2374 | LPIPS: 0.5825
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_57.pth | PSNR: 16.14 | SSIM: 0.2376 | LPIPS: 0.5828
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_58.pth | PSNR: 16.12 | SSIM: 0.2377 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_59.pth | PSNR: 16.1 | SSIM: 0.2378 | LPIPS: 0.583
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_6.pth | PSNR: 17.09 | SSIM: 0.3271 | LPIPS: 0.4801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_60.pth | PSNR: 16.08 | SSIM: 0.2379 | LPIPS: 0.5831
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_61.pth | PSNR: 15.99 | SSIM: 0.2384 | LPIPS: 0.5836
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_62.pth | PSNR: 15.91 | SSIM: 0.239 | LPIPS: 0.584
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_63.pth | PSNR: 15.83 | SSIM: 0.2396 | LPIPS: 0.5845
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_64.pth | PSNR: 15.75 | SSIM: 0.2403 | LPIPS: 0.585
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_61.pth | PSNR: 15.99 | SSIM: 0.2384 | LPIPS: 0.5836
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_62.pth | PSNR: 15.91 | SSIM: 0.239 | LPIPS: 0.584
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_63.pth | PSNR: 15.83 | SSIM: 0.2396 | LPIPS: 0.5845
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_64.pth | PSNR: 15.75 | SSIM: 0.2403 | LPIPS: 0.585
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_65.pth | PSNR: 15.67 | SSIM: 0.2409 | LPIPS: 0.5853
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_66.pth | PSNR: 15.61 | SSIM: 0.2415 | LPIPS: 0.5855
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_67.pth | PSNR: 15.54 | SSIM: 0.2422 | LPIPS: 0.5857
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_68.pth | PSNR: 15.47 | SSIM: 0.2429 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_69.pth | PSNR: 15.42 | SSIM: 0.2437 | LPIPS: 0.5864
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_7.pth | PSNR: 17.15 | SSIM: 0.3159 | LPIPS: 0.4805
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_70.pth | PSNR: 15.36 | SSIM: 0.2446 | LPIPS: 0.587
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_70.pth | PSNR: 15.36 | SSIM: 0.2446 | LPIPS: 0.587
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_71.pth | PSNR: 15.3 | SSIM: 0.2453 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_72.pth | PSNR: 15.25 | SSIM: 0.2461 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_73.pth | PSNR: 15.19 | SSIM: 0.2468 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_74.pth | PSNR: 15.14 | SSIM: 0.2475 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_75.pth | PSNR: 15.09 | SSIM: 0.2482 | LPIPS: 0.5885
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_76.pth | PSNR: 15.04 | SSIM: 0.2488 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_77.pth | PSNR: 14.99 | SSIM: 0.2494 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_78.pth | PSNR: 14.92 | SSIM: 0.2501 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_79.pth | PSNR: 14.86 | SSIM: 0.2507 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_8.pth | PSNR: 17.21 | SSIM: 0.3081 | LPIPS: 0.481
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_80.pth | PSNR: 14.84 | SSIM: 0.2513 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_70.pth | PSNR: 15.36 | SSIM: 0.2446 | LPIPS: 0.587
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_71.pth | PSNR: 15.3 | SSIM: 0.2453 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_72.pth | PSNR: 15.25 | SSIM: 0.2461 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_73.pth | PSNR: 15.19 | SSIM: 0.2468 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_74.pth | PSNR: 15.14 | SSIM: 0.2475 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_75.pth | PSNR: 15.09 | SSIM: 0.2482 | LPIPS: 0.5885
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_76.pth | PSNR: 15.04 | SSIM: 0.2488 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_77.pth | PSNR: 14.99 | SSIM: 0.2494 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_78.pth | PSNR: 14.92 | SSIM: 0.2501 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_79.pth | PSNR: 14.86 | SSIM: 0.2507 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_8.pth | PSNR: 17.21 | SSIM: 0.3081 | LPIPS: 0.481
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_66.pth | PSNR: 15.61 | SSIM: 0.2415 | LPIPS: 0.5855
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_67.pth | PSNR: 15.54 | SSIM: 0.2422 | LPIPS: 0.5857
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_68.pth | PSNR: 15.47 | SSIM: 0.2429 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_69.pth | PSNR: 15.42 | SSIM: 0.2437 | LPIPS: 0.5864
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_7.pth | PSNR: 17.15 | SSIM: 0.3159 | LPIPS: 0.4805
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_70.pth | PSNR: 15.36 | SSIM: 0.2446 | LPIPS: 0.587
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_71.pth | PSNR: 15.3 | SSIM: 0.2453 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_72.pth | PSNR: 15.25 | SSIM: 0.2461 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_73.pth | PSNR: 15.19 | SSIM: 0.2468 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_74.pth | PSNR: 15.14 | SSIM: 0.2475 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_75.pth | PSNR: 15.09 | SSIM: 0.2482 | LPIPS: 0.5885
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_72.pth | PSNR: 15.25 | SSIM: 0.2461 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_74.pth | PSNR: 15.14 | SSIM: 0.2475 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_75.pth | PSNR: 15.09 | SSIM: 0.2482 | LPIPS: 0.5885
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_77.pth | PSNR: 14.99 | SSIM: 0.2494 | LPIPS: 0.5884
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_79.pth | PSNR: 14.86 | SSIM: 0.2507 | LPIPS: 0.5883
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_8.pth | PSNR: 17.21 | SSIM: 0.3081 | LPIPS: 0.481
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_80.pth | PSNR: 14.84 | SSIM: 0.2513 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_82.pth | PSNR: 14.75 | SSIM: 0.2525 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_83.pth | PSNR: 14.71 | SSIM: 0.253 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_85.pth | PSNR: 14.63 | SSIM: 0.2541 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_86.pth | PSNR: 14.59 | SSIM: 0.2547 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_81.pth | PSNR: 14.8 | SSIM: 0.2519 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_82.pth | PSNR: 14.75 | SSIM: 0.2525 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_83.pth | PSNR: 14.71 | SSIM: 0.253 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_84.pth | PSNR: 14.67 | SSIM: 0.2536 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_85.pth | PSNR: 14.63 | SSIM: 0.2541 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_86.pth | PSNR: 14.59 | SSIM: 0.2547 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_87.pth | PSNR: 14.54 | SSIM: 0.2551 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_88.pth | PSNR: 14.5 | SSIM: 0.2556 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_89.pth | PSNR: 14.47 | SSIM: 0.2562 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_9.pth | PSNR: 17.25 | SSIM: 0.3017 | LPIPS: 0.4816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_90.pth | PSNR: 14.43 | SSIM: 0.2566 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_128.pth | PSNR: 13.65 | SSIM: 0.2669 | LPIPS: 0.5802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_141.pth | PSNR: 13.52 | SSIM: 0.2689 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_153.pth | PSNR: 13.11 | SSIM: 0.2742 | LPIPS: 0.5729
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_18.pth | PSNR: 17.43 | SSIM: 0.2686 | LPIPS: 0.4998
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_34.pth | PSNR: 17.11 | SSIM: 0.2381 | LPIPS: 0.5615
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_6.pth | PSNR: 17.09 | SSIM: 0.3271 | LPIPS: 0.4801
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_71.pth | PSNR: 15.3 | SSIM: 0.2453 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_87.pth | PSNR: 14.54 | SSIM: 0.2551 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_99.pth | PSNR: 14.16 | SSIM: 0.2604 | LPIPS: 0.5868
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_109.pth | PSNR: 13.94 | SSIM: 0.2635 | LPIPS: 0.5843
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_12.pth | PSNR: 17.35 | SSIM: 0.2867 | LPIPS: 0.4854
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_130.pth | PSNR: 13.62 | SSIM: 0.2672 | LPIPS: 0.5799
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_141.pth | PSNR: 13.52 | SSIM: 0.2689 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_152.pth | PSNR: 13.14 | SSIM: 0.2739 | LPIPS: 0.5735
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_82.pth | PSNR: 14.75 | SSIM: 0.2525 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_83.pth | PSNR: 14.71 | SSIM: 0.253 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_84.pth | PSNR: 14.67 | SSIM: 0.2536 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_85.pth | PSNR: 14.63 | SSIM: 0.2541 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_86.pth | PSNR: 14.59 | SSIM: 0.2547 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_87.pth | PSNR: 14.54 | SSIM: 0.2551 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_88.pth | PSNR: 14.5 | SSIM: 0.2556 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_89.pth | PSNR: 14.47 | SSIM: 0.2562 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_9.pth | PSNR: 17.25 | SSIM: 0.3017 | LPIPS: 0.4816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_90.pth | PSNR: 14.43 | SSIM: 0.2566 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_91.pth | PSNR: 14.4 | SSIM: 0.2571 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_92.pth | PSNR: 14.36 | SSIM: 0.2576 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_88.pth | PSNR: 14.5 | SSIM: 0.2556 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_89.pth | PSNR: 14.47 | SSIM: 0.2562 | LPIPS: 0.5881
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_9.pth | PSNR: 17.25 | SSIM: 0.3017 | LPIPS: 0.4816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_90.pth | PSNR: 14.43 | SSIM: 0.2566 | LPIPS: 0.588
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_91.pth | PSNR: 14.4 | SSIM: 0.2571 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_92.pth | PSNR: 14.36 | SSIM: 0.2576 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_93.pth | PSNR: 14.34 | SSIM: 0.258 | LPIPS: 0.5877
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_95.pth | PSNR: 14.27 | SSIM: 0.2589 | LPIPS: 0.5876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_96.pth | PSNR: 14.23 | SSIM: 0.2592 | LPIPS: 0.5873
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_97.pth | PSNR: 14.22 | SSIM: 0.2597 | LPIPS: 0.5872
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_98.pth | PSNR: 14.19 | SSIM: 0.2601 | LPIPS: 0.5871
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_92.pth | PSNR: 14.36 | SSIM: 0.2576 | LPIPS: 0.5879
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_93.pth | PSNR: 14.34 | SSIM: 0.258 | LPIPS: 0.5877
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_94.pth | PSNR: 14.3 | SSIM: 0.2584 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_95.pth | PSNR: 14.27 | SSIM: 0.2589 | LPIPS: 0.5876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_96.pth | PSNR: 14.23 | SSIM: 0.2592 | LPIPS: 0.5873
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_97.pth | PSNR: 14.22 | SSIM: 0.2597 | LPIPS: 0.5872
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_98.pth | PSNR: 14.19 | SSIM: 0.2601 | LPIPS: 0.5871
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_99.pth | PSNR: 14.16 | SSIM: 0.2604 | LPIPS: 0.5868
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_1.pth | PSNR: 16.64 | SSIM: 0.4749 | LPIPS: 0.4657
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_10.pth | PSNR: 17.29 | SSIM: 0.2963 | LPIPS: 0.4829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_100.pth | PSNR: 14.13 | SSIM: 0.2608 | LPIPS: 0.5867
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_94.pth | PSNR: 14.3 | SSIM: 0.2584 | LPIPS: 0.5875
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_95.pth | PSNR: 14.27 | SSIM: 0.2589 | LPIPS: 0.5876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_96.pth | PSNR: 14.23 | SSIM: 0.2592 | LPIPS: 0.5873
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_97.pth | PSNR: 14.22 | SSIM: 0.2597 | LPIPS: 0.5872
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_98.pth | PSNR: 14.19 | SSIM: 0.2601 | LPIPS: 0.5871
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_99.pth | PSNR: 14.16 | SSIM: 0.2604 | LPIPS: 0.5868
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_1.pth | PSNR: 16.64 | SSIM: 0.4749 | LPIPS: 0.4657
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_10.pth | PSNR: 17.29 | SSIM: 0.2963 | LPIPS: 0.4829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_100.pth | PSNR: 14.13 | SSIM: 0.2608 | LPIPS: 0.5867
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_101.pth | PSNR: 14.11 | SSIM: 0.2612 | LPIPS: 0.5865
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_102.pth | PSNR: 14.07 | SSIM: 0.2615 | LPIPS: 0.5863
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_103.pth | PSNR: 14.07 | SSIM: 0.2619 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_1.pth | PSNR: 16.64 | SSIM: 0.4749 | LPIPS: 0.4657
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_10.pth | PSNR: 17.29 | SSIM: 0.2963 | LPIPS: 0.4829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_100.pth | PSNR: 14.13 | SSIM: 0.2608 | LPIPS: 0.5867
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_101.pth | PSNR: 14.11 | SSIM: 0.2612 | LPIPS: 0.5865
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_102.pth | PSNR: 14.07 | SSIM: 0.2615 | LPIPS: 0.5863
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_103.pth | PSNR: 14.07 | SSIM: 0.2619 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_104.pth | PSNR: 14.02 | SSIM: 0.2622 | LPIPS: 0.5859
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_105.pth | PSNR: 14.0 | SSIM: 0.2625 | LPIPS: 0.5856
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_106.pth | PSNR: 14.0 | SSIM: 0.2628 | LPIPS: 0.5852
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_107.pth | PSNR: 13.98 | SSIM: 0.2631 | LPIPS: 0.5849
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_108.pth | PSNR: 13.94 | SSIM: 0.2633 | LPIPS: 0.5847
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_1.pth | PSNR: 16.64 | SSIM: 0.4749 | LPIPS: 0.4657
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_10.pth | PSNR: 17.29 | SSIM: 0.2963 | LPIPS: 0.4829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_100.pth | PSNR: 14.13 | SSIM: 0.2608 | LPIPS: 0.5867
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_101.pth | PSNR: 14.11 | SSIM: 0.2612 | LPIPS: 0.5865
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_102.pth | PSNR: 14.07 | SSIM: 0.2615 | LPIPS: 0.5863
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_103.pth | PSNR: 14.07 | SSIM: 0.2619 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_104.pth | PSNR: 14.02 | SSIM: 0.2622 | LPIPS: 0.5859
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_105.pth | PSNR: 14.0 | SSIM: 0.2625 | LPIPS: 0.5856
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_106.pth | PSNR: 14.0 | SSIM: 0.2628 | LPIPS: 0.5852
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_107.pth | PSNR: 13.98 | SSIM: 0.2631 | LPIPS: 0.5849
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_108.pth | PSNR: 13.94 | SSIM: 0.2633 | LPIPS: 0.5847
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_102.pth | PSNR: 14.07 | SSIM: 0.2615 | LPIPS: 0.5863
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_103.pth | PSNR: 14.07 | SSIM: 0.2619 | LPIPS: 0.5861
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_104.pth | PSNR: 14.02 | SSIM: 0.2622 | LPIPS: 0.5859
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_105.pth | PSNR: 14.0 | SSIM: 0.2625 | LPIPS: 0.5856
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_106.pth | PSNR: 14.0 | SSIM: 0.2628 | LPIPS: 0.5852
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_107.pth | PSNR: 13.98 | SSIM: 0.2631 | LPIPS: 0.5849
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_108.pth | PSNR: 13.94 | SSIM: 0.2633 | LPIPS: 0.5847
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_109.pth | PSNR: 13.94 | SSIM: 0.2635 | LPIPS: 0.5843
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_11.pth | PSNR: 17.32 | SSIM: 0.2915 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_110.pth | PSNR: 13.9 | SSIM: 0.2638 | LPIPS: 0.5842
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_111.pth | PSNR: 13.88 | SSIM: 0.264 | LPIPS: 0.5839
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_105.pth | PSNR: 14.0 | SSIM: 0.2625 | LPIPS: 0.5856
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_106.pth | PSNR: 14.0 | SSIM: 0.2628 | LPIPS: 0.5852
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_107.pth | PSNR: 13.98 | SSIM: 0.2631 | LPIPS: 0.5849
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_108.pth | PSNR: 13.94 | SSIM: 0.2633 | LPIPS: 0.5847
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_109.pth | PSNR: 13.94 | SSIM: 0.2635 | LPIPS: 0.5843
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_11.pth | PSNR: 17.32 | SSIM: 0.2915 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_110.pth | PSNR: 13.9 | SSIM: 0.2638 | LPIPS: 0.5842
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_111.pth | PSNR: 13.88 | SSIM: 0.264 | LPIPS: 0.5839
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_112.pth | PSNR: 13.86 | SSIM: 0.2643 | LPIPS: 0.5838
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_113.pth | PSNR: 13.85 | SSIM: 0.2645 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_114.pth | PSNR: 13.82 | SSIM: 0.2647 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_11.pth | PSNR: 17.32 | SSIM: 0.2915 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_110.pth | PSNR: 13.9 | SSIM: 0.2638 | LPIPS: 0.5842
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_111.pth | PSNR: 13.88 | SSIM: 0.264 | LPIPS: 0.5839
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_112.pth | PSNR: 13.86 | SSIM: 0.2643 | LPIPS: 0.5838
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_113.pth | PSNR: 13.85 | SSIM: 0.2645 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_114.pth | PSNR: 13.82 | SSIM: 0.2647 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_115.pth | PSNR: 13.8 | SSIM: 0.2649 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_116.pth | PSNR: 13.82 | SSIM: 0.2651 | LPIPS: 0.5824
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_117.pth | PSNR: 13.8 | SSIM: 0.2652 | LPIPS: 0.5821
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_119.pth | PSNR: 13.77 | SSIM: 0.2656 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_12.pth | PSNR: 17.35 | SSIM: 0.2867 | LPIPS: 0.4854
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_11.pth | PSNR: 17.32 | SSIM: 0.2915 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_110.pth | PSNR: 13.9 | SSIM: 0.2638 | LPIPS: 0.5842
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_111.pth | PSNR: 13.88 | SSIM: 0.264 | LPIPS: 0.5839
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_112.pth | PSNR: 13.86 | SSIM: 0.2643 | LPIPS: 0.5838
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_113.pth | PSNR: 13.85 | SSIM: 0.2645 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_114.pth | PSNR: 13.82 | SSIM: 0.2647 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_115.pth | PSNR: 13.8 | SSIM: 0.2649 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_116.pth | PSNR: 13.82 | SSIM: 0.2651 | LPIPS: 0.5824
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_117.pth | PSNR: 13.8 | SSIM: 0.2652 | LPIPS: 0.5821
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_118.pth | PSNR: 13.77 | SSIM: 0.2654 | LPIPS: 0.582
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_119.pth | PSNR: 13.77 | SSIM: 0.2656 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_116.pth | PSNR: 13.82 | SSIM: 0.2651 | LPIPS: 0.5824
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_117.pth | PSNR: 13.8 | SSIM: 0.2652 | LPIPS: 0.5821
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_118.pth | PSNR: 13.77 | SSIM: 0.2654 | LPIPS: 0.582
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_119.pth | PSNR: 13.77 | SSIM: 0.2656 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_12.pth | PSNR: 17.35 | SSIM: 0.2867 | LPIPS: 0.4854
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_120.pth | PSNR: 13.76 | SSIM: 0.2657 | LPIPS: 0.5815
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_122.pth | PSNR: 13.73 | SSIM: 0.266 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_124.pth | PSNR: 13.7 | SSIM: 0.2664 | LPIPS: 0.5809
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_125.pth | PSNR: 13.69 | SSIM: 0.2665 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_126.pth | PSNR: 13.68 | SSIM: 0.2666 | LPIPS: 0.5804
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_127.pth | PSNR: 13.67 | SSIM: 0.2668 | LPIPS: 0.5803
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_120.pth | PSNR: 13.76 | SSIM: 0.2657 | LPIPS: 0.5815
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_121.pth | PSNR: 13.71 | SSIM: 0.2659 | LPIPS: 0.5816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_122.pth | PSNR: 13.73 | SSIM: 0.266 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_123.pth | PSNR: 13.69 | SSIM: 0.2662 | LPIPS: 0.5812
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_124.pth | PSNR: 13.7 | SSIM: 0.2664 | LPIPS: 0.5809
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_125.pth | PSNR: 13.69 | SSIM: 0.2665 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_126.pth | PSNR: 13.68 | SSIM: 0.2666 | LPIPS: 0.5804
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_127.pth | PSNR: 13.67 | SSIM: 0.2668 | LPIPS: 0.5803
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_128.pth | PSNR: 13.65 | SSIM: 0.2669 | LPIPS: 0.5802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_129.pth | PSNR: 13.64 | SSIM: 0.2671 | LPIPS: 0.58
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_13.pth | PSNR: 17.37 | SSIM: 0.2821 | LPIPS: 0.4876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_113.pth | PSNR: 13.85 | SSIM: 0.2645 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_114.pth | PSNR: 13.82 | SSIM: 0.2647 | LPIPS: 0.5833
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_115.pth | PSNR: 13.8 | SSIM: 0.2649 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_116.pth | PSNR: 13.82 | SSIM: 0.2651 | LPIPS: 0.5824
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_117.pth | PSNR: 13.8 | SSIM: 0.2652 | LPIPS: 0.5821
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_119.pth | PSNR: 13.77 | SSIM: 0.2656 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_12.pth | PSNR: 17.35 | SSIM: 0.2867 | LPIPS: 0.4854
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_120.pth | PSNR: 13.76 | SSIM: 0.2657 | LPIPS: 0.5815
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_121.pth | PSNR: 13.71 | SSIM: 0.2659 | LPIPS: 0.5816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_122.pth | PSNR: 13.73 | SSIM: 0.266 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_123.pth | PSNR: 13.69 | SSIM: 0.2662 | LPIPS: 0.5812
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_121.pth | PSNR: 13.71 | SSIM: 0.2659 | LPIPS: 0.5816
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_122.pth | PSNR: 13.73 | SSIM: 0.266 | LPIPS: 0.5811
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_123.pth | PSNR: 13.69 | SSIM: 0.2662 | LPIPS: 0.5812
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_125.pth | PSNR: 13.69 | SSIM: 0.2665 | LPIPS: 0.5806
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_126.pth | PSNR: 13.68 | SSIM: 0.2666 | LPIPS: 0.5804
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_127.pth | PSNR: 13.67 | SSIM: 0.2668 | LPIPS: 0.5803
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_128.pth | PSNR: 13.65 | SSIM: 0.2669 | LPIPS: 0.5802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_129.pth | PSNR: 13.64 | SSIM: 0.2671 | LPIPS: 0.58
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_13.pth | PSNR: 17.37 | SSIM: 0.2821 | LPIPS: 0.4876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_132.pth | PSNR: 13.62 | SSIM: 0.2674 | LPIPS: 0.5795
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_133.pth | PSNR: 13.62 | SSIM: 0.2676 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_131.pth | PSNR: 13.62 | SSIM: 0.2673 | LPIPS: 0.5798
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_132.pth | PSNR: 13.62 | SSIM: 0.2674 | LPIPS: 0.5795
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_133.pth | PSNR: 13.62 | SSIM: 0.2676 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_134.pth | PSNR: 13.59 | SSIM: 0.2677 | LPIPS: 0.5793
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_135.pth | PSNR: 13.58 | SSIM: 0.2678 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_136.pth | PSNR: 13.56 | SSIM: 0.2679 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_137.pth | PSNR: 13.58 | SSIM: 0.268 | LPIPS: 0.5788
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_138.pth | PSNR: 13.56 | SSIM: 0.2682 | LPIPS: 0.5787
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_139.pth | PSNR: 13.55 | SSIM: 0.2683 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_14.pth | PSNR: 17.38 | SSIM: 0.278 | LPIPS: 0.4905
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_140.pth | PSNR: 13.54 | SSIM: 0.2684 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_129.pth | PSNR: 13.64 | SSIM: 0.2671 | LPIPS: 0.58
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_13.pth | PSNR: 17.37 | SSIM: 0.2821 | LPIPS: 0.4876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_130.pth | PSNR: 13.62 | SSIM: 0.2672 | LPIPS: 0.5799
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_131.pth | PSNR: 13.62 | SSIM: 0.2673 | LPIPS: 0.5798
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_132.pth | PSNR: 13.62 | SSIM: 0.2674 | LPIPS: 0.5795
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_133.pth | PSNR: 13.62 | SSIM: 0.2676 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_134.pth | PSNR: 13.59 | SSIM: 0.2677 | LPIPS: 0.5793
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_135.pth | PSNR: 13.58 | SSIM: 0.2678 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_136.pth | PSNR: 13.56 | SSIM: 0.2679 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_139.pth | PSNR: 13.55 | SSIM: 0.2683 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_14.pth | PSNR: 17.38 | SSIM: 0.278 | LPIPS: 0.4905
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_109.pth | PSNR: 13.94 | SSIM: 0.2635 | LPIPS: 0.5843
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_120.pth | PSNR: 13.76 | SSIM: 0.2657 | LPIPS: 0.5815
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_134.pth | PSNR: 13.59 | SSIM: 0.2677 | LPIPS: 0.5793
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_145.pth | PSNR: 13.38 | SSIM: 0.2708 | LPIPS: 0.5762
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_156.pth | PSNR: 12.99 | SSIM: 0.2755 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_2.pth | PSNR: 16.79 | SSIM: 0.4339 | LPIPS: 0.4664
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_30.pth | PSNR: 17.32 | SSIM: 0.2411 | LPIPS: 0.5528
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_41.pth | PSNR: 16.69 | SSIM: 0.2363 | LPIPS: 0.5763
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_52.pth | PSNR: 16.27 | SSIM: 0.2372 | LPIPS: 0.5818
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_7.pth | PSNR: 17.15 | SSIM: 0.3159 | LPIPS: 0.4805
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_81.pth | PSNR: 14.8 | SSIM: 0.2519 | LPIPS: 0.5882
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_93.pth | PSNR: 14.34 | SSIM: 0.258 | LPIPS: 0.5877
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_104.pth | PSNR: 14.02 | SSIM: 0.2622 | LPIPS: 0.5859
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_115.pth | PSNR: 13.8 | SSIM: 0.2649 | LPIPS: 0.5829
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_17.pth | PSNR: 17.42 | SSIM: 0.2704 | LPIPS: 0.4979
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_128.pth | PSNR: 13.65 | SSIM: 0.2669 | LPIPS: 0.5802
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_129.pth | PSNR: 13.64 | SSIM: 0.2671 | LPIPS: 0.58
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_13.pth | PSNR: 17.37 | SSIM: 0.2821 | LPIPS: 0.4876
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_134.pth | PSNR: 13.59 | SSIM: 0.2677 | LPIPS: 0.5793
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_135.pth | PSNR: 13.58 | SSIM: 0.2678 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_136.pth | PSNR: 13.56 | SSIM: 0.2679 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_137.pth | PSNR: 13.58 | SSIM: 0.268 | LPIPS: 0.5788
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_138.pth | PSNR: 13.56 | SSIM: 0.2682 | LPIPS: 0.5787
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_139.pth | PSNR: 13.55 | SSIM: 0.2683 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_14.pth | PSNR: 17.38 | SSIM: 0.278 | LPIPS: 0.4905
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_140.pth | PSNR: 13.54 | SSIM: 0.2684 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_135.pth | PSNR: 13.58 | SSIM: 0.2678 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_136.pth | PSNR: 13.56 | SSIM: 0.2679 | LPIPS: 0.5792
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_137.pth | PSNR: 13.58 | SSIM: 0.268 | LPIPS: 0.5788
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_138.pth | PSNR: 13.56 | SSIM: 0.2682 | LPIPS: 0.5787
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_139.pth | PSNR: 13.55 | SSIM: 0.2683 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_14.pth | PSNR: 17.38 | SSIM: 0.278 | LPIPS: 0.4905
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_140.pth | PSNR: 13.54 | SSIM: 0.2684 | LPIPS: 0.5786
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_141.pth | PSNR: 13.52 | SSIM: 0.2689 | LPIPS: 0.578
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_142.pth | PSNR: 13.49 | SSIM: 0.2694 | LPIPS: 0.5775
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_143.pth | PSNR: 13.45 | SSIM: 0.2698 | LPIPS: 0.577
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_144.pth | PSNR: 13.4 | SSIM: 0.2704 | LPIPS: 0.5768
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_142.pth | PSNR: 13.49 | SSIM: 0.2694 | LPIPS: 0.5775
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_143.pth | PSNR: 13.45 | SSIM: 0.2698 | LPIPS: 0.577
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_144.pth | PSNR: 13.4 | SSIM: 0.2704 | LPIPS: 0.5768
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_145.pth | PSNR: 13.38 | SSIM: 0.2708 | LPIPS: 0.5762
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_146.pth | PSNR: 13.35 | SSIM: 0.2713 | LPIPS: 0.5758
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_147.pth | PSNR: 13.3 | SSIM: 0.2718 | LPIPS: 0.5756
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_148.pth | PSNR: 13.28 | SSIM: 0.2722 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_149.pth | PSNR: 13.23 | SSIM: 0.2726 | LPIPS: 0.5748
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_15.pth | PSNR: 17.4 | SSIM: 0.2748 | LPIPS: 0.4931
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_150.pth | PSNR: 13.21 | SSIM: 0.273 | LPIPS: 0.5743
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_psnr_epoch_151.pth | PSNR: 13.17 | SSIM: 0.2735 | LPIPS: 0.5739
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_143.pth | PSNR: 13.45 | SSIM: 0.2698 | LPIPS: 0.577
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_144.pth | PSNR: 13.4 | SSIM: 0.2704 | LPIPS: 0.5768
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_145.pth | PSNR: 13.38 | SSIM: 0.2708 | LPIPS: 0.5762
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_146.pth | PSNR: 13.35 | SSIM: 0.2713 | LPIPS: 0.5758
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_147.pth | PSNR: 13.3 | SSIM: 0.2718 | LPIPS: 0.5756
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_148.pth | PSNR: 13.28 | SSIM: 0.2722 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_149.pth | PSNR: 13.23 | SSIM: 0.2726 | LPIPS: 0.5748
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_15.pth | PSNR: 17.4 | SSIM: 0.2748 | LPIPS: 0.4931
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_150.pth | PSNR: 13.21 | SSIM: 0.273 | LPIPS: 0.5743
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_151.pth | PSNR: 13.17 | SSIM: 0.2735 | LPIPS: 0.5739
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_ssim_epoch_152.pth | PSNR: 13.14 | SSIM: 0.2739 | LPIPS: 0.5735
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_142.pth | PSNR: 13.49 | SSIM: 0.2694 | LPIPS: 0.5775
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_143.pth | PSNR: 13.45 | SSIM: 0.2698 | LPIPS: 0.577
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_144.pth | PSNR: 13.4 | SSIM: 0.2704 | LPIPS: 0.5768
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_145.pth | PSNR: 13.38 | SSIM: 0.2708 | LPIPS: 0.5762
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_146.pth | PSNR: 13.35 | SSIM: 0.2713 | LPIPS: 0.5758
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_147.pth | PSNR: 13.3 | SSIM: 0.2718 | LPIPS: 0.5756
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_148.pth | PSNR: 13.28 | SSIM: 0.2722 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_149.pth | PSNR: 13.23 | SSIM: 0.2726 | LPIPS: 0.5748
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_15.pth | PSNR: 17.4 | SSIM: 0.2748 | LPIPS: 0.4931
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_151.pth | PSNR: 13.17 | SSIM: 0.2735 | LPIPS: 0.5739
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_lpips_epoch_152.pth | PSNR: 13.14 | SSIM: 0.2739 | LPIPS: 0.5735
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_146.pth | PSNR: 13.35 | SSIM: 0.2713 | LPIPS: 0.5758
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_147.pth | PSNR: 13.3 | SSIM: 0.2718 | LPIPS: 0.5756
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_148.pth | PSNR: 13.28 | SSIM: 0.2722 | LPIPS: 0.575
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_149.pth | PSNR: 13.23 | SSIM: 0.2726 | LPIPS: 0.5748
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_15.pth | PSNR: 17.4 | SSIM: 0.2748 | LPIPS: 0.4931
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_150.pth | PSNR: 13.21 | SSIM: 0.273 | LPIPS: 0.5743
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_151.pth | PSNR: 13.17 | SSIM: 0.2735 | LPIPS: 0.5739
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_152.pth | PSNR: 13.14 | SSIM: 0.2739 | LPIPS: 0.5735
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_153.pth | PSNR: 13.11 | SSIM: 0.2742 | LPIPS: 0.5729
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_154.pth | PSNR: 13.11 | SSIM: 0.2745 | LPIPS: 0.5719
+--------------------------------------------------------------------------------
+[best_deeplesionkey_ct] best_deeplesionkey_ct_loss_epoch_155.pth | PSNR: 13.05 | SSIM: 0.2749 | LPIPS: 0.5717
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_39.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4671
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_4.pth | PSNR: 17.65 | SSIM: 0.2072 | LPIPS: 0.6306
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_40.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4669
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_41.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4667
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_42.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4666
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_44.pth | PSNR: 16.46 | SSIM: 0.5019 | LPIPS: 0.4663
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_45.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.4663
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_47.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.4662
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_48.pth | PSNR: 16.46 | SSIM: 0.502 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_5.pth | PSNR: 20.0 | SSIM: 0.2354 | LPIPS: 0.6032
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_50.pth | PSNR: 16.48 | SSIM: 0.5016 | LPIPS: 0.4645
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_52.pth | PSNR: 16.48 | SSIM: 0.5015 | LPIPS: 0.4656
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_53.pth | PSNR: 16.48 | SSIM: 0.5014 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_6.pth | PSNR: 21.64 | SSIM: 0.3202 | LPIPS: 0.5678
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_7.pth | PSNR: 21.65 | SSIM: 0.5941 | LPIPS: 0.5269
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_8.pth | PSNR: 20.93 | SSIM: 0.5904 | LPIPS: 0.5206
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_9.pth | PSNR: 20.11 | SSIM: 0.5747 | LPIPS: 0.5216
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_1.pth | PSNR: 8.45 | SSIM: 0.0157 | LPIPS: 0.7225
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_10.pth | PSNR: 19.32 | SSIM: 0.5558 | LPIPS: 0.52
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_11.pth | PSNR: 18.62 | SSIM: 0.5385 | LPIPS: 0.5183
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_12.pth | PSNR: 18.09 | SSIM: 0.5239 | LPIPS: 0.5171
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_13.pth | PSNR: 17.71 | SSIM: 0.5133 | LPIPS: 0.5156
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_14.pth | PSNR: 17.44 | SSIM: 0.5061 | LPIPS: 0.5132
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_15.pth | PSNR: 17.24 | SSIM: 0.5015 | LPIPS: 0.5102
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_16.pth | PSNR: 17.1 | SSIM: 0.4992 | LPIPS: 0.5073
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_17.pth | PSNR: 16.99 | SSIM: 0.4982 | LPIPS: 0.5041
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_18.pth | PSNR: 16.89 | SSIM: 0.4978 | LPIPS: 0.501
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_19.pth | PSNR: 16.8 | SSIM: 0.4979 | LPIPS: 0.4978
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_2.pth | PSNR: 11.9 | SSIM: 0.0253 | LPIPS: 0.7204
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_21.pth | PSNR: 16.67 | SSIM: 0.4985 | LPIPS: 0.4908
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_22.pth | PSNR: 16.62 | SSIM: 0.4989 | LPIPS: 0.4872
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_23.pth | PSNR: 16.58 | SSIM: 0.4994 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_24.pth | PSNR: 16.55 | SSIM: 0.4998 | LPIPS: 0.4813
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_25.pth | PSNR: 16.53 | SSIM: 0.5002 | LPIPS: 0.479
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_26.pth | PSNR: 16.52 | SSIM: 0.5005 | LPIPS: 0.4769
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_27.pth | PSNR: 16.51 | SSIM: 0.5006 | LPIPS: 0.4751
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_28.pth | PSNR: 16.5 | SSIM: 0.5008 | LPIPS: 0.4737
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_29.pth | PSNR: 16.49 | SSIM: 0.501 | LPIPS: 0.4725
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_3.pth | PSNR: 15.37 | SSIM: 0.1219 | LPIPS: 0.6403
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_30.pth | PSNR: 16.49 | SSIM: 0.5011 | LPIPS: 0.4715
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_31.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4707
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_34.pth | PSNR: 16.47 | SSIM: 0.5014 | LPIPS: 0.469
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_35.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4687
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_36.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4682
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_38.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_4.pth | PSNR: 17.65 | SSIM: 0.2072 | LPIPS: 0.6306
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_41.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4667
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_42.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4666
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_47.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.4662
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_48.pth | PSNR: 16.46 | SSIM: 0.502 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_5.pth | PSNR: 20.0 | SSIM: 0.2354 | LPIPS: 0.6032
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_50.pth | PSNR: 16.48 | SSIM: 0.5016 | LPIPS: 0.4645
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_52.pth | PSNR: 16.48 | SSIM: 0.5015 | LPIPS: 0.4656
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_20.pth | PSNR: 16.73 | SSIM: 0.4982 | LPIPS: 0.4945
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_32.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4701
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_53.pth | PSNR: 16.48 | SSIM: 0.5014 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_17.pth | PSNR: 16.99 | SSIM: 0.4982 | LPIPS: 0.5041
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_29.pth | PSNR: 16.49 | SSIM: 0.501 | LPIPS: 0.4725
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_40.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4669
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_7.pth | PSNR: 21.65 | SSIM: 0.5941 | LPIPS: 0.5269
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_19.pth | PSNR: 16.8 | SSIM: 0.4979 | LPIPS: 0.4978
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_30.pth | PSNR: 16.49 | SSIM: 0.5011 | LPIPS: 0.4715
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_51.pth | PSNR: 16.48 | SSIM: 0.5016 | LPIPS: 0.4652
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_14.pth | PSNR: 17.44 | SSIM: 0.5061 | LPIPS: 0.5132
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_26.pth | PSNR: 16.52 | SSIM: 0.5005 | LPIPS: 0.4769
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_38.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_6.pth | PSNR: 21.64 | SSIM: 0.3202 | LPIPS: 0.5678
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_7.pth | PSNR: 21.65 | SSIM: 0.5941 | LPIPS: 0.5269
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_8.pth | PSNR: 20.93 | SSIM: 0.5904 | LPIPS: 0.5206
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_loss_epoch_9.pth | PSNR: 20.11 | SSIM: 0.5747 | LPIPS: 0.5216
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_1.pth | PSNR: 8.45 | SSIM: 0.0157 | LPIPS: 0.7225
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_10.pth | PSNR: 19.32 | SSIM: 0.5558 | LPIPS: 0.52
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_11.pth | PSNR: 18.62 | SSIM: 0.5385 | LPIPS: 0.5183
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_12.pth | PSNR: 18.09 | SSIM: 0.5239 | LPIPS: 0.5171
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_13.pth | PSNR: 17.71 | SSIM: 0.5133 | LPIPS: 0.5156
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_14.pth | PSNR: 17.44 | SSIM: 0.5061 | LPIPS: 0.5132
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_15.pth | PSNR: 17.24 | SSIM: 0.5015 | LPIPS: 0.5102
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_16.pth | PSNR: 17.1 | SSIM: 0.4992 | LPIPS: 0.5073
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_18.pth | PSNR: 16.89 | SSIM: 0.4978 | LPIPS: 0.501
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_19.pth | PSNR: 16.8 | SSIM: 0.4979 | LPIPS: 0.4978
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_2.pth | PSNR: 11.9 | SSIM: 0.0253 | LPIPS: 0.7204
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_20.pth | PSNR: 16.73 | SSIM: 0.4982 | LPIPS: 0.4945
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_21.pth | PSNR: 16.67 | SSIM: 0.4985 | LPIPS: 0.4908
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_22.pth | PSNR: 16.62 | SSIM: 0.4989 | LPIPS: 0.4872
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_23.pth | PSNR: 16.58 | SSIM: 0.4994 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_24.pth | PSNR: 16.55 | SSIM: 0.4998 | LPIPS: 0.4813
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_25.pth | PSNR: 16.53 | SSIM: 0.5002 | LPIPS: 0.479
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_26.pth | PSNR: 16.52 | SSIM: 0.5005 | LPIPS: 0.4769
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_27.pth | PSNR: 16.51 | SSIM: 0.5006 | LPIPS: 0.4751
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_28.pth | PSNR: 16.5 | SSIM: 0.5008 | LPIPS: 0.4737
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_3.pth | PSNR: 15.37 | SSIM: 0.1219 | LPIPS: 0.6403
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_30.pth | PSNR: 16.49 | SSIM: 0.5011 | LPIPS: 0.4715
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_31.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4707
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_32.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4701
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_33.pth | PSNR: 16.48 | SSIM: 0.5013 | LPIPS: 0.4694
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_34.pth | PSNR: 16.47 | SSIM: 0.5014 | LPIPS: 0.469
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_35.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4687
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_36.pth | PSNR: 16.47 | SSIM: 0.5016 | LPIPS: 0.4679
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_37.pth | PSNR: 16.47 | SSIM: 0.5016 | LPIPS: 0.4676
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_38.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_39.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4671
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_4.pth | PSNR: 17.65 | SSIM: 0.2072 | LPIPS: 0.6306
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_41.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4667
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_42.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4666
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_43.pth | PSNR: 16.47 | SSIM: 0.5019 | LPIPS: 0.4665
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_44.pth | PSNR: 16.46 | SSIM: 0.5019 | LPIPS: 0.4663
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_45.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.4663
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_47.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.4662
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_48.pth | PSNR: 16.46 | SSIM: 0.502 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_49.pth | PSNR: 16.47 | SSIM: 0.502 | LPIPS: 0.466
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_50.pth | PSNR: 16.48 | SSIM: 0.5016 | LPIPS: 0.4645
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_52.pth | PSNR: 16.48 | SSIM: 0.5015 | LPIPS: 0.4656
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_53.pth | PSNR: 16.48 | SSIM: 0.5014 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_6.pth | PSNR: 21.64 | SSIM: 0.3202 | LPIPS: 0.5678
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_8.pth | PSNR: 20.93 | SSIM: 0.5904 | LPIPS: 0.5206
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_lpips_epoch_9.pth | PSNR: 20.11 | SSIM: 0.5747 | LPIPS: 0.5216
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_1.pth | PSNR: 8.45 | SSIM: 0.0157 | LPIPS: 0.7225
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_10.pth | PSNR: 19.32 | SSIM: 0.5558 | LPIPS: 0.52
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_11.pth | PSNR: 18.62 | SSIM: 0.5385 | LPIPS: 0.5183
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_12.pth | PSNR: 18.09 | SSIM: 0.5239 | LPIPS: 0.5171
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_13.pth | PSNR: 17.71 | SSIM: 0.5133 | LPIPS: 0.5156
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_14.pth | PSNR: 17.44 | SSIM: 0.5061 | LPIPS: 0.5132
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_15.pth | PSNR: 17.24 | SSIM: 0.5015 | LPIPS: 0.5102
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_16.pth | PSNR: 17.1 | SSIM: 0.4992 | LPIPS: 0.5073
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_17.pth | PSNR: 16.99 | SSIM: 0.4982 | LPIPS: 0.5041
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_18.pth | PSNR: 16.89 | SSIM: 0.4978 | LPIPS: 0.501
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_2.pth | PSNR: 11.9 | SSIM: 0.0253 | LPIPS: 0.7204
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_20.pth | PSNR: 16.73 | SSIM: 0.4982 | LPIPS: 0.4945
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_21.pth | PSNR: 16.67 | SSIM: 0.4985 | LPIPS: 0.4908
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_22.pth | PSNR: 16.62 | SSIM: 0.4989 | LPIPS: 0.4872
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_23.pth | PSNR: 16.58 | SSIM: 0.4994 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_24.pth | PSNR: 16.55 | SSIM: 0.4998 | LPIPS: 0.4813
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_25.pth | PSNR: 16.53 | SSIM: 0.5002 | LPIPS: 0.479
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_26.pth | PSNR: 16.52 | SSIM: 0.5005 | LPIPS: 0.4769
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_27.pth | PSNR: 16.51 | SSIM: 0.5006 | LPIPS: 0.4751
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_28.pth | PSNR: 16.5 | SSIM: 0.5008 | LPIPS: 0.4737
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_29.pth | PSNR: 16.49 | SSIM: 0.501 | LPIPS: 0.4725
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_3.pth | PSNR: 15.37 | SSIM: 0.1219 | LPIPS: 0.6403
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_31.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4707
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_32.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4701
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_34.pth | PSNR: 16.47 | SSIM: 0.5014 | LPIPS: 0.469
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_35.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4687
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_36.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4682
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_38.pth | PSNR: 16.47 | SSIM: 0.5017 | LPIPS: 0.4674
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_4.pth | PSNR: 17.65 | SSIM: 0.2072 | LPIPS: 0.6306
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_41.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4667
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_42.pth | PSNR: 16.47 | SSIM: 0.5018 | LPIPS: 0.4666
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_48.pth | PSNR: 16.46 | SSIM: 0.502 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_5.pth | PSNR: 20.0 | SSIM: 0.2354 | LPIPS: 0.6032
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_50.pth | PSNR: 16.48 | SSIM: 0.5016 | LPIPS: 0.4645
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_52.pth | PSNR: 16.48 | SSIM: 0.5015 | LPIPS: 0.4656
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_53.pth | PSNR: 16.48 | SSIM: 0.5014 | LPIPS: 0.4661
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_56.pth | PSNR: 16.48 | SSIM: 0.5011 | LPIPS: 0.4671
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_6.pth | PSNR: 21.64 | SSIM: 0.3202 | LPIPS: 0.5678
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_7.pth | PSNR: 21.65 | SSIM: 0.5941 | LPIPS: 0.5269
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_8.pth | PSNR: 20.93 | SSIM: 0.5904 | LPIPS: 0.5206
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_psnr_epoch_9.pth | PSNR: 20.11 | SSIM: 0.5747 | LPIPS: 0.5216
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_1.pth | PSNR: 8.45 | SSIM: 0.0157 | LPIPS: 0.7225
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_10.pth | PSNR: 19.32 | SSIM: 0.5558 | LPIPS: 0.52
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_11.pth | PSNR: 18.62 | SSIM: 0.5385 | LPIPS: 0.5183
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_12.pth | PSNR: 18.09 | SSIM: 0.5239 | LPIPS: 0.5171
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_13.pth | PSNR: 17.71 | SSIM: 0.5133 | LPIPS: 0.5156
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_15.pth | PSNR: 17.24 | SSIM: 0.5015 | LPIPS: 0.5102
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_16.pth | PSNR: 17.1 | SSIM: 0.4992 | LPIPS: 0.5073
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_17.pth | PSNR: 16.99 | SSIM: 0.4982 | LPIPS: 0.5041
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_18.pth | PSNR: 16.89 | SSIM: 0.4978 | LPIPS: 0.501
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_19.pth | PSNR: 16.8 | SSIM: 0.4979 | LPIPS: 0.4978
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_2.pth | PSNR: 11.9 | SSIM: 0.0253 | LPIPS: 0.7204
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_20.pth | PSNR: 16.73 | SSIM: 0.4982 | LPIPS: 0.4945
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_21.pth | PSNR: 16.67 | SSIM: 0.4985 | LPIPS: 0.4908
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_22.pth | PSNR: 16.62 | SSIM: 0.4989 | LPIPS: 0.4872
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_23.pth | PSNR: 16.58 | SSIM: 0.4994 | LPIPS: 0.4841
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_24.pth | PSNR: 16.55 | SSIM: 0.4998 | LPIPS: 0.4813
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_25.pth | PSNR: 16.53 | SSIM: 0.5002 | LPIPS: 0.479
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_27.pth | PSNR: 16.51 | SSIM: 0.5006 | LPIPS: 0.4751
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_28.pth | PSNR: 16.5 | SSIM: 0.5008 | LPIPS: 0.4737
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_29.pth | PSNR: 16.49 | SSIM: 0.501 | LPIPS: 0.4725
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_3.pth | PSNR: 15.37 | SSIM: 0.1219 | LPIPS: 0.6403
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_30.pth | PSNR: 16.49 | SSIM: 0.5011 | LPIPS: 0.4715
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_31.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4707
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_32.pth | PSNR: 16.48 | SSIM: 0.5012 | LPIPS: 0.4701
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_33.pth | PSNR: 16.48 | SSIM: 0.5013 | LPIPS: 0.4694
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_34.pth | PSNR: 16.47 | SSIM: 0.5014 | LPIPS: 0.469
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_35.pth | PSNR: 16.47 | SSIM: 0.5015 | LPIPS: 0.4687
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_36.pth | PSNR: 16.47 | SSIM: 0.5016 | LPIPS: 0.4679
+--------------------------------------------------------------------------------
+[best_luna16] best_luna16_ct_ssim_epoch_37.pth | PSNR: 16.47 | SSIM: 0.5016 | LPIPS: 0.4676
+--------------------------------------------------------------------------------

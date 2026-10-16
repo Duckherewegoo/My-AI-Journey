@@ -1,19 +1,58 @@
 # My-AI-Journey
 
-> 我的 AI 学习之旅 — 探索大模型、Agent、RAG 与多模态应用的实验田(含Vibe-Coding)
+> **我的 AI 学习旅程**——一个持续演进的实验田与孵化器。
+> 探索大模型、Agent、RAG、多模态，以及 Vibe-Coding 的一切可能。
+>
+> 这里**不是**一个包含多个子项目的大仓库。
+> 这里是**思考的过程、验证的足迹、学习的见证**。
+> 成熟的想法会被拆分到独立仓库专门维护——这里保留孵化与记录的痕迹。
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Agent-orange.svg)](https://langchain-ai.github.io/langgraph/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-green.svg)](https://www.docker.com/)
+[![Journey](https://img.shields.io/badge/Status-On%20the%20journey-blueviolet.svg)](#)
 
 ---
 
 ## 项目简介
 
-这是一个个人 AI 学习项目，记录了我从入门到大模型应用开发的完整学习路径。项目涵盖了 **LLM 应用开发、Agent 架构设计、RAG 检索增强生成、向量数据库、多模态处理** 等多个方向的技术实践与实验。
+这是一个**个人 AI 学习仓库**，记录我从入门到大模型应用开发的完整路径。
 
-项目以 python_preview/ 为核心代码目录，按技术方向和实验主题组织为多个子项目，每个子项目相对独立，可单独运行和实验。
+它同时承担两个角色：
+
+**1. 学习旅程的档案**
+
+这里留下的不只是"成功的代码"，也包括走过的弯路、被放弃的实验、中途思考的碎片。
+`abandon/` 与 `logs/` 是有意义的历史——它们记录了"当时的我怎么想、为什么这么做"。
+未来的我（或偶遇的你）打开这里，看到的是一条可追溯的思考路径，而不是一堆孤立的结果。
+
+**2. 想法的孵化器**
+
+任何与 AI 相关、与学习相关的探索都可以在这里落地——不限于 Python，不限形式。
+当一个实验被验证可行、值得对外承诺（`pip install`、给别人用、加 CI），
+它就**拆分到独立仓库**专门维护。
+
+**核心原则：**
+
+- **独立仓库 = 对外承诺**——有 pip 入口 / README / CI / release
+- **本仓库 = 学习过程**——没有对外承诺，只有实验与记录
+- **绝不演变成"包含多个子项目的大仓"**——一旦出现这种趋势，立刻拆分
+
+这样 `git log` 保持可读，`git blame` 保持准确，学习痕迹保持完整。
+
+---
+
+## 已拆分的独立项目
+
+以下项目已孵化成熟，拥有各自的仓库与维护节奏：
+
+| 项目 | 独立仓库 | 说明 |
+|------|---------|------|
+| **Task Planner** | [task-planner](https://github.com/Duckherewegoo/task-planner) | 基于 LangGraph 的智能任务规划引擎（DAG 编排 + 流式执行 + 评估套件） |
+
+> 本仓库对应目录下保留最后版本的快照（`abandon/`），用于追溯历史。
+> 具体维护、Issue、PR 请走独立仓库。
 
 ---
 
@@ -21,153 +60,139 @@
 
     My-AI-Journey/
     ├── .gitignore                  # Git 忽略规则
-    ├── LICENSE                     # GPL-3.0 开源协议
-    ├── README.md                   # 项目说明（本文件）
-    ├── python_preview/             # 核心代码目录
-    │   ├── deepseek-qwen/          # DeepSeek + Qwen 任务规划器
-    │   ├── doubao-yuanbao/         # 豆包/元宝大模型实验
-    │   ├── qwen-yuanbao/           # 千问/元宝大模型实验
-    │   ├── qwen/                   # Qwen RAG 相关实验
-    │   └── *.py                    # 各类独立脚本与实验代码
-    ├── docs/                       # 项目文档（进行中）
-    └── web_ref/                    # 网页参考素材
+    ├── LICENSE                     # GPL-3.0
+    ├── README.md                   # 本文件
+    ├── docs/                       # 学习笔记 / 架构思考 / 实验记录
+    ├── logs/                       # 运行日志 / 调试痕迹（保留，供回溯）
+    ├── outputs/                    # 各类实验输出（图像 / 报告 / 数据）
+    ├── py_lab/                     # 🧪 Python 实验场（孵化中）
+    │   ├── <实验主题>/
+    │   └── *.py                    # 快速实验脚本
+    ├── abandon/                    # 🗄️ 已停止维护的项目快照
+    │   ├── new_task_planner/       # 已拆分为独立仓库 task-planner
+    │   ├── doubao-yuanbao/         # 豆包/元宝实验
+    │   ├── qwen-yuanbao/           # 千问/元宝实验
+    │   └── ...
+    ├── web_ref/                    # 网页参考素材
+    └── ...                         # 未来其他方向（不限于 Python）
 
 ---
 
-## 子项目说明
+## 仓库定位的三个细节
 
-### 1. DeepSeek-Qwen 任务规划器
+### 1. `py_lab/` —— 实验发生地
 
-路径：python_preview/deepseek-qwen/new_task_planner/
+所有**正在孵化**的 Python 实验都在这里。没有预设立场，没有维护承诺。
 
-基于 LangGraph 构建的智能任务规划系统，使用 DeepSeek/Qwen 大模型作为核心推理引擎。
+- 可以随时新建、随时删除、随时重写
+- 不需要 pyproject.toml、不需要 README、不需要测试
+- 一个脚本跑通一次就算成功
+- 一旦某实验稳定到"想给别人用" → 拆分为独立仓库
 
-**核心特性：**
+### 2. `abandon/` —— 不是"失败"，是"历史"
 
-- 基于有向无环图（DAG）的任务工作流编排
-- 支持流式响应与实时进度展示
-- 内置评估测试套件（Eval Suite）
-- Docker 容器化部署，一键启动
-- Cytoscape / PyVis 可视化工作流图
+这里的项目**不在此仓库维护**。原因可能各不相同：
 
-**技术栈：** Python、LangGraph、Dash、Docker、SQLite
+- 已升级为独立仓库（如 `new_task_planner` → `task-planner`）
+- 实验结论已明确，不再继续
+- 思路被其他实验吸收，独立形态已无必要
 
-**快速开始：**
+保留它们的目的：
 
-    cd python_preview/deepseek-qwen/new_task_planner
-    pip install -e .
-    # 或直接用 Docker
-    docker-compose up
+- **历史可追溯**——回答"当时是怎么做的"
+- **可对照**——新实验与旧实验对比，看进步在哪里
+- **不重复踩坑**——避免"这个我之前试过吗"的疑问
 
----
+### 3. `logs/` & `outputs/` —— 过程的痕迹
 
-### 2. 豆包/元宝大模型实验
+运行日志、实验产物、中间结果——**不删**。
 
-路径：python_preview/doubao-yuanbao/
-
-围绕字节跳动豆包/腾讯元宝等大模型的能力探索与工具开发。
-
-#### 2.1 DeepDream 图像生成 Agent
-
-路径：python_preview/doubao-yuanbao/deepdream/
-
-基于 LLM 驱动的 AI 绘画工具，支持多种艺术风格（Normal / Crazy / Nightmare / Sweet / Mist 等），通过 Agent 节点自动理解用户意图并生成图像。
-
-**架构：** Intent Node -> LLM Node -> Tool Node -> Dream Gen Node -> Output Node
-
-#### 2.2 LangGraph Agent 演示
-
-路径：python_preview/doubao-yuanbao/langgraph-agent-demo/
-
-LangGraph 框架的 Agent 开发模板，包含 MCP（Model Context Protocol）工具集成、多轮对话管理、内容审核等实用功能。
-
-#### 2.3 多 Agent 协作系统
-
-路径：python_preview/doubao-yuanbao/langgraph-multi-agent/
-
-基于 LangGraph 的多 Agent 协作框架，包含 Researcher（研究）、Writer（写作）、Reviewer（审核）、Editor（编辑）四个角色 Agent，实现自动化内容生产流水线。
-
-#### 2.4 Nano Harness - Agent 评估框架
-
-路径：python_preview/doubao-yuanbao/nano-harness/
-
-轻量级 AI Agent 评估与测试框架，支持多模态输入（文本/图像/音频/视频）、技能注册、MCP 工具调用、Web UI 可视化等能力。
+它们不是"垃圾"，是**证据**：证明某次实验真的发生过、某次错误真的出现过、
+某个想法当时是怎么演化的。定期整理归档，但不清理。
 
 ---
 
-### 3. 千问/元宝大模型实验
+## 未来方向
 
-路径：python_preview/qwen-yuanbao/
+**不限定 Python**。只要与 AI 相关、与学习相关，任何形式都可以：
 
-围绕通义千问等大模型的应用实验，重点探索任务规划器的工程化落地。
+- Prompt 工程实验
+- Agent / RAG / 多模态方向的探索
+- 论文复现
+- 前端可视化实验（任何语言）
+- 硬件 / 边缘 AI 尝试
+- Vibe-Coding 的产品原型
 
-#### Docker 化任务规划器
-
-路径：python_preview/qwen-yuanbao/docker/
-
-将任务规划器容器化部署的完整方案，包含：
-
-- Dockerfile + docker-compose 编排
-- Dash Web UI 可视化界面
-- 任务流程图导出（SVG）
-- 完整的测试评估体系
-
-#### 历史实验项目
-
-路径：python_preview/qwen-yuanbao/broken_task-planner-project/
-
-任务规划器的早期实验版本（标记为 broken，记录迭代过程），包含完整的 CI/CD 配置和测试框架。
+**判断标准只有一条**：这是否属于"我的学习旅程"？
 
 ---
 
-### 4. RAG 与向量检索实验
+## 已归档项目索引
 
-路径：python_preview/qwen/、python_preview/rag_comparison_*.json
+（本节列出 `abandon/` 下的项目，方便检索——细节见各自目录的 README）
 
-RAG（检索增强生成）相关实验代码与结果数据，涵盖：
+### DeepSeek-Qwen 任务规划器 → [独立仓库](https://github.com/Duckherewegoo/task-planner)
 
-- 不同向量检索策略对比（HNSW / FAISS / HNSW-FAISS 混合）
-- RAG 效果评估与可视化
-- 中文检索优化实验
+**目录**：`abandon/new_task_planner/`
+**说明**：基于 LangGraph 的智能任务规划引擎。已孵化成熟，拆分为独立仓库 `task-planner`。
+**独立维护**：Issue / PR / Release 请走 [task-planner](https://github.com/Duckherewegoo/task-planner)。
+
+### 豆包 / 元宝大模型实验
+
+**目录**：`abandon/doubao-yuanbao/`
+**包含**：
+- DeepDream 图像生成 Agent（LLM 驱动绘画，多风格）
+- LangGraph Agent 演示（含 MCP 工具集成）
+- 多 Agent 协作系统（Researcher / Writer / Reviewer / Editor）
+- Nano Harness（轻量 Agent 评估框架）
+
+### 千问 / 元宝大模型实验
+
+**目录**：`abandon/qwen-yuanbao/`
+**包含**：Docker 化任务规划器、早期 broken 版本（保留迭代痕迹）
+
+### RAG 与向量检索实验
+
+**目录**：`abandon/qwen/`、`abandon/rag_comparison_*.json`
+**包含**：不同向量检索策略对比（HNSW / FAISS / 混合）、RAG 效果评估、中文检索优化
+
+### 独立脚本与工具
+
+**目录**：`abandon/*.py`
+
+| 脚本 | 功能 |
+|------|------|
+| `abird.py` / `bbird.py` | 鸟类数据实验 |
+| `bilibili_agent.py` | B站相关 Agent |
+| `catrag.py` / `doggrag.py` | 图像 RAG 实验 |
+| `cuda-topk.py` | CUDA 加速 TopK 检索 |
+| `hnsw-faiss.py` | HNSW + FAISS 向量检索 |
+| `langchainasyncio.py` | LangChain AsyncIO |
+| `linux_agent.py` | Linux 操作 Agent |
+| `memorysaver.py` | 内存优化 |
+| `qwen_rag_final.py` | Qwen RAG 最终版 |
+| `doubantop250.py` | 豆瓣 Top250 抓取 |
+| `extract_tags.py` | 文本标签提取 |
+| `fonts_viewer.py` | 字体预览 |
+
+（其余见 `abandon/` 目录）
 
 ---
 
-### 5. 独立脚本与工具
+## 技术栈（学习过程中接触过的）
 
-python_preview/ 根目录下还包含一系列独立脚本，用于快速实验和工具开发：
-
-| 脚本文件 | 功能说明 |
-|---------|---------|
-| abird.py / bbird.py | 鸟类数据相关实验 |
-| bilibili_agent.py | B站相关 Agent 实验 |
-| catrag.py | 猫图 RAG 实验 |
-| cuda-topk.py | CUDA 加速 TopK 检索 |
-| doggrag.py | 狗狗图片 RAG 实验 |
-| doubantop250.py | 豆瓣 Top250 数据抓取 |
-| extract_tags.py | 文本标签提取工具 |
-| fonts_viewer.py | 字体预览工具 |
-| hnsw-faiss.py | HNSW + FAISS 向量检索 |
-| langchainasyncio.py | LangChain AsyncIO 实验 |
-| linux_agent.py | Linux 操作 Agent |
-| lsapp.py | 应用列表工具 |
-| memorysaver.py | 内存优化工具 |
-| qwen_rag_final.py | Qwen RAG 最终版 |
-| train_text.txt | 训练文本数据 |
-
----
-
-## 技术栈总览
-
-| 类别 | 技术选型 |
-|------|---------|
+| 类别 | 技术 |
+|------|------|
 | **大模型** | DeepSeek、通义千问（Qwen）、豆包、元宝 |
 | **Agent 框架** | LangGraph、LangChain |
 | **向量数据库** | ChromaDB、FAISS、HNSW |
 | **Web 框架** | Dash、FastAPI |
 | **容器化** | Docker、docker-compose |
-| **评估测试** | 自研 Eval Suite、pytest |
-| **可视化** | Cytoscape.js、PyVis、Vis.js Network |
+| **评估测试** | pytest、自研 Eval Suite |
+| **可视化** | Cytoscape.js、PyVis、Vis.js |
 | **协议** | MCP（Model Context Protocol） |
+
+（不构成"本项目使用这些技术"的声明——只是学习足迹的索引）
 
 ---
 
@@ -176,26 +201,42 @@ python_preview/ 根目录下还包含一系列独立脚本，用于快速实验�
 ### 环境要求
 
 - Python >= 3.10
-- Docker >= 20.10（可选，用于容器化部署）
+- Docker >= 20.10（可选）
 
-### 安装依赖
+### 使用本仓库中的实验代码
 
-各子项目通常包含独立的 requirements.txt 或 pyproject.toml，建议在子项目目录下单独安装依赖：
+`py_lab/` 下的实验**通常不需要安装**——直接 `python <脚本>.py` 即可。
 
-    # 以 deepseek-qwen 任务规划器为例
-    cd python_preview/deepseek-qwen/new_task_planner
-    pip install -e .
+如某个实验需要额外依赖，其目录下会有 `requirements.txt` 或 `README.md`。
 
-    # 或以 langgraph-agent-demo 为例
-    cd python_preview/doubao-yuanbao/langgraph-agent-demo
-    pip install -r requirements.txt
+### 使用已拆分的独立项目
 
-### 环境变量配置
+请访问对应独立仓库，那里有完整的安装与使用说明。
 
-部分项目需要配置 .env 文件，可参考项目中的 .env.example 模板：
+### 环境变量
 
-    cp .env.example .env
-    # 编辑 .env 填入你的 API Key
+各实验按需自带 `.env.example`。**密钥不入库**——`.gitignore` 已排除 `.env*`（保留 `.env.example`）。
+
+---
+
+## 关于"学习旅程"这个词
+
+用这个词，不是哈气。
+
+**大多数人的 GitHub 是"作品集"**——只展示成功、只保留最漂亮的版本、删除失败痕迹。
+这没错，但那种仓库回答不了"我当时为什么这么选"。
+
+**这个仓库想做的是"日志"**——包括失败、犹豫、半成品、返工。
+它对未来的人（尤其是我自己）的价值，不在于"能跑"，而在于"能理解"。
+
+所以：
+
+- **不删 `abandon/`**——那些是历史的层次
+- **不删 `logs/`**——那些是过程的证据
+- **不怕乱**——只要可追溯
+- **不追求"干净漂亮"**——追求"真实完整"
+
+(代码部分含vibe-coding和aigc成分，所有项目和文件仅供自己学习和参考，不承诺能跑通)
 
 ---
 
@@ -209,3 +250,8 @@ python_preview/ 根目录下还包含一系列独立脚本，用于快速实验�
 
 - GitHub: [Duckherewegoo](https://github.com/Duckherewegoo)
 - Email: dakeginger@qq.com
+
+---
+
+> "The journey is the reward."
+> — 每一个 `git commit`，都是旅程本身。

@@ -1,0 +1,7 @@
+
+===== 开始测试luna16_ct模型（适配5800H+RTX3060 Mobile） =====
+📝 测试日志保存到：./output_detail/luna16_ct_test_log.txt
+🔧 测试模型路径：./continual_ckpt/best_luna16_ct_loss_epoch_53.pth | 测试集采样比例：0.2
+🔄 开始加载测试数据集（适配5800H+RTX3060 Mobile）...
+🔧 采样配置：LUNA16采样比例=1.0，COVID/VOC2012全量测试
+📁 LUNA16数据集加载: 共22915张图片 (测试模式: True)

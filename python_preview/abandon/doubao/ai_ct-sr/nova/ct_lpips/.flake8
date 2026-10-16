@@ -1,0 +1,6 @@
+[flake8]
+# max-line-length = 120
+# ignore = E501
+或者完全禁用行长度检查：
+max-line-length = 999
+ignore = E501

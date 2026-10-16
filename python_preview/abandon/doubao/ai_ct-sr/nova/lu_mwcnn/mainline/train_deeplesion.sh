@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python main_train_deeplesion_mixed.py

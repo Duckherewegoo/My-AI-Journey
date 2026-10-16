@@ -1,0 +1,260 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/__pycache__/metrics.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.838358
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1766562238 (2025-12-24 15:43:58)
+# Source code size mod 2**32: 1342 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: None
+#    2: ('structural_similarity', 'peak_signal_noise_ratio')
+#    3: <code object calc_ssim_torch at 0x55c3604bc910, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 6>
+#    4: <code object calc_psnr_torch at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 22>
+#    5: <code object calc_psnr at 0x7fde73f15610, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 27>
+#    6: <code object calc_ssim at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 32>
+# Names:
+#    0: torch
+#    1: skimage.metrics
+#    2: structural_similarity
+#    3: peak_signal_noise_ratio
+#    4: numpy
+#    5: np
+#    6: calc_ssim_torch
+#    7: calc_psnr_torch
+#    8: calc_psnr
+#    9: calc_ssim
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           (0)
+               4 LOAD_CONST           (None)
+               6 IMPORT_NAME          (torch)
+               8 STORE_NAME           (torch)
+
+  2:          10 LOAD_CONST           (0)
+              12 LOAD_CONST           (('structural_similarity', 'peak_signal_noise_ratio'))
+              14 IMPORT_NAME          (skimage.metrics)
+              16 IMPORT_FROM          (structural_similarity)
+              18 STORE_NAME           (structural_similarity)
+              20 IMPORT_FROM          (peak_signal_noise_ratio)
+              22 STORE_NAME           (peak_signal_noise_ratio)
+              24 POP_TOP
+
+  3:          26 LOAD_CONST           (0)
+              28 LOAD_CONST           (None)
+              30 IMPORT_NAME          (numpy)
+              32 STORE_NAME           (np)
+
+  6:          34 LOAD_CONST           (<code object calc_ssim_torch at 0x55c3604bc910, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 6>)
+              36 MAKE_FUNCTION        (No arguments)
+              38 STORE_NAME           (calc_ssim_torch)
+
+ 22:          40 LOAD_CONST           (<code object calc_psnr_torch at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 22>)
+              42 MAKE_FUNCTION        (No arguments)
+              44 STORE_NAME           (calc_psnr_torch)
+
+ 27:          46 LOAD_CONST           (<code object calc_psnr at 0x7fde73f15610, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 27>)
+              48 MAKE_FUNCTION        (No arguments)
+              50 STORE_NAME           (calc_psnr)
+
+ 32:          52 LOAD_CONST           (<code object calc_ssim at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py", line 32>)
+              54 MAKE_FUNCTION        (No arguments)
+              56 STORE_NAME           (calc_ssim)
+              58 LOAD_CONST           (None)
+              60 RETURN_VALUE
+
+
+# Method Name:       calc_ssim_torch
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        6
+# Constants:
+#    0: None
+#    1: 1.0
+#    2: ('data_range',)
+# Names:
+#    0: detach
+#    1: cpu
+#    2: numpy
+#    3: np
+#    4: squeeze
+#    5: structural_similarity
+# Varnames:
+#	img1, img2, img1_np, img2_np, ssim
+# Positional arguments:
+#	img1, img2
+# Local variables:
+#    2: img1_np
+#    3: img2_np
+#    4: ssim
+
+  6:           0 RESUME               0
+
+  9:           2 LOAD_FAST            (img1)
+               4 LOAD_METHOD          (detach)
+              26 PRECALL              0
+              30 CALL                 0
+              40 LOAD_METHOD          (cpu)
+              62 PRECALL              0
+              66 CALL                 0
+              76 LOAD_METHOD          (numpy)
+              98 PRECALL              0
+             102 CALL                 0
+             112 STORE_FAST           (img1_np)
+
+ 10:         114 LOAD_FAST            (img2)
+             116 LOAD_METHOD          (detach)
+             138 PRECALL              0
+             142 CALL                 0
+             152 LOAD_METHOD          (cpu)
+             174 PRECALL              0
+             178 CALL                 0
+             188 LOAD_METHOD          (numpy)
+             210 PRECALL              0
+             214 CALL                 0
+             224 STORE_FAST           (img2_np)
+
+ 13:         226 LOAD_GLOBAL          (NULL + np)
+             238 LOAD_ATTR            (squeeze)
+             248 LOAD_FAST            (img1_np)
+             250 PRECALL              1
+             254 CALL                 1
+             264 STORE_FAST           (img1_np)
+
+ 14:         266 LOAD_GLOBAL          (NULL + np)
+             278 LOAD_ATTR            (squeeze)
+             288 LOAD_FAST            (img2_np)
+             290 PRECALL              1
+             294 CALL                 1
+             304 STORE_FAST           (img2_np)
+
+ 18:         306 LOAD_GLOBAL          (NULL + structural_similarity)
+             318 LOAD_FAST            (img1_np)
+             320 LOAD_FAST            (img2_np)
+             322 LOAD_CONST           (1.0)
+             324 KW_NAMES             (('data_range',))
+             326 PRECALL              3
+             330 CALL                 3
+             340 STORE_FAST           (ssim)
+
+ 19:         342 LOAD_FAST            (ssim)
+             344 RETURN_VALUE
+
+
+# Method Name:       calc_psnr_torch
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        22
+# Constants:
+#    0: '计算 PSNR。参数为 torch.Tensor，范围在 [0, 1]。'
+#    1: 10.0
+#    2: 1.0
+#    3: 2
+# Names:
+#    0: torch
+#    1: log10
+#    2: mean
+# Varnames:
+#	img1, img2
+# Positional arguments:
+#	img1, img2
+
+ 22:           0 RESUME               0
+
+ 24:           2 LOAD_CONST           (10.0)
+               4 LOAD_GLOBAL          (NULL + torch)
+              16 LOAD_ATTR            (log10)
+              26 LOAD_CONST           (1.0)
+              28 LOAD_GLOBAL          (NULL + torch)
+              40 LOAD_ATTR            (mean)
+              50 LOAD_FAST            (img1)
+              52 LOAD_FAST            (img2)
+              54 BINARY_OP            (-)
+              58 LOAD_CONST           (2)
+              60 BINARY_OP            (**)
+              64 PRECALL              1
+              68 CALL                 1
+              78 BINARY_OP            (/)
+              82 PRECALL              1
+              86 CALL                 1
+              96 BINARY_OP            (*)
+             100 RETURN_VALUE
+
+
+# Method Name:       calc_psnr
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        27
+# Constants:
+#    0: '计算 PSNR。参数为 np.array，范围在 [0, 255] 或 [0, 1]'
+# Names:
+#    0: peak_signal_noise_ratio
+# Varnames:
+#	img1, img2
+# Positional arguments:
+#	img1, img2
+
+ 27:           0 RESUME               0
+
+ 29:           2 LOAD_GLOBAL          (NULL + peak_signal_noise_ratio)
+              14 LOAD_FAST            (img1)
+              16 LOAD_FAST            (img2)
+              18 PRECALL              2
+              22 CALL                 2
+              32 RETURN_VALUE
+
+
+# Method Name:       calc_ssim
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/metrics.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        32
+# Constants:
+#    0: '计算 SSIM。参数为 np.array，范围在 [0, 255] 或 [0, 1]'
+# Names:
+#    0: structural_similarity
+# Varnames:
+#	img1, img2
+# Positional arguments:
+#	img1, img2
+
+ 32:           0 RESUME               0
+
+ 34:           2 LOAD_GLOBAL          (NULL + structural_similarity)
+              14 LOAD_FAST            (img1)
+              16 LOAD_FAST            (img2)
+              18 PRECALL              2
+              22 CALL                 2
+              32 RETURN_VALUE
+

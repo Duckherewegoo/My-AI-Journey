@@ -1,0 +1,71 @@
+import { doms, isDomAvailable } from './doms.js';
+const cornerstone = window.cornerstone;
+
+// 缩放配置
+const ZOOM = {
+  min: 0.1,
+  max: 20,
+  step: 0.25,
+  current: 1.0
+};
+let drag = { active: false, x: 0, y: 0 };
+
+// 初始化缩放+拖拽
+export function initZoomPan() {
+  const el = doms.root;
+  if (!isDomAvailable(el) || !cornerstone) return;
+
+  doms.zoomIn.onclick = () => setZoom(ZOOM.current + ZOOM.step);
+  doms.zoomOut.onclick = () => setZoom(ZOOM.current - ZOOM.step);
+
+  // 拖拽事件
+  el.addEventListener('mousedown', (e) => {
+    drag.active = true;
+    drag.x = e.clientX;
+    drag.y = e.clientY;
+    el.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!drag.active) return;
+    const vp = cornerstone.getViewport(el);
+    const img = cornerstone.getImage(el);
+    if (!img) return;
+
+    const dx = (e.clientX - drag.x) / vp.scale;
+    const dy = (e.clientY - drag.y) / vp.scale;
+
+    // 防图片消失
+    const w = img.width * vp.scale;
+    const h = img.height * vp.scale;
+    vp.translation.x = Math.max(-w * 0.9, Math.min(vp.translation.x + dx, el.clientWidth - w * 0.1));
+    vp.translation.y = Math.max(-h * 0.9, Math.min(vp.translation.y + dy, el.clientHeight - h * 0.1));
+
+    cornerstone.setViewport(el, vp);
+    drag.x = e.clientX;
+    drag.y = e.clientY;
+  });
+
+  document.addEventListener('mouseup', () => {
+    drag.active = false;
+    el.style.cursor = 'default';
+  });
+}
+
+// 设置缩放
+function setZoom(val) {
+  const el = doms.root;
+  ZOOM.current = Math.max(ZOOM.min, Math.min(ZOOM.max, val));
+  const vp = cornerstone.getViewport(el);
+  vp.scale = ZOOM.current;
+  cornerstone.setViewport(el, vp);
+  doms.currentZoomRate.textContent = ZOOM.current.toFixed(2);
+}
+
+// 🔥 补全：缺失的 updateZoom（修复 updateZoom 警告）
+export function updateZoom() {
+  // 空兼容函数，不影响功能，仅消除警告
+  if(isDomAvailable(doms.currentZoomRate)) {
+    doms.currentZoomRate.textContent = ZOOM.current.toFixed(2);
+  }
+}

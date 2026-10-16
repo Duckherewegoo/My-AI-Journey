@@ -1,0 +1,4756 @@
+📝 开始记录deeplesionkey_ct训练日志到：./output_detail/deeplesionkey_ct_train_log.txt
+
+============================================================
+🚀 开始处理数据集: deeplesionkey_ct
+============================================================
+
+🔧 模型通道数验证与修复
+  📁 数据集类型: deeplesionkey_ct
+  🎯 期望通道数: 1
+  🔧 模型当前in_channels: 1
+  ✅ 模型通道数验证通过: 1通道
+
+🔧 初始化LPIPS模型...
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/dake/.conda/envs/drch/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+  ✅ LPIPS模型初始化完成
+
+============================================================
+⚙️ 训练配置
+============================================================
+  🎯 期望通道数: 1
+  🔧 缩放因子: 4
+  📦 批次大小: 8
+  📈 初始学习率: 5e-06
+  ⚖️  L2正则化: 0.0001
+  ⏱️  早停耐心值: 30
+  📉 早停最小变化: 0.0001
+  🔄 总训练轮数: 1000
+  🔒 冻结主干轮数: 5
+
+🔍 加载预训练权重: ./output_deeplesion/goat/best_luna16_ct_psnr_epoch_56.pth
+
+✅ 预训练权重加载完成
+   匹配层数: 28
+   形状不匹配: 0
+   键未找到: 0
+  ✅ 预训练权重加载完成
+
+🔧 创建优化器和调度器...
+  ✅ 优化器创建完成 (学习率: 5e-06)
+  🔄 调度器创建完成
+
+============================================================
+📂 加载检查点
+============================================================
+🔍 在./continual_ckpt/deeplesionkey_ct中未找到断点文件
+
+🔍 最终模型状态验证
+  🔧 模型最终in_channels: 1
+  ✅ 模型通道数验证通过: 1通道
+  🔍 上采样层 upsample.0.weight: 形状[4, 1, 3, 3]
+  🔍 上采样层 upsample.2.weight: 形状[4, 1, 3, 3]
+
+============================================================
+📊 训练状态
+============================================================
+  📅 下一轮开始: 0
+  🎯 总训练轮数: 1000
+  📈 恢复的最佳指标:
+    📉 Loss: inf
+    📈 PSNR: 0.00 dB
+    🎨 SSIM: 0.0000
+    🔍 LPIPS: inf
+  🔓 可训练参数: 2,250,577
+  🔒 冻结参数: 2,250,176
+
+============================================================
+🚀 开始训练循环
+============================================================
+  🔍 验证输入数据:
+    LR图像形状: [8, 1, 32, 32]
+    HR图像形状: [8, 1, 128, 128]
+    期望通道数: 1
+
+============================================================
+📊 Epoch 1/1000 训练结果
+============================================================
+  📅 轮次: 1
+  ⏱️  耗时: 250.19秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.110921
+    📈 PSNR: 13.42 dB
+    🎨 SSIM: 0.6479
+    🔍 LPIPS: 0.5361
+  🔧 当前学习率: 0.00000498
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_1.pth
+  🥇 更新最佳Loss: 0.110921 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_1.pth)
+  🥇 更新最佳PSNR: 13.42 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_1.pth)
+  🥇 更新最佳SSIM: 0.6479 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_1.pth)
+  🥇 更新最佳LPIPS: 0.5361 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_1.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.110921
+    📈 最佳PSNR: 13.42 dB
+    🎨 最佳SSIM: 0.6479
+    🔍 最佳LPIPS: 0.5361
+📝 初始化TensorBoard日志器: ./tb_logs/deeplesionkey_ct
+📊 TensorBoard日志记录 - Epoch 1: Loss=0.110921, PSNR=13.42, SSIM=0.6479, LPIPS=0.5361, LR=0.00000498
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 2/1000 训练结果
+============================================================
+  📅 轮次: 2
+  ⏱️  耗时: 255.19秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.109409
+    📈 PSNR: 13.51 dB
+    🎨 SSIM: 0.6520
+    🔍 LPIPS: 0.5317
+  🔧 当前学习率: 0.00000490
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_2.pth
+  🥇 更新最佳Loss: 0.109409 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_2.pth)
+  🥇 更新最佳PSNR: 13.51 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_2.pth)
+  🥇 更新最佳SSIM: 0.6520 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_2.pth)
+  🥇 更新最佳LPIPS: 0.5317 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_2.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.109409
+    📈 最佳PSNR: 13.51 dB
+    🎨 最佳SSIM: 0.6520
+    🔍 最佳LPIPS: 0.5317
+📊 TensorBoard日志记录 - Epoch 2: Loss=0.109409, PSNR=13.51, SSIM=0.6520, LPIPS=0.5317, LR=0.00000490
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 3/1000 训练结果
+============================================================
+  📅 轮次: 3
+  ⏱️  耗时: 268.37秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.107971
+    📈 PSNR: 13.60 dB
+    🎨 SSIM: 0.6561
+    🔍 LPIPS: 0.5270
+  🔧 当前学习率: 0.00000478
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_3.pth
+  🥇 更新最佳Loss: 0.107971 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_3.pth)
+  🥇 更新最佳PSNR: 13.60 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_3.pth)
+  🥇 更新最佳SSIM: 0.6561 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_3.pth)
+  🥇 更新最佳LPIPS: 0.5270 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_3.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.107971
+    📈 最佳PSNR: 13.60 dB
+    🎨 最佳SSIM: 0.6561
+    🔍 最佳LPIPS: 0.5270
+📊 TensorBoard日志记录 - Epoch 3: Loss=0.107971, PSNR=13.60, SSIM=0.6561, LPIPS=0.5270, LR=0.00000478
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 4/1000 训练结果
+============================================================
+  📅 轮次: 4
+  ⏱️  耗时: 278.39秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.106707
+    📈 PSNR: 13.72 dB
+    🎨 SSIM: 0.6575
+    🔍 LPIPS: 0.5227
+  🔧 当前学习率: 0.00000462
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_4.pth
+  🥇 更新最佳Loss: 0.106707 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_4.pth)
+  🥇 更新最佳PSNR: 13.72 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_4.pth)
+  🥇 更新最佳SSIM: 0.6575 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_4.pth)
+  🥇 更新最佳LPIPS: 0.5227 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_4.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.106707
+    📈 最佳PSNR: 13.72 dB
+    🎨 最佳SSIM: 0.6575
+    🔍 最佳LPIPS: 0.5227
+📊 TensorBoard日志记录 - Epoch 4: Loss=0.106707, PSNR=13.72, SSIM=0.6575, LPIPS=0.5227, LR=0.00000462
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 5/1000 训练结果
+============================================================
+  📅 轮次: 5
+  ⏱️  耗时: 280.35秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.105403
+    📈 PSNR: 13.85 dB
+    🎨 SSIM: 0.6593
+    🔍 LPIPS: 0.5209
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_5.pth
+  🥇 更新最佳Loss: 0.105403 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_5.pth)
+  🥇 更新最佳PSNR: 13.85 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_5.pth)
+  🥇 更新最佳SSIM: 0.6593 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_5.pth)
+  🥇 更新最佳LPIPS: 0.5209 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_5.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.105403
+    📈 最佳PSNR: 13.85 dB
+    🎨 最佳SSIM: 0.6593
+    🔍 最佳LPIPS: 0.5209
+📊 TensorBoard日志记录 - Epoch 5: Loss=0.105403, PSNR=13.85, SSIM=0.6593, LPIPS=0.5209, LR=0.00000441
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 5: 已记录28层参数和梯度
+  📝 第5轮模型权重记录到TensorBoard
+
+============================================================
+🔓 第6轮解冻主干网络
+============================================================
+🔄 早停计数器已重置为0
+  🔄 重新初始化优化器和调度器
+  🔄 重置早停计数器
+  💡 开始全量训练
+
+============================================================
+📊 Epoch 6/1000 训练结果
+============================================================
+  📅 轮次: 6
+  ⏱️  耗时: 290.30秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.104501
+    📈 PSNR: 13.92 dB
+    🎨 SSIM: 0.6616
+    🔍 LPIPS: 0.5198
+  🔧 当前学习率: 0.00000371
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_6.pth
+  🥇 更新最佳Loss: 0.104501 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_6.pth)
+  🥇 更新最佳PSNR: 13.92 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_6.pth)
+  🥇 更新最佳SSIM: 0.6616 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_6.pth)
+  🥇 更新最佳LPIPS: 0.5198 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_6.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.104501
+    📈 最佳PSNR: 13.92 dB
+    🎨 最佳SSIM: 0.6616
+    🔍 最佳LPIPS: 0.5198
+📊 TensorBoard日志记录 - Epoch 6: Loss=0.104501, PSNR=13.92, SSIM=0.6616, LPIPS=0.5198, LR=0.00000371
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 7/1000 训练结果
+============================================================
+  📅 轮次: 7
+  ⏱️  耗时: 293.02秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.103765
+    📈 PSNR: 13.97 dB
+    🎨 SSIM: 0.6634
+    🔍 LPIPS: 0.5188
+  🔧 当前学习率: 0.00000348
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_7.pth
+  🥇 更新最佳Loss: 0.103765 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_7.pth)
+  🥇 更新最佳PSNR: 13.97 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_7.pth)
+  🥇 更新最佳SSIM: 0.6634 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_7.pth)
+  🥇 更新最佳LPIPS: 0.5188 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_7.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.103765
+    📈 最佳PSNR: 13.97 dB
+    🎨 最佳SSIM: 0.6634
+    🔍 最佳LPIPS: 0.5188
+📊 TensorBoard日志记录 - Epoch 7: Loss=0.103765, PSNR=13.97, SSIM=0.6634, LPIPS=0.5188, LR=0.00000348
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 8/1000 训练结果
+============================================================
+  📅 轮次: 8
+  ⏱️  耗时: 296.15秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.103000
+    📈 PSNR: 14.03 dB
+    🎨 SSIM: 0.6652
+    🔍 LPIPS: 0.5180
+  🔧 当前学习率: 0.00000323
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_8.pth
+  🥇 更新最佳Loss: 0.103000 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_8.pth)
+  🥇 更新最佳PSNR: 14.03 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_8.pth)
+  🥇 更新最佳SSIM: 0.6652 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_8.pth)
+  🥇 更新最佳LPIPS: 0.5180 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_8.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.103000
+    📈 最佳PSNR: 14.03 dB
+    🎨 最佳SSIM: 0.6652
+    🔍 最佳LPIPS: 0.5180
+📊 TensorBoard日志记录 - Epoch 8: Loss=0.103000, PSNR=14.03, SSIM=0.6652, LPIPS=0.5180, LR=0.00000323
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 9/1000 训练结果
+============================================================
+  📅 轮次: 9
+  ⏱️  耗时: 296.60秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.102618
+    📈 PSNR: 14.08 dB
+    🎨 SSIM: 0.6654
+    🔍 LPIPS: 0.5173
+  🔧 当前学习率: 0.00000297
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_9.pth
+  🥇 更新最佳Loss: 0.102618 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_9.pth)
+  🥇 更新最佳PSNR: 14.08 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_9.pth)
+  🥇 更新最佳SSIM: 0.6654 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_9.pth)
+  🥇 更新最佳LPIPS: 0.5173 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_9.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.102618
+    📈 最佳PSNR: 14.08 dB
+    🎨 最佳SSIM: 0.6654
+    🔍 最佳LPIPS: 0.5173
+📊 TensorBoard日志记录 - Epoch 9: Loss=0.102618, PSNR=14.08, SSIM=0.6654, LPIPS=0.5173, LR=0.00000297
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 10/1000 训练结果
+============================================================
+  📅 轮次: 10
+  ⏱️  耗时: 299.52秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.101885
+    📈 PSNR: 14.12 dB
+    🎨 SSIM: 0.6680
+    🔍 LPIPS: 0.5166
+  🔧 当前学习率: 0.00000271
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_10.pth
+  🥇 更新最佳Loss: 0.101885 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_10.pth)
+  🥇 更新最佳PSNR: 14.12 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_10.pth)
+  🥇 更新最佳SSIM: 0.6680 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_10.pth)
+  🥇 更新最佳LPIPS: 0.5166 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_10.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.101885
+    📈 最佳PSNR: 14.12 dB
+    🎨 最佳SSIM: 0.6680
+    🔍 最佳LPIPS: 0.5166
+📊 TensorBoard日志记录 - Epoch 10: Loss=0.101885, PSNR=14.12, SSIM=0.6680, LPIPS=0.5166, LR=0.00000271
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 10: 已记录28层参数和梯度
+  📝 第10轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 11/1000 训练结果
+============================================================
+  📅 轮次: 11
+  ⏱️  耗时: 301.43秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.101537
+    📈 PSNR: 14.15 dB
+    🎨 SSIM: 0.6687
+    🔍 LPIPS: 0.5163
+  🔧 当前学习率: 0.00000244
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_11.pth
+  🥇 更新最佳Loss: 0.101537 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_11.pth)
+  🥇 更新最佳PSNR: 14.15 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_11.pth)
+  🥇 更新最佳SSIM: 0.6687 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_11.pth)
+  🥇 更新最佳LPIPS: 0.5163 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_11.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.101537
+    📈 最佳PSNR: 14.15 dB
+    🎨 最佳SSIM: 0.6687
+    🔍 最佳LPIPS: 0.5163
+📊 TensorBoard日志记录 - Epoch 11: Loss=0.101537, PSNR=14.15, SSIM=0.6687, LPIPS=0.5163, LR=0.00000244
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 12/1000 训练结果
+============================================================
+  📅 轮次: 12
+  ⏱️  耗时: 301.23秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.101084
+    📈 PSNR: 14.19 dB
+    🎨 SSIM: 0.6698
+    🔍 LPIPS: 0.5156
+  🔧 当前学习率: 0.00000218
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_12.pth
+  🥇 更新最佳Loss: 0.101084 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_12.pth)
+  🥇 更新最佳PSNR: 14.19 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_12.pth)
+  🥇 更新最佳SSIM: 0.6698 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_12.pth)
+  🥇 更新最佳LPIPS: 0.5156 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_12.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.101084
+    📈 最佳PSNR: 14.19 dB
+    🎨 最佳SSIM: 0.6698
+    🔍 最佳LPIPS: 0.5156
+📊 TensorBoard日志记录 - Epoch 12: Loss=0.101084, PSNR=14.19, SSIM=0.6698, LPIPS=0.5156, LR=0.00000218
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 13/1000 训练结果
+============================================================
+  📅 轮次: 13
+  ⏱️  耗时: 302.62秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.100680
+    📈 PSNR: 14.23 dB
+    🎨 SSIM: 0.6703
+    🔍 LPIPS: 0.5148
+  🔧 当前学习率: 0.00000193
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_13.pth
+  🥇 更新最佳Loss: 0.100680 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_13.pth)
+  🥇 更新最佳PSNR: 14.23 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_13.pth)
+  🥇 更新最佳SSIM: 0.6703 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_13.pth)
+  🥇 更新最佳LPIPS: 0.5148 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_13.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.100680
+    📈 最佳PSNR: 14.23 dB
+    🎨 最佳SSIM: 0.6703
+    🔍 最佳LPIPS: 0.5148
+📊 TensorBoard日志记录 - Epoch 13: Loss=0.100680, PSNR=14.23, SSIM=0.6703, LPIPS=0.5148, LR=0.00000193
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 14/1000 训练结果
+============================================================
+  📅 轮次: 14
+  ⏱️  耗时: 303.50秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.100174
+    📈 PSNR: 14.28 dB
+    🎨 SSIM: 0.6714
+    🔍 LPIPS: 0.5141
+  🔧 当前学习率: 0.00000170
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_14.pth
+  🥇 更新最佳Loss: 0.100174 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_14.pth)
+  🥇 更新最佳PSNR: 14.28 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_14.pth)
+  🥇 更新最佳SSIM: 0.6714 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_14.pth)
+  🥇 更新最佳LPIPS: 0.5141 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_14.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.100174
+    📈 最佳PSNR: 14.28 dB
+    🎨 最佳SSIM: 0.6714
+    🔍 最佳LPIPS: 0.5141
+📊 TensorBoard日志记录 - Epoch 14: Loss=0.100174, PSNR=14.28, SSIM=0.6714, LPIPS=0.5141, LR=0.00000170
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 15/1000 训练结果
+============================================================
+  📅 轮次: 15
+  ⏱️  耗时: 304.93秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.099621
+    📈 PSNR: 14.32 dB
+    🎨 SSIM: 0.6727
+    🔍 LPIPS: 0.5135
+  🔧 当前学习率: 0.00000150
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_15.pth
+  🥇 更新最佳Loss: 0.099621 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_15.pth)
+  🥇 更新最佳PSNR: 14.32 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_15.pth)
+  🥇 更新最佳SSIM: 0.6727 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_15.pth)
+  🥇 更新最佳LPIPS: 0.5135 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_15.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.099621
+    📈 最佳PSNR: 14.32 dB
+    🎨 最佳SSIM: 0.6727
+    🔍 最佳LPIPS: 0.5135
+📊 TensorBoard日志记录 - Epoch 15: Loss=0.099621, PSNR=14.32, SSIM=0.6727, LPIPS=0.5135, LR=0.00000150
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 15: 已记录28层参数和梯度
+  📝 第15轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 16/1000 训练结果
+============================================================
+  📅 轮次: 16
+  ⏱️  耗时: 303.68秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.099308
+    📈 PSNR: 14.35 dB
+    🎨 SSIM: 0.6731
+    🔍 LPIPS: 0.5132
+  🔧 当前学习率: 0.00000133
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_16.pth
+  🥇 更新最佳Loss: 0.099308 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_16.pth)
+  🥇 更新最佳PSNR: 14.35 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_16.pth)
+  🥇 更新最佳SSIM: 0.6731 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_16.pth)
+  🥇 更新最佳LPIPS: 0.5132 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_16.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.099308
+    📈 最佳PSNR: 14.35 dB
+    🎨 最佳SSIM: 0.6731
+    🔍 最佳LPIPS: 0.5132
+📊 TensorBoard日志记录 - Epoch 16: Loss=0.099308, PSNR=14.35, SSIM=0.6731, LPIPS=0.5132, LR=0.00000133
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 17/1000 训练结果
+============================================================
+  📅 轮次: 17
+  ⏱️  耗时: 308.57秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.098946
+    📈 PSNR: 14.39 dB
+    🎨 SSIM: 0.6738
+    🔍 LPIPS: 0.5126
+  🔧 当前学习率: 0.00000119
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_17.pth
+  🥇 更新最佳Loss: 0.098946 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_17.pth)
+  🥇 更新最佳PSNR: 14.39 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_17.pth)
+  🥇 更新最佳SSIM: 0.6738 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_17.pth)
+  🥇 更新最佳LPIPS: 0.5126 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_17.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.098946
+    📈 最佳PSNR: 14.39 dB
+    🎨 最佳SSIM: 0.6738
+    🔍 最佳LPIPS: 0.5126
+📊 TensorBoard日志记录 - Epoch 17: Loss=0.098946, PSNR=14.39, SSIM=0.6738, LPIPS=0.5126, LR=0.00000119
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 18/1000 训练结果
+============================================================
+  📅 轮次: 18
+  ⏱️  耗时: 304.73秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.098582
+    📈 PSNR: 14.41 dB
+    🎨 SSIM: 0.6748
+    🔍 LPIPS: 0.5122
+  🔧 当前学习率: 0.00000108
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_18.pth
+  🥇 更新最佳Loss: 0.098582 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_18.pth)
+  🥇 更新最佳PSNR: 14.41 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_18.pth)
+  🥇 更新最佳SSIM: 0.6748 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_18.pth)
+  🥇 更新最佳LPIPS: 0.5122 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_18.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.098582
+    📈 最佳PSNR: 14.41 dB
+    🎨 最佳SSIM: 0.6748
+    🔍 最佳LPIPS: 0.5122
+📊 TensorBoard日志记录 - Epoch 18: Loss=0.098582, PSNR=14.41, SSIM=0.6748, LPIPS=0.5122, LR=0.00000108
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 19/1000 训练结果
+============================================================
+  📅 轮次: 19
+  ⏱️  耗时: 306.45秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.098429
+    📈 PSNR: 14.44 dB
+    🎨 SSIM: 0.6747
+    🔍 LPIPS: 0.5115
+  🔧 当前学习率: 0.00000102
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_19.pth
+  🥇 更新最佳Loss: 0.098429 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_19.pth)
+  🥇 更新最佳PSNR: 14.44 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_19.pth)
+  🥇 更新最佳LPIPS: 0.5115 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_19.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.098429
+    📈 最佳PSNR: 14.44 dB
+    🎨 最佳SSIM: 0.6748
+    🔍 最佳LPIPS: 0.5115
+📊 TensorBoard日志记录 - Epoch 19: Loss=0.098429, PSNR=14.44, SSIM=0.6747, LPIPS=0.5115, LR=0.00000102
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 20/1000 训练结果
+============================================================
+  📅 轮次: 20
+  ⏱️  耗时: 307.85秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.098030
+    📈 PSNR: 14.47 dB
+    🎨 SSIM: 0.6758
+    🔍 LPIPS: 0.5114
+  🔧 当前学习率: 0.00000100
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_20.pth
+  🥇 更新最佳Loss: 0.098030 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_20.pth)
+  🥇 更新最佳PSNR: 14.47 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_20.pth)
+  🥇 更新最佳SSIM: 0.6758 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_20.pth)
+  🥇 更新最佳LPIPS: 0.5114 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_20.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.098030
+    📈 最佳PSNR: 14.47 dB
+    🎨 最佳SSIM: 0.6758
+    🔍 最佳LPIPS: 0.5114
+📊 TensorBoard日志记录 - Epoch 20: Loss=0.098030, PSNR=14.47, SSIM=0.6758, LPIPS=0.5114, LR=0.00000100
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 20: 已记录28层参数和梯度
+  📝 第20轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 21/1000 训练结果
+============================================================
+  📅 轮次: 21
+  ⏱️  耗时: 308.69秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.097566
+    📈 PSNR: 14.52 dB
+    🎨 SSIM: 0.6765
+    🔍 LPIPS: 0.5111
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_21.pth
+  🥇 更新最佳Loss: 0.097566 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_21.pth)
+  🥇 更新最佳PSNR: 14.52 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_21.pth)
+  🥇 更新最佳SSIM: 0.6765 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_21.pth)
+  🥇 更新最佳LPIPS: 0.5111 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_21.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.097566
+    📈 最佳PSNR: 14.52 dB
+    🎨 最佳SSIM: 0.6765
+    🔍 最佳LPIPS: 0.5111
+📊 TensorBoard日志记录 - Epoch 21: Loss=0.097566, PSNR=14.52, SSIM=0.6765, LPIPS=0.5111, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 22/1000 训练结果
+============================================================
+  📅 轮次: 22
+  ⏱️  耗时: 306.66秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.096293
+    📈 PSNR: 14.64 dB
+    🎨 SSIM: 0.6796
+    🔍 LPIPS: 0.5101
+  🔧 当前学习率: 0.00000439
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_22.pth
+  🥇 更新最佳Loss: 0.096293 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_22.pth)
+  🥇 更新最佳PSNR: 14.64 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_22.pth)
+  🥇 更新最佳SSIM: 0.6796 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_22.pth)
+  🥇 更新最佳LPIPS: 0.5101 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_22.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.096293
+    📈 最佳PSNR: 14.64 dB
+    🎨 最佳SSIM: 0.6796
+    🔍 最佳LPIPS: 0.5101
+📊 TensorBoard日志记录 - Epoch 22: Loss=0.096293, PSNR=14.64, SSIM=0.6796, LPIPS=0.5101, LR=0.00000439
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 23/1000 训练结果
+============================================================
+  📅 轮次: 23
+  ⏱️  耗时: 305.48秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.095396
+    📈 PSNR: 14.75 dB
+    🎨 SSIM: 0.6812
+    🔍 LPIPS: 0.5102
+  🔧 当前学习率: 0.00000437
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_23.pth
+  🥇 更新最佳Loss: 0.095396 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_23.pth)
+  🥇 更新最佳PSNR: 14.75 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_23.pth)
+  🥇 更新最佳SSIM: 0.6812 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_23.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.095396
+    📈 最佳PSNR: 14.75 dB
+    🎨 最佳SSIM: 0.6812
+    🔍 最佳LPIPS: 0.5101
+📊 TensorBoard日志记录 - Epoch 23: Loss=0.095396, PSNR=14.75, SSIM=0.6812, LPIPS=0.5102, LR=0.00000437
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 24/1000 训练结果
+============================================================
+  📅 轮次: 24
+  ⏱️  耗时: 307.64秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.094365
+    📈 PSNR: 14.86 dB
+    🎨 SSIM: 0.6834
+    🔍 LPIPS: 0.5099
+  🔧 当前学习率: 0.00000433
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_24.pth
+  🥇 更新最佳Loss: 0.094365 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_24.pth)
+  🥇 更新最佳PSNR: 14.86 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_24.pth)
+  🥇 更新最佳SSIM: 0.6834 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_24.pth)
+  🥇 更新最佳LPIPS: 0.5099 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_24.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.094365
+    📈 最佳PSNR: 14.86 dB
+    🎨 最佳SSIM: 0.6834
+    🔍 最佳LPIPS: 0.5099
+📊 TensorBoard日志记录 - Epoch 24: Loss=0.094365, PSNR=14.86, SSIM=0.6834, LPIPS=0.5099, LR=0.00000433
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 25/1000 训练结果
+============================================================
+  📅 轮次: 25
+  ⏱️  耗时: 308.80秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.093210
+    📈 PSNR: 14.97 dB
+    🎨 SSIM: 0.6864
+    🔍 LPIPS: 0.5093
+  🔧 当前学习率: 0.00000428
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_25.pth
+  🥇 更新最佳Loss: 0.093210 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_25.pth)
+  🥇 更新最佳PSNR: 14.97 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_25.pth)
+  🥇 更新最佳SSIM: 0.6864 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_25.pth)
+  🥇 更新最佳LPIPS: 0.5093 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_25.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.093210
+    📈 最佳PSNR: 14.97 dB
+    🎨 最佳SSIM: 0.6864
+    🔍 最佳LPIPS: 0.5093
+📊 TensorBoard日志记录 - Epoch 25: Loss=0.093210, PSNR=14.97, SSIM=0.6864, LPIPS=0.5093, LR=0.00000428
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 25: 已记录28层参数和梯度
+  📝 第25轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 26/1000 训练结果
+============================================================
+  📅 轮次: 26
+  ⏱️  耗时: 307.43秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.092396
+    📈 PSNR: 15.07 dB
+    🎨 SSIM: 0.6883
+    🔍 LPIPS: 0.5095
+  🔧 当前学习率: 0.00000423
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_26.pth
+  🥇 更新最佳Loss: 0.092396 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_26.pth)
+  🥇 更新最佳PSNR: 15.07 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_26.pth)
+  🥇 更新最佳SSIM: 0.6883 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_26.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.092396
+    📈 最佳PSNR: 15.07 dB
+    🎨 最佳SSIM: 0.6883
+    🔍 最佳LPIPS: 0.5093
+📊 TensorBoard日志记录 - Epoch 26: Loss=0.092396, PSNR=15.07, SSIM=0.6883, LPIPS=0.5095, LR=0.00000423
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 27/1000 训练结果
+============================================================
+  📅 轮次: 27
+  ⏱️  耗时: 306.14秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.091457
+    📈 PSNR: 15.18 dB
+    🎨 SSIM: 0.6904
+    🔍 LPIPS: 0.5096
+  🔧 当前学习率: 0.00000416
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_27.pth
+  🥇 更新最佳Loss: 0.091457 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_27.pth)
+  🥇 更新最佳PSNR: 15.18 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_27.pth)
+  🥇 更新最佳SSIM: 0.6904 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_27.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.091457
+    📈 最佳PSNR: 15.18 dB
+    🎨 最佳SSIM: 0.6904
+    🔍 最佳LPIPS: 0.5093
+📊 TensorBoard日志记录 - Epoch 27: Loss=0.091457, PSNR=15.18, SSIM=0.6904, LPIPS=0.5096, LR=0.00000416
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 28/1000 训练结果
+============================================================
+  📅 轮次: 28
+  ⏱️  耗时: 309.38秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.090588
+    📈 PSNR: 15.29 dB
+    🎨 SSIM: 0.6922
+    🔍 LPIPS: 0.5103
+  🔧 当前学习率: 0.00000409
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_28.pth
+  🥇 更新最佳Loss: 0.090588 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_28.pth)
+  🥇 更新最佳PSNR: 15.29 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_28.pth)
+  🥇 更新最佳SSIM: 0.6922 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_28.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.090588
+    📈 最佳PSNR: 15.29 dB
+    🎨 最佳SSIM: 0.6922
+    🔍 最佳LPIPS: 0.5093
+📊 TensorBoard日志记录 - Epoch 28: Loss=0.090588, PSNR=15.29, SSIM=0.6922, LPIPS=0.5103, LR=0.00000409
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 29/1000 训练结果
+============================================================
+  📅 轮次: 29
+  ⏱️  耗时: 302.82秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.089694
+    📈 PSNR: 15.39 dB
+    🎨 SSIM: 0.6943
+    🔍 LPIPS: 0.5090
+  🔧 当前学习率: 0.00000401
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_29.pth
+  🥇 更新最佳Loss: 0.089694 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_29.pth)
+  🥇 更新最佳PSNR: 15.39 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_29.pth)
+  🥇 更新最佳SSIM: 0.6943 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_29.pth)
+  🥇 更新最佳LPIPS: 0.5090 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_29.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.089694
+    📈 最佳PSNR: 15.39 dB
+    🎨 最佳SSIM: 0.6943
+    🔍 最佳LPIPS: 0.5090
+📊 TensorBoard日志记录 - Epoch 29: Loss=0.089694, PSNR=15.39, SSIM=0.6943, LPIPS=0.5090, LR=0.00000401
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 30/1000 训练结果
+============================================================
+  📅 轮次: 30
+  ⏱️  耗时: 309.68秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.088761
+    📈 PSNR: 15.49 dB
+    🎨 SSIM: 0.6968
+    🔍 LPIPS: 0.5088
+  🔧 当前学习率: 0.00000391
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_30.pth
+  🥇 更新最佳Loss: 0.088761 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_30.pth)
+  🥇 更新最佳PSNR: 15.49 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_30.pth)
+  🥇 更新最佳SSIM: 0.6968 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_30.pth)
+  🥇 更新最佳LPIPS: 0.5088 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_30.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.088761
+    📈 最佳PSNR: 15.49 dB
+    🎨 最佳SSIM: 0.6968
+    🔍 最佳LPIPS: 0.5088
+📊 TensorBoard日志记录 - Epoch 30: Loss=0.088761, PSNR=15.49, SSIM=0.6968, LPIPS=0.5088, LR=0.00000391
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 30: 已记录28层参数和梯度
+  📝 第30轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 31/1000 训练结果
+============================================================
+  📅 轮次: 31
+  ⏱️  耗时: 308.85秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.088169
+    📈 PSNR: 15.58 dB
+    🎨 SSIM: 0.6979
+    🔍 LPIPS: 0.5091
+  🔧 当前学习率: 0.00000382
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_31.pth
+  🥇 更新最佳Loss: 0.088169 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_31.pth)
+  🥇 更新最佳PSNR: 15.58 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_31.pth)
+  🥇 更新最佳SSIM: 0.6979 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_31.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.088169
+    📈 最佳PSNR: 15.58 dB
+    🎨 最佳SSIM: 0.6979
+    🔍 最佳LPIPS: 0.5088
+📊 TensorBoard日志记录 - Epoch 31: Loss=0.088169, PSNR=15.58, SSIM=0.6979, LPIPS=0.5091, LR=0.00000382
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 32/1000 训练结果
+============================================================
+  📅 轮次: 32
+  ⏱️  耗时: 303.31秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.087340
+    📈 PSNR: 15.67 dB
+    🎨 SSIM: 0.7000
+    🔍 LPIPS: 0.5089
+  🔧 当前学习率: 0.00000371
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_32.pth
+  🥇 更新最佳Loss: 0.087340 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_32.pth)
+  🥇 更新最佳PSNR: 15.67 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_32.pth)
+  🥇 更新最佳SSIM: 0.7000 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_32.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.087340
+    📈 最佳PSNR: 15.67 dB
+    🎨 最佳SSIM: 0.7000
+    🔍 最佳LPIPS: 0.5088
+📊 TensorBoard日志记录 - Epoch 32: Loss=0.087340, PSNR=15.67, SSIM=0.7000, LPIPS=0.5089, LR=0.00000371
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 33/1000 训练结果
+============================================================
+  📅 轮次: 33
+  ⏱️  耗时: 307.64秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.086666
+    📈 PSNR: 15.75 dB
+    🎨 SSIM: 0.7017
+    🔍 LPIPS: 0.5082
+  🔧 当前学习率: 0.00000360
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_33.pth
+  🥇 更新最佳Loss: 0.086666 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_33.pth)
+  🥇 更新最佳PSNR: 15.75 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_33.pth)
+  🥇 更新最佳SSIM: 0.7017 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_33.pth)
+  🥇 更新最佳LPIPS: 0.5082 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_33.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.086666
+    📈 最佳PSNR: 15.75 dB
+    🎨 最佳SSIM: 0.7017
+    🔍 最佳LPIPS: 0.5082
+📊 TensorBoard日志记录 - Epoch 33: Loss=0.086666, PSNR=15.75, SSIM=0.7017, LPIPS=0.5082, LR=0.00000360
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 34/1000 训练结果
+============================================================
+  📅 轮次: 34
+  ⏱️  耗时: 309.00秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.086010
+    📈 PSNR: 15.84 dB
+    🎨 SSIM: 0.7032
+    🔍 LPIPS: 0.5081
+  🔧 当前学习率: 0.00000348
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_34.pth
+  🥇 更新最佳Loss: 0.086010 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_34.pth)
+  🥇 更新最佳PSNR: 15.84 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_34.pth)
+  🥇 更新最佳SSIM: 0.7032 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_34.pth)
+  🥇 更新最佳LPIPS: 0.5081 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_34.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.086010
+    📈 最佳PSNR: 15.84 dB
+    🎨 最佳SSIM: 0.7032
+    🔍 最佳LPIPS: 0.5081
+📊 TensorBoard日志记录 - Epoch 34: Loss=0.086010, PSNR=15.84, SSIM=0.7032, LPIPS=0.5081, LR=0.00000348
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 35/1000 训练结果
+============================================================
+  📅 轮次: 35
+  ⏱️  耗时: 302.46秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.085523
+    📈 PSNR: 15.91 dB
+    🎨 SSIM: 0.7041
+    🔍 LPIPS: 0.5079
+  🔧 当前学习率: 0.00000336
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_35.pth
+  🥇 更新最佳Loss: 0.085523 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_35.pth)
+  🥇 更新最佳PSNR: 15.91 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_35.pth)
+  🥇 更新最佳SSIM: 0.7041 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_35.pth)
+  🥇 更新最佳LPIPS: 0.5079 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_35.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.085523
+    📈 最佳PSNR: 15.91 dB
+    🎨 最佳SSIM: 0.7041
+    🔍 最佳LPIPS: 0.5079
+📊 TensorBoard日志记录 - Epoch 35: Loss=0.085523, PSNR=15.91, SSIM=0.7041, LPIPS=0.5079, LR=0.00000336
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 35: 已记录28层参数和梯度
+  📝 第35轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 36/1000 训练结果
+============================================================
+  📅 轮次: 36
+  ⏱️  耗时: 305.85秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.085031
+    📈 PSNR: 15.98 dB
+    🎨 SSIM: 0.7052
+    🔍 LPIPS: 0.5072
+  🔧 当前学习率: 0.00000323
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_36.pth
+  🥇 更新最佳Loss: 0.085031 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_36.pth)
+  🥇 更新最佳PSNR: 15.98 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_36.pth)
+  🥇 更新最佳SSIM: 0.7052 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_36.pth)
+  🥇 更新最佳LPIPS: 0.5072 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_36.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.085031
+    📈 最佳PSNR: 15.98 dB
+    🎨 最佳SSIM: 0.7052
+    🔍 最佳LPIPS: 0.5072
+📊 TensorBoard日志记录 - Epoch 36: Loss=0.085031, PSNR=15.98, SSIM=0.7052, LPIPS=0.5072, LR=0.00000323
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 37/1000 训练结果
+============================================================
+  📅 轮次: 37
+  ⏱️  耗时: 307.01秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.084421
+    📈 PSNR: 16.05 dB
+    🎨 SSIM: 0.7069
+    🔍 LPIPS: 0.5075
+  🔧 当前学习率: 0.00000311
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_37.pth
+  🥇 更新最佳Loss: 0.084421 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_37.pth)
+  🥇 更新最佳PSNR: 16.05 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_37.pth)
+  🥇 更新最佳SSIM: 0.7069 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_37.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.084421
+    📈 最佳PSNR: 16.05 dB
+    🎨 最佳SSIM: 0.7069
+    🔍 最佳LPIPS: 0.5072
+📊 TensorBoard日志记录 - Epoch 37: Loss=0.084421, PSNR=16.05, SSIM=0.7069, LPIPS=0.5075, LR=0.00000311
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 38/1000 训练结果
+============================================================
+  📅 轮次: 38
+  ⏱️  耗时: 304.67秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.083963
+    📈 PSNR: 16.12 dB
+    🎨 SSIM: 0.7080
+    🔍 LPIPS: 0.5077
+  🔧 当前学习率: 0.00000297
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_38.pth
+  🥇 更新最佳Loss: 0.083963 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_38.pth)
+  🥇 更新最佳PSNR: 16.12 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_38.pth)
+  🥇 更新最佳SSIM: 0.7080 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_38.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.083963
+    📈 最佳PSNR: 16.12 dB
+    🎨 最佳SSIM: 0.7080
+    🔍 最佳LPIPS: 0.5072
+📊 TensorBoard日志记录 - Epoch 38: Loss=0.083963, PSNR=16.12, SSIM=0.7080, LPIPS=0.5077, LR=0.00000297
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 39/1000 训练结果
+============================================================
+  📅 轮次: 39
+  ⏱️  耗时: 302.37秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.083553
+    📈 PSNR: 16.18 dB
+    🎨 SSIM: 0.7089
+    🔍 LPIPS: 0.5073
+  🔧 当前学习率: 0.00000284
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_39.pth
+  🥇 更新最佳Loss: 0.083553 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_39.pth)
+  🥇 更新最佳PSNR: 16.18 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_39.pth)
+  🥇 更新最佳SSIM: 0.7089 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_39.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.083553
+    📈 最佳PSNR: 16.18 dB
+    🎨 最佳SSIM: 0.7089
+    🔍 最佳LPIPS: 0.5072
+📊 TensorBoard日志记录 - Epoch 39: Loss=0.083553, PSNR=16.18, SSIM=0.7089, LPIPS=0.5073, LR=0.00000284
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 40/1000 训练结果
+============================================================
+  📅 轮次: 40
+  ⏱️  耗时: 308.13秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.083086
+    📈 PSNR: 16.25 dB
+    🎨 SSIM: 0.7099
+    🔍 LPIPS: 0.5065
+  🔧 当前学习率: 0.00000271
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_40.pth
+  🥇 更新最佳Loss: 0.083086 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_40.pth)
+  🥇 更新最佳PSNR: 16.25 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_40.pth)
+  🥇 更新最佳SSIM: 0.7099 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_40.pth)
+  🥇 更新最佳LPIPS: 0.5065 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_40.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.083086
+    📈 最佳PSNR: 16.25 dB
+    🎨 最佳SSIM: 0.7099
+    🔍 最佳LPIPS: 0.5065
+📊 TensorBoard日志记录 - Epoch 40: Loss=0.083086, PSNR=16.25, SSIM=0.7099, LPIPS=0.5065, LR=0.00000271
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 40: 已记录28层参数和梯度
+  📝 第40轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 41/1000 训练结果
+============================================================
+  📅 轮次: 41
+  ⏱️  耗时: 305.38秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.082604
+    📈 PSNR: 16.30 dB
+    🎨 SSIM: 0.7114
+    🔍 LPIPS: 0.5059
+  🔧 当前学习率: 0.00000257
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_41.pth
+  🥇 更新最佳Loss: 0.082604 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_41.pth)
+  🥇 更新最佳PSNR: 16.30 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_41.pth)
+  🥇 更新最佳SSIM: 0.7114 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_41.pth)
+  🥇 更新最佳LPIPS: 0.5059 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_41.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.082604
+    📈 最佳PSNR: 16.30 dB
+    🎨 最佳SSIM: 0.7114
+    🔍 最佳LPIPS: 0.5059
+📊 TensorBoard日志记录 - Epoch 41: Loss=0.082604, PSNR=16.30, SSIM=0.7114, LPIPS=0.5059, LR=0.00000257
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 42/1000 训练结果
+============================================================
+  📅 轮次: 42
+  ⏱️  耗时: 304.00秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.082359
+    📈 PSNR: 16.35 dB
+    🎨 SSIM: 0.7115
+    🔍 LPIPS: 0.5054
+  🔧 当前学习率: 0.00000244
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_42.pth
+  🥇 更新最佳Loss: 0.082359 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_42.pth)
+  🥇 更新最佳PSNR: 16.35 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_42.pth)
+  🥇 更新最佳SSIM: 0.7115 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_42.pth)
+  🥇 更新最佳LPIPS: 0.5054 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_42.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.082359
+    📈 最佳PSNR: 16.35 dB
+    🎨 最佳SSIM: 0.7115
+    🔍 最佳LPIPS: 0.5054
+📊 TensorBoard日志记录 - Epoch 42: Loss=0.082359, PSNR=16.35, SSIM=0.7115, LPIPS=0.5054, LR=0.00000244
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 43/1000 训练结果
+============================================================
+  📅 轮次: 43
+  ⏱️  耗时: 303.57秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.081930
+    📈 PSNR: 16.40 dB
+    🎨 SSIM: 0.7129
+    🔍 LPIPS: 0.5055
+  🔧 当前学习率: 0.00000231
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_43.pth
+  🥇 更新最佳Loss: 0.081930 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_43.pth)
+  🥇 更新最佳PSNR: 16.40 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_43.pth)
+  🥇 更新最佳SSIM: 0.7129 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_43.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.081930
+    📈 最佳PSNR: 16.40 dB
+    🎨 最佳SSIM: 0.7129
+    🔍 最佳LPIPS: 0.5054
+📊 TensorBoard日志记录 - Epoch 43: Loss=0.081930, PSNR=16.40, SSIM=0.7129, LPIPS=0.5055, LR=0.00000231
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 44/1000 训练结果
+============================================================
+  📅 轮次: 44
+  ⏱️  耗时: 300.83秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.081668
+    📈 PSNR: 16.44 dB
+    🎨 SSIM: 0.7135
+    🔍 LPIPS: 0.5049
+  🔧 当前学习率: 0.00000218
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_44.pth
+  🥇 更新最佳Loss: 0.081668 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_44.pth)
+  🥇 更新最佳PSNR: 16.44 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_44.pth)
+  🥇 更新最佳SSIM: 0.7135 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_44.pth)
+  🥇 更新最佳LPIPS: 0.5049 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_44.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.081668
+    📈 最佳PSNR: 16.44 dB
+    🎨 最佳SSIM: 0.7135
+    🔍 最佳LPIPS: 0.5049
+📊 TensorBoard日志记录 - Epoch 44: Loss=0.081668, PSNR=16.44, SSIM=0.7135, LPIPS=0.5049, LR=0.00000218
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 45/1000 训练结果
+============================================================
+  📅 轮次: 45
+  ⏱️  耗时: 306.49秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.081444
+    📈 PSNR: 16.49 dB
+    🎨 SSIM: 0.7137
+    🔍 LPIPS: 0.5041
+  🔧 当前学习率: 0.00000205
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_45.pth
+  🥇 更新最佳Loss: 0.081444 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_45.pth)
+  🥇 更新最佳PSNR: 16.49 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_45.pth)
+  🥇 更新最佳SSIM: 0.7137 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_45.pth)
+  🥇 更新最佳LPIPS: 0.5041 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_45.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.081444
+    📈 最佳PSNR: 16.49 dB
+    🎨 最佳SSIM: 0.7137
+    🔍 最佳LPIPS: 0.5041
+📊 TensorBoard日志记录 - Epoch 45: Loss=0.081444, PSNR=16.49, SSIM=0.7137, LPIPS=0.5041, LR=0.00000205
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 45: 已记录28层参数和梯度
+  📝 第45轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 46/1000 训练结果
+============================================================
+  📅 轮次: 46
+  ⏱️  耗时: 301.25秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080951
+    📈 PSNR: 16.54 dB
+    🎨 SSIM: 0.7156
+    🔍 LPIPS: 0.5039
+  🔧 当前学习率: 0.00000193
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_46.pth
+  🥇 更新最佳Loss: 0.080951 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_46.pth)
+  🥇 更新最佳PSNR: 16.54 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_46.pth)
+  🥇 更新最佳SSIM: 0.7156 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_46.pth)
+  🥇 更新最佳LPIPS: 0.5039 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_46.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080951
+    📈 最佳PSNR: 16.54 dB
+    🎨 最佳SSIM: 0.7156
+    🔍 最佳LPIPS: 0.5039
+📊 TensorBoard日志记录 - Epoch 46: Loss=0.080951, PSNR=16.54, SSIM=0.7156, LPIPS=0.5039, LR=0.00000193
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 47/1000 训练结果
+============================================================
+  📅 轮次: 47
+  ⏱️  耗时: 302.73秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080807
+    📈 PSNR: 16.57 dB
+    🎨 SSIM: 0.7155
+    🔍 LPIPS: 0.5035
+  🔧 当前学习率: 0.00000182
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_47.pth
+  🥇 更新最佳Loss: 0.080807 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_47.pth)
+  🥇 更新最佳PSNR: 16.57 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_47.pth)
+  🥇 更新最佳LPIPS: 0.5035 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_47.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080807
+    📈 最佳PSNR: 16.57 dB
+    🎨 最佳SSIM: 0.7156
+    🔍 最佳LPIPS: 0.5035
+📊 TensorBoard日志记录 - Epoch 47: Loss=0.080807, PSNR=16.57, SSIM=0.7155, LPIPS=0.5035, LR=0.00000182
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 48/1000 训练结果
+============================================================
+  📅 轮次: 48
+  ⏱️  耗时: 302.16秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080621
+    📈 PSNR: 16.61 dB
+    🎨 SSIM: 0.7158
+    🔍 LPIPS: 0.5032
+  🔧 当前学习率: 0.00000170
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_48.pth
+  🥇 更新最佳Loss: 0.080621 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_48.pth)
+  🥇 更新最佳PSNR: 16.61 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_48.pth)
+  🥇 更新最佳SSIM: 0.7158 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_48.pth)
+  🥇 更新最佳LPIPS: 0.5032 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_48.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080621
+    📈 最佳PSNR: 16.61 dB
+    🎨 最佳SSIM: 0.7158
+    🔍 最佳LPIPS: 0.5032
+📊 TensorBoard日志记录 - Epoch 48: Loss=0.080621, PSNR=16.61, SSIM=0.7158, LPIPS=0.5032, LR=0.00000170
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 49/1000 训练结果
+============================================================
+  📅 轮次: 49
+  ⏱️  耗时: 300.60秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080195
+    📈 PSNR: 16.65 dB
+    🎨 SSIM: 0.7173
+    🔍 LPIPS: 0.5024
+  🔧 当前学习率: 0.00000160
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_49.pth
+  🥇 更新最佳Loss: 0.080195 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_49.pth)
+  🥇 更新最佳PSNR: 16.65 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_49.pth)
+  🥇 更新最佳SSIM: 0.7173 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_49.pth)
+  🥇 更新最佳LPIPS: 0.5024 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_49.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080195
+    📈 最佳PSNR: 16.65 dB
+    🎨 最佳SSIM: 0.7173
+    🔍 最佳LPIPS: 0.5024
+📊 TensorBoard日志记录 - Epoch 49: Loss=0.080195, PSNR=16.65, SSIM=0.7173, LPIPS=0.5024, LR=0.00000160
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 50/1000 训练结果
+============================================================
+  📅 轮次: 50
+  ⏱️  耗时: 299.54秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080092
+    📈 PSNR: 16.68 dB
+    🎨 SSIM: 0.7173
+    🔍 LPIPS: 0.5025
+  🔧 当前学习率: 0.00000150
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_50.pth
+  🥇 更新最佳Loss: 0.080092 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_50.pth)
+  🥇 更新最佳PSNR: 16.68 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_50.pth)
+  🥇 更新最佳SSIM: 0.7173 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_50.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080092
+    📈 最佳PSNR: 16.68 dB
+    🎨 最佳SSIM: 0.7173
+    🔍 最佳LPIPS: 0.5024
+📊 TensorBoard日志记录 - Epoch 50: Loss=0.080092, PSNR=16.68, SSIM=0.7173, LPIPS=0.5025, LR=0.00000150
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 50: 已记录28层参数和梯度
+  📝 第50轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 51/1000 训练结果
+============================================================
+  📅 轮次: 51
+  ⏱️  耗时: 303.43秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.080002
+    📈 PSNR: 16.71 dB
+    🎨 SSIM: 0.7172
+    🔍 LPIPS: 0.5028
+  🔧 当前学习率: 0.00000141
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_51.pth
+  🥇 更新最佳Loss: 0.080002 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_51.pth)
+  🥇 更新最佳PSNR: 16.71 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_51.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.080002
+    📈 最佳PSNR: 16.71 dB
+    🎨 最佳SSIM: 0.7173
+    🔍 最佳LPIPS: 0.5024
+📊 TensorBoard日志记录 - Epoch 51: Loss=0.080002, PSNR=16.71, SSIM=0.7172, LPIPS=0.5028, LR=0.00000141
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 52/1000 训练结果
+============================================================
+  📅 轮次: 52
+  ⏱️  耗时: 301.22秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.079723
+    📈 PSNR: 16.74 dB
+    🎨 SSIM: 0.7182
+    🔍 LPIPS: 0.5027
+  🔧 当前学习率: 0.00000133
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_52.pth
+  🥇 更新最佳Loss: 0.079723 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_52.pth)
+  🥇 更新最佳PSNR: 16.74 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_52.pth)
+  🥇 更新最佳SSIM: 0.7182 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_52.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.079723
+    📈 最佳PSNR: 16.74 dB
+    🎨 最佳SSIM: 0.7182
+    🔍 最佳LPIPS: 0.5024
+📊 TensorBoard日志记录 - Epoch 52: Loss=0.079723, PSNR=16.74, SSIM=0.7182, LPIPS=0.5027, LR=0.00000133
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 53/1000 训练结果
+============================================================
+  📅 轮次: 53
+  ⏱️  耗时: 303.44秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.079383
+    📈 PSNR: 16.77 dB
+    🎨 SSIM: 0.7194
+    🔍 LPIPS: 0.5024
+  🔧 当前学习率: 0.00000125
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_53.pth
+  🥇 更新最佳Loss: 0.079383 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_53.pth)
+  🥇 更新最佳PSNR: 16.77 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_53.pth)
+  🥇 更新最佳SSIM: 0.7194 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_53.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.079383
+    📈 最佳PSNR: 16.77 dB
+    🎨 最佳SSIM: 0.7194
+    🔍 最佳LPIPS: 0.5024
+📊 TensorBoard日志记录 - Epoch 53: Loss=0.079383, PSNR=16.77, SSIM=0.7194, LPIPS=0.5024, LR=0.00000125
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 54/1000 训练结果
+============================================================
+  📅 轮次: 54
+  ⏱️  耗时: 300.93秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.079226
+    📈 PSNR: 16.80 dB
+    🎨 SSIM: 0.7197
+    🔍 LPIPS: 0.5023
+  🔧 当前学习率: 0.00000119
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_54.pth
+  🥇 更新最佳Loss: 0.079226 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_54.pth)
+  🥇 更新最佳PSNR: 16.80 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_54.pth)
+  🥇 更新最佳SSIM: 0.7197 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_54.pth)
+  🥇 更新最佳LPIPS: 0.5023 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_54.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.079226
+    📈 最佳PSNR: 16.80 dB
+    🎨 最佳SSIM: 0.7197
+    🔍 最佳LPIPS: 0.5023
+📊 TensorBoard日志记录 - Epoch 54: Loss=0.079226, PSNR=16.80, SSIM=0.7197, LPIPS=0.5023, LR=0.00000119
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 55/1000 训练结果
+============================================================
+  📅 轮次: 55
+  ⏱️  耗时: 304.18秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.079123
+    📈 PSNR: 16.83 dB
+    🎨 SSIM: 0.7199
+    🔍 LPIPS: 0.5017
+  🔧 当前学习率: 0.00000113
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_55.pth
+  🥇 更新最佳Loss: 0.079123 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_55.pth)
+  🥇 更新最佳PSNR: 16.83 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_55.pth)
+  🥇 更新最佳SSIM: 0.7199 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_55.pth)
+  🥇 更新最佳LPIPS: 0.5017 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_55.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.079123
+    📈 最佳PSNR: 16.83 dB
+    🎨 最佳SSIM: 0.7199
+    🔍 最佳LPIPS: 0.5017
+📊 TensorBoard日志记录 - Epoch 55: Loss=0.079123, PSNR=16.83, SSIM=0.7199, LPIPS=0.5017, LR=0.00000113
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 55: 已记录28层参数和梯度
+  📝 第55轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 56/1000 训练结果
+============================================================
+  📅 轮次: 56
+  ⏱️  耗时: 302.04秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.079056
+    📈 PSNR: 16.85 dB
+    🎨 SSIM: 0.7198
+    🔍 LPIPS: 0.5018
+  🔧 当前学习率: 0.00000108
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_56.pth
+  🥇 更新最佳Loss: 0.079056 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_56.pth)
+  🥇 更新最佳PSNR: 16.85 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_56.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.079056
+    📈 最佳PSNR: 16.85 dB
+    🎨 最佳SSIM: 0.7199
+    🔍 最佳LPIPS: 0.5017
+📊 TensorBoard日志记录 - Epoch 56: Loss=0.079056, PSNR=16.85, SSIM=0.7198, LPIPS=0.5018, LR=0.00000108
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 57/1000 训练结果
+============================================================
+  📅 轮次: 57
+  ⏱️  耗时: 299.21秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.078855
+    📈 PSNR: 16.87 dB
+    🎨 SSIM: 0.7204
+    🔍 LPIPS: 0.5016
+  🔧 当前学习率: 0.00000105
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_57.pth
+  🥇 更新最佳Loss: 0.078855 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_57.pth)
+  🥇 更新最佳PSNR: 16.87 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_57.pth)
+  🥇 更新最佳SSIM: 0.7204 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_57.pth)
+  🥇 更新最佳LPIPS: 0.5016 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_57.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.078855
+    📈 最佳PSNR: 16.87 dB
+    🎨 最佳SSIM: 0.7204
+    🔍 最佳LPIPS: 0.5016
+📊 TensorBoard日志记录 - Epoch 57: Loss=0.078855, PSNR=16.87, SSIM=0.7204, LPIPS=0.5016, LR=0.00000105
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 58/1000 训练结果
+============================================================
+  📅 轮次: 58
+  ⏱️  耗时: 302.25秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.078620
+    📈 PSNR: 16.89 dB
+    🎨 SSIM: 0.7214
+    🔍 LPIPS: 0.5008
+  🔧 当前学习率: 0.00000102
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_58.pth
+  🥇 更新最佳Loss: 0.078620 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_58.pth)
+  🥇 更新最佳PSNR: 16.89 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_58.pth)
+  🥇 更新最佳SSIM: 0.7214 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_58.pth)
+  🥇 更新最佳LPIPS: 0.5008 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_58.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.078620
+    📈 最佳PSNR: 16.89 dB
+    🎨 最佳SSIM: 0.7214
+    🔍 最佳LPIPS: 0.5008
+📊 TensorBoard日志记录 - Epoch 58: Loss=0.078620, PSNR=16.89, SSIM=0.7214, LPIPS=0.5008, LR=0.00000102
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 59/1000 训练结果
+============================================================
+  📅 轮次: 59
+  ⏱️  耗时: 300.37秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.078518
+    📈 PSNR: 16.91 dB
+    🎨 SSIM: 0.7215
+    🔍 LPIPS: 0.5006
+  🔧 当前学习率: 0.00000101
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_59.pth
+  🥇 更新最佳Loss: 0.078518 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_59.pth)
+  🥇 更新最佳PSNR: 16.91 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_59.pth)
+  🥇 更新最佳SSIM: 0.7215 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_59.pth)
+  🥇 更新最佳LPIPS: 0.5006 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_59.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.078518
+    📈 最佳PSNR: 16.91 dB
+    🎨 最佳SSIM: 0.7215
+    🔍 最佳LPIPS: 0.5006
+📊 TensorBoard日志记录 - Epoch 59: Loss=0.078518, PSNR=16.91, SSIM=0.7215, LPIPS=0.5006, LR=0.00000101
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 60/1000 训练结果
+============================================================
+  📅 轮次: 60
+  ⏱️  耗时: 299.68秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.078409
+    📈 PSNR: 16.94 dB
+    🎨 SSIM: 0.7216
+    🔍 LPIPS: 0.5011
+  🔧 当前学习率: 0.00000100
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_60.pth
+  🥇 更新最佳Loss: 0.078409 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_60.pth)
+  🥇 更新最佳PSNR: 16.94 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_60.pth)
+  🥇 更新最佳SSIM: 0.7216 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_60.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.078409
+    📈 最佳PSNR: 16.94 dB
+    🎨 最佳SSIM: 0.7216
+    🔍 最佳LPIPS: 0.5006
+📊 TensorBoard日志记录 - Epoch 60: Loss=0.078409, PSNR=16.94, SSIM=0.7216, LPIPS=0.5011, LR=0.00000100
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 60: 已记录28层参数和梯度
+  📝 第60轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 61/1000 训练结果
+============================================================
+  📅 轮次: 61
+  ⏱️  耗时: 302.55秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.078036
+    📈 PSNR: 16.98 dB
+    🎨 SSIM: 0.7228
+    🔍 LPIPS: 0.5001
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_61.pth
+  🥇 更新最佳Loss: 0.078036 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_61.pth)
+  🥇 更新最佳PSNR: 16.98 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_61.pth)
+  🥇 更新最佳SSIM: 0.7228 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_61.pth)
+  🥇 更新最佳LPIPS: 0.5001 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_61.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.078036
+    📈 最佳PSNR: 16.98 dB
+    🎨 最佳SSIM: 0.7228
+    🔍 最佳LPIPS: 0.5001
+📊 TensorBoard日志记录 - Epoch 61: Loss=0.078036, PSNR=16.98, SSIM=0.7228, LPIPS=0.5001, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 62/1000 训练结果
+============================================================
+  📅 轮次: 62
+  ⏱️  耗时: 297.86秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.077627
+    📈 PSNR: 17.07 dB
+    🎨 SSIM: 0.7234
+    🔍 LPIPS: 0.4996
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_62.pth
+  🥇 更新最佳Loss: 0.077627 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_62.pth)
+  🥇 更新最佳PSNR: 17.07 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_62.pth)
+  🥇 更新最佳SSIM: 0.7234 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_62.pth)
+  🥇 更新最佳LPIPS: 0.4996 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_62.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.077627
+    📈 最佳PSNR: 17.07 dB
+    🎨 最佳SSIM: 0.7234
+    🔍 最佳LPIPS: 0.4996
+📊 TensorBoard日志记录 - Epoch 62: Loss=0.077627, PSNR=17.07, SSIM=0.7234, LPIPS=0.4996, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 63/1000 训练结果
+============================================================
+  📅 轮次: 63
+  ⏱️  耗时: 302.22秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.077057
+    📈 PSNR: 17.15 dB
+    🎨 SSIM: 0.7251
+    🔍 LPIPS: 0.4991
+  🔧 当前学习率: 0.00000440
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_63.pth
+  🥇 更新最佳Loss: 0.077057 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_63.pth)
+  🥇 更新最佳PSNR: 17.15 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_63.pth)
+  🥇 更新最佳SSIM: 0.7251 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_63.pth)
+  🥇 更新最佳LPIPS: 0.4991 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_63.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.077057
+    📈 最佳PSNR: 17.15 dB
+    🎨 最佳SSIM: 0.7251
+    🔍 最佳LPIPS: 0.4991
+📊 TensorBoard日志记录 - Epoch 63: Loss=0.077057, PSNR=17.15, SSIM=0.7251, LPIPS=0.4991, LR=0.00000440
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 64/1000 训练结果
+============================================================
+  📅 轮次: 64
+  ⏱️  耗时: 299.84秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.076547
+    📈 PSNR: 17.23 dB
+    🎨 SSIM: 0.7265
+    🔍 LPIPS: 0.4982
+  🔧 当前学习率: 0.00000439
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_64.pth
+  🥇 更新最佳Loss: 0.076547 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_64.pth)
+  🥇 更新最佳PSNR: 17.23 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_64.pth)
+  🥇 更新最佳SSIM: 0.7265 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_64.pth)
+  🥇 更新最佳LPIPS: 0.4982 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_64.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.076547
+    📈 最佳PSNR: 17.23 dB
+    🎨 最佳SSIM: 0.7265
+    🔍 最佳LPIPS: 0.4982
+📊 TensorBoard日志记录 - Epoch 64: Loss=0.076547, PSNR=17.23, SSIM=0.7265, LPIPS=0.4982, LR=0.00000439
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 65/1000 训练结果
+============================================================
+  📅 轮次: 65
+  ⏱️  耗时: 300.20秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.076120
+    📈 PSNR: 17.31 dB
+    🎨 SSIM: 0.7274
+    🔍 LPIPS: 0.4971
+  🔧 当前学习率: 0.00000438
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_65.pth
+  🥇 更新最佳Loss: 0.076120 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_65.pth)
+  🥇 更新最佳PSNR: 17.31 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_65.pth)
+  🥇 更新最佳SSIM: 0.7274 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_65.pth)
+  🥇 更新最佳LPIPS: 0.4971 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_65.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.076120
+    📈 最佳PSNR: 17.31 dB
+    🎨 最佳SSIM: 0.7274
+    🔍 最佳LPIPS: 0.4971
+📊 TensorBoard日志记录 - Epoch 65: Loss=0.076120, PSNR=17.31, SSIM=0.7274, LPIPS=0.4971, LR=0.00000438
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 65: 已记录28层参数和梯度
+  📝 第65轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 66/1000 训练结果
+============================================================
+  📅 轮次: 66
+  ⏱️  耗时: 299.29秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.075480
+    📈 PSNR: 17.38 dB
+    🎨 SSIM: 0.7296
+    🔍 LPIPS: 0.4962
+  🔧 当前学习率: 0.00000437
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_66.pth
+  🥇 更新最佳Loss: 0.075480 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_66.pth)
+  🥇 更新最佳PSNR: 17.38 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_66.pth)
+  🥇 更新最佳SSIM: 0.7296 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_66.pth)
+  🥇 更新最佳LPIPS: 0.4962 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_66.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.075480
+    📈 最佳PSNR: 17.38 dB
+    🎨 最佳SSIM: 0.7296
+    🔍 最佳LPIPS: 0.4962
+📊 TensorBoard日志记录 - Epoch 66: Loss=0.075480, PSNR=17.38, SSIM=0.7296, LPIPS=0.4962, LR=0.00000437
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 67/1000 训练结果
+============================================================
+  📅 轮次: 67
+  ⏱️  耗时: 295.68秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.075215
+    📈 PSNR: 17.45 dB
+    🎨 SSIM: 0.7298
+    🔍 LPIPS: 0.4953
+  🔧 当前学习率: 0.00000435
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_67.pth
+  🥇 更新最佳Loss: 0.075215 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_67.pth)
+  🥇 更新最佳PSNR: 17.45 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_67.pth)
+  🥇 更新最佳SSIM: 0.7298 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_67.pth)
+  🥇 更新最佳LPIPS: 0.4953 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_67.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.075215
+    📈 最佳PSNR: 17.45 dB
+    🎨 最佳SSIM: 0.7298
+    🔍 最佳LPIPS: 0.4953
+📊 TensorBoard日志记录 - Epoch 67: Loss=0.075215, PSNR=17.45, SSIM=0.7298, LPIPS=0.4953, LR=0.00000435
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 68/1000 训练结果
+============================================================
+  📅 轮次: 68
+  ⏱️  耗时: 299.20秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.074888
+    📈 PSNR: 17.52 dB
+    🎨 SSIM: 0.7305
+    🔍 LPIPS: 0.4943
+  🔧 当前学习率: 0.00000433
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_68.pth
+  🥇 更新最佳Loss: 0.074888 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_68.pth)
+  🥇 更新最佳PSNR: 17.52 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_68.pth)
+  🥇 更新最佳SSIM: 0.7305 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_68.pth)
+  🥇 更新最佳LPIPS: 0.4943 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_68.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.074888
+    📈 最佳PSNR: 17.52 dB
+    🎨 最佳SSIM: 0.7305
+    🔍 最佳LPIPS: 0.4943
+📊 TensorBoard日志记录 - Epoch 68: Loss=0.074888, PSNR=17.52, SSIM=0.7305, LPIPS=0.4943, LR=0.00000433
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 69/1000 训练结果
+============================================================
+  📅 轮次: 69
+  ⏱️  耗时: 298.84秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.074401
+    📈 PSNR: 17.59 dB
+    🎨 SSIM: 0.7321
+    🔍 LPIPS: 0.4934
+  🔧 当前学习率: 0.00000431
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_69.pth
+  🥇 更新最佳Loss: 0.074401 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_69.pth)
+  🥇 更新最佳PSNR: 17.59 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_69.pth)
+  🥇 更新最佳SSIM: 0.7321 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_69.pth)
+  🥇 更新最佳LPIPS: 0.4934 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_69.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.074401
+    📈 最佳PSNR: 17.59 dB
+    🎨 最佳SSIM: 0.7321
+    🔍 最佳LPIPS: 0.4934
+📊 TensorBoard日志记录 - Epoch 69: Loss=0.074401, PSNR=17.59, SSIM=0.7321, LPIPS=0.4934, LR=0.00000431
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 70/1000 训练结果
+============================================================
+  📅 轮次: 70
+  ⏱️  耗时: 300.31秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.074076
+    📈 PSNR: 17.66 dB
+    🎨 SSIM: 0.7328
+    🔍 LPIPS: 0.4934
+  🔧 当前学习率: 0.00000428
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_70.pth
+  🥇 更新最佳Loss: 0.074076 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_70.pth)
+  🥇 更新最佳PSNR: 17.66 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_70.pth)
+  🥇 更新最佳SSIM: 0.7328 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_70.pth)
+  🥇 更新最佳LPIPS: 0.4934 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_70.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.074076
+    📈 最佳PSNR: 17.66 dB
+    🎨 最佳SSIM: 0.7328
+    🔍 最佳LPIPS: 0.4934
+📊 TensorBoard日志记录 - Epoch 70: Loss=0.074076, PSNR=17.66, SSIM=0.7328, LPIPS=0.4934, LR=0.00000428
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 70: 已记录28层参数和梯度
+  📝 第70轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 71/1000 训练结果
+============================================================
+  📅 轮次: 71
+  ⏱️  耗时: 297.03秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.073631
+    📈 PSNR: 17.73 dB
+    🎨 SSIM: 0.7341
+    🔍 LPIPS: 0.4928
+  🔧 当前学习率: 0.00000426
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_71.pth
+  🥇 更新最佳Loss: 0.073631 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_71.pth)
+  🥇 更新最佳PSNR: 17.73 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_71.pth)
+  🥇 更新最佳SSIM: 0.7341 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_71.pth)
+  🥇 更新最佳LPIPS: 0.4928 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_71.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.073631
+    📈 最佳PSNR: 17.73 dB
+    🎨 最佳SSIM: 0.7341
+    🔍 最佳LPIPS: 0.4928
+📊 TensorBoard日志记录 - Epoch 71: Loss=0.073631, PSNR=17.73, SSIM=0.7341, LPIPS=0.4928, LR=0.00000426
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 72/1000 训练结果
+============================================================
+  📅 轮次: 72
+  ⏱️  耗时: 296.97秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.073427
+    📈 PSNR: 17.79 dB
+    🎨 SSIM: 0.7343
+    🔍 LPIPS: 0.4921
+  🔧 当前学习率: 0.00000423
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_72.pth
+  🥇 更新最佳Loss: 0.073427 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_72.pth)
+  🥇 更新最佳PSNR: 17.79 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_72.pth)
+  🥇 更新最佳SSIM: 0.7343 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_72.pth)
+  🥇 更新最佳LPIPS: 0.4921 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_72.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.073427
+    📈 最佳PSNR: 17.79 dB
+    🎨 最佳SSIM: 0.7343
+    🔍 最佳LPIPS: 0.4921
+📊 TensorBoard日志记录 - Epoch 72: Loss=0.073427, PSNR=17.79, SSIM=0.7343, LPIPS=0.4921, LR=0.00000423
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 73/1000 训练结果
+============================================================
+  📅 轮次: 73
+  ⏱️  耗时: 299.64秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.072970
+    📈 PSNR: 17.85 dB
+    🎨 SSIM: 0.7358
+    🔍 LPIPS: 0.4924
+  🔧 当前学习率: 0.00000420
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_73.pth
+  🥇 更新最佳Loss: 0.072970 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_73.pth)
+  🥇 更新最佳PSNR: 17.85 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_73.pth)
+  🥇 更新最佳SSIM: 0.7358 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_73.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.072970
+    📈 最佳PSNR: 17.85 dB
+    🎨 最佳SSIM: 0.7358
+    🔍 最佳LPIPS: 0.4921
+📊 TensorBoard日志记录 - Epoch 73: Loss=0.072970, PSNR=17.85, SSIM=0.7358, LPIPS=0.4924, LR=0.00000420
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 74/1000 训练结果
+============================================================
+  📅 轮次: 74
+  ⏱️  耗时: 296.75秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.072588
+    📈 PSNR: 17.92 dB
+    🎨 SSIM: 0.7370
+    🔍 LPIPS: 0.4920
+  🔧 当前学习率: 0.00000416
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_74.pth
+  🥇 更新最佳Loss: 0.072588 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_74.pth)
+  🥇 更新最佳PSNR: 17.92 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_74.pth)
+  🥇 更新最佳SSIM: 0.7370 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_74.pth)
+  🥇 更新最佳LPIPS: 0.4920 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_74.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.072588
+    📈 最佳PSNR: 17.92 dB
+    🎨 最佳SSIM: 0.7370
+    🔍 最佳LPIPS: 0.4920
+📊 TensorBoard日志记录 - Epoch 74: Loss=0.072588, PSNR=17.92, SSIM=0.7370, LPIPS=0.4920, LR=0.00000416
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 75/1000 训练结果
+============================================================
+  📅 轮次: 75
+  ⏱️  耗时: 295.62秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.072242
+    📈 PSNR: 17.98 dB
+    🎨 SSIM: 0.7379
+    🔍 LPIPS: 0.4917
+  🔧 当前学习率: 0.00000413
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_75.pth
+  🥇 更新最佳Loss: 0.072242 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_75.pth)
+  🥇 更新最佳PSNR: 17.98 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_75.pth)
+  🥇 更新最佳SSIM: 0.7379 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_75.pth)
+  🥇 更新最佳LPIPS: 0.4917 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_75.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.072242
+    📈 最佳PSNR: 17.98 dB
+    🎨 最佳SSIM: 0.7379
+    🔍 最佳LPIPS: 0.4917
+📊 TensorBoard日志记录 - Epoch 75: Loss=0.072242, PSNR=17.98, SSIM=0.7379, LPIPS=0.4917, LR=0.00000413
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 75: 已记录28层参数和梯度
+  📝 第75轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 76/1000 训练结果
+============================================================
+  📅 轮次: 76
+  ⏱️  耗时: 295.04秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.071998
+    📈 PSNR: 18.03 dB
+    🎨 SSIM: 0.7384
+    🔍 LPIPS: 0.4917
+  🔧 当前学习率: 0.00000409
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_76.pth
+  🥇 更新最佳Loss: 0.071998 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_76.pth)
+  🥇 更新最佳PSNR: 18.03 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_76.pth)
+  🥇 更新最佳SSIM: 0.7384 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_76.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.071998
+    📈 最佳PSNR: 18.03 dB
+    🎨 最佳SSIM: 0.7384
+    🔍 最佳LPIPS: 0.4917
+📊 TensorBoard日志记录 - Epoch 76: Loss=0.071998, PSNR=18.03, SSIM=0.7384, LPIPS=0.4917, LR=0.00000409
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 77/1000 训练结果
+============================================================
+  📅 轮次: 77
+  ⏱️  耗时: 295.18秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.071793
+    📈 PSNR: 18.09 dB
+    🎨 SSIM: 0.7387
+    🔍 LPIPS: 0.4910
+  🔧 当前学习率: 0.00000405
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_77.pth
+  🥇 更新最佳Loss: 0.071793 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_77.pth)
+  🥇 更新最佳PSNR: 18.09 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_77.pth)
+  🥇 更新最佳SSIM: 0.7387 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_77.pth)
+  🥇 更新最佳LPIPS: 0.4910 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_77.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.071793
+    📈 最佳PSNR: 18.09 dB
+    🎨 最佳SSIM: 0.7387
+    🔍 最佳LPIPS: 0.4910
+📊 TensorBoard日志记录 - Epoch 77: Loss=0.071793, PSNR=18.09, SSIM=0.7387, LPIPS=0.4910, LR=0.00000405
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 78/1000 训练结果
+============================================================
+  📅 轮次: 78
+  ⏱️  耗时: 296.95秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.071263
+    📈 PSNR: 18.15 dB
+    🎨 SSIM: 0.7405
+    🔍 LPIPS: 0.4910
+  🔧 当前学习率: 0.00000401
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_78.pth
+  🥇 更新最佳Loss: 0.071263 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_78.pth)
+  🥇 更新最佳PSNR: 18.15 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_78.pth)
+  🥇 更新最佳SSIM: 0.7405 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_78.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.071263
+    📈 最佳PSNR: 18.15 dB
+    🎨 最佳SSIM: 0.7405
+    🔍 最佳LPIPS: 0.4910
+📊 TensorBoard日志记录 - Epoch 78: Loss=0.071263, PSNR=18.15, SSIM=0.7405, LPIPS=0.4910, LR=0.00000401
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 79/1000 训练结果
+============================================================
+  📅 轮次: 79
+  ⏱️  耗时: 294.76秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.071165
+    📈 PSNR: 18.21 dB
+    🎨 SSIM: 0.7403
+    🔍 LPIPS: 0.4903
+  🔧 当前学习率: 0.00000396
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_79.pth
+  🥇 更新最佳Loss: 0.071165 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_79.pth)
+  🥇 更新最佳PSNR: 18.21 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_79.pth)
+  🥇 更新最佳LPIPS: 0.4903 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_79.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.071165
+    📈 最佳PSNR: 18.21 dB
+    🎨 最佳SSIM: 0.7405
+    🔍 最佳LPIPS: 0.4903
+📊 TensorBoard日志记录 - Epoch 79: Loss=0.071165, PSNR=18.21, SSIM=0.7403, LPIPS=0.4903, LR=0.00000396
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 80/1000 训练结果
+============================================================
+  📅 轮次: 80
+  ⏱️  耗时: 293.11秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.070846
+    📈 PSNR: 18.26 dB
+    🎨 SSIM: 0.7412
+    🔍 LPIPS: 0.4899
+  🔧 当前学习率: 0.00000391
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_80.pth
+  🥇 更新最佳Loss: 0.070846 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_80.pth)
+  🥇 更新最佳PSNR: 18.26 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_80.pth)
+  🥇 更新最佳SSIM: 0.7412 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_80.pth)
+  🥇 更新最佳LPIPS: 0.4899 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_80.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.070846
+    📈 最佳PSNR: 18.26 dB
+    🎨 最佳SSIM: 0.7412
+    🔍 最佳LPIPS: 0.4899
+📊 TensorBoard日志记录 - Epoch 80: Loss=0.070846, PSNR=18.26, SSIM=0.7412, LPIPS=0.4899, LR=0.00000391
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 80: 已记录28层参数和梯度
+  📝 第80轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 81/1000 训练结果
+============================================================
+  📅 轮次: 81
+  ⏱️  耗时: 294.88秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.070594
+    📈 PSNR: 18.32 dB
+    🎨 SSIM: 0.7419
+    🔍 LPIPS: 0.4902
+  🔧 当前学习率: 0.00000387
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_81.pth
+  🥇 更新最佳Loss: 0.070594 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_81.pth)
+  🥇 更新最佳PSNR: 18.32 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_81.pth)
+  🥇 更新最佳SSIM: 0.7419 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_81.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.070594
+    📈 最佳PSNR: 18.32 dB
+    🎨 最佳SSIM: 0.7419
+    🔍 最佳LPIPS: 0.4899
+📊 TensorBoard日志记录 - Epoch 81: Loss=0.070594, PSNR=18.32, SSIM=0.7419, LPIPS=0.4902, LR=0.00000387
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 82/1000 训练结果
+============================================================
+  📅 轮次: 82
+  ⏱️  耗时: 297.99秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.070252
+    📈 PSNR: 18.37 dB
+    🎨 SSIM: 0.7429
+    🔍 LPIPS: 0.4895
+  🔧 当前学习率: 0.00000382
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_82.pth
+  🥇 更新最佳Loss: 0.070252 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_82.pth)
+  🥇 更新最佳PSNR: 18.37 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_82.pth)
+  🥇 更新最佳SSIM: 0.7429 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_82.pth)
+  🥇 更新最佳LPIPS: 0.4895 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_82.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.070252
+    📈 最佳PSNR: 18.37 dB
+    🎨 最佳SSIM: 0.7429
+    🔍 最佳LPIPS: 0.4895
+📊 TensorBoard日志记录 - Epoch 82: Loss=0.070252, PSNR=18.37, SSIM=0.7429, LPIPS=0.4895, LR=0.00000382
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 83/1000 训练结果
+============================================================
+  📅 轮次: 83
+  ⏱️  耗时: 296.10秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.069973
+    📈 PSNR: 18.42 dB
+    🎨 SSIM: 0.7436
+    🔍 LPIPS: 0.4890
+  🔧 当前学习率: 0.00000376
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_83.pth
+  🥇 更新最佳Loss: 0.069973 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_83.pth)
+  🥇 更新最佳PSNR: 18.42 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_83.pth)
+  🥇 更新最佳SSIM: 0.7436 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_83.pth)
+  🥇 更新最佳LPIPS: 0.4890 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_83.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.069973
+    📈 最佳PSNR: 18.42 dB
+    🎨 最佳SSIM: 0.7436
+    🔍 最佳LPIPS: 0.4890
+📊 TensorBoard日志记录 - Epoch 83: Loss=0.069973, PSNR=18.42, SSIM=0.7436, LPIPS=0.4890, LR=0.00000376
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 84/1000 训练结果
+============================================================
+  📅 轮次: 84
+  ⏱️  耗时: 298.64秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.069758
+    📈 PSNR: 18.47 dB
+    🎨 SSIM: 0.7442
+    🔍 LPIPS: 0.4890
+  🔧 当前学习率: 0.00000371
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_84.pth
+  🥇 更新最佳Loss: 0.069758 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_84.pth)
+  🥇 更新最佳PSNR: 18.47 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_84.pth)
+  🥇 更新最佳SSIM: 0.7442 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_84.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.069758
+    📈 最佳PSNR: 18.47 dB
+    🎨 最佳SSIM: 0.7442
+    🔍 最佳LPIPS: 0.4890
+📊 TensorBoard日志记录 - Epoch 84: Loss=0.069758, PSNR=18.47, SSIM=0.7442, LPIPS=0.4890, LR=0.00000371
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 85/1000 训练结果
+============================================================
+  📅 轮次: 85
+  ⏱️  耗时: 302.42秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.069466
+    📈 PSNR: 18.52 dB
+    🎨 SSIM: 0.7450
+    🔍 LPIPS: 0.4884
+  🔧 当前学习率: 0.00000366
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_85.pth
+  🥇 更新最佳Loss: 0.069466 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_85.pth)
+  🥇 更新最佳PSNR: 18.52 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_85.pth)
+  🥇 更新最佳SSIM: 0.7450 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_85.pth)
+  🥇 更新最佳LPIPS: 0.4884 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_85.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.069466
+    📈 最佳PSNR: 18.52 dB
+    🎨 最佳SSIM: 0.7450
+    🔍 最佳LPIPS: 0.4884
+📊 TensorBoard日志记录 - Epoch 85: Loss=0.069466, PSNR=18.52, SSIM=0.7450, LPIPS=0.4884, LR=0.00000366
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 85: 已记录28层参数和梯度
+  📝 第85轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 86/1000 训练结果
+============================================================
+  📅 轮次: 86
+  ⏱️  耗时: 302.96秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.069211
+    📈 PSNR: 18.57 dB
+    🎨 SSIM: 0.7458
+    🔍 LPIPS: 0.4880
+  🔧 当前学习率: 0.00000360
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_86.pth
+  🥇 更新最佳Loss: 0.069211 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_86.pth)
+  🥇 更新最佳PSNR: 18.57 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_86.pth)
+  🥇 更新最佳SSIM: 0.7458 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_86.pth)
+  🥇 更新最佳LPIPS: 0.4880 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_86.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.069211
+    📈 最佳PSNR: 18.57 dB
+    🎨 最佳SSIM: 0.7458
+    🔍 最佳LPIPS: 0.4880
+📊 TensorBoard日志记录 - Epoch 86: Loss=0.069211, PSNR=18.57, SSIM=0.7458, LPIPS=0.4880, LR=0.00000360
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 87/1000 训练结果
+============================================================
+  📅 轮次: 87
+  ⏱️  耗时: 298.34秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.068999
+    📈 PSNR: 18.62 dB
+    🎨 SSIM: 0.7462
+    🔍 LPIPS: 0.4877
+  🔧 当前学习率: 0.00000354
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_87.pth
+  🥇 更新最佳Loss: 0.068999 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_87.pth)
+  🥇 更新最佳PSNR: 18.62 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_87.pth)
+  🥇 更新最佳SSIM: 0.7462 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_87.pth)
+  🥇 更新最佳LPIPS: 0.4877 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_87.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.068999
+    📈 最佳PSNR: 18.62 dB
+    🎨 最佳SSIM: 0.7462
+    🔍 最佳LPIPS: 0.4877
+📊 TensorBoard日志记录 - Epoch 87: Loss=0.068999, PSNR=18.62, SSIM=0.7462, LPIPS=0.4877, LR=0.00000354
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 88/1000 训练结果
+============================================================
+  📅 轮次: 88
+  ⏱️  耗时: 302.12秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.068908
+    📈 PSNR: 18.66 dB
+    🎨 SSIM: 0.7461
+    🔍 LPIPS: 0.4874
+  🔧 当前学习率: 0.00000348
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_88.pth
+  🥇 更新最佳Loss: 0.068908 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_88.pth)
+  🥇 更新最佳PSNR: 18.66 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_88.pth)
+  🥇 更新最佳LPIPS: 0.4874 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_88.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.068908
+    📈 最佳PSNR: 18.66 dB
+    🎨 最佳SSIM: 0.7462
+    🔍 最佳LPIPS: 0.4874
+📊 TensorBoard日志记录 - Epoch 88: Loss=0.068908, PSNR=18.66, SSIM=0.7461, LPIPS=0.4874, LR=0.00000348
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 89/1000 训练结果
+============================================================
+  📅 轮次: 89
+  ⏱️  耗时: 301.49秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.068600
+    📈 PSNR: 18.71 dB
+    🎨 SSIM: 0.7471
+    🔍 LPIPS: 0.4868
+  🔧 当前学习率: 0.00000342
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_89.pth
+  🥇 更新最佳Loss: 0.068600 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_89.pth)
+  🥇 更新最佳PSNR: 18.71 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_89.pth)
+  🥇 更新最佳SSIM: 0.7471 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_89.pth)
+  🥇 更新最佳LPIPS: 0.4868 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_89.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.068600
+    📈 最佳PSNR: 18.71 dB
+    🎨 最佳SSIM: 0.7471
+    🔍 最佳LPIPS: 0.4868
+📊 TensorBoard日志记录 - Epoch 89: Loss=0.068600, PSNR=18.71, SSIM=0.7471, LPIPS=0.4868, LR=0.00000342
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 90/1000 训练结果
+============================================================
+  📅 轮次: 90
+  ⏱️  耗时: 301.91秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.068288
+    📈 PSNR: 18.76 dB
+    🎨 SSIM: 0.7481
+    🔍 LPIPS: 0.4863
+  🔧 当前学习率: 0.00000336
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_90.pth
+  🥇 更新最佳Loss: 0.068288 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_90.pth)
+  🥇 更新最佳PSNR: 18.76 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_90.pth)
+  🥇 更新最佳SSIM: 0.7481 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_90.pth)
+  🥇 更新最佳LPIPS: 0.4863 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_90.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.068288
+    📈 最佳PSNR: 18.76 dB
+    🎨 最佳SSIM: 0.7481
+    🔍 最佳LPIPS: 0.4863
+📊 TensorBoard日志记录 - Epoch 90: Loss=0.068288, PSNR=18.76, SSIM=0.7481, LPIPS=0.4863, LR=0.00000336
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 90: 已记录28层参数和梯度
+  📝 第90轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 91/1000 训练结果
+============================================================
+  📅 轮次: 91
+  ⏱️  耗时: 298.03秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.068173
+    📈 PSNR: 18.80 dB
+    🎨 SSIM: 0.7484
+    🔍 LPIPS: 0.4863
+  🔧 当前学习率: 0.00000330
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_91.pth
+  🥇 更新最佳Loss: 0.068173 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_91.pth)
+  🥇 更新最佳PSNR: 18.80 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_91.pth)
+  🥇 更新最佳SSIM: 0.7484 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_91.pth)
+  🥇 更新最佳LPIPS: 0.4863 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_91.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.068173
+    📈 最佳PSNR: 18.80 dB
+    🎨 最佳SSIM: 0.7484
+    🔍 最佳LPIPS: 0.4863
+📊 TensorBoard日志记录 - Epoch 91: Loss=0.068173, PSNR=18.80, SSIM=0.7484, LPIPS=0.4863, LR=0.00000330
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 92/1000 训练结果
+============================================================
+  📅 轮次: 92
+  ⏱️  耗时: 301.28秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067866
+    📈 PSNR: 18.85 dB
+    🎨 SSIM: 0.7494
+    🔍 LPIPS: 0.4860
+  🔧 当前学习率: 0.00000323
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_92.pth
+  🥇 更新最佳Loss: 0.067866 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_92.pth)
+  🥇 更新最佳PSNR: 18.85 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_92.pth)
+  🥇 更新最佳SSIM: 0.7494 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_92.pth)
+  🥇 更新最佳LPIPS: 0.4860 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_92.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067866
+    📈 最佳PSNR: 18.85 dB
+    🎨 最佳SSIM: 0.7494
+    🔍 最佳LPIPS: 0.4860
+📊 TensorBoard日志记录 - Epoch 92: Loss=0.067866, PSNR=18.85, SSIM=0.7494, LPIPS=0.4860, LR=0.00000323
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 93/1000 训练结果
+============================================================
+  📅 轮次: 93
+  ⏱️  耗时: 303.17秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067764
+    📈 PSNR: 18.89 dB
+    🎨 SSIM: 0.7492
+    🔍 LPIPS: 0.4852
+  🔧 当前学习率: 0.00000317
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_93.pth
+  🥇 更新最佳Loss: 0.067764 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_93.pth)
+  🥇 更新最佳PSNR: 18.89 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_93.pth)
+  🥇 更新最佳LPIPS: 0.4852 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_93.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067764
+    📈 最佳PSNR: 18.89 dB
+    🎨 最佳SSIM: 0.7494
+    🔍 最佳LPIPS: 0.4852
+📊 TensorBoard日志记录 - Epoch 93: Loss=0.067764, PSNR=18.89, SSIM=0.7492, LPIPS=0.4852, LR=0.00000317
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 94/1000 训练结果
+============================================================
+  📅 轮次: 94
+  ⏱️  耗时: 299.84秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067606
+    📈 PSNR: 18.93 dB
+    🎨 SSIM: 0.7497
+    🔍 LPIPS: 0.4853
+  🔧 当前学习率: 0.00000311
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_94.pth
+  🥇 更新最佳Loss: 0.067606 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_94.pth)
+  🥇 更新最佳PSNR: 18.93 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_94.pth)
+  🥇 更新最佳SSIM: 0.7497 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_94.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067606
+    📈 最佳PSNR: 18.93 dB
+    🎨 最佳SSIM: 0.7497
+    🔍 最佳LPIPS: 0.4852
+📊 TensorBoard日志记录 - Epoch 94: Loss=0.067606, PSNR=18.93, SSIM=0.7497, LPIPS=0.4853, LR=0.00000311
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 95/1000 训练结果
+============================================================
+  📅 轮次: 95
+  ⏱️  耗时: 297.38秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067434
+    📈 PSNR: 18.97 dB
+    🎨 SSIM: 0.7501
+    🔍 LPIPS: 0.4847
+  🔧 当前学习率: 0.00000304
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_95.pth
+  🥇 更新最佳Loss: 0.067434 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_95.pth)
+  🥇 更新最佳PSNR: 18.97 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_95.pth)
+  🥇 更新最佳SSIM: 0.7501 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_95.pth)
+  🥇 更新最佳LPIPS: 0.4847 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_95.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067434
+    📈 最佳PSNR: 18.97 dB
+    🎨 最佳SSIM: 0.7501
+    🔍 最佳LPIPS: 0.4847
+📊 TensorBoard日志记录 - Epoch 95: Loss=0.067434, PSNR=18.97, SSIM=0.7501, LPIPS=0.4847, LR=0.00000304
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 95: 已记录28层参数和梯度
+  📝 第95轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 96/1000 训练结果
+============================================================
+  📅 轮次: 96
+  ⏱️  耗时: 302.73秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067165
+    📈 PSNR: 19.01 dB
+    🎨 SSIM: 0.7511
+    🔍 LPIPS: 0.4844
+  🔧 当前学习率: 0.00000297
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_96.pth
+  🥇 更新最佳Loss: 0.067165 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_96.pth)
+  🥇 更新最佳PSNR: 19.01 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_96.pth)
+  🥇 更新最佳SSIM: 0.7511 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_96.pth)
+  🥇 更新最佳LPIPS: 0.4844 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_96.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067165
+    📈 最佳PSNR: 19.01 dB
+    🎨 最佳SSIM: 0.7511
+    🔍 最佳LPIPS: 0.4844
+📊 TensorBoard日志记录 - Epoch 96: Loss=0.067165, PSNR=19.01, SSIM=0.7511, LPIPS=0.4844, LR=0.00000297
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 97/1000 训练结果
+============================================================
+  📅 轮次: 97
+  ⏱️  耗时: 297.81秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.067044
+    📈 PSNR: 19.05 dB
+    🎨 SSIM: 0.7512
+    🔍 LPIPS: 0.4839
+  🔧 当前学习率: 0.00000291
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_97.pth
+  🥇 更新最佳Loss: 0.067044 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_97.pth)
+  🥇 更新最佳PSNR: 19.05 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_97.pth)
+  🥇 更新最佳SSIM: 0.7512 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_97.pth)
+  🥇 更新最佳LPIPS: 0.4839 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_97.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.067044
+    📈 最佳PSNR: 19.05 dB
+    🎨 最佳SSIM: 0.7512
+    🔍 最佳LPIPS: 0.4839
+📊 TensorBoard日志记录 - Epoch 97: Loss=0.067044, PSNR=19.05, SSIM=0.7512, LPIPS=0.4839, LR=0.00000291
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 98/1000 训练结果
+============================================================
+  📅 轮次: 98
+  ⏱️  耗时: 301.36秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066895
+    📈 PSNR: 19.08 dB
+    🎨 SSIM: 0.7517
+    🔍 LPIPS: 0.4838
+  🔧 当前学习率: 0.00000284
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_98.pth
+  🥇 更新最佳Loss: 0.066895 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_98.pth)
+  🥇 更新最佳PSNR: 19.08 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_98.pth)
+  🥇 更新最佳SSIM: 0.7517 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_98.pth)
+  🥇 更新最佳LPIPS: 0.4838 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_98.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066895
+    📈 最佳PSNR: 19.08 dB
+    🎨 最佳SSIM: 0.7517
+    🔍 最佳LPIPS: 0.4838
+📊 TensorBoard日志记录 - Epoch 98: Loss=0.066895, PSNR=19.08, SSIM=0.7517, LPIPS=0.4838, LR=0.00000284
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 99/1000 训练结果
+============================================================
+  📅 轮次: 99
+  ⏱️  耗时: 296.41秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066625
+    📈 PSNR: 19.12 dB
+    🎨 SSIM: 0.7526
+    🔍 LPIPS: 0.4831
+  🔧 当前学习率: 0.00000277
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_99.pth
+  🥇 更新最佳Loss: 0.066625 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_99.pth)
+  🥇 更新最佳PSNR: 19.12 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_99.pth)
+  🥇 更新最佳SSIM: 0.7526 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_99.pth)
+  🥇 更新最佳LPIPS: 0.4831 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_99.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066625
+    📈 最佳PSNR: 19.12 dB
+    🎨 最佳SSIM: 0.7526
+    🔍 最佳LPIPS: 0.4831
+📊 TensorBoard日志记录 - Epoch 99: Loss=0.066625, PSNR=19.12, SSIM=0.7526, LPIPS=0.4831, LR=0.00000277
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 100/1000 训练结果
+============================================================
+  📅 轮次: 100
+  ⏱️  耗时: 298.35秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066478
+    📈 PSNR: 19.16 dB
+    🎨 SSIM: 0.7530
+    🔍 LPIPS: 0.4828
+  🔧 当前学习率: 0.00000271
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_100.pth
+  🥇 更新最佳Loss: 0.066478 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_100.pth)
+  🥇 更新最佳PSNR: 19.16 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_100.pth)
+  🥇 更新最佳SSIM: 0.7530 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_100.pth)
+  🥇 更新最佳LPIPS: 0.4828 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_100.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066478
+    📈 最佳PSNR: 19.16 dB
+    🎨 最佳SSIM: 0.7530
+    🔍 最佳LPIPS: 0.4828
+📊 TensorBoard日志记录 - Epoch 100: Loss=0.066478, PSNR=19.16, SSIM=0.7530, LPIPS=0.4828, LR=0.00000271
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 100: 已记录28层参数和梯度
+  📝 第100轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 101/1000 训练结果
+============================================================
+  📅 轮次: 101
+  ⏱️  耗时: 297.05秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066360
+    📈 PSNR: 19.19 dB
+    🎨 SSIM: 0.7532
+    🔍 LPIPS: 0.4828
+  🔧 当前学习率: 0.00000264
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_101.pth
+  🥇 更新最佳Loss: 0.066360 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_101.pth)
+  🥇 更新最佳PSNR: 19.19 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_101.pth)
+  🥇 更新最佳SSIM: 0.7532 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_101.pth)
+  🥇 更新最佳LPIPS: 0.4828 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_101.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066360
+    📈 最佳PSNR: 19.19 dB
+    🎨 最佳SSIM: 0.7532
+    🔍 最佳LPIPS: 0.4828
+📊 TensorBoard日志记录 - Epoch 101: Loss=0.066360, PSNR=19.19, SSIM=0.7532, LPIPS=0.4828, LR=0.00000264
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 102/1000 训练结果
+============================================================
+  📅 轮次: 102
+  ⏱️  耗时: 296.67秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066132
+    📈 PSNR: 19.22 dB
+    🎨 SSIM: 0.7541
+    🔍 LPIPS: 0.4821
+  🔧 当前学习率: 0.00000257
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_102.pth
+  🥇 更新最佳Loss: 0.066132 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_102.pth)
+  🥇 更新最佳PSNR: 19.22 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_102.pth)
+  🥇 更新最佳SSIM: 0.7541 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_102.pth)
+  🥇 更新最佳LPIPS: 0.4821 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_102.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066132
+    📈 最佳PSNR: 19.22 dB
+    🎨 最佳SSIM: 0.7541
+    🔍 最佳LPIPS: 0.4821
+📊 TensorBoard日志记录 - Epoch 102: Loss=0.066132, PSNR=19.22, SSIM=0.7541, LPIPS=0.4821, LR=0.00000257
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 103/1000 训练结果
+============================================================
+  📅 轮次: 103
+  ⏱️  耗时: 297.90秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.066058
+    📈 PSNR: 19.25 dB
+    🎨 SSIM: 0.7541
+    🔍 LPIPS: 0.4819
+  🔧 当前学习率: 0.00000251
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_103.pth
+  🥇 更新最佳Loss: 0.066058 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_103.pth)
+  🥇 更新最佳PSNR: 19.25 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_103.pth)
+  🥇 更新最佳SSIM: 0.7541 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_103.pth)
+  🥇 更新最佳LPIPS: 0.4819 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_103.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.066058
+    📈 最佳PSNR: 19.25 dB
+    🎨 最佳SSIM: 0.7541
+    🔍 最佳LPIPS: 0.4819
+📊 TensorBoard日志记录 - Epoch 103: Loss=0.066058, PSNR=19.25, SSIM=0.7541, LPIPS=0.4819, LR=0.00000251
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 104/1000 训练结果
+============================================================
+  📅 轮次: 104
+  ⏱️  耗时: 295.29秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065897
+    📈 PSNR: 19.28 dB
+    🎨 SSIM: 0.7545
+    🔍 LPIPS: 0.4816
+  🔧 当前学习率: 0.00000244
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_104.pth
+  🥇 更新最佳Loss: 0.065897 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_104.pth)
+  🥇 更新最佳PSNR: 19.28 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_104.pth)
+  🥇 更新最佳SSIM: 0.7545 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_104.pth)
+  🥇 更新最佳LPIPS: 0.4816 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_104.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065897
+    📈 最佳PSNR: 19.28 dB
+    🎨 最佳SSIM: 0.7545
+    🔍 最佳LPIPS: 0.4816
+📊 TensorBoard日志记录 - Epoch 104: Loss=0.065897, PSNR=19.28, SSIM=0.7545, LPIPS=0.4816, LR=0.00000244
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 105/1000 训练结果
+============================================================
+  📅 轮次: 105
+  ⏱️  耗时: 296.59秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065730
+    📈 PSNR: 19.32 dB
+    🎨 SSIM: 0.7551
+    🔍 LPIPS: 0.4815
+  🔧 当前学习率: 0.00000237
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_105.pth
+  🥇 更新最佳Loss: 0.065730 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_105.pth)
+  🥇 更新最佳PSNR: 19.32 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_105.pth)
+  🥇 更新最佳SSIM: 0.7551 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_105.pth)
+  🥇 更新最佳LPIPS: 0.4815 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_105.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065730
+    📈 最佳PSNR: 19.32 dB
+    🎨 最佳SSIM: 0.7551
+    🔍 最佳LPIPS: 0.4815
+📊 TensorBoard日志记录 - Epoch 105: Loss=0.065730, PSNR=19.32, SSIM=0.7551, LPIPS=0.4815, LR=0.00000237
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 105: 已记录28层参数和梯度
+  📝 第105轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 106/1000 训练结果
+============================================================
+  📅 轮次: 106
+  ⏱️  耗时: 296.98秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065562
+    📈 PSNR: 19.35 dB
+    🎨 SSIM: 0.7556
+    🔍 LPIPS: 0.4808
+  🔧 当前学习率: 0.00000231
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_106.pth
+  🥇 更新最佳Loss: 0.065562 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_106.pth)
+  🥇 更新最佳PSNR: 19.35 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_106.pth)
+  🥇 更新最佳SSIM: 0.7556 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_106.pth)
+  🥇 更新最佳LPIPS: 0.4808 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_106.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065562
+    📈 最佳PSNR: 19.35 dB
+    🎨 最佳SSIM: 0.7556
+    🔍 最佳LPIPS: 0.4808
+📊 TensorBoard日志记录 - Epoch 106: Loss=0.065562, PSNR=19.35, SSIM=0.7556, LPIPS=0.4808, LR=0.00000231
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 107/1000 训练结果
+============================================================
+  📅 轮次: 107
+  ⏱️  耗时: 295.19秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065473
+    📈 PSNR: 19.37 dB
+    🎨 SSIM: 0.7557
+    🔍 LPIPS: 0.4806
+  🔧 当前学习率: 0.00000224
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_107.pth
+  🥇 更新最佳Loss: 0.065473 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_107.pth)
+  🥇 更新最佳PSNR: 19.37 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_107.pth)
+  🥇 更新最佳SSIM: 0.7557 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_107.pth)
+  🥇 更新最佳LPIPS: 0.4806 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_107.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065473
+    📈 最佳PSNR: 19.37 dB
+    🎨 最佳SSIM: 0.7557
+    🔍 最佳LPIPS: 0.4806
+📊 TensorBoard日志记录 - Epoch 107: Loss=0.065473, PSNR=19.37, SSIM=0.7557, LPIPS=0.4806, LR=0.00000224
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 108/1000 训练结果
+============================================================
+  📅 轮次: 108
+  ⏱️  耗时: 293.91秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065310
+    📈 PSNR: 19.40 dB
+    🎨 SSIM: 0.7563
+    🔍 LPIPS: 0.4802
+  🔧 当前学习率: 0.00000218
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_108.pth
+  🥇 更新最佳Loss: 0.065310 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_108.pth)
+  🥇 更新最佳PSNR: 19.40 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_108.pth)
+  🥇 更新最佳SSIM: 0.7563 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_108.pth)
+  🥇 更新最佳LPIPS: 0.4802 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_108.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065310
+    📈 最佳PSNR: 19.40 dB
+    🎨 最佳SSIM: 0.7563
+    🔍 最佳LPIPS: 0.4802
+📊 TensorBoard日志记录 - Epoch 108: Loss=0.065310, PSNR=19.40, SSIM=0.7563, LPIPS=0.4802, LR=0.00000218
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 109/1000 训练结果
+============================================================
+  📅 轮次: 109
+  ⏱️  耗时: 294.85秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065155
+    📈 PSNR: 19.43 dB
+    🎨 SSIM: 0.7569
+    🔍 LPIPS: 0.4802
+  🔧 当前学习率: 0.00000212
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_109.pth
+  🥇 更新最佳Loss: 0.065155 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_109.pth)
+  🥇 更新最佳PSNR: 19.43 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_109.pth)
+  🥇 更新最佳SSIM: 0.7569 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_109.pth)
+  🥇 更新最佳LPIPS: 0.4802 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_109.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065155
+    📈 最佳PSNR: 19.43 dB
+    🎨 最佳SSIM: 0.7569
+    🔍 最佳LPIPS: 0.4802
+📊 TensorBoard日志记录 - Epoch 109: Loss=0.065155, PSNR=19.43, SSIM=0.7569, LPIPS=0.4802, LR=0.00000212
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 110/1000 训练结果
+============================================================
+  📅 轮次: 110
+  ⏱️  耗时: 293.07秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.065013
+    📈 PSNR: 19.46 dB
+    🎨 SSIM: 0.7571
+    🔍 LPIPS: 0.4794
+  🔧 当前学习率: 0.00000205
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_110.pth
+  🥇 更新最佳Loss: 0.065013 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_110.pth)
+  🥇 更新最佳PSNR: 19.46 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_110.pth)
+  🥇 更新最佳SSIM: 0.7571 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_110.pth)
+  🥇 更新最佳LPIPS: 0.4794 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_110.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.065013
+    📈 最佳PSNR: 19.46 dB
+    🎨 最佳SSIM: 0.7571
+    🔍 最佳LPIPS: 0.4794
+📊 TensorBoard日志记录 - Epoch 110: Loss=0.065013, PSNR=19.46, SSIM=0.7571, LPIPS=0.4794, LR=0.00000205
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 110: 已记录28层参数和梯度
+  📝 第110轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 111/1000 训练结果
+============================================================
+  📅 轮次: 111
+  ⏱️  耗时: 292.53秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064949
+    📈 PSNR: 19.48 dB
+    🎨 SSIM: 0.7572
+    🔍 LPIPS: 0.4791
+  🔧 当前学习率: 0.00000199
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_111.pth
+  🥇 更新最佳Loss: 0.064949 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_111.pth)
+  🥇 更新最佳PSNR: 19.48 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_111.pth)
+  🥇 更新最佳SSIM: 0.7572 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_111.pth)
+  🥇 更新最佳LPIPS: 0.4791 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_111.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064949
+    📈 最佳PSNR: 19.48 dB
+    🎨 最佳SSIM: 0.7572
+    🔍 最佳LPIPS: 0.4791
+📊 TensorBoard日志记录 - Epoch 111: Loss=0.064949, PSNR=19.48, SSIM=0.7572, LPIPS=0.4791, LR=0.00000199
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 112/1000 训练结果
+============================================================
+  📅 轮次: 112
+  ⏱️  耗时: 293.89秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064870
+    📈 PSNR: 19.50 dB
+    🎨 SSIM: 0.7574
+    🔍 LPIPS: 0.4791
+  🔧 当前学习率: 0.00000193
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_112.pth
+  🥇 更新最佳Loss: 0.064870 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_112.pth)
+  🥇 更新最佳PSNR: 19.50 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_112.pth)
+  🥇 更新最佳SSIM: 0.7574 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_112.pth)
+  🥇 更新最佳LPIPS: 0.4791 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_112.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064870
+    📈 最佳PSNR: 19.50 dB
+    🎨 最佳SSIM: 0.7574
+    🔍 最佳LPIPS: 0.4791
+📊 TensorBoard日志记录 - Epoch 112: Loss=0.064870, PSNR=19.50, SSIM=0.7574, LPIPS=0.4791, LR=0.00000193
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 113/1000 训练结果
+============================================================
+  📅 轮次: 113
+  ⏱️  耗时: 291.97秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064685
+    📈 PSNR: 19.53 dB
+    🎨 SSIM: 0.7581
+    🔍 LPIPS: 0.4785
+  🔧 当前学习率: 0.00000187
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_113.pth
+  🥇 更新最佳Loss: 0.064685 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_113.pth)
+  🥇 更新最佳PSNR: 19.53 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_113.pth)
+  🥇 更新最佳SSIM: 0.7581 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_113.pth)
+  🥇 更新最佳LPIPS: 0.4785 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_113.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064685
+    📈 最佳PSNR: 19.53 dB
+    🎨 最佳SSIM: 0.7581
+    🔍 最佳LPIPS: 0.4785
+📊 TensorBoard日志记录 - Epoch 113: Loss=0.064685, PSNR=19.53, SSIM=0.7581, LPIPS=0.4785, LR=0.00000187
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 114/1000 训练结果
+============================================================
+  📅 轮次: 114
+  ⏱️  耗时: 290.98秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064549
+    📈 PSNR: 19.55 dB
+    🎨 SSIM: 0.7586
+    🔍 LPIPS: 0.4785
+  🔧 当前学习率: 0.00000182
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_114.pth
+  🥇 更新最佳Loss: 0.064549 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_114.pth)
+  🥇 更新最佳PSNR: 19.55 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_114.pth)
+  🥇 更新最佳SSIM: 0.7586 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_114.pth)
+  🥇 更新最佳LPIPS: 0.4785 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_114.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064549
+    📈 最佳PSNR: 19.55 dB
+    🎨 最佳SSIM: 0.7586
+    🔍 最佳LPIPS: 0.4785
+📊 TensorBoard日志记录 - Epoch 114: Loss=0.064549, PSNR=19.55, SSIM=0.7586, LPIPS=0.4785, LR=0.00000182
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 115/1000 训练结果
+============================================================
+  📅 轮次: 115
+  ⏱️  耗时: 294.03秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064432
+    📈 PSNR: 19.58 dB
+    🎨 SSIM: 0.7590
+    🔍 LPIPS: 0.4782
+  🔧 当前学习率: 0.00000176
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_115.pth
+  🥇 更新最佳Loss: 0.064432 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_115.pth)
+  🥇 更新最佳PSNR: 19.58 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_115.pth)
+  🥇 更新最佳SSIM: 0.7590 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_115.pth)
+  🥇 更新最佳LPIPS: 0.4782 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_115.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064432
+    📈 最佳PSNR: 19.58 dB
+    🎨 最佳SSIM: 0.7590
+    🔍 最佳LPIPS: 0.4782
+📊 TensorBoard日志记录 - Epoch 115: Loss=0.064432, PSNR=19.58, SSIM=0.7590, LPIPS=0.4782, LR=0.00000176
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 115: 已记录28层参数和梯度
+  📝 第115轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 116/1000 训练结果
+============================================================
+  📅 轮次: 116
+  ⏱️  耗时: 291.41秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064346
+    📈 PSNR: 19.60 dB
+    🎨 SSIM: 0.7592
+    🔍 LPIPS: 0.4781
+  🔧 当前学习率: 0.00000170
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_116.pth
+  🥇 更新最佳Loss: 0.064346 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_116.pth)
+  🥇 更新最佳PSNR: 19.60 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_116.pth)
+  🥇 更新最佳SSIM: 0.7592 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_116.pth)
+  🥇 更新最佳LPIPS: 0.4781 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_116.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064346
+    📈 最佳PSNR: 19.60 dB
+    🎨 最佳SSIM: 0.7592
+    🔍 最佳LPIPS: 0.4781
+📊 TensorBoard日志记录 - Epoch 116: Loss=0.064346, PSNR=19.60, SSIM=0.7592, LPIPS=0.4781, LR=0.00000170
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 117/1000 训练结果
+============================================================
+  📅 轮次: 117
+  ⏱️  耗时: 294.01秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064279
+    📈 PSNR: 19.63 dB
+    🎨 SSIM: 0.7592
+    🔍 LPIPS: 0.4778
+  🔧 当前学习率: 0.00000165
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_117.pth
+  🥇 更新最佳Loss: 0.064279 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_117.pth)
+  🥇 更新最佳PSNR: 19.63 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_117.pth)
+  🥇 更新最佳SSIM: 0.7592 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_117.pth)
+  🥇 更新最佳LPIPS: 0.4778 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_117.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064279
+    📈 最佳PSNR: 19.63 dB
+    🎨 最佳SSIM: 0.7592
+    🔍 最佳LPIPS: 0.4778
+📊 TensorBoard日志记录 - Epoch 117: Loss=0.064279, PSNR=19.63, SSIM=0.7592, LPIPS=0.4778, LR=0.00000165
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 118/1000 训练结果
+============================================================
+  📅 轮次: 118
+  ⏱️  耗时: 289.87秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064280
+    📈 PSNR: 19.64 dB
+    🎨 SSIM: 0.7591
+    🔍 LPIPS: 0.4774
+  🔧 当前学习率: 0.00000160
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_118.pth
+  🥇 更新最佳PSNR: 19.64 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_118.pth)
+  🥇 更新最佳LPIPS: 0.4774 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_118.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064279
+    📈 最佳PSNR: 19.64 dB
+    🎨 最佳SSIM: 0.7592
+    🔍 最佳LPIPS: 0.4774
+📊 TensorBoard日志记录 - Epoch 118: Loss=0.064280, PSNR=19.64, SSIM=0.7591, LPIPS=0.4774, LR=0.00000160
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 119/1000 训练结果
+============================================================
+  📅 轮次: 119
+  ⏱️  耗时: 292.20秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064105
+    📈 PSNR: 19.66 dB
+    🎨 SSIM: 0.7597
+    🔍 LPIPS: 0.4768
+  🔧 当前学习率: 0.00000155
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_119.pth
+  🥇 更新最佳Loss: 0.064105 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_119.pth)
+  🥇 更新最佳PSNR: 19.66 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_119.pth)
+  🥇 更新最佳SSIM: 0.7597 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_119.pth)
+  🥇 更新最佳LPIPS: 0.4768 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_119.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064105
+    📈 最佳PSNR: 19.66 dB
+    🎨 最佳SSIM: 0.7597
+    🔍 最佳LPIPS: 0.4768
+📊 TensorBoard日志记录 - Epoch 119: Loss=0.064105, PSNR=19.66, SSIM=0.7597, LPIPS=0.4768, LR=0.00000155
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 120/1000 训练结果
+============================================================
+  📅 轮次: 120
+  ⏱️  耗时: 294.70秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.064046
+    📈 PSNR: 19.68 dB
+    🎨 SSIM: 0.7598
+    🔍 LPIPS: 0.4766
+  🔧 当前学习率: 0.00000150
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_120.pth
+  🥇 更新最佳Loss: 0.064046 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_120.pth)
+  🥇 更新最佳PSNR: 19.68 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_120.pth)
+  🥇 更新最佳SSIM: 0.7598 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_120.pth)
+  🥇 更新最佳LPIPS: 0.4766 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_120.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.064046
+    📈 最佳PSNR: 19.68 dB
+    🎨 最佳SSIM: 0.7598
+    🔍 最佳LPIPS: 0.4766
+📊 TensorBoard日志记录 - Epoch 120: Loss=0.064046, PSNR=19.68, SSIM=0.7598, LPIPS=0.4766, LR=0.00000150
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 120: 已记录28层参数和梯度
+  📝 第120轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 121/1000 训练结果
+============================================================
+  📅 轮次: 121
+  ⏱️  耗时: 293.21秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063950
+    📈 PSNR: 19.70 dB
+    🎨 SSIM: 0.7602
+    🔍 LPIPS: 0.4768
+  🔧 当前学习率: 0.00000145
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_121.pth
+  🥇 更新最佳Loss: 0.063950 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_121.pth)
+  🥇 更新最佳PSNR: 19.70 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_121.pth)
+  🥇 更新最佳SSIM: 0.7602 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_121.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063950
+    📈 最佳PSNR: 19.70 dB
+    🎨 最佳SSIM: 0.7602
+    🔍 最佳LPIPS: 0.4766
+📊 TensorBoard日志记录 - Epoch 121: Loss=0.063950, PSNR=19.70, SSIM=0.7602, LPIPS=0.4768, LR=0.00000145
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 122/1000 训练结果
+============================================================
+  📅 轮次: 122
+  ⏱️  耗时: 291.30秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063765
+    📈 PSNR: 19.72 dB
+    🎨 SSIM: 0.7610
+    🔍 LPIPS: 0.4762
+  🔧 当前学习率: 0.00000141
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_122.pth
+  🥇 更新最佳Loss: 0.063765 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_122.pth)
+  🥇 更新最佳PSNR: 19.72 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_122.pth)
+  🥇 更新最佳SSIM: 0.7610 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_122.pth)
+  🥇 更新最佳LPIPS: 0.4762 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_122.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063765
+    📈 最佳PSNR: 19.72 dB
+    🎨 最佳SSIM: 0.7610
+    🔍 最佳LPIPS: 0.4762
+📊 TensorBoard日志记录 - Epoch 122: Loss=0.063765, PSNR=19.72, SSIM=0.7610, LPIPS=0.4762, LR=0.00000141
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 123/1000 训练结果
+============================================================
+  📅 轮次: 123
+  ⏱️  耗时: 291.68秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063717
+    📈 PSNR: 19.73 dB
+    🎨 SSIM: 0.7611
+    🔍 LPIPS: 0.4763
+  🔧 当前学习率: 0.00000137
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_123.pth
+  🥇 更新最佳Loss: 0.063717 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_123.pth)
+  🥇 更新最佳PSNR: 19.73 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_123.pth)
+  🥇 更新最佳SSIM: 0.7611 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_123.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063717
+    📈 最佳PSNR: 19.73 dB
+    🎨 最佳SSIM: 0.7611
+    🔍 最佳LPIPS: 0.4762
+📊 TensorBoard日志记录 - Epoch 123: Loss=0.063717, PSNR=19.73, SSIM=0.7611, LPIPS=0.4763, LR=0.00000137
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 124/1000 训练结果
+============================================================
+  📅 轮次: 124
+  ⏱️  耗时: 295.82秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063782
+    📈 PSNR: 19.74 dB
+    🎨 SSIM: 0.7605
+    🔍 LPIPS: 0.4757
+  🔧 当前学习率: 0.00000133
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_124.pth
+  🥇 更新最佳PSNR: 19.74 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_124.pth)
+  🥇 更新最佳LPIPS: 0.4757 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_124.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063717
+    📈 最佳PSNR: 19.74 dB
+    🎨 最佳SSIM: 0.7611
+    🔍 最佳LPIPS: 0.4757
+📊 TensorBoard日志记录 - Epoch 124: Loss=0.063782, PSNR=19.74, SSIM=0.7605, LPIPS=0.4757, LR=0.00000133
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 125/1000 训练结果
+============================================================
+  📅 轮次: 125
+  ⏱️  耗时: 294.53秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063657
+    📈 PSNR: 19.77 dB
+    🎨 SSIM: 0.7610
+    🔍 LPIPS: 0.4755
+  🔧 当前学习率: 0.00000129
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_125.pth
+  🥇 更新最佳Loss: 0.063657 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_125.pth)
+  🥇 更新最佳PSNR: 19.77 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_125.pth)
+  🥇 更新最佳LPIPS: 0.4755 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_125.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063657
+    📈 最佳PSNR: 19.77 dB
+    🎨 最佳SSIM: 0.7611
+    🔍 最佳LPIPS: 0.4755
+📊 TensorBoard日志记录 - Epoch 125: Loss=0.063657, PSNR=19.77, SSIM=0.7610, LPIPS=0.4755, LR=0.00000129
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 125: 已记录28层参数和梯度
+  📝 第125轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 126/1000 训练结果
+============================================================
+  📅 轮次: 126
+  ⏱️  耗时: 292.82秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063414
+    📈 PSNR: 19.78 dB
+    🎨 SSIM: 0.7621
+    🔍 LPIPS: 0.4753
+  🔧 当前学习率: 0.00000125
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_126.pth
+  🥇 更新最佳Loss: 0.063414 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_126.pth)
+  🥇 更新最佳PSNR: 19.78 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_126.pth)
+  🥇 更新最佳SSIM: 0.7621 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_126.pth)
+  🥇 更新最佳LPIPS: 0.4753 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_126.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063414
+    📈 最佳PSNR: 19.78 dB
+    🎨 最佳SSIM: 0.7621
+    🔍 最佳LPIPS: 0.4753
+📊 TensorBoard日志记录 - Epoch 126: Loss=0.063414, PSNR=19.78, SSIM=0.7621, LPIPS=0.4753, LR=0.00000125
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 127/1000 训练结果
+============================================================
+  📅 轮次: 127
+  ⏱️  耗时: 294.71秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063365
+    📈 PSNR: 19.80 dB
+    🎨 SSIM: 0.7621
+    🔍 LPIPS: 0.4752
+  🔧 当前学习率: 0.00000122
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_127.pth
+  🥇 更新最佳Loss: 0.063365 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_127.pth)
+  🥇 更新最佳PSNR: 19.80 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_127.pth)
+  🥇 更新最佳LPIPS: 0.4752 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_127.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063365
+    📈 最佳PSNR: 19.80 dB
+    🎨 最佳SSIM: 0.7621
+    🔍 最佳LPIPS: 0.4752
+📊 TensorBoard日志记录 - Epoch 127: Loss=0.063365, PSNR=19.80, SSIM=0.7621, LPIPS=0.4752, LR=0.00000122
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 128/1000 训练结果
+============================================================
+  📅 轮次: 128
+  ⏱️  耗时: 292.76秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063306
+    📈 PSNR: 19.82 dB
+    🎨 SSIM: 0.7623
+    🔍 LPIPS: 0.4752
+  🔧 当前学习率: 0.00000119
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_128.pth
+  🥇 更新最佳Loss: 0.063306 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_128.pth)
+  🥇 更新最佳PSNR: 19.82 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_128.pth)
+  🥇 更新最佳SSIM: 0.7623 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_128.pth)
+  🥇 更新最佳LPIPS: 0.4752 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_128.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063306
+    📈 最佳PSNR: 19.82 dB
+    🎨 最佳SSIM: 0.7623
+    🔍 最佳LPIPS: 0.4752
+📊 TensorBoard日志记录 - Epoch 128: Loss=0.063306, PSNR=19.82, SSIM=0.7623, LPIPS=0.4752, LR=0.00000119
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 129/1000 训练结果
+============================================================
+  📅 轮次: 129
+  ⏱️  耗时: 299.48秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063208
+    📈 PSNR: 19.83 dB
+    🎨 SSIM: 0.7627
+    🔍 LPIPS: 0.4749
+  🔧 当前学习率: 0.00000116
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_129.pth
+  🥇 更新最佳Loss: 0.063208 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_129.pth)
+  🥇 更新最佳PSNR: 19.83 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_129.pth)
+  🥇 更新最佳SSIM: 0.7627 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_129.pth)
+  🥇 更新最佳LPIPS: 0.4749 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_129.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063208
+    📈 最佳PSNR: 19.83 dB
+    🎨 最佳SSIM: 0.7627
+    🔍 最佳LPIPS: 0.4749
+📊 TensorBoard日志记录 - Epoch 129: Loss=0.063208, PSNR=19.83, SSIM=0.7627, LPIPS=0.4749, LR=0.00000116
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 130/1000 训练结果
+============================================================
+  📅 轮次: 130
+  ⏱️  耗时: 294.10秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063262
+    📈 PSNR: 19.84 dB
+    🎨 SSIM: 0.7622
+    🔍 LPIPS: 0.4749
+  🔧 当前学习率: 0.00000113
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_130.pth
+  🥇 更新最佳PSNR: 19.84 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_130.pth)
+  🥇 更新最佳LPIPS: 0.4749 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_130.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063208
+    📈 最佳PSNR: 19.84 dB
+    🎨 最佳SSIM: 0.7627
+    🔍 最佳LPIPS: 0.4749
+📊 TensorBoard日志记录 - Epoch 130: Loss=0.063262, PSNR=19.84, SSIM=0.7622, LPIPS=0.4749, LR=0.00000113
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 130: 已记录28层参数和梯度
+  📝 第130轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 131/1000 训练结果
+============================================================
+  📅 轮次: 131
+  ⏱️  耗时: 298.82秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063224
+    📈 PSNR: 19.86 dB
+    🎨 SSIM: 0.7623
+    🔍 LPIPS: 0.4746
+  🔧 当前学习率: 0.00000111
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_131.pth
+  🥇 更新最佳PSNR: 19.86 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_131.pth)
+  🥇 更新最佳LPIPS: 0.4746 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_131.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063208
+    📈 最佳PSNR: 19.86 dB
+    🎨 最佳SSIM: 0.7627
+    🔍 最佳LPIPS: 0.4746
+📊 TensorBoard日志记录 - Epoch 131: Loss=0.063224, PSNR=19.86, SSIM=0.7623, LPIPS=0.4746, LR=0.00000111
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 132/1000 训练结果
+============================================================
+  📅 轮次: 132
+  ⏱️  耗时: 294.33秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063181
+    📈 PSNR: 19.86 dB
+    🎨 SSIM: 0.7625
+    🔍 LPIPS: 0.4745
+  🔧 当前学习率: 0.00000108
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_132.pth
+  🥇 更新最佳Loss: 0.063181 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_132.pth)
+  🥇 更新最佳PSNR: 19.86 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_132.pth)
+  🥇 更新最佳LPIPS: 0.4745 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_132.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063181
+    📈 最佳PSNR: 19.86 dB
+    🎨 最佳SSIM: 0.7627
+    🔍 最佳LPIPS: 0.4745
+📊 TensorBoard日志记录 - Epoch 132: Loss=0.063181, PSNR=19.86, SSIM=0.7625, LPIPS=0.4745, LR=0.00000108
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 133/1000 训练结果
+============================================================
+  📅 轮次: 133
+  ⏱️  耗时: 300.21秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063110
+    📈 PSNR: 19.88 dB
+    🎨 SSIM: 0.7627
+    🔍 LPIPS: 0.4742
+  🔧 当前学习率: 0.00000106
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_133.pth
+  🥇 更新最佳Loss: 0.063110 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_133.pth)
+  🥇 更新最佳PSNR: 19.88 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_133.pth)
+  🥇 更新最佳LPIPS: 0.4742 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_133.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063110
+    📈 最佳PSNR: 19.88 dB
+    🎨 最佳SSIM: 0.7627
+    🔍 最佳LPIPS: 0.4742
+📊 TensorBoard日志记录 - Epoch 133: Loss=0.063110, PSNR=19.88, SSIM=0.7627, LPIPS=0.4742, LR=0.00000106
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 134/1000 训练结果
+============================================================
+  📅 轮次: 134
+  ⏱️  耗时: 299.46秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.063059
+    📈 PSNR: 19.89 dB
+    🎨 SSIM: 0.7628
+    🔍 LPIPS: 0.4741
+  🔧 当前学习率: 0.00000105
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_134.pth
+  🥇 更新最佳Loss: 0.063059 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_134.pth)
+  🥇 更新最佳PSNR: 19.89 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_134.pth)
+  🥇 更新最佳SSIM: 0.7628 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_134.pth)
+  🥇 更新最佳LPIPS: 0.4741 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_134.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.063059
+    📈 最佳PSNR: 19.89 dB
+    🎨 最佳SSIM: 0.7628
+    🔍 最佳LPIPS: 0.4741
+📊 TensorBoard日志记录 - Epoch 134: Loss=0.063059, PSNR=19.89, SSIM=0.7628, LPIPS=0.4741, LR=0.00000105
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 135/1000 训练结果
+============================================================
+  📅 轮次: 135
+  ⏱️  耗时: 299.28秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062993
+    📈 PSNR: 19.90 dB
+    🎨 SSIM: 0.7630
+    🔍 LPIPS: 0.4738
+  🔧 当前学习率: 0.00000103
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_135.pth
+  🥇 更新最佳Loss: 0.062993 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_135.pth)
+  🥇 更新最佳PSNR: 19.90 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_135.pth)
+  🥇 更新最佳SSIM: 0.7630 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_135.pth)
+  🥇 更新最佳LPIPS: 0.4738 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_135.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062993
+    📈 最佳PSNR: 19.90 dB
+    🎨 最佳SSIM: 0.7630
+    🔍 最佳LPIPS: 0.4738
+📊 TensorBoard日志记录 - Epoch 135: Loss=0.062993, PSNR=19.90, SSIM=0.7630, LPIPS=0.4738, LR=0.00000103
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 135: 已记录28层参数和梯度
+  📝 第135轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 136/1000 训练结果
+============================================================
+  📅 轮次: 136
+  ⏱️  耗时: 299.01秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062929
+    📈 PSNR: 19.91 dB
+    🎨 SSIM: 0.7631
+    🔍 LPIPS: 0.4734
+  🔧 当前学习率: 0.00000102
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_136.pth
+  🥇 更新最佳Loss: 0.062929 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_136.pth)
+  🥇 更新最佳PSNR: 19.91 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_136.pth)
+  🥇 更新最佳SSIM: 0.7631 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_136.pth)
+  🥇 更新最佳LPIPS: 0.4734 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_136.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062929
+    📈 最佳PSNR: 19.91 dB
+    🎨 最佳SSIM: 0.7631
+    🔍 最佳LPIPS: 0.4734
+📊 TensorBoard日志记录 - Epoch 136: Loss=0.062929, PSNR=19.91, SSIM=0.7631, LPIPS=0.4734, LR=0.00000102
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 137/1000 训练结果
+============================================================
+  📅 轮次: 137
+  ⏱️  耗时: 301.18秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062838
+    📈 PSNR: 19.92 dB
+    🎨 SSIM: 0.7635
+    🔍 LPIPS: 0.4734
+  🔧 当前学习率: 0.00000101
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_137.pth
+  🥇 更新最佳Loss: 0.062838 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_137.pth)
+  🥇 更新最佳PSNR: 19.92 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_137.pth)
+  🥇 更新最佳SSIM: 0.7635 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_137.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062838
+    📈 最佳PSNR: 19.92 dB
+    🎨 最佳SSIM: 0.7635
+    🔍 最佳LPIPS: 0.4734
+📊 TensorBoard日志记录 - Epoch 137: Loss=0.062838, PSNR=19.92, SSIM=0.7635, LPIPS=0.4734, LR=0.00000101
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 138/1000 训练结果
+============================================================
+  📅 轮次: 138
+  ⏱️  耗时: 299.71秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062734
+    📈 PSNR: 19.94 dB
+    🎨 SSIM: 0.7640
+    🔍 LPIPS: 0.4735
+  🔧 当前学习率: 0.00000101
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_138.pth
+  🥇 更新最佳Loss: 0.062734 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_138.pth)
+  🥇 更新最佳PSNR: 19.94 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_138.pth)
+  🥇 更新最佳SSIM: 0.7640 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_138.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062734
+    📈 最佳PSNR: 19.94 dB
+    🎨 最佳SSIM: 0.7640
+    🔍 最佳LPIPS: 0.4734
+📊 TensorBoard日志记录 - Epoch 138: Loss=0.062734, PSNR=19.94, SSIM=0.7640, LPIPS=0.4735, LR=0.00000101
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 139/1000 训练结果
+============================================================
+  📅 轮次: 139
+  ⏱️  耗时: 302.21秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062651
+    📈 PSNR: 19.95 dB
+    🎨 SSIM: 0.7642
+    🔍 LPIPS: 0.4731
+  🔧 当前学习率: 0.00000100
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_139.pth
+  🥇 更新最佳Loss: 0.062651 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_139.pth)
+  🥇 更新最佳PSNR: 19.95 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_139.pth)
+  🥇 更新最佳SSIM: 0.7642 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_139.pth)
+  🥇 更新最佳LPIPS: 0.4731 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_139.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062651
+    📈 最佳PSNR: 19.95 dB
+    🎨 最佳SSIM: 0.7642
+    🔍 最佳LPIPS: 0.4731
+📊 TensorBoard日志记录 - Epoch 139: Loss=0.062651, PSNR=19.95, SSIM=0.7642, LPIPS=0.4731, LR=0.00000100
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 140/1000 训练结果
+============================================================
+  📅 轮次: 140
+  ⏱️  耗时: 301.97秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062578
+    📈 PSNR: 19.96 dB
+    🎨 SSIM: 0.7645
+    🔍 LPIPS: 0.4732
+  🔧 当前学习率: 0.00000100
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_140.pth
+  🥇 更新最佳Loss: 0.062578 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_140.pth)
+  🥇 更新最佳PSNR: 19.96 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_140.pth)
+  🥇 更新最佳SSIM: 0.7645 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_140.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062578
+    📈 最佳PSNR: 19.96 dB
+    🎨 最佳SSIM: 0.7645
+    🔍 最佳LPIPS: 0.4731
+📊 TensorBoard日志记录 - Epoch 140: Loss=0.062578, PSNR=19.96, SSIM=0.7645, LPIPS=0.4732, LR=0.00000100
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 140: 已记录28层参数和梯度
+  📝 第140轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 141/1000 训练结果
+============================================================
+  📅 轮次: 141
+  ⏱️  耗时: 300.48秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062578
+    📈 PSNR: 19.99 dB
+    🎨 SSIM: 0.7642
+    🔍 LPIPS: 0.4723
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_141.pth
+  🥇 更新最佳Loss: 0.062578 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_141.pth)
+  🥇 更新最佳PSNR: 19.99 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_141.pth)
+  🥇 更新最佳LPIPS: 0.4723 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_141.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062578
+    📈 最佳PSNR: 19.99 dB
+    🎨 最佳SSIM: 0.7645
+    🔍 最佳LPIPS: 0.4723
+📊 TensorBoard日志记录 - Epoch 141: Loss=0.062578, PSNR=19.99, SSIM=0.7642, LPIPS=0.4723, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 142/1000 训练结果
+============================================================
+  📅 轮次: 142
+  ⏱️  耗时: 300.73秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062142
+    📈 PSNR: 20.04 dB
+    🎨 SSIM: 0.7660
+    🔍 LPIPS: 0.4721
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_142.pth
+  🥇 更新最佳Loss: 0.062142 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_142.pth)
+  🥇 更新最佳PSNR: 20.04 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_142.pth)
+  🥇 更新最佳SSIM: 0.7660 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_142.pth)
+  🥇 更新最佳LPIPS: 0.4721 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_142.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062142
+    📈 最佳PSNR: 20.04 dB
+    🎨 最佳SSIM: 0.7660
+    🔍 最佳LPIPS: 0.4721
+📊 TensorBoard日志记录 - Epoch 142: Loss=0.062142, PSNR=20.04, SSIM=0.7660, LPIPS=0.4721, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 143/1000 训练结果
+============================================================
+  📅 轮次: 143
+  ⏱️  耗时: 302.18秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.062028
+    📈 PSNR: 20.09 dB
+    🎨 SSIM: 0.7661
+    🔍 LPIPS: 0.4718
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_143.pth
+  🥇 更新最佳Loss: 0.062028 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_143.pth)
+  🥇 更新最佳PSNR: 20.09 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_143.pth)
+  🥇 更新最佳SSIM: 0.7661 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_143.pth)
+  🥇 更新最佳LPIPS: 0.4718 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_143.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.062028
+    📈 最佳PSNR: 20.09 dB
+    🎨 最佳SSIM: 0.7661
+    🔍 最佳LPIPS: 0.4718
+📊 TensorBoard日志记录 - Epoch 143: Loss=0.062028, PSNR=20.09, SSIM=0.7661, LPIPS=0.4718, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 144/1000 训练结果
+============================================================
+  📅 轮次: 144
+  ⏱️  耗时: 302.60秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.061780
+    📈 PSNR: 20.14 dB
+    🎨 SSIM: 0.7669
+    🔍 LPIPS: 0.4708
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_144.pth
+  🥇 更新最佳Loss: 0.061780 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_144.pth)
+  🥇 更新最佳PSNR: 20.14 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_144.pth)
+  🥇 更新最佳SSIM: 0.7669 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_144.pth)
+  🥇 更新最佳LPIPS: 0.4708 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_144.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.061780
+    📈 最佳PSNR: 20.14 dB
+    🎨 最佳SSIM: 0.7669
+    🔍 最佳LPIPS: 0.4708
+📊 TensorBoard日志记录 - Epoch 144: Loss=0.061780, PSNR=20.14, SSIM=0.7669, LPIPS=0.4708, LR=0.00000441
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 145/1000 训练结果
+============================================================
+  📅 轮次: 145
+  ⏱️  耗时: 303.61秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.061490
+    📈 PSNR: 20.19 dB
+    🎨 SSIM: 0.7680
+    🔍 LPIPS: 0.4706
+  🔧 当前学习率: 0.00000441
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_145.pth
+  🥇 更新最佳Loss: 0.061490 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_145.pth)
+  🥇 更新最佳PSNR: 20.19 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_145.pth)
+  🥇 更新最佳SSIM: 0.7680 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_145.pth)
+  🥇 更新最佳LPIPS: 0.4706 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_145.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.061490
+    📈 最佳PSNR: 20.19 dB
+    🎨 最佳SSIM: 0.7680
+    🔍 最佳LPIPS: 0.4706
+📊 TensorBoard日志记录 - Epoch 145: Loss=0.061490, PSNR=20.19, SSIM=0.7680, LPIPS=0.4706, LR=0.00000441
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 145: 已记录28层参数和梯度
+  📝 第145轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 146/1000 训练结果
+============================================================
+  📅 轮次: 146
+  ⏱️  耗时: 302.74秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.061168
+    📈 PSNR: 20.24 dB
+    🎨 SSIM: 0.7692
+    🔍 LPIPS: 0.4699
+  🔧 当前学习率: 0.00000440
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_146.pth
+  🥇 更新最佳Loss: 0.061168 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_146.pth)
+  🥇 更新最佳PSNR: 20.24 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_146.pth)
+  🥇 更新最佳SSIM: 0.7692 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_146.pth)
+  🥇 更新最佳LPIPS: 0.4699 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_146.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.061168
+    📈 最佳PSNR: 20.24 dB
+    🎨 最佳SSIM: 0.7692
+    🔍 最佳LPIPS: 0.4699
+📊 TensorBoard日志记录 - Epoch 146: Loss=0.061168, PSNR=20.24, SSIM=0.7692, LPIPS=0.4699, LR=0.00000440
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 147/1000 训练结果
+============================================================
+  📅 轮次: 147
+  ⏱️  耗时: 299.94秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.061016
+    📈 PSNR: 20.29 dB
+    🎨 SSIM: 0.7695
+    🔍 LPIPS: 0.4692
+  🔧 当前学习率: 0.00000440
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_147.pth
+  🥇 更新最佳Loss: 0.061016 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_147.pth)
+  🥇 更新最佳PSNR: 20.29 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_147.pth)
+  🥇 更新最佳SSIM: 0.7695 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_147.pth)
+  🥇 更新最佳LPIPS: 0.4692 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_147.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.061016
+    📈 最佳PSNR: 20.29 dB
+    🎨 最佳SSIM: 0.7695
+    🔍 最佳LPIPS: 0.4692
+📊 TensorBoard日志记录 - Epoch 147: Loss=0.061016, PSNR=20.29, SSIM=0.7695, LPIPS=0.4692, LR=0.00000440
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 148/1000 训练结果
+============================================================
+  📅 轮次: 148
+  ⏱️  耗时: 305.00秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.060679
+    📈 PSNR: 20.34 dB
+    🎨 SSIM: 0.7708
+    🔍 LPIPS: 0.4682
+  🔧 当前学习率: 0.00000439
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_148.pth
+  🥇 更新最佳Loss: 0.060679 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_148.pth)
+  🥇 更新最佳PSNR: 20.34 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_148.pth)
+  🥇 更新最佳SSIM: 0.7708 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_148.pth)
+  🥇 更新最佳LPIPS: 0.4682 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_148.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.060679
+    📈 最佳PSNR: 20.34 dB
+    🎨 最佳SSIM: 0.7708
+    🔍 最佳LPIPS: 0.4682
+📊 TensorBoard日志记录 - Epoch 148: Loss=0.060679, PSNR=20.34, SSIM=0.7708, LPIPS=0.4682, LR=0.00000439
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 149/1000 训练结果
+============================================================
+  📅 轮次: 149
+  ⏱️  耗时: 300.36秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.060426
+    📈 PSNR: 20.39 dB
+    🎨 SSIM: 0.7716
+    🔍 LPIPS: 0.4674
+  🔧 当前学习率: 0.00000439
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_149.pth
+  🥇 更新最佳Loss: 0.060426 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_149.pth)
+  🥇 更新最佳PSNR: 20.39 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_149.pth)
+  🥇 更新最佳SSIM: 0.7716 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_149.pth)
+  🥇 更新最佳LPIPS: 0.4674 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_149.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.060426
+    📈 最佳PSNR: 20.39 dB
+    🎨 最佳SSIM: 0.7716
+    🔍 最佳LPIPS: 0.4674
+📊 TensorBoard日志记录 - Epoch 149: Loss=0.060426, PSNR=20.39, SSIM=0.7716, LPIPS=0.4674, LR=0.00000439
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 150/1000 训练结果
+============================================================
+  📅 轮次: 150
+  ⏱️  耗时: 298.21秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.060203
+    📈 PSNR: 20.43 dB
+    🎨 SSIM: 0.7726
+    🔍 LPIPS: 0.4675
+  🔧 当前学习率: 0.00000438
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_150.pth
+  🥇 更新最佳Loss: 0.060203 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_150.pth)
+  🥇 更新最佳PSNR: 20.43 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_150.pth)
+  🥇 更新最佳SSIM: 0.7726 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_150.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.060203
+    📈 最佳PSNR: 20.43 dB
+    🎨 最佳SSIM: 0.7726
+    🔍 最佳LPIPS: 0.4674
+📊 TensorBoard日志记录 - Epoch 150: Loss=0.060203, PSNR=20.43, SSIM=0.7726, LPIPS=0.4675, LR=0.00000438
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 150: 已记录28层参数和梯度
+  📝 第150轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 151/1000 训练结果
+============================================================
+  📅 轮次: 151
+  ⏱️  耗时: 303.19秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.060078
+    📈 PSNR: 20.48 dB
+    🎨 SSIM: 0.7726
+    🔍 LPIPS: 0.4667
+  🔧 当前学习率: 0.00000437
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_151.pth
+  🥇 更新最佳Loss: 0.060078 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_151.pth)
+  🥇 更新最佳PSNR: 20.48 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_151.pth)
+  🥇 更新最佳SSIM: 0.7726 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_151.pth)
+  🥇 更新最佳LPIPS: 0.4667 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_151.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.060078
+    📈 最佳PSNR: 20.48 dB
+    🎨 最佳SSIM: 0.7726
+    🔍 最佳LPIPS: 0.4667
+📊 TensorBoard日志记录 - Epoch 151: Loss=0.060078, PSNR=20.48, SSIM=0.7726, LPIPS=0.4667, LR=0.00000437
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 152/1000 训练结果
+============================================================
+  📅 轮次: 152
+  ⏱️  耗时: 297.27秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.059886
+    📈 PSNR: 20.52 dB
+    🎨 SSIM: 0.7733
+    🔍 LPIPS: 0.4662
+  🔧 当前学习率: 0.00000437
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_152.pth
+  🥇 更新最佳Loss: 0.059886 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_152.pth)
+  🥇 更新最佳PSNR: 20.52 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_152.pth)
+  🥇 更新最佳SSIM: 0.7733 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_152.pth)
+  🥇 更新最佳LPIPS: 0.4662 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_152.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.059886
+    📈 最佳PSNR: 20.52 dB
+    🎨 最佳SSIM: 0.7733
+    🔍 最佳LPIPS: 0.4662
+📊 TensorBoard日志记录 - Epoch 152: Loss=0.059886, PSNR=20.52, SSIM=0.7733, LPIPS=0.4662, LR=0.00000437
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 153/1000 训练结果
+============================================================
+  📅 轮次: 153
+  ⏱️  耗时: 301.69秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.059452
+    📈 PSNR: 20.57 dB
+    🎨 SSIM: 0.7752
+    🔍 LPIPS: 0.4655
+  🔧 当前学习率: 0.00000436
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_153.pth
+  🥇 更新最佳Loss: 0.059452 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_153.pth)
+  🥇 更新最佳PSNR: 20.57 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_153.pth)
+  🥇 更新最佳SSIM: 0.7752 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_153.pth)
+  🥇 更新最佳LPIPS: 0.4655 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_153.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.059452
+    📈 最佳PSNR: 20.57 dB
+    🎨 最佳SSIM: 0.7752
+    🔍 最佳LPIPS: 0.4655
+📊 TensorBoard日志记录 - Epoch 153: Loss=0.059452, PSNR=20.57, SSIM=0.7752, LPIPS=0.4655, LR=0.00000436
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 154/1000 训练结果
+============================================================
+  📅 轮次: 154
+  ⏱️  耗时: 299.62秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.058794
+    📈 PSNR: 20.81 dB
+    🎨 SSIM: 0.7768
+    🔍 LPIPS: 0.4646
+  🔧 当前学习率: 0.00000435
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_154.pth
+  🥇 更新最佳Loss: 0.058794 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_154.pth)
+  🥇 更新最佳PSNR: 20.81 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_154.pth)
+  🥇 更新最佳SSIM: 0.7768 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_154.pth)
+  🥇 更新最佳LPIPS: 0.4646 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_154.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.058794
+    📈 最佳PSNR: 20.81 dB
+    🎨 最佳SSIM: 0.7768
+    🔍 最佳LPIPS: 0.4646
+📊 TensorBoard日志记录 - Epoch 154: Loss=0.058794, PSNR=20.81, SSIM=0.7768, LPIPS=0.4646, LR=0.00000435
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 155/1000 训练结果
+============================================================
+  📅 轮次: 155
+  ⏱️  耗时: 297.12秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.056571
+    📈 PSNR: 21.46 dB
+    🎨 SSIM: 0.7838
+    🔍 LPIPS: 0.4596
+  🔧 当前学习率: 0.00000434
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_155.pth
+  🥇 更新最佳Loss: 0.056571 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_155.pth)
+  🥇 更新最佳PSNR: 21.46 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_155.pth)
+  🥇 更新最佳SSIM: 0.7838 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_155.pth)
+  🥇 更新最佳LPIPS: 0.4596 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_155.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.056571
+    📈 最佳PSNR: 21.46 dB
+    🎨 最佳SSIM: 0.7838
+    🔍 最佳LPIPS: 0.4596
+📊 TensorBoard日志记录 - Epoch 155: Loss=0.056571, PSNR=21.46, SSIM=0.7838, LPIPS=0.4596, LR=0.00000434
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 155: 已记录28层参数和梯度
+  📝 第155轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 156/1000 训练结果
+============================================================
+  📅 轮次: 156
+  ⏱️  耗时: 297.74秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.055859
+    📈 PSNR: 21.71 dB
+    🎨 SSIM: 0.7860
+    🔍 LPIPS: 0.4577
+  🔧 当前学习率: 0.00000433
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_156.pth
+  🥇 更新最佳Loss: 0.055859 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_156.pth)
+  🥇 更新最佳PSNR: 21.71 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_156.pth)
+  🥇 更新最佳SSIM: 0.7860 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_156.pth)
+  🥇 更新最佳LPIPS: 0.4577 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_156.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.055859
+    📈 最佳PSNR: 21.71 dB
+    🎨 最佳SSIM: 0.7860
+    🔍 最佳LPIPS: 0.4577
+📊 TensorBoard日志记录 - Epoch 156: Loss=0.055859, PSNR=21.71, SSIM=0.7860, LPIPS=0.4577, LR=0.00000433
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 157/1000 训练结果
+============================================================
+  📅 轮次: 157
+  ⏱️  耗时: 297.02秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.055241
+    📈 PSNR: 21.91 dB
+    🎨 SSIM: 0.7879
+    🔍 LPIPS: 0.4563
+  🔧 当前学习率: 0.00000432
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_157.pth
+  🥇 更新最佳Loss: 0.055241 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_157.pth)
+  🥇 更新最佳PSNR: 21.91 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_157.pth)
+  🥇 更新最佳SSIM: 0.7879 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_157.pth)
+  🥇 更新最佳LPIPS: 0.4563 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_157.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.055241
+    📈 最佳PSNR: 21.91 dB
+    🎨 最佳SSIM: 0.7879
+    🔍 最佳LPIPS: 0.4563
+📊 TensorBoard日志记录 - Epoch 157: Loss=0.055241, PSNR=21.91, SSIM=0.7879, LPIPS=0.4563, LR=0.00000432
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 158/1000 训练结果
+============================================================
+  📅 轮次: 158
+  ⏱️  耗时: 296.37秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.054703
+    📈 PSNR: 22.04 dB
+    🎨 SSIM: 0.7898
+    🔍 LPIPS: 0.4548
+  🔧 当前学习率: 0.00000431
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_158.pth
+  🥇 更新最佳Loss: 0.054703 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_158.pth)
+  🥇 更新最佳PSNR: 22.04 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_158.pth)
+  🥇 更新最佳SSIM: 0.7898 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_158.pth)
+  🥇 更新最佳LPIPS: 0.4548 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_158.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.054703
+    📈 最佳PSNR: 22.04 dB
+    🎨 最佳SSIM: 0.7898
+    🔍 最佳LPIPS: 0.4548
+📊 TensorBoard日志记录 - Epoch 158: Loss=0.054703, PSNR=22.04, SSIM=0.7898, LPIPS=0.4548, LR=0.00000431
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 159/1000 训练结果
+============================================================
+  📅 轮次: 159
+  ⏱️  耗时: 293.97秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.054337
+    📈 PSNR: 22.14 dB
+    🎨 SSIM: 0.7909
+    🔍 LPIPS: 0.4534
+  🔧 当前学习率: 0.00000430
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_159.pth
+  🥇 更新最佳Loss: 0.054337 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_159.pth)
+  🥇 更新最佳PSNR: 22.14 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_159.pth)
+  🥇 更新最佳SSIM: 0.7909 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_159.pth)
+  🥇 更新最佳LPIPS: 0.4534 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_159.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.054337
+    📈 最佳PSNR: 22.14 dB
+    🎨 最佳SSIM: 0.7909
+    🔍 最佳LPIPS: 0.4534
+📊 TensorBoard日志记录 - Epoch 159: Loss=0.054337, PSNR=22.14, SSIM=0.7909, LPIPS=0.4534, LR=0.00000430
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 160/1000 训练结果
+============================================================
+  📅 轮次: 160
+  ⏱️  耗时: 299.42秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.053950
+    📈 PSNR: 22.24 dB
+    🎨 SSIM: 0.7921
+    🔍 LPIPS: 0.4520
+  🔧 当前学习率: 0.00000428
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_160.pth
+  🥇 更新最佳Loss: 0.053950 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_160.pth)
+  🥇 更新最佳PSNR: 22.24 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_160.pth)
+  🥇 更新最佳SSIM: 0.7921 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_160.pth)
+  🥇 更新最佳LPIPS: 0.4520 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_160.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.053950
+    📈 最佳PSNR: 22.24 dB
+    🎨 最佳SSIM: 0.7921
+    🔍 最佳LPIPS: 0.4520
+📊 TensorBoard日志记录 - Epoch 160: Loss=0.053950, PSNR=22.24, SSIM=0.7921, LPIPS=0.4520, LR=0.00000428
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 160: 已记录28层参数和梯度
+  📝 第160轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 161/1000 训练结果
+============================================================
+  📅 轮次: 161
+  ⏱️  耗时: 297.34秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.053573
+    📈 PSNR: 22.34 dB
+    🎨 SSIM: 0.7934
+    🔍 LPIPS: 0.4509
+  🔧 当前学习率: 0.00000427
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_161.pth
+  🥇 更新最佳Loss: 0.053573 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_161.pth)
+  🥇 更新最佳PSNR: 22.34 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_161.pth)
+  🥇 更新最佳SSIM: 0.7934 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_161.pth)
+  🥇 更新最佳LPIPS: 0.4509 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_161.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.053573
+    📈 最佳PSNR: 22.34 dB
+    🎨 最佳SSIM: 0.7934
+    🔍 最佳LPIPS: 0.4509
+📊 TensorBoard日志记录 - Epoch 161: Loss=0.053573, PSNR=22.34, SSIM=0.7934, LPIPS=0.4509, LR=0.00000427
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 162/1000 训练结果
+============================================================
+  📅 轮次: 162
+  ⏱️  耗时: 295.19秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.053217
+    📈 PSNR: 22.42 dB
+    🎨 SSIM: 0.7948
+    🔍 LPIPS: 0.4497
+  🔧 当前学习率: 0.00000426
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_162.pth
+  🥇 更新最佳Loss: 0.053217 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_162.pth)
+  🥇 更新最佳PSNR: 22.42 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_162.pth)
+  🥇 更新最佳SSIM: 0.7948 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_162.pth)
+  🥇 更新最佳LPIPS: 0.4497 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_162.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.053217
+    📈 最佳PSNR: 22.42 dB
+    🎨 最佳SSIM: 0.7948
+    🔍 最佳LPIPS: 0.4497
+📊 TensorBoard日志记录 - Epoch 162: Loss=0.053217, PSNR=22.42, SSIM=0.7948, LPIPS=0.4497, LR=0.00000426
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 163/1000 训练结果
+============================================================
+  📅 轮次: 163
+  ⏱️  耗时: 292.83秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.052745
+    📈 PSNR: 22.52 dB
+    🎨 SSIM: 0.7966
+    🔍 LPIPS: 0.4481
+  🔧 当前学习率: 0.00000424
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_163.pth
+  🥇 更新最佳Loss: 0.052745 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_163.pth)
+  🥇 更新最佳PSNR: 22.52 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_163.pth)
+  🥇 更新最佳SSIM: 0.7966 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_163.pth)
+  🥇 更新最佳LPIPS: 0.4481 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_163.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.052745
+    📈 最佳PSNR: 22.52 dB
+    🎨 最佳SSIM: 0.7966
+    🔍 最佳LPIPS: 0.4481
+📊 TensorBoard日志记录 - Epoch 163: Loss=0.052745, PSNR=22.52, SSIM=0.7966, LPIPS=0.4481, LR=0.00000424
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 164/1000 训练结果
+============================================================
+  📅 轮次: 164
+  ⏱️  耗时: 297.66秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.052526
+    📈 PSNR: 22.60 dB
+    🎨 SSIM: 0.7970
+    🔍 LPIPS: 0.4465
+  🔧 当前学习率: 0.00000423
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_164.pth
+  🥇 更新最佳Loss: 0.052526 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_164.pth)
+  🥇 更新最佳PSNR: 22.60 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_164.pth)
+  🥇 更新最佳SSIM: 0.7970 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_164.pth)
+  🥇 更新最佳LPIPS: 0.4465 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_164.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.052526
+    📈 最佳PSNR: 22.60 dB
+    🎨 最佳SSIM: 0.7970
+    🔍 最佳LPIPS: 0.4465
+📊 TensorBoard日志记录 - Epoch 164: Loss=0.052526, PSNR=22.60, SSIM=0.7970, LPIPS=0.4465, LR=0.00000423
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 165/1000 训练结果
+============================================================
+  📅 轮次: 165
+  ⏱️  耗时: 292.05秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.052041
+    📈 PSNR: 22.69 dB
+    🎨 SSIM: 0.7989
+    🔍 LPIPS: 0.4450
+  🔧 当前学习率: 0.00000421
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_165.pth
+  🥇 更新最佳Loss: 0.052041 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_165.pth)
+  🥇 更新最佳PSNR: 22.69 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_165.pth)
+  🥇 更新最佳SSIM: 0.7989 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_165.pth)
+  🥇 更新最佳LPIPS: 0.4450 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_165.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.052041
+    📈 最佳PSNR: 22.69 dB
+    🎨 最佳SSIM: 0.7989
+    🔍 最佳LPIPS: 0.4450
+📊 TensorBoard日志记录 - Epoch 165: Loss=0.052041, PSNR=22.69, SSIM=0.7989, LPIPS=0.4450, LR=0.00000421
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 165: 已记录28层参数和梯度
+  📝 第165轮模型权重记录到TensorBoard
+
+============================================================
+📊 Epoch 166/1000 训练结果
+============================================================
+  📅 轮次: 166
+  ⏱️  耗时: 293.75秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.051632
+    📈 PSNR: 22.78 dB
+    🎨 SSIM: 0.8004
+    🔍 LPIPS: 0.4433
+  🔧 当前学习率: 0.00000420
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_166.pth
+  🥇 更新最佳Loss: 0.051632 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_166.pth)
+  🥇 更新最佳PSNR: 22.78 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_166.pth)
+  🥇 更新最佳SSIM: 0.8004 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_166.pth)
+  🥇 更新最佳LPIPS: 0.4433 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_166.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.051632
+    📈 最佳PSNR: 22.78 dB
+    🎨 最佳SSIM: 0.8004
+    🔍 最佳LPIPS: 0.4433
+📊 TensorBoard日志记录 - Epoch 166: Loss=0.051632, PSNR=22.78, SSIM=0.8004, LPIPS=0.4433, LR=0.00000420
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 167/1000 训练结果
+============================================================
+  📅 轮次: 167
+  ⏱️  耗时: 294.04秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.051323
+    📈 PSNR: 22.86 dB
+    🎨 SSIM: 0.8015
+    🔍 LPIPS: 0.4415
+  🔧 当前学习率: 0.00000418
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_167.pth
+  🥇 更新最佳Loss: 0.051323 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_167.pth)
+  🥇 更新最佳PSNR: 22.86 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_167.pth)
+  🥇 更新最佳SSIM: 0.8015 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_167.pth)
+  🥇 更新最佳LPIPS: 0.4415 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_167.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.051323
+    📈 最佳PSNR: 22.86 dB
+    🎨 最佳SSIM: 0.8015
+    🔍 最佳LPIPS: 0.4415
+📊 TensorBoard日志记录 - Epoch 167: Loss=0.051323, PSNR=22.86, SSIM=0.8015, LPIPS=0.4415, LR=0.00000418
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 168/1000 训练结果
+============================================================
+  📅 轮次: 168
+  ⏱️  耗时: 295.24秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.051054
+    📈 PSNR: 22.93 dB
+    🎨 SSIM: 0.8023
+    🔍 LPIPS: 0.4395
+  🔧 当前学习率: 0.00000416
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_168.pth
+  🥇 更新最佳Loss: 0.051054 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_168.pth)
+  🥇 更新最佳PSNR: 22.93 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_168.pth)
+  🥇 更新最佳SSIM: 0.8023 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_168.pth)
+  🥇 更新最佳LPIPS: 0.4395 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_168.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.051054
+    📈 最佳PSNR: 22.93 dB
+    🎨 最佳SSIM: 0.8023
+    🔍 最佳LPIPS: 0.4395
+📊 TensorBoard日志记录 - Epoch 168: Loss=0.051054, PSNR=22.93, SSIM=0.8023, LPIPS=0.4395, LR=0.00000416
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 169/1000 训练结果
+============================================================
+  📅 轮次: 169
+  ⏱️  耗时: 292.56秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.050721
+    📈 PSNR: 23.02 dB
+    🎨 SSIM: 0.8035
+    🔍 LPIPS: 0.4381
+  🔧 当前学习率: 0.00000414
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_169.pth
+  🥇 更新最佳Loss: 0.050721 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_169.pth)
+  🥇 更新最佳PSNR: 23.02 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_169.pth)
+  🥇 更新最佳SSIM: 0.8035 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_169.pth)
+  🥇 更新最佳LPIPS: 0.4381 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_169.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.050721
+    📈 最佳PSNR: 23.02 dB
+    🎨 最佳SSIM: 0.8035
+    🔍 最佳LPIPS: 0.4381
+📊 TensorBoard日志记录 - Epoch 169: Loss=0.050721, PSNR=23.02, SSIM=0.8035, LPIPS=0.4381, LR=0.00000414
+  📈 TensorBoard日志记录完成
+
+============================================================
+📊 Epoch 170/1000 训练结果
+============================================================
+  📅 轮次: 170
+  ⏱️  耗时: 290.75秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.050322
+    📈 PSNR: 23.09 dB
+    🎨 SSIM: 0.8052
+    🔍 LPIPS: 0.4363
+  🔧 当前学习率: 0.00000413
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_170.pth
+  🥇 更新最佳Loss: 0.050322 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_170.pth)
+  🥇 更新最佳PSNR: 23.09 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_170.pth)
+  🥇 更新最佳SSIM: 0.8052 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_170.pth)
+  🥇 更新最佳LPIPS: 0.4363 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_170.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.050322
+    📈 最佳PSNR: 23.09 dB
+    🎨 最佳SSIM: 0.8052
+    🔍 最佳LPIPS: 0.4363
+📊 TensorBoard日志记录 - Epoch 170: Loss=0.050322, PSNR=23.09, SSIM=0.8052, LPIPS=0.4363, LR=0.00000413
+  📈 TensorBoard日志记录完成
+📊 TensorBoard权重日志记录 - Epoch 170: 已记录28层参数和梯度
+  📝 第170轮模型权重记录到TensorBoard
+  🆘 保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+
+============================================================
+📊 Epoch 171/1000 训练结果
+============================================================
+  📅 轮次: 171
+  ⏱️  耗时: 295.63秒
+  📦 处理批次: 2812/2812
+  📈 平均指标:
+    📉 Loss: 0.049961
+    📈 PSNR: 23.16 dB
+    🎨 SSIM: 0.8066
+    🔍 LPIPS: 0.4348
+  🔧 当前学习率: 0.00000411
+  💾 保存本轮检查点: ./continual_ckpt/deeplesionkey_ct/deeplesionkey_ct_epoch_171.pth
+  🥇 更新最佳Loss: 0.049961 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_loss_epoch_171.pth)
+  🥇 更新最佳PSNR: 23.16 dB (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_psnr_epoch_171.pth)
+  🥇 更新最佳SSIM: 0.8066 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_ssim_epoch_171.pth)
+  🥇 更新最佳LPIPS: 0.4348 (保存到 ./continual_ckpt/best_deeplesionkey_ct/best_deeplesionkey_ct_lpips_epoch_171.pth)
+  ⏱️  早停计数器: 0/30
+
+  📊 当前累计最佳指标:
+    📉 最佳Loss: 0.049961
+    📈 最佳PSNR: 23.16 dB
+    🎨 最佳SSIM: 0.8066
+    🔍 最佳LPIPS: 0.4348
+📊 TensorBoard日志记录 - Epoch 171: Loss=0.049961, PSNR=23.16, SSIM=0.8066, LPIPS=0.4348, LR=0.00000411
+  📈 TensorBoard日志记录完成
+
+============================================================
+⚠️  检测到键盘中断，正在保存deeplesionkey_ct紧急模型...
+============================================================
+  🐛 错误类型: KeyboardInterrupt
+  📝 错误信息: 用户中断训练
+  🆘 已保存紧急备份模型: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+  💡 下次可以继续训练：
+    检查点位置: ./continual_ckpt/emergency/deeplesionkey_ct_emergency_model.pth
+    已训练轮次: 172
+    当前最佳PSNR: 23.16 dB
+
+============================================================
+📝 训练日志关闭
+============================================================
+  💾 日志文件: ./output_detail/deeplesionkey_ct_train_log.txt
+  📊 训练统计:
+    已训练轮次: 172
+    最佳PSNR: 23.16 dB
+    最佳SSIM: 0.8066

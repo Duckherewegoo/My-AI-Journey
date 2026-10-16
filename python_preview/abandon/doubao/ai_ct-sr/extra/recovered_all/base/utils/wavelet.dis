@@ -1,0 +1,792 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/__pycache__/wavelet.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.841920
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1768621435 (2026-01-17 11:43:55)
+# Source code size mod 2**32: 1603 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        5
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    Haar 小波变换\n    https://github.com/lpj0/MWCNN_PyTorch/blob/master/model/common.py\n'
+#    1: 0
+#    2: None
+#    3: <code object _dwt_haar at 0x55c3604a5420, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 12>
+#    4: <code object _iwt_haar at 0x55c3604901f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 29>
+#    5: <code object DWT_Haar at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 51>
+#    6: 'DWT_Haar'
+#    7: <code object IWT_Haar at 0x7fde73f16250, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 60>
+#    8: 'IWT_Haar'
+# Names:
+#    0: __doc__
+#    1: torch
+#    2: torch.nn
+#    3: nn
+#    4: _dwt_haar
+#    5: _iwt_haar
+#    6: Module
+#    7: DWT_Haar
+#    8: IWT_Haar
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    Haar 小波变换\n    https://github.com/lpj0/MWCNN_PyTorch/blob/master/model/common.py\n")
+               4 STORE_NAME           (__doc__)
+
+  6:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torch)
+              12 STORE_NAME           (torch)
+
+  7:          14 LOAD_CONST           (0)
+              16 LOAD_CONST           (None)
+              18 IMPORT_NAME          (torch.nn)
+              20 IMPORT_FROM          (nn)
+              22 STORE_NAME           (nn)
+              24 POP_TOP
+
+ 12:          26 LOAD_CONST           (<code object _dwt_haar at 0x55c3604a5420, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 12>)
+              28 MAKE_FUNCTION        (No arguments)
+              30 STORE_NAME           (_dwt_haar)
+
+ 29:          32 LOAD_CONST           (<code object _iwt_haar at 0x55c3604901f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 29>)
+              34 MAKE_FUNCTION        (No arguments)
+              36 STORE_NAME           (_iwt_haar)
+
+ 51:          38 PUSH_NULL
+              40 LOAD_BUILD_CLASS
+              42 LOAD_CONST           (<code object DWT_Haar at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 51>)
+              44 MAKE_FUNCTION        (No arguments)
+              46 LOAD_CONST           ("DWT_Haar")
+              48 LOAD_NAME            (nn)
+              50 LOAD_ATTR            (Module)
+              60 PRECALL              3
+              64 CALL                 3
+              74 STORE_NAME           (DWT_Haar)
+
+ 60:          76 PUSH_NULL
+              78 LOAD_BUILD_CLASS
+              80 LOAD_CONST           (<code object IWT_Haar at 0x7fde73f16250, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 60>)
+              82 MAKE_FUNCTION        (No arguments)
+              84 LOAD_CONST           ("IWT_Haar")
+              86 LOAD_NAME            (nn)
+              88 LOAD_ATTR            (Module)
+              98 PRECALL              3
+             102 CALL                 3
+             112 STORE_NAME           (IWT_Haar)
+             114 LOAD_CONST           (None)
+             116 RETURN_VALUE
+
+
+# Method Name:       _dwt_haar
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  11
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        12
+# Constants:
+#    0: None
+#    1: 0
+#    2: 2
+#    3: 1
+# Names:
+#    0: torch
+#    1: cat
+# Varnames:
+#	x, x01, x02, x1, x2, x3, x4, LL, HL, LH, HH
+# Positional arguments:
+#	x
+# Local variables:
+#    1: x01
+#    2: x02
+#    3: x1
+#    4: x2
+#    5: x3
+#    6: x4
+#    7: LL
+#    8: HL
+#    9: LH
+#   10: HH
+
+ 12:           0 RESUME               0
+
+ 13:           2 LOAD_FAST            (x)
+               4 LOAD_CONST           (None)
+               6 LOAD_CONST           (None)
+               8 BUILD_SLICE          2
+              10 LOAD_CONST           (None)
+              12 LOAD_CONST           (None)
+              14 BUILD_SLICE          2
+              16 LOAD_CONST           (0)
+              18 LOAD_CONST           (None)
+              20 LOAD_CONST           (2)
+              22 BUILD_SLICE          3
+              24 LOAD_CONST           (None)
+              26 LOAD_CONST           (None)
+              28 BUILD_SLICE          2
+              30 BUILD_TUPLE          4
+              32 BINARY_SUBSCR
+              42 LOAD_CONST           (2)
+              44 BINARY_OP            (/)
+              48 STORE_FAST           (x01)
+
+ 14:          50 LOAD_FAST            (x)
+              52 LOAD_CONST           (None)
+              54 LOAD_CONST           (None)
+              56 BUILD_SLICE          2
+              58 LOAD_CONST           (None)
+              60 LOAD_CONST           (None)
+              62 BUILD_SLICE          2
+              64 LOAD_CONST           (1)
+              66 LOAD_CONST           (None)
+              68 LOAD_CONST           (2)
+              70 BUILD_SLICE          3
+              72 LOAD_CONST           (None)
+              74 LOAD_CONST           (None)
+              76 BUILD_SLICE          2
+              78 BUILD_TUPLE          4
+              80 BINARY_SUBSCR
+              90 LOAD_CONST           (2)
+              92 BINARY_OP            (/)
+              96 STORE_FAST           (x02)
+
+ 15:          98 LOAD_FAST            (x01)
+             100 LOAD_CONST           (None)
+             102 LOAD_CONST           (None)
+             104 BUILD_SLICE          2
+             106 LOAD_CONST           (None)
+             108 LOAD_CONST           (None)
+             110 BUILD_SLICE          2
+             112 LOAD_CONST           (None)
+             114 LOAD_CONST           (None)
+             116 BUILD_SLICE          2
+             118 LOAD_CONST           (0)
+             120 LOAD_CONST           (None)
+             122 LOAD_CONST           (2)
+             124 BUILD_SLICE          3
+             126 BUILD_TUPLE          4
+             128 BINARY_SUBSCR
+             138 STORE_FAST           (x1)
+
+ 16:         140 LOAD_FAST            (x02)
+             142 LOAD_CONST           (None)
+             144 LOAD_CONST           (None)
+             146 BUILD_SLICE          2
+             148 LOAD_CONST           (None)
+             150 LOAD_CONST           (None)
+             152 BUILD_SLICE          2
+             154 LOAD_CONST           (None)
+             156 LOAD_CONST           (None)
+             158 BUILD_SLICE          2
+             160 LOAD_CONST           (0)
+             162 LOAD_CONST           (None)
+             164 LOAD_CONST           (2)
+             166 BUILD_SLICE          3
+             168 BUILD_TUPLE          4
+             170 BINARY_SUBSCR
+             180 STORE_FAST           (x2)
+
+ 17:         182 LOAD_FAST            (x01)
+             184 LOAD_CONST           (None)
+             186 LOAD_CONST           (None)
+             188 BUILD_SLICE          2
+             190 LOAD_CONST           (None)
+             192 LOAD_CONST           (None)
+             194 BUILD_SLICE          2
+             196 LOAD_CONST           (None)
+             198 LOAD_CONST           (None)
+             200 BUILD_SLICE          2
+             202 LOAD_CONST           (1)
+             204 LOAD_CONST           (None)
+             206 LOAD_CONST           (2)
+             208 BUILD_SLICE          3
+             210 BUILD_TUPLE          4
+             212 BINARY_SUBSCR
+             222 STORE_FAST           (x3)
+
+ 18:         224 LOAD_FAST            (x02)
+             226 LOAD_CONST           (None)
+             228 LOAD_CONST           (None)
+             230 BUILD_SLICE          2
+             232 LOAD_CONST           (None)
+             234 LOAD_CONST           (None)
+             236 BUILD_SLICE          2
+             238 LOAD_CONST           (None)
+             240 LOAD_CONST           (None)
+             242 BUILD_SLICE          2
+             244 LOAD_CONST           (1)
+             246 LOAD_CONST           (None)
+             248 LOAD_CONST           (2)
+             250 BUILD_SLICE          3
+             252 BUILD_TUPLE          4
+             254 BINARY_SUBSCR
+             264 STORE_FAST           (x4)
+
+ 20:         266 LOAD_FAST            (x1)
+             268 LOAD_FAST            (x2)
+             270 BINARY_OP            (+)
+             274 LOAD_FAST            (x3)
+             276 BINARY_OP            (+)
+             280 LOAD_FAST            (x4)
+             282 BINARY_OP            (+)
+             286 STORE_FAST           (LL)
+
+ 21:         288 LOAD_FAST            (x1)
+             290 UNARY_NEGATIVE
+             292 LOAD_FAST            (x2)
+             294 BINARY_OP            (-)
+             298 LOAD_FAST            (x3)
+             300 BINARY_OP            (+)
+             304 LOAD_FAST            (x4)
+             306 BINARY_OP            (+)
+             310 STORE_FAST           (HL)
+
+ 22:         312 LOAD_FAST            (x1)
+             314 UNARY_NEGATIVE
+             316 LOAD_FAST            (x2)
+             318 BINARY_OP            (+)
+             322 LOAD_FAST            (x3)
+             324 BINARY_OP            (-)
+             328 LOAD_FAST            (x4)
+             330 BINARY_OP            (+)
+             334 STORE_FAST           (LH)
+
+ 23:         336 LOAD_FAST            (x1)
+             338 LOAD_FAST            (x2)
+             340 BINARY_OP            (-)
+             344 LOAD_FAST            (x3)
+             346 BINARY_OP            (-)
+             350 LOAD_FAST            (x4)
+             352 BINARY_OP            (+)
+             356 STORE_FAST           (HH)
+
+ 25:         358 LOAD_GLOBAL          (NULL + torch)
+             370 LOAD_ATTR            (cat)
+             380 LOAD_FAST            (LL)
+             382 LOAD_FAST            (HL)
+             384 LOAD_FAST            (LH)
+             386 LOAD_FAST            (HH)
+             388 BUILD_TUPLE          4
+             390 LOAD_CONST           (1)
+             392 PRECALL              2
+             396 CALL                 2
+             406 RETURN_VALUE
+
+
+# Method Name:       _iwt_haar
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  14
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        29
+# Constants:
+#    0: None
+#    1: 4
+#    2: 2
+#    3: 0
+#    4: 3
+#    5: 1
+# Names:
+#    0: size
+#    1: torch
+#    2: zeros
+#    3: float
+# Varnames:
+#	x, in_batch, in_channel, in_h, in_w, out_batch, out_channel, out_h, out_w, x1, x2, x3, x4, syn
+# Positional arguments:
+#	x
+# Local variables:
+#    1: in_batch
+#    2: in_channel
+#    3: in_h
+#    4: in_w
+#    5: out_batch
+#    6: out_channel
+#    7: out_h
+#    8: out_w
+#    9: x1
+#   10: x2
+#   11: x3
+#   12: x4
+#   13: syn
+
+ 29:           0 RESUME               0
+
+ 30:           2 LOAD_FAST            (x)
+               4 LOAD_METHOD          (size)
+              26 PRECALL              0
+              30 CALL                 0
+              40 UNPACK_SEQUENCE      4
+              44 STORE_FAST           (in_batch)
+              46 STORE_FAST           (in_channel)
+              48 STORE_FAST           (in_h)
+              50 STORE_FAST           (in_w)
+
+ 31:          52 LOAD_FAST            (in_batch)
+              54 STORE_FAST           (out_batch)
+
+ 33:          56 LOAD_FAST            (in_channel)
+              58 LOAD_CONST           (4)
+              60 BINARY_OP            (//)
+              64 STORE_FAST           (out_channel)
+
+ 34:          66 LOAD_FAST            (in_h)
+              68 LOAD_CONST           (2)
+              70 BINARY_OP            (*)
+              74 STORE_FAST           (out_h)
+
+ 35:          76 LOAD_FAST            (in_w)
+              78 LOAD_CONST           (2)
+              80 BINARY_OP            (*)
+              84 STORE_FAST           (out_w)
+
+ 37:          86 LOAD_FAST            (x)
+              88 LOAD_CONST           (None)
+              90 LOAD_CONST           (None)
+              92 BUILD_SLICE          2
+              94 LOAD_CONST           (0)
+              96 LOAD_FAST            (out_channel)
+              98 BUILD_SLICE          2
+             100 LOAD_CONST           (None)
+             102 LOAD_CONST           (None)
+             104 BUILD_SLICE          2
+             106 LOAD_CONST           (None)
+             108 LOAD_CONST           (None)
+             110 BUILD_SLICE          2
+             112 BUILD_TUPLE          4
+             114 BINARY_SUBSCR
+             124 LOAD_CONST           (2)
+             126 BINARY_OP            (/)
+             130 STORE_FAST           (x1)
+
+ 38:         132 LOAD_FAST            (x)
+             134 LOAD_CONST           (None)
+             136 LOAD_CONST           (None)
+             138 BUILD_SLICE          2
+             140 LOAD_FAST            (out_channel)
+             142 LOAD_FAST            (out_channel)
+             144 LOAD_CONST           (2)
+             146 BINARY_OP            (*)
+             150 BUILD_SLICE          2
+             152 LOAD_CONST           (None)
+             154 LOAD_CONST           (None)
+             156 BUILD_SLICE          2
+             158 LOAD_CONST           (None)
+             160 LOAD_CONST           (None)
+             162 BUILD_SLICE          2
+             164 BUILD_TUPLE          4
+             166 BINARY_SUBSCR
+             176 LOAD_CONST           (2)
+             178 BINARY_OP            (/)
+             182 STORE_FAST           (x2)
+
+ 39:         184 LOAD_FAST            (x)
+             186 LOAD_CONST           (None)
+             188 LOAD_CONST           (None)
+             190 BUILD_SLICE          2
+             192 LOAD_FAST            (out_channel)
+             194 LOAD_CONST           (2)
+             196 BINARY_OP            (*)
+             200 LOAD_FAST            (out_channel)
+             202 LOAD_CONST           (3)
+             204 BINARY_OP            (*)
+             208 BUILD_SLICE          2
+             210 LOAD_CONST           (None)
+             212 LOAD_CONST           (None)
+             214 BUILD_SLICE          2
+             216 LOAD_CONST           (None)
+             218 LOAD_CONST           (None)
+             220 BUILD_SLICE          2
+             222 BUILD_TUPLE          4
+             224 BINARY_SUBSCR
+             234 LOAD_CONST           (2)
+             236 BINARY_OP            (/)
+             240 STORE_FAST           (x3)
+
+ 40:         242 LOAD_FAST            (x)
+             244 LOAD_CONST           (None)
+             246 LOAD_CONST           (None)
+             248 BUILD_SLICE          2
+             250 LOAD_FAST            (out_channel)
+             252 LOAD_CONST           (3)
+             254 BINARY_OP            (*)
+             258 LOAD_FAST            (out_channel)
+             260 LOAD_CONST           (4)
+             262 BINARY_OP            (*)
+             266 BUILD_SLICE          2
+             268 LOAD_CONST           (None)
+             270 LOAD_CONST           (None)
+             272 BUILD_SLICE          2
+             274 LOAD_CONST           (None)
+             276 LOAD_CONST           (None)
+             278 BUILD_SLICE          2
+             280 BUILD_TUPLE          4
+             282 BINARY_SUBSCR
+             292 LOAD_CONST           (2)
+             294 BINARY_OP            (/)
+             298 STORE_FAST           (x4)
+
+ 42:         300 LOAD_GLOBAL          (NULL + torch)
+             312 LOAD_ATTR            (zeros)
+             322 LOAD_FAST            (out_batch)
+             324 LOAD_FAST            (out_channel)
+             326 LOAD_FAST            (out_h)
+             328 LOAD_FAST            (out_w)
+             330 BUILD_LIST           4
+             332 PRECALL              1
+             336 CALL                 1
+             346 LOAD_METHOD          (float)
+             368 PRECALL              0
+             372 CALL                 0
+             382 STORE_FAST           (syn)
+
+ 43:         384 LOAD_FAST            (x1)
+             386 LOAD_FAST            (x2)
+             388 BINARY_OP            (-)
+             392 LOAD_FAST            (x3)
+             394 BINARY_OP            (-)
+             398 LOAD_FAST            (x4)
+             400 BINARY_OP            (+)
+             404 LOAD_FAST            (syn)
+             406 LOAD_CONST           (None)
+             408 LOAD_CONST           (None)
+             410 BUILD_SLICE          2
+             412 LOAD_CONST           (None)
+             414 LOAD_CONST           (None)
+             416 BUILD_SLICE          2
+             418 LOAD_CONST           (0)
+             420 LOAD_CONST           (None)
+             422 LOAD_CONST           (2)
+             424 BUILD_SLICE          3
+             426 LOAD_CONST           (0)
+             428 LOAD_CONST           (None)
+             430 LOAD_CONST           (2)
+             432 BUILD_SLICE          3
+             434 BUILD_TUPLE          4
+             436 STORE_SUBSCR
+
+ 44:         440 LOAD_FAST            (x1)
+             442 LOAD_FAST            (x2)
+             444 BINARY_OP            (-)
+             448 LOAD_FAST            (x3)
+             450 BINARY_OP            (+)
+             454 LOAD_FAST            (x4)
+             456 BINARY_OP            (-)
+             460 LOAD_FAST            (syn)
+             462 LOAD_CONST           (None)
+             464 LOAD_CONST           (None)
+             466 BUILD_SLICE          2
+             468 LOAD_CONST           (None)
+             470 LOAD_CONST           (None)
+             472 BUILD_SLICE          2
+             474 LOAD_CONST           (1)
+             476 LOAD_CONST           (None)
+             478 LOAD_CONST           (2)
+             480 BUILD_SLICE          3
+             482 LOAD_CONST           (0)
+             484 LOAD_CONST           (None)
+             486 LOAD_CONST           (2)
+             488 BUILD_SLICE          3
+             490 BUILD_TUPLE          4
+             492 STORE_SUBSCR
+
+ 45:         496 LOAD_FAST            (x1)
+             498 LOAD_FAST            (x2)
+             500 BINARY_OP            (+)
+             504 LOAD_FAST            (x3)
+             506 BINARY_OP            (-)
+             510 LOAD_FAST            (x4)
+             512 BINARY_OP            (-)
+             516 LOAD_FAST            (syn)
+             518 LOAD_CONST           (None)
+             520 LOAD_CONST           (None)
+             522 BUILD_SLICE          2
+             524 LOAD_CONST           (None)
+             526 LOAD_CONST           (None)
+             528 BUILD_SLICE          2
+             530 LOAD_CONST           (0)
+             532 LOAD_CONST           (None)
+             534 LOAD_CONST           (2)
+             536 BUILD_SLICE          3
+             538 LOAD_CONST           (1)
+             540 LOAD_CONST           (None)
+             542 LOAD_CONST           (2)
+             544 BUILD_SLICE          3
+             546 BUILD_TUPLE          4
+             548 STORE_SUBSCR
+
+ 46:         552 LOAD_FAST            (x1)
+             554 LOAD_FAST            (x2)
+             556 BINARY_OP            (+)
+             560 LOAD_FAST            (x3)
+             562 BINARY_OP            (+)
+             566 LOAD_FAST            (x4)
+             568 BINARY_OP            (+)
+             572 LOAD_FAST            (syn)
+             574 LOAD_CONST           (None)
+             576 LOAD_CONST           (None)
+             578 BUILD_SLICE          2
+             580 LOAD_CONST           (None)
+             582 LOAD_CONST           (None)
+             584 BUILD_SLICE          2
+             586 LOAD_CONST           (1)
+             588 LOAD_CONST           (None)
+             590 LOAD_CONST           (2)
+             592 BUILD_SLICE          3
+             594 LOAD_CONST           (1)
+             596 LOAD_CONST           (None)
+             598 LOAD_CONST           (2)
+             600 BUILD_SLICE          3
+             602 BUILD_TUPLE          4
+             604 STORE_SUBSCR
+
+ 48:         608 LOAD_FAST            (syn)
+             610 RETURN_VALUE
+
+
+# Method Name:       DWT_Haar
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        51
+# Constants:
+#    0: 'DWT_Haar'
+#    1: <code object __init__ at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 52>
+#    2: <code object forward at 0x7fde73f15610, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 56>
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: forward
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 51:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("DWT_Haar")
+              10 STORE_NAME           (__qualname__)
+
+ 52:          12 LOAD_CLOSURE         (__class__)
+              14 BUILD_TUPLE          1
+              16 LOAD_CONST           (<code object __init__ at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 52>)
+              18 MAKE_FUNCTION        (closure)
+              20 STORE_NAME           (__init__)
+
+ 56:          22 LOAD_CONST           (<code object forward at 0x7fde73f15610, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 56>)
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (forward)
+              28 LOAD_CLOSURE         (__class__)
+              30 COPY                 1
+              32 STORE_NAME           (__classcell__)
+              34 RETURN_VALUE
+
+
+# Method Name:       IWT_Haar
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        60
+# Constants:
+#    0: 'IWT_Haar'
+#    1: <code object __init__ at 0x7fde73f64030, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 61>
+#    2: <code object forward at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 65>
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: forward
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 60:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("IWT_Haar")
+              10 STORE_NAME           (__qualname__)
+
+ 61:          12 LOAD_CLOSURE         (__class__)
+              14 BUILD_TUPLE          1
+              16 LOAD_CONST           (<code object __init__ at 0x7fde73f64030, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 61>)
+              18 MAKE_FUNCTION        (closure)
+              20 STORE_NAME           (__init__)
+
+ 65:          22 LOAD_CONST           (<code object forward at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py", line 65>)
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (forward)
+              28 LOAD_CLOSURE         (__class__)
+              30 COPY                 1
+              32 STORE_NAME           (__classcell__)
+              34 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        52
+# Constants:
+#    0: None
+#    1: False
+# Names:
+#    0: super
+#    1: DWT_Haar
+#    2: __init__
+#    3: requires_grad
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 52:           2 RESUME               0
+
+ 53:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (DWT_Haar)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 54:          82 LOAD_CONST           (False)
+              84 LOAD_FAST            (self)
+              86 STORE_ATTR           (requires_grad)
+              96 LOAD_CONST           (None)
+              98 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        56
+# Constants:
+#    0: None
+# Names:
+#    0: _dwt_haar
+# Varnames:
+#	self, x
+# Positional arguments:
+#	self, x
+
+ 56:           0 RESUME               0
+
+ 57:           2 LOAD_GLOBAL          (NULL + _dwt_haar)
+              14 LOAD_FAST            (x)
+              16 PRECALL              1
+              20 CALL                 1
+              30 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        61
+# Constants:
+#    0: None
+#    1: False
+# Names:
+#    0: super
+#    1: IWT_Haar
+#    2: __init__
+#    3: requires_grad
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 61:           2 RESUME               0
+
+ 62:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (IWT_Haar)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 63:          82 LOAD_CONST           (False)
+              84 LOAD_FAST            (self)
+              86 STORE_ATTR           (requires_grad)
+              96 LOAD_CONST           (None)
+              98 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/utils/wavelet.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        65
+# Constants:
+#    0: None
+# Names:
+#    0: _iwt_haar
+# Varnames:
+#	self, x
+# Positional arguments:
+#	self, x
+
+ 65:           0 RESUME               0
+
+ 66:           2 LOAD_GLOBAL          (NULL + _iwt_haar)
+              14 LOAD_FAST            (x)
+              16 PRECALL              1
+              20 CALL                 1
+              30 RETURN_VALUE
+

@@ -1,0 +1,3296 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/__pycache__/deeplesions.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.763607
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1769262220 (2026-01-24 21:43:40)
+# Source code size mod 2**32: 18352 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        5
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    DeepLesion 数据集接口（医学图像超分辨率）\n    修复点：统一所有阶段返回格式，解决val/test解包错误\n    增强版特性：\n    1. 统一返回格式：(y_lr, y_hr, filename)（train阶段filename=None）\n    2. 适配train/val/test三阶段无缝切换\n    3. 增强数据校验与异常兜底\n'
+#    1: 0
+#    2: None
+#    3: ('Dataset',)
+#    4: ('Image', 'ImageEnhance')
+#    5: ('transforms',)
+#    6: ('InterpolationMode',)
+#    7: ('List', 'Optional', 'cast', 'Any')
+#    8: ('level',)
+#    9: ('.png', '.jpg', '.jpeg', '.bmp', '.tif', '.tiff')
+#   10: <code object DeepLesionDataset at 0x55c3604bc2b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 29>
+#   11: 'DeepLesionDataset'
+#   12: <code object AddGaussianNoise at 0x7fde73f17670, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 419>
+#   13: 'AddGaussianNoise'
+# Names:
+#    0: __doc__
+#    1: torch
+#    2: torchvision.transforms
+#    3: transforms
+#    4: torch.utils.data.dataset
+#    5: Dataset
+#    6: PIL
+#    7: Image
+#    8: ImageEnhance
+#    9: os
+#   10: numpy
+#   11: np
+#   12: logging
+#   13: torchvision
+#   14: InterpolationMode
+#   15: typing
+#   16: List
+#   17: Optional
+#   18: cast
+#   19: Any
+#   20: basicConfig
+#   21: INFO
+#   22: getLogger
+#   23: __name__
+#   24: logger
+#   25: SUPPORTED_EXTENSIONS
+#   26: DeepLesionDataset
+#   27: object
+#   28: AddGaussianNoise
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    DeepLesion 数据集接口（医学图像超分辨率）\n    修复点：统一所有阶段返回格式，解决val/test解包错误\n    增强版特性：\n    1. 统一返回格式：(y_lr, y_hr, filename)（train阶段filename=None）\n    2. 适配train/val/test三阶段无缝切换\n    3. 增强数据校验与异常兜底\n")
+               4 STORE_NAME           (__doc__)
+
+ 10:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torch)
+              12 STORE_NAME           (torch)
+
+ 11:          14 LOAD_CONST           (0)
+              16 LOAD_CONST           (None)
+              18 IMPORT_NAME          (torchvision.transforms)
+              20 IMPORT_FROM          (transforms)
+              22 STORE_NAME           (transforms)
+              24 POP_TOP
+
+ 12:          26 LOAD_CONST           (0)
+              28 LOAD_CONST           (('Dataset',))
+              30 IMPORT_NAME          (torch.utils.data.dataset)
+              32 IMPORT_FROM          (Dataset)
+              34 STORE_NAME           (Dataset)
+              36 POP_TOP
+
+ 13:          38 LOAD_CONST           (0)
+              40 LOAD_CONST           (('Image', 'ImageEnhance'))
+              42 IMPORT_NAME          (PIL)
+              44 IMPORT_FROM          (Image)
+              46 STORE_NAME           (Image)
+              48 IMPORT_FROM          (ImageEnhance)
+              50 STORE_NAME           (ImageEnhance)
+              52 POP_TOP
+
+ 14:          54 LOAD_CONST           (0)
+              56 LOAD_CONST           (None)
+              58 IMPORT_NAME          (os)
+              60 STORE_NAME           (os)
+
+ 15:          62 LOAD_CONST           (0)
+              64 LOAD_CONST           (None)
+              66 IMPORT_NAME          (numpy)
+              68 STORE_NAME           (np)
+
+ 16:          70 LOAD_CONST           (0)
+              72 LOAD_CONST           (None)
+              74 IMPORT_NAME          (logging)
+              76 STORE_NAME           (logging)
+
+ 17:          78 LOAD_CONST           (0)
+              80 LOAD_CONST           (None)
+              82 IMPORT_NAME          (torch)
+              84 STORE_NAME           (torch)
+
+ 18:          86 LOAD_CONST           (0)
+              88 LOAD_CONST           (('transforms',))
+              90 IMPORT_NAME          (torchvision)
+              92 IMPORT_FROM          (transforms)
+              94 STORE_NAME           (transforms)
+              96 POP_TOP
+
+ 19:          98 LOAD_CONST           (0)
+             100 LOAD_CONST           (('InterpolationMode',))
+             102 IMPORT_NAME          (torchvision.transforms)
+             104 IMPORT_FROM          (InterpolationMode)
+             106 STORE_NAME           (InterpolationMode)
+             108 POP_TOP
+
+ 20:         110 LOAD_CONST           (0)
+             112 LOAD_CONST           (('List', 'Optional', 'cast', 'Any'))
+             114 IMPORT_NAME          (typing)
+             116 IMPORT_FROM          (List)
+             118 STORE_NAME           (List)
+             120 IMPORT_FROM          (Optional)
+             122 STORE_NAME           (Optional)
+             124 IMPORT_FROM          (cast)
+             126 STORE_NAME           (cast)
+             128 IMPORT_FROM          (Any)
+             130 STORE_NAME           (Any)
+             132 POP_TOP
+
+ 22:         134 PUSH_NULL
+             136 LOAD_NAME            (logging)
+             138 LOAD_ATTR            (basicConfig)
+             148 LOAD_NAME            (logging)
+             150 LOAD_ATTR            (INFO)
+             160 KW_NAMES             (('level',))
+             162 PRECALL              1
+             166 CALL                 1
+             176 POP_TOP
+
+ 23:         178 PUSH_NULL
+             180 LOAD_NAME            (logging)
+             182 LOAD_ATTR            (getLogger)
+             192 LOAD_NAME            (__name__)
+             194 PRECALL              1
+             198 CALL                 1
+             208 STORE_NAME           (logger)
+
+ 26:         210 LOAD_CONST           (('.png', '.jpg', '.jpeg', '.bmp', '.tif', '.tiff'))
+             212 STORE_NAME           (SUPPORTED_EXTENSIONS)
+
+ 29:         214 PUSH_NULL
+             216 LOAD_BUILD_CLASS
+             218 LOAD_CONST           (<code object DeepLesionDataset at 0x55c3604bc2b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 29>)
+             220 MAKE_FUNCTION        (No arguments)
+             222 LOAD_CONST           ("DeepLesionDataset")
+             224 LOAD_NAME            (Dataset)
+             226 PRECALL              3
+             230 CALL                 3
+             240 STORE_NAME           (DeepLesionDataset)
+
+419:         242 PUSH_NULL
+             244 LOAD_BUILD_CLASS
+             246 LOAD_CONST           (<code object AddGaussianNoise at 0x7fde73f17670, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 419>)
+             248 MAKE_FUNCTION        (No arguments)
+             250 LOAD_CONST           ("AddGaussianNoise")
+             252 LOAD_NAME            (object)
+             254 PRECALL              3
+             258 CALL                 3
+             268 STORE_NAME           (AddGaussianNoise)
+             270 LOAD_CONST           (None)
+             272 RETURN_VALUE
+
+
+# Method Name:       DeepLesionDataset
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        23
+# Flags:             0x00000000 (0x0)
+# First Line:        29
+# Constants:
+#    0: 'DeepLesionDataset'
+#    1: 'hr_files'
+#    2: 'lr_files'
+#    3: 'lr_dir'
+#    4: 'hr_dir'
+#    5: 'phase'
+#    6: 'original_phase'
+#    7: 'scale_factor'
+#    8: 'hr_transform'
+#    9: 'lr_transform'
+#   10: True
+#   11: 'normalize'
+#   12: 128
+#   13: 'crop_size'
+#   14: 4
+#   15: 5.0
+#   16: 'max_rotation'
+#   17: 1.2
+#   18: 'max_scale'
+#   19: 0.8
+#   20: 'min_scale'
+#   21: None
+#   22: 0.01
+#   23: 'noise_std'
+#   24: 'augment'
+#   25: <code object __init__ at 0x55c3604d0c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 47>
+#   26: <code object _validate_params at 0x55c3604d1190, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 121>
+#   27: <code object _load_valid_files at 0x55c3604901f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 156>
+#   28: <code object _build_transforms at 0x55c3604d2010, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 179>
+#   29: <code object _clean_image_data at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 255>
+#   30: <code object __getitem__ at 0x55c3604d46e0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 261>
+#   31: <code object __len__ at 0x7fde73ee6f10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 405>
+#   32: <code object get_filename_list at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 409>
+#   33: 0
+#   34: <code object get_image_shape at 0x7fde73ee18f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 413>
+#   35: (None, 4, 0.01, True, True, 5.0, 1.2, 0.8)
+#   36: (0,)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: List
+#    4: str
+#    5: __annotations__
+#    6: Optional
+#    7: Any
+#    8: int
+#    9: transforms
+#   10: Compose
+#   11: normalize
+#   12: bool
+#   13: crop_size
+#   14: scale_factor
+#   15: max_rotation
+#   16: float
+#   17: max_scale
+#   18: min_scale
+#   19: __init__
+#   20: _validate_params
+#   21: _load_valid_files
+#   22: _build_transforms
+#   23: _clean_image_data
+#   24: __getitem__
+#   25: __len__
+#   26: get_filename_list
+#   27: get_image_shape
+#   28: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 29:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("DeepLesionDataset")
+              10 STORE_NAME           (__qualname__)
+              12 SETUP_ANNOTATIONS
+
+ 31:          14 LOAD_NAME            (List)
+              16 LOAD_NAME            (str)
+              18 BINARY_SUBSCR
+              28 LOAD_NAME            (__annotations__)
+              30 LOAD_CONST           ("hr_files")
+              32 STORE_SUBSCR
+
+ 32:          36 LOAD_NAME            (Optional)
+              38 LOAD_NAME            (List)
+              40 LOAD_NAME            (str)
+              42 BINARY_SUBSCR
+              52 BINARY_SUBSCR
+              62 LOAD_NAME            (__annotations__)
+              64 LOAD_CONST           ("lr_files")
+              66 STORE_SUBSCR
+
+ 33:          70 LOAD_NAME            (Optional)
+              72 LOAD_NAME            (str)
+              74 BINARY_SUBSCR
+              84 LOAD_NAME            (__annotations__)
+              86 LOAD_CONST           ("lr_dir")
+              88 STORE_SUBSCR
+
+ 34:          92 LOAD_NAME            (str)
+              94 LOAD_NAME            (__annotations__)
+              96 LOAD_CONST           ("hr_dir")
+              98 STORE_SUBSCR
+
+ 35:         102 LOAD_NAME            (str)
+             104 LOAD_NAME            (__annotations__)
+             106 LOAD_CONST           ("phase")
+             108 STORE_SUBSCR
+
+ 36:         112 LOAD_NAME            (Any)
+             114 LOAD_NAME            (__annotations__)
+             116 LOAD_CONST           ("original_phase")
+             118 STORE_SUBSCR
+
+ 37:         122 LOAD_NAME            (int)
+             124 LOAD_NAME            (__annotations__)
+             126 LOAD_CONST           ("scale_factor")
+             128 STORE_SUBSCR
+
+ 38:         132 LOAD_NAME            (transforms)
+             134 LOAD_ATTR            (Compose)
+             144 LOAD_NAME            (__annotations__)
+             146 LOAD_CONST           ("hr_transform")
+             148 STORE_SUBSCR
+
+ 39:         152 LOAD_NAME            (transforms)
+             154 LOAD_ATTR            (Compose)
+             164 LOAD_NAME            (__annotations__)
+             166 LOAD_CONST           ("lr_transform")
+             168 STORE_SUBSCR
+
+ 40:         172 LOAD_CONST           (True)
+             174 STORE_NAME           (normalize)
+             176 LOAD_NAME            (bool)
+             178 LOAD_NAME            (__annotations__)
+             180 LOAD_CONST           ("normalize")
+             182 STORE_SUBSCR
+
+ 41:         186 LOAD_CONST           (128)
+             188 STORE_NAME           (crop_size)
+             190 LOAD_NAME            (int)
+             192 LOAD_NAME            (__annotations__)
+             194 LOAD_CONST           ("crop_size")
+             196 STORE_SUBSCR
+
+ 42:         200 LOAD_CONST           (4)
+             202 STORE_NAME           (scale_factor)
+             204 LOAD_NAME            (int)
+             206 LOAD_NAME            (__annotations__)
+             208 LOAD_CONST           ("scale_factor")
+             210 STORE_SUBSCR
+
+ 43:         214 LOAD_CONST           (5.0)
+             216 STORE_NAME           (max_rotation)
+             218 LOAD_NAME            (float)
+             220 LOAD_NAME            (__annotations__)
+             222 LOAD_CONST           ("max_rotation")
+             224 STORE_SUBSCR
+
+ 44:         228 LOAD_CONST           (1.2)
+             230 STORE_NAME           (max_scale)
+             232 LOAD_NAME            (float)
+             234 LOAD_NAME            (__annotations__)
+             236 LOAD_CONST           ("max_scale")
+             238 STORE_SUBSCR
+
+ 45:         242 LOAD_CONST           (0.8)
+             244 STORE_NAME           (min_scale)
+             246 LOAD_NAME            (float)
+             248 LOAD_NAME            (__annotations__)
+             250 LOAD_CONST           ("min_scale")
+             252 STORE_SUBSCR
+
+ 51:         256 NOP
+
+ 52:         258 NOP
+
+ 53:         260 NOP
+
+ 54:         262 NOP
+
+ 55:         264 NOP
+
+ 56:         266 NOP
+
+ 57:         268 NOP
+
+ 58:         270 NOP
+
+ 47:         272 LOAD_CONST           ((None, 4, 0.01, True, True, 5.0, 1.2, 0.8))
+             274 LOAD_CONST           ("hr_dir")
+
+ 48:         276 LOAD_NAME            (str)
+
+ 47:         278 LOAD_CONST           ("crop_size")
+
+ 49:         280 LOAD_NAME            (int)
+
+ 47:         282 LOAD_CONST           ("phase")
+
+ 50:         284 LOAD_NAME            (str)
+
+ 47:         286 LOAD_CONST           ("lr_dir")
+
+ 51:         288 LOAD_NAME            (Optional)
+             290 LOAD_NAME            (str)
+             292 BINARY_SUBSCR
+
+ 47:         302 LOAD_CONST           ("scale_factor")
+
+ 52:         304 LOAD_NAME            (int)
+
+ 47:         306 LOAD_CONST           ("noise_std")
+
+ 53:         308 LOAD_NAME            (float)
+
+ 47:         310 LOAD_CONST           ("normalize")
+
+ 54:         312 LOAD_NAME            (bool)
+
+ 47:         314 LOAD_CONST           ("augment")
+
+ 55:         316 LOAD_NAME            (bool)
+
+ 47:         318 LOAD_CONST           ("max_rotation")
+
+ 56:         320 LOAD_NAME            (float)
+
+ 47:         322 LOAD_CONST           ("max_scale")
+
+ 57:         324 LOAD_NAME            (float)
+
+ 47:         326 LOAD_CONST           ("min_scale")
+
+ 58:         328 LOAD_NAME            (float)
+
+ 47:         330 BUILD_TUPLE          22
+             332 LOAD_CLOSURE         (__class__)
+             334 BUILD_TUPLE          1
+             336 LOAD_CONST           (<code object __init__ at 0x55c3604d0c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 47>)
+             338 MAKE_FUNCTION        (default, annotation, closure)
+             340 STORE_NAME           (__init__)
+
+121:         342 LOAD_CONST           (<code object _validate_params at 0x55c3604d1190, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 121>)
+             344 MAKE_FUNCTION        (No arguments)
+             346 STORE_NAME           (_validate_params)
+
+156:         348 LOAD_CONST           (<code object _load_valid_files at 0x55c3604901f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 156>)
+             350 MAKE_FUNCTION        (No arguments)
+             352 STORE_NAME           (_load_valid_files)
+
+179:         354 LOAD_CONST           (<code object _build_transforms at 0x55c3604d2010, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 179>)
+             356 MAKE_FUNCTION        (No arguments)
+             358 STORE_NAME           (_build_transforms)
+
+255:         360 LOAD_CONST           (<code object _clean_image_data at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 255>)
+             362 MAKE_FUNCTION        (No arguments)
+             364 STORE_NAME           (_clean_image_data)
+
+261:         366 LOAD_CONST           (<code object __getitem__ at 0x55c3604d46e0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 261>)
+             368 MAKE_FUNCTION        (No arguments)
+             370 STORE_NAME           (__getitem__)
+
+405:         372 LOAD_CONST           (<code object __len__ at 0x7fde73ee6f10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 405>)
+             374 MAKE_FUNCTION        (No arguments)
+             376 STORE_NAME           (__len__)
+
+409:         378 LOAD_CONST           (<code object get_filename_list at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 409>)
+             380 MAKE_FUNCTION        (No arguments)
+             382 STORE_NAME           (get_filename_list)
+
+413:         384 LOAD_CONST           ((0,))
+             386 LOAD_CONST           (<code object get_image_shape at 0x7fde73ee18f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 413>)
+             388 MAKE_FUNCTION        (default)
+             390 STORE_NAME           (get_image_shape)
+             392 LOAD_CLOSURE         (__class__)
+             394 COPY                 1
+             396 STORE_NAME           (__classcell__)
+             398 RETURN_VALUE
+
+
+# Method Name:       AddGaussianNoise
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        419
+# Constants:
+#    0: 'AddGaussianNoise'
+#    1: 0.01
+#    2: <code object __init__ at 0x7fde73ebb5d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 420>
+#    3: <code object __call__ at 0x55c360493cb0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 423>
+#    4: <code object __repr__ at 0x7fde73f2b330, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 432>
+#    5: None
+#    6: (0.01,)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: __call__
+#    5: __repr__
+
+419:           0 RESUME               0
+               2 LOAD_NAME            (__name__)
+               4 STORE_NAME           (__module__)
+               6 LOAD_CONST           ("AddGaussianNoise")
+               8 STORE_NAME           (__qualname__)
+
+420:          10 LOAD_CONST           ((0.01,))
+              12 LOAD_CONST           (<code object __init__ at 0x7fde73ebb5d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 420>)
+              14 MAKE_FUNCTION        (default)
+              16 STORE_NAME           (__init__)
+
+423:          18 LOAD_CONST           (<code object __call__ at 0x55c360493cb0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 423>)
+              20 MAKE_FUNCTION        (No arguments)
+              22 STORE_NAME           (__call__)
+
+432:          24 LOAD_CONST           (<code object __repr__ at 0x7fde73f2b330, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 432>)
+              26 MAKE_FUNCTION        (No arguments)
+              28 STORE_NAME           (__repr__)
+              30 LOAD_CONST           (None)
+              32 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    12
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  16
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        47
+# Constants:
+#    0: "DeepLesion 数据集接口（医学图像超分辨率）\n\n        Args:\n            hr_dir (str): 高分图像路径\n            crop_size (int): Patch 切片大小（需为scale_factor的倍数）\n            phase ('train' | 'val' | 'test'): 阶段\n            lr_dir (str, optional): 低分图像路径（若不传则从HR生成）. Defaults to None.\n            scale_factor (int, optional): 超分辨率缩放因子. Defaults to 4.\n            noise_std (float, optional): 注入的高斯噪声的标准差. Defaults to 0.01.\n            normalize (bool, optional): 是否将图像归一化到0-1范围. Defaults to True.\n            augment (bool, optional): 训练阶段是否启用数据增强. Defaults to True.\n            max_rotation (float, optional): 最大旋转角度（正负）. Defaults to 5.0.\n            max_scale (float, optional): 最大缩放比例. Defaults to 1.2.\n            min_scale (float, optional): 最小缩放比例. Defaults to 0.8.\n        "
+#    1: 'phase参数无法转换为字符串，原始类型: '
+#    2: ', 值: '
+#    3: None
+#    4: 'train'
+#    5: 'HR文件数量('
+#    6: ')与LR文件数量('
+#    7: ')不匹配'
+#    8: '['
+#    9: '] 加载数据集完成 - HR文件数: '
+#   10: ', 缩放因子: '
+# Names:
+#    0: super
+#    1: DeepLesionDataset
+#    2: __init__
+#    3: original_phase
+#    4: str
+#    5: strip
+#    6: Exception
+#    7: ValueError
+#    8: type
+#    9: lower
+#   10: phase
+#   11: hr_dir
+#   12: lr_dir
+#   13: crop_size
+#   14: scale_factor
+#   15: noise_std
+#   16: normalize
+#   17: augment
+#   18: max_rotation
+#   19: max_scale
+#   20: min_scale
+#   21: _validate_params
+#   22: _load_valid_files
+#   23: cast
+#   24: List
+#   25: hr_files
+#   26: Optional
+#   27: lr_files
+#   28: len
+#   29: logger
+#   30: info
+#   31: _build_transforms
+# Varnames:
+#	self, hr_dir, crop_size, phase, lr_dir, scale_factor, noise_std, normalize, augment, max_rotation, max_scale, min_scale, phase_str, e, loaded_hr_files, loaded_lr_files
+# Positional arguments:
+#	self, hr_dir, crop_size, phase, lr_dir, scale_factor, noise_std, normalize, augment, max_rotation, max_scale, min_scale
+# Local variables:
+#   12: phase_str
+#   13: e
+#   14: loaded_hr_files
+#   15: loaded_lr_files
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 47:           2 RESUME               0
+
+ 74:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (DeepLesionDataset)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 77:          82 LOAD_FAST            (phase)
+              84 LOAD_FAST            (self)
+              86 STORE_ATTR           (original_phase)
+
+ 80:          96 NOP
+
+ 81:          98 LOAD_GLOBAL          (NULL + str)
+             110 LOAD_FAST            (phase)
+             112 PRECALL              1
+             116 CALL                 1
+             126 LOAD_METHOD          (strip)
+             148 PRECALL              0
+             152 CALL                 0
+             162 STORE_FAST           (phase_str)
+             164 JUMP_FORWARD         (to 272)
+             166 PUSH_EXC_INFO
+
+ 82:         168 LOAD_GLOBAL          (Exception)
+             180 CHECK_EXC_MATCH
+             182 POP_JUMP_FORWARD_IF_FALSE (to 264)
+             184 STORE_FAST           (e)
+
+ 83:         186 LOAD_GLOBAL          (NULL + ValueError)
+
+ 84:         198 LOAD_CONST           ("phase参数无法转换为字符串，原始类型: ")
+             200 LOAD_GLOBAL          (NULL + type)
+             212 LOAD_FAST            (phase)
+             214 PRECALL              1
+             218 CALL                 1
+             228 FORMAT_VALUE         0
+             230 LOAD_CONST           (", 值: ")
+             232 LOAD_FAST            (phase)
+             234 FORMAT_VALUE         0
+             236 BUILD_STRING         4
+
+ 83:         238 PRECALL              1
+             242 CALL                 1
+
+ 84:         252 LOAD_FAST            (e)
+
+ 83:         254 RAISE_VARARGS        (exception instance with __cause__)
+             256 LOAD_CONST           (None)
+             258 STORE_FAST           (e)
+             260 DELETE_FAST          (e)
+             262 RERAISE              1
+
+ 82:     >>  264 RERAISE              0
+             266 COPY                 3
+             268 POP_EXCEPT
+             270 RERAISE              1
+
+ 87:     >>  272 LOAD_FAST            (phase_str)
+             274 LOAD_METHOD          (lower)
+             296 PRECALL              0
+             300 CALL                 0
+             310 LOAD_FAST            (self)
+             312 STORE_ATTR           (phase)
+
+ 90:         322 LOAD_FAST            (hr_dir)
+             324 LOAD_FAST            (self)
+             326 STORE_ATTR           (hr_dir)
+
+ 91:         336 LOAD_FAST            (lr_dir)
+             338 LOAD_FAST            (self)
+             340 STORE_ATTR           (lr_dir)
+
+ 92:         350 LOAD_FAST            (crop_size)
+             352 LOAD_FAST            (self)
+             354 STORE_ATTR           (crop_size)
+
+ 93:         364 LOAD_FAST            (scale_factor)
+             366 LOAD_FAST            (self)
+             368 STORE_ATTR           (scale_factor)
+
+ 94:         378 LOAD_FAST            (noise_std)
+             380 LOAD_FAST            (self)
+             382 STORE_ATTR           (noise_std)
+
+ 95:         392 LOAD_FAST            (normalize)
+             394 LOAD_FAST            (self)
+             396 STORE_ATTR           (normalize)
+
+ 96:         406 LOAD_FAST            (augment)
+             408 JUMP_IF_FALSE_OR_POP (to 430)
+             410 LOAD_FAST            (self)
+             412 LOAD_ATTR            (phase)
+             422 LOAD_CONST           ("train")
+             424 COMPARE_OP           (==)
+         >>  430 LOAD_FAST            (self)
+             432 STORE_ATTR           (augment)
+
+ 97:         442 LOAD_FAST            (max_rotation)
+             444 LOAD_FAST            (self)
+             446 STORE_ATTR           (max_rotation)
+
+ 98:         456 LOAD_FAST            (max_scale)
+             458 LOAD_FAST            (self)
+             460 STORE_ATTR           (max_scale)
+
+ 99:         470 LOAD_FAST            (min_scale)
+             472 LOAD_FAST            (self)
+             474 STORE_ATTR           (min_scale)
+
+102:         484 LOAD_FAST            (self)
+             486 LOAD_METHOD          (_validate_params)
+             508 PRECALL              0
+             512 CALL                 0
+             522 POP_TOP
+
+105:         524 LOAD_FAST            (self)
+             526 LOAD_METHOD          (_load_valid_files)
+             548 LOAD_FAST            (hr_dir)
+             550 PRECALL              1
+             554 CALL                 1
+             564 STORE_FAST           (loaded_hr_files)
+
+106:         566 LOAD_GLOBAL          (NULL + cast)
+             578 LOAD_GLOBAL          (List)
+             590 LOAD_GLOBAL          (str)
+             602 BINARY_SUBSCR
+             612 LOAD_FAST            (loaded_hr_files)
+             614 PRECALL              2
+             618 CALL                 2
+             628 LOAD_FAST            (self)
+             630 STORE_ATTR           (hr_files)
+
+109:         640 LOAD_FAST            (lr_dir)
+             642 POP_JUMP_FORWARD_IF_FALSE (to 686)
+             644 LOAD_FAST            (self)
+             646 LOAD_METHOD          (_load_valid_files)
+             668 LOAD_FAST            (lr_dir)
+             670 PRECALL              1
+             674 CALL                 1
+             684 JUMP_FORWARD         (to 688)
+         >>  686 LOAD_CONST           (None)
+         >>  688 STORE_FAST           (loaded_lr_files)
+
+110:         690 LOAD_GLOBAL          (NULL + cast)
+             702 LOAD_GLOBAL          (Optional)
+             714 LOAD_GLOBAL          (List)
+             726 LOAD_GLOBAL          (str)
+             738 BINARY_SUBSCR
+             748 BINARY_SUBSCR
+             758 LOAD_FAST            (loaded_lr_files)
+             760 PRECALL              2
+             764 CALL                 2
+             774 LOAD_FAST            (self)
+             776 STORE_ATTR           (lr_files)
+
+111:         786 LOAD_FAST            (self)
+             788 LOAD_ATTR            (lr_files)
+             798 POP_JUMP_FORWARD_IF_NONE (to 1000)
+
+112:         800 LOAD_GLOBAL          (NULL + len)
+             812 LOAD_FAST            (self)
+             814 LOAD_ATTR            (hr_files)
+             824 PRECALL              1
+             828 CALL                 1
+             838 LOAD_GLOBAL          (NULL + len)
+             850 LOAD_FAST            (self)
+             852 LOAD_ATTR            (lr_files)
+             862 PRECALL              1
+             866 CALL                 1
+             876 COMPARE_OP           (!=)
+             882 POP_JUMP_FORWARD_IF_FALSE (to 1000)
+
+113:         884 LOAD_GLOBAL          (NULL + ValueError)
+
+114:         896 LOAD_CONST           ("HR文件数量(")
+             898 LOAD_GLOBAL          (NULL + len)
+             910 LOAD_FAST            (self)
+             912 LOAD_ATTR            (hr_files)
+             922 PRECALL              1
+             926 CALL                 1
+             936 FORMAT_VALUE         0
+             938 LOAD_CONST           (")与LR文件数量(")
+             940 LOAD_GLOBAL          (NULL + len)
+             952 LOAD_FAST            (self)
+             954 LOAD_ATTR            (lr_files)
+             964 PRECALL              1
+             968 CALL                 1
+             978 FORMAT_VALUE         0
+             980 LOAD_CONST           (")不匹配")
+             982 BUILD_STRING         5
+
+113:         984 PRECALL              1
+             988 CALL                 1
+             998 RAISE_VARARGS        (exception instance)
+
+117:     >> 1000 LOAD_GLOBAL          (logger)
+            1012 LOAD_METHOD          (info)
+
+118:        1034 LOAD_CONST           ("[")
+            1036 LOAD_FAST            (self)
+            1038 LOAD_ATTR            (phase)
+            1048 FORMAT_VALUE         0
+            1050 LOAD_CONST           ("] 加载数据集完成 - HR文件数: ")
+            1052 LOAD_GLOBAL          (NULL + len)
+            1064 LOAD_FAST            (self)
+            1066 LOAD_ATTR            (hr_files)
+            1076 PRECALL              1
+            1080 CALL                 1
+            1090 FORMAT_VALUE         0
+            1092 LOAD_CONST           (", 缩放因子: ")
+            1094 LOAD_FAST            (scale_factor)
+            1096 FORMAT_VALUE         0
+            1098 BUILD_STRING         6
+
+117:        1100 PRECALL              1
+            1104 CALL                 1
+            1114 POP_TOP
+
+119:        1116 LOAD_FAST            (self)
+            1118 LOAD_METHOD          (_build_transforms)
+            1140 PRECALL              0
+            1144 CALL                 0
+            1154 POP_TOP
+            1156 LOAD_CONST           (None)
+            1158 RETURN_VALUE
+
+ExceptionTable:
+  98 to 162 -> 166 [0]
+  166 to 184 -> 266 [1] lasti
+  186 to 254 -> 256 [1] lasti
+  256 to 264 -> 266 [1] lasti
+
+# Method Name:       _validate_params
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        10
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        121
+# Constants:
+#    0: '参数校验（增强phase校验）'
+#    1: ('train', 'val', 'test')
+#    2: "无效的phase值: '"
+#    3: "' (原始输入: "
+#    4: ')！仅支持以下值: '
+#    5: 0
+#    6: '裁剪尺寸'
+#    7: '不是缩放因子'
+#    8: '的倍数，自动调整为'
+#    9: 'HR目录不存在: '
+#   10: 'LR目录不存在: '
+#   11: 'max_rotation('
+#   12: ')为负数，自动修正为绝对值'
+#   13: 'max_scale('
+#   14: ') <= min_scale('
+#   15: ')，交换两者值'
+#   16: 'min_scale('
+#   17: ') <= 0，自动修正为0.1'
+#   18: 0.1
+#   19: None
+# Names:
+#    0: phase
+#    1: ValueError
+#    2: original_phase
+#    3: crop_size
+#    4: scale_factor
+#    5: logger
+#    6: warning
+#    7: os
+#    8: path
+#    9: exists
+#   10: hr_dir
+#   11: FileNotFoundError
+#   12: lr_dir
+#   13: max_rotation
+#   14: abs
+#   15: max_scale
+#   16: min_scale
+# Varnames:
+#	self, valid_phases
+# Positional arguments:
+#	self
+# Local variables:
+#    1: valid_phases
+
+121:           0 RESUME               0
+
+124:           2 BUILD_LIST           0
+               4 LOAD_CONST           (('train', 'val', 'test'))
+               6 LIST_EXTEND          1
+               8 STORE_FAST           (valid_phases)
+
+125:          10 LOAD_FAST            (self)
+              12 LOAD_ATTR            (phase)
+              22 LOAD_FAST            (valid_phases)
+              24 CONTAINS_OP          (not in)
+              26 POP_JUMP_FORWARD_IF_FALSE (to 96)
+
+126:          28 LOAD_GLOBAL          (NULL + ValueError)
+
+127:          40 LOAD_CONST           ("无效的phase值: '")
+              42 LOAD_FAST            (self)
+              44 LOAD_ATTR            (phase)
+              54 FORMAT_VALUE         0
+              56 LOAD_CONST           ("' (原始输入: ")
+              58 LOAD_FAST            (self)
+              60 LOAD_ATTR            (original_phase)
+              70 FORMAT_VALUE         0
+              72 LOAD_CONST           (")！仅支持以下值: ")
+
+128:          74 LOAD_FAST            (valid_phases)
+
+127:          76 FORMAT_VALUE         0
+              78 BUILD_STRING         6
+
+126:          80 PRECALL              1
+              84 CALL                 1
+              94 RAISE_VARARGS        (exception instance)
+
+132:     >>   96 LOAD_FAST            (self)
+              98 LOAD_ATTR            (crop_size)
+             108 LOAD_FAST            (self)
+             110 LOAD_ATTR            (scale_factor)
+             120 BINARY_OP            (%)
+             124 LOAD_CONST           (0)
+             126 COMPARE_OP           (!=)
+             132 POP_JUMP_FORWARD_IF_FALSE (to 322)
+
+133:         134 LOAD_GLOBAL          (logger)
+             146 LOAD_METHOD          (warning)
+
+134:         168 LOAD_CONST           ("裁剪尺寸")
+             170 LOAD_FAST            (self)
+             172 LOAD_ATTR            (crop_size)
+             182 FORMAT_VALUE         0
+             184 LOAD_CONST           ("不是缩放因子")
+             186 LOAD_FAST            (self)
+             188 LOAD_ATTR            (scale_factor)
+             198 FORMAT_VALUE         0
+             200 LOAD_CONST           ("的倍数，自动调整为")
+             202 LOAD_FAST            (self)
+             204 LOAD_ATTR            (crop_size)
+             214 LOAD_FAST            (self)
+             216 LOAD_ATTR            (crop_size)
+             226 LOAD_FAST            (self)
+             228 LOAD_ATTR            (scale_factor)
+             238 BINARY_OP            (%)
+             242 BINARY_OP            (-)
+             246 FORMAT_VALUE         0
+             248 BUILD_STRING         6
+
+133:         250 PRECALL              1
+             254 CALL                 1
+             264 POP_TOP
+
+135:         266 LOAD_FAST            (self)
+             268 LOAD_ATTR            (crop_size)
+
+136:         278 LOAD_FAST            (self)
+             280 LOAD_ATTR            (crop_size)
+             290 LOAD_FAST            (self)
+             292 LOAD_ATTR            (scale_factor)
+             302 BINARY_OP            (%)
+
+135:         306 BINARY_OP            (-)
+             310 LOAD_FAST            (self)
+             312 STORE_ATTR           (crop_size)
+
+139:     >>  322 LOAD_GLOBAL          (os)
+             334 LOAD_ATTR            (path)
+             344 LOAD_METHOD          (exists)
+             366 LOAD_FAST            (self)
+             368 LOAD_ATTR            (hr_dir)
+             378 PRECALL              1
+             382 CALL                 1
+             392 POP_JUMP_FORWARD_IF_TRUE (to 440)
+
+140:         394 LOAD_GLOBAL          (NULL + FileNotFoundError)
+             406 LOAD_CONST           ("HR目录不存在: ")
+             408 LOAD_FAST            (self)
+             410 LOAD_ATTR            (hr_dir)
+             420 FORMAT_VALUE         0
+             422 BUILD_STRING         2
+             424 PRECALL              1
+             428 CALL                 1
+             438 RAISE_VARARGS        (exception instance)
+
+141:     >>  440 LOAD_FAST            (self)
+             442 LOAD_ATTR            (lr_dir)
+             452 POP_JUMP_FORWARD_IF_FALSE (to 572)
+             454 LOAD_GLOBAL          (os)
+             466 LOAD_ATTR            (path)
+             476 LOAD_METHOD          (exists)
+             498 LOAD_FAST            (self)
+             500 LOAD_ATTR            (lr_dir)
+             510 PRECALL              1
+             514 CALL                 1
+             524 POP_JUMP_FORWARD_IF_TRUE (to 572)
+
+142:         526 LOAD_GLOBAL          (NULL + FileNotFoundError)
+             538 LOAD_CONST           ("LR目录不存在: ")
+             540 LOAD_FAST            (self)
+             542 LOAD_ATTR            (lr_dir)
+             552 FORMAT_VALUE         0
+             554 BUILD_STRING         2
+             556 PRECALL              1
+             560 CALL                 1
+             570 RAISE_VARARGS        (exception instance)
+
+145:     >>  572 LOAD_FAST            (self)
+             574 LOAD_ATTR            (max_rotation)
+             584 LOAD_CONST           (0)
+             586 COMPARE_OP           (<)
+             592 POP_JUMP_FORWARD_IF_FALSE (to 714)
+
+146:         594 LOAD_GLOBAL          (logger)
+             606 LOAD_METHOD          (warning)
+             628 LOAD_CONST           ("max_rotation(")
+             630 LOAD_FAST            (self)
+             632 LOAD_ATTR            (max_rotation)
+             642 FORMAT_VALUE         0
+             644 LOAD_CONST           (")为负数，自动修正为绝对值")
+             646 BUILD_STRING         3
+             648 PRECALL              1
+             652 CALL                 1
+             662 POP_TOP
+
+147:         664 LOAD_GLOBAL          (NULL + abs)
+             676 LOAD_FAST            (self)
+             678 LOAD_ATTR            (max_rotation)
+             688 PRECALL              1
+             692 CALL                 1
+             702 LOAD_FAST            (self)
+             704 STORE_ATTR           (max_rotation)
+
+148:     >>  714 LOAD_FAST            (self)
+             716 LOAD_ATTR            (max_scale)
+             726 LOAD_FAST            (self)
+             728 LOAD_ATTR            (min_scale)
+             738 COMPARE_OP           (<=)
+             744 POP_JUMP_FORWARD_IF_FALSE (to 882)
+
+149:         746 LOAD_GLOBAL          (logger)
+             758 LOAD_METHOD          (warning)
+
+150:         780 LOAD_CONST           ("max_scale(")
+             782 LOAD_FAST            (self)
+             784 LOAD_ATTR            (max_scale)
+             794 FORMAT_VALUE         0
+             796 LOAD_CONST           (") <= min_scale(")
+             798 LOAD_FAST            (self)
+             800 LOAD_ATTR            (min_scale)
+             810 FORMAT_VALUE         0
+             812 LOAD_CONST           (")，交换两者值")
+             814 BUILD_STRING         5
+
+149:         816 PRECALL              1
+             820 CALL                 1
+             830 POP_TOP
+
+151:         832 LOAD_FAST            (self)
+             834 LOAD_ATTR            (min_scale)
+             844 LOAD_FAST            (self)
+             846 LOAD_ATTR            (max_scale)
+             856 SWAP                 (TOS <-> TOS1)
+             858 LOAD_FAST            (self)
+             860 STORE_ATTR           (max_scale)
+             870 LOAD_FAST            (self)
+             872 STORE_ATTR           (min_scale)
+
+152:     >>  882 LOAD_FAST            (self)
+             884 LOAD_ATTR            (min_scale)
+             894 LOAD_CONST           (0)
+             896 COMPARE_OP           (<=)
+             902 POP_JUMP_FORWARD_IF_FALSE (to 992)
+
+153:         904 LOAD_GLOBAL          (logger)
+             916 LOAD_METHOD          (warning)
+             938 LOAD_CONST           ("min_scale(")
+             940 LOAD_FAST            (self)
+             942 LOAD_ATTR            (min_scale)
+             952 FORMAT_VALUE         0
+             954 LOAD_CONST           (") <= 0，自动修正为0.1")
+             956 BUILD_STRING         3
+             958 PRECALL              1
+             962 CALL                 1
+             972 POP_TOP
+
+154:         974 LOAD_CONST           (0.1)
+             976 LOAD_FAST            (self)
+             978 STORE_ATTR           (min_scale)
+             988 LOAD_CONST           (None)
+             990 RETURN_VALUE
+
+152:     >>  992 LOAD_CONST           (None)
+             994 RETURN_VALUE
+
+
+# Method Name:       _load_valid_files
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  7
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        156
+# Constants:
+#    0: '加载有效图像文件列表'
+#    1: None
+#    2: '.'
+#    3: '跳过无效图像文件 '
+#    4: ': '
+#    5: '目录 '
+#    6: ' 中未找到有效图像文件'
+# Names:
+#    0: sorted
+#    1: os
+#    2: listdir
+#    3: startswith
+#    4: lower
+#    5: endswith
+#    6: SUPPORTED_EXTENSIONS
+#    7: path
+#    8: join
+#    9: Image
+#   10: open
+#   11: verify
+#   12: append
+#   13: Exception
+#   14: logger
+#   15: warning
+#   16: RuntimeError
+# Varnames:
+#	self, dir_path, file_list, fname, fpath, img, e
+# Positional arguments:
+#	self, dir_path
+# Local variables:
+#    2: file_list
+#    3: fname
+#    4: fpath
+#    5: img
+#    6: e
+
+156:           0 RESUME               0
+
+158:           2 LOAD_FAST            (dir_path)
+               4 POP_JUMP_FORWARD_IF_TRUE (to 10)
+
+159:           6 LOAD_CONST           (None)
+               8 RETURN_VALUE
+
+161:     >>   10 BUILD_LIST           0
+              12 STORE_FAST           (file_list)
+
+162:          14 LOAD_GLOBAL          (NULL + sorted)
+              26 LOAD_GLOBAL          (NULL + os)
+              38 LOAD_ATTR            (listdir)
+              48 LOAD_FAST            (dir_path)
+              50 PRECALL              1
+              54 CALL                 1
+              64 PRECALL              1
+              68 CALL                 1
+              78 GET_ITER
+              80 FOR_ITER             (to 566)
+              82 STORE_FAST           (fname)
+
+163:          84 LOAD_FAST            (fname)
+              86 LOAD_METHOD          (startswith)
+             108 LOAD_CONST           (".")
+             110 PRECALL              1
+             114 CALL                 1
+             124 POP_JUMP_FORWARD_IF_FALSE (to 128)
+
+164:         126 JUMP_BACKWARD        (to 80)
+
+165:     >>  128 LOAD_FAST            (fname)
+             130 LOAD_METHOD          (lower)
+             152 PRECALL              0
+             156 CALL                 0
+             166 LOAD_METHOD          (endswith)
+             188 LOAD_GLOBAL          (SUPPORTED_EXTENSIONS)
+             200 PRECALL              1
+             204 CALL                 1
+             214 POP_JUMP_FORWARD_IF_FALSE (to 564)
+
+166:         216 LOAD_GLOBAL          (os)
+             228 LOAD_ATTR            (path)
+             238 LOAD_METHOD          (join)
+             260 LOAD_FAST            (dir_path)
+             262 LOAD_FAST            (fname)
+             264 PRECALL              2
+             268 CALL                 2
+             278 STORE_FAST           (fpath)
+
+167:         280 NOP
+
+168:         282 LOAD_GLOBAL          (NULL + Image)
+             294 LOAD_ATTR            (open)
+             304 LOAD_FAST            (fpath)
+             306 PRECALL              1
+             310 CALL                 1
+             320 BEFORE_WITH
+             322 STORE_FAST           (img)
+
+169:         324 LOAD_FAST            (img)
+             326 LOAD_METHOD          (verify)
+             348 PRECALL              0
+             352 CALL                 0
+             362 POP_TOP
+
+168:         364 LOAD_CONST           (None)
+             366 LOAD_CONST           (None)
+             368 LOAD_CONST           (None)
+             370 PRECALL              2
+             374 CALL                 2
+             384 POP_TOP
+             386 JUMP_FORWARD         (to 410)
+             388 PUSH_EXC_INFO
+             390 WITH_EXCEPT_START
+             392 POP_JUMP_FORWARD_IF_TRUE (to 402)
+             394 RERAISE              2
+             396 COPY                 3
+             398 POP_EXCEPT
+             400 RERAISE              1
+         >>  402 POP_TOP
+             404 POP_EXCEPT
+             406 POP_TOP
+             408 POP_TOP
+
+170:     >>  410 LOAD_FAST            (file_list)
+             412 LOAD_METHOD          (append)
+             434 LOAD_FAST            (fpath)
+             436 PRECALL              1
+             440 CALL                 1
+             450 POP_TOP
+             452 JUMP_BACKWARD        (to 80)
+             454 PUSH_EXC_INFO
+
+171:         456 LOAD_GLOBAL          (Exception)
+             468 CHECK_EXC_MATCH
+             470 POP_JUMP_FORWARD_IF_FALSE (to 556)
+             472 STORE_FAST           (e)
+
+172:         474 LOAD_GLOBAL          (logger)
+             486 LOAD_METHOD          (warning)
+             508 LOAD_CONST           ("跳过无效图像文件 ")
+             510 LOAD_FAST            (fpath)
+             512 FORMAT_VALUE         0
+             514 LOAD_CONST           (": ")
+             516 LOAD_FAST            (e)
+             518 FORMAT_VALUE         0
+             520 BUILD_STRING         4
+             522 PRECALL              1
+             526 CALL                 1
+             536 POP_TOP
+             538 POP_EXCEPT
+             540 LOAD_CONST           (None)
+             542 STORE_FAST           (e)
+             544 DELETE_FAST          (e)
+             546 JUMP_BACKWARD        (to 80)
+             548 LOAD_CONST           (None)
+             550 STORE_FAST           (e)
+             552 DELETE_FAST          (e)
+             554 RERAISE              1
+
+171:     >>  556 RERAISE              0
+             558 COPY                 3
+             560 POP_EXCEPT
+             562 RERAISE              1
+
+165:     >>  564 JUMP_BACKWARD        (to 80)
+
+174:     >>  566 LOAD_FAST            (file_list)
+             568 POP_JUMP_FORWARD_IF_TRUE (to 608)
+
+175:         570 LOAD_GLOBAL          (NULL + RuntimeError)
+             582 LOAD_CONST           ("目录 ")
+             584 LOAD_FAST            (dir_path)
+             586 FORMAT_VALUE         0
+             588 LOAD_CONST           (" 中未找到有效图像文件")
+             590 BUILD_STRING         3
+             592 PRECALL              1
+             596 CALL                 1
+             606 RAISE_VARARGS        (exception instance)
+
+177:     >>  608 LOAD_FAST            (file_list)
+             610 RETURN_VALUE
+
+ExceptionTable:
+  282 to 320 -> 454 [1]
+  322 to 362 -> 388 [2] lasti
+  364 to 386 -> 454 [1]
+  388 to 394 -> 396 [4] lasti
+  396 to 400 -> 454 [1]
+  402 to 402 -> 396 [4] lasti
+  404 to 450 -> 454 [1]
+  454 to 472 -> 558 [2] lasti
+  474 to 536 -> 548 [2] lasti
+  548 to 556 -> 558 [2] lasti
+
+# Method Name:       _build_transforms
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  6
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        179
+# Constants:
+#    0: '构建数据变换管道'
+#    1: <code object <lambda> at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 181>
+#    2: ('size', 'scale', 'interpolation')
+#    3: 0
+#    4: True
+#    5: ('padding', 'pad_if_needed')
+#    6: 0.5
+#    7: ('p',)
+#    8: 0.3
+#    9: False
+#   10: ('degrees', 'expand')
+#   11: <code object <lambda> at 0x7fde73eb5e60, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 197>
+#   12: ('val', 'test')
+#   13: 'train'
+#   14: ('interpolation',)
+#   15: <code object <lambda> at 0x7fde73ee1790, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 227>
+#   16: ('mean', 'std')
+#   17: None
+# Names:
+#    0: transforms
+#    1: Lambda
+#    2: augment
+#    3: RandomResizedCrop
+#    4: crop_size
+#    5: min_scale
+#    6: max_scale
+#    7: InterpolationMode
+#    8: BICUBIC
+#    9: RandomCrop
+#   10: RandomHorizontalFlip
+#   11: RandomVerticalFlip
+#   12: RandomRotation
+#   13: max_rotation
+#   14: phase
+#   15: CenterCrop
+#   16: Compose
+#   17: public_transform
+#   18: noise_std
+#   19: append
+#   20: AddGaussianNoise
+#   21: Resize
+#   22: scale_factor
+#   23: ToTensor
+#   24: normalize
+#   25: Normalize
+#   26: lr_transform
+#   27: train_public_transform
+#   28: hr_transform
+# Varnames:
+#	self, common_transform, train_aug_transforms, val_test_transform, lr_transforms, hr_transforms
+# Positional arguments:
+#	self
+# Local variables:
+#    1: common_transform
+#    2: train_aug_transforms
+#    3: val_test_transform
+#    4: lr_transforms
+#    5: hr_transforms
+# Cell variables:
+#    0: self
+               0 MAKE_CELL            (self)
+
+179:           2 RESUME               0
+
+181:           4 LOAD_GLOBAL          (NULL + transforms)
+              16 LOAD_ATTR            (Lambda)
+              26 LOAD_CONST           (<code object <lambda> at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 181>)
+              28 MAKE_FUNCTION        (No arguments)
+              30 PRECALL              1
+              34 CALL                 1
+              44 BUILD_LIST           1
+              46 STORE_FAST           (common_transform)
+
+183:          48 BUILD_LIST           0
+              50 STORE_FAST           (train_aug_transforms)
+
+184:          52 LOAD_DEREF           (self)
+              54 LOAD_ATTR            (augment)
+              64 POP_JUMP_FORWARD_IF_FALSE (to 410)
+
+186:          66 LOAD_GLOBAL          (NULL + transforms)
+              78 LOAD_ATTR            (RandomResizedCrop)
+
+187:          88 LOAD_DEREF           (self)
+              90 LOAD_ATTR            (crop_size)
+
+188:         100 LOAD_DEREF           (self)
+             102 LOAD_ATTR            (min_scale)
+             112 LOAD_DEREF           (self)
+             114 LOAD_ATTR            (max_scale)
+             124 BUILD_TUPLE          2
+
+189:         126 LOAD_GLOBAL          (InterpolationMode)
+             138 LOAD_ATTR            (BICUBIC)
+
+186:         148 KW_NAMES             (('size', 'scale', 'interpolation'))
+             150 PRECALL              3
+             154 CALL                 3
+
+191:         164 LOAD_GLOBAL          (NULL + transforms)
+             176 LOAD_ATTR            (RandomCrop)
+
+192:         186 LOAD_DEREF           (self)
+             188 LOAD_ATTR            (crop_size)
+             198 LOAD_CONST           (0)
+             200 LOAD_CONST           (True)
+
+191:         202 KW_NAMES             (('padding', 'pad_if_needed'))
+             204 PRECALL              3
+             208 CALL                 3
+
+193:         218 LOAD_GLOBAL          (NULL + transforms)
+             230 LOAD_ATTR            (RandomHorizontalFlip)
+             240 LOAD_CONST           (0.5)
+             242 KW_NAMES             (('p',))
+             244 PRECALL              1
+             248 CALL                 1
+
+194:         258 LOAD_GLOBAL          (NULL + transforms)
+             270 LOAD_ATTR            (RandomVerticalFlip)
+             280 LOAD_CONST           (0.3)
+             282 KW_NAMES             (('p',))
+             284 PRECALL              1
+             288 CALL                 1
+
+195:         298 LOAD_GLOBAL          (NULL + transforms)
+             310 LOAD_ATTR            (RandomRotation)
+
+196:         320 LOAD_DEREF           (self)
+             322 LOAD_ATTR            (max_rotation)
+             332 UNARY_NEGATIVE
+             334 LOAD_DEREF           (self)
+             336 LOAD_ATTR            (max_rotation)
+             346 BUILD_TUPLE          2
+             348 LOAD_CONST           (False)
+
+195:         350 KW_NAMES             (('degrees', 'expand'))
+             352 PRECALL              2
+             356 CALL                 2
+
+197:         366 LOAD_GLOBAL          (NULL + transforms)
+             378 LOAD_ATTR            (Lambda)
+             388 LOAD_CONST           (<code object <lambda> at 0x7fde73eb5e60, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 197>)
+             390 MAKE_FUNCTION        (No arguments)
+             392 PRECALL              1
+             396 CALL                 1
+
+185:         406 BUILD_LIST           6
+             408 STORE_FAST           (train_aug_transforms)
+
+201:     >>  410 BUILD_LIST           0
+             412 STORE_FAST           (val_test_transform)
+
+202:         414 LOAD_DEREF           (self)
+             416 LOAD_ATTR            (phase)
+             426 LOAD_CONST           (('val', 'test'))
+             428 CONTAINS_OP          (in)
+             430 POP_JUMP_FORWARD_IF_FALSE (to 506)
+             432 LOAD_DEREF           (self)
+             434 LOAD_ATTR            (crop_size)
+             444 LOAD_CONST           (0)
+             446 COMPARE_OP           (>)
+             452 POP_JUMP_FORWARD_IF_FALSE (to 506)
+
+203:         454 LOAD_GLOBAL          (NULL + transforms)
+             466 LOAD_ATTR            (CenterCrop)
+             476 LOAD_DEREF           (self)
+             478 LOAD_ATTR            (crop_size)
+             488 PRECALL              1
+             492 CALL                 1
+             502 BUILD_LIST           1
+             504 STORE_FAST           (val_test_transform)
+
+205:     >>  506 LOAD_DEREF           (self)
+             508 LOAD_ATTR            (phase)
+             518 LOAD_CONST           ("train")
+             520 COMPARE_OP           (==)
+             526 POP_JUMP_FORWARD_IF_FALSE (to 586)
+
+206:         528 LOAD_GLOBAL          (NULL + transforms)
+             540 LOAD_ATTR            (Compose)
+
+207:         550 LOAD_FAST            (common_transform)
+             552 LOAD_FAST            (train_aug_transforms)
+             554 BINARY_OP            (+)
+
+206:         558 PRECALL              1
+             562 CALL                 1
+             572 LOAD_DEREF           (self)
+             574 STORE_ATTR           (public_transform)
+             584 JUMP_FORWARD         (to 642)
+
+209:     >>  586 LOAD_GLOBAL          (NULL + transforms)
+             598 LOAD_ATTR            (Compose)
+
+210:         608 LOAD_FAST            (common_transform)
+             610 LOAD_FAST            (val_test_transform)
+             612 BINARY_OP            (+)
+
+209:         616 PRECALL              1
+             620 CALL                 1
+             630 LOAD_DEREF           (self)
+             632 STORE_ATTR           (public_transform)
+
+213:     >>  642 BUILD_LIST           0
+             644 STORE_FAST           (lr_transforms)
+
+214:         646 LOAD_DEREF           (self)
+             648 LOAD_ATTR            (phase)
+             658 LOAD_CONST           ("train")
+             660 COMPARE_OP           (==)
+             666 POP_JUMP_FORWARD_IF_FALSE (to 768)
+             668 LOAD_DEREF           (self)
+             670 LOAD_ATTR            (noise_std)
+             680 LOAD_CONST           (0)
+             682 COMPARE_OP           (>)
+             688 POP_JUMP_FORWARD_IF_FALSE (to 768)
+
+215:         690 LOAD_FAST            (lr_transforms)
+             692 LOAD_METHOD          (append)
+             714 LOAD_GLOBAL          (NULL + AddGaussianNoise)
+             726 LOAD_DEREF           (self)
+             728 LOAD_ATTR            (noise_std)
+             738 PRECALL              1
+             742 CALL                 1
+             752 PRECALL              1
+             756 CALL                 1
+             766 POP_TOP
+
+217:     >>  768 LOAD_DEREF           (self)
+             770 LOAD_ATTR            (phase)
+             780 LOAD_CONST           ("train")
+             782 COMPARE_OP           (==)
+             788 POP_JUMP_FORWARD_IF_FALSE (to 920)
+
+218:         790 LOAD_FAST            (lr_transforms)
+             792 LOAD_METHOD          (append)
+
+219:         814 LOAD_GLOBAL          (NULL + transforms)
+             826 LOAD_ATTR            (Resize)
+
+220:         836 LOAD_DEREF           (self)
+             838 LOAD_ATTR            (crop_size)
+             848 LOAD_DEREF           (self)
+             850 LOAD_ATTR            (scale_factor)
+             860 BINARY_OP            (//)
+
+221:         864 LOAD_GLOBAL          (InterpolationMode)
+             876 LOAD_ATTR            (BICUBIC)
+
+219:         886 KW_NAMES             (('interpolation',))
+             888 PRECALL              2
+             892 CALL                 2
+
+218:         902 PRECALL              1
+             906 CALL                 1
+             916 POP_TOP
+             918 JUMP_FORWARD         (to 1004)
+
+225:     >>  920 LOAD_FAST            (lr_transforms)
+             922 LOAD_METHOD          (append)
+
+226:         944 LOAD_GLOBAL          (NULL + transforms)
+             956 LOAD_ATTR            (Lambda)
+
+227:         966 LOAD_CLOSURE         (self)
+             968 BUILD_TUPLE          1
+             970 LOAD_CONST           (<code object <lambda> at 0x7fde73ee1790, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 227>)
+             972 MAKE_FUNCTION        (closure)
+
+226:         974 PRECALL              1
+             978 CALL                 1
+
+225:         988 PRECALL              1
+             992 CALL                 1
+            1002 POP_TOP
+
+235:     >> 1004 LOAD_FAST            (lr_transforms)
+            1006 LOAD_METHOD          (append)
+            1028 LOAD_GLOBAL          (NULL + transforms)
+            1040 LOAD_ATTR            (ToTensor)
+            1050 PRECALL              0
+            1054 CALL                 0
+            1064 PRECALL              1
+            1068 CALL                 1
+            1078 POP_TOP
+
+236:        1080 LOAD_DEREF           (self)
+            1082 LOAD_ATTR            (normalize)
+            1092 POP_JUMP_FORWARD_IF_FALSE (to 1180)
+
+237:        1094 LOAD_FAST            (lr_transforms)
+            1096 LOAD_METHOD          (append)
+            1118 LOAD_GLOBAL          (NULL + transforms)
+            1130 LOAD_ATTR            (Normalize)
+            1140 LOAD_CONST           (0.5)
+            1142 BUILD_LIST           1
+            1144 LOAD_CONST           (0.5)
+            1146 BUILD_LIST           1
+            1148 KW_NAMES             (('mean', 'std'))
+            1150 PRECALL              2
+            1154 CALL                 2
+            1164 PRECALL              1
+            1168 CALL                 1
+            1178 POP_TOP
+
+239:     >> 1180 LOAD_GLOBAL          (NULL + transforms)
+            1192 LOAD_ATTR            (Compose)
+            1202 LOAD_FAST            (lr_transforms)
+            1204 PRECALL              1
+            1208 CALL                 1
+            1218 LOAD_DEREF           (self)
+            1220 STORE_ATTR           (lr_transform)
+
+241:        1230 LOAD_GLOBAL          (NULL + transforms)
+            1242 LOAD_ATTR            (Compose)
+
+242:        1252 LOAD_GLOBAL          (NULL + transforms)
+            1264 LOAD_ATTR            (RandomCrop)
+
+243:        1274 LOAD_DEREF           (self)
+            1276 LOAD_ATTR            (crop_size)
+            1286 LOAD_CONST           (0)
+            1288 LOAD_CONST           (True)
+
+242:        1290 KW_NAMES             (('padding', 'pad_if_needed'))
+            1292 PRECALL              3
+            1296 CALL                 3
+
+244:        1306 LOAD_GLOBAL          (NULL + transforms)
+            1318 LOAD_ATTR            (RandomHorizontalFlip)
+            1328 LOAD_CONST           (0.5)
+            1330 KW_NAMES             (('p',))
+            1332 PRECALL              1
+            1336 CALL                 1
+
+245:        1346 LOAD_GLOBAL          (NULL + transforms)
+            1358 LOAD_ATTR            (RandomVerticalFlip)
+            1368 LOAD_CONST           (0.5)
+            1370 KW_NAMES             (('p',))
+            1372 PRECALL              1
+            1376 CALL                 1
+
+241:        1386 BUILD_LIST           3
+            1388 PRECALL              1
+            1392 CALL                 1
+            1402 LOAD_DEREF           (self)
+            1404 STORE_ATTR           (train_public_transform)
+
+249:        1414 LOAD_GLOBAL          (NULL + transforms)
+            1426 LOAD_ATTR            (ToTensor)
+            1436 PRECALL              0
+            1440 CALL                 0
+            1450 BUILD_LIST           1
+            1452 STORE_FAST           (hr_transforms)
+
+250:        1454 LOAD_DEREF           (self)
+            1456 LOAD_ATTR            (normalize)
+            1466 POP_JUMP_FORWARD_IF_FALSE (to 1554)
+
+251:        1468 LOAD_FAST            (hr_transforms)
+            1470 LOAD_METHOD          (append)
+            1492 LOAD_GLOBAL          (NULL + transforms)
+            1504 LOAD_ATTR            (Normalize)
+            1514 LOAD_CONST           (0.5)
+            1516 BUILD_LIST           1
+            1518 LOAD_CONST           (0.5)
+            1520 BUILD_LIST           1
+            1522 KW_NAMES             (('mean', 'std'))
+            1524 PRECALL              2
+            1528 CALL                 2
+            1538 PRECALL              1
+            1542 CALL                 1
+            1552 POP_TOP
+
+253:     >> 1554 LOAD_GLOBAL          (NULL + transforms)
+            1566 LOAD_ATTR            (Compose)
+            1576 LOAD_FAST            (hr_transforms)
+            1578 PRECALL              1
+            1582 CALL                 1
+            1592 LOAD_DEREF           (self)
+            1594 STORE_ATTR           (hr_transform)
+            1604 LOAD_CONST           (None)
+            1606 RETURN_VALUE
+
+
+# Method Name:       _clean_image_data
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        255
+# Constants:
+#    0: '清理图像数据，防止NaN/Inf污染'
+#    1: 0.0
+#    2: 255.0
+#    3: ('nan', 'posinf', 'neginf')
+#    4: 0
+#    5: 255
+# Names:
+#    0: np
+#    1: nan_to_num
+#    2: clip
+# Varnames:
+#	self, img_np
+# Positional arguments:
+#	self, img_np
+
+255:           0 RESUME               0
+
+257:           2 LOAD_GLOBAL          (NULL + np)
+              14 LOAD_ATTR            (nan_to_num)
+              24 LOAD_FAST            (img_np)
+              26 LOAD_CONST           (0.0)
+              28 LOAD_CONST           (255.0)
+              30 LOAD_CONST           (0.0)
+              32 KW_NAMES             (('nan', 'posinf', 'neginf'))
+              34 PRECALL              4
+              38 CALL                 4
+              48 STORE_FAST           (img_np)
+
+258:          50 LOAD_GLOBAL          (NULL + np)
+              62 LOAD_ATTR            (clip)
+              72 LOAD_FAST            (img_np)
+              74 LOAD_CONST           (0)
+              76 LOAD_CONST           (255)
+              78 PRECALL              3
+              82 CALL                 3
+              92 STORE_FAST           (img_np)
+
+259:          94 LOAD_FAST            (img_np)
+              96 RETURN_VALUE
+
+
+# Method Name:       __getitem__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  28
+# Stack size:        12
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        261
+# Constants:
+#    0: '\n        获取单样本（统一返回格式：y_lr, y_hr, filename）\n        优化点：\n        1. 高效过滤极小图像，避免递归重试的性能损耗\n        2. 完善NaN/Inf处理，增加数据校验\n        3. 规范日志输出，区分warning/error\n        4. 优化默认值生成逻辑，适配不同scale_factor\n        5. 避免重复读取图像，提升数据加载效率\n        '
+#    1: 'HR图像文件不存在: '
+#    2: 'L'
+#    3: ('dtype',)
+#    4: None
+#    5: 0
+#    6: 1
+#    7: 3
+#    8: '样本['
+#    9: ']图像尺寸过小（'
+#   10: '），尝试替换有效图像 | 路径：'
+#   11: 1000
+#   12: <code object <listcomp> at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 293>
+#   13: 5
+#   14: ']替换为有效图像：'
+#   15: '（重试'
+#   16: '次）'
+#   17: ']重试'
+#   18: '次仍无有效图像，使用3x3默认图 | 原路径：'
+#   19: (3, 3)
+#   20: 128
+#   21: 'LR图像文件不存在: '
+#   22: '] LR数据包含NaN/Inf，已裁剪并重置 | 路径：'
+#   23: 0.0
+#   24: 1.0
+#   25: -1.0
+#   26: ('nan', 'posinf', 'neginf')
+#   27: ('min', 'max')
+#   28: '] HR数据包含NaN/Inf，已裁剪并重置 | 路径：'
+#   29: 'train'
+#   30: 'LR张量维度错误，期望3维，实际'
+#   31: '维 | 样本['
+#   32: ']'
+#   33: 'HR张量维度错误，期望3维，实际'
+#   34: '处理样本['
+#   35: ']失败: '
+#   36: ' | 路径：'
+#   37: '未知'
+#   38: '，返回默认值'
+#   39: 'error_'
+# Names:
+#    0: torch
+#    1: Tensor
+#    2: hr_files
+#    3: os
+#    4: path
+#    5: exists
+#    6: FileNotFoundError
+#    7: Image
+#    8: open
+#    9: convert
+#   10: np
+#   11: array
+#   12: uint8
+#   13: min
+#   14: shape
+#   15: logger
+#   16: warning
+#   17: len
+#   18: range
+#   19: random
+#   20: choice
+#   21: randint
+#   22: info
+#   23: Exception
+#   24: ones
+#   25: _clean_image_data
+#   26: fromarray
+#   27: astype
+#   28: public_transform
+#   29: lr_files
+#   30: cast
+#   31: lr_transform
+#   32: hr_transform
+#   33: isnan
+#   34: any
+#   35: isinf
+#   36: nan_to_num
+#   37: clamp
+#   38: phase
+#   39: splitext
+#   40: basename
+#   41: dim
+#   42: error
+#   43: str
+#   44: max
+#   45: scale_factor
+#   46: crop_size
+#   47: zeros
+#   48: float32
+# Varnames:
+#	self, index, y_lr, y_hr, hr_path, img_file, image_PIL, image_np, min_side, valid_indices, max_retry, retry_count, new_image_np, new_hr_path, new_index, f, temp_np, img_hr, x, lr_path, img_lr, filename, e, scale_factor, lr_h, lr_w, default_lr_shape, default_hr_shape
+# Positional arguments:
+#	self, index
+# Local variables:
+#    2: y_lr
+#    3: y_hr
+#    4: hr_path
+#    5: img_file
+#    6: image_PIL
+#    7: image_np
+#    8: min_side
+#    9: valid_indices
+#   10: max_retry
+#   11: retry_count
+#   12: new_image_np
+#   13: new_hr_path
+#   14: new_index
+#   15: f
+#   16: temp_np
+#   17: img_hr
+#   18: x
+#   19: lr_path
+#   20: img_lr
+#   21: filename
+#   22: e
+#   23: scale_factor
+#   24: lr_h
+#   25: lr_w
+#   26: default_lr_shape
+#   27: default_hr_shape
+# Cell variables:
+#    0: self
+               0 MAKE_CELL            (self)
+
+261:           2 RESUME               0
+
+272:           4 LOAD_GLOBAL          (NULL + torch)
+              16 LOAD_ATTR            (Tensor)
+              26 PRECALL              0
+              30 CALL                 0
+              40 STORE_FAST           (y_lr)
+
+273:          42 LOAD_GLOBAL          (NULL + torch)
+              54 LOAD_ATTR            (Tensor)
+              64 PRECALL              0
+              68 CALL                 0
+              78 STORE_FAST           (y_hr)
+
+274:          80 NOP
+
+276:          82 LOAD_DEREF           (self)
+              84 LOAD_ATTR            (hr_files)
+              94 LOAD_FAST            (index)
+              96 BINARY_SUBSCR
+             106 STORE_FAST           (hr_path)
+
+277:         108 LOAD_GLOBAL          (os)
+             120 LOAD_ATTR            (path)
+             130 LOAD_METHOD          (exists)
+             152 LOAD_FAST            (hr_path)
+             154 PRECALL              1
+             158 CALL                 1
+             168 POP_JUMP_FORWARD_IF_TRUE (to 206)
+
+278:         170 LOAD_GLOBAL          (NULL + FileNotFoundError)
+             182 LOAD_CONST           ("HR图像文件不存在: ")
+             184 LOAD_FAST            (hr_path)
+             186 FORMAT_VALUE         0
+             188 BUILD_STRING         2
+             190 PRECALL              1
+             194 CALL                 1
+             204 RAISE_VARARGS        (exception instance)
+
+281:     >>  206 LOAD_GLOBAL          (NULL + Image)
+             218 LOAD_ATTR            (open)
+             228 LOAD_FAST            (hr_path)
+             230 PRECALL              1
+             234 CALL                 1
+             244 BEFORE_WITH
+             246 STORE_FAST           (img_file)
+
+282:         248 LOAD_FAST            (img_file)
+             250 LOAD_METHOD          (convert)
+             272 LOAD_CONST           ("L")
+             274 PRECALL              1
+             278 CALL                 1
+             288 STORE_FAST           (image_PIL)
+
+283:         290 LOAD_GLOBAL          (NULL + np)
+             302 LOAD_ATTR            (array)
+
+284:         312 LOAD_FAST            (image_PIL)
+             314 LOAD_GLOBAL          (np)
+             326 LOAD_ATTR            (uint8)
+
+283:         336 KW_NAMES             (('dtype',))
+             338 PRECALL              2
+             342 CALL                 2
+             352 STORE_FAST           (image_np)
+
+281:         354 LOAD_CONST           (None)
+             356 LOAD_CONST           (None)
+             358 LOAD_CONST           (None)
+             360 PRECALL              2
+             364 CALL                 2
+             374 POP_TOP
+             376 JUMP_FORWARD         (to 400)
+             378 PUSH_EXC_INFO
+             380 WITH_EXCEPT_START
+             382 POP_JUMP_FORWARD_IF_TRUE (to 392)
+             384 RERAISE              2
+             386 COPY                 3
+             388 POP_EXCEPT
+             390 RERAISE              1
+         >>  392 POP_TOP
+             394 POP_EXCEPT
+             396 POP_TOP
+             398 POP_TOP
+
+287:     >>  400 LOAD_GLOBAL          (NULL + min)
+             412 LOAD_FAST            (image_np)
+             414 LOAD_ATTR            (shape)
+             424 LOAD_CONST           (0)
+             426 BINARY_SUBSCR
+             436 LOAD_FAST            (image_np)
+             438 LOAD_ATTR            (shape)
+             448 LOAD_CONST           (1)
+             450 BINARY_SUBSCR
+             460 PRECALL              2
+             464 CALL                 2
+             474 STORE_FAST           (min_side)
+
+288:         476 LOAD_FAST            (min_side)
+             478 LOAD_CONST           (3)
+             480 COMPARE_OP           (<)
+             486 EXTENDED_ARG         (256)
+             488 POP_JUMP_FORWARD_IF_FALSE (to 1496)
+
+289:         490 LOAD_GLOBAL          (logger)
+             502 LOAD_METHOD          (warning)
+
+290:         524 LOAD_CONST           ("样本[")
+             526 LOAD_FAST            (index)
+             528 FORMAT_VALUE         0
+             530 LOAD_CONST           ("]图像尺寸过小（")
+             532 LOAD_FAST            (image_np)
+             534 LOAD_ATTR            (shape)
+             544 FORMAT_VALUE         0
+             546 LOAD_CONST           ("），尝试替换有效图像 | 路径：")
+             548 LOAD_FAST            (hr_path)
+             550 FORMAT_VALUE         0
+             552 BUILD_STRING         6
+
+289:         554 PRECALL              1
+             558 CALL                 1
+             568 POP_TOP
+
+296:         570 LOAD_GLOBAL          (NULL + len)
+             582 LOAD_DEREF           (self)
+             584 LOAD_ATTR            (hr_files)
+             594 PRECALL              1
+             598 CALL                 1
+             608 LOAD_CONST           (1000)
+             610 COMPARE_OP           (<)
+             616 POP_JUMP_FORWARD_IF_FALSE (to 708)
+
+293:         618 LOAD_CLOSURE         (self)
+             620 BUILD_TUPLE          1
+             622 LOAD_CONST           (<code object <listcomp> at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 293>)
+             624 MAKE_FUNCTION        (closure)
+
+294:         626 LOAD_GLOBAL          (NULL + range)
+             638 LOAD_GLOBAL          (NULL + len)
+             650 LOAD_DEREF           (self)
+             652 LOAD_ATTR            (hr_files)
+             662 PRECALL              1
+             666 CALL                 1
+             676 PRECALL              1
+             680 CALL                 1
+
+293:         690 GET_ITER
+             692 PRECALL              0
+             696 CALL                 0
+             706 JUMP_FORWARD         (to 710)
+
+296:     >>  708 LOAD_CONST           (None)
+
+293:     >>  710 STORE_FAST           (valid_indices)
+
+299:         712 LOAD_CONST           (5)
+             714 STORE_FAST           (max_retry)
+
+300:         716 LOAD_CONST           (0)
+             718 STORE_FAST           (retry_count)
+
+301:         720 LOAD_CONST           (None)
+             722 STORE_FAST           (new_image_np)
+
+302:         724 LOAD_FAST            (hr_path)
+             726 STORE_FAST           (new_hr_path)
+
+304:         728 LOAD_FAST            (retry_count)
+             730 LOAD_FAST            (max_retry)
+             732 COMPARE_OP           (<)
+             738 EXTENDED_ARG         (256)
+             740 POP_JUMP_FORWARD_IF_FALSE (to 1346)
+
+305:         742 LOAD_FAST            (valid_indices)
+             744 POP_JUMP_FORWARD_IF_FALSE (to 838)
+             746 LOAD_GLOBAL          (NULL + len)
+             758 LOAD_FAST            (valid_indices)
+             760 PRECALL              1
+             764 CALL                 1
+             774 LOAD_CONST           (0)
+             776 COMPARE_OP           (>)
+             782 POP_JUMP_FORWARD_IF_FALSE (to 838)
+
+306:         784 LOAD_GLOBAL          (random)
+             796 LOAD_METHOD          (choice)
+             818 LOAD_FAST            (valid_indices)
+             820 PRECALL              1
+             824 CALL                 1
+             834 STORE_FAST           (new_index)
+             836 JUMP_FORWARD         (to 934)
+
+308:     >>  838 LOAD_GLOBAL          (random)
+             850 LOAD_METHOD          (randint)
+             872 LOAD_CONST           (0)
+             874 LOAD_GLOBAL          (NULL + len)
+             886 LOAD_DEREF           (self)
+             888 LOAD_ATTR            (hr_files)
+             898 PRECALL              1
+             902 CALL                 1
+             912 LOAD_CONST           (1)
+             914 BINARY_OP            (-)
+             918 PRECALL              2
+             922 CALL                 2
+             932 STORE_FAST           (new_index)
+
+310:     >>  934 LOAD_DEREF           (self)
+             936 LOAD_ATTR            (hr_files)
+             946 LOAD_FAST            (new_index)
+             948 BINARY_SUBSCR
+             958 STORE_FAST           (new_hr_path)
+
+311:         960 NOP
+
+312:         962 LOAD_GLOBAL          (NULL + Image)
+             974 LOAD_ATTR            (open)
+             984 LOAD_FAST            (new_hr_path)
+             986 PRECALL              1
+             990 CALL                 1
+            1000 BEFORE_WITH
+            1002 STORE_FAST           (f)
+
+313:        1004 LOAD_GLOBAL          (NULL + np)
+            1016 LOAD_ATTR            (array)
+            1026 LOAD_FAST            (f)
+            1028 LOAD_METHOD          (convert)
+            1050 LOAD_CONST           ("L")
+            1052 PRECALL              1
+            1056 CALL                 1
+            1066 LOAD_GLOBAL          (np)
+            1078 LOAD_ATTR            (uint8)
+            1088 KW_NAMES             (('dtype',))
+            1090 PRECALL              2
+            1094 CALL                 2
+            1104 STORE_FAST           (temp_np)
+
+312:        1106 LOAD_CONST           (None)
+            1108 LOAD_CONST           (None)
+            1110 LOAD_CONST           (None)
+            1112 PRECALL              2
+            1116 CALL                 2
+            1126 POP_TOP
+            1128 JUMP_FORWARD         (to 1152)
+            1130 PUSH_EXC_INFO
+            1132 WITH_EXCEPT_START
+            1134 POP_JUMP_FORWARD_IF_TRUE (to 1144)
+            1136 RERAISE              2
+            1138 COPY                 3
+            1140 POP_EXCEPT
+            1142 RERAISE              1
+         >> 1144 POP_TOP
+            1146 POP_EXCEPT
+            1148 POP_TOP
+            1150 POP_TOP
+
+314:     >> 1152 LOAD_GLOBAL          (NULL + min)
+            1164 LOAD_FAST            (temp_np)
+            1166 LOAD_ATTR            (shape)
+            1176 PRECALL              1
+            1180 CALL                 1
+            1190 LOAD_CONST           (3)
+            1192 COMPARE_OP           (>=)
+            1198 POP_JUMP_FORWARD_IF_FALSE (to 1288)
+
+315:        1200 LOAD_FAST            (temp_np)
+            1202 STORE_FAST           (new_image_np)
+
+316:        1204 LOAD_FAST            (new_hr_path)
+            1206 STORE_FAST           (hr_path)
+
+317:        1208 LOAD_GLOBAL          (logger)
+            1220 LOAD_METHOD          (info)
+
+318:        1242 LOAD_CONST           ("样本[")
+            1244 LOAD_FAST            (index)
+            1246 FORMAT_VALUE         0
+            1248 LOAD_CONST           ("]替换为有效图像：")
+            1250 LOAD_FAST            (new_hr_path)
+            1252 FORMAT_VALUE         0
+            1254 LOAD_CONST           ("（重试")
+            1256 LOAD_FAST            (retry_count)
+            1258 LOAD_CONST           (1)
+            1260 BINARY_OP            (+)
+            1264 FORMAT_VALUE         0
+            1266 LOAD_CONST           ("次）")
+            1268 BUILD_STRING         7
+
+317:        1270 PRECALL              1
+            1274 CALL                 1
+            1284 POP_TOP
+
+319:        1286 JUMP_FORWARD         (to 1346)
+
+314:     >> 1288 JUMP_FORWARD         (to 1322)
+            1290 PUSH_EXC_INFO
+
+320:        1292 LOAD_GLOBAL          (Exception)
+            1304 CHECK_EXC_MATCH
+            1306 POP_JUMP_FORWARD_IF_FALSE (to 1314)
+            1308 POP_TOP
+
+321:        1310 POP_EXCEPT
+            1312 JUMP_FORWARD         (to 1322)
+
+320:     >> 1314 RERAISE              0
+            1316 COPY                 3
+            1318 POP_EXCEPT
+            1320 RERAISE              1
+
+322:     >> 1322 LOAD_FAST            (retry_count)
+            1324 LOAD_CONST           (1)
+            1326 BINARY_OP            (+=)
+            1330 STORE_FAST           (retry_count)
+
+304:        1332 LOAD_FAST            (retry_count)
+            1334 LOAD_FAST            (max_retry)
+            1336 COMPARE_OP           (<)
+            1342 EXTENDED_ARG         (256)
+            1344 POP_JUMP_BACKWARD_IF_TRUE (to 742)
+
+325:     >> 1346 LOAD_FAST            (new_image_np)
+            1348 POP_JUMP_FORWARD_IF_NOT_NONE (to 1492)
+
+326:        1350 LOAD_GLOBAL          (logger)
+            1362 LOAD_METHOD          (warning)
+
+327:        1384 LOAD_CONST           ("样本[")
+            1386 LOAD_FAST            (index)
+            1388 FORMAT_VALUE         0
+            1390 LOAD_CONST           ("]重试")
+            1392 LOAD_FAST            (max_retry)
+            1394 FORMAT_VALUE         0
+            1396 LOAD_CONST           ("次仍无有效图像，使用3x3默认图 | 原路径：")
+            1398 LOAD_FAST            (hr_path)
+            1400 FORMAT_VALUE         0
+            1402 BUILD_STRING         6
+
+326:        1404 PRECALL              1
+            1408 CALL                 1
+            1418 POP_TOP
+
+329:        1420 LOAD_GLOBAL          (NULL + np)
+            1432 LOAD_ATTR            (ones)
+            1442 LOAD_CONST           ((3, 3))
+            1444 LOAD_GLOBAL          (np)
+            1456 LOAD_ATTR            (uint8)
+            1466 KW_NAMES             (('dtype',))
+            1468 PRECALL              2
+            1472 CALL                 2
+            1482 LOAD_CONST           (128)
+            1484 BINARY_OP            (*)
+            1488 STORE_FAST           (image_np)
+            1490 JUMP_FORWARD         (to 1496)
+
+331:     >> 1492 LOAD_FAST            (new_image_np)
+            1494 STORE_FAST           (image_np)
+
+335:     >> 1496 LOAD_DEREF           (self)
+            1498 LOAD_METHOD          (_clean_image_data)
+            1520 LOAD_FAST            (image_np)
+            1522 PRECALL              1
+            1526 CALL                 1
+            1536 STORE_FAST           (image_np)
+
+336:        1538 LOAD_GLOBAL          (NULL + Image)
+            1550 LOAD_ATTR            (fromarray)
+            1560 LOAD_FAST            (image_np)
+            1562 LOAD_METHOD          (astype)
+            1584 LOAD_GLOBAL          (np)
+            1596 LOAD_ATTR            (uint8)
+            1606 PRECALL              1
+            1610 CALL                 1
+            1620 PRECALL              1
+            1624 CALL                 1
+            1634 STORE_FAST           (img_hr)
+
+339:        1636 LOAD_DEREF           (self)
+            1638 LOAD_METHOD          (public_transform)
+            1660 LOAD_FAST            (img_hr)
+            1662 PRECALL              1
+            1666 CALL                 1
+            1676 STORE_FAST           (x)
+
+342:        1678 LOAD_DEREF           (self)
+            1680 LOAD_ATTR            (lr_files)
+            1690 POP_JUMP_FORWARD_IF_FALSE (to 2128)
+            1692 LOAD_FAST            (index)
+            1694 LOAD_GLOBAL          (NULL + len)
+            1706 LOAD_DEREF           (self)
+            1708 LOAD_ATTR            (lr_files)
+            1718 PRECALL              1
+            1722 CALL                 1
+            1732 COMPARE_OP           (<)
+            1738 POP_JUMP_FORWARD_IF_FALSE (to 2128)
+
+343:        1740 LOAD_DEREF           (self)
+            1742 LOAD_ATTR            (lr_files)
+            1752 LOAD_FAST            (index)
+            1754 BINARY_SUBSCR
+            1764 STORE_FAST           (lr_path)
+
+344:        1766 LOAD_GLOBAL          (os)
+            1778 LOAD_ATTR            (path)
+            1788 LOAD_METHOD          (exists)
+            1810 LOAD_FAST            (lr_path)
+            1812 PRECALL              1
+            1816 CALL                 1
+            1826 POP_JUMP_FORWARD_IF_FALSE (to 2092)
+
+345:        1828 LOAD_GLOBAL          (NULL + Image)
+            1840 LOAD_ATTR            (open)
+            1850 LOAD_FAST            (lr_path)
+            1852 PRECALL              1
+            1856 CALL                 1
+            1866 BEFORE_WITH
+            1868 STORE_FAST           (f)
+
+346:        1870 LOAD_FAST            (f)
+            1872 LOAD_METHOD          (convert)
+            1894 LOAD_CONST           ("L")
+            1896 PRECALL              1
+            1900 CALL                 1
+            1910 STORE_FAST           (img_lr)
+
+345:        1912 LOAD_CONST           (None)
+            1914 LOAD_CONST           (None)
+            1916 LOAD_CONST           (None)
+            1918 PRECALL              2
+            1922 CALL                 2
+            1932 POP_TOP
+            1934 JUMP_FORWARD         (to 1958)
+            1936 PUSH_EXC_INFO
+            1938 WITH_EXCEPT_START
+            1940 POP_JUMP_FORWARD_IF_TRUE (to 1950)
+            1942 RERAISE              2
+            1944 COPY                 3
+            1946 POP_EXCEPT
+            1948 RERAISE              1
+         >> 1950 POP_TOP
+            1952 POP_EXCEPT
+            1954 POP_TOP
+            1956 POP_TOP
+
+347:     >> 1958 LOAD_DEREF           (self)
+            1960 LOAD_METHOD          (public_transform)
+            1982 LOAD_FAST            (img_lr)
+            1984 PRECALL              1
+            1988 CALL                 1
+            1998 STORE_FAST           (img_lr)
+
+348:        2000 LOAD_GLOBAL          (NULL + cast)
+            2012 LOAD_GLOBAL          (torch)
+            2024 LOAD_ATTR            (Tensor)
+            2034 LOAD_DEREF           (self)
+            2036 LOAD_METHOD          (lr_transform)
+            2058 LOAD_FAST            (img_lr)
+            2060 PRECALL              1
+            2064 CALL                 1
+            2074 PRECALL              2
+            2078 CALL                 2
+            2088 STORE_FAST           (y_lr)
+            2090 JUMP_FORWARD         (to 2218)
+
+350:     >> 2092 LOAD_GLOBAL          (NULL + FileNotFoundError)
+            2104 LOAD_CONST           ("LR图像文件不存在: ")
+            2106 LOAD_FAST            (lr_path)
+            2108 FORMAT_VALUE         0
+            2110 BUILD_STRING         2
+            2112 PRECALL              1
+            2116 CALL                 1
+            2126 RAISE_VARARGS        (exception instance)
+
+353:     >> 2128 LOAD_GLOBAL          (NULL + cast)
+            2140 LOAD_GLOBAL          (torch)
+            2152 LOAD_ATTR            (Tensor)
+            2162 LOAD_DEREF           (self)
+            2164 LOAD_METHOD          (lr_transform)
+            2186 LOAD_FAST            (x)
+            2188 PRECALL              1
+            2192 CALL                 1
+            2202 PRECALL              2
+            2206 CALL                 2
+            2216 STORE_FAST           (y_lr)
+
+356:     >> 2218 LOAD_GLOBAL          (NULL + cast)
+            2230 LOAD_GLOBAL          (torch)
+            2242 LOAD_ATTR            (Tensor)
+            2252 LOAD_DEREF           (self)
+            2254 LOAD_METHOD          (hr_transform)
+            2276 LOAD_FAST            (x)
+            2278 PRECALL              1
+            2282 CALL                 1
+            2292 PRECALL              2
+            2296 CALL                 2
+            2306 STORE_FAST           (y_hr)
+
+360:        2308 LOAD_GLOBAL          (NULL + torch)
+            2320 LOAD_ATTR            (isnan)
+            2330 LOAD_FAST            (y_lr)
+            2332 PRECALL              1
+            2336 CALL                 1
+            2346 LOAD_METHOD          (any)
+            2368 PRECALL              0
+            2372 CALL                 0
+            2382 POP_JUMP_FORWARD_IF_TRUE (to 2460)
+            2384 LOAD_GLOBAL          (NULL + torch)
+            2396 LOAD_ATTR            (isinf)
+            2406 LOAD_FAST            (y_lr)
+            2408 PRECALL              1
+            2412 CALL                 1
+            2422 LOAD_METHOD          (any)
+            2444 PRECALL              0
+            2448 CALL                 0
+            2458 POP_JUMP_FORWARD_IF_FALSE (to 2618)
+
+361:     >> 2460 LOAD_GLOBAL          (logger)
+            2472 LOAD_METHOD          (warning)
+
+362:        2494 LOAD_CONST           ("样本[")
+            2496 LOAD_FAST            (index)
+            2498 FORMAT_VALUE         0
+            2500 LOAD_CONST           ("] LR数据包含NaN/Inf，已裁剪并重置 | 路径：")
+            2502 LOAD_FAST            (hr_path)
+            2504 FORMAT_VALUE         0
+            2506 BUILD_STRING         4
+
+361:        2508 PRECALL              1
+            2512 CALL                 1
+            2522 POP_TOP
+
+363:        2524 LOAD_GLOBAL          (NULL + torch)
+            2536 LOAD_ATTR            (nan_to_num)
+            2546 LOAD_FAST            (y_lr)
+            2548 LOAD_CONST           (0.0)
+            2550 LOAD_CONST           (1.0)
+            2552 LOAD_CONST           (-1.0)
+            2554 KW_NAMES             (('nan', 'posinf', 'neginf'))
+            2556 PRECALL              4
+            2560 CALL                 4
+            2570 STORE_FAST           (y_lr)
+
+364:        2572 LOAD_GLOBAL          (NULL + torch)
+            2584 LOAD_ATTR            (clamp)
+            2594 LOAD_FAST            (y_lr)
+            2596 LOAD_CONST           (-1.0)
+            2598 LOAD_CONST           (1.0)
+            2600 KW_NAMES             (('min', 'max'))
+            2602 PRECALL              3
+            2606 CALL                 3
+            2616 STORE_FAST           (y_lr)
+
+367:     >> 2618 LOAD_GLOBAL          (NULL + torch)
+            2630 LOAD_ATTR            (isnan)
+            2640 LOAD_FAST            (y_hr)
+            2642 PRECALL              1
+            2646 CALL                 1
+            2656 LOAD_METHOD          (any)
+            2678 PRECALL              0
+            2682 CALL                 0
+            2692 POP_JUMP_FORWARD_IF_TRUE (to 2770)
+            2694 LOAD_GLOBAL          (NULL + torch)
+            2706 LOAD_ATTR            (isinf)
+            2716 LOAD_FAST            (y_hr)
+            2718 PRECALL              1
+            2722 CALL                 1
+            2732 LOAD_METHOD          (any)
+            2754 PRECALL              0
+            2758 CALL                 0
+            2768 POP_JUMP_FORWARD_IF_FALSE (to 2928)
+
+368:     >> 2770 LOAD_GLOBAL          (logger)
+            2782 LOAD_METHOD          (warning)
+
+369:        2804 LOAD_CONST           ("样本[")
+            2806 LOAD_FAST            (index)
+            2808 FORMAT_VALUE         0
+            2810 LOAD_CONST           ("] HR数据包含NaN/Inf，已裁剪并重置 | 路径：")
+            2812 LOAD_FAST            (hr_path)
+            2814 FORMAT_VALUE         0
+            2816 BUILD_STRING         4
+
+368:        2818 PRECALL              1
+            2822 CALL                 1
+            2832 POP_TOP
+
+370:        2834 LOAD_GLOBAL          (NULL + torch)
+            2846 LOAD_ATTR            (nan_to_num)
+            2856 LOAD_FAST            (y_hr)
+            2858 LOAD_CONST           (0.0)
+            2860 LOAD_CONST           (1.0)
+            2862 LOAD_CONST           (-1.0)
+            2864 KW_NAMES             (('nan', 'posinf', 'neginf'))
+            2866 PRECALL              4
+            2870 CALL                 4
+            2880 STORE_FAST           (y_hr)
+
+371:        2882 LOAD_GLOBAL          (NULL + torch)
+            2894 LOAD_ATTR            (clamp)
+            2904 LOAD_FAST            (y_hr)
+            2906 LOAD_CONST           (-1.0)
+            2908 LOAD_CONST           (1.0)
+            2910 KW_NAMES             (('min', 'max'))
+            2912 PRECALL              3
+            2916 CALL                 3
+            2926 STORE_FAST           (y_hr)
+
+374:     >> 2928 LOAD_DEREF           (self)
+            2930 LOAD_ATTR            (phase)
+            2940 LOAD_CONST           ("train")
+            2942 COMPARE_OP           (==)
+            2948 POP_JUMP_FORWARD_IF_FALSE (to 2956)
+
+375:        2950 LOAD_CONST           (None)
+            2952 STORE_FAST           (filename)
+            2954 JUMP_FORWARD         (to 3088)
+
+377:     >> 2956 LOAD_GLOBAL          (os)
+            2968 LOAD_ATTR            (path)
+            2978 LOAD_METHOD          (splitext)
+            3000 LOAD_GLOBAL          (os)
+            3012 LOAD_ATTR            (path)
+            3022 LOAD_METHOD          (basename)
+            3044 LOAD_FAST            (hr_path)
+            3046 PRECALL              1
+            3050 CALL                 1
+            3060 PRECALL              1
+            3064 CALL                 1
+            3074 LOAD_CONST           (0)
+            3076 BINARY_SUBSCR
+            3086 STORE_FAST           (filename)
+
+380:     >> 3088 LOAD_FAST            (y_lr)
+            3090 LOAD_METHOD          (dim)
+            3112 PRECALL              0
+            3116 CALL                 0
+
+381:        3126 LOAD_CONST           (3)
+
+380:        3128 COMPARE_OP           (==)
+            3134 POP_JUMP_FORWARD_IF_TRUE (to 3206)
+            3136 LOAD_ASSERTION_ERROR
+
+381:        3138 LOAD_CONST           ("LR张量维度错误，期望3维，实际")
+            3140 LOAD_FAST            (y_lr)
+            3142 LOAD_METHOD          (dim)
+            3164 PRECALL              0
+            3168 CALL                 0
+            3178 FORMAT_VALUE         0
+            3180 LOAD_CONST           ("维 | 样本[")
+            3182 LOAD_FAST            (index)
+            3184 FORMAT_VALUE         0
+            3186 LOAD_CONST           ("]")
+            3188 BUILD_STRING         5
+
+380:        3190 PRECALL              0
+            3194 CALL                 0
+            3204 RAISE_VARARGS        (exception instance)
+
+382:     >> 3206 LOAD_FAST            (y_hr)
+            3208 LOAD_METHOD          (dim)
+            3230 PRECALL              0
+            3234 CALL                 0
+
+383:        3244 LOAD_CONST           (3)
+
+382:        3246 COMPARE_OP           (==)
+            3252 POP_JUMP_FORWARD_IF_TRUE (to 3324)
+            3254 LOAD_ASSERTION_ERROR
+
+383:        3256 LOAD_CONST           ("HR张量维度错误，期望3维，实际")
+            3258 LOAD_FAST            (y_hr)
+            3260 LOAD_METHOD          (dim)
+            3282 PRECALL              0
+            3286 CALL                 0
+            3296 FORMAT_VALUE         0
+            3298 LOAD_CONST           ("维 | 样本[")
+            3300 LOAD_FAST            (index)
+            3302 FORMAT_VALUE         0
+            3304 LOAD_CONST           ("]")
+            3306 BUILD_STRING         5
+
+382:        3308 PRECALL              0
+            3312 CALL                 0
+            3322 RAISE_VARARGS        (exception instance)
+
+385:     >> 3324 LOAD_FAST            (y_lr)
+            3326 LOAD_FAST            (y_hr)
+            3328 LOAD_FAST            (filename)
+            3330 BUILD_TUPLE          3
+            3332 RETURN_VALUE
+            3334 PUSH_EXC_INFO
+
+388:        3336 LOAD_GLOBAL          (Exception)
+            3348 CHECK_EXC_MATCH
+            3350 EXTENDED_ARG         (256)
+            3352 POP_JUMP_FORWARD_IF_FALSE (to 3898)
+            3354 STORE_FAST           (e)
+
+389:        3356 LOAD_GLOBAL          (logger)
+            3368 LOAD_METHOD          (error)
+
+390:        3390 LOAD_CONST           ("处理样本[")
+            3392 LOAD_FAST            (index)
+            3394 FORMAT_VALUE         0
+            3396 LOAD_CONST           ("]失败: ")
+            3398 LOAD_GLOBAL          (NULL + str)
+            3410 LOAD_FAST            (e)
+            3412 PRECALL              1
+            3416 CALL                 1
+            3426 FORMAT_VALUE         0
+            3428 LOAD_CONST           (" | 路径：")
+            3430 LOAD_FAST            (index)
+            3432 LOAD_GLOBAL          (NULL + len)
+            3444 LOAD_DEREF           (self)
+            3446 LOAD_ATTR            (hr_files)
+            3456 PRECALL              1
+            3460 CALL                 1
+            3470 COMPARE_OP           (<)
+            3476 POP_JUMP_FORWARD_IF_FALSE (to 3504)
+            3478 LOAD_DEREF           (self)
+            3480 LOAD_ATTR            (hr_files)
+            3490 LOAD_FAST            (index)
+            3492 BINARY_SUBSCR
+            3502 JUMP_FORWARD         (to 3506)
+         >> 3504 LOAD_CONST           ("未知")
+         >> 3506 FORMAT_VALUE         0
+            3508 LOAD_CONST           ("，返回默认值")
+            3510 BUILD_STRING         7
+
+389:        3512 PRECALL              1
+            3516 CALL                 1
+            3526 POP_TOP
+
+393:        3528 LOAD_GLOBAL          (NULL + max)
+            3540 LOAD_CONST           (1)
+            3542 LOAD_DEREF           (self)
+            3544 LOAD_ATTR            (scale_factor)
+            3554 PRECALL              2
+            3558 CALL                 2
+            3568 STORE_FAST           (scale_factor)
+
+394:        3570 LOAD_GLOBAL          (NULL + max)
+            3582 LOAD_CONST           (1)
+            3584 LOAD_DEREF           (self)
+            3586 LOAD_ATTR            (crop_size)
+            3596 LOAD_FAST            (scale_factor)
+            3598 BINARY_OP            (//)
+            3602 PRECALL              2
+            3606 CALL                 2
+            3616 STORE_FAST           (lr_h)
+
+395:        3618 LOAD_GLOBAL          (NULL + max)
+            3630 LOAD_CONST           (1)
+            3632 LOAD_DEREF           (self)
+            3634 LOAD_ATTR            (crop_size)
+            3644 LOAD_FAST            (scale_factor)
+            3646 BINARY_OP            (//)
+            3650 PRECALL              2
+            3654 CALL                 2
+            3664 STORE_FAST           (lr_w)
+
+396:        3666 LOAD_CONST           (1)
+            3668 LOAD_FAST            (lr_h)
+            3670 LOAD_FAST            (lr_w)
+            3672 BUILD_TUPLE          3
+            3674 STORE_FAST           (default_lr_shape)
+
+397:        3676 LOAD_CONST           (1)
+            3678 LOAD_DEREF           (self)
+            3680 LOAD_ATTR            (crop_size)
+            3690 LOAD_DEREF           (self)
+            3692 LOAD_ATTR            (crop_size)
+            3702 BUILD_TUPLE          3
+            3704 STORE_FAST           (default_hr_shape)
+
+399:        3706 LOAD_GLOBAL          (NULL + torch)
+            3718 LOAD_ATTR            (zeros)
+            3728 LOAD_FAST            (default_lr_shape)
+            3730 LOAD_GLOBAL          (torch)
+            3742 LOAD_ATTR            (float32)
+            3752 KW_NAMES             (('dtype',))
+            3754 PRECALL              2
+            3758 CALL                 2
+            3768 STORE_FAST           (y_lr)
+
+400:        3770 LOAD_GLOBAL          (NULL + torch)
+            3782 LOAD_ATTR            (zeros)
+            3792 LOAD_FAST            (default_hr_shape)
+            3794 LOAD_GLOBAL          (torch)
+            3806 LOAD_ATTR            (float32)
+            3816 KW_NAMES             (('dtype',))
+            3818 PRECALL              2
+            3822 CALL                 2
+            3832 STORE_FAST           (y_hr)
+
+401:        3834 LOAD_DEREF           (self)
+            3836 LOAD_ATTR            (phase)
+            3846 LOAD_CONST           ("train")
+            3848 COMPARE_OP           (!=)
+            3854 POP_JUMP_FORWARD_IF_FALSE (to 3866)
+            3856 LOAD_CONST           ("error_")
+            3858 LOAD_FAST            (index)
+            3860 FORMAT_VALUE         0
+            3862 BUILD_STRING         2
+            3864 JUMP_FORWARD         (to 3868)
+         >> 3866 LOAD_CONST           (None)
+         >> 3868 STORE_FAST           (filename)
+
+403:        3870 LOAD_FAST            (y_lr)
+            3872 LOAD_FAST            (y_hr)
+            3874 LOAD_FAST            (filename)
+            3876 BUILD_TUPLE          3
+            3878 SWAP                 (TOS <-> TOS1)
+            3880 POP_EXCEPT
+            3882 LOAD_CONST           (None)
+            3884 STORE_FAST           (e)
+            3886 DELETE_FAST          (e)
+            3888 RETURN_VALUE
+            3890 LOAD_CONST           (None)
+            3892 STORE_FAST           (e)
+            3894 DELETE_FAST          (e)
+            3896 RERAISE              1
+
+388:     >> 3898 RERAISE              0
+            3900 COPY                 3
+            3902 POP_EXCEPT
+            3904 RERAISE              1
+
+ExceptionTable:
+  82 to 244 -> 3334 [0]
+  246 to 352 -> 378 [1] lasti
+  354 to 376 -> 3334 [0]
+  378 to 384 -> 386 [3] lasti
+  386 to 390 -> 3334 [0]
+  392 to 392 -> 386 [3] lasti
+  394 to 958 -> 3334 [0]
+  962 to 1000 -> 1290 [0]
+  1002 to 1104 -> 1130 [1] lasti
+  1106 to 1128 -> 1290 [0]
+  1130 to 1136 -> 1138 [3] lasti
+  1138 to 1142 -> 1290 [0]
+  1144 to 1144 -> 1138 [3] lasti
+  1146 to 1284 -> 1290 [0]
+  1286 to 1288 -> 3334 [0]
+  1290 to 1308 -> 1316 [1] lasti
+  1310 to 1312 -> 3334 [0]
+  1314 to 1314 -> 1316 [1] lasti
+  1316 to 1866 -> 3334 [0]
+  1868 to 1910 -> 1936 [1] lasti
+  1912 to 1934 -> 3334 [0]
+  1936 to 1942 -> 1944 [3] lasti
+  1944 to 1948 -> 3334 [0]
+  1950 to 1950 -> 1944 [3] lasti
+  1952 to 3330 -> 3334 [0]
+  3334 to 3354 -> 3900 [1] lasti
+  3356 to 3876 -> 3890 [1] lasti
+  3878 to 3878 -> 3900 [1] lasti
+  3890 to 3898 -> 3900 [1] lasti
+
+# Method Name:       __len__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        405
+# Constants:
+#    0: '数据集长度'
+# Names:
+#    0: len
+#    1: hr_files
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+
+405:           0 RESUME               0
+
+407:           2 LOAD_GLOBAL          (NULL + len)
+              14 LOAD_FAST            (self)
+              16 LOAD_ATTR            (hr_files)
+              26 PRECALL              1
+              30 CALL                 1
+              40 RETURN_VALUE
+
+
+# Method Name:       get_filename_list
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        2
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        409
+# Constants:
+#    0: '获取文件名列表'
+#    1: <code object <listcomp> at 0x7fde73eb6100, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 411>
+# Names:
+#    0: hr_files
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+
+409:           0 RESUME               0
+
+411:           2 LOAD_CONST           (<code object <listcomp> at 0x7fde73eb6100, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py", line 411>)
+               4 MAKE_FUNCTION        (No arguments)
+               6 LOAD_FAST            (self)
+               8 LOAD_ATTR            (hr_files)
+              18 GET_ITER
+              20 PRECALL              0
+              24 CALL                 0
+              34 RETURN_VALUE
+
+
+# Method Name:       get_image_shape
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        413
+# Constants:
+#    0: '获取指定索引图像的原始形状'
+#    1: 1
+#    2: 0
+#    3: None
+# Names:
+#    0: Image
+#    1: open
+#    2: hr_files
+#    3: size
+# Varnames:
+#	self, index, img
+# Positional arguments:
+#	self, index
+# Local variables:
+#    2: img
+
+413:           0 RESUME               0
+
+415:           2 LOAD_GLOBAL          (NULL + Image)
+              14 LOAD_ATTR            (open)
+              24 LOAD_FAST            (self)
+              26 LOAD_ATTR            (hr_files)
+              36 LOAD_FAST            (index)
+              38 BINARY_SUBSCR
+              48 PRECALL              1
+              52 CALL                 1
+              62 BEFORE_WITH
+              64 STORE_FAST           (img)
+
+416:          66 LOAD_FAST            (img)
+              68 LOAD_ATTR            (size)
+              78 LOAD_CONST           (1)
+              80 BINARY_SUBSCR
+              90 LOAD_FAST            (img)
+              92 LOAD_ATTR            (size)
+             102 LOAD_CONST           (0)
+             104 BINARY_SUBSCR
+             114 BUILD_TUPLE          2
+
+415:         116 SWAP                 (TOS <-> TOS1)
+             118 LOAD_CONST           (None)
+             120 LOAD_CONST           (None)
+             122 LOAD_CONST           (None)
+             124 PRECALL              2
+             128 CALL                 2
+             138 POP_TOP
+             140 RETURN_VALUE
+             142 PUSH_EXC_INFO
+             144 WITH_EXCEPT_START
+             146 POP_JUMP_FORWARD_IF_TRUE (to 156)
+             148 RERAISE              2
+             150 COPY                 3
+             152 POP_EXCEPT
+             154 RERAISE              1
+         >>  156 POP_TOP
+             158 POP_EXCEPT
+             160 POP_TOP
+             162 POP_TOP
+             164 LOAD_CONST           (None)
+             166 RETURN_VALUE
+
+ExceptionTable:
+  64 to 114 -> 142 [1] lasti
+  142 to 148 -> 150 [3] lasti
+  156 to 156 -> 150 [3] lasti
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        2
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        420
+# Constants:
+#    0: None
+# Names:
+#    0: std
+# Varnames:
+#	self, std
+# Positional arguments:
+#	self, std
+
+420:           0 RESUME               0
+
+421:           2 LOAD_FAST            (std)
+               4 LOAD_FAST            (self)
+               6 STORE_ATTR           (std)
+              16 LOAD_CONST           (None)
+              18 RETURN_VALUE
+
+
+# Method Name:       __call__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        423
+# Constants:
+#    0: None
+#    1: 0
+#    2: 255
+# Names:
+#    0: std
+#    1: np
+#    2: array
+#    3: astype
+#    4: float32
+#    5: random
+#    6: normal
+#    7: shape
+#    8: clip
+#    9: uint8
+#   10: Image
+#   11: fromarray
+# Varnames:
+#	self, img, img_np, noise
+# Positional arguments:
+#	self, img
+# Local variables:
+#    2: img_np
+#    3: noise
+
+423:           0 RESUME               0
+
+424:           2 LOAD_FAST            (self)
+               4 LOAD_ATTR            (std)
+              14 LOAD_CONST           (0)
+              16 COMPARE_OP           (<=)
+              22 POP_JUMP_FORWARD_IF_FALSE (to 28)
+
+425:          24 LOAD_FAST            (img)
+              26 RETURN_VALUE
+
+426:     >>   28 LOAD_GLOBAL          (NULL + np)
+              40 LOAD_ATTR            (array)
+              50 LOAD_FAST            (img)
+              52 PRECALL              1
+              56 CALL                 1
+              66 LOAD_METHOD          (astype)
+              88 LOAD_GLOBAL          (np)
+             100 LOAD_ATTR            (float32)
+             110 PRECALL              1
+             114 CALL                 1
+             124 STORE_FAST           (img_np)
+
+427:         126 LOAD_GLOBAL          (np)
+             138 LOAD_ATTR            (random)
+             148 LOAD_METHOD          (normal)
+             170 LOAD_CONST           (0)
+             172 LOAD_FAST            (self)
+             174 LOAD_ATTR            (std)
+             184 LOAD_FAST            (img_np)
+             186 LOAD_ATTR            (shape)
+             196 PRECALL              3
+             200 CALL                 3
+             210 STORE_FAST           (noise)
+
+428:         212 LOAD_FAST            (img_np)
+             214 LOAD_FAST            (noise)
+             216 BINARY_OP            (+)
+             220 STORE_FAST           (img_np)
+
+429:         222 LOAD_GLOBAL          (NULL + np)
+             234 LOAD_ATTR            (clip)
+             244 LOAD_FAST            (img_np)
+             246 LOAD_CONST           (0)
+             248 LOAD_CONST           (255)
+             250 PRECALL              3
+             254 CALL                 3
+             264 LOAD_METHOD          (astype)
+             286 LOAD_GLOBAL          (np)
+             298 LOAD_ATTR            (uint8)
+             308 PRECALL              1
+             312 CALL                 1
+             322 STORE_FAST           (img_np)
+
+430:         324 LOAD_GLOBAL          (NULL + Image)
+             336 LOAD_ATTR            (fromarray)
+             346 LOAD_FAST            (img_np)
+             348 PRECALL              1
+             352 CALL                 1
+             362 RETURN_VALUE
+
+
+# Method Name:       __repr__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        432
+# Constants:
+#    0: None
+#    1: '(std={0})'
+# Names:
+#    0: __class__
+#    1: __name__
+#    2: format
+#    3: std
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+
+432:           0 RESUME               0
+
+433:           2 LOAD_FAST            (self)
+               4 LOAD_ATTR            (__class__)
+              14 LOAD_ATTR            (__name__)
+              24 LOAD_CONST           ("(std={0})")
+              26 LOAD_METHOD          (format)
+              48 LOAD_FAST            (self)
+              50 LOAD_ATTR            (std)
+              60 PRECALL              1
+              64 CALL                 1
+              74 BINARY_OP            (+)
+              78 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        3
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        181
+# Constants:
+#    0: None
+#    1: 'L'
+# Names:
+#    0: convert
+# Varnames:
+#	x
+# Positional arguments:
+#	x
+
+181:           0 RESUME               0
+               2 LOAD_FAST            (x)
+               4 LOAD_METHOD          (convert)
+              26 LOAD_CONST           ("L")
+              28 PRECALL              1
+              32 CALL                 1
+              42 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        6
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        197
+# Constants:
+#    0: None
+#    1: 0.9
+#    2: 1.1
+# Names:
+#    0: ImageEnhance
+#    1: Contrast
+#    2: enhance
+#    3: np
+#    4: random
+#    5: uniform
+# Varnames:
+#	x
+# Positional arguments:
+#	x
+
+197:           0 RESUME               0
+               2 LOAD_GLOBAL          (NULL + ImageEnhance)
+              14 LOAD_ATTR            (Contrast)
+
+198:          24 LOAD_FAST            (x)
+
+197:          26 PRECALL              1
+              30 CALL                 1
+
+198:          40 LOAD_METHOD          (enhance)
+              62 LOAD_GLOBAL          (np)
+              74 LOAD_ATTR            (random)
+              84 LOAD_METHOD          (uniform)
+             106 LOAD_CONST           (0.9)
+             108 LOAD_CONST           (1.1)
+             110 PRECALL              2
+             114 CALL                 2
+             124 PRECALL              1
+             128 CALL                 1
+
+197:         138 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        6
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        227
+# Constants:
+#    0: None
+#    1: 1
+#    2: 0
+#    3: ('interpolation',)
+# Names:
+#    0: transforms
+#    1: Resize
+#    2: size
+#    3: scale_factor
+#    4: InterpolationMode
+#    5: BICUBIC
+# Varnames:
+#	x
+# Positional arguments:
+#	x
+# Free variables:
+#    0: self
+               0 COPY_FREE_VARS       1
+
+227:           2 RESUME               0
+               4 PUSH_NULL
+               6 LOAD_GLOBAL          (NULL + transforms)
+              18 LOAD_ATTR            (Resize)
+
+228:          28 LOAD_FAST            (x)
+              30 LOAD_ATTR            (size)
+              40 LOAD_CONST           (1)
+              42 BINARY_SUBSCR
+              52 LOAD_DEREF           (self)
+              54 LOAD_ATTR            (scale_factor)
+              64 BINARY_OP            (//)
+
+229:          68 LOAD_FAST            (x)
+              70 LOAD_ATTR            (size)
+              80 LOAD_CONST           (0)
+              82 BINARY_SUBSCR
+              92 LOAD_DEREF           (self)
+              94 LOAD_ATTR            (scale_factor)
+             104 BINARY_OP            (//)
+
+228:         108 BUILD_TUPLE          2
+
+230:         110 LOAD_GLOBAL          (InterpolationMode)
+             122 LOAD_ATTR            (BICUBIC)
+
+227:         132 KW_NAMES             (('interpolation',))
+             134 PRECALL              2
+             138 CALL                 2
+
+231:         148 LOAD_FAST            (x)
+
+227:         150 PRECALL              1
+             154 CALL                 1
+             164 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        10
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        293
+# Constants:
+#    0: 'L'
+#    1: 3
+# Names:
+#    0: min
+#    1: np
+#    2: array
+#    3: Image
+#    4: open
+#    5: hr_files
+#    6: convert
+#    7: shape
+# Varnames:
+#	.0, i
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: i
+# Free variables:
+#    0: self
+               0 COPY_FREE_VARS       1
+
+293:           2 RESUME               0
+               4 BUILD_LIST           0
+               6 LOAD_FAST            (.0)
+               8 FOR_ITER             (to 198)
+
+294:          10 STORE_FAST           (i)
+
+295:          12 LOAD_GLOBAL          (NULL + min)
+              24 LOAD_GLOBAL          (NULL + np)
+              36 LOAD_ATTR            (array)
+              46 LOAD_GLOBAL          (NULL + Image)
+              58 LOAD_ATTR            (open)
+              68 LOAD_DEREF           (self)
+              70 LOAD_ATTR            (hr_files)
+              80 LOAD_FAST            (i)
+              82 BINARY_SUBSCR
+              92 PRECALL              1
+              96 CALL                 1
+             106 LOAD_METHOD          (convert)
+             128 LOAD_CONST           ("L")
+             130 PRECALL              1
+             134 CALL                 1
+             144 PRECALL              1
+             148 CALL                 1
+             158 LOAD_ATTR            (shape)
+             168 PRECALL              1
+             172 CALL                 1
+             182 LOAD_CONST           (3)
+             184 COMPARE_OP           (>=)
+             190 POP_JUMP_BACKWARD_IF_FALSE (to 8)
+
+294:         192 LOAD_FAST            (i)
+
+295:         194 LIST_APPEND          2
+             196 JUMP_BACKWARD        (to 8)
+         >>  198 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/deeplesions.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        7
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        411
+# Constants:
+#    0: 0
+# Names:
+#    0: os
+#    1: path
+#    2: splitext
+#    3: basename
+# Varnames:
+#	.0, f
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: f
+
+411:           0 RESUME               0
+               2 BUILD_LIST           0
+               4 LOAD_FAST            (.0)
+               6 FOR_ITER             (to 144)
+               8 STORE_FAST           (f)
+              10 LOAD_GLOBAL          (os)
+              22 LOAD_ATTR            (path)
+              32 LOAD_METHOD          (splitext)
+              54 LOAD_GLOBAL          (os)
+              66 LOAD_ATTR            (path)
+              76 LOAD_METHOD          (basename)
+              98 LOAD_FAST            (f)
+             100 PRECALL              1
+             104 CALL                 1
+             114 PRECALL              1
+             118 CALL                 1
+             128 LOAD_CONST           (0)
+             130 BINARY_SUBSCR
+             140 LIST_APPEND          2
+             142 JUMP_BACKWARD        (to 6)
+         >>  144 RETURN_VALUE
+

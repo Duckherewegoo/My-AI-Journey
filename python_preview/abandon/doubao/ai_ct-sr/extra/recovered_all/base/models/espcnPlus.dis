@@ -1,0 +1,2434 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/__pycache__/espcnPlus.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.810129
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1766562238 (2025-12-24 15:43:58)
+# Source code size mod 2**32: 10262 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        6
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    ESPCN 网络结构 - 优化版\n    改进点：模块化设计、现代组件、灵活配置、性能优化\n'
+#    1: 0
+#    2: None
+#    3: ('List', 'Optional', 'Union')
+#    4: <code object EnhancedConv2d at 0x7fde73f2b110, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 13>
+#    5: 'EnhancedConv2d'
+#    6: <code object SELayer at 0x7fde73ee7870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 81>
+#    7: 'SELayer'
+#    8: <code object ResidualBlock at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 101>
+#    9: 'ResidualBlock'
+#   10: <code object ESPCN at 0x7fde73f18fa0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 117>
+#   11: 'ESPCN'
+#   12: <code object ESPCNPlus at 0x7fde73f16a30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 233>
+#   13: 'ESPCNPlus'
+#   14: <code object ESPCN_x2 at 0x7fde73f17670, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 277>
+#   15: <code object ESPCN_x4 at 0x7fde73f17130, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 280>
+#   16: <code object ESPCN_x8 at 0x7fde73f16170, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 283>
+#   17: <code object ESPCN_heavy at 0x7fde73f16f70, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 286>
+#   18: <code object ESPCN_light at 0x7fde73f17050, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 290>
+#   19: '__main__'
+#   20: 1
+#   21: ('in_channels',)
+#   22: 'ESPCN-x4 参数量: '
+#   23: ','
+#   24: 32
+#   25: '输入尺寸: '
+#   26: ', 输出尺寸: '
+#   27: 'ESPCN-heavy 参数量: '
+#   28: 'ESPCN-light 参数量: '
+# Names:
+#    0: __doc__
+#    1: torch
+#    2: torch.nn
+#    3: nn
+#    4: torch.nn.functional
+#    5: functional
+#    6: F
+#    7: math
+#    8: typing
+#    9: List
+#   10: Optional
+#   11: Union
+#   12: Module
+#   13: EnhancedConv2d
+#   14: SELayer
+#   15: ResidualBlock
+#   16: ESPCN
+#   17: ESPCNPlus
+#   18: ESPCN_x2
+#   19: ESPCN_x4
+#   20: ESPCN_x8
+#   21: ESPCN_heavy
+#   22: ESPCN_light
+#   23: __name__
+#   24: model
+#   25: print
+#   26: get_parameter_count
+#   27: randn
+#   28: x
+#   29: y
+#   30: shape
+#   31: heavy_model
+#   32: light_model
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    ESPCN 网络结构 - 优化版\n    改进点：模块化设计、现代组件、灵活配置、性能优化\n")
+               4 STORE_NAME           (__doc__)
+
+  6:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torch)
+              12 STORE_NAME           (torch)
+
+  7:          14 LOAD_CONST           (0)
+              16 LOAD_CONST           (None)
+              18 IMPORT_NAME          (torch.nn)
+              20 IMPORT_FROM          (nn)
+              22 STORE_NAME           (nn)
+              24 POP_TOP
+
+  8:          26 LOAD_CONST           (0)
+              28 LOAD_CONST           (None)
+              30 IMPORT_NAME          (torch.nn.functional)
+              32 IMPORT_FROM          (nn)
+              34 SWAP                 (TOS <-> TOS1)
+              36 POP_TOP
+              38 IMPORT_FROM          (functional)
+              40 STORE_NAME           (F)
+              42 POP_TOP
+
+  9:          44 LOAD_CONST           (0)
+              46 LOAD_CONST           (None)
+              48 IMPORT_NAME          (math)
+              50 STORE_NAME           (math)
+
+ 10:          52 LOAD_CONST           (0)
+              54 LOAD_CONST           (('List', 'Optional', 'Union'))
+              56 IMPORT_NAME          (typing)
+              58 IMPORT_FROM          (List)
+              60 STORE_NAME           (List)
+              62 IMPORT_FROM          (Optional)
+              64 STORE_NAME           (Optional)
+              66 IMPORT_FROM          (Union)
+              68 STORE_NAME           (Union)
+              70 POP_TOP
+
+ 13:          72 PUSH_NULL
+              74 LOAD_BUILD_CLASS
+              76 LOAD_CONST           (<code object EnhancedConv2d at 0x7fde73f2b110, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 13>)
+              78 MAKE_FUNCTION        (No arguments)
+              80 LOAD_CONST           ("EnhancedConv2d")
+              82 LOAD_NAME            (nn)
+              84 LOAD_ATTR            (Module)
+              94 PRECALL              3
+              98 CALL                 3
+             108 STORE_NAME           (EnhancedConv2d)
+
+ 81:         110 PUSH_NULL
+             112 LOAD_BUILD_CLASS
+             114 LOAD_CONST           (<code object SELayer at 0x7fde73ee7870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 81>)
+             116 MAKE_FUNCTION        (No arguments)
+             118 LOAD_CONST           ("SELayer")
+             120 LOAD_NAME            (nn)
+             122 LOAD_ATTR            (Module)
+             132 PRECALL              3
+             136 CALL                 3
+             146 STORE_NAME           (SELayer)
+
+101:         148 PUSH_NULL
+             150 LOAD_BUILD_CLASS
+             152 LOAD_CONST           (<code object ResidualBlock at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 101>)
+             154 MAKE_FUNCTION        (No arguments)
+             156 LOAD_CONST           ("ResidualBlock")
+             158 LOAD_NAME            (nn)
+             160 LOAD_ATTR            (Module)
+             170 PRECALL              3
+             174 CALL                 3
+             184 STORE_NAME           (ResidualBlock)
+
+117:         186 PUSH_NULL
+             188 LOAD_BUILD_CLASS
+             190 LOAD_CONST           (<code object ESPCN at 0x7fde73f18fa0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 117>)
+             192 MAKE_FUNCTION        (No arguments)
+             194 LOAD_CONST           ("ESPCN")
+             196 LOAD_NAME            (nn)
+             198 LOAD_ATTR            (Module)
+             208 PRECALL              3
+             212 CALL                 3
+             222 STORE_NAME           (ESPCN)
+
+233:         224 PUSH_NULL
+             226 LOAD_BUILD_CLASS
+             228 LOAD_CONST           (<code object ESPCNPlus at 0x7fde73f16a30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 233>)
+             230 MAKE_FUNCTION        (No arguments)
+             232 LOAD_CONST           ("ESPCNPlus")
+             234 LOAD_NAME            (ESPCN)
+             236 PRECALL              3
+             240 CALL                 3
+             250 STORE_NAME           (ESPCNPlus)
+
+277:         252 LOAD_CONST           (<code object ESPCN_x2 at 0x7fde73f17670, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 277>)
+             254 MAKE_FUNCTION        (No arguments)
+             256 STORE_NAME           (ESPCN_x2)
+
+280:         258 LOAD_CONST           (<code object ESPCN_x4 at 0x7fde73f17130, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 280>)
+             260 MAKE_FUNCTION        (No arguments)
+             262 STORE_NAME           (ESPCN_x4)
+
+283:         264 LOAD_CONST           (<code object ESPCN_x8 at 0x7fde73f16170, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 283>)
+             266 MAKE_FUNCTION        (No arguments)
+             268 STORE_NAME           (ESPCN_x8)
+
+286:         270 LOAD_CONST           (<code object ESPCN_heavy at 0x7fde73f16f70, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 286>)
+             272 MAKE_FUNCTION        (No arguments)
+             274 STORE_NAME           (ESPCN_heavy)
+
+290:         276 LOAD_CONST           (<code object ESPCN_light at 0x7fde73f17050, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 290>)
+             278 MAKE_FUNCTION        (No arguments)
+             280 STORE_NAME           (ESPCN_light)
+
+296:         282 LOAD_NAME            (__name__)
+             284 LOAD_CONST           ("__main__")
+             286 COMPARE_OP           (==)
+             292 POP_JUMP_FORWARD_IF_FALSE (to 674)
+
+298:         294 PUSH_NULL
+             296 LOAD_NAME            (ESPCN_x4)
+             298 LOAD_CONST           (1)
+             300 KW_NAMES             (('in_channels',))
+             302 PRECALL              1
+             306 CALL                 1
+             316 STORE_NAME           (model)
+
+299:         318 PUSH_NULL
+             320 LOAD_NAME            (print)
+             322 LOAD_CONST           ("ESPCN-x4 参数量: ")
+             324 LOAD_NAME            (model)
+             326 LOAD_METHOD          (get_parameter_count)
+             348 PRECALL              0
+             352 CALL                 0
+             362 LOAD_CONST           (",")
+             364 FORMAT_VALUE         4
+             366 BUILD_STRING         2
+             368 PRECALL              1
+             372 CALL                 1
+             382 POP_TOP
+
+302:         384 PUSH_NULL
+             386 LOAD_NAME            (torch)
+             388 LOAD_ATTR            (randn)
+             398 LOAD_CONST           (1)
+             400 LOAD_CONST           (1)
+             402 LOAD_CONST           (32)
+             404 LOAD_CONST           (32)
+             406 PRECALL              4
+             410 CALL                 4
+             420 STORE_NAME           (x)
+
+303:         422 PUSH_NULL
+             424 LOAD_NAME            (model)
+             426 LOAD_NAME            (x)
+             428 PRECALL              1
+             432 CALL                 1
+             442 STORE_NAME           (y)
+
+304:         444 PUSH_NULL
+             446 LOAD_NAME            (print)
+             448 LOAD_CONST           ("输入尺寸: ")
+             450 LOAD_NAME            (x)
+             452 LOAD_ATTR            (shape)
+             462 FORMAT_VALUE         0
+             464 LOAD_CONST           (", 输出尺寸: ")
+             466 LOAD_NAME            (y)
+             468 LOAD_ATTR            (shape)
+             478 FORMAT_VALUE         0
+             480 BUILD_STRING         4
+             482 PRECALL              1
+             486 CALL                 1
+             496 POP_TOP
+
+307:         498 PUSH_NULL
+             500 LOAD_NAME            (ESPCN_heavy)
+             502 PRECALL              0
+             506 CALL                 0
+             516 STORE_NAME           (heavy_model)
+
+308:         518 PUSH_NULL
+             520 LOAD_NAME            (print)
+             522 LOAD_CONST           ("ESPCN-heavy 参数量: ")
+             524 LOAD_NAME            (heavy_model)
+             526 LOAD_METHOD          (get_parameter_count)
+             548 PRECALL              0
+             552 CALL                 0
+             562 LOAD_CONST           (",")
+             564 FORMAT_VALUE         4
+             566 BUILD_STRING         2
+             568 PRECALL              1
+             572 CALL                 1
+             582 POP_TOP
+
+310:         584 PUSH_NULL
+             586 LOAD_NAME            (ESPCN_light)
+             588 PRECALL              0
+             592 CALL                 0
+             602 STORE_NAME           (light_model)
+
+311:         604 PUSH_NULL
+             606 LOAD_NAME            (print)
+             608 LOAD_CONST           ("ESPCN-light 参数量: ")
+             610 LOAD_NAME            (light_model)
+             612 LOAD_METHOD          (get_parameter_count)
+             634 PRECALL              0
+             638 CALL                 0
+             648 LOAD_CONST           (",")
+             650 FORMAT_VALUE         4
+             652 BUILD_STRING         2
+             654 PRECALL              1
+             658 CALL                 1
+             668 POP_TOP
+             670 LOAD_CONST           (None)
+             672 RETURN_VALUE
+
+296:     >>  674 LOAD_CONST           (None)
+             676 RETURN_VALUE
+
+
+# Method Name:       EnhancedConv2d
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        15
+# Flags:             0x00000000 (0x0)
+# First Line:        13
+# Constants:
+#    0: 'EnhancedConv2d'
+#    1: '增强的卷积模块，包含多种现代优化'
+#    2: 3
+#    3: 'relu'
+#    4: True
+#    5: False
+#    6: 0.0
+#    7: 'in_channels'
+#    8: 'out_channels'
+#    9: 'kernel_size'
+#   10: 'activation'
+#   11: 'use_bn'
+#   12: 'use_se'
+#   13: 'dropout'
+#   14: <code object __init__ at 0x55c3604d2010, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 16>
+#   15: <code object _initialize_weights at 0x55c3604c74f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 66>
+#   16: <code object forward at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 77>
+#   17: (3, 'relu', True, False, 0.0)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: int
+#    5: str
+#    6: bool
+#    7: float
+#    8: __init__
+#    9: _initialize_weights
+#   10: forward
+#   11: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 13:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("EnhancedConv2d")
+              10 STORE_NAME           (__qualname__)
+
+ 14:          12 LOAD_CONST           ("增强的卷积模块，包含多种现代优化")
+              14 STORE_NAME           (__doc__)
+
+ 19:          16 NOP
+
+ 20:          18 NOP
+
+ 21:          20 NOP
+
+ 22:          22 NOP
+
+ 23:          24 NOP
+
+ 16:          26 LOAD_CONST           ((3, 'relu', True, False, 0.0))
+              28 LOAD_CONST           ("in_channels")
+
+ 17:          30 LOAD_NAME            (int)
+
+ 16:          32 LOAD_CONST           ("out_channels")
+
+ 18:          34 LOAD_NAME            (int)
+
+ 16:          36 LOAD_CONST           ("kernel_size")
+
+ 19:          38 LOAD_NAME            (int)
+
+ 16:          40 LOAD_CONST           ("activation")
+
+ 20:          42 LOAD_NAME            (str)
+
+ 16:          44 LOAD_CONST           ("use_bn")
+
+ 21:          46 LOAD_NAME            (bool)
+
+ 16:          48 LOAD_CONST           ("use_se")
+
+ 22:          50 LOAD_NAME            (bool)
+
+ 16:          52 LOAD_CONST           ("dropout")
+
+ 23:          54 LOAD_NAME            (float)
+
+ 16:          56 BUILD_TUPLE          14
+              58 LOAD_CLOSURE         (__class__)
+              60 BUILD_TUPLE          1
+              62 LOAD_CONST           (<code object __init__ at 0x55c3604d2010, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 16>)
+              64 MAKE_FUNCTION        (default, annotation, closure)
+              66 STORE_NAME           (__init__)
+
+ 66:          68 LOAD_CONST           (<code object _initialize_weights at 0x55c3604c74f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 66>)
+              70 MAKE_FUNCTION        (No arguments)
+              72 STORE_NAME           (_initialize_weights)
+
+ 77:          74 LOAD_CONST           (<code object forward at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 77>)
+              76 MAKE_FUNCTION        (No arguments)
+              78 STORE_NAME           (forward)
+              80 LOAD_CLOSURE         (__class__)
+              82 COPY                 1
+              84 STORE_NAME           (__classcell__)
+              86 RETURN_VALUE
+
+
+# Method Name:       SELayer
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        81
+# Constants:
+#    0: 'SELayer'
+#    1: 'Squeeze-and-Excitation 注意力模块'
+#    2: 16
+#    3: <code object __init__ at 0x55c3604d1b60, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 84>
+#    4: <code object forward at 0x7fde73f3c3d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 94>
+#    5: (16,)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: __init__
+#    5: forward
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 81:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("SELayer")
+              10 STORE_NAME           (__qualname__)
+
+ 82:          12 LOAD_CONST           ("Squeeze-and-Excitation 注意力模块")
+              14 STORE_NAME           (__doc__)
+
+ 84:          16 LOAD_CONST           ((16,))
+              18 LOAD_CLOSURE         (__class__)
+              20 BUILD_TUPLE          1
+              22 LOAD_CONST           (<code object __init__ at 0x55c3604d1b60, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 84>)
+              24 MAKE_FUNCTION        (default, closure)
+              26 STORE_NAME           (__init__)
+
+ 94:          28 LOAD_CONST           (<code object forward at 0x7fde73f3c3d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 94>)
+              30 MAKE_FUNCTION        (No arguments)
+              32 STORE_NAME           (forward)
+              34 LOAD_CLOSURE         (__class__)
+              36 COPY                 1
+              38 STORE_NAME           (__classcell__)
+              40 RETURN_VALUE
+
+
+# Method Name:       ResidualBlock
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        101
+# Constants:
+#    0: 'ResidualBlock'
+#    1: '残差块，可选用于构建更深网络'
+#    2: 3
+#    3: 'relu'
+#    4: <code object __init__ at 0x7fde73fa2870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 104>
+#    5: <code object forward at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 109>
+#    6: (3, 'relu')
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: __init__
+#    5: forward
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+101:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("ResidualBlock")
+              10 STORE_NAME           (__qualname__)
+
+102:          12 LOAD_CONST           ("残差块，可选用于构建更深网络")
+              14 STORE_NAME           (__doc__)
+
+104:          16 LOAD_CONST           ((3, 'relu'))
+              18 LOAD_CLOSURE         (__class__)
+              20 BUILD_TUPLE          1
+              22 LOAD_CONST           (<code object __init__ at 0x7fde73fa2870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 104>)
+              24 MAKE_FUNCTION        (default, closure)
+              26 STORE_NAME           (__init__)
+
+109:          28 LOAD_CONST           (<code object forward at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 109>)
+              30 MAKE_FUNCTION        (No arguments)
+              32 STORE_NAME           (forward)
+              34 LOAD_CLOSURE         (__class__)
+              36 COPY                 1
+              38 STORE_NAME           (__classcell__)
+              40 RETURN_VALUE
+
+
+# Method Name:       ESPCN
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        17
+# Flags:             0x00000000 (0x0)
+# First Line:        117
+# Constants:
+#    0: 'ESPCN'
+#    1: '增强版ESPCN超分辨率网络'
+#    2: 4
+#    3: 1
+#    4: 32
+#    5: False
+#    6: 'relu'
+#    7: 0.0
+#    8: 'scale_factor'
+#    9: 'in_channels'
+#   10: 'base_channels'
+#   11: 'num_layers'
+#   12: 'use_residual'
+#   13: 'use_attention'
+#   14: 'activation'
+#   15: 'dropout'
+#   16: <code object __init__ at 0x55c3604b1e30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 120>
+#   17: <code object _build_feature_layers at 0x55c3604a63f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 171>
+#   18: <code object _initialize_weights at 0x55c3604bfbd0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 197>
+#   19: <code object forward at 0x7fde73fa29e0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 213>
+#   20: <code object get_parameter_count at 0x7fde73f2b880, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 228>
+#   21: (4, 1, 32, 4, False, False, 'relu', 0.0)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: int
+#    5: bool
+#    6: str
+#    7: float
+#    8: __init__
+#    9: _build_feature_layers
+#   10: _initialize_weights
+#   11: forward
+#   12: get_parameter_count
+#   13: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+117:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("ESPCN")
+              10 STORE_NAME           (__qualname__)
+
+118:          12 LOAD_CONST           ("增强版ESPCN超分辨率网络")
+              14 STORE_NAME           (__doc__)
+
+121:          16 NOP
+
+122:          18 NOP
+
+123:          20 NOP
+
+124:          22 NOP
+
+125:          24 NOP
+
+126:          26 NOP
+
+127:          28 NOP
+
+128:          30 NOP
+
+120:          32 LOAD_CONST           ((4, 1, 32, 4, False, False, 'relu', 0.0))
+              34 LOAD_CONST           ("scale_factor")
+
+121:          36 LOAD_NAME            (int)
+
+120:          38 LOAD_CONST           ("in_channels")
+
+122:          40 LOAD_NAME            (int)
+
+120:          42 LOAD_CONST           ("base_channels")
+
+123:          44 LOAD_NAME            (int)
+
+120:          46 LOAD_CONST           ("num_layers")
+
+124:          48 LOAD_NAME            (int)
+
+120:          50 LOAD_CONST           ("use_residual")
+
+125:          52 LOAD_NAME            (bool)
+
+120:          54 LOAD_CONST           ("use_attention")
+
+126:          56 LOAD_NAME            (bool)
+
+120:          58 LOAD_CONST           ("activation")
+
+127:          60 LOAD_NAME            (str)
+
+120:          62 LOAD_CONST           ("dropout")
+
+128:          64 LOAD_NAME            (float)
+
+120:          66 BUILD_TUPLE          16
+              68 LOAD_CLOSURE         (__class__)
+              70 BUILD_TUPLE          1
+              72 LOAD_CONST           (<code object __init__ at 0x55c3604b1e30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 120>)
+              74 MAKE_FUNCTION        (default, annotation, closure)
+              76 STORE_NAME           (__init__)
+
+171:          78 LOAD_CONST           (<code object _build_feature_layers at 0x55c3604a63f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 171>)
+              80 MAKE_FUNCTION        (No arguments)
+              82 STORE_NAME           (_build_feature_layers)
+
+197:          84 LOAD_CONST           (<code object _initialize_weights at 0x55c3604bfbd0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 197>)
+              86 MAKE_FUNCTION        (No arguments)
+              88 STORE_NAME           (_initialize_weights)
+
+213:          90 LOAD_CONST           (<code object forward at 0x7fde73fa29e0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 213>)
+              92 MAKE_FUNCTION        (No arguments)
+              94 STORE_NAME           (forward)
+
+228:          96 LOAD_CONST           (<code object get_parameter_count at 0x7fde73f2b880, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 228>)
+              98 MAKE_FUNCTION        (No arguments)
+             100 STORE_NAME           (get_parameter_count)
+             102 LOAD_CLOSURE         (__class__)
+             104 COPY                 1
+             106 STORE_NAME           (__classcell__)
+             108 RETURN_VALUE
+
+
+# Method Name:       ESPCNPlus
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        233
+# Constants:
+#    0: 'ESPCNPlus'
+#    1: 'ESPCN增强版，包含多尺度特征融合'
+#    2: <code object __init__ at 0x7fde73f3c940, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 236>
+#    3: <code object forward at 0x55c3604da780, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 250>
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: __init__
+#    5: forward
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+233:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("ESPCNPlus")
+              10 STORE_NAME           (__qualname__)
+
+234:          12 LOAD_CONST           ("ESPCN增强版，包含多尺度特征融合")
+              14 STORE_NAME           (__doc__)
+
+236:          16 LOAD_CLOSURE         (__class__)
+              18 BUILD_TUPLE          1
+              20 LOAD_CONST           (<code object __init__ at 0x7fde73f3c940, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 236>)
+              22 MAKE_FUNCTION        (closure)
+              24 STORE_NAME           (__init__)
+
+250:          26 LOAD_CONST           (<code object forward at 0x55c3604da780, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 250>)
+              28 MAKE_FUNCTION        (No arguments)
+              30 STORE_NAME           (forward)
+              32 LOAD_CLOSURE         (__class__)
+              34 COPY                 1
+              36 STORE_NAME           (__classcell__)
+              38 RETURN_VALUE
+
+
+# Method Name:       ESPCN_x2
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        7
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        277
+# Constants:
+#    0: None
+#    1: 2
+#    2: 32
+#    3: 4
+#    4: ('scale_factor', 'base_channels', 'num_layers')
+#    5: ()
+# Names:
+#    0: ESPCN
+# Varnames:
+#	kwargs
+# Local variables:
+#    0: kwargs
+
+277:           0 RESUME               0
+
+278:           2 LOAD_GLOBAL          (NULL + ESPCN)
+              14 LOAD_CONST           (())
+              16 LOAD_CONST           (2)
+              18 LOAD_CONST           (32)
+              20 LOAD_CONST           (4)
+              22 LOAD_CONST           (('scale_factor', 'base_channels', 'num_layers'))
+              24 BUILD_CONST_KEY_MAP  3
+              26 LOAD_FAST            (kwargs)
+              28 DICT_MERGE           1
+              30 CALL_FUNCTION_EX     (keyword and positional arguments)
+              32 RETURN_VALUE
+
+
+# Method Name:       ESPCN_x4
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        7
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        280
+# Constants:
+#    0: None
+#    1: 4
+#    2: 32
+#    3: ('scale_factor', 'base_channels', 'num_layers')
+#    4: ()
+# Names:
+#    0: ESPCN
+# Varnames:
+#	kwargs
+# Local variables:
+#    0: kwargs
+
+280:           0 RESUME               0
+
+281:           2 LOAD_GLOBAL          (NULL + ESPCN)
+              14 LOAD_CONST           (())
+              16 LOAD_CONST           (4)
+              18 LOAD_CONST           (32)
+              20 LOAD_CONST           (4)
+              22 LOAD_CONST           (('scale_factor', 'base_channels', 'num_layers'))
+              24 BUILD_CONST_KEY_MAP  3
+              26 LOAD_FAST            (kwargs)
+              28 DICT_MERGE           1
+              30 CALL_FUNCTION_EX     (keyword and positional arguments)
+              32 RETURN_VALUE
+
+
+# Method Name:       ESPCN_x8
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        7
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        283
+# Constants:
+#    0: None
+#    1: 8
+#    2: 64
+#    3: 6
+#    4: ('scale_factor', 'base_channels', 'num_layers')
+#    5: ()
+# Names:
+#    0: ESPCN
+# Varnames:
+#	kwargs
+# Local variables:
+#    0: kwargs
+
+283:           0 RESUME               0
+
+284:           2 LOAD_GLOBAL          (NULL + ESPCN)
+              14 LOAD_CONST           (())
+              16 LOAD_CONST           (8)
+              18 LOAD_CONST           (64)
+              20 LOAD_CONST           (6)
+              22 LOAD_CONST           (('scale_factor', 'base_channels', 'num_layers'))
+              24 BUILD_CONST_KEY_MAP  3
+              26 LOAD_FAST            (kwargs)
+              28 DICT_MERGE           1
+              30 CALL_FUNCTION_EX     (keyword and positional arguments)
+              32 RETURN_VALUE
+
+
+# Method Name:       ESPCN_heavy
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        9
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        286
+# Constants:
+#    0: None
+#    1: 4
+#    2: 64
+#    3: 8
+#    4: True
+#    5: ('scale_factor', 'base_channels', 'num_layers', 'use_residual', 'use_attention')
+#    6: ()
+# Names:
+#    0: ESPCN
+# Varnames:
+#	kwargs
+# Local variables:
+#    0: kwargs
+
+286:           0 RESUME               0
+
+287:           2 LOAD_GLOBAL          (NULL + ESPCN)
+              14 LOAD_CONST           (())
+              16 LOAD_CONST           (4)
+              18 LOAD_CONST           (64)
+              20 LOAD_CONST           (8)
+
+288:          22 LOAD_CONST           (True)
+              24 LOAD_CONST           (True)
+
+287:          26 LOAD_CONST           (('scale_factor', 'base_channels', 'num_layers', 'use_residual', 'use_attention'))
+              28 BUILD_CONST_KEY_MAP  5
+
+288:          30 LOAD_FAST            (kwargs)
+
+287:          32 DICT_MERGE           1
+              34 CALL_FUNCTION_EX     (keyword and positional arguments)
+              36 RETURN_VALUE
+
+
+# Method Name:       ESPCN_light
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        9
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        290
+# Constants:
+#    0: None
+#    1: 4
+#    2: 16
+#    3: 3
+#    4: False
+#    5: ('scale_factor', 'base_channels', 'num_layers', 'use_residual', 'use_attention')
+#    6: ()
+# Names:
+#    0: ESPCN
+# Varnames:
+#	kwargs
+# Local variables:
+#    0: kwargs
+
+290:           0 RESUME               0
+
+291:           2 LOAD_GLOBAL          (NULL + ESPCN)
+              14 LOAD_CONST           (())
+              16 LOAD_CONST           (4)
+              18 LOAD_CONST           (16)
+              20 LOAD_CONST           (3)
+
+292:          22 LOAD_CONST           (False)
+              24 LOAD_CONST           (False)
+
+291:          26 LOAD_CONST           (('scale_factor', 'base_channels', 'num_layers', 'use_residual', 'use_attention'))
+              28 BUILD_CONST_KEY_MAP  5
+
+292:          30 LOAD_FAST            (kwargs)
+
+291:          32 DICT_MERGE           1
+              34 CALL_FUNCTION_EX     (keyword and positional arguments)
+              36 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    8
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  10
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        16
+# Constants:
+#    0: None
+#    1: 2
+#    2: 1
+#    3: '核大小应为奇数以确保对称填充'
+#    4: ('relu', 'leaky_relu', 'prelu', 'gelu', 'none')
+#    5: '不支持的激活函数'
+#    6: ('padding', 'bias')
+#    7: 'none'
+#    8: 'relu'
+#    9: True
+#   10: ('inplace',)
+#   11: 'leaky_relu'
+#   12: 0.2
+#   13: 'prelu'
+#   14: ('num_parameters',)
+#   15: 'gelu'
+#   16: 16
+#   17: ('reduction',)
+#   18: 0
+# Names:
+#    0: super
+#    1: EnhancedConv2d
+#    2: __init__
+#    3: nn
+#    4: Conv2d
+#    5: append
+#    6: BatchNorm2d
+#    7: ReLU
+#    8: LeakyReLU
+#    9: PReLU
+#   10: GELU
+#   11: SELayer
+#   12: Dropout2d
+#   13: Sequential
+#   14: layers
+#   15: _initialize_weights
+# Varnames:
+#	self, in_channels, out_channels, kernel_size, activation, use_bn, use_se, dropout, padding, layers
+# Positional arguments:
+#	self, in_channels, out_channels, kernel_size, activation, use_bn, use_se, dropout
+# Local variables:
+#    8: padding
+#    9: layers
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 16:           2 RESUME               0
+
+ 24:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (EnhancedConv2d)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 27:          82 LOAD_FAST            (kernel_size)
+              84 LOAD_CONST           (2)
+              86 BINARY_OP            (%)
+              90 LOAD_CONST           (1)
+              92 COMPARE_OP           (==)
+              98 POP_JUMP_FORWARD_IF_TRUE (to 120)
+             100 LOAD_ASSERTION_ERROR
+             102 LOAD_CONST           ("核大小应为奇数以确保对称填充")
+             104 PRECALL              0
+             108 CALL                 0
+             118 RAISE_VARARGS        (exception instance)
+
+ 28:     >>  120 LOAD_FAST            (activation)
+             122 LOAD_CONST           (('relu', 'leaky_relu', 'prelu', 'gelu', 'none'))
+             124 CONTAINS_OP          (in)
+             126 POP_JUMP_FORWARD_IF_TRUE (to 148)
+             128 LOAD_ASSERTION_ERROR
+             130 LOAD_CONST           ("不支持的激活函数")
+             132 PRECALL              0
+             136 CALL                 0
+             146 RAISE_VARARGS        (exception instance)
+
+ 30:     >>  148 LOAD_FAST            (kernel_size)
+             150 LOAD_CONST           (2)
+             152 BINARY_OP            (//)
+             156 STORE_FAST           (padding)
+
+ 34:         158 LOAD_GLOBAL          (NULL + nn)
+             170 LOAD_ATTR            (Conv2d)
+             180 LOAD_FAST            (in_channels)
+             182 LOAD_FAST            (out_channels)
+             184 LOAD_FAST            (kernel_size)
+
+ 35:         186 LOAD_FAST            (padding)
+             188 LOAD_FAST            (use_bn)
+             190 UNARY_NOT
+
+ 34:         192 KW_NAMES             (('padding', 'bias'))
+             194 PRECALL              5
+             198 CALL                 5
+
+ 33:         208 BUILD_LIST           1
+             210 STORE_FAST           (layers)
+
+ 39:         212 LOAD_FAST            (use_bn)
+             214 POP_JUMP_FORWARD_IF_FALSE (to 294)
+
+ 40:         216 LOAD_FAST            (layers)
+             218 LOAD_METHOD          (append)
+             240 LOAD_GLOBAL          (NULL + nn)
+             252 LOAD_ATTR            (BatchNorm2d)
+             262 LOAD_FAST            (out_channels)
+             264 PRECALL              1
+             268 CALL                 1
+             278 PRECALL              1
+             282 CALL                 1
+             292 POP_TOP
+
+ 43:     >>  294 LOAD_FAST            (activation)
+             296 LOAD_CONST           ("none")
+             298 COMPARE_OP           (!=)
+             304 POP_JUMP_FORWARD_IF_FALSE (to 678)
+
+ 44:         306 LOAD_FAST            (activation)
+             308 LOAD_CONST           ("relu")
+             310 COMPARE_OP           (==)
+             316 POP_JUMP_FORWARD_IF_FALSE (to 400)
+
+ 45:         318 LOAD_FAST            (layers)
+             320 LOAD_METHOD          (append)
+             342 LOAD_GLOBAL          (NULL + nn)
+             354 LOAD_ATTR            (ReLU)
+             364 LOAD_CONST           (True)
+             366 KW_NAMES             (('inplace',))
+             368 PRECALL              1
+             372 CALL                 1
+             382 PRECALL              1
+             386 CALL                 1
+             396 POP_TOP
+             398 JUMP_FORWARD         (to 678)
+
+ 46:     >>  400 LOAD_FAST            (activation)
+             402 LOAD_CONST           ("leaky_relu")
+             404 COMPARE_OP           (==)
+             410 POP_JUMP_FORWARD_IF_FALSE (to 496)
+
+ 47:         412 LOAD_FAST            (layers)
+             414 LOAD_METHOD          (append)
+             436 LOAD_GLOBAL          (NULL + nn)
+             448 LOAD_ATTR            (LeakyReLU)
+             458 LOAD_CONST           (0.2)
+             460 LOAD_CONST           (True)
+             462 KW_NAMES             (('inplace',))
+             464 PRECALL              2
+             468 CALL                 2
+             478 PRECALL              1
+             482 CALL                 1
+             492 POP_TOP
+             494 JUMP_FORWARD         (to 678)
+
+ 48:     >>  496 LOAD_FAST            (activation)
+             498 LOAD_CONST           ("prelu")
+             500 COMPARE_OP           (==)
+             506 POP_JUMP_FORWARD_IF_FALSE (to 590)
+
+ 49:         508 LOAD_FAST            (layers)
+             510 LOAD_METHOD          (append)
+             532 LOAD_GLOBAL          (NULL + nn)
+             544 LOAD_ATTR            (PReLU)
+             554 LOAD_FAST            (out_channels)
+             556 KW_NAMES             (('num_parameters',))
+             558 PRECALL              1
+             562 CALL                 1
+             572 PRECALL              1
+             576 CALL                 1
+             586 POP_TOP
+             588 JUMP_FORWARD         (to 678)
+
+ 50:     >>  590 LOAD_FAST            (activation)
+             592 LOAD_CONST           ("gelu")
+             594 COMPARE_OP           (==)
+             600 POP_JUMP_FORWARD_IF_FALSE (to 678)
+
+ 51:         602 LOAD_FAST            (layers)
+             604 LOAD_METHOD          (append)
+             626 LOAD_GLOBAL          (NULL + nn)
+             638 LOAD_ATTR            (GELU)
+             648 PRECALL              0
+             652 CALL                 0
+             662 PRECALL              1
+             666 CALL                 1
+             676 POP_TOP
+
+ 54:     >>  678 LOAD_FAST            (use_se)
+             680 POP_JUMP_FORWARD_IF_FALSE (to 754)
+
+ 55:         682 LOAD_FAST            (layers)
+             684 LOAD_METHOD          (append)
+             706 LOAD_GLOBAL          (NULL + SELayer)
+             718 LOAD_FAST            (out_channels)
+             720 LOAD_CONST           (16)
+             722 KW_NAMES             (('reduction',))
+             724 PRECALL              2
+             728 CALL                 2
+             738 PRECALL              1
+             742 CALL                 1
+             752 POP_TOP
+
+ 58:     >>  754 LOAD_FAST            (dropout)
+             756 LOAD_CONST           (0)
+             758 COMPARE_OP           (>)
+             764 POP_JUMP_FORWARD_IF_FALSE (to 844)
+
+ 59:         766 LOAD_FAST            (layers)
+             768 LOAD_METHOD          (append)
+             790 LOAD_GLOBAL          (NULL + nn)
+             802 LOAD_ATTR            (Dropout2d)
+             812 LOAD_FAST            (dropout)
+             814 PRECALL              1
+             818 CALL                 1
+             828 PRECALL              1
+             832 CALL                 1
+             842 POP_TOP
+
+ 61:     >>  844 LOAD_GLOBAL          (NULL + nn)
+             856 LOAD_ATTR            (Sequential)
+             866 LOAD_FAST            (layers)
+             868 CALL_FUNCTION_EX     (positional arguments only)
+             870 LOAD_FAST            (self)
+             872 STORE_ATTR           (layers)
+
+ 64:         882 LOAD_FAST            (self)
+             884 LOAD_METHOD          (_initialize_weights)
+             906 PRECALL              0
+             910 CALL                 0
+             920 POP_TOP
+             922 LOAD_CONST           (None)
+             924 RETURN_VALUE
+
+
+# Method Name:       _initialize_weights
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        66
+# Constants:
+#    0: '权重初始化'
+#    1: 'fan_out'
+#    2: 'relu'
+#    3: ('mode', 'nonlinearity')
+#    4: None
+#    5: 0
+#    6: 1
+# Names:
+#    0: layers
+#    1: isinstance
+#    2: nn
+#    3: Conv2d
+#    4: init
+#    5: kaiming_normal_
+#    6: weight
+#    7: bias
+#    8: constant_
+#    9: BatchNorm2d
+# Varnames:
+#	self, m
+# Positional arguments:
+#	self
+# Local variables:
+#    1: m
+
+ 66:           0 RESUME               0
+
+ 68:           2 LOAD_FAST            (self)
+               4 LOAD_ATTR            (layers)
+              14 GET_ITER
+              16 FOR_ITER             (to 442)
+              18 STORE_FAST           (m)
+
+ 69:          20 LOAD_GLOBAL          (NULL + isinstance)
+              32 LOAD_FAST            (m)
+              34 LOAD_GLOBAL          (nn)
+              46 LOAD_ATTR            (Conv2d)
+              56 PRECALL              2
+              60 CALL                 2
+              70 POP_JUMP_FORWARD_IF_FALSE (to 240)
+
+ 70:          72 LOAD_GLOBAL          (nn)
+              84 LOAD_ATTR            (init)
+              94 LOAD_METHOD          (kaiming_normal_)
+             116 LOAD_FAST            (m)
+             118 LOAD_ATTR            (weight)
+             128 LOAD_CONST           ("fan_out")
+             130 LOAD_CONST           ("relu")
+             132 KW_NAMES             (('mode', 'nonlinearity'))
+             134 PRECALL              3
+             138 CALL                 3
+             148 POP_TOP
+
+ 71:         150 LOAD_FAST            (m)
+             152 LOAD_ATTR            (bias)
+             162 POP_JUMP_FORWARD_IF_NONE (to 238)
+
+ 72:         164 LOAD_GLOBAL          (nn)
+             176 LOAD_ATTR            (init)
+             186 LOAD_METHOD          (constant_)
+             208 LOAD_FAST            (m)
+             210 LOAD_ATTR            (bias)
+             220 LOAD_CONST           (0)
+             222 PRECALL              2
+             226 CALL                 2
+             236 POP_TOP
+         >>  238 JUMP_BACKWARD        (to 16)
+
+ 73:     >>  240 LOAD_GLOBAL          (NULL + isinstance)
+             252 LOAD_FAST            (m)
+             254 LOAD_GLOBAL          (nn)
+             266 LOAD_ATTR            (BatchNorm2d)
+             276 PRECALL              2
+             280 CALL                 2
+             290 POP_JUMP_FORWARD_IF_FALSE (to 440)
+
+ 74:         292 LOAD_GLOBAL          (nn)
+             304 LOAD_ATTR            (init)
+             314 LOAD_METHOD          (constant_)
+             336 LOAD_FAST            (m)
+             338 LOAD_ATTR            (weight)
+             348 LOAD_CONST           (1)
+             350 PRECALL              2
+             354 CALL                 2
+             364 POP_TOP
+
+ 75:         366 LOAD_GLOBAL          (nn)
+             378 LOAD_ATTR            (init)
+             388 LOAD_METHOD          (constant_)
+             410 LOAD_FAST            (m)
+             412 LOAD_ATTR            (bias)
+             422 LOAD_CONST           (0)
+             424 PRECALL              2
+             428 CALL                 2
+             438 POP_TOP
+         >>  440 JUMP_BACKWARD        (to 16)
+
+ 68:     >>  442 LOAD_CONST           (None)
+             444 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        77
+# Constants:
+#    0: None
+# Names:
+#    0: layers
+# Varnames:
+#	self, x
+# Positional arguments:
+#	self, x
+
+ 77:           0 RESUME               0
+
+ 78:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (layers)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        9
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        84
+# Constants:
+#    0: None
+#    1: 1
+#    2: False
+#    3: ('bias',)
+#    4: True
+#    5: ('inplace',)
+# Names:
+#    0: super
+#    1: SELayer
+#    2: __init__
+#    3: nn
+#    4: AdaptiveAvgPool2d
+#    5: avg_pool
+#    6: Sequential
+#    7: Linear
+#    8: ReLU
+#    9: Sigmoid
+#   10: fc
+# Varnames:
+#	self, channel, reduction
+# Positional arguments:
+#	self, channel, reduction
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 84:           2 RESUME               0
+
+ 85:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (SELayer)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 86:          82 LOAD_GLOBAL          (NULL + nn)
+              94 LOAD_ATTR            (AdaptiveAvgPool2d)
+             104 LOAD_CONST           (1)
+             106 PRECALL              1
+             110 CALL                 1
+             120 LOAD_FAST            (self)
+             122 STORE_ATTR           (avg_pool)
+
+ 87:         132 LOAD_GLOBAL          (NULL + nn)
+             144 LOAD_ATTR            (Sequential)
+
+ 88:         154 LOAD_GLOBAL          (NULL + nn)
+             166 LOAD_ATTR            (Linear)
+             176 LOAD_FAST            (channel)
+             178 LOAD_FAST            (channel)
+             180 LOAD_FAST            (reduction)
+             182 BINARY_OP            (//)
+             186 LOAD_CONST           (False)
+             188 KW_NAMES             (('bias',))
+             190 PRECALL              3
+             194 CALL                 3
+
+ 89:         204 LOAD_GLOBAL          (NULL + nn)
+             216 LOAD_ATTR            (ReLU)
+             226 LOAD_CONST           (True)
+             228 KW_NAMES             (('inplace',))
+             230 PRECALL              1
+             234 CALL                 1
+
+ 90:         244 LOAD_GLOBAL          (NULL + nn)
+             256 LOAD_ATTR            (Linear)
+             266 LOAD_FAST            (channel)
+             268 LOAD_FAST            (reduction)
+             270 BINARY_OP            (//)
+             274 LOAD_FAST            (channel)
+             276 LOAD_CONST           (False)
+             278 KW_NAMES             (('bias',))
+             280 PRECALL              3
+             284 CALL                 3
+
+ 91:         294 LOAD_GLOBAL          (NULL + nn)
+             306 LOAD_ATTR            (Sigmoid)
+             316 PRECALL              0
+             320 CALL                 0
+
+ 87:         330 PRECALL              4
+             334 CALL                 4
+             344 LOAD_FAST            (self)
+             346 STORE_ATTR           (fc)
+             356 LOAD_CONST           (None)
+             358 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  6
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        94
+# Constants:
+#    0: None
+#    1: 1
+# Names:
+#    0: size
+#    1: avg_pool
+#    2: view
+#    3: fc
+#    4: expand_as
+# Varnames:
+#	self, x, b, c, _, y
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: b
+#    3: c
+#    4: _
+#    5: y
+
+ 94:           0 RESUME               0
+
+ 95:           2 LOAD_FAST            (x)
+               4 LOAD_METHOD          (size)
+              26 PRECALL              0
+              30 CALL                 0
+              40 UNPACK_SEQUENCE      4
+              44 STORE_FAST           (b)
+              46 STORE_FAST           (c)
+              48 STORE_FAST           (_)
+              50 STORE_FAST           (_)
+
+ 96:          52 LOAD_FAST            (self)
+              54 LOAD_METHOD          (avg_pool)
+              76 LOAD_FAST            (x)
+              78 PRECALL              1
+              82 CALL                 1
+              92 LOAD_METHOD          (view)
+             114 LOAD_FAST            (b)
+             116 LOAD_FAST            (c)
+             118 PRECALL              2
+             122 CALL                 2
+             132 STORE_FAST           (y)
+
+ 97:         134 LOAD_FAST            (self)
+             136 LOAD_METHOD          (fc)
+             158 LOAD_FAST            (y)
+             160 PRECALL              1
+             164 CALL                 1
+             174 LOAD_METHOD          (view)
+             196 LOAD_FAST            (b)
+             198 LOAD_FAST            (c)
+             200 LOAD_CONST           (1)
+             202 LOAD_CONST           (1)
+             204 PRECALL              4
+             208 CALL                 4
+             218 STORE_FAST           (y)
+
+ 98:         220 LOAD_FAST            (x)
+             222 LOAD_FAST            (y)
+             224 LOAD_METHOD          (expand_as)
+             246 LOAD_FAST            (x)
+             248 PRECALL              1
+             252 CALL                 1
+             262 BINARY_OP            (*)
+             266 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    4
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        104
+# Constants:
+#    0: None
+#    1: 'none'
+#    2: ('activation',)
+# Names:
+#    0: super
+#    1: ResidualBlock
+#    2: __init__
+#    3: EnhancedConv2d
+#    4: conv1
+#    5: conv2
+# Varnames:
+#	self, channels, kernel_size, activation
+# Positional arguments:
+#	self, channels, kernel_size, activation
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+104:           2 RESUME               0
+
+105:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (ResidualBlock)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+106:          82 LOAD_GLOBAL          (NULL + EnhancedConv2d)
+              94 LOAD_FAST            (channels)
+              96 LOAD_FAST            (channels)
+              98 LOAD_FAST            (kernel_size)
+             100 LOAD_FAST            (activation)
+             102 PRECALL              4
+             106 CALL                 4
+             116 LOAD_FAST            (self)
+             118 STORE_ATTR           (conv1)
+
+107:         128 LOAD_GLOBAL          (NULL + EnhancedConv2d)
+             140 LOAD_FAST            (channels)
+             142 LOAD_FAST            (channels)
+             144 LOAD_FAST            (kernel_size)
+             146 LOAD_CONST           ("none")
+             148 KW_NAMES             (('activation',))
+             150 PRECALL              4
+             154 CALL                 4
+             164 LOAD_FAST            (self)
+             166 STORE_ATTR           (conv2)
+             176 LOAD_CONST           (None)
+             178 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        109
+# Constants:
+#    0: None
+# Names:
+#    0: conv1
+#    1: conv2
+# Varnames:
+#	self, x, residual, out
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: residual
+#    3: out
+
+109:           0 RESUME               0
+
+110:           2 LOAD_FAST            (x)
+               4 STORE_FAST           (residual)
+
+111:           6 LOAD_FAST            (self)
+               8 LOAD_METHOD          (conv1)
+              30 LOAD_FAST            (x)
+              32 PRECALL              1
+              36 CALL                 1
+              46 STORE_FAST           (out)
+
+112:          48 LOAD_FAST            (self)
+              50 LOAD_METHOD          (conv2)
+              72 LOAD_FAST            (out)
+              74 PRECALL              1
+              78 CALL                 1
+              88 STORE_FAST           (out)
+
+113:          90 LOAD_FAST            (out)
+              92 LOAD_FAST            (residual)
+              94 BINARY_OP            (+=)
+              98 STORE_FAST           (out)
+
+114:         100 LOAD_FAST            (out)
+             102 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    9
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  10
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        120
+# Constants:
+#    0: '\n        Args:\n            scale_factor: 超分辨率缩放因子\n            in_channels: 输入通道数\n            base_channels: 基础通道数\n            num_layers: 卷积层数量\n            use_residual: 是否使用残差连接\n            use_attention: 是否使用注意力机制\n            activation: 激活函数类型\n            dropout: Dropout比率\n        '
+#    1: (2, 3, 4, 8)
+#    2: '缩放因子必须是 2, 3, 4, 或 8'
+#    3: 2
+#    4: 3
+#    5: 1
+#    6: True
+#    7: ('kernel_size', 'padding', 'bias')
+#    8: 'none'
+#    9: None
+# Names:
+#    0: super
+#    1: ESPCN
+#    2: __init__
+#    3: scale_factor
+#    4: in_channels
+#    5: base_channels
+#    6: num_layers
+#    7: _build_feature_layers
+#    8: feature_layers
+#    9: nn
+#   10: Conv2d
+#   11: final_conv
+#   12: PixelShuffle
+#   13: pixel_shuffle
+#   14: Tanh
+#   15: Identity
+#   16: final_activation
+#   17: _initialize_weights
+# Varnames:
+#	self, scale_factor, in_channels, base_channels, num_layers, use_residual, use_attention, activation, dropout, final_channels
+# Positional arguments:
+#	self, scale_factor, in_channels, base_channels, num_layers, use_residual, use_attention, activation, dropout
+# Local variables:
+#    9: final_channels
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+120:           2 RESUME               0
+
+140:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (ESPCN)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+142:          82 LOAD_FAST            (scale_factor)
+              84 LOAD_FAST            (self)
+              86 STORE_ATTR           (scale_factor)
+
+143:          96 LOAD_FAST            (in_channels)
+              98 LOAD_FAST            (self)
+             100 STORE_ATTR           (in_channels)
+
+144:         110 LOAD_FAST            (base_channels)
+             112 LOAD_FAST            (self)
+             114 STORE_ATTR           (base_channels)
+
+145:         124 LOAD_FAST            (num_layers)
+             126 LOAD_FAST            (self)
+             128 STORE_ATTR           (num_layers)
+
+148:         138 LOAD_FAST            (scale_factor)
+             140 LOAD_CONST           ((2, 3, 4, 8))
+             142 CONTAINS_OP          (in)
+             144 POP_JUMP_FORWARD_IF_TRUE (to 166)
+             146 LOAD_ASSERTION_ERROR
+             148 LOAD_CONST           ("缩放因子必须是 2, 3, 4, 或 8")
+             150 PRECALL              0
+             154 CALL                 0
+             164 RAISE_VARARGS        (exception instance)
+
+151:     >>  166 LOAD_FAST            (self)
+             168 LOAD_METHOD          (_build_feature_layers)
+
+152:         190 LOAD_FAST            (use_residual)
+             192 LOAD_FAST            (use_attention)
+             194 LOAD_FAST            (activation)
+             196 LOAD_FAST            (dropout)
+
+151:         198 PRECALL              4
+             202 CALL                 4
+             212 LOAD_FAST            (self)
+             214 STORE_ATTR           (feature_layers)
+
+156:         224 LOAD_FAST            (in_channels)
+             226 LOAD_FAST            (scale_factor)
+             228 LOAD_CONST           (2)
+             230 BINARY_OP            (**)
+             234 BINARY_OP            (*)
+             238 STORE_FAST           (final_channels)
+
+157:         240 LOAD_GLOBAL          (NULL + nn)
+             252 LOAD_ATTR            (Conv2d)
+
+158:         262 LOAD_FAST            (base_channels)
+             264 LOAD_FAST            (final_channels)
+
+159:         266 LOAD_CONST           (3)
+             268 LOAD_CONST           (1)
+             270 LOAD_CONST           (True)
+
+157:         272 KW_NAMES             (('kernel_size', 'padding', 'bias'))
+             274 PRECALL              5
+             278 CALL                 5
+             288 LOAD_FAST            (self)
+             290 STORE_ATTR           (final_conv)
+
+163:         300 LOAD_GLOBAL          (NULL + nn)
+             312 LOAD_ATTR            (PixelShuffle)
+             322 LOAD_FAST            (scale_factor)
+             324 PRECALL              1
+             328 CALL                 1
+             338 LOAD_FAST            (self)
+             340 STORE_ATTR           (pixel_shuffle)
+
+166:         350 LOAD_FAST            (activation)
+             352 LOAD_CONST           ("none")
+             354 COMPARE_OP           (!=)
+             360 POP_JUMP_FORWARD_IF_FALSE (to 400)
+             362 LOAD_GLOBAL          (NULL + nn)
+             374 LOAD_ATTR            (Tanh)
+             384 PRECALL              0
+             388 CALL                 0
+             398 JUMP_FORWARD         (to 436)
+         >>  400 LOAD_GLOBAL          (NULL + nn)
+             412 LOAD_ATTR            (Identity)
+             422 PRECALL              0
+             426 CALL                 0
+         >>  436 LOAD_FAST            (self)
+             438 STORE_ATTR           (final_activation)
+
+169:         448 LOAD_FAST            (self)
+             450 LOAD_METHOD          (_initialize_weights)
+             472 PRECALL              0
+             476 CALL                 0
+             486 POP_TOP
+             488 LOAD_CONST           (None)
+             490 RETURN_VALUE
+
+
+# Method Name:       _build_feature_layers
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    5
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  7
+# Stack size:        12
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        171
+# Constants:
+#    0: '构建特征提取层'
+#    1: 5
+#    2: True
+#    3: ('kernel_size', 'activation', 'use_bn', 'use_se', 'dropout')
+#    4: 1
+#    5: 2
+#    6: 0
+#    7: ('activation',)
+#    8: 3
+# Names:
+#    0: append
+#    1: EnhancedConv2d
+#    2: in_channels
+#    3: base_channels
+#    4: range
+#    5: num_layers
+#    6: ResidualBlock
+#    7: nn
+#    8: Sequential
+# Varnames:
+#	self, use_residual, use_attention, activation, dropout, layers, i
+# Positional arguments:
+#	self, use_residual, use_attention, activation, dropout
+# Local variables:
+#    5: layers
+#    6: i
+
+171:           0 RESUME               0
+
+173:           2 BUILD_LIST           0
+               4 STORE_FAST           (layers)
+
+176:           6 LOAD_FAST            (layers)
+               8 LOAD_METHOD          (append)
+              30 LOAD_GLOBAL          (NULL + EnhancedConv2d)
+
+177:          42 LOAD_FAST            (self)
+              44 LOAD_ATTR            (in_channels)
+              54 LOAD_FAST            (self)
+              56 LOAD_ATTR            (base_channels)
+
+178:          66 LOAD_CONST           (5)
+              68 LOAD_FAST            (activation)
+
+179:          70 LOAD_CONST           (True)
+              72 LOAD_FAST            (use_attention)
+              74 LOAD_FAST            (dropout)
+
+176:          76 KW_NAMES             (('kernel_size', 'activation', 'use_bn', 'use_se', 'dropout'))
+              78 PRECALL              7
+              82 CALL                 7
+              92 PRECALL              1
+              96 CALL                 1
+             106 POP_TOP
+
+183:         108 LOAD_GLOBAL          (NULL + range)
+             120 LOAD_CONST           (1)
+             122 LOAD_FAST            (self)
+             124 LOAD_ATTR            (num_layers)
+             134 LOAD_CONST           (1)
+             136 BINARY_OP            (-)
+             140 PRECALL              2
+             144 CALL                 2
+             154 GET_ITER
+             156 FOR_ITER             (to 370)
+             158 STORE_FAST           (i)
+
+184:         160 LOAD_FAST            (use_residual)
+             162 POP_JUMP_FORWARD_IF_FALSE (to 266)
+             164 LOAD_FAST            (i)
+             166 LOAD_CONST           (2)
+             168 BINARY_OP            (%)
+             172 LOAD_CONST           (0)
+             174 COMPARE_OP           (==)
+             180 POP_JUMP_FORWARD_IF_FALSE (to 266)
+
+185:         182 LOAD_FAST            (layers)
+             184 LOAD_METHOD          (append)
+             206 LOAD_GLOBAL          (NULL + ResidualBlock)
+
+186:         218 LOAD_FAST            (self)
+             220 LOAD_ATTR            (base_channels)
+             230 LOAD_FAST            (activation)
+
+185:         232 KW_NAMES             (('activation',))
+             234 PRECALL              2
+             238 CALL                 2
+             248 PRECALL              1
+             252 CALL                 1
+             262 POP_TOP
+             264 JUMP_BACKWARD        (to 156)
+
+189:     >>  266 LOAD_FAST            (layers)
+             268 LOAD_METHOD          (append)
+             290 LOAD_GLOBAL          (NULL + EnhancedConv2d)
+
+190:         302 LOAD_FAST            (self)
+             304 LOAD_ATTR            (base_channels)
+             314 LOAD_FAST            (self)
+             316 LOAD_ATTR            (base_channels)
+
+191:         326 LOAD_CONST           (3)
+             328 LOAD_FAST            (activation)
+
+192:         330 LOAD_CONST           (True)
+             332 LOAD_FAST            (use_attention)
+             334 LOAD_FAST            (dropout)
+
+189:         336 KW_NAMES             (('kernel_size', 'activation', 'use_bn', 'use_se', 'dropout'))
+             338 PRECALL              7
+             342 CALL                 7
+             352 PRECALL              1
+             356 CALL                 1
+             366 POP_TOP
+             368 JUMP_BACKWARD        (to 156)
+
+195:     >>  370 LOAD_GLOBAL          (NULL + nn)
+             382 LOAD_ATTR            (Sequential)
+             392 LOAD_FAST            (layers)
+             394 CALL_FUNCTION_EX     (positional arguments only)
+             396 RETURN_VALUE
+
+
+# Method Name:       _initialize_weights
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        197
+# Constants:
+#    0: '权重初始化'
+#    1: 'fan_out'
+#    2: 'relu'
+#    3: ('mode', 'nonlinearity')
+#    4: None
+#    5: 0
+#    6: 1
+#    7: 0.0
+#    8: 0.001
+#    9: ('mean', 'std')
+# Names:
+#    0: modules
+#    1: isinstance
+#    2: nn
+#    3: Conv2d
+#    4: init
+#    5: kaiming_normal_
+#    6: weight
+#    7: bias
+#    8: constant_
+#    9: BatchNorm2d
+#   10: normal_
+#   11: final_conv
+# Varnames:
+#	self, m
+# Positional arguments:
+#	self
+# Local variables:
+#    1: m
+
+197:           0 RESUME               0
+
+199:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (modules)
+              26 PRECALL              0
+              30 CALL                 0
+              40 GET_ITER
+              42 FOR_ITER             (to 468)
+              44 STORE_FAST           (m)
+
+200:          46 LOAD_GLOBAL          (NULL + isinstance)
+              58 LOAD_FAST            (m)
+              60 LOAD_GLOBAL          (nn)
+              72 LOAD_ATTR            (Conv2d)
+              82 PRECALL              2
+              86 CALL                 2
+              96 POP_JUMP_FORWARD_IF_FALSE (to 266)
+
+201:          98 LOAD_GLOBAL          (nn)
+             110 LOAD_ATTR            (init)
+             120 LOAD_METHOD          (kaiming_normal_)
+             142 LOAD_FAST            (m)
+             144 LOAD_ATTR            (weight)
+             154 LOAD_CONST           ("fan_out")
+             156 LOAD_CONST           ("relu")
+             158 KW_NAMES             (('mode', 'nonlinearity'))
+             160 PRECALL              3
+             164 CALL                 3
+             174 POP_TOP
+
+202:         176 LOAD_FAST            (m)
+             178 LOAD_ATTR            (bias)
+             188 POP_JUMP_FORWARD_IF_NONE (to 264)
+
+203:         190 LOAD_GLOBAL          (nn)
+             202 LOAD_ATTR            (init)
+             212 LOAD_METHOD          (constant_)
+             234 LOAD_FAST            (m)
+             236 LOAD_ATTR            (bias)
+             246 LOAD_CONST           (0)
+             248 PRECALL              2
+             252 CALL                 2
+             262 POP_TOP
+         >>  264 JUMP_BACKWARD        (to 42)
+
+204:     >>  266 LOAD_GLOBAL          (NULL + isinstance)
+             278 LOAD_FAST            (m)
+             280 LOAD_GLOBAL          (nn)
+             292 LOAD_ATTR            (BatchNorm2d)
+             302 PRECALL              2
+             306 CALL                 2
+             316 POP_JUMP_FORWARD_IF_FALSE (to 466)
+
+205:         318 LOAD_GLOBAL          (nn)
+             330 LOAD_ATTR            (init)
+             340 LOAD_METHOD          (constant_)
+             362 LOAD_FAST            (m)
+             364 LOAD_ATTR            (weight)
+             374 LOAD_CONST           (1)
+             376 PRECALL              2
+             380 CALL                 2
+             390 POP_TOP
+
+206:         392 LOAD_GLOBAL          (nn)
+             404 LOAD_ATTR            (init)
+             414 LOAD_METHOD          (constant_)
+             436 LOAD_FAST            (m)
+             438 LOAD_ATTR            (bias)
+             448 LOAD_CONST           (0)
+             450 PRECALL              2
+             454 CALL                 2
+             464 POP_TOP
+         >>  466 JUMP_BACKWARD        (to 42)
+
+209:     >>  468 LOAD_GLOBAL          (nn)
+             480 LOAD_ATTR            (init)
+         >>  490 LOAD_METHOD          (normal_)
+             512 LOAD_FAST            (self)
+             514 LOAD_ATTR            (final_conv)
+             524 LOAD_ATTR            (weight)
+             534 LOAD_CONST           (0.0)
+             536 LOAD_CONST           (0.001)
+             538 KW_NAMES             (('mean', 'std'))
+             540 PRECALL              3
+             544 CALL                 3
+             554 POP_TOP
+
+210:         556 LOAD_FAST            (self)
+             558 LOAD_ATTR            (final_conv)
+             568 LOAD_ATTR            (bias)
+             578 POP_JUMP_FORWARD_IF_NONE (to 668)
+
+211:         580 LOAD_GLOBAL          (nn)
+             592 LOAD_ATTR            (init)
+             602 LOAD_METHOD          (constant_)
+             624 LOAD_FAST            (self)
+             626 LOAD_ATTR            (final_conv)
+             636 LOAD_ATTR            (bias)
+             646 LOAD_CONST           (0)
+             648 PRECALL              2
+             652 CALL                 2
+             662 POP_TOP
+             664 LOAD_CONST           (None)
+             666 RETURN_VALUE
+
+210:     >>  668 LOAD_CONST           (None)
+             670 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        213
+# Constants:
+#    0: None
+# Names:
+#    0: feature_layers
+#    1: final_conv
+#    2: pixel_shuffle
+#    3: final_activation
+# Varnames:
+#	self, x, features, out
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: features
+#    3: out
+
+213:           0 RESUME               0
+
+215:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (feature_layers)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (features)
+
+218:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (final_conv)
+              68 LOAD_FAST            (features)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (out)
+
+221:          86 LOAD_FAST            (self)
+              88 LOAD_METHOD          (pixel_shuffle)
+             110 LOAD_FAST            (out)
+             112 PRECALL              1
+             116 CALL                 1
+             126 STORE_FAST           (out)
+
+224:         128 LOAD_FAST            (self)
+             130 LOAD_METHOD          (final_activation)
+             152 LOAD_FAST            (out)
+             154 PRECALL              1
+             158 CALL                 1
+             168 STORE_FAST           (out)
+
+226:         170 LOAD_FAST            (out)
+             172 RETURN_VALUE
+
+
+# Method Name:       get_parameter_count
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        228
+# Constants:
+#    0: '返回参数数量'
+#    1: <code object <genexpr> at 0x7fde73f28e00, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 230>
+# Names:
+#    0: sum
+#    1: parameters
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+
+228:           0 RESUME               0
+
+230:           2 LOAD_GLOBAL          (NULL + sum)
+              14 LOAD_CONST           (<code object <genexpr> at 0x7fde73f28e00, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py", line 230>)
+              16 MAKE_FUNCTION        (No arguments)
+              18 LOAD_FAST            (self)
+              20 LOAD_METHOD          (parameters)
+              42 PRECALL              0
+              46 CALL                 0
+              56 GET_ITER
+              58 PRECALL              0
+              62 CALL                 0
+              72 PRECALL              1
+              76 CALL                 1
+              86 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x0000000b (VARKEYWORDS | NEWLOCALS | OPTIMIZED)
+# First Line:        236
+# Constants:
+#    0: None
+#    1: 2
+#    2: 4
+#    3: 3
+#    4: 1
+#    5: 'relu'
+#    6: ('kernel_size', 'activation')
+#    7: ()
+# Names:
+#    0: super
+#    1: ESPCNPlus
+#    2: __init__
+#    3: nn
+#    4: ModuleList
+#    5: AvgPool2d
+#    6: multi_scale
+#    7: EnhancedConv2d
+#    8: base_channels
+#    9: fusion_conv
+# Varnames:
+#	self, kwargs
+# Positional arguments:
+#	self
+# Local variables:
+#    1: kwargs
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+236:           2 RESUME               0
+
+237:           4 PUSH_NULL
+               6 LOAD_GLOBAL          (NULL + super)
+              18 LOAD_GLOBAL          (ESPCNPlus)
+              30 LOAD_FAST            (self)
+              32 PRECALL              2
+              36 CALL                 2
+              46 LOAD_ATTR            (__init__)
+              56 LOAD_CONST           (())
+              58 BUILD_MAP            0
+              60 LOAD_FAST            (kwargs)
+              62 DICT_MERGE           1
+              64 CALL_FUNCTION_EX     (keyword and positional arguments)
+              66 POP_TOP
+
+240:          68 LOAD_GLOBAL          (NULL + nn)
+              80 LOAD_ATTR            (ModuleList)
+
+241:          90 LOAD_GLOBAL          (NULL + nn)
+             102 LOAD_ATTR            (AvgPool2d)
+             112 LOAD_CONST           (2)
+             114 PRECALL              1
+             118 CALL                 1
+
+242:         128 LOAD_GLOBAL          (NULL + nn)
+             140 LOAD_ATTR            (AvgPool2d)
+             150 LOAD_CONST           (4)
+             152 PRECALL              1
+             156 CALL                 1
+
+240:         166 BUILD_LIST           2
+             168 PRECALL              1
+             172 CALL                 1
+             182 LOAD_FAST            (self)
+             184 STORE_ATTR           (multi_scale)
+
+245:         194 LOAD_GLOBAL          (NULL + EnhancedConv2d)
+
+246:         206 LOAD_FAST            (self)
+             208 LOAD_ATTR            (base_channels)
+             218 LOAD_CONST           (3)
+             220 BINARY_OP            (*)
+             224 LOAD_FAST            (self)
+             226 LOAD_ATTR            (base_channels)
+
+247:         236 LOAD_CONST           (1)
+             238 LOAD_CONST           ("relu")
+
+245:         240 KW_NAMES             (('kernel_size', 'activation'))
+             242 PRECALL              4
+             246 CALL                 4
+             256 LOAD_FAST            (self)
+             258 STORE_ATTR           (fusion_conv)
+             268 LOAD_CONST           (None)
+             270 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  10
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        250
+# Constants:
+#    0: None
+#    1: 2
+#    2: 'bilinear'
+#    3: False
+#    4: ('size', 'mode', 'align_corners')
+#    5: 1
+#    6: ('dim',)
+# Names:
+#    0: feature_layers
+#    1: multi_scale
+#    2: F
+#    3: interpolate
+#    4: shape
+#    5: append
+#    6: torch
+#    7: cat
+#    8: fusion_conv
+#    9: final_conv
+#   10: pixel_shuffle
+#   11: final_activation
+# Varnames:
+#	self, x, base_features, scale_features, pool, scaled, feat, fused, features, out
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: base_features
+#    3: scale_features
+#    4: pool
+#    5: scaled
+#    6: feat
+#    7: fused
+#    8: features
+#    9: out
+
+250:           0 RESUME               0
+
+252:           2 PUSH_NULL
+               4 LOAD_FAST            (self)
+               6 LOAD_ATTR            (feature_layers)
+              16 LOAD_CONST           (None)
+              18 LOAD_CONST           (2)
+              20 BUILD_SLICE          2
+              22 BINARY_SUBSCR
+              32 LOAD_FAST            (x)
+              34 PRECALL              1
+              38 CALL                 1
+              48 STORE_FAST           (base_features)
+
+255:          50 BUILD_LIST           0
+              52 STORE_FAST           (scale_features)
+
+256:          54 LOAD_FAST            (self)
+              56 LOAD_ATTR            (multi_scale)
+              66 GET_ITER
+              68 FOR_ITER             (to 260)
+              70 STORE_FAST           (pool)
+
+257:          72 PUSH_NULL
+              74 LOAD_FAST            (pool)
+              76 LOAD_FAST            (x)
+              78 PRECALL              1
+              82 CALL                 1
+              92 STORE_FAST           (scaled)
+
+258:          94 PUSH_NULL
+              96 LOAD_FAST            (self)
+              98 LOAD_ATTR            (feature_layers)
+             108 LOAD_CONST           (None)
+             110 LOAD_CONST           (2)
+             112 BUILD_SLICE          2
+             114 BINARY_SUBSCR
+             124 LOAD_FAST            (scaled)
+             126 PRECALL              1
+             130 CALL                 1
+             140 STORE_FAST           (feat)
+
+259:         142 LOAD_GLOBAL          (NULL + F)
+             154 LOAD_ATTR            (interpolate)
+             164 LOAD_FAST            (feat)
+             166 LOAD_FAST            (base_features)
+             168 LOAD_ATTR            (shape)
+             178 LOAD_CONST           (2)
+             180 LOAD_CONST           (None)
+             182 BUILD_SLICE          2
+             184 BINARY_SUBSCR
+
+260:         194 LOAD_CONST           ("bilinear")
+             196 LOAD_CONST           (False)
+
+259:         198 KW_NAMES             (('size', 'mode', 'align_corners'))
+             200 PRECALL              4
+             204 CALL                 4
+             214 STORE_FAST           (feat)
+
+261:         216 LOAD_FAST            (scale_features)
+             218 LOAD_METHOD          (append)
+             240 LOAD_FAST            (feat)
+             242 PRECALL              1
+             246 CALL                 1
+             256 POP_TOP
+             258 JUMP_BACKWARD        (to 68)
+
+264:     >>  260 LOAD_GLOBAL          (NULL + torch)
+             272 LOAD_ATTR            (cat)
+             282 LOAD_FAST            (base_features)
+             284 BUILD_LIST           1
+             286 LOAD_FAST            (scale_features)
+             288 BINARY_OP            (+)
+             292 LOAD_CONST           (1)
+             294 KW_NAMES             (('dim',))
+             296 PRECALL              2
+             300 CALL                 2
+             310 STORE_FAST           (fused)
+
+265:         312 LOAD_FAST            (self)
+             314 LOAD_METHOD          (fusion_conv)
+             336 LOAD_FAST            (fused)
+             338 PRECALL              1
+             342 CALL                 1
+             352 STORE_FAST           (fused)
+
+268:         354 PUSH_NULL
+             356 LOAD_FAST            (self)
+             358 LOAD_ATTR            (feature_layers)
+             368 LOAD_CONST           (2)
+             370 LOAD_CONST           (None)
+             372 BUILD_SLICE          2
+             374 BINARY_SUBSCR
+             384 LOAD_FAST            (fused)
+             386 PRECALL              1
+             390 CALL                 1
+             400 STORE_FAST           (features)
+
+269:         402 LOAD_FAST            (self)
+             404 LOAD_METHOD          (final_conv)
+             426 LOAD_FAST            (features)
+             428 PRECALL              1
+             432 CALL                 1
+             442 STORE_FAST           (out)
+
+270:         444 LOAD_FAST            (self)
+             446 LOAD_METHOD          (pixel_shuffle)
+             468 LOAD_FAST            (out)
+             470 PRECALL              1
+             474 CALL                 1
+             484 STORE_FAST           (out)
+
+271:         486 LOAD_FAST            (self)
+             488 LOAD_METHOD          (final_activation)
+             510 LOAD_FAST            (out)
+             512 PRECALL              1
+             516 CALL                 1
+             526 STORE_FAST           (out)
+
+273:         528 LOAD_FAST            (out)
+             530 RETURN_VALUE
+
+
+# Method Name:       <genexpr>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/espcnPlus.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000033 (GENERATOR | NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        230
+# Constants:
+#    0: None
+# Names:
+#    0: requires_grad
+#    1: numel
+# Varnames:
+#	.0, p
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: p
+
+230:           0 RETURN_GENERATOR
+               2 POP_TOP
+               4 RESUME               0
+               6 LOAD_FAST            (.0)
+               8 FOR_ITER             (to 72)
+              10 STORE_FAST           (p)
+              12 LOAD_FAST            (p)
+              14 LOAD_ATTR            (requires_grad)
+              24 POP_JUMP_BACKWARD_IF_FALSE (to 8)
+              26 LOAD_FAST            (p)
+              28 LOAD_METHOD          (numel)
+              50 PRECALL              0
+              54 CALL                 0
+              64 YIELD_VALUE
+              66 RESUME               1
+              68 POP_TOP
+              70 JUMP_BACKWARD        (to 8)
+         >>   72 LOAD_CONST           (None)
+              74 RETURN_VALUE
+

@@ -1,0 +1,524 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/__pycache__/dwsr.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.797768
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1767846257 (2026-01-08 12:24:17)
+# Source code size mod 2**32: 1381 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        5
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    DWSR 网络结构。\n'
+#    1: 0
+#    2: None
+#    3: ('DWT_Haar', 'IWT_Haar')
+#    4: <code object Conv2d at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 9>
+#    5: 'Conv2d'
+#    6: <code object DWSR at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 24>
+#    7: 'DWSR'
+# Names:
+#    0: __doc__
+#    1: torch.nn
+#    2: nn
+#    3: base.utils.wavelet
+#    4: DWT_Haar
+#    5: IWT_Haar
+#    6: Module
+#    7: Conv2d
+#    8: DWSR
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    DWSR 网络结构。\n")
+               4 STORE_NAME           (__doc__)
+
+  5:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torch.nn)
+              12 IMPORT_FROM          (nn)
+              14 STORE_NAME           (nn)
+              16 POP_TOP
+
+  6:          18 LOAD_CONST           (0)
+              20 LOAD_CONST           (('DWT_Haar', 'IWT_Haar'))
+              22 IMPORT_NAME          (base.utils.wavelet)
+              24 IMPORT_FROM          (DWT_Haar)
+              26 STORE_NAME           (DWT_Haar)
+              28 IMPORT_FROM          (IWT_Haar)
+              30 STORE_NAME           (IWT_Haar)
+              32 POP_TOP
+
+  9:          34 PUSH_NULL
+              36 LOAD_BUILD_CLASS
+              38 LOAD_CONST           (<code object Conv2d at 0x7fde73f14ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 9>)
+              40 MAKE_FUNCTION        (No arguments)
+              42 LOAD_CONST           ("Conv2d")
+              44 LOAD_NAME            (nn)
+              46 LOAD_ATTR            (Module)
+              56 PRECALL              3
+              60 CALL                 3
+              70 STORE_NAME           (Conv2d)
+
+ 24:          72 PUSH_NULL
+              74 LOAD_BUILD_CLASS
+              76 LOAD_CONST           (<code object DWSR at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 24>)
+              78 MAKE_FUNCTION        (No arguments)
+              80 LOAD_CONST           ("DWSR")
+              82 LOAD_NAME            (nn)
+              84 LOAD_ATTR            (Module)
+              94 PRECALL              3
+              98 CALL                 3
+             108 STORE_NAME           (DWSR)
+             110 LOAD_CONST           (None)
+             112 RETURN_VALUE
+
+
+# Method Name:       Conv2d
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        4
+# Flags:             0x00000000 (0x0)
+# First Line:        9
+# Constants:
+#    0: 'Conv2d'
+#    1: True
+#    2: 'return'
+#    3: None
+#    4: <code object __init__ at 0x7fde74226970, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 10>
+#    5: <code object forward at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 20>
+#    6: (True,)
+#    7: ('return', None)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: forward
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+  9:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("Conv2d")
+              10 STORE_NAME           (__qualname__)
+
+ 10:          12 LOAD_CONST           ((True,))
+              14 LOAD_CONST           (('return', None))
+              16 LOAD_CLOSURE         (__class__)
+              18 BUILD_TUPLE          1
+              20 LOAD_CONST           (<code object __init__ at 0x7fde74226970, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 10>)
+              22 MAKE_FUNCTION        (default, annotation, closure)
+              24 STORE_NAME           (__init__)
+
+ 20:          26 LOAD_CONST           (<code object forward at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 20>)
+              28 MAKE_FUNCTION        (No arguments)
+              30 STORE_NAME           (forward)
+              32 LOAD_CLOSURE         (__class__)
+              34 COPY                 1
+              36 STORE_NAME           (__classcell__)
+              38 RETURN_VALUE
+
+
+# Method Name:       DWSR
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        24
+# Constants:
+#    0: 'DWSR'
+#    1: 'return'
+#    2: None
+#    3: <code object __init__ at 0x55c3604a63f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 25>
+#    4: <code object forward at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 40>
+#    5: ('return', None)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: forward
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 24:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("DWSR")
+              10 STORE_NAME           (__qualname__)
+
+ 25:          12 LOAD_CONST           (('return', None))
+              14 LOAD_CLOSURE         (__class__)
+              16 BUILD_TUPLE          1
+              18 LOAD_CONST           (<code object __init__ at 0x55c3604a63f0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 25>)
+              20 MAKE_FUNCTION        (annotation, closure)
+              22 STORE_NAME           (__init__)
+
+ 40:          24 LOAD_CONST           (<code object forward at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 40>)
+              26 MAKE_FUNCTION        (No arguments)
+              28 STORE_NAME           (forward)
+              30 LOAD_CLOSURE         (__class__)
+              32 COPY                 1
+              34 STORE_NAME           (__classcell__)
+              36 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    5
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        10
+# Constants:
+#    0: None
+#    1: 2
+#    2: ('kernel_size', 'padding')
+# Names:
+#    0: super
+#    1: Conv2d
+#    2: __init__
+#    3: nn
+#    4: layers
+#    5: append
+#    6: ReLU
+#    7: Sequential
+# Varnames:
+#	self, in_ch, out_ch, kernel_size, act
+# Positional arguments:
+#	self, in_ch, out_ch, kernel_size, act
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 10:           2 RESUME               0
+
+ 11:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (Conv2d)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 13:          82 LOAD_GLOBAL          (NULL + nn)
+              94 LOAD_ATTR            (Conv2d)
+             104 LOAD_FAST            (in_ch)
+             106 LOAD_FAST            (out_ch)
+             108 LOAD_FAST            (kernel_size)
+
+ 14:         110 LOAD_FAST            (kernel_size)
+             112 LOAD_CONST           (2)
+             114 BINARY_OP            (//)
+
+ 13:         118 KW_NAMES             (('kernel_size', 'padding'))
+             120 PRECALL              4
+             124 CALL                 4
+
+ 12:         134 BUILD_LIST           1
+             136 LOAD_FAST            (self)
+             138 STORE_ATTR           (layers)
+
+ 16:         148 LOAD_FAST            (act)
+             150 POP_JUMP_FORWARD_IF_FALSE (to 238)
+
+ 17:         152 LOAD_FAST            (self)
+             154 LOAD_ATTR            (layers)
+             164 LOAD_METHOD          (append)
+             186 LOAD_GLOBAL          (NULL + nn)
+             198 LOAD_ATTR            (ReLU)
+             208 PRECALL              0
+             212 CALL                 0
+             222 PRECALL              1
+             226 CALL                 1
+             236 POP_TOP
+
+ 18:     >>  238 LOAD_GLOBAL          (NULL + nn)
+             250 LOAD_ATTR            (Sequential)
+             260 LOAD_FAST            (self)
+             262 LOAD_ATTR            (layers)
+             272 CALL_FUNCTION_EX     (positional arguments only)
+             274 LOAD_FAST            (self)
+             276 STORE_ATTR           (layers)
+             286 LOAD_CONST           (None)
+             288 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        20
+# Constants:
+#    0: None
+# Names:
+#    0: layers
+# Varnames:
+#	self, x
+# Positional arguments:
+#	self, x
+
+ 20:           0 RESUME               0
+
+ 21:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (layers)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        25
+# Constants:
+#    0: None
+#    1: 4
+#    2: 'bicubic'
+#    3: ('scale_factor', 'mode')
+#    4: 64
+#    5: 5
+#    6: <code object <listcomp> at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 36>
+#    7: 3
+# Names:
+#    0: super
+#    1: DWSR
+#    2: __init__
+#    3: n_conv
+#    4: residue_weight
+#    5: nn
+#    6: Upsample
+#    7: upsample
+#    8: DWT_Haar
+#    9: DWT
+#   10: Sequential
+#   11: Conv2d
+#   12: range
+#   13: body
+#   14: IWT_Haar
+#   15: IWT
+# Varnames:
+#	self, n_conv, residue_weight
+# Positional arguments:
+#	self, n_conv, residue_weight
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 25:           2 RESUME               0
+
+ 26:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (DWSR)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 28:          82 LOAD_FAST            (n_conv)
+              84 LOAD_FAST            (self)
+              86 STORE_ATTR           (n_conv)
+
+ 29:          96 LOAD_FAST            (residue_weight)
+              98 LOAD_FAST            (self)
+             100 STORE_ATTR           (residue_weight)
+
+ 31:         110 LOAD_GLOBAL          (NULL + nn)
+             122 LOAD_ATTR            (Upsample)
+             132 LOAD_CONST           (4)
+             134 LOAD_CONST           ("bicubic")
+             136 KW_NAMES             (('scale_factor', 'mode'))
+             138 PRECALL              2
+             142 CALL                 2
+             152 LOAD_FAST            (self)
+             154 STORE_ATTR           (upsample)
+
+ 32:         164 LOAD_GLOBAL          (NULL + DWT_Haar)
+             176 PRECALL              0
+             180 CALL                 0
+             190 LOAD_FAST            (self)
+             192 STORE_ATTR           (DWT)
+
+ 35:         202 LOAD_GLOBAL          (NULL + nn)
+             214 LOAD_ATTR            (Sequential)
+
+ 36:         224 LOAD_GLOBAL          (NULL + Conv2d)
+             236 LOAD_CONST           (4)
+             238 LOAD_CONST           (64)
+             240 LOAD_CONST           (5)
+             242 PRECALL              3
+             246 CALL                 3
+             256 BUILD_LIST           1
+             258 LOAD_CONST           (<code object <listcomp> at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py", line 36>)
+             260 MAKE_FUNCTION        (No arguments)
+             262 LOAD_GLOBAL          (NULL + range)
+             274 LOAD_FAST            (n_conv)
+             276 PRECALL              1
+             280 CALL                 1
+             290 GET_ITER
+             292 PRECALL              0
+             296 CALL                 0
+             306 LIST_EXTEND          1
+             308 LOAD_GLOBAL          (NULL + Conv2d)
+             320 LOAD_CONST           (64)
+             322 LOAD_CONST           (4)
+             324 LOAD_CONST           (3)
+             326 PRECALL              3
+             330 CALL                 3
+             340 LIST_APPEND          1
+
+ 35:         342 CALL_FUNCTION_EX     (positional arguments only)
+             344 LOAD_FAST            (self)
+             346 STORE_ATTR           (body)
+
+ 38:         356 LOAD_GLOBAL          (NULL + IWT_Haar)
+             368 PRECALL              0
+             372 CALL                 0
+             382 LOAD_FAST            (self)
+             384 STORE_ATTR           (IWT)
+             394 LOAD_CONST           (None)
+             396 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  7
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        40
+# Constants:
+#    0: None
+# Names:
+#    0: upsample
+#    1: DWT
+#    2: body
+#    3: residue_weight
+#    4: IWT
+# Varnames:
+#	self, x, upsampled, lrsb, main, srsb, out
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: upsampled
+#    3: lrsb
+#    4: main
+#    5: srsb
+#    6: out
+
+ 40:           0 RESUME               0
+
+ 42:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (upsample)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (upsampled)
+
+ 45:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (DWT)
+              68 LOAD_FAST            (upsampled)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (lrsb)
+
+ 46:          86 LOAD_FAST            (self)
+              88 LOAD_METHOD          (body)
+             110 LOAD_FAST            (lrsb)
+             112 PRECALL              1
+             116 CALL                 1
+             126 STORE_FAST           (main)
+
+ 47:         128 LOAD_FAST            (main)
+             130 LOAD_FAST            (lrsb)
+             132 LOAD_FAST            (self)
+             134 LOAD_ATTR            (residue_weight)
+             144 BINARY_OP            (*)
+             148 BINARY_OP            (+)
+             152 STORE_FAST           (srsb)
+
+ 48:         154 LOAD_FAST            (self)
+             156 LOAD_METHOD          (IWT)
+             178 LOAD_FAST            (srsb)
+             180 PRECALL              1
+             184 CALL                 1
+             194 STORE_FAST           (out)
+
+ 50:         196 LOAD_FAST            (out)
+             198 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/dwsr.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        7
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        36
+# Constants:
+#    0: 64
+#    1: 3
+# Names:
+#    0: Conv2d
+# Varnames:
+#	.0, _
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: _
+
+ 36:           0 RESUME               0
+               2 BUILD_LIST           0
+               4 LOAD_FAST            (.0)
+               6 FOR_ITER             (to 46)
+               8 STORE_FAST           (_)
+              10 LOAD_GLOBAL          (NULL + Conv2d)
+              22 LOAD_CONST           (64)
+              24 LOAD_CONST           (64)
+              26 LOAD_CONST           (3)
+              28 PRECALL              3
+              32 CALL                 3
+              42 LIST_APPEND          2
+              44 JUMP_BACKWARD        (to 6)
+         >>   46 RETURN_VALUE
+

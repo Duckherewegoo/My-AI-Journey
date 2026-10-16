@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python main_train_div2k_mixed.py

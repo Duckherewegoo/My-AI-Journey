@@ -1,0 +1,839 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/__pycache__/edsr.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.801388
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1766562237 (2025-12-24 15:43:57)
+# Source code size mod 2**32: 3387 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        5
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    EDSR 网络结构。\n'
+#    1: 0
+#    2: None
+#    3: <code object EDSR_ResBlock at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 9>
+#    4: 'EDSR_ResBlock'
+#    5: <code object EDSR_Upsample_4x at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 36>
+#    6: 'EDSR_Upsample_4x'
+#    7: <code object EDSR at 0x7fde73ee7870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 61>
+#    8: 'EDSR'
+# Names:
+#    0: __doc__
+#    1: torch
+#    2: torch.nn
+#    3: nn
+#    4: Module
+#    5: EDSR_ResBlock
+#    6: EDSR_Upsample_4x
+#    7: EDSR
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    EDSR 网络结构。\n")
+               4 STORE_NAME           (__doc__)
+
+  5:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torch)
+              12 STORE_NAME           (torch)
+
+  6:          14 LOAD_CONST           (0)
+              16 LOAD_CONST           (None)
+              18 IMPORT_NAME          (torch.nn)
+              20 IMPORT_FROM          (nn)
+              22 STORE_NAME           (nn)
+              24 POP_TOP
+
+  9:          26 PUSH_NULL
+              28 LOAD_BUILD_CLASS
+              30 LOAD_CONST           (<code object EDSR_ResBlock at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 9>)
+              32 MAKE_FUNCTION        (No arguments)
+              34 LOAD_CONST           ("EDSR_ResBlock")
+              36 LOAD_NAME            (nn)
+              38 LOAD_ATTR            (Module)
+              48 PRECALL              3
+              52 CALL                 3
+              62 STORE_NAME           (EDSR_ResBlock)
+
+ 36:          64 PUSH_NULL
+              66 LOAD_BUILD_CLASS
+              68 LOAD_CONST           (<code object EDSR_Upsample_4x at 0x7fde73f158b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 36>)
+              70 MAKE_FUNCTION        (No arguments)
+              72 LOAD_CONST           ("EDSR_Upsample_4x")
+              74 LOAD_NAME            (nn)
+              76 LOAD_ATTR            (Module)
+              86 PRECALL              3
+              90 CALL                 3
+             100 STORE_NAME           (EDSR_Upsample_4x)
+
+ 61:         102 PUSH_NULL
+             104 LOAD_BUILD_CLASS
+             106 LOAD_CONST           (<code object EDSR at 0x7fde73ee7870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 61>)
+             108 MAKE_FUNCTION        (No arguments)
+             110 LOAD_CONST           ("EDSR")
+             112 LOAD_NAME            (nn)
+             114 LOAD_ATTR            (Module)
+             124 PRECALL              3
+             128 CALL                 3
+             138 STORE_NAME           (EDSR)
+             140 LOAD_CONST           (None)
+             142 RETURN_VALUE
+
+
+# Method Name:       EDSR_ResBlock
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        9
+# Constants:
+#    0: 'EDSR_ResBlock'
+#    1: 'EDSR 提出的 ResBlock，去掉了 BN 层和最后的 ReLU 激活。'
+#    2: 3
+#    3: 0.1
+#    4: <code object __init__ at 0x7fde73f3c3d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 11>
+#    5: <code object forward at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 26>
+#    6: (3, 0.1)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: __init__
+#    5: forward
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+  9:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("EDSR_ResBlock")
+              10 STORE_NAME           (__qualname__)
+
+ 10:          12 LOAD_CONST           ("EDSR 提出的 ResBlock，去掉了 BN 层和最后的 ReLU 激活。")
+              14 STORE_NAME           (__doc__)
+
+ 11:          16 LOAD_CONST           ((3, 0.1))
+              18 LOAD_CLOSURE         (__class__)
+              20 BUILD_TUPLE          1
+              22 LOAD_CONST           (<code object __init__ at 0x7fde73f3c3d0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 11>)
+              24 MAKE_FUNCTION        (default, closure)
+              26 STORE_NAME           (__init__)
+
+ 26:          28 LOAD_CONST           (<code object forward at 0x7fde73ed93b0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 26>)
+              30 MAKE_FUNCTION        (No arguments)
+              32 STORE_NAME           (forward)
+              34 LOAD_CLOSURE         (__class__)
+              36 COPY                 1
+              38 STORE_NAME           (__classcell__)
+              40 RETURN_VALUE
+
+
+# Method Name:       EDSR_Upsample_4x
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        36
+# Constants:
+#    0: 'EDSR_Upsample_4x'
+#    1: 'EDSR 提出的 4 倍上采样模块。'
+#    2: <code object __init__ at 0x7fde741decc0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 38>
+#    3: <code object forward at 0x7fde73fa2870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 53>
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: __init__
+#    5: forward
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 36:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("EDSR_Upsample_4x")
+              10 STORE_NAME           (__qualname__)
+
+ 37:          12 LOAD_CONST           ("EDSR 提出的 4 倍上采样模块。")
+              14 STORE_NAME           (__doc__)
+
+ 38:          16 LOAD_CLOSURE         (__class__)
+              18 BUILD_TUPLE          1
+              20 LOAD_CONST           (<code object __init__ at 0x7fde741decc0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 38>)
+              22 MAKE_FUNCTION        (closure)
+              24 STORE_NAME           (__init__)
+
+ 53:          26 LOAD_CONST           (<code object forward at 0x7fde73fa2870, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 53>)
+              28 MAKE_FUNCTION        (No arguments)
+              30 STORE_NAME           (forward)
+              32 LOAD_CLOSURE         (__class__)
+              34 COPY                 1
+              36 STORE_NAME           (__classcell__)
+              38 RETURN_VALUE
+
+
+# Method Name:       EDSR
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        61
+# Constants:
+#    0: 'EDSR'
+#    1: 'EDSR 网络。'
+#    2: <code object _sequence_resblock at 0x7fde73f29790, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 63>
+#    3: 32
+#    4: <code object __init__ at 0x55c360493cb0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 66>
+#    5: <code object forward at 0x7fde73f10ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 78>
+#    6: (32, 32)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __doc__
+#    4: _sequence_resblock
+#    5: __init__
+#    6: forward
+#    7: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 61:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("EDSR")
+              10 STORE_NAME           (__qualname__)
+
+ 62:          12 LOAD_CONST           ("EDSR 网络。")
+              14 STORE_NAME           (__doc__)
+
+ 63:          16 LOAD_CONST           (<code object _sequence_resblock at 0x7fde73f29790, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 63>)
+              18 MAKE_FUNCTION        (No arguments)
+              20 STORE_NAME           (_sequence_resblock)
+
+ 66:          22 LOAD_CONST           ((32, 32))
+              24 LOAD_CLOSURE         (__class__)
+              26 BUILD_TUPLE          1
+              28 LOAD_CONST           (<code object __init__ at 0x55c360493cb0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 66>)
+              30 MAKE_FUNCTION        (default, closure)
+              32 STORE_NAME           (__init__)
+
+ 78:          34 LOAD_CONST           (<code object forward at 0x7fde73f10ab0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 78>)
+              36 MAKE_FUNCTION        (No arguments)
+              38 STORE_NAME           (forward)
+              40 LOAD_CLOSURE         (__class__)
+              42 COPY                 1
+              44 STORE_NAME           (__classcell__)
+              46 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    5
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        11
+# Constants:
+#    0: None
+#    1: 2
+#    2: False
+#    3: ('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias')
+# Names:
+#    0: super
+#    1: __init__
+#    2: bypass_weight
+#    3: nn
+#    4: Conv2d
+#    5: conv1
+#    6: ReLU
+#    7: relu
+#    8: conv2
+# Varnames:
+#	self, in_channels, out_channels, kernel_size, bypass_weight
+# Positional arguments:
+#	self, in_channels, out_channels, kernel_size, bypass_weight
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 11:           2 RESUME               0
+
+ 12:           4 LOAD_GLOBAL          (NULL + super)
+              16 PRECALL              0
+              20 CALL                 0
+              30 LOAD_METHOD          (__init__)
+              52 PRECALL              0
+              56 CALL                 0
+              66 POP_TOP
+
+ 13:          68 LOAD_FAST            (bypass_weight)
+              70 LOAD_FAST            (self)
+              72 STORE_ATTR           (bypass_weight)
+
+ 14:          82 LOAD_GLOBAL          (NULL + nn)
+              94 LOAD_ATTR            (Conv2d)
+             104 LOAD_FAST            (in_channels)
+
+ 15:         106 LOAD_FAST            (out_channels)
+
+ 16:         108 LOAD_FAST            (kernel_size)
+
+ 17:         110 LOAD_FAST            (kernel_size)
+             112 LOAD_CONST           (2)
+             114 BINARY_OP            (//)
+
+ 18:         118 LOAD_CONST           (False)
+
+ 14:         120 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             122 PRECALL              5
+             126 CALL                 5
+             136 LOAD_FAST            (self)
+             138 STORE_ATTR           (conv1)
+
+ 19:         148 LOAD_GLOBAL          (NULL + nn)
+             160 LOAD_ATTR            (ReLU)
+             170 PRECALL              0
+             174 CALL                 0
+             184 LOAD_FAST            (self)
+             186 STORE_ATTR           (relu)
+
+ 20:         196 LOAD_GLOBAL          (NULL + nn)
+             208 LOAD_ATTR            (Conv2d)
+             218 LOAD_FAST            (in_channels)
+
+ 21:         220 LOAD_FAST            (out_channels)
+
+ 22:         222 LOAD_FAST            (kernel_size)
+
+ 23:         224 LOAD_FAST            (kernel_size)
+             226 LOAD_CONST           (2)
+             228 BINARY_OP            (//)
+
+ 24:         232 LOAD_CONST           (False)
+
+ 20:         234 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             236 PRECALL              5
+             240 CALL                 5
+             250 LOAD_FAST            (self)
+             252 STORE_ATTR           (conv2)
+             262 LOAD_CONST           (None)
+             264 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        26
+# Constants:
+#    0: None
+# Names:
+#    0: conv1
+#    1: relu
+#    2: conv2
+#    3: torch
+#    4: add
+#    5: bypass_weight
+# Varnames:
+#	self, x, bypass, output
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: bypass
+#    3: output
+
+ 26:           0 RESUME               0
+
+ 28:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (conv1)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (bypass)
+
+ 29:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (relu)
+              68 LOAD_FAST            (bypass)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (bypass)
+
+ 30:          86 LOAD_FAST            (self)
+              88 LOAD_METHOD          (conv2)
+             110 LOAD_FAST            (x)
+             112 PRECALL              1
+             116 CALL                 1
+             126 STORE_FAST           (bypass)
+
+ 32:         128 LOAD_GLOBAL          (NULL + torch)
+             140 LOAD_ATTR            (add)
+             150 LOAD_FAST            (x)
+             152 LOAD_FAST            (self)
+             154 LOAD_ATTR            (bypass_weight)
+             164 LOAD_FAST            (bypass)
+             166 BINARY_OP            (*)
+             170 PRECALL              2
+             174 CALL                 2
+             184 STORE_FAST           (output)
+
+ 33:         186 LOAD_FAST            (output)
+             188 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        38
+# Constants:
+#    0: None
+#    1: 4
+#    2: 3
+#    3: 1
+#    4: False
+#    5: ('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias')
+#    6: 2
+# Names:
+#    0: super
+#    1: __init__
+#    2: nn
+#    3: Conv2d
+#    4: conv1
+#    5: PixelShuffle
+#    6: ps1
+#    7: conv2
+#    8: ps2
+# Varnames:
+#	self, conv1_channels, conv2_channels
+# Positional arguments:
+#	self, conv1_channels, conv2_channels
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 38:           2 RESUME               0
+
+ 39:           4 LOAD_GLOBAL          (NULL + super)
+              16 PRECALL              0
+              20 CALL                 0
+              30 LOAD_METHOD          (__init__)
+              52 PRECALL              0
+              56 CALL                 0
+              66 POP_TOP
+
+ 40:          68 LOAD_GLOBAL          (NULL + nn)
+              80 LOAD_ATTR            (Conv2d)
+              90 LOAD_FAST            (conv1_channels)
+
+ 41:          92 LOAD_FAST            (conv1_channels)
+              94 LOAD_CONST           (4)
+              96 BINARY_OP            (*)
+
+ 42:         100 LOAD_CONST           (3)
+
+ 43:         102 LOAD_CONST           (1)
+
+ 44:         104 LOAD_CONST           (False)
+
+ 40:         106 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             108 PRECALL              5
+             112 CALL                 5
+             122 LOAD_FAST            (self)
+             124 STORE_ATTR           (conv1)
+
+ 45:         134 LOAD_GLOBAL          (NULL + nn)
+             146 LOAD_ATTR            (PixelShuffle)
+             156 LOAD_CONST           (2)
+             158 PRECALL              1
+             162 CALL                 1
+             172 LOAD_FAST            (self)
+             174 STORE_ATTR           (ps1)
+
+ 46:         184 LOAD_GLOBAL          (NULL + nn)
+             196 LOAD_ATTR            (Conv2d)
+             206 LOAD_FAST            (conv2_channels)
+
+ 47:         208 LOAD_FAST            (conv2_channels)
+             210 LOAD_CONST           (4)
+             212 BINARY_OP            (*)
+
+ 48:         216 LOAD_CONST           (3)
+
+ 49:         218 LOAD_CONST           (1)
+
+ 50:         220 LOAD_CONST           (False)
+
+ 46:         222 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             224 PRECALL              5
+             228 CALL                 5
+             238 LOAD_FAST            (self)
+             240 STORE_ATTR           (conv2)
+
+ 51:         250 LOAD_GLOBAL          (NULL + nn)
+             262 LOAD_ATTR            (PixelShuffle)
+             272 LOAD_CONST           (2)
+             274 PRECALL              1
+             278 CALL                 1
+             288 LOAD_FAST            (self)
+             290 STORE_ATTR           (ps2)
+             300 LOAD_CONST           (None)
+             302 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        53
+# Constants:
+#    0: None
+# Names:
+#    0: conv1
+#    1: ps1
+#    2: conv2
+#    3: ps2
+# Varnames:
+#	self, x
+# Positional arguments:
+#	self, x
+
+ 53:           0 RESUME               0
+
+ 54:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (conv1)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (x)
+
+ 55:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (ps1)
+              68 LOAD_FAST            (x)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (x)
+
+ 56:          86 LOAD_FAST            (self)
+              88 LOAD_METHOD          (conv2)
+             110 LOAD_FAST            (x)
+             112 PRECALL              1
+             116 CALL                 1
+             126 STORE_FAST           (x)
+
+ 57:         128 LOAD_FAST            (self)
+             130 LOAD_METHOD          (ps2)
+             152 LOAD_FAST            (x)
+             154 PRECALL              1
+             158 CALL                 1
+             168 STORE_FAST           (x)
+
+ 58:         170 LOAD_FAST            (x)
+             172 RETURN_VALUE
+
+
+# Method Name:       _sequence_resblock
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        63
+# Constants:
+#    0: None
+#    1: <code object <listcomp> at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 64>
+# Names:
+#    0: nn
+#    1: Sequential
+#    2: range
+# Varnames:
+#	self, channels, n
+# Positional arguments:
+#	self, channels, n
+# Cell variables:
+#    0: channels
+               0 MAKE_CELL            (channels)
+
+ 63:           2 RESUME               0
+
+ 64:           4 LOAD_GLOBAL          (NULL + nn)
+              16 LOAD_ATTR            (Sequential)
+              26 LOAD_CLOSURE         (channels)
+              28 BUILD_TUPLE          1
+              30 LOAD_CONST           (<code object <listcomp> at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py", line 64>)
+              32 MAKE_FUNCTION        (closure)
+              34 LOAD_GLOBAL          (NULL + range)
+              46 LOAD_FAST            (n)
+              48 PRECALL              1
+              52 CALL                 1
+              62 GET_ITER
+              64 PRECALL              0
+              68 CALL                 0
+              78 CALL_FUNCTION_EX     (positional arguments only)
+              80 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        66
+# Constants:
+#    0: None
+#    1: 1
+#    2: 3
+#    3: False
+#    4: ('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias')
+# Names:
+#    0: super
+#    1: EDSR
+#    2: __init__
+#    3: nn
+#    4: Conv2d
+#    5: conv_in
+#    6: _sequence_resblock
+#    7: resblocks
+#    8: conv_after_resblocks
+#    9: EDSR_Upsample_4x
+#   10: upsample_4x
+#   11: conv_out
+# Varnames:
+#	self, resblock_channels, resblock_depth
+# Positional arguments:
+#	self, resblock_channels, resblock_depth
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 66:           2 RESUME               0
+
+ 67:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (EDSR)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 68:          82 LOAD_GLOBAL          (NULL + nn)
+              94 LOAD_ATTR            (Conv2d)
+             104 LOAD_CONST           (1)
+             106 LOAD_FAST            (resblock_channels)
+             108 LOAD_CONST           (3)
+             110 LOAD_CONST           (1)
+             112 LOAD_CONST           (False)
+             114 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             116 PRECALL              5
+             120 CALL                 5
+             130 LOAD_FAST            (self)
+             132 STORE_ATTR           (conv_in)
+
+ 69:         142 LOAD_FAST            (self)
+             144 LOAD_METHOD          (_sequence_resblock)
+             166 LOAD_FAST            (resblock_channels)
+             168 LOAD_FAST            (resblock_depth)
+             170 PRECALL              2
+             174 CALL                 2
+             184 LOAD_FAST            (self)
+             186 STORE_ATTR           (resblocks)
+
+ 70:         196 LOAD_GLOBAL          (NULL + nn)
+             208 LOAD_ATTR            (Conv2d)
+             218 LOAD_FAST            (resblock_channels)
+
+ 71:         220 LOAD_FAST            (resblock_channels)
+
+ 72:         222 LOAD_CONST           (3)
+
+ 73:         224 LOAD_CONST           (1)
+
+ 74:         226 LOAD_CONST           (False)
+
+ 70:         228 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             230 PRECALL              5
+             234 CALL                 5
+             244 LOAD_FAST            (self)
+             246 STORE_ATTR           (conv_after_resblocks)
+
+ 75:         256 LOAD_GLOBAL          (NULL + EDSR_Upsample_4x)
+             268 LOAD_FAST            (resblock_channels)
+             270 LOAD_FAST            (resblock_channels)
+             272 PRECALL              2
+             276 CALL                 2
+             286 LOAD_FAST            (self)
+             288 STORE_ATTR           (upsample_4x)
+
+ 76:         298 LOAD_GLOBAL          (NULL + nn)
+             310 LOAD_ATTR            (Conv2d)
+             320 LOAD_FAST            (resblock_channels)
+             322 LOAD_CONST           (1)
+             324 LOAD_CONST           (3)
+             326 LOAD_CONST           (1)
+             328 LOAD_CONST           (False)
+             330 KW_NAMES             (('in_channels', 'out_channels', 'kernel_size', 'padding', 'bias'))
+             332 PRECALL              5
+             336 CALL                 5
+             346 LOAD_FAST            (self)
+             348 STORE_ATTR           (conv_out)
+             358 LOAD_CONST           (None)
+             360 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        4
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        78
+# Constants:
+#    0: None
+# Names:
+#    0: conv_in
+#    1: resblocks
+#    2: conv_after_resblocks
+#    3: torch
+#    4: add
+#    5: upsample_4x
+#    6: conv_out
+# Varnames:
+#	self, x, residue, flow
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: residue
+#    3: flow
+
+ 78:           0 RESUME               0
+
+ 79:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (conv_in)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (residue)
+
+ 80:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (resblocks)
+              68 LOAD_FAST            (residue)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (flow)
+
+ 81:          86 LOAD_FAST            (self)
+              88 LOAD_METHOD          (conv_after_resblocks)
+             110 LOAD_FAST            (flow)
+             112 PRECALL              1
+             116 CALL                 1
+             126 STORE_FAST           (flow)
+
+ 82:         128 LOAD_GLOBAL          (NULL + torch)
+             140 LOAD_ATTR            (add)
+             150 LOAD_FAST            (flow)
+             152 LOAD_FAST            (residue)
+             154 PRECALL              2
+             158 CALL                 2
+             168 STORE_FAST           (flow)
+
+ 83:         170 LOAD_FAST            (self)
+             172 LOAD_METHOD          (upsample_4x)
+             194 LOAD_FAST            (flow)
+             196 PRECALL              1
+             200 CALL                 1
+             210 STORE_FAST           (flow)
+
+ 84:         212 LOAD_FAST            (self)
+             214 LOAD_METHOD          (conv_out)
+             236 LOAD_FAST            (flow)
+             238 PRECALL              1
+             242 CALL                 1
+             252 STORE_FAST           (flow)
+
+ 85:         254 LOAD_FAST            (flow)
+             256 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/models/edsr.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        64
+# Names:
+#    0: EDSR_ResBlock
+# Varnames:
+#	.0, _
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: _
+# Free variables:
+#    0: channels
+               0 COPY_FREE_VARS       1
+
+ 64:           2 RESUME               0
+               4 BUILD_LIST           0
+               6 LOAD_FAST            (.0)
+               8 FOR_ITER             (to 46)
+              10 STORE_FAST           (_)
+              12 LOAD_GLOBAL          (NULL + EDSR_ResBlock)
+              24 LOAD_DEREF           (channels)
+              26 LOAD_DEREF           (channels)
+              28 PRECALL              2
+              32 CALL                 2
+              42 LIST_APPEND          2
+              44 JUMP_BACKWARD        (to 8)
+         >>   46 RETURN_VALUE
+

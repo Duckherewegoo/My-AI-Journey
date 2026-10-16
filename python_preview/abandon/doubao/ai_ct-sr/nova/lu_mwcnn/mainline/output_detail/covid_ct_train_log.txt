@@ -1,0 +1,1560 @@
+📝 开始记录covid_ct训练日志到：./output_detail/covid_ct_train_log.txt
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/dake/.conda/envs/drch/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+
+===== 开始训练covid_ct =====
+🔧 数据集配置 - 输入通道: 1 | 缩放因子: 4 | 批次大小: 8 | 初始LR: 5e-06 | L2正则化: 0.0001
+🔧 早停配置 - Patience: 8 | Min Delta: 0.0001
+🔧 训练配置 - 总轮数: 300 | 冻结主干轮数: 5
+✅ 加载预训练权重完成：匹配12层 | 未匹配37层
+🔒 前5轮冻结主干网络
+🔍 扫描到./continual_ckpt中的epoch文件：[]
+✅ 成功解析的ckpt文件：[]
+⚠️  无断点文件，从头训练covid_ct
+🔄 断点加载完成 - 起始轮数: 1 | 历史最佳Loss: inf | 历史最佳PSNR: 0.00 | 历史最佳SSIM: 0.0000 | 历史最佳LPIPS: inf
+🔄 断点加载完成 - 已完成轮数: 0 | 接下来训练轮数: 1 | 总轮数: 300
+
+[covid_ct] Epoch 1/300：
+  Loss=0.343064 | PSNR=6.93 | SSIM=0.0254 | LPIPS=0.6846
+  当前学习率：0.00000498 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_1.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_1.pth | 最佳Loss=0.343064
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_1.pth | 最佳PSNR=6.93 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_1.pth | 最佳SSIM=0.0254
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_1.pth | 最佳LPIPS=0.6846
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.343064
+📊 当前最佳PSNR：6.93 dB | 当前最佳SSIM：0.0254 | 当前最佳LPIPS：0.6846
+📝 初始化TensorBoard日志器: ./tb_logs/covid_ct
+📊 TensorBoard日志记录 - Epoch 1: Loss=0.343064, PSNR=6.93, SSIM=0.0254, LPIPS=0.6846, LR=0.00000498
+📊 TensorBoard日志记录 - Epoch 1: Loss=0.343064, PSNR=6.93, SSIM=0.0254, LPIPS=0.6846, LR=0.00000498
+
+[covid_ct] Epoch 2/300：
+  Loss=0.332105 | PSNR=7.21 | SSIM=0.0307 | LPIPS=0.6810
+  当前学习率：0.00000491 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_2.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_2.pth | 最佳Loss=0.332105
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_2.pth | 最佳PSNR=7.21 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_2.pth | 最佳SSIM=0.0307
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_2.pth | 最佳LPIPS=0.6810
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.332105
+📊 当前最佳PSNR：7.21 dB | 当前最佳SSIM：0.0307 | 当前最佳LPIPS：0.6810
+📊 TensorBoard日志记录 - Epoch 2: Loss=0.332105, PSNR=7.21, SSIM=0.0307, LPIPS=0.6810, LR=0.00000491
+📊 TensorBoard日志记录 - Epoch 2: Loss=0.332105, PSNR=7.21, SSIM=0.0307, LPIPS=0.6810, LR=0.00000491
+
+[covid_ct] Epoch 3/300：
+  Loss=0.313456 | PSNR=7.68 | SSIM=0.0487 | LPIPS=0.6732
+  当前学习率：0.00000479 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_3.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_3.pth | 最佳Loss=0.313456
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_3.pth | 最佳PSNR=7.68 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_3.pth | 最佳SSIM=0.0487
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_3.pth | 最佳LPIPS=0.6732
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.313456
+📊 当前最佳PSNR：7.68 dB | 当前最佳SSIM：0.0487 | 当前最佳LPIPS：0.6732
+📊 TensorBoard日志记录 - Epoch 3: Loss=0.313456, PSNR=7.68, SSIM=0.0487, LPIPS=0.6732, LR=0.00000479
+📊 TensorBoard日志记录 - Epoch 3: Loss=0.313456, PSNR=7.68, SSIM=0.0487, LPIPS=0.6732, LR=0.00000479
+
+[covid_ct] Epoch 4/300：
+  Loss=0.286772 | PSNR=8.37 | SSIM=0.0913 | LPIPS=0.6623
+  当前学习率：0.00000462 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_4.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_4.pth | 最佳Loss=0.286772
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_4.pth | 最佳PSNR=8.37 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_4.pth | 最佳SSIM=0.0913
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_4.pth | 最佳LPIPS=0.6623
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.286772
+📊 当前最佳PSNR：8.37 dB | 当前最佳SSIM：0.0913 | 当前最佳LPIPS：0.6623
+📊 TensorBoard日志记录 - Epoch 4: Loss=0.286772, PSNR=8.37, SSIM=0.0913, LPIPS=0.6623, LR=0.00000462
+📊 TensorBoard日志记录 - Epoch 4: Loss=0.286772, PSNR=8.37, SSIM=0.0913, LPIPS=0.6623, LR=0.00000462
+
+[covid_ct] Epoch 5/300：
+  Loss=0.256090 | PSNR=9.21 | SSIM=0.1569 | LPIPS=0.6500
+  当前学习率：0.00000442 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_5.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_5.pth | 最佳Loss=0.256090
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_5.pth | 最佳PSNR=9.21 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_5.pth | 最佳SSIM=0.1569
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_5.pth | 最佳LPIPS=0.6500
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.256090
+📊 当前最佳PSNR：9.21 dB | 当前最佳SSIM：0.1569 | 当前最佳LPIPS：0.6500
+📊 TensorBoard日志记录 - Epoch 5: Loss=0.256090, PSNR=9.21, SSIM=0.1569, LPIPS=0.6500, LR=0.00000442
+📊 TensorBoard日志记录 - Epoch 5: Loss=0.256090, PSNR=9.21, SSIM=0.1569, LPIPS=0.6500, LR=0.00000442
+📊 TensorBoard权重日志记录 - Epoch 5: 已记录28层参数和梯度
+📝 第5轮记录模型权重到TensorBoard
+🔄 早停计数器已重置为0
+
+🔓 第6轮解冻主干，开始全量训练 | 重置学习率调度器和早停计数器
+
+[covid_ct] Epoch 6/300：
+  Loss=0.218635 | PSNR=10.25 | SSIM=0.2643 | LPIPS=0.6274
+  当前学习率：0.00000418 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_6.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_6.pth | 最佳Loss=0.218635
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_6.pth | 最佳PSNR=10.25 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_6.pth | 最佳SSIM=0.2643
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_6.pth | 最佳LPIPS=0.6274
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.218635
+📊 当前最佳PSNR：10.25 dB | 当前最佳SSIM：0.2643 | 当前最佳LPIPS：0.6274
+📊 TensorBoard日志记录 - Epoch 6: Loss=0.218635, PSNR=10.25, SSIM=0.2643, LPIPS=0.6274, LR=0.00000418
+📊 TensorBoard日志记录 - Epoch 6: Loss=0.218635, PSNR=10.25, SSIM=0.2643, LPIPS=0.6274, LR=0.00000418
+
+[covid_ct] Epoch 7/300：
+  Loss=0.174984 | PSNR=11.52 | SSIM=0.4139 | LPIPS=0.5946
+  当前学习率：0.00000392 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_7.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_7.pth | 最佳Loss=0.174984
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_7.pth | 最佳PSNR=11.52 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_7.pth | 最佳SSIM=0.4139
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_7.pth | 最佳LPIPS=0.5946
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.174984
+📊 当前最佳PSNR：11.52 dB | 当前最佳SSIM：0.4139 | 当前最佳LPIPS：0.5946
+📊 TensorBoard日志记录 - Epoch 7: Loss=0.174984, PSNR=11.52, SSIM=0.4139, LPIPS=0.5946, LR=0.00000392
+📊 TensorBoard日志记录 - Epoch 7: Loss=0.174984, PSNR=11.52, SSIM=0.4139, LPIPS=0.5946, LR=0.00000392
+
+[covid_ct] Epoch 8/300：
+  Loss=0.155017 | PSNR=12.13 | SSIM=0.4921 | LPIPS=0.5788
+  当前学习率：0.00000363 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_8.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_8.pth | 最佳Loss=0.155017
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_8.pth | 最佳PSNR=12.13 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_8.pth | 最佳SSIM=0.4921
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_8.pth | 最佳LPIPS=0.5788
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.155017
+📊 当前最佳PSNR：12.13 dB | 当前最佳SSIM：0.4921 | 当前最佳LPIPS：0.5788
+📊 TensorBoard日志记录 - Epoch 8: Loss=0.155017, PSNR=12.13, SSIM=0.4921, LPIPS=0.5788, LR=0.00000363
+📊 TensorBoard日志记录 - Epoch 8: Loss=0.155017, PSNR=12.13, SSIM=0.4921, LPIPS=0.5788, LR=0.00000363
+
+[covid_ct] Epoch 9/300：
+  Loss=0.143384 | PSNR=12.54 | SSIM=0.5334 | LPIPS=0.5643
+  当前学习率：0.00000332 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_9.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_9.pth | 最佳Loss=0.143384
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_9.pth | 最佳PSNR=12.54 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_9.pth | 最佳SSIM=0.5334
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_9.pth | 最佳LPIPS=0.5643
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.143384
+📊 当前最佳PSNR：12.54 dB | 当前最佳SSIM：0.5334 | 当前最佳LPIPS：0.5643
+📊 TensorBoard日志记录 - Epoch 9: Loss=0.143384, PSNR=12.54, SSIM=0.5334, LPIPS=0.5643, LR=0.00000332
+📊 TensorBoard日志记录 - Epoch 9: Loss=0.143384, PSNR=12.54, SSIM=0.5334, LPIPS=0.5643, LR=0.00000332
+
+[covid_ct] Epoch 10/300：
+  Loss=0.135869 | PSNR=12.73 | SSIM=0.5693 | LPIPS=0.5580
+  当前学习率：0.00000301 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_10.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_10.pth | 最佳Loss=0.135869
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_10.pth | 最佳PSNR=12.73 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_10.pth | 最佳SSIM=0.5693
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_10.pth | 最佳LPIPS=0.5580
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.135869
+📊 当前最佳PSNR：12.73 dB | 当前最佳SSIM：0.5693 | 当前最佳LPIPS：0.5580
+📊 TensorBoard日志记录 - Epoch 10: Loss=0.135869, PSNR=12.73, SSIM=0.5693, LPIPS=0.5580, LR=0.00000301
+📊 TensorBoard日志记录 - Epoch 10: Loss=0.135869, PSNR=12.73, SSIM=0.5693, LPIPS=0.5580, LR=0.00000301
+📊 TensorBoard权重日志记录 - Epoch 10: 已记录28层参数和梯度
+📝 第10轮记录模型权重到TensorBoard
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练10轮
+
+[covid_ct] Epoch 11/300：
+  Loss=0.126808 | PSNR=12.95 | SSIM=0.6128 | LPIPS=0.5490
+  当前学习率：0.00000270 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_11.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_11.pth | 最佳Loss=0.126808
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_11.pth | 最佳PSNR=12.95 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_11.pth | 最佳SSIM=0.6128
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_11.pth | 最佳LPIPS=0.5490
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.126808
+📊 当前最佳PSNR：12.95 dB | 当前最佳SSIM：0.6128 | 当前最佳LPIPS：0.5490
+📊 TensorBoard日志记录 - Epoch 11: Loss=0.126808, PSNR=12.95, SSIM=0.6128, LPIPS=0.5490, LR=0.00000270
+📊 TensorBoard日志记录 - Epoch 11: Loss=0.126808, PSNR=12.95, SSIM=0.6128, LPIPS=0.5490, LR=0.00000270
+
+[covid_ct] Epoch 12/300：
+  Loss=0.118638 | PSNR=13.17 | SSIM=0.6462 | LPIPS=0.5296
+  当前学习率：0.00000239 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_12.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_12.pth | 最佳Loss=0.118638
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_12.pth | 最佳PSNR=13.17 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_12.pth | 最佳SSIM=0.6462
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_12.pth | 最佳LPIPS=0.5296
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.118638
+📊 当前最佳PSNR：13.17 dB | 当前最佳SSIM：0.6462 | 当前最佳LPIPS：0.5296
+📊 TensorBoard日志记录 - Epoch 12: Loss=0.118638, PSNR=13.17, SSIM=0.6462, LPIPS=0.5296, LR=0.00000239
+📊 TensorBoard日志记录 - Epoch 12: Loss=0.118638, PSNR=13.17, SSIM=0.6462, LPIPS=0.5296, LR=0.00000239
+
+[covid_ct] Epoch 13/300：
+  Loss=0.120777 | PSNR=13.23 | SSIM=0.6326 | LPIPS=0.5405
+  当前学习率：0.00000210 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_13.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_13.pth | 最佳PSNR=13.23 dB
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.118638
+📊 当前最佳PSNR：13.23 dB | 当前最佳SSIM：0.6462 | 当前最佳LPIPS：0.5296
+📊 TensorBoard日志记录 - Epoch 13: Loss=0.120777, PSNR=13.23, SSIM=0.6326, LPIPS=0.5405, LR=0.00000210
+📊 TensorBoard日志记录 - Epoch 13: Loss=0.120777, PSNR=13.23, SSIM=0.6326, LPIPS=0.5405, LR=0.00000210
+
+[covid_ct] Epoch 14/300：
+  Loss=0.118627 | PSNR=13.30 | SSIM=0.6418 | LPIPS=0.5444
+  当前学习率：0.00000183 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_14.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_14.pth | 最佳Loss=0.118627
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_14.pth | 最佳PSNR=13.30 dB
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.118627
+📊 当前最佳PSNR：13.30 dB | 当前最佳SSIM：0.6462 | 当前最佳LPIPS：0.5296
+📊 TensorBoard日志记录 - Epoch 14: Loss=0.118627, PSNR=13.30, SSIM=0.6418, LPIPS=0.5444, LR=0.00000183
+📊 TensorBoard日志记录 - Epoch 14: Loss=0.118627, PSNR=13.30, SSIM=0.6418, LPIPS=0.5444, LR=0.00000183
+
+[covid_ct] Epoch 15/300：
+  Loss=0.107072 | PSNR=13.71 | SSIM=0.6902 | LPIPS=0.5292
+  当前学习率：0.00000159 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_15.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_15.pth | 最佳Loss=0.107072
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_15.pth | 最佳PSNR=13.71 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_15.pth | 最佳SSIM=0.6902
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_15.pth | 最佳LPIPS=0.5292
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.107072
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6902 | 当前最佳LPIPS：0.5292
+📊 TensorBoard日志记录 - Epoch 15: Loss=0.107072, PSNR=13.71, SSIM=0.6902, LPIPS=0.5292, LR=0.00000159
+📊 TensorBoard日志记录 - Epoch 15: Loss=0.107072, PSNR=13.71, SSIM=0.6902, LPIPS=0.5292, LR=0.00000159
+📊 TensorBoard权重日志记录 - Epoch 15: 已记录28层参数和梯度
+📝 第15轮记录模型权重到TensorBoard
+
+[covid_ct] Epoch 16/300：
+  Loss=0.109524 | PSNR=13.55 | SSIM=0.6817 | LPIPS=0.5208
+  当前学习率：0.00000139 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_16.pth
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_16.pth | 最佳LPIPS=0.5208
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.107072
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6902 | 当前最佳LPIPS：0.5208
+📊 TensorBoard日志记录 - Epoch 16: Loss=0.109524, PSNR=13.55, SSIM=0.6817, LPIPS=0.5208, LR=0.00000139
+📊 TensorBoard日志记录 - Epoch 16: Loss=0.109524, PSNR=13.55, SSIM=0.6817, LPIPS=0.5208, LR=0.00000139
+
+[covid_ct] Epoch 17/300：
+  Loss=0.106486 | PSNR=13.67 | SSIM=0.6955 | LPIPS=0.5219
+  当前学习率：0.00000122 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_17.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_17.pth | 最佳Loss=0.106486
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_17.pth | 最佳SSIM=0.6955
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.106486
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6955 | 当前最佳LPIPS：0.5208
+📊 TensorBoard日志记录 - Epoch 17: Loss=0.106486, PSNR=13.67, SSIM=0.6955, LPIPS=0.5219, LR=0.00000122
+📊 TensorBoard日志记录 - Epoch 17: Loss=0.106486, PSNR=13.67, SSIM=0.6955, LPIPS=0.5219, LR=0.00000122
+
+[covid_ct] Epoch 18/300：
+  Loss=0.109913 | PSNR=13.52 | SSIM=0.6781 | LPIPS=0.5151
+  当前学习率：0.00000110 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_18.pth
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_18.pth | 最佳LPIPS=0.5151
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.106486
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6955 | 当前最佳LPIPS：0.5151
+📊 TensorBoard日志记录 - Epoch 18: Loss=0.109913, PSNR=13.52, SSIM=0.6781, LPIPS=0.5151, LR=0.00000110
+📊 TensorBoard日志记录 - Epoch 18: Loss=0.109913, PSNR=13.52, SSIM=0.6781, LPIPS=0.5151, LR=0.00000110
+
+[covid_ct] Epoch 19/300：
+  Loss=0.108849 | PSNR=13.59 | SSIM=0.6850 | LPIPS=0.5230
+  当前学习率：0.00000103 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_19.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.106486
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6955 | 当前最佳LPIPS：0.5151
+📊 TensorBoard日志记录 - Epoch 19: Loss=0.108849, PSNR=13.59, SSIM=0.6850, LPIPS=0.5230, LR=0.00000103
+📊 TensorBoard日志记录 - Epoch 19: Loss=0.108849, PSNR=13.59, SSIM=0.6850, LPIPS=0.5230, LR=0.00000103
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 13.71 | 最佳SSIM: 0.6955 | 最佳LPIPS: 0.5151
+
+[covid_ct] Epoch 20/300：
+  Loss=0.107522 | PSNR=13.54 | SSIM=0.6913 | LPIPS=0.5072
+  当前学习率：0.00000100 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_20.pth
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_20.pth | 最佳LPIPS=0.5072
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.106486
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6955 | 当前最佳LPIPS：0.5072
+📊 TensorBoard日志记录 - Epoch 20: Loss=0.107522, PSNR=13.54, SSIM=0.6913, LPIPS=0.5072, LR=0.00000100
+📊 TensorBoard日志记录 - Epoch 20: Loss=0.107522, PSNR=13.54, SSIM=0.6913, LPIPS=0.5072, LR=0.00000100
+📊 TensorBoard权重日志记录 - Epoch 20: 已记录28层参数和梯度
+📝 第20轮记录模型权重到TensorBoard
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练20轮
+
+[covid_ct] Epoch 21/300：
+  Loss=0.105459 | PSNR=13.71 | SSIM=0.6981 | LPIPS=0.5174
+  当前学习率：0.00000499 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_21.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_21.pth | 最佳Loss=0.105459
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_21.pth | 最佳SSIM=0.6981
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.105459
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.6981 | 当前最佳LPIPS：0.5072
+📊 TensorBoard日志记录 - Epoch 21: Loss=0.105459, PSNR=13.71, SSIM=0.6981, LPIPS=0.5174, LR=0.00000499
+📊 TensorBoard日志记录 - Epoch 21: Loss=0.105459, PSNR=13.71, SSIM=0.6981, LPIPS=0.5174, LR=0.00000499
+
+[covid_ct] Epoch 22/300：
+  Loss=0.103943 | PSNR=13.64 | SSIM=0.7107 | LPIPS=0.5145
+  当前学习率：0.00000498 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_22.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_22.pth | 最佳Loss=0.103943
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_22.pth | 最佳SSIM=0.7107
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.103943
+📊 当前最佳PSNR：13.71 dB | 当前最佳SSIM：0.7107 | 当前最佳LPIPS：0.5072
+📊 TensorBoard日志记录 - Epoch 22: Loss=0.103943, PSNR=13.64, SSIM=0.7107, LPIPS=0.5145, LR=0.00000498
+📊 TensorBoard日志记录 - Epoch 22: Loss=0.103943, PSNR=13.64, SSIM=0.7107, LPIPS=0.5145, LR=0.00000498
+
+[covid_ct] Epoch 23/300：
+  Loss=0.097960 | PSNR=13.97 | SSIM=0.7326 | LPIPS=0.5050
+  当前学习率：0.00000495 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_23.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_23.pth | 最佳Loss=0.097960
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_23.pth | 最佳PSNR=13.97 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_23.pth | 最佳SSIM=0.7326
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_23.pth | 最佳LPIPS=0.5050
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.097960
+📊 当前最佳PSNR：13.97 dB | 当前最佳SSIM：0.7326 | 当前最佳LPIPS：0.5050
+📊 TensorBoard日志记录 - Epoch 23: Loss=0.097960, PSNR=13.97, SSIM=0.7326, LPIPS=0.5050, LR=0.00000495
+📊 TensorBoard日志记录 - Epoch 23: Loss=0.097960, PSNR=13.97, SSIM=0.7326, LPIPS=0.5050, LR=0.00000495
+
+[covid_ct] Epoch 24/300：
+  Loss=0.096829 | PSNR=14.05 | SSIM=0.7353 | LPIPS=0.5096
+  当前学习率：0.00000490 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_24.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_24.pth | 最佳Loss=0.096829
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_24.pth | 最佳PSNR=14.05 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_24.pth | 最佳SSIM=0.7353
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.096829
+📊 当前最佳PSNR：14.05 dB | 当前最佳SSIM：0.7353 | 当前最佳LPIPS：0.5050
+📊 TensorBoard日志记录 - Epoch 24: Loss=0.096829, PSNR=14.05, SSIM=0.7353, LPIPS=0.5096, LR=0.00000490
+📊 TensorBoard日志记录 - Epoch 24: Loss=0.096829, PSNR=14.05, SSIM=0.7353, LPIPS=0.5096, LR=0.00000490
+
+[covid_ct] Epoch 25/300：
+  Loss=0.094119 | PSNR=14.03 | SSIM=0.7521 | LPIPS=0.5009
+  当前学习率：0.00000485 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_25.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_25.pth | 最佳Loss=0.094119
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_25.pth | 最佳SSIM=0.7521
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_25.pth | 最佳LPIPS=0.5009
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.094119
+📊 当前最佳PSNR：14.05 dB | 当前最佳SSIM：0.7521 | 当前最佳LPIPS：0.5009
+📊 TensorBoard日志记录 - Epoch 25: Loss=0.094119, PSNR=14.03, SSIM=0.7521, LPIPS=0.5009, LR=0.00000485
+📊 TensorBoard日志记录 - Epoch 25: Loss=0.094119, PSNR=14.03, SSIM=0.7521, LPIPS=0.5009, LR=0.00000485
+📊 TensorBoard权重日志记录 - Epoch 25: 已记录28层参数和梯度
+📝 第25轮记录模型权重到TensorBoard
+
+[covid_ct] Epoch 26/300：
+  Loss=0.097241 | PSNR=14.04 | SSIM=0.7331 | LPIPS=0.5063
+  当前学习率：0.00000478 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_26.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.094119
+📊 当前最佳PSNR：14.05 dB | 当前最佳SSIM：0.7521 | 当前最佳LPIPS：0.5009
+📊 TensorBoard日志记录 - Epoch 26: Loss=0.097241, PSNR=14.04, SSIM=0.7331, LPIPS=0.5063, LR=0.00000478
+📊 TensorBoard日志记录 - Epoch 26: Loss=0.097241, PSNR=14.04, SSIM=0.7331, LPIPS=0.5063, LR=0.00000478
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.05 | 最佳SSIM: 0.7521 | 最佳LPIPS: 0.5009
+
+[covid_ct] Epoch 27/300：
+  Loss=0.093350 | PSNR=14.08 | SSIM=0.7532 | LPIPS=0.4973
+  当前学习率：0.00000471 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_27.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_27.pth | 最佳Loss=0.093350
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_27.pth | 最佳PSNR=14.08 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_27.pth | 最佳SSIM=0.7532
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_27.pth | 最佳LPIPS=0.4973
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.093350
+📊 当前最佳PSNR：14.08 dB | 当前最佳SSIM：0.7532 | 当前最佳LPIPS：0.4973
+📊 TensorBoard日志记录 - Epoch 27: Loss=0.093350, PSNR=14.08, SSIM=0.7532, LPIPS=0.4973, LR=0.00000471
+📊 TensorBoard日志记录 - Epoch 27: Loss=0.093350, PSNR=14.08, SSIM=0.7532, LPIPS=0.4973, LR=0.00000471
+
+[covid_ct] Epoch 28/300：
+  Loss=0.096685 | PSNR=14.02 | SSIM=0.7360 | LPIPS=0.4997
+  当前学习率：0.00000462 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_28.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.093350
+📊 当前最佳PSNR：14.08 dB | 当前最佳SSIM：0.7532 | 当前最佳LPIPS：0.4973
+📊 TensorBoard日志记录 - Epoch 28: Loss=0.096685, PSNR=14.02, SSIM=0.7360, LPIPS=0.4997, LR=0.00000462
+📊 TensorBoard日志记录 - Epoch 28: Loss=0.096685, PSNR=14.02, SSIM=0.7360, LPIPS=0.4997, LR=0.00000462
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.08 | 最佳SSIM: 0.7532 | 最佳LPIPS: 0.4973
+
+[covid_ct] Epoch 29/300：
+  Loss=0.093654 | PSNR=14.14 | SSIM=0.7496 | LPIPS=0.5000
+  当前学习率：0.00000452 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_29.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_29.pth | 最佳PSNR=14.14 dB
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.093350
+📊 当前最佳PSNR：14.14 dB | 当前最佳SSIM：0.7532 | 当前最佳LPIPS：0.4973
+📊 TensorBoard日志记录 - Epoch 29: Loss=0.093654, PSNR=14.14, SSIM=0.7496, LPIPS=0.5000, LR=0.00000452
+📊 TensorBoard日志记录 - Epoch 29: Loss=0.093654, PSNR=14.14, SSIM=0.7496, LPIPS=0.5000, LR=0.00000452
+
+[covid_ct] Epoch 30/300：
+  Loss=0.093997 | PSNR=14.07 | SSIM=0.7510 | LPIPS=0.5010
+  当前学习率：0.00000442 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_30.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.093350
+📊 当前最佳PSNR：14.14 dB | 当前最佳SSIM：0.7532 | 当前最佳LPIPS：0.4973
+📊 TensorBoard日志记录 - Epoch 30: Loss=0.093997, PSNR=14.07, SSIM=0.7510, LPIPS=0.5010, LR=0.00000442
+📊 TensorBoard日志记录 - Epoch 30: Loss=0.093997, PSNR=14.07, SSIM=0.7510, LPIPS=0.5010, LR=0.00000442
+📊 TensorBoard权重日志记录 - Epoch 30: 已记录28层参数和梯度
+📝 第30轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.14 | 最佳SSIM: 0.7532 | 最佳LPIPS: 0.4973
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练30轮
+
+[covid_ct] Epoch 31/300：
+  Loss=0.089853 | PSNR=14.31 | SSIM=0.7619 | LPIPS=0.4835
+  当前学习率：0.00000430 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_31.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_31.pth | 最佳Loss=0.089853
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_31.pth | 最佳PSNR=14.31 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_31.pth | 最佳SSIM=0.7619
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_31.pth | 最佳LPIPS=0.4835
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.089853
+📊 当前最佳PSNR：14.31 dB | 当前最佳SSIM：0.7619 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 31: Loss=0.089853, PSNR=14.31, SSIM=0.7619, LPIPS=0.4835, LR=0.00000430
+📊 TensorBoard日志记录 - Epoch 31: Loss=0.089853, PSNR=14.31, SSIM=0.7619, LPIPS=0.4835, LR=0.00000430
+
+[covid_ct] Epoch 32/300：
+  Loss=0.089545 | PSNR=14.32 | SSIM=0.7647 | LPIPS=0.4879
+  当前学习率：0.00000418 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_32.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_32.pth | 最佳Loss=0.089545
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_32.pth | 最佳PSNR=14.32 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_32.pth | 最佳SSIM=0.7647
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.089545
+📊 当前最佳PSNR：14.32 dB | 当前最佳SSIM：0.7647 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 32: Loss=0.089545, PSNR=14.32, SSIM=0.7647, LPIPS=0.4879, LR=0.00000418
+📊 TensorBoard日志记录 - Epoch 32: Loss=0.089545, PSNR=14.32, SSIM=0.7647, LPIPS=0.4879, LR=0.00000418
+
+[covid_ct] Epoch 33/300：
+  Loss=0.088726 | PSNR=14.34 | SSIM=0.7681 | LPIPS=0.4866
+  当前学习率：0.00000405 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_33.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_33.pth | 最佳Loss=0.088726
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_33.pth | 最佳PSNR=14.34 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_33.pth | 最佳SSIM=0.7681
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.088726
+📊 当前最佳PSNR：14.34 dB | 当前最佳SSIM：0.7681 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 33: Loss=0.088726, PSNR=14.34, SSIM=0.7681, LPIPS=0.4866, LR=0.00000405
+📊 TensorBoard日志记录 - Epoch 33: Loss=0.088726, PSNR=14.34, SSIM=0.7681, LPIPS=0.4866, LR=0.00000405
+
+[covid_ct] Epoch 34/300：
+  Loss=0.087683 | PSNR=14.43 | SSIM=0.7726 | LPIPS=0.4898
+  当前学习率：0.00000391 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_34.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_34.pth | 最佳Loss=0.087683
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_34.pth | 最佳PSNR=14.43 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_34.pth | 最佳SSIM=0.7726
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.087683
+📊 当前最佳PSNR：14.43 dB | 当前最佳SSIM：0.7726 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 34: Loss=0.087683, PSNR=14.43, SSIM=0.7726, LPIPS=0.4898, LR=0.00000391
+📊 TensorBoard日志记录 - Epoch 34: Loss=0.087683, PSNR=14.43, SSIM=0.7726, LPIPS=0.4898, LR=0.00000391
+
+[covid_ct] Epoch 35/300：
+  Loss=0.088529 | PSNR=14.28 | SSIM=0.7734 | LPIPS=0.4893
+  当前学习率：0.00000377 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_35.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_35.pth | 最佳SSIM=0.7734
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.087683
+📊 当前最佳PSNR：14.43 dB | 当前最佳SSIM：0.7734 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 35: Loss=0.088529, PSNR=14.28, SSIM=0.7734, LPIPS=0.4893, LR=0.00000377
+📊 TensorBoard日志记录 - Epoch 35: Loss=0.088529, PSNR=14.28, SSIM=0.7734, LPIPS=0.4893, LR=0.00000377
+📊 TensorBoard权重日志记录 - Epoch 35: 已记录28层参数和梯度
+📝 第35轮记录模型权重到TensorBoard
+
+[covid_ct] Epoch 36/300：
+  Loss=0.085509 | PSNR=14.51 | SSIM=0.7819 | LPIPS=0.4848
+  当前学习率：0.00000362 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_36.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_36.pth | 最佳Loss=0.085509
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_36.pth | 最佳PSNR=14.51 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_36.pth | 最佳SSIM=0.7819
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.085509
+📊 当前最佳PSNR：14.51 dB | 当前最佳SSIM：0.7819 | 当前最佳LPIPS：0.4835
+📊 TensorBoard日志记录 - Epoch 36: Loss=0.085509, PSNR=14.51, SSIM=0.7819, LPIPS=0.4848, LR=0.00000362
+📊 TensorBoard日志记录 - Epoch 36: Loss=0.085509, PSNR=14.51, SSIM=0.7819, LPIPS=0.4848, LR=0.00000362
+
+[covid_ct] Epoch 37/300：
+  Loss=0.085765 | PSNR=14.52 | SSIM=0.7769 | LPIPS=0.4741
+  当前学习率：0.00000347 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_37.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_37.pth | 最佳PSNR=14.52 dB
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_37.pth | 最佳LPIPS=0.4741
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.085509
+📊 当前最佳PSNR：14.52 dB | 当前最佳SSIM：0.7819 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 37: Loss=0.085765, PSNR=14.52, SSIM=0.7769, LPIPS=0.4741, LR=0.00000347
+📊 TensorBoard日志记录 - Epoch 37: Loss=0.085765, PSNR=14.52, SSIM=0.7769, LPIPS=0.4741, LR=0.00000347
+
+[covid_ct] Epoch 38/300：
+  Loss=0.086756 | PSNR=14.40 | SSIM=0.7774 | LPIPS=0.4820
+  当前学习率：0.00000332 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_38.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.085509
+📊 当前最佳PSNR：14.52 dB | 当前最佳SSIM：0.7819 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 38: Loss=0.086756, PSNR=14.40, SSIM=0.7774, LPIPS=0.4820, LR=0.00000332
+📊 TensorBoard日志记录 - Epoch 38: Loss=0.086756, PSNR=14.40, SSIM=0.7774, LPIPS=0.4820, LR=0.00000332
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.52 | 最佳SSIM: 0.7819 | 最佳LPIPS: 0.4741
+
+[covid_ct] Epoch 39/300：
+  Loss=0.087393 | PSNR=14.39 | SSIM=0.7743 | LPIPS=0.4856
+  当前学习率：0.00000316 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_39.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.085509
+📊 当前最佳PSNR：14.52 dB | 当前最佳SSIM：0.7819 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 39: Loss=0.087393, PSNR=14.39, SSIM=0.7743, LPIPS=0.4856, LR=0.00000316
+📊 TensorBoard日志记录 - Epoch 39: Loss=0.087393, PSNR=14.39, SSIM=0.7743, LPIPS=0.4856, LR=0.00000316
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.52 | 最佳SSIM: 0.7819 | 最佳LPIPS: 0.4741
+
+[covid_ct] Epoch 40/300：
+  Loss=0.089618 | PSNR=14.30 | SSIM=0.7660 | LPIPS=0.4887
+  当前学习率：0.00000300 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_40.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.085509
+📊 当前最佳PSNR：14.52 dB | 当前最佳SSIM：0.7819 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 40: Loss=0.089618, PSNR=14.30, SSIM=0.7660, LPIPS=0.4887, LR=0.00000300
+📊 TensorBoard日志记录 - Epoch 40: Loss=0.089618, PSNR=14.30, SSIM=0.7660, LPIPS=0.4887, LR=0.00000300
+📊 TensorBoard权重日志记录 - Epoch 40: 已记录28层参数和梯度
+📝 第40轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.52 | 最佳SSIM: 0.7819 | 最佳LPIPS: 0.4741
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练40轮
+
+[covid_ct] Epoch 41/300：
+  Loss=0.084243 | PSNR=14.61 | SSIM=0.7859 | LPIPS=0.4825
+  当前学习率：0.00000285 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_41.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_41.pth | 最佳Loss=0.084243
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_41.pth | 最佳PSNR=14.61 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_41.pth | 最佳SSIM=0.7859
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.084243
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7859 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 41: Loss=0.084243, PSNR=14.61, SSIM=0.7859, LPIPS=0.4825, LR=0.00000285
+📊 TensorBoard日志记录 - Epoch 41: Loss=0.084243, PSNR=14.61, SSIM=0.7859, LPIPS=0.4825, LR=0.00000285
+
+[covid_ct] Epoch 42/300：
+  Loss=0.085439 | PSNR=14.50 | SSIM=0.7814 | LPIPS=0.4804
+  当前学习率：0.00000269 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_42.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.084243
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7859 | 当前最佳LPIPS：0.4741
+📊 TensorBoard日志记录 - Epoch 42: Loss=0.085439, PSNR=14.50, SSIM=0.7814, LPIPS=0.4804, LR=0.00000269
+📊 TensorBoard日志记录 - Epoch 42: Loss=0.085439, PSNR=14.50, SSIM=0.7814, LPIPS=0.4804, LR=0.00000269
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.61 | 最佳SSIM: 0.7859 | 最佳LPIPS: 0.4741
+
+[covid_ct] Epoch 43/300：
+  Loss=0.084837 | PSNR=14.51 | SSIM=0.7820 | LPIPS=0.4733
+  当前学习率：0.00000254 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_43.pth
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_43.pth | 最佳LPIPS=0.4733
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.084243
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7859 | 当前最佳LPIPS：0.4733
+📊 TensorBoard日志记录 - Epoch 43: Loss=0.084837, PSNR=14.51, SSIM=0.7820, LPIPS=0.4733, LR=0.00000254
+📊 TensorBoard日志记录 - Epoch 43: Loss=0.084837, PSNR=14.51, SSIM=0.7820, LPIPS=0.4733, LR=0.00000254
+
+[covid_ct] Epoch 44/300：
+  Loss=0.083409 | PSNR=14.59 | SSIM=0.7896 | LPIPS=0.4762
+  当前学习率：0.00000239 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_44.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_44.pth | 最佳Loss=0.083409
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_44.pth | 最佳SSIM=0.7896
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.083409
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7896 | 当前最佳LPIPS：0.4733
+📊 TensorBoard日志记录 - Epoch 44: Loss=0.083409, PSNR=14.59, SSIM=0.7896, LPIPS=0.4762, LR=0.00000239
+📊 TensorBoard日志记录 - Epoch 44: Loss=0.083409, PSNR=14.59, SSIM=0.7896, LPIPS=0.4762, LR=0.00000239
+
+[covid_ct] Epoch 45/300：
+  Loss=0.083740 | PSNR=14.58 | SSIM=0.7883 | LPIPS=0.4781
+  当前学习率：0.00000224 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_45.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.083409
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7896 | 当前最佳LPIPS：0.4733
+📊 TensorBoard日志记录 - Epoch 45: Loss=0.083740, PSNR=14.58, SSIM=0.7883, LPIPS=0.4781, LR=0.00000224
+📊 TensorBoard日志记录 - Epoch 45: Loss=0.083740, PSNR=14.58, SSIM=0.7883, LPIPS=0.4781, LR=0.00000224
+📊 TensorBoard权重日志记录 - Epoch 45: 已记录28层参数和梯度
+📝 第45轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.61 | 最佳SSIM: 0.7896 | 最佳LPIPS: 0.4733
+
+[covid_ct] Epoch 46/300：
+  Loss=0.084499 | PSNR=14.60 | SSIM=0.7842 | LPIPS=0.4830
+  当前学习率：0.00000210 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_46.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.083409
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7896 | 当前最佳LPIPS：0.4733
+📊 TensorBoard日志记录 - Epoch 46: Loss=0.084499, PSNR=14.60, SSIM=0.7842, LPIPS=0.4830, LR=0.00000210
+📊 TensorBoard日志记录 - Epoch 46: Loss=0.084499, PSNR=14.60, SSIM=0.7842, LPIPS=0.4830, LR=0.00000210
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.61 | 最佳SSIM: 0.7896 | 最佳LPIPS: 0.4733
+
+[covid_ct] Epoch 47/300：
+  Loss=0.083406 | PSNR=14.52 | SSIM=0.7911 | LPIPS=0.4725
+  当前学习率：0.00000196 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_47.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_47.pth | 最佳Loss=0.083406
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_47.pth | 最佳SSIM=0.7911
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_47.pth | 最佳LPIPS=0.4725
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.083406
+📊 当前最佳PSNR：14.61 dB | 当前最佳SSIM：0.7911 | 当前最佳LPIPS：0.4725
+📊 TensorBoard日志记录 - Epoch 47: Loss=0.083406, PSNR=14.52, SSIM=0.7911, LPIPS=0.4725, LR=0.00000196
+📊 TensorBoard日志记录 - Epoch 47: Loss=0.083406, PSNR=14.52, SSIM=0.7911, LPIPS=0.4725, LR=0.00000196
+
+[covid_ct] Epoch 48/300：
+  Loss=0.082973 | PSNR=14.63 | SSIM=0.7898 | LPIPS=0.4746
+  当前学习率：0.00000183 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_48.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_48.pth | 最佳Loss=0.082973
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_48.pth | 最佳PSNR=14.63 dB
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.082973
+📊 当前最佳PSNR：14.63 dB | 当前最佳SSIM：0.7911 | 当前最佳LPIPS：0.4725
+📊 TensorBoard日志记录 - Epoch 48: Loss=0.082973, PSNR=14.63, SSIM=0.7898, LPIPS=0.4746, LR=0.00000183
+📊 TensorBoard日志记录 - Epoch 48: Loss=0.082973, PSNR=14.63, SSIM=0.7898, LPIPS=0.4746, LR=0.00000183
+
+[covid_ct] Epoch 49/300：
+  Loss=0.085260 | PSNR=14.47 | SSIM=0.7826 | LPIPS=0.4759
+  当前学习率：0.00000170 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_49.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.082973
+📊 当前最佳PSNR：14.63 dB | 当前最佳SSIM：0.7911 | 当前最佳LPIPS：0.4725
+📊 TensorBoard日志记录 - Epoch 49: Loss=0.085260, PSNR=14.47, SSIM=0.7826, LPIPS=0.4759, LR=0.00000170
+📊 TensorBoard日志记录 - Epoch 49: Loss=0.085260, PSNR=14.47, SSIM=0.7826, LPIPS=0.4759, LR=0.00000170
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.63 | 最佳SSIM: 0.7911 | 最佳LPIPS: 0.4725
+
+[covid_ct] Epoch 50/300：
+  Loss=0.083585 | PSNR=14.51 | SSIM=0.7913 | LPIPS=0.4749
+  当前学习率：0.00000159 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_50.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_50.pth | 最佳SSIM=0.7913
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.082973
+📊 当前最佳PSNR：14.63 dB | 当前最佳SSIM：0.7913 | 当前最佳LPIPS：0.4725
+📊 TensorBoard日志记录 - Epoch 50: Loss=0.083585, PSNR=14.51, SSIM=0.7913, LPIPS=0.4749, LR=0.00000159
+📊 TensorBoard日志记录 - Epoch 50: Loss=0.083585, PSNR=14.51, SSIM=0.7913, LPIPS=0.4749, LR=0.00000159
+📊 TensorBoard权重日志记录 - Epoch 50: 已记录28层参数和梯度
+📝 第50轮记录模型权重到TensorBoard
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练50轮
+
+[covid_ct] Epoch 51/300：
+  Loss=0.082564 | PSNR=14.51 | SSIM=0.7964 | LPIPS=0.4697
+  当前学习率：0.00000148 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_51.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_51.pth | 最佳Loss=0.082564
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_51.pth | 最佳SSIM=0.7964
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_51.pth | 最佳LPIPS=0.4697
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.082564
+📊 当前最佳PSNR：14.63 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4697
+📊 TensorBoard日志记录 - Epoch 51: Loss=0.082564, PSNR=14.51, SSIM=0.7964, LPIPS=0.4697, LR=0.00000148
+📊 TensorBoard日志记录 - Epoch 51: Loss=0.082564, PSNR=14.51, SSIM=0.7964, LPIPS=0.4697, LR=0.00000148
+
+[covid_ct] Epoch 52/300：
+  Loss=0.082532 | PSNR=14.57 | SSIM=0.7956 | LPIPS=0.4744
+  当前学习率：0.00000138 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_52.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_52.pth | 最佳Loss=0.082532
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.082532
+📊 当前最佳PSNR：14.63 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4697
+📊 TensorBoard日志记录 - Epoch 52: Loss=0.082532, PSNR=14.57, SSIM=0.7956, LPIPS=0.4744, LR=0.00000138
+📊 TensorBoard日志记录 - Epoch 52: Loss=0.082532, PSNR=14.57, SSIM=0.7956, LPIPS=0.4744, LR=0.00000138
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.63 | 最佳SSIM: 0.7964 | 最佳LPIPS: 0.4697
+
+[covid_ct] Epoch 53/300：
+  Loss=0.082022 | PSNR=14.64 | SSIM=0.7928 | LPIPS=0.4662
+  当前学习率：0.00000130 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_53.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_53.pth | 最佳Loss=0.082022
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_53.pth | 最佳PSNR=14.64 dB
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_53.pth | 最佳LPIPS=0.4662
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.082022
+📊 当前最佳PSNR：14.64 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4662
+📊 TensorBoard日志记录 - Epoch 53: Loss=0.082022, PSNR=14.64, SSIM=0.7928, LPIPS=0.4662, LR=0.00000130
+📊 TensorBoard日志记录 - Epoch 53: Loss=0.082022, PSNR=14.64, SSIM=0.7928, LPIPS=0.4662, LR=0.00000130
+
+[covid_ct] Epoch 54/300：
+  Loss=0.082711 | PSNR=14.61 | SSIM=0.7933 | LPIPS=0.4760
+  当前学习率：0.00000122 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_54.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.082022
+📊 当前最佳PSNR：14.64 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4662
+📊 TensorBoard日志记录 - Epoch 54: Loss=0.082711, PSNR=14.61, SSIM=0.7933, LPIPS=0.4760, LR=0.00000122
+📊 TensorBoard日志记录 - Epoch 54: Loss=0.082711, PSNR=14.61, SSIM=0.7933, LPIPS=0.4760, LR=0.00000122
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.64 | 最佳SSIM: 0.7964 | 最佳LPIPS: 0.4662
+
+[covid_ct] Epoch 55/300：
+  Loss=0.083144 | PSNR=14.62 | SSIM=0.7905 | LPIPS=0.4767
+  当前学习率：0.00000115 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_55.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.082022
+📊 当前最佳PSNR：14.64 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4662
+📊 TensorBoard日志记录 - Epoch 55: Loss=0.083144, PSNR=14.62, SSIM=0.7905, LPIPS=0.4767, LR=0.00000115
+📊 TensorBoard日志记录 - Epoch 55: Loss=0.083144, PSNR=14.62, SSIM=0.7905, LPIPS=0.4767, LR=0.00000115
+📊 TensorBoard权重日志记录 - Epoch 55: 已记录28层参数和梯度
+📝 第55轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.64 | 最佳SSIM: 0.7964 | 最佳LPIPS: 0.4662
+
+[covid_ct] Epoch 56/300：
+  Loss=0.083353 | PSNR=14.55 | SSIM=0.7908 | LPIPS=0.4735
+  当前学习率：0.00000110 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_56.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.082022
+📊 当前最佳PSNR：14.64 dB | 当前最佳SSIM：0.7964 | 当前最佳LPIPS：0.4662
+📊 TensorBoard日志记录 - Epoch 56: Loss=0.083353, PSNR=14.55, SSIM=0.7908, LPIPS=0.4735, LR=0.00000110
+📊 TensorBoard日志记录 - Epoch 56: Loss=0.083353, PSNR=14.55, SSIM=0.7908, LPIPS=0.4735, LR=0.00000110
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.64 | 最佳SSIM: 0.7964 | 最佳LPIPS: 0.4662
+
+[covid_ct] Epoch 57/300：
+  Loss=0.081231 | PSNR=14.62 | SSIM=0.7987 | LPIPS=0.4633
+  当前学习率：0.00000106 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_57.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_57.pth | 最佳Loss=0.081231
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_57.pth | 最佳SSIM=0.7987
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_57.pth | 最佳LPIPS=0.4633
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.081231
+📊 当前最佳PSNR：14.64 dB | 当前最佳SSIM：0.7987 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 57: Loss=0.081231, PSNR=14.62, SSIM=0.7987, LPIPS=0.4633, LR=0.00000106
+📊 TensorBoard日志记录 - Epoch 57: Loss=0.081231, PSNR=14.62, SSIM=0.7987, LPIPS=0.4633, LR=0.00000106
+
+[covid_ct] Epoch 58/300：
+  Loss=0.082405 | PSNR=14.65 | SSIM=0.7922 | LPIPS=0.4717
+  当前学习率：0.00000103 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_58.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_58.pth | 最佳PSNR=14.65 dB
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.081231
+📊 当前最佳PSNR：14.65 dB | 当前最佳SSIM：0.7987 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 58: Loss=0.082405, PSNR=14.65, SSIM=0.7922, LPIPS=0.4717, LR=0.00000103
+📊 TensorBoard日志记录 - Epoch 58: Loss=0.082405, PSNR=14.65, SSIM=0.7922, LPIPS=0.4717, LR=0.00000103
+
+[covid_ct] Epoch 59/300：
+  Loss=0.083063 | PSNR=14.56 | SSIM=0.7919 | LPIPS=0.4733
+  当前学习率：0.00000101 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_59.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.081231
+📊 当前最佳PSNR：14.65 dB | 当前最佳SSIM：0.7987 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 59: Loss=0.083063, PSNR=14.56, SSIM=0.7919, LPIPS=0.4733, LR=0.00000101
+📊 TensorBoard日志记录 - Epoch 59: Loss=0.083063, PSNR=14.56, SSIM=0.7919, LPIPS=0.4733, LR=0.00000101
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.65 | 最佳SSIM: 0.7987 | 最佳LPIPS: 0.4633
+
+[covid_ct] Epoch 60/300：
+  Loss=0.085104 | PSNR=14.46 | SSIM=0.7849 | LPIPS=0.4783
+  当前学习率：0.00000100 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_60.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.081231
+📊 当前最佳PSNR：14.65 dB | 当前最佳SSIM：0.7987 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 60: Loss=0.085104, PSNR=14.46, SSIM=0.7849, LPIPS=0.4783, LR=0.00000100
+📊 TensorBoard日志记录 - Epoch 60: Loss=0.085104, PSNR=14.46, SSIM=0.7849, LPIPS=0.4783, LR=0.00000100
+📊 TensorBoard权重日志记录 - Epoch 60: 已记录28层参数和梯度
+📝 第60轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.65 | 最佳SSIM: 0.7987 | 最佳LPIPS: 0.4633
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练60轮
+
+[covid_ct] Epoch 61/300：
+  Loss=0.080880 | PSNR=14.63 | SSIM=0.8012 | LPIPS=0.4654
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_61.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_61.pth | 最佳Loss=0.080880
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_61.pth | 最佳SSIM=0.8012
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.080880
+📊 当前最佳PSNR：14.65 dB | 当前最佳SSIM：0.8012 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 61: Loss=0.080880, PSNR=14.63, SSIM=0.8012, LPIPS=0.4654, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 61: Loss=0.080880, PSNR=14.63, SSIM=0.8012, LPIPS=0.4654, LR=0.00000500
+
+[covid_ct] Epoch 62/300：
+  Loss=0.079366 | PSNR=14.86 | SSIM=0.8016 | LPIPS=0.4641
+  当前学习率：0.00000499 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_62.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_62.pth | 最佳Loss=0.079366
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_62.pth | 最佳PSNR=14.86 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_62.pth | 最佳SSIM=0.8016
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.079366
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8016 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 62: Loss=0.079366, PSNR=14.86, SSIM=0.8016, LPIPS=0.4641, LR=0.00000499
+📊 TensorBoard日志记录 - Epoch 62: Loss=0.079366, PSNR=14.86, SSIM=0.8016, LPIPS=0.4641, LR=0.00000499
+
+[covid_ct] Epoch 63/300：
+  Loss=0.081966 | PSNR=14.55 | SSIM=0.7981 | LPIPS=0.4683
+  当前学习率：0.00000499 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_63.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.079366
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8016 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 63: Loss=0.081966, PSNR=14.55, SSIM=0.7981, LPIPS=0.4683, LR=0.00000499
+📊 TensorBoard日志记录 - Epoch 63: Loss=0.081966, PSNR=14.55, SSIM=0.7981, LPIPS=0.4683, LR=0.00000499
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8016 | 最佳LPIPS: 0.4633
+
+[covid_ct] Epoch 64/300：
+  Loss=0.081619 | PSNR=14.65 | SSIM=0.7964 | LPIPS=0.4691
+  当前学习率：0.00000498 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_64.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.079366
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8016 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 64: Loss=0.081619, PSNR=14.65, SSIM=0.7964, LPIPS=0.4691, LR=0.00000498
+📊 TensorBoard日志记录 - Epoch 64: Loss=0.081619, PSNR=14.65, SSIM=0.7964, LPIPS=0.4691, LR=0.00000498
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8016 | 最佳LPIPS: 0.4633
+
+[covid_ct] Epoch 65/300：
+  Loss=0.080356 | PSNR=14.72 | SSIM=0.8015 | LPIPS=0.4662
+  当前学习率：0.00000496 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_65.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.079366
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8016 | 当前最佳LPIPS：0.4633
+📊 TensorBoard日志记录 - Epoch 65: Loss=0.080356, PSNR=14.72, SSIM=0.8015, LPIPS=0.4662, LR=0.00000496
+📊 TensorBoard日志记录 - Epoch 65: Loss=0.080356, PSNR=14.72, SSIM=0.8015, LPIPS=0.4662, LR=0.00000496
+📊 TensorBoard权重日志记录 - Epoch 65: 已记录28层参数和梯度
+📝 第65轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8016 | 最佳LPIPS: 0.4633
+
+[covid_ct] Epoch 66/300：
+  Loss=0.079059 | PSNR=14.79 | SSIM=0.8051 | LPIPS=0.4614
+  当前学习率：0.00000495 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_66.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_66.pth | 最佳Loss=0.079059
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_66.pth | 最佳SSIM=0.8051
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_66.pth | 最佳LPIPS=0.4614
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.079059
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8051 | 当前最佳LPIPS：0.4614
+📊 TensorBoard日志记录 - Epoch 66: Loss=0.079059, PSNR=14.79, SSIM=0.8051, LPIPS=0.4614, LR=0.00000495
+📊 TensorBoard日志记录 - Epoch 66: Loss=0.079059, PSNR=14.79, SSIM=0.8051, LPIPS=0.4614, LR=0.00000495
+
+[covid_ct] Epoch 67/300：
+  Loss=0.082043 | PSNR=14.69 | SSIM=0.7941 | LPIPS=0.4739
+  当前学习率：0.00000493 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_67.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.079059
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8051 | 当前最佳LPIPS：0.4614
+📊 TensorBoard日志记录 - Epoch 67: Loss=0.082043, PSNR=14.69, SSIM=0.7941, LPIPS=0.4739, LR=0.00000493
+📊 TensorBoard日志记录 - Epoch 67: Loss=0.082043, PSNR=14.69, SSIM=0.7941, LPIPS=0.4739, LR=0.00000493
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8051 | 最佳LPIPS: 0.4614
+
+[covid_ct] Epoch 68/300：
+  Loss=0.079490 | PSNR=14.73 | SSIM=0.8056 | LPIPS=0.4639
+  当前学习率：0.00000490 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_68.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_68.pth | 最佳SSIM=0.8056
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.079059
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8056 | 当前最佳LPIPS：0.4614
+📊 TensorBoard日志记录 - Epoch 68: Loss=0.079490, PSNR=14.73, SSIM=0.8056, LPIPS=0.4639, LR=0.00000490
+📊 TensorBoard日志记录 - Epoch 68: Loss=0.079490, PSNR=14.73, SSIM=0.8056, LPIPS=0.4639, LR=0.00000490
+
+[covid_ct] Epoch 69/300：
+  Loss=0.080013 | PSNR=14.66 | SSIM=0.8044 | LPIPS=0.4580
+  当前学习率：0.00000488 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_69.pth
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_69.pth | 最佳LPIPS=0.4580
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.079059
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8056 | 当前最佳LPIPS：0.4580
+📊 TensorBoard日志记录 - Epoch 69: Loss=0.080013, PSNR=14.66, SSIM=0.8044, LPIPS=0.4580, LR=0.00000488
+📊 TensorBoard日志记录 - Epoch 69: Loss=0.080013, PSNR=14.66, SSIM=0.8044, LPIPS=0.4580, LR=0.00000488
+
+[covid_ct] Epoch 70/300：
+  Loss=0.080326 | PSNR=14.75 | SSIM=0.7993 | LPIPS=0.4635
+  当前学习率：0.00000485 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_70.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.079059
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8056 | 当前最佳LPIPS：0.4580
+📊 TensorBoard日志记录 - Epoch 70: Loss=0.080326, PSNR=14.75, SSIM=0.7993, LPIPS=0.4635, LR=0.00000485
+📊 TensorBoard日志记录 - Epoch 70: Loss=0.080326, PSNR=14.75, SSIM=0.7993, LPIPS=0.4635, LR=0.00000485
+📊 TensorBoard权重日志记录 - Epoch 70: 已记录28层参数和梯度
+📝 第70轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8056 | 最佳LPIPS: 0.4580
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练70轮
+
+[covid_ct] Epoch 71/300：
+  Loss=0.078749 | PSNR=14.79 | SSIM=0.8063 | LPIPS=0.4583
+  当前学习率：0.00000482 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_71.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_71.pth | 最佳Loss=0.078749
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_71.pth | 最佳SSIM=0.8063
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.078749
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8063 | 当前最佳LPIPS：0.4580
+📊 TensorBoard日志记录 - Epoch 71: Loss=0.078749, PSNR=14.79, SSIM=0.8063, LPIPS=0.4583, LR=0.00000482
+📊 TensorBoard日志记录 - Epoch 71: Loss=0.078749, PSNR=14.79, SSIM=0.8063, LPIPS=0.4583, LR=0.00000482
+
+[covid_ct] Epoch 72/300：
+  Loss=0.081694 | PSNR=14.55 | SSIM=0.7981 | LPIPS=0.4620
+  当前学习率：0.00000478 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_72.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.078749
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8063 | 当前最佳LPIPS：0.4580
+📊 TensorBoard日志记录 - Epoch 72: Loss=0.081694, PSNR=14.55, SSIM=0.7981, LPIPS=0.4620, LR=0.00000478
+📊 TensorBoard日志记录 - Epoch 72: Loss=0.081694, PSNR=14.55, SSIM=0.7981, LPIPS=0.4620, LR=0.00000478
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8063 | 最佳LPIPS: 0.4580
+
+[covid_ct] Epoch 73/300：
+  Loss=0.080460 | PSNR=14.62 | SSIM=0.8027 | LPIPS=0.4600
+  当前学习率：0.00000475 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_73.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.078749
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8063 | 当前最佳LPIPS：0.4580
+📊 TensorBoard日志记录 - Epoch 73: Loss=0.080460, PSNR=14.62, SSIM=0.8027, LPIPS=0.4600, LR=0.00000475
+📊 TensorBoard日志记录 - Epoch 73: Loss=0.080460, PSNR=14.62, SSIM=0.8027, LPIPS=0.4600, LR=0.00000475
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8063 | 最佳LPIPS: 0.4580
+
+[covid_ct] Epoch 74/300：
+  Loss=0.079617 | PSNR=14.59 | SSIM=0.8073 | LPIPS=0.4554
+  当前学习率：0.00000471 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_74.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_74.pth | 最佳SSIM=0.8073
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_74.pth | 最佳LPIPS=0.4554
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.078749
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8073 | 当前最佳LPIPS：0.4554
+📊 TensorBoard日志记录 - Epoch 74: Loss=0.079617, PSNR=14.59, SSIM=0.8073, LPIPS=0.4554, LR=0.00000471
+📊 TensorBoard日志记录 - Epoch 74: Loss=0.079617, PSNR=14.59, SSIM=0.8073, LPIPS=0.4554, LR=0.00000471
+
+[covid_ct] Epoch 75/300：
+  Loss=0.078771 | PSNR=14.73 | SSIM=0.8085 | LPIPS=0.4588
+  当前学习率：0.00000466 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_75.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_75.pth | 最佳SSIM=0.8085
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.078749
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8085 | 当前最佳LPIPS：0.4554
+📊 TensorBoard日志记录 - Epoch 75: Loss=0.078771, PSNR=14.73, SSIM=0.8085, LPIPS=0.4588, LR=0.00000466
+📊 TensorBoard日志记录 - Epoch 75: Loss=0.078771, PSNR=14.73, SSIM=0.8085, LPIPS=0.4588, LR=0.00000466
+📊 TensorBoard权重日志记录 - Epoch 75: 已记录28层参数和梯度
+📝 第75轮记录模型权重到TensorBoard
+
+[covid_ct] Epoch 76/300：
+  Loss=0.077594 | PSNR=14.84 | SSIM=0.8095 | LPIPS=0.4514
+  当前学习率：0.00000462 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_76.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_76.pth | 最佳Loss=0.077594
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_76.pth | 最佳SSIM=0.8095
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_76.pth | 最佳LPIPS=0.4514
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8095 | 当前最佳LPIPS：0.4514
+📊 TensorBoard日志记录 - Epoch 76: Loss=0.077594, PSNR=14.84, SSIM=0.8095, LPIPS=0.4514, LR=0.00000462
+📊 TensorBoard日志记录 - Epoch 76: Loss=0.077594, PSNR=14.84, SSIM=0.8095, LPIPS=0.4514, LR=0.00000462
+
+[covid_ct] Epoch 77/300：
+  Loss=0.079948 | PSNR=14.68 | SSIM=0.8043 | LPIPS=0.4628
+  当前学习率：0.00000457 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_77.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8095 | 当前最佳LPIPS：0.4514
+📊 TensorBoard日志记录 - Epoch 77: Loss=0.079948, PSNR=14.68, SSIM=0.8043, LPIPS=0.4628, LR=0.00000457
+📊 TensorBoard日志记录 - Epoch 77: Loss=0.079948, PSNR=14.68, SSIM=0.8043, LPIPS=0.4628, LR=0.00000457
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8095 | 最佳LPIPS: 0.4514
+
+[covid_ct] Epoch 78/300：
+  Loss=0.079316 | PSNR=14.78 | SSIM=0.8027 | LPIPS=0.4580
+  当前学习率：0.00000452 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_78.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8095 | 当前最佳LPIPS：0.4514
+📊 TensorBoard日志记录 - Epoch 78: Loss=0.079316, PSNR=14.78, SSIM=0.8027, LPIPS=0.4580, LR=0.00000452
+📊 TensorBoard日志记录 - Epoch 78: Loss=0.079316, PSNR=14.78, SSIM=0.8027, LPIPS=0.4580, LR=0.00000452
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8095 | 最佳LPIPS: 0.4514
+
+[covid_ct] Epoch 79/300：
+  Loss=0.079831 | PSNR=14.65 | SSIM=0.8065 | LPIPS=0.4625
+  当前学习率：0.00000447 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_79.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8095 | 当前最佳LPIPS：0.4514
+📊 TensorBoard日志记录 - Epoch 79: Loss=0.079831, PSNR=14.65, SSIM=0.8065, LPIPS=0.4625, LR=0.00000447
+📊 TensorBoard日志记录 - Epoch 79: Loss=0.079831, PSNR=14.65, SSIM=0.8065, LPIPS=0.4625, LR=0.00000447
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8095 | 最佳LPIPS: 0.4514
+
+[covid_ct] Epoch 80/300：
+  Loss=0.079616 | PSNR=14.75 | SSIM=0.8023 | LPIPS=0.4590
+  当前学习率：0.00000442 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_80.pth
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8095 | 当前最佳LPIPS：0.4514
+📊 TensorBoard日志记录 - Epoch 80: Loss=0.079616, PSNR=14.75, SSIM=0.8023, LPIPS=0.4590, LR=0.00000442
+📊 TensorBoard日志记录 - Epoch 80: Loss=0.079616, PSNR=14.75, SSIM=0.8023, LPIPS=0.4590, LR=0.00000442
+📊 TensorBoard权重日志记录 - Epoch 80: 已记录28层参数和梯度
+📝 第80轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 4/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8095 | 最佳LPIPS: 0.4514
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练80轮
+
+[covid_ct] Epoch 81/300：
+  Loss=0.078493 | PSNR=14.67 | SSIM=0.8100 | LPIPS=0.4487
+  当前学习率：0.00000436 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_81.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_81.pth | 最佳SSIM=0.8100
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_81.pth | 最佳LPIPS=0.4487
+⏱️  早停计数器：4/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 81: Loss=0.078493, PSNR=14.67, SSIM=0.8100, LPIPS=0.4487, LR=0.00000436
+📊 TensorBoard日志记录 - Epoch 81: Loss=0.078493, PSNR=14.67, SSIM=0.8100, LPIPS=0.4487, LR=0.00000436
+
+[covid_ct] Epoch 82/300：
+  Loss=0.078347 | PSNR=14.72 | SSIM=0.8093 | LPIPS=0.4509
+  当前学习率：0.00000430 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_82.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 82: Loss=0.078347, PSNR=14.72, SSIM=0.8093, LPIPS=0.4509, LR=0.00000430
+📊 TensorBoard日志记录 - Epoch 82: Loss=0.078347, PSNR=14.72, SSIM=0.8093, LPIPS=0.4509, LR=0.00000430
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 83/300：
+  Loss=0.081144 | PSNR=14.65 | SSIM=0.7996 | LPIPS=0.4667
+  当前学习率：0.00000424 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_83.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 83: Loss=0.081144, PSNR=14.65, SSIM=0.7996, LPIPS=0.4667, LR=0.00000424
+📊 TensorBoard日志记录 - Epoch 83: Loss=0.081144, PSNR=14.65, SSIM=0.7996, LPIPS=0.4667, LR=0.00000424
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 84/300：
+  Loss=0.079960 | PSNR=14.77 | SSIM=0.8019 | LPIPS=0.4671
+  当前学习率：0.00000418 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_84.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 84: Loss=0.079960, PSNR=14.77, SSIM=0.8019, LPIPS=0.4671, LR=0.00000418
+📊 TensorBoard日志记录 - Epoch 84: Loss=0.079960, PSNR=14.77, SSIM=0.8019, LPIPS=0.4671, LR=0.00000418
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 85/300：
+  Loss=0.077777 | PSNR=14.86 | SSIM=0.8079 | LPIPS=0.4517
+  当前学习率：0.00000411 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_85.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_85.pth | 最佳PSNR=14.86 dB
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 85: Loss=0.077777, PSNR=14.86, SSIM=0.8079, LPIPS=0.4517, LR=0.00000411
+📊 TensorBoard日志记录 - Epoch 85: Loss=0.077777, PSNR=14.86, SSIM=0.8079, LPIPS=0.4517, LR=0.00000411
+📊 TensorBoard权重日志记录 - Epoch 85: 已记录28层参数和梯度
+📝 第85轮记录模型权重到TensorBoard
+
+[covid_ct] Epoch 86/300：
+  Loss=0.079560 | PSNR=14.73 | SSIM=0.8045 | LPIPS=0.4614
+  当前学习率：0.00000405 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_86.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 86: Loss=0.079560, PSNR=14.73, SSIM=0.8045, LPIPS=0.4614, LR=0.00000405
+📊 TensorBoard日志记录 - Epoch 86: Loss=0.079560, PSNR=14.73, SSIM=0.8045, LPIPS=0.4614, LR=0.00000405
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 87/300：
+  Loss=0.079981 | PSNR=14.63 | SSIM=0.8057 | LPIPS=0.4619
+  当前学习率：0.00000398 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_87.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 87: Loss=0.079981, PSNR=14.63, SSIM=0.8057, LPIPS=0.4619, LR=0.00000398
+📊 TensorBoard日志记录 - Epoch 87: Loss=0.079981, PSNR=14.63, SSIM=0.8057, LPIPS=0.4619, LR=0.00000398
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 88/300：
+  Loss=0.079528 | PSNR=14.67 | SSIM=0.8064 | LPIPS=0.4597
+  当前学习率：0.00000391 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_88.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 88: Loss=0.079528, PSNR=14.67, SSIM=0.8064, LPIPS=0.4597, LR=0.00000391
+📊 TensorBoard日志记录 - Epoch 88: Loss=0.079528, PSNR=14.67, SSIM=0.8064, LPIPS=0.4597, LR=0.00000391
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 89/300：
+  Loss=0.079437 | PSNR=14.67 | SSIM=0.8071 | LPIPS=0.4606
+  当前学习率：0.00000384 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_89.pth
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8100 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 89: Loss=0.079437, PSNR=14.67, SSIM=0.8071, LPIPS=0.4606, LR=0.00000384
+📊 TensorBoard日志记录 - Epoch 89: Loss=0.079437, PSNR=14.67, SSIM=0.8071, LPIPS=0.4606, LR=0.00000384
+⏱️ EarlyStopping counter: 4/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8100 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 90/300：
+  Loss=0.077741 | PSNR=14.72 | SSIM=0.8132 | LPIPS=0.4501
+  当前学习率：0.00000377 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_90.pth
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_90.pth | 最佳SSIM=0.8132
+⏱️  早停计数器：4/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 90: Loss=0.077741, PSNR=14.72, SSIM=0.8132, LPIPS=0.4501, LR=0.00000377
+📊 TensorBoard日志记录 - Epoch 90: Loss=0.077741, PSNR=14.72, SSIM=0.8132, LPIPS=0.4501, LR=0.00000377
+📊 TensorBoard权重日志记录 - Epoch 90: 已记录28层参数和梯度
+📝 第90轮记录模型权重到TensorBoard
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练90轮
+
+[covid_ct] Epoch 91/300：
+  Loss=0.078786 | PSNR=14.70 | SSIM=0.8089 | LPIPS=0.4561
+  当前学习率：0.00000369 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_91.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 91: Loss=0.078786, PSNR=14.70, SSIM=0.8089, LPIPS=0.4561, LR=0.00000369
+📊 TensorBoard日志记录 - Epoch 91: Loss=0.078786, PSNR=14.70, SSIM=0.8089, LPIPS=0.4561, LR=0.00000369
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 92/300：
+  Loss=0.078623 | PSNR=14.72 | SSIM=0.8073 | LPIPS=0.4502
+  当前学习率：0.00000362 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_92.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 92: Loss=0.078623, PSNR=14.72, SSIM=0.8073, LPIPS=0.4502, LR=0.00000362
+📊 TensorBoard日志记录 - Epoch 92: Loss=0.078623, PSNR=14.72, SSIM=0.8073, LPIPS=0.4502, LR=0.00000362
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 93/300：
+  Loss=0.078567 | PSNR=14.80 | SSIM=0.8089 | LPIPS=0.4605
+  当前学习率：0.00000355 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_93.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.077594
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 93: Loss=0.078567, PSNR=14.80, SSIM=0.8089, LPIPS=0.4605, LR=0.00000355
+📊 TensorBoard日志记录 - Epoch 93: Loss=0.078567, PSNR=14.80, SSIM=0.8089, LPIPS=0.4605, LR=0.00000355
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 94/300：
+  Loss=0.077467 | PSNR=14.80 | SSIM=0.8120 | LPIPS=0.4520
+  当前学习率：0.00000347 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_94.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_94.pth | 最佳Loss=0.077467
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 94: Loss=0.077467, PSNR=14.80, SSIM=0.8120, LPIPS=0.4520, LR=0.00000347
+📊 TensorBoard日志记录 - Epoch 94: Loss=0.077467, PSNR=14.80, SSIM=0.8120, LPIPS=0.4520, LR=0.00000347
+⏱️ EarlyStopping counter: 4/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 95/300：
+  Loss=0.078708 | PSNR=14.81 | SSIM=0.8074 | LPIPS=0.4632
+  当前学习率：0.00000339 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_95.pth
+⏱️  早停计数器：4/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 95: Loss=0.078708, PSNR=14.81, SSIM=0.8074, LPIPS=0.4632, LR=0.00000339
+📊 TensorBoard日志记录 - Epoch 95: Loss=0.078708, PSNR=14.81, SSIM=0.8074, LPIPS=0.4632, LR=0.00000339
+📊 TensorBoard权重日志记录 - Epoch 95: 已记录28层参数和梯度
+📝 第95轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 5/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 96/300：
+  Loss=0.078435 | PSNR=14.81 | SSIM=0.8082 | LPIPS=0.4604
+  当前学习率：0.00000332 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_96.pth
+⏱️  早停计数器：5/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 96: Loss=0.078435, PSNR=14.81, SSIM=0.8082, LPIPS=0.4604, LR=0.00000332
+📊 TensorBoard日志记录 - Epoch 96: Loss=0.078435, PSNR=14.81, SSIM=0.8082, LPIPS=0.4604, LR=0.00000332
+⏱️ EarlyStopping counter: 6/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 97/300：
+  Loss=0.078617 | PSNR=14.69 | SSIM=0.8095 | LPIPS=0.4518
+  当前学习率：0.00000324 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_97.pth
+⏱️  早停计数器：6/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 97: Loss=0.078617, PSNR=14.69, SSIM=0.8095, LPIPS=0.4518, LR=0.00000324
+📊 TensorBoard日志记录 - Epoch 97: Loss=0.078617, PSNR=14.69, SSIM=0.8095, LPIPS=0.4518, LR=0.00000324
+⏱️ EarlyStopping counter: 7/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+
+[covid_ct] Epoch 98/300：
+  Loss=0.078865 | PSNR=14.81 | SSIM=0.8051 | LPIPS=0.4612
+  当前学习率：0.00000316 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_98.pth
+⏱️  早停计数器：7/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 98: Loss=0.078865, PSNR=14.81, SSIM=0.8051, LPIPS=0.4612, LR=0.00000316
+📊 TensorBoard日志记录 - Epoch 98: Loss=0.078865, PSNR=14.81, SSIM=0.8051, LPIPS=0.4612, LR=0.00000316
+⏱️ EarlyStopping counter: 8/8 | 最佳PSNR: 14.86 | 最佳SSIM: 0.8132 | 最佳LPIPS: 0.4487
+⚠️ Early stopping triggered!（多指标均无有效提升）
+🛑 触发早停，停止covid_ct训练
+🏁 早停时最佳指标 - Loss: 0.077467 | PSNR: 14.86 | SSIM: 0.8132 | LPIPS: 0.4487
+
+🎉 covid_ct训练完成！
+📊 最终最佳指标 - Loss: 0.077467 | PSNR: 14.86 dB | SSIM: 0.8132 | LPIPS: 0.4487
+📊 训练统计 - 总训练轮数: 98 | 最终学习率: 0.00000316 | 早停计数器最终值: 8/8
+
+📝 covid_ct训练日志已关闭，保存到：./output_detail/covid_ct_train_log.txt
+📝 开始记录covid_ct训练日志到：./output_detail/covid_ct_train_log.txt
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/dake/.conda/envs/drch/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+
+===== 开始训练covid_ct =====
+🔧 数据集配置 - 输入通道: 1 | 缩放因子: 4 | 批次大小: 8 | 初始LR: 5e-06 | L2正则化: 0.0001
+🔧 早停配置 - Patience: 8 | Min Delta: 0.0001
+🔧 训练配置 - 总轮数: 300 | 冻结主干轮数: 5
+✅ 加载预训练权重完成：匹配28层 | 未匹配0层
+🔒 前5轮冻结主干网络
+🔍 扫描到./continual_ckpt中的epoch文件：['covid_ct_epoch_1.pth', 'covid_ct_epoch_2.pth', 'covid_ct_epoch_3.pth', 'covid_ct_epoch_4.pth', 'covid_ct_epoch_5.pth', 'covid_ct_epoch_6.pth', 'covid_ct_epoch_7.pth', 'covid_ct_epoch_8.pth', 'covid_ct_epoch_9.pth', 'covid_ct_epoch_10.pth', 'covid_ct_epoch_11.pth', 'covid_ct_epoch_12.pth', 'covid_ct_epoch_13.pth', 'covid_ct_epoch_14.pth', 'covid_ct_epoch_15.pth', 'covid_ct_epoch_16.pth', 'covid_ct_epoch_17.pth', 'covid_ct_epoch_18.pth', 'covid_ct_epoch_19.pth', 'covid_ct_epoch_20.pth', 'covid_ct_epoch_21.pth', 'covid_ct_epoch_22.pth', 'covid_ct_epoch_23.pth', 'covid_ct_epoch_24.pth', 'covid_ct_epoch_25.pth', 'covid_ct_epoch_26.pth', 'covid_ct_epoch_27.pth', 'covid_ct_epoch_28.pth', 'covid_ct_epoch_29.pth', 'covid_ct_epoch_30.pth', 'covid_ct_epoch_31.pth', 'covid_ct_epoch_32.pth', 'covid_ct_epoch_33.pth', 'covid_ct_epoch_34.pth', 'covid_ct_epoch_35.pth', 'covid_ct_epoch_36.pth', 'covid_ct_epoch_37.pth', 'covid_ct_epoch_38.pth', 'covid_ct_epoch_39.pth', 'covid_ct_epoch_40.pth', 'covid_ct_epoch_41.pth', 'covid_ct_epoch_42.pth', 'covid_ct_epoch_43.pth', 'covid_ct_epoch_44.pth', 'covid_ct_epoch_45.pth', 'covid_ct_epoch_46.pth', 'covid_ct_epoch_47.pth', 'covid_ct_epoch_48.pth', 'covid_ct_epoch_49.pth', 'covid_ct_epoch_50.pth', 'covid_ct_epoch_51.pth', 'covid_ct_epoch_52.pth', 'covid_ct_epoch_53.pth', 'covid_ct_epoch_54.pth', 'covid_ct_epoch_55.pth', 'covid_ct_epoch_56.pth', 'covid_ct_epoch_57.pth', 'covid_ct_epoch_58.pth', 'covid_ct_epoch_59.pth', 'covid_ct_epoch_60.pth', 'covid_ct_epoch_61.pth', 'covid_ct_epoch_62.pth', 'covid_ct_epoch_63.pth', 'covid_ct_epoch_64.pth', 'covid_ct_epoch_65.pth', 'covid_ct_epoch_66.pth', 'covid_ct_epoch_67.pth', 'covid_ct_epoch_68.pth', 'covid_ct_epoch_69.pth', 'covid_ct_epoch_70.pth', 'covid_ct_epoch_71.pth', 'covid_ct_epoch_72.pth', 'covid_ct_epoch_73.pth', 'covid_ct_epoch_74.pth', 'covid_ct_epoch_75.pth', 'covid_ct_epoch_76.pth', 'covid_ct_epoch_77.pth', 'covid_ct_epoch_78.pth', 'covid_ct_epoch_79.pth', 'covid_ct_epoch_80.pth', 'covid_ct_epoch_81.pth', 'covid_ct_epoch_82.pth', 'covid_ct_epoch_83.pth', 'covid_ct_epoch_84.pth', 'covid_ct_epoch_85.pth', 'covid_ct_epoch_86.pth', 'covid_ct_epoch_87.pth', 'covid_ct_epoch_88.pth', 'covid_ct_epoch_89.pth', 'covid_ct_epoch_90.pth', 'covid_ct_epoch_91.pth', 'covid_ct_epoch_92.pth', 'covid_ct_epoch_93.pth', 'covid_ct_epoch_94.pth', 'covid_ct_epoch_95.pth', 'covid_ct_epoch_96.pth', 'covid_ct_epoch_97.pth', 'covid_ct_epoch_98.pth']
+✅ 成功解析的ckpt文件：[(1, 'covid_ct_epoch_1.pth'), (2, 'covid_ct_epoch_2.pth'), (3, 'covid_ct_epoch_3.pth'), (4, 'covid_ct_epoch_4.pth'), (5, 'covid_ct_epoch_5.pth'), (6, 'covid_ct_epoch_6.pth'), (7, 'covid_ct_epoch_7.pth'), (8, 'covid_ct_epoch_8.pth'), (9, 'covid_ct_epoch_9.pth'), (10, 'covid_ct_epoch_10.pth'), (11, 'covid_ct_epoch_11.pth'), (12, 'covid_ct_epoch_12.pth'), (13, 'covid_ct_epoch_13.pth'), (14, 'covid_ct_epoch_14.pth'), (15, 'covid_ct_epoch_15.pth'), (16, 'covid_ct_epoch_16.pth'), (17, 'covid_ct_epoch_17.pth'), (18, 'covid_ct_epoch_18.pth'), (19, 'covid_ct_epoch_19.pth'), (20, 'covid_ct_epoch_20.pth'), (21, 'covid_ct_epoch_21.pth'), (22, 'covid_ct_epoch_22.pth'), (23, 'covid_ct_epoch_23.pth'), (24, 'covid_ct_epoch_24.pth'), (25, 'covid_ct_epoch_25.pth'), (26, 'covid_ct_epoch_26.pth'), (27, 'covid_ct_epoch_27.pth'), (28, 'covid_ct_epoch_28.pth'), (29, 'covid_ct_epoch_29.pth'), (30, 'covid_ct_epoch_30.pth'), (31, 'covid_ct_epoch_31.pth'), (32, 'covid_ct_epoch_32.pth'), (33, 'covid_ct_epoch_33.pth'), (34, 'covid_ct_epoch_34.pth'), (35, 'covid_ct_epoch_35.pth'), (36, 'covid_ct_epoch_36.pth'), (37, 'covid_ct_epoch_37.pth'), (38, 'covid_ct_epoch_38.pth'), (39, 'covid_ct_epoch_39.pth'), (40, 'covid_ct_epoch_40.pth'), (41, 'covid_ct_epoch_41.pth'), (42, 'covid_ct_epoch_42.pth'), (43, 'covid_ct_epoch_43.pth'), (44, 'covid_ct_epoch_44.pth'), (45, 'covid_ct_epoch_45.pth'), (46, 'covid_ct_epoch_46.pth'), (47, 'covid_ct_epoch_47.pth'), (48, 'covid_ct_epoch_48.pth'), (49, 'covid_ct_epoch_49.pth'), (50, 'covid_ct_epoch_50.pth'), (51, 'covid_ct_epoch_51.pth'), (52, 'covid_ct_epoch_52.pth'), (53, 'covid_ct_epoch_53.pth'), (54, 'covid_ct_epoch_54.pth'), (55, 'covid_ct_epoch_55.pth'), (56, 'covid_ct_epoch_56.pth'), (57, 'covid_ct_epoch_57.pth'), (58, 'covid_ct_epoch_58.pth'), (59, 'covid_ct_epoch_59.pth'), (60, 'covid_ct_epoch_60.pth'), (61, 'covid_ct_epoch_61.pth'), (62, 'covid_ct_epoch_62.pth'), (63, 'covid_ct_epoch_63.pth'), (64, 'covid_ct_epoch_64.pth'), (65, 'covid_ct_epoch_65.pth'), (66, 'covid_ct_epoch_66.pth'), (67, 'covid_ct_epoch_67.pth'), (68, 'covid_ct_epoch_68.pth'), (69, 'covid_ct_epoch_69.pth'), (70, 'covid_ct_epoch_70.pth'), (71, 'covid_ct_epoch_71.pth'), (72, 'covid_ct_epoch_72.pth'), (73, 'covid_ct_epoch_73.pth'), (74, 'covid_ct_epoch_74.pth'), (75, 'covid_ct_epoch_75.pth'), (76, 'covid_ct_epoch_76.pth'), (77, 'covid_ct_epoch_77.pth'), (78, 'covid_ct_epoch_78.pth'), (79, 'covid_ct_epoch_79.pth'), (80, 'covid_ct_epoch_80.pth'), (81, 'covid_ct_epoch_81.pth'), (82, 'covid_ct_epoch_82.pth'), (83, 'covid_ct_epoch_83.pth'), (84, 'covid_ct_epoch_84.pth'), (85, 'covid_ct_epoch_85.pth'), (86, 'covid_ct_epoch_86.pth'), (87, 'covid_ct_epoch_87.pth'), (88, 'covid_ct_epoch_88.pth'), (89, 'covid_ct_epoch_89.pth'), (90, 'covid_ct_epoch_90.pth'), (91, 'covid_ct_epoch_91.pth'), (92, 'covid_ct_epoch_92.pth'), (93, 'covid_ct_epoch_93.pth'), (94, 'covid_ct_epoch_94.pth'), (95, 'covid_ct_epoch_95.pth'), (96, 'covid_ct_epoch_96.pth'), (97, 'covid_ct_epoch_97.pth'), (98, 'covid_ct_epoch_98.pth')]
+🔍 自动找到最新断点文件：./continual_ckpt/covid_ct_epoch_98.pth (epoch 98)
+⚠️  优化器状态加载失败：loaded state dict contains a parameter group that doesn't match the size of optimizer's group，重新初始化优化器
+✅ 调度器状态加载成功
+
+===== 从断点恢复：./continual_ckpt/covid_ct_epoch_98.pth =====
+===== 断点恢复完成，从Epoch 98 开始训练 =====
+📊 恢复的最佳指标 - Loss: 0.077467 | PSNR: 14.86 | SSIM: 0.8132 | LPIPS: 0.4487
+🔄 断点加载完成 - 起始轮数: 99 | 历史最佳Loss: 0.077467 | 历史最佳PSNR: 14.86 | 历史最佳SSIM: 0.8132 | 历史最佳LPIPS: 0.4487
+🔄 断点加载完成 - 已完成轮数: 98 | 接下来训练轮数: 99 | 总轮数: 300
+
+[covid_ct] Epoch 99/300：
+  Loss=0.080095 | PSNR=14.66 | SSIM=0.8026 | LPIPS=0.4613
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_99.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📝 初始化TensorBoard日志器: ./tb_logs/covid_ct
+📊 TensorBoard日志记录 - Epoch 99: Loss=0.080095, PSNR=14.66, SSIM=0.8026, LPIPS=0.4613, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 99: Loss=0.080095, PSNR=14.66, SSIM=0.8026, LPIPS=0.4613, LR=0.00000500
+
+[covid_ct] Epoch 100/300：
+  Loss=0.078949 | PSNR=14.71 | SSIM=0.8075 | LPIPS=0.4556
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_100.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 100: Loss=0.078949, PSNR=14.71, SSIM=0.8075, LPIPS=0.4556, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 100: Loss=0.078949, PSNR=14.71, SSIM=0.8075, LPIPS=0.4556, LR=0.00000500
+📊 TensorBoard权重日志记录 - Epoch 100: 已记录28层参数和梯度
+📝 第100轮记录模型权重到TensorBoard
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练100轮
+
+[covid_ct] Epoch 101/300：
+  Loss=0.079105 | PSNR=14.63 | SSIM=0.8084 | LPIPS=0.4528
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_101.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 101: Loss=0.079105, PSNR=14.63, SSIM=0.8084, LPIPS=0.4528, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 101: Loss=0.079105, PSNR=14.63, SSIM=0.8084, LPIPS=0.4528, LR=0.00000500
+
+[covid_ct] Epoch 102/300：
+  Loss=0.079881 | PSNR=14.67 | SSIM=0.8045 | LPIPS=0.4607
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_102.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 102: Loss=0.079881, PSNR=14.67, SSIM=0.8045, LPIPS=0.4607, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 102: Loss=0.079881, PSNR=14.67, SSIM=0.8045, LPIPS=0.4607, LR=0.00000500
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 14.71 | 最佳SSIM: 0.8084 | 最佳LPIPS: 0.4528
+
+[covid_ct] Epoch 103/300：
+  Loss=0.078207 | PSNR=14.81 | SSIM=0.8084 | LPIPS=0.4566
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_103.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 103: Loss=0.078207, PSNR=14.81, SSIM=0.8084, LPIPS=0.4566, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 103: Loss=0.078207, PSNR=14.81, SSIM=0.8084, LPIPS=0.4566, LR=0.00000500
+
+[covid_ct] Epoch 104/300：
+  Loss=0.078817 | PSNR=14.73 | SSIM=0.8091 | LPIPS=0.4619
+  当前学习率：0.00000500 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_104.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.077467
+📊 当前最佳PSNR：14.86 dB | 当前最佳SSIM：0.8132 | 当前最佳LPIPS：0.4487
+📊 TensorBoard日志记录 - Epoch 104: Loss=0.078817, PSNR=14.73, SSIM=0.8091, LPIPS=0.4619, LR=0.00000500
+📊 TensorBoard日志记录 - Epoch 104: Loss=0.078817, PSNR=14.73, SSIM=0.8091, LPIPS=0.4619, LR=0.00000500
+
+📝 covid_ct训练日志已关闭，保存到：./output_detail/covid_ct_train_log.txt
+📝 开始记录covid_ct训练日志到：./output_detail/covid_ct_train_log.txt
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/dake/.conda/envs/drch/lib/python3.11/site-packages/lpips/weights/v0.1/vgg.pth
+
+===== 开始训练covid_ct =====
+🔧 数据集配置 - 输入通道: 1 | 缩放因子: 4 | 批次大小: 8 | 初始LR: 5e-06 | L2正则化: 0.0001
+🔧 早停配置 - Patience: 8 | Min Delta: 0.0001
+🔧 训练配置 - 总轮数: 300 | 冻结主干轮数: 5
+✅ 加载预训练权重完成：匹配28层 | 未匹配0层
+🔒 前5轮冻结主干网络
+🔍 扫描到./continual_ckpt中的epoch文件：[]
+✅ 成功解析的ckpt文件：[]
+⚠️  无断点文件，从头训练covid_ct
+🔄 断点加载完成 - 起始轮数: 1 | 历史最佳Loss: inf | 历史最佳PSNR: 0.00 | 历史最佳SSIM: 0.0000 | 历史最佳LPIPS: inf
+🔄 断点加载完成 - 已完成轮数: 0 | 接下来训练轮数: 1 | 总轮数: 300
+
+[covid_ct] Epoch 1/300：
+  Loss=0.028163 | PSNR=36.63 | SSIM=0.8842 | LPIPS=0.2125
+  当前学习率：0.00000498 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_1.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_1.pth | 最佳Loss=0.028163
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_1.pth | 最佳PSNR=36.63 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_1.pth | 最佳SSIM=0.8842
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_1.pth | 最佳LPIPS=0.2125
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.028163
+📊 当前最佳PSNR：36.63 dB | 当前最佳SSIM：0.8842 | 当前最佳LPIPS：0.2125
+📝 初始化TensorBoard日志器: ./tb_logs/covid_ct
+📊 TensorBoard日志记录 - Epoch 1: Loss=0.028163, PSNR=36.63, SSIM=0.8842, LPIPS=0.2125, LR=0.00000498
+📊 TensorBoard日志记录 - Epoch 1: Loss=0.028163, PSNR=36.63, SSIM=0.8842, LPIPS=0.2125, LR=0.00000498
+
+[covid_ct] Epoch 2/300：
+  Loss=0.028012 | PSNR=36.64 | SSIM=0.8858 | LPIPS=0.2142
+  当前学习率：0.00000491 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_2.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_2.pth | 最佳Loss=0.028012
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_2.pth | 最佳PSNR=36.64 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_2.pth | 最佳SSIM=0.8858
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.028012
+📊 当前最佳PSNR：36.64 dB | 当前最佳SSIM：0.8858 | 当前最佳LPIPS：0.2125
+📊 TensorBoard日志记录 - Epoch 2: Loss=0.028012, PSNR=36.64, SSIM=0.8858, LPIPS=0.2142, LR=0.00000491
+📊 TensorBoard日志记录 - Epoch 2: Loss=0.028012, PSNR=36.64, SSIM=0.8858, LPIPS=0.2142, LR=0.00000491
+
+[covid_ct] Epoch 3/300：
+  Loss=0.027371 | PSNR=36.83 | SSIM=0.8892 | LPIPS=0.2117
+  当前学习率：0.00000479 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_3.pth
+📌 保存最佳Loss模型：./continual_ckpt/best_covid_ct_loss_epoch_3.pth | 最佳Loss=0.027371
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_3.pth | 最佳PSNR=36.83 dB
+📌 保存最佳SSIM模型：./continual_ckpt/best_covid_ct_ssim_epoch_3.pth | 最佳SSIM=0.8892
+📌 保存最佳LPIPS模型：./continual_ckpt/best_covid_ct_lpips_epoch_3.pth | 最佳LPIPS=0.2117
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 3: Loss=0.027371, PSNR=36.83, SSIM=0.8892, LPIPS=0.2117, LR=0.00000479
+📊 TensorBoard日志记录 - Epoch 3: Loss=0.027371, PSNR=36.83, SSIM=0.8892, LPIPS=0.2117, LR=0.00000479
+
+[covid_ct] Epoch 4/300：
+  Loss=0.028449 | PSNR=36.62 | SSIM=0.8845 | LPIPS=0.2190
+  当前学习率：0.00000462 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_4.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 4: Loss=0.028449, PSNR=36.62, SSIM=0.8845, LPIPS=0.2190, LR=0.00000462
+📊 TensorBoard日志记录 - Epoch 4: Loss=0.028449, PSNR=36.62, SSIM=0.8845, LPIPS=0.2190, LR=0.00000462
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 36.83 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 5/300：
+  Loss=0.027574 | PSNR=36.81 | SSIM=0.8886 | LPIPS=0.2139
+  当前学习率：0.00000442 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_5.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 5: Loss=0.027574, PSNR=36.81, SSIM=0.8886, LPIPS=0.2139, LR=0.00000442
+📊 TensorBoard日志记录 - Epoch 5: Loss=0.027574, PSNR=36.81, SSIM=0.8886, LPIPS=0.2139, LR=0.00000442
+📊 TensorBoard权重日志记录 - Epoch 5: 已记录28层参数和梯度
+📝 第5轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 36.83 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+🔄 早停计数器已重置为0
+
+🔓 第6轮解冻主干，开始全量训练 | 重置学习率调度器和早停计数器
+
+[covid_ct] Epoch 6/300：
+  Loss=0.028332 | PSNR=36.62 | SSIM=0.8848 | LPIPS=0.2175
+  当前学习率：0.00000418 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_6.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 6: Loss=0.028332, PSNR=36.62, SSIM=0.8848, LPIPS=0.2175, LR=0.00000418
+📊 TensorBoard日志记录 - Epoch 6: Loss=0.028332, PSNR=36.62, SSIM=0.8848, LPIPS=0.2175, LR=0.00000418
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 36.83 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 7/300：
+  Loss=0.027624 | PSNR=36.68 | SSIM=0.8884 | LPIPS=0.2142
+  当前学习率：0.00000392 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_7.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 7: Loss=0.027624, PSNR=36.68, SSIM=0.8884, LPIPS=0.2142, LR=0.00000392
+📊 TensorBoard日志记录 - Epoch 7: Loss=0.027624, PSNR=36.68, SSIM=0.8884, LPIPS=0.2142, LR=0.00000392
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 36.83 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 8/300：
+  Loss=0.028742 | PSNR=36.48 | SSIM=0.8827 | LPIPS=0.2194
+  当前学习率：0.00000363 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_8.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.83 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 8: Loss=0.028742, PSNR=36.48, SSIM=0.8827, LPIPS=0.2194, LR=0.00000363
+📊 TensorBoard日志记录 - Epoch 8: Loss=0.028742, PSNR=36.48, SSIM=0.8827, LPIPS=0.2194, LR=0.00000363
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 36.83 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 9/300：
+  Loss=0.027534 | PSNR=36.97 | SSIM=0.8892 | LPIPS=0.2150
+  当前学习率：0.00000332 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_9.pth
+📌 保存最佳PSNR模型：./continual_ckpt/best_covid_ct_psnr_epoch_9.pth | 最佳PSNR=36.97 dB
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 9: Loss=0.027534, PSNR=36.97, SSIM=0.8892, LPIPS=0.2150, LR=0.00000332
+📊 TensorBoard日志记录 - Epoch 9: Loss=0.027534, PSNR=36.97, SSIM=0.8892, LPIPS=0.2150, LR=0.00000332
+
+[covid_ct] Epoch 10/300：
+  Loss=0.028160 | PSNR=36.69 | SSIM=0.8855 | LPIPS=0.2162
+  当前学习率：0.00000301 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_10.pth
+⏱️  早停计数器：0/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 10: Loss=0.028160, PSNR=36.69, SSIM=0.8855, LPIPS=0.2162, LR=0.00000301
+📊 TensorBoard日志记录 - Epoch 10: Loss=0.028160, PSNR=36.69, SSIM=0.8855, LPIPS=0.2162, LR=0.00000301
+📊 TensorBoard权重日志记录 - Epoch 10: 已记录28层参数和梯度
+📝 第10轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 1/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+🆘 保存紧急备份模型：./continual_ckpt/covid_ct_emergency_model.pth | 累计训练10轮
+
+[covid_ct] Epoch 11/300：
+  Loss=0.028112 | PSNR=36.74 | SSIM=0.8862 | LPIPS=0.2174
+  当前学习率：0.00000270 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_11.pth
+⏱️  早停计数器：1/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 11: Loss=0.028112, PSNR=36.74, SSIM=0.8862, LPIPS=0.2174, LR=0.00000270
+📊 TensorBoard日志记录 - Epoch 11: Loss=0.028112, PSNR=36.74, SSIM=0.8862, LPIPS=0.2174, LR=0.00000270
+⏱️ EarlyStopping counter: 2/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 12/300：
+  Loss=0.029023 | PSNR=36.52 | SSIM=0.8815 | LPIPS=0.2213
+  当前学习率：0.00000239 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_12.pth
+⏱️  早停计数器：2/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 12: Loss=0.029023, PSNR=36.52, SSIM=0.8815, LPIPS=0.2213, LR=0.00000239
+📊 TensorBoard日志记录 - Epoch 12: Loss=0.029023, PSNR=36.52, SSIM=0.8815, LPIPS=0.2213, LR=0.00000239
+⏱️ EarlyStopping counter: 3/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 13/300：
+  Loss=0.028552 | PSNR=36.65 | SSIM=0.8834 | LPIPS=0.2177
+  当前学习率：0.00000210 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_13.pth
+⏱️  早停计数器：3/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 13: Loss=0.028552, PSNR=36.65, SSIM=0.8834, LPIPS=0.2177, LR=0.00000210
+📊 TensorBoard日志记录 - Epoch 13: Loss=0.028552, PSNR=36.65, SSIM=0.8834, LPIPS=0.2177, LR=0.00000210
+⏱️ EarlyStopping counter: 4/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 14/300：
+  Loss=0.027972 | PSNR=36.69 | SSIM=0.8858 | LPIPS=0.2134
+  当前学习率：0.00000183 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_14.pth
+⏱️  早停计数器：4/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 14: Loss=0.027972, PSNR=36.69, SSIM=0.8858, LPIPS=0.2134, LR=0.00000183
+📊 TensorBoard日志记录 - Epoch 14: Loss=0.027972, PSNR=36.69, SSIM=0.8858, LPIPS=0.2134, LR=0.00000183
+⏱️ EarlyStopping counter: 5/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 15/300：
+  Loss=0.028801 | PSNR=36.59 | SSIM=0.8820 | LPIPS=0.2186
+  当前学习率：0.00000159 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_15.pth
+⏱️  早停计数器：5/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 15: Loss=0.028801, PSNR=36.59, SSIM=0.8820, LPIPS=0.2186, LR=0.00000159
+📊 TensorBoard日志记录 - Epoch 15: Loss=0.028801, PSNR=36.59, SSIM=0.8820, LPIPS=0.2186, LR=0.00000159
+📊 TensorBoard权重日志记录 - Epoch 15: 已记录28层参数和梯度
+📝 第15轮记录模型权重到TensorBoard
+⏱️ EarlyStopping counter: 6/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 16/300：
+  Loss=0.028607 | PSNR=36.64 | SSIM=0.8840 | LPIPS=0.2206
+  当前学习率：0.00000139 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_16.pth
+⏱️  早停计数器：6/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 16: Loss=0.028607, PSNR=36.64, SSIM=0.8840, LPIPS=0.2206, LR=0.00000139
+📊 TensorBoard日志记录 - Epoch 16: Loss=0.028607, PSNR=36.64, SSIM=0.8840, LPIPS=0.2206, LR=0.00000139
+⏱️ EarlyStopping counter: 7/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+
+[covid_ct] Epoch 17/300：
+  Loss=0.028629 | PSNR=36.71 | SSIM=0.8826 | LPIPS=0.2168
+  当前学习率：0.00000122 | 已处理批次：33/33
+💾 保存本轮检查点：./continual_ckpt/covid_ct_epoch_17.pth
+⏱️  早停计数器：7/8
+📊 当前最佳Loss：0.027371
+📊 当前最佳PSNR：36.97 dB | 当前最佳SSIM：0.8892 | 当前最佳LPIPS：0.2117
+📊 TensorBoard日志记录 - Epoch 17: Loss=0.028629, PSNR=36.71, SSIM=0.8826, LPIPS=0.2168, LR=0.00000122
+📊 TensorBoard日志记录 - Epoch 17: Loss=0.028629, PSNR=36.71, SSIM=0.8826, LPIPS=0.2168, LR=0.00000122
+⏱️ EarlyStopping counter: 8/8 | 最佳PSNR: 36.97 | 最佳SSIM: 0.8892 | 最佳LPIPS: 0.2117
+⚠️ Early stopping triggered!（多指标均无有效提升）
+🛑 触发早停，停止covid_ct训练
+🏁 早停时最佳指标 - Loss: 0.027371 | PSNR: 36.97 | SSIM: 0.8892 | LPIPS: 0.2117
+
+🎉 covid_ct训练完成！
+📊 最终最佳指标 - Loss: 0.027371 | PSNR: 36.97 dB | SSIM: 0.8892 | LPIPS: 0.2117
+📊 训练统计 - 总训练轮数: 17 | 最终学习率: 0.00000122 | 早停计数器最终值: 8/8
+
+📝 covid_ct训练日志已关闭，保存到：./output_detail/covid_ct_train_log.txt

@@ -1,0 +1,906 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/__pycache__/modell.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.846467
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1768450993 (2026-01-15 12:23:13)
+# Source code size mod 2**32: 4430 bytes
+# Method Name:       <module>
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        6
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: None
+#    2: <code object conv_layer at 0x7fde73ee1d10, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 5>
+#    3: <code object vgg_conv_block at 0x7fde73fa2cc0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 15>
+#    4: <code object vgg_fc_layer at 0x7fde73ee1bb0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 23>
+#    5: <code object VGGLite at 0x7fde73f15610, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 33>
+#    6: 'VGGLite'
+#    7: <code object get_optimized_model at 0x55c3604ea870, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 83>
+#    8: <code object get_amp_utils at 0x7fde741fc8a0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 98>
+#    9: '__main__'
+#   10: 10
+#   11: ('n_classes',)
+#   12: 8
+#   13: 1
+#   14: 512
+#   15: '卷积特征形状：'
+#   16: '输出形状：'
+#   17: (None,)
+# Names:
+#    0: torch
+#    1: torch.nn
+#    2: nn
+#    3: conv_layer
+#    4: vgg_conv_block
+#    5: vgg_fc_layer
+#    6: Module
+#    7: VGGLite
+#    8: get_optimized_model
+#    9: get_amp_utils
+#   10: __name__
+#   11: model
+#   12: device
+#   13: randn
+#   14: to
+#   15: test_input
+#   16: features
+#   17: output
+#   18: print
+#   19: shape
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           (0)
+               4 LOAD_CONST           (None)
+               6 IMPORT_NAME          (torch)
+               8 STORE_NAME           (torch)
+
+  2:          10 LOAD_CONST           (0)
+              12 LOAD_CONST           (None)
+              14 IMPORT_NAME          (torch.nn)
+              16 IMPORT_FROM          (nn)
+              18 STORE_NAME           (nn)
+              20 POP_TOP
+
+  5:          22 LOAD_CONST           (<code object conv_layer at 0x7fde73ee1d10, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 5>)
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (conv_layer)
+
+ 15:          28 LOAD_CONST           (<code object vgg_conv_block at 0x7fde73fa2cc0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 15>)
+              30 MAKE_FUNCTION        (No arguments)
+              32 STORE_NAME           (vgg_conv_block)
+
+ 23:          34 LOAD_CONST           (<code object vgg_fc_layer at 0x7fde73ee1bb0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 23>)
+              36 MAKE_FUNCTION        (No arguments)
+              38 STORE_NAME           (vgg_fc_layer)
+
+ 33:          40 PUSH_NULL
+              42 LOAD_BUILD_CLASS
+              44 LOAD_CONST           (<code object VGGLite at 0x7fde73f15610, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 33>)
+              46 MAKE_FUNCTION        (No arguments)
+              48 LOAD_CONST           ("VGGLite")
+              50 LOAD_NAME            (nn)
+              52 LOAD_ATTR            (Module)
+              62 PRECALL              3
+              66 CALL                 3
+              76 STORE_NAME           (VGGLite)
+
+ 83:          78 LOAD_CONST           ((None,))
+              80 LOAD_CONST           (<code object get_optimized_model at 0x55c3604ea870, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 83>)
+              82 MAKE_FUNCTION        (default)
+              84 STORE_NAME           (get_optimized_model)
+
+ 98:          86 LOAD_CONST           (<code object get_amp_utils at 0x7fde741fc8a0, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 98>)
+              88 MAKE_FUNCTION        (No arguments)
+              90 STORE_NAME           (get_amp_utils)
+
+105:          92 LOAD_NAME            (__name__)
+              94 LOAD_CONST           ("__main__")
+              96 COMPARE_OP           (==)
+             102 POP_JUMP_FORWARD_IF_FALSE (to 318)
+
+107:         104 PUSH_NULL
+             106 LOAD_NAME            (get_optimized_model)
+             108 LOAD_CONST           (10)
+             110 KW_NAMES             (('n_classes',))
+             112 PRECALL              1
+             116 CALL                 1
+             126 UNPACK_SEQUENCE      2
+             130 STORE_NAME           (model)
+             132 STORE_NAME           (device)
+
+111:         134 PUSH_NULL
+             136 LOAD_NAME            (torch)
+             138 LOAD_ATTR            (randn)
+             148 LOAD_CONST           (8)
+             150 LOAD_CONST           (1)
+             152 LOAD_CONST           (512)
+             154 LOAD_CONST           (512)
+             156 PRECALL              4
+             160 CALL                 4
+             170 LOAD_METHOD          (to)
+             192 LOAD_NAME            (device)
+             194 PRECALL              1
+             198 CALL                 1
+             208 STORE_NAME           (test_input)
+
+114:         210 PUSH_NULL
+             212 LOAD_NAME            (model)
+             214 LOAD_NAME            (test_input)
+             216 PRECALL              1
+             220 CALL                 1
+             230 UNPACK_SEQUENCE      2
+             234 STORE_NAME           (features)
+             236 STORE_NAME           (output)
+
+115:         238 PUSH_NULL
+             240 LOAD_NAME            (print)
+             242 LOAD_CONST           ("卷积特征形状：")
+             244 LOAD_NAME            (features)
+             246 LOAD_ATTR            (shape)
+             256 FORMAT_VALUE         0
+             258 BUILD_STRING         2
+             260 PRECALL              1
+             264 CALL                 1
+             274 POP_TOP
+
+116:         276 PUSH_NULL
+             278 LOAD_NAME            (print)
+             280 LOAD_CONST           ("输出形状：")
+             282 LOAD_NAME            (output)
+             284 LOAD_ATTR            (shape)
+             294 FORMAT_VALUE         0
+             296 BUILD_STRING         2
+             298 PRECALL              1
+             302 CALL                 1
+             312 POP_TOP
+             314 LOAD_CONST           (None)
+             316 RETURN_VALUE
+
+105:     >>  318 LOAD_CONST           (None)
+             320 RETURN_VALUE
+
+
+# Method Name:       conv_layer
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    4
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        5
+# Constants:
+#    0: '卷积层封装（含Conv2d+BatchNorm+ReLU）'
+#    1: ('kernel_size', 'padding')
+# Names:
+#    0: nn
+#    1: Sequential
+#    2: Conv2d
+#    3: BatchNorm2d
+#    4: ReLU
+# Varnames:
+#	chann_in, chann_out, k_size, p_size, layer
+# Positional arguments:
+#	chann_in, chann_out, k_size, p_size
+# Local variables:
+#    4: layer
+
+  5:           0 RESUME               0
+
+  7:           2 LOAD_GLOBAL          (NULL + nn)
+              14 LOAD_ATTR            (Sequential)
+
+  8:          24 LOAD_GLOBAL          (NULL + nn)
+              36 LOAD_ATTR            (Conv2d)
+              46 LOAD_FAST            (chann_in)
+              48 LOAD_FAST            (chann_out)
+              50 LOAD_FAST            (k_size)
+              52 LOAD_FAST            (p_size)
+              54 KW_NAMES             (('kernel_size', 'padding'))
+              56 PRECALL              4
+              60 CALL                 4
+
+  9:          70 LOAD_GLOBAL          (NULL + nn)
+              82 LOAD_ATTR            (BatchNorm2d)
+              92 LOAD_FAST            (chann_out)
+              94 PRECALL              1
+              98 CALL                 1
+
+ 10:         108 LOAD_GLOBAL          (NULL + nn)
+             120 LOAD_ATTR            (ReLU)
+             130 PRECALL              0
+             134 CALL                 0
+
+  7:         144 PRECALL              3
+             148 CALL                 3
+             158 STORE_FAST           (layer)
+
+ 12:         160 LOAD_FAST            (layer)
+             162 RETURN_VALUE
+
+
+# Method Name:       vgg_conv_block
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    6
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  7
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        15
+# Constants:
+#    0: 'VGG风格卷积块（多个卷积层+池化层）'
+#    1: <code object <listcomp> at 0x7fde7408be10, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 17>
+#    2: ('kernel_size', 'stride')
+# Names:
+#    0: range
+#    1: len
+#    2: nn
+#    3: MaxPool2d
+#    4: Sequential
+# Varnames:
+#	in_list, out_list, k_list, p_list, pooling_k, pooling_s, layers
+# Positional arguments:
+#	in_list, out_list, k_list, p_list, pooling_k, pooling_s
+# Local variables:
+#    6: layers
+# Cell variables:
+#    0: in_list
+#    1: out_list
+#    2: k_list
+#    3: p_list
+               0 MAKE_CELL            (in_list)
+               2 MAKE_CELL            (out_list)
+               4 MAKE_CELL            (k_list)
+               6 MAKE_CELL            (p_list)
+
+ 15:           8 RESUME               0
+
+ 17:          10 LOAD_CLOSURE         (in_list)
+              12 LOAD_CLOSURE         (k_list)
+              14 LOAD_CLOSURE         (out_list)
+              16 LOAD_CLOSURE         (p_list)
+              18 BUILD_TUPLE          4
+              20 LOAD_CONST           (<code object <listcomp> at 0x7fde7408be10, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 17>)
+              22 MAKE_FUNCTION        (closure)
+
+ 18:          24 LOAD_GLOBAL          (NULL + range)
+              36 LOAD_GLOBAL          (NULL + len)
+              48 LOAD_DEREF           (in_list)
+              50 PRECALL              1
+              54 CALL                 1
+              64 PRECALL              1
+              68 CALL                 1
+
+ 17:          78 GET_ITER
+              80 PRECALL              0
+              84 CALL                 0
+              94 STORE_FAST           (layers)
+
+ 19:          96 LOAD_FAST            (layers)
+              98 LOAD_GLOBAL          (NULL + nn)
+             110 LOAD_ATTR            (MaxPool2d)
+             120 LOAD_FAST            (pooling_k)
+             122 LOAD_FAST            (pooling_s)
+             124 KW_NAMES             (('kernel_size', 'stride'))
+             126 PRECALL              2
+             130 CALL                 2
+             140 BUILD_LIST           1
+             142 BINARY_OP            (+=)
+             146 STORE_FAST           (layers)
+
+ 20:         148 LOAD_GLOBAL          (NULL + nn)
+             160 LOAD_ATTR            (Sequential)
+             170 LOAD_FAST            (layers)
+             172 CALL_FUNCTION_EX     (positional arguments only)
+             174 RETURN_VALUE
+
+
+# Method Name:       vgg_fc_layer
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        23
+# Constants:
+#    0: '全连接层封装（含Linear+BatchNorm+ReLU）'
+# Names:
+#    0: nn
+#    1: Sequential
+#    2: Linear
+#    3: BatchNorm1d
+#    4: ReLU
+# Varnames:
+#	size_in, size_out, layer
+# Positional arguments:
+#	size_in, size_out
+# Local variables:
+#    2: layer
+
+ 23:           0 RESUME               0
+
+ 25:           2 LOAD_GLOBAL          (NULL + nn)
+              14 LOAD_ATTR            (Sequential)
+
+ 26:          24 LOAD_GLOBAL          (NULL + nn)
+              36 LOAD_ATTR            (Linear)
+              46 LOAD_FAST            (size_in)
+              48 LOAD_FAST            (size_out)
+              50 PRECALL              2
+              54 CALL                 2
+
+ 27:          64 LOAD_GLOBAL          (NULL + nn)
+              76 LOAD_ATTR            (BatchNorm1d)
+              86 LOAD_FAST            (size_out)
+              88 PRECALL              1
+              92 CALL                 1
+
+ 28:         102 LOAD_GLOBAL          (NULL + nn)
+             114 LOAD_ATTR            (ReLU)
+             124 PRECALL              0
+             128 CALL                 0
+
+ 25:         138 PRECALL              3
+             142 CALL                 3
+             152 STORE_FAST           (layer)
+
+ 30:         154 LOAD_FAST            (layer)
+             156 RETURN_VALUE
+
+
+# Method Name:       VGGLite
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000000 (0x0)
+# First Line:        33
+# Constants:
+#    0: 'VGGLite'
+#    1: <code object __init__ at 0x55c3604ec350, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 34>
+#    2: <code object forward at 0x7fde73f48030, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 76>
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: forward
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 33:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("VGGLite")
+              10 STORE_NAME           (__qualname__)
+
+ 34:          12 LOAD_CLOSURE         (__class__)
+              14 BUILD_TUPLE          1
+              16 LOAD_CONST           (<code object __init__ at 0x55c3604ec350, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 34>)
+              18 MAKE_FUNCTION        (closure)
+              20 STORE_NAME           (__init__)
+
+ 76:          22 LOAD_CONST           (<code object forward at 0x7fde73f48030, file "/run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py", line 76>)
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (forward)
+              28 LOAD_CLOSURE         (__class__)
+              30 COPY                 1
+              32 STORE_NAME           (__classcell__)
+              34 RETURN_VALUE
+
+
+# Method Name:       get_optimized_model
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        6
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        83
+# Constants:
+#    0: '获取适配硬件的模型（自动选择RTX 3060 GPU）'
+#    1: None
+#    2: 'cuda:0'
+#    3: 'cpu'
+#    4: 'cuda'
+#    5: '使用GPU加速：'
+#    6: '未检测到可用CUDA设备，使用CPU'
+# Names:
+#    0: torch
+#    1: device
+#    2: cuda
+#    3: is_available
+#    4: type
+#    5: print
+#    6: get_device_name
+#    7: VGGLite
+#    8: to
+# Varnames:
+#	n_classes, device, model
+# Positional arguments:
+#	n_classes, device
+# Local variables:
+#    2: model
+
+ 83:           0 RESUME               0
+
+ 86:           2 LOAD_FAST            (device)
+               4 POP_JUMP_FORWARD_IF_NOT_NONE (to 258)
+
+ 87:           6 LOAD_GLOBAL          (NULL + torch)
+              18 LOAD_ATTR            (device)
+              28 LOAD_GLOBAL          (torch)
+              40 LOAD_ATTR            (cuda)
+              50 LOAD_METHOD          (is_available)
+              72 PRECALL              0
+              76 CALL                 0
+              86 POP_JUMP_FORWARD_IF_FALSE (to 92)
+              88 LOAD_CONST           ("cuda:0")
+              90 JUMP_FORWARD         (to 94)
+         >>   92 LOAD_CONST           ("cpu")
+         >>   94 PRECALL              1
+              98 CALL                 1
+             108 STORE_FAST           (device)
+
+ 88:         110 LOAD_FAST            (device)
+             112 LOAD_ATTR            (type)
+             122 LOAD_CONST           ("cuda")
+             124 COMPARE_OP           (==)
+             130 POP_JUMP_FORWARD_IF_FALSE (to 228)
+
+ 89:         132 LOAD_GLOBAL          (NULL + print)
+             144 LOAD_CONST           ("使用GPU加速：")
+             146 LOAD_GLOBAL          (torch)
+             158 LOAD_ATTR            (cuda)
+             168 LOAD_METHOD          (get_device_name)
+             190 LOAD_FAST            (device)
+             192 PRECALL              1
+             196 CALL                 1
+             206 FORMAT_VALUE         0
+             208 BUILD_STRING         2
+             210 PRECALL              1
+             214 CALL                 1
+             224 POP_TOP
+             226 JUMP_FORWARD         (to 258)
+
+ 91:     >>  228 LOAD_GLOBAL          (NULL + print)
+             240 LOAD_CONST           ("未检测到可用CUDA设备，使用CPU")
+             242 PRECALL              1
+             246 CALL                 1
+             256 POP_TOP
+
+ 93:     >>  258 LOAD_GLOBAL          (NULL + VGGLite)
+             270 LOAD_FAST            (n_classes)
+             272 PRECALL              1
+             276 CALL                 1
+             286 LOAD_METHOD          (to)
+             308 LOAD_FAST            (device)
+             310 PRECALL              1
+             314 CALL                 1
+             324 STORE_FAST           (model)
+
+ 94:         326 LOAD_FAST            (model)
+             328 LOAD_FAST            (device)
+             330 BUILD_TUPLE          2
+             332 RETURN_VALUE
+
+
+# Method Name:       get_amp_utils
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        2
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        98
+# Constants:
+#    0: '获取自动混合精度训练工具（节省显存并加速）'
+#    1: 0
+#    2: ('GradScaler', 'autocast')
+# Names:
+#    0: torch.cuda.amp
+#    1: GradScaler
+#    2: autocast
+# Varnames:
+#	GradScaler, autocast
+# Local variables:
+#    0: GradScaler
+#    1: autocast
+
+ 98:           0 RESUME               0
+
+100:           2 LOAD_CONST           (0)
+               4 LOAD_CONST           (('GradScaler', 'autocast'))
+               6 IMPORT_NAME          (torch.cuda.amp)
+               8 IMPORT_FROM          (GradScaler)
+              10 STORE_FAST           (GradScaler)
+              12 IMPORT_FROM          (autocast)
+              14 STORE_FAST           (autocast)
+              16 POP_TOP
+
+101:          18 PUSH_NULL
+              20 LOAD_FAST            (GradScaler)
+              22 PRECALL              0
+              26 CALL                 0
+              36 LOAD_FAST            (autocast)
+              38 BUILD_TUPLE          2
+              40 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        9
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        17
+# Names:
+#    0: conv_layer
+# Varnames:
+#	.0, i
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: i
+# Free variables:
+#    0: in_list
+#    1: k_list
+#    2: out_list
+#    3: p_list
+               0 COPY_FREE_VARS       4
+
+ 17:           2 RESUME               0
+               4 BUILD_LIST           0
+               6 LOAD_FAST            (.0)
+               8 FOR_ITER             (to 98)
+
+ 18:          10 STORE_FAST           (i)
+
+ 17:          12 LOAD_GLOBAL          (NULL + conv_layer)
+              24 LOAD_DEREF           (in_list)
+              26 LOAD_FAST            (i)
+              28 BINARY_SUBSCR
+              38 LOAD_DEREF           (out_list)
+              40 LOAD_FAST            (i)
+              42 BINARY_SUBSCR
+              52 LOAD_DEREF           (k_list)
+              54 LOAD_FAST            (i)
+              56 BINARY_SUBSCR
+              66 LOAD_DEREF           (p_list)
+              68 LOAD_FAST            (i)
+              70 BINARY_SUBSCR
+              80 PRECALL              4
+              84 CALL                 4
+              94 LIST_APPEND          2
+              96 JUMP_BACKWARD        (to 8)
+         >>   98 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        23
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        34
+# Constants:
+#    0: None
+#    1: 1
+#    2: 64
+#    3: 3
+#    4: ('kernel_size', 'padding')
+#    5: True
+#    6: ('inplace',)
+#    7: 2
+#    8: ('kernel_size', 'stride')
+#    9: 128
+#   10: 256
+#   11: 512
+#   12: 25088
+#   13: 0.5
+# Names:
+#    0: super
+#    1: VGGLite
+#    2: __init__
+#    3: nn
+#    4: Sequential
+#    5: Conv2d
+#    6: ReLU
+#    7: MaxPool2d
+#    8: features
+#    9: Flatten
+#   10: Linear
+#   11: Dropout
+#   12: layer5
+# Varnames:
+#	self, n_classes
+# Positional arguments:
+#	self, n_classes
+# Free variables:
+#    0: __class__
+               0 COPY_FREE_VARS       1
+
+ 34:           2 RESUME               0
+
+ 35:           4 LOAD_GLOBAL          (NULL + super)
+              16 LOAD_GLOBAL          (VGGLite)
+              28 LOAD_FAST            (self)
+              30 PRECALL              2
+              34 CALL                 2
+              44 LOAD_METHOD          (__init__)
+              66 PRECALL              0
+              70 CALL                 0
+              80 POP_TOP
+
+ 37:          82 LOAD_GLOBAL          (NULL + nn)
+              94 LOAD_ATTR            (Sequential)
+
+ 39:         104 LOAD_GLOBAL          (NULL + nn)
+             116 LOAD_ATTR            (Conv2d)
+             126 LOAD_CONST           (1)
+             128 LOAD_CONST           (64)
+             130 LOAD_CONST           (3)
+             132 LOAD_CONST           (1)
+             134 KW_NAMES             (('kernel_size', 'padding'))
+             136 PRECALL              4
+             140 CALL                 4
+
+ 40:         150 LOAD_GLOBAL          (NULL + nn)
+             162 LOAD_ATTR            (ReLU)
+             172 LOAD_CONST           (True)
+             174 KW_NAMES             (('inplace',))
+             176 PRECALL              1
+             180 CALL                 1
+
+ 41:         190 LOAD_GLOBAL          (NULL + nn)
+             202 LOAD_ATTR            (MaxPool2d)
+             212 LOAD_CONST           (2)
+             214 LOAD_CONST           (2)
+             216 KW_NAMES             (('kernel_size', 'stride'))
+             218 PRECALL              2
+             222 CALL                 2
+
+ 44:         232 LOAD_GLOBAL          (NULL + nn)
+             244 LOAD_ATTR            (Conv2d)
+             254 LOAD_CONST           (64)
+             256 LOAD_CONST           (128)
+             258 LOAD_CONST           (3)
+             260 LOAD_CONST           (1)
+             262 KW_NAMES             (('kernel_size', 'padding'))
+             264 PRECALL              4
+             268 CALL                 4
+
+ 45:         278 LOAD_GLOBAL          (NULL + nn)
+             290 LOAD_ATTR            (ReLU)
+             300 LOAD_CONST           (True)
+             302 KW_NAMES             (('inplace',))
+             304 PRECALL              1
+             308 CALL                 1
+
+ 46:         318 LOAD_GLOBAL          (NULL + nn)
+             330 LOAD_ATTR            (MaxPool2d)
+             340 LOAD_CONST           (2)
+             342 LOAD_CONST           (2)
+             344 KW_NAMES             (('kernel_size', 'stride'))
+             346 PRECALL              2
+             350 CALL                 2
+
+ 49:         360 LOAD_GLOBAL          (NULL + nn)
+             372 LOAD_ATTR            (Conv2d)
+             382 LOAD_CONST           (128)
+             384 LOAD_CONST           (256)
+             386 LOAD_CONST           (3)
+             388 LOAD_CONST           (1)
+             390 KW_NAMES             (('kernel_size', 'padding'))
+             392 PRECALL              4
+             396 CALL                 4
+
+ 50:         406 LOAD_GLOBAL          (NULL + nn)
+             418 LOAD_ATTR            (Conv2d)
+             428 LOAD_CONST           (256)
+             430 LOAD_CONST           (256)
+             432 LOAD_CONST           (3)
+             434 LOAD_CONST           (1)
+             436 KW_NAMES             (('kernel_size', 'padding'))
+             438 PRECALL              4
+             442 CALL                 4
+
+ 51:         452 LOAD_GLOBAL          (NULL + nn)
+             464 LOAD_ATTR            (ReLU)
+             474 LOAD_CONST           (True)
+             476 KW_NAMES             (('inplace',))
+             478 PRECALL              1
+             482 CALL                 1
+
+ 52:         492 LOAD_GLOBAL          (NULL + nn)
+             504 LOAD_ATTR            (MaxPool2d)
+             514 LOAD_CONST           (2)
+             516 LOAD_CONST           (2)
+             518 KW_NAMES             (('kernel_size', 'stride'))
+             520 PRECALL              2
+             524 CALL                 2
+
+ 55:         534 LOAD_GLOBAL          (NULL + nn)
+             546 LOAD_ATTR            (Conv2d)
+             556 LOAD_CONST           (256)
+             558 LOAD_CONST           (512)
+             560 LOAD_CONST           (3)
+             562 LOAD_CONST           (1)
+             564 KW_NAMES             (('kernel_size', 'padding'))
+             566 PRECALL              4
+             570 CALL                 4
+
+ 56:         580 LOAD_GLOBAL          (NULL + nn)
+             592 LOAD_ATTR            (Conv2d)
+             602 LOAD_CONST           (512)
+             604 LOAD_CONST           (512)
+             606 LOAD_CONST           (3)
+             608 LOAD_CONST           (1)
+             610 KW_NAMES             (('kernel_size', 'padding'))
+             612 PRECALL              4
+             616 CALL                 4
+
+ 57:         626 LOAD_GLOBAL          (NULL + nn)
+             638 LOAD_ATTR            (ReLU)
+             648 LOAD_CONST           (True)
+             650 KW_NAMES             (('inplace',))
+             652 PRECALL              1
+             656 CALL                 1
+
+ 58:         666 LOAD_GLOBAL          (NULL + nn)
+             678 LOAD_ATTR            (MaxPool2d)
+             688 LOAD_CONST           (2)
+             690 LOAD_CONST           (2)
+             692 KW_NAMES             (('kernel_size', 'stride'))
+             694 PRECALL              2
+             698 CALL                 2
+
+ 61:         708 LOAD_GLOBAL          (NULL + nn)
+             720 LOAD_ATTR            (Conv2d)
+             730 LOAD_CONST           (512)
+             732 LOAD_CONST           (512)
+             734 LOAD_CONST           (3)
+             736 LOAD_CONST           (1)
+             738 KW_NAMES             (('kernel_size', 'padding'))
+             740 PRECALL              4
+             744 CALL                 4
+
+ 62:         754 LOAD_GLOBAL          (NULL + nn)
+             766 LOAD_ATTR            (Conv2d)
+             776 LOAD_CONST           (512)
+             778 LOAD_CONST           (512)
+             780 LOAD_CONST           (3)
+             782 LOAD_CONST           (1)
+             784 KW_NAMES             (('kernel_size', 'padding'))
+             786 PRECALL              4
+             790 CALL                 4
+
+ 63:         800 LOAD_GLOBAL          (NULL + nn)
+             812 LOAD_ATTR            (ReLU)
+             822 LOAD_CONST           (True)
+             824 KW_NAMES             (('inplace',))
+             826 PRECALL              1
+             830 CALL                 1
+
+ 64:         840 LOAD_GLOBAL          (NULL + nn)
+             852 LOAD_ATTR            (MaxPool2d)
+             862 LOAD_CONST           (2)
+             864 LOAD_CONST           (2)
+             866 KW_NAMES             (('kernel_size', 'stride'))
+             868 PRECALL              2
+             872 CALL                 2
+
+ 37:         882 PRECALL              18
+             886 CALL                 18
+             896 LOAD_FAST            (self)
+             898 STORE_ATTR           (features)
+
+ 68:         908 LOAD_GLOBAL          (NULL + nn)
+             920 LOAD_ATTR            (Sequential)
+
+ 69:         930 LOAD_GLOBAL          (NULL + nn)
+             942 LOAD_ATTR            (Flatten)
+             952 PRECALL              0
+             956 CALL                 0
+
+ 70:         966 LOAD_GLOBAL          (NULL + nn)
+             978 LOAD_ATTR            (Linear)
+             988 LOAD_CONST           (25088)
+             990 LOAD_CONST           (512)
+             992 PRECALL              2
+             996 CALL                 2
+
+ 71:        1006 LOAD_GLOBAL          (NULL + nn)
+            1018 LOAD_ATTR            (ReLU)
+            1028 LOAD_CONST           (True)
+            1030 KW_NAMES             (('inplace',))
+            1032 PRECALL              1
+            1036 CALL                 1
+
+ 72:        1046 LOAD_GLOBAL          (NULL + nn)
+            1058 LOAD_ATTR            (Dropout)
+            1068 LOAD_CONST           (0.5)
+            1070 PRECALL              1
+            1074 CALL                 1
+
+ 73:        1084 LOAD_GLOBAL          (NULL + nn)
+            1096 LOAD_ATTR            (Linear)
+            1106 LOAD_CONST           (512)
+            1108 LOAD_FAST            (n_classes)
+            1110 PRECALL              2
+            1114 CALL                 2
+
+ 68:        1124 PRECALL              5
+            1128 CALL                 5
+            1138 LOAD_FAST            (self)
+            1140 STORE_ATTR           (layer5)
+            1150 LOAD_CONST           (None)
+            1152 RETURN_VALUE
+
+
+# Method Name:       forward
+# Filename:          /run/media/dake/Software/Projects/Graduction_Projects/codes/experiment/calc-ct-lpips/modell.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        76
+# Constants:
+#    0: None
+# Names:
+#    0: features
+#    1: layer5
+# Varnames:
+#	self, x, fmap, out
+# Positional arguments:
+#	self, x
+# Local variables:
+#    2: fmap
+#    3: out
+
+ 76:           0 RESUME               0
+
+ 77:           2 LOAD_FAST            (self)
+               4 LOAD_METHOD          (features)
+              26 LOAD_FAST            (x)
+              28 PRECALL              1
+              32 CALL                 1
+              42 STORE_FAST           (fmap)
+
+ 78:          44 LOAD_FAST            (self)
+              46 LOAD_METHOD          (layer5)
+              68 LOAD_FAST            (fmap)
+              70 PRECALL              1
+              74 CALL                 1
+              84 STORE_FAST           (out)
+
+ 79:          86 LOAD_FAST            (fmap)
+              88 LOAD_FAST            (out)
+              90 BUILD_TUPLE          2
+              92 RETURN_VALUE
+

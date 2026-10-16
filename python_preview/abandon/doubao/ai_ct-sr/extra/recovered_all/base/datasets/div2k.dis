@@ -1,0 +1,691 @@
+# 反汇编源文件: /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/__pycache__/div2k.cpython-311.pyc
+# 生成时间: 2026-09-14 16:15:50.791131
+# ============================================================================
+
+# pydisasm version 6.3.0
+# CPython Python bytecode 3.11 (3495)
+#   Disassembled from CPython Python 3.11.14 (main, Jun 17 2026, 19:54:40) [GCC 14.3.0]
+# Timestamp in code: 1768293800 (2026-01-13 16:43:20)
+# Source code size mod 2**32: 2788 bytes
+# Method Name:       <module>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        5
+# Flags:             0x00000000 (0x0)
+# First Line:        1
+# Constants:
+#    0: '\n    DIV2K 数据集接口（自然图像超分辨率）。\n'
+#    1: 0
+#    2: None
+#    3: ('Dataset',)
+#    4: ('Image',)
+#    5: ('AddGaussianNoise',)
+#    6: ('InterpolationMode',)
+#    7: <code object DIV2KDataset at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 13>
+#    8: 'DIV2KDataset'
+# Names:
+#    0: __doc__
+#    1: torchvision.transforms
+#    2: transforms
+#    3: torch.utils.data.dataset
+#    4: Dataset
+#    5: PIL
+#    6: Image
+#    7: os
+#    8: numpy
+#    9: np
+#   10: base.utils.transforms
+#   11: AddGaussianNoise
+#   12: InterpolationMode
+#   13: DIV2KDataset
+
+  0:           0 RESUME               0
+
+  1:           2 LOAD_CONST           ("\n    DIV2K 数据集接口（自然图像超分辨率）。\n")
+               4 STORE_NAME           (__doc__)
+
+  5:           6 LOAD_CONST           (0)
+               8 LOAD_CONST           (None)
+              10 IMPORT_NAME          (torchvision.transforms)
+              12 IMPORT_FROM          (transforms)
+              14 STORE_NAME           (transforms)
+              16 POP_TOP
+
+  6:          18 LOAD_CONST           (0)
+              20 LOAD_CONST           (('Dataset',))
+              22 IMPORT_NAME          (torch.utils.data.dataset)
+              24 IMPORT_FROM          (Dataset)
+              26 STORE_NAME           (Dataset)
+              28 POP_TOP
+
+  7:          30 LOAD_CONST           (0)
+              32 LOAD_CONST           (('Image',))
+              34 IMPORT_NAME          (PIL)
+              36 IMPORT_FROM          (Image)
+              38 STORE_NAME           (Image)
+              40 POP_TOP
+
+  8:          42 LOAD_CONST           (0)
+              44 LOAD_CONST           (None)
+              46 IMPORT_NAME          (os)
+              48 STORE_NAME           (os)
+
+  9:          50 LOAD_CONST           (0)
+              52 LOAD_CONST           (None)
+              54 IMPORT_NAME          (numpy)
+              56 STORE_NAME           (np)
+
+ 10:          58 LOAD_CONST           (0)
+              60 LOAD_CONST           (('AddGaussianNoise',))
+              62 IMPORT_NAME          (base.utils.transforms)
+              64 IMPORT_FROM          (AddGaussianNoise)
+              66 STORE_NAME           (AddGaussianNoise)
+              68 POP_TOP
+
+ 11:          70 LOAD_CONST           (0)
+              72 LOAD_CONST           (('InterpolationMode',))
+              74 IMPORT_NAME          (torchvision.transforms)
+              76 IMPORT_FROM          (InterpolationMode)
+              78 STORE_NAME           (InterpolationMode)
+              80 POP_TOP
+
+ 13:          82 PUSH_NULL
+              84 LOAD_BUILD_CLASS
+              86 LOAD_CONST           (<code object DIV2KDataset at 0x7fde73ee6c40, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 13>)
+              88 MAKE_FUNCTION        (No arguments)
+              90 LOAD_CONST           ("DIV2KDataset")
+              92 LOAD_NAME            (Dataset)
+              94 PRECALL              3
+              98 CALL                 3
+             108 STORE_NAME           (DIV2KDataset)
+             110 LOAD_CONST           (None)
+             112 RETURN_VALUE
+
+
+# Method Name:       DIV2KDataset
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        13
+# Constants:
+#    0: 'DIV2KDataset'
+#    1: 'return'
+#    2: None
+#    3: <code object __init__ at 0x55c3604d0880, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 14>
+#    4: <code object __getitem__ at 0x55c3604d2c30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 50>
+#    5: <code object __len__ at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 69>
+#    6: ('return', None)
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: __getitem__
+#    5: __len__
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+               0 MAKE_CELL            (__class__)
+
+ 13:           2 RESUME               0
+               4 LOAD_NAME            (__name__)
+               6 STORE_NAME           (__module__)
+               8 LOAD_CONST           ("DIV2KDataset")
+              10 STORE_NAME           (__qualname__)
+
+ 14:          12 LOAD_CONST           (('return', None))
+              14 LOAD_CLOSURE         (__class__)
+              16 BUILD_TUPLE          1
+              18 LOAD_CONST           (<code object __init__ at 0x55c3604d0880, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 14>)
+              20 MAKE_FUNCTION        (annotation, closure)
+              22 STORE_NAME           (__init__)
+
+ 50:          24 LOAD_CONST           (<code object __getitem__ at 0x55c3604d2c30, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 50>)
+              26 MAKE_FUNCTION        (No arguments)
+              28 STORE_NAME           (__getitem__)
+
+ 69:          30 LOAD_CONST           (<code object __len__ at 0x7fde741fc8a0, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 69>)
+              32 MAKE_FUNCTION        (No arguments)
+              34 STORE_NAME           (__len__)
+              36 LOAD_CLOSURE         (__class__)
+              38 COPY                 1
+              40 STORE_NAME           (__classcell__)
+              42 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    5
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        7
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        14
+# Constants:
+#    0: "DIV2K 数据集接口（自然图像超分辨率）\n\n        Args:\n            hr_dir (str): 高分图像路径\n            crop_size (int): Patch 切片大小（4的倍数）\n            noise_std (float): 注入的高斯噪声的标准差\n            phase ('train' | 'val'): 阶段\n        "
+#    1: 'train'
+#    2: 'val'
+#    3: '无效的阶段'
+#    4: <code object <listcomp> at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 31>
+#    5: 0
+#    6: True
+#    7: ('padding', 'pad_if_needed')
+#    8: 0.25
+#    9: 4
+#   10: ('interpolation',)
+#   11: <code object <lambda> at 0x7fde73eb6640, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 44>
+#   12: None
+# Names:
+#    0: super
+#    1: DIV2KDataset
+#    2: __init__
+#    3: hr_dir
+#    4: crop_size
+#    5: phase
+#    6: sorted
+#    7: os
+#    8: listdir
+#    9: hr_files
+#   10: transforms
+#   11: Compose
+#   12: RandomCrop
+#   13: RandomHorizontalFlip
+#   14: train_public_transform
+#   15: AddGaussianNoise
+#   16: Resize
+#   17: InterpolationMode
+#   18: BICUBIC
+#   19: Lambda
+#   20: ToTensor
+#   21: lr_transform
+#   22: hr_transform
+# Varnames:
+#	self, hr_dir, crop_size, noise_std, phase
+# Positional arguments:
+#	self, hr_dir, crop_size, noise_std, phase
+# Free variables:
+#    0: __class__
+# Cell variables:
+#    0: self
+               0 COPY_FREE_VARS       1
+               2 MAKE_CELL            (self)
+
+ 14:           4 RESUME               0
+
+ 23:           6 LOAD_GLOBAL          (NULL + super)
+              18 LOAD_GLOBAL          (DIV2KDataset)
+              30 LOAD_DEREF           (self)
+              32 PRECALL              2
+              36 CALL                 2
+              46 LOAD_METHOD          (__init__)
+              68 PRECALL              0
+              72 CALL                 0
+              82 POP_TOP
+
+ 25:          84 LOAD_FAST            (hr_dir)
+              86 LOAD_DEREF           (self)
+              88 STORE_ATTR           (hr_dir)
+
+ 26:          98 LOAD_FAST            (crop_size)
+             100 LOAD_DEREF           (self)
+             102 STORE_ATTR           (crop_size)
+
+ 27:         112 LOAD_FAST            (phase)
+             114 LOAD_DEREF           (self)
+             116 STORE_ATTR           (phase)
+
+ 29:         126 LOAD_DEREF           (self)
+             128 LOAD_ATTR            (phase)
+             138 LOAD_CONST           ("train")
+             140 COMPARE_OP           (==)
+             146 POP_JUMP_FORWARD_IF_TRUE (to 190)
+             148 LOAD_DEREF           (self)
+             150 LOAD_ATTR            (phase)
+             160 LOAD_CONST           ("val")
+             162 COMPARE_OP           (==)
+             168 POP_JUMP_FORWARD_IF_TRUE (to 190)
+             170 LOAD_ASSERTION_ERROR
+             172 LOAD_CONST           ("无效的阶段")
+             174 PRECALL              0
+             178 CALL                 0
+             188 RAISE_VARARGS        (exception instance)
+
+ 31:     >>  190 LOAD_CLOSURE         (self)
+             192 BUILD_TUPLE          1
+             194 LOAD_CONST           (<code object <listcomp> at 0x7fde7408be10, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 31>)
+             196 MAKE_FUNCTION        (closure)
+             198 LOAD_GLOBAL          (NULL + sorted)
+             210 LOAD_GLOBAL          (NULL + os)
+             222 LOAD_ATTR            (listdir)
+             232 LOAD_FAST            (hr_dir)
+             234 PRECALL              1
+             238 CALL                 1
+             248 PRECALL              1
+             252 CALL                 1
+             262 GET_ITER
+             264 PRECALL              0
+             268 CALL                 0
+             278 LOAD_DEREF           (self)
+             280 STORE_ATTR           (hr_files)
+
+ 34:         290 LOAD_GLOBAL          (NULL + transforms)
+             302 LOAD_ATTR            (Compose)
+
+ 35:         312 LOAD_GLOBAL          (NULL + transforms)
+             324 LOAD_ATTR            (RandomCrop)
+             334 LOAD_FAST            (crop_size)
+             336 LOAD_CONST           (0)
+             338 LOAD_CONST           (True)
+             340 KW_NAMES             (('padding', 'pad_if_needed'))
+             342 PRECALL              3
+             346 CALL                 3
+
+ 36:         356 LOAD_GLOBAL          (NULL + transforms)
+             368 LOAD_ATTR            (RandomHorizontalFlip)
+             378 LOAD_CONST           (0.25)
+             380 PRECALL              1
+             384 CALL                 1
+
+ 34:         394 BUILD_LIST           2
+             396 PRECALL              1
+             400 CALL                 1
+             410 LOAD_DEREF           (self)
+             412 STORE_ATTR           (train_public_transform)
+
+ 41:         422 LOAD_GLOBAL          (NULL + transforms)
+             434 LOAD_ATTR            (Compose)
+
+ 42:         444 LOAD_GLOBAL          (NULL + AddGaussianNoise)
+             456 LOAD_FAST            (noise_std)
+             458 PRECALL              1
+             462 CALL                 1
+
+ 43:         472 LOAD_DEREF           (self)
+             474 LOAD_ATTR            (phase)
+             484 LOAD_CONST           ("train")
+             486 COMPARE_OP           (==)
+             492 POP_JUMP_FORWARD_IF_FALSE (to 564)
+             494 LOAD_GLOBAL          (NULL + transforms)
+             506 LOAD_ATTR            (Resize)
+             516 LOAD_FAST            (crop_size)
+             518 LOAD_CONST           (4)
+             520 BINARY_OP            (//)
+             524 LOAD_GLOBAL          (InterpolationMode)
+             536 LOAD_ATTR            (BICUBIC)
+             546 KW_NAMES             (('interpolation',))
+             548 PRECALL              2
+             552 CALL                 2
+             562 JUMP_FORWARD         (to 604)
+         >>  564 LOAD_GLOBAL          (NULL + transforms)
+
+ 44:         576 LOAD_ATTR            (Lambda)
+             586 LOAD_CONST           (<code object <lambda> at 0x7fde73eb6640, file "/home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py", line 44>)
+             588 MAKE_FUNCTION        (No arguments)
+
+ 43:         590 PRECALL              1
+             594 CALL                 1
+
+ 45:     >>  604 LOAD_GLOBAL          (NULL + transforms)
+             616 LOAD_ATTR            (ToTensor)
+             626 PRECALL              0
+             630 CALL                 0
+
+ 41:         640 BUILD_LIST           3
+             642 PRECALL              1
+             646 CALL                 1
+             656 LOAD_DEREF           (self)
+             658 STORE_ATTR           (lr_transform)
+
+ 48:         668 LOAD_GLOBAL          (NULL + transforms)
+             680 LOAD_ATTR            (Compose)
+             690 LOAD_GLOBAL          (NULL + transforms)
+             702 LOAD_ATTR            (ToTensor)
+             712 PRECALL              0
+             716 CALL                 0
+             726 BUILD_LIST           1
+             728 PRECALL              1
+             732 CALL                 1
+             742 LOAD_DEREF           (self)
+             744 STORE_ATTR           (hr_transform)
+             754 LOAD_CONST           (None)
+             756 RETURN_VALUE
+
+
+# Method Name:       __getitem__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  11
+# Stack size:        8
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        50
+# Constants:
+#    0: None
+#    1: 'RGB'
+#    2: 'YCbCr'
+#    3: 0
+#    4: 'train'
+#    5: ''
+#    6: '.'
+#    7: -1
+#    8: 1
+#    9: 2
+# Names:
+#    0: Image
+#    1: open
+#    2: hr_files
+#    3: convert
+#    4: np
+#    5: array
+#    6: fromarray
+#    7: phase
+#    8: train_public_transform
+#    9: lr_transform
+#   10: hr_transform
+#   11: join
+#   12: os
+#   13: path
+#   14: basename
+#   15: split
+# Varnames:
+#	self, index, image_PIL, image_np, y, x, y_lr, y_hr, filename, cb_lr, cr_lr
+# Positional arguments:
+#	self, index
+# Local variables:
+#    2: image_PIL
+#    3: image_np
+#    4: y
+#    5: x
+#    6: y_lr
+#    7: y_hr
+#    8: filename
+#    9: cb_lr
+#   10: cr_lr
+
+ 50:           0 RESUME               0
+
+ 52:           2 LOAD_GLOBAL          (NULL + Image)
+              14 LOAD_ATTR            (open)
+              24 LOAD_FAST            (self)
+              26 LOAD_ATTR            (hr_files)
+              36 LOAD_FAST            (index)
+              38 BINARY_SUBSCR
+              48 PRECALL              1
+              52 CALL                 1
+              62 LOAD_METHOD          (convert)
+              84 LOAD_CONST           ("RGB")
+              86 PRECALL              1
+              90 CALL                 1
+             100 LOAD_METHOD          (convert)
+             122 LOAD_CONST           ("YCbCr")
+             124 PRECALL              1
+             128 CALL                 1
+             138 STORE_FAST           (image_PIL)
+
+ 53:         140 LOAD_GLOBAL          (NULL + np)
+             152 LOAD_ATTR            (array)
+             162 LOAD_FAST            (image_PIL)
+             164 PRECALL              1
+             168 CALL                 1
+             178 STORE_FAST           (image_np)
+
+ 55:         180 LOAD_GLOBAL          (NULL + Image)
+             192 LOAD_ATTR            (fromarray)
+             202 LOAD_FAST            (image_np)
+             204 LOAD_CONST           (None)
+             206 LOAD_CONST           (None)
+             208 BUILD_SLICE          2
+             210 LOAD_CONST           (None)
+             212 LOAD_CONST           (None)
+             214 BUILD_SLICE          2
+             216 LOAD_CONST           (0)
+             218 BUILD_TUPLE          3
+             220 BINARY_SUBSCR
+             230 PRECALL              1
+             234 CALL                 1
+             244 STORE_FAST           (y)
+
+ 56:         246 LOAD_FAST            (self)
+             248 LOAD_ATTR            (phase)
+             258 LOAD_CONST           ("train")
+             260 COMPARE_OP           (==)
+             266 POP_JUMP_FORWARD_IF_FALSE (to 310)
+             268 LOAD_FAST            (self)
+             270 LOAD_METHOD          (train_public_transform)
+             292 LOAD_FAST            (y)
+             294 PRECALL              1
+             298 CALL                 1
+             308 JUMP_FORWARD         (to 312)
+         >>  310 LOAD_FAST            (y)
+         >>  312 STORE_FAST           (x)
+
+ 58:         314 LOAD_FAST            (self)
+             316 LOAD_METHOD          (lr_transform)
+             338 LOAD_FAST            (x)
+             340 PRECALL              1
+             344 CALL                 1
+             354 STORE_FAST           (y_lr)
+
+ 59:         356 LOAD_FAST            (self)
+             358 LOAD_METHOD          (hr_transform)
+             380 LOAD_FAST            (x)
+             382 PRECALL              1
+             386 CALL                 1
+             396 STORE_FAST           (y_hr)
+
+ 61:         398 LOAD_FAST            (self)
+             400 LOAD_ATTR            (phase)
+             410 LOAD_CONST           ("train")
+             412 COMPARE_OP           (==)
+             418 POP_JUMP_FORWARD_IF_FALSE (to 428)
+
+ 62:         420 LOAD_FAST            (y_lr)
+             422 LOAD_FAST            (y_hr)
+             424 BUILD_TUPLE          2
+             426 RETURN_VALUE
+
+ 64:     >>  428 LOAD_CONST           ("")
+             430 LOAD_METHOD          (join)
+             452 LOAD_GLOBAL          (os)
+             464 LOAD_ATTR            (path)
+             474 LOAD_METHOD          (basename)
+             496 LOAD_FAST            (self)
+             498 LOAD_ATTR            (hr_files)
+             508 LOAD_FAST            (index)
+             510 BINARY_SUBSCR
+             520 PRECALL              1
+             524 CALL                 1
+             534 LOAD_METHOD          (split)
+             556 LOAD_CONST           (".")
+             558 PRECALL              1
+             562 CALL                 1
+             572 LOAD_CONST           (None)
+             574 LOAD_CONST           (-1)
+             576 BUILD_SLICE          2
+             578 BINARY_SUBSCR
+             588 PRECALL              1
+             592 CALL                 1
+             602 STORE_FAST           (filename)
+
+ 65:         604 LOAD_FAST            (self)
+             606 LOAD_METHOD          (lr_transform)
+             628 LOAD_GLOBAL          (NULL + Image)
+             640 LOAD_ATTR            (fromarray)
+             650 LOAD_FAST            (image_np)
+             652 LOAD_CONST           (None)
+             654 LOAD_CONST           (None)
+             656 BUILD_SLICE          2
+             658 LOAD_CONST           (None)
+             660 LOAD_CONST           (None)
+             662 BUILD_SLICE          2
+             664 LOAD_CONST           (1)
+             666 BUILD_TUPLE          3
+             668 BINARY_SUBSCR
+             678 PRECALL              1
+             682 CALL                 1
+             692 PRECALL              1
+             696 CALL                 1
+             706 STORE_FAST           (cb_lr)
+
+ 66:         708 LOAD_FAST            (self)
+             710 LOAD_METHOD          (lr_transform)
+             732 LOAD_GLOBAL          (NULL + Image)
+             744 LOAD_ATTR            (fromarray)
+             754 LOAD_FAST            (image_np)
+             756 LOAD_CONST           (None)
+             758 LOAD_CONST           (None)
+             760 BUILD_SLICE          2
+             762 LOAD_CONST           (None)
+             764 LOAD_CONST           (None)
+             766 BUILD_SLICE          2
+             768 LOAD_CONST           (2)
+             770 BUILD_TUPLE          3
+             772 BINARY_SUBSCR
+             782 PRECALL              1
+             786 CALL                 1
+             796 PRECALL              1
+             800 CALL                 1
+             810 STORE_FAST           (cr_lr)
+
+ 67:         812 LOAD_FAST            (y_lr)
+             814 LOAD_FAST            (y_hr)
+             816 LOAD_FAST            (cb_lr)
+             818 LOAD_FAST            (cr_lr)
+             820 LOAD_FAST            (filename)
+             822 BUILD_TUPLE          5
+             824 RETURN_VALUE
+
+
+# Method Name:       __len__
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        3
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        69
+# Constants:
+#    0: None
+# Names:
+#    0: len
+#    1: hr_files
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+
+ 69:           0 RESUME               0
+
+ 70:           2 LOAD_GLOBAL          (NULL + len)
+              14 LOAD_FAST            (self)
+              16 LOAD_ATTR            (hr_files)
+              26 PRECALL              1
+              30 CALL                 1
+              40 RETURN_VALUE
+
+
+# Method Name:       <listcomp>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        6
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        31
+# Names:
+#    0: os
+#    1: path
+#    2: join
+#    3: hr_dir
+# Varnames:
+#	.0, x
+# Positional arguments:
+#	.0
+# Local variables:
+#    1: x
+# Free variables:
+#    0: self
+               0 COPY_FREE_VARS       1
+
+ 31:           2 RESUME               0
+               4 BUILD_LIST           0
+               6 LOAD_FAST            (.0)
+               8 FOR_ITER             (to 88)
+              10 STORE_FAST           (x)
+              12 LOAD_GLOBAL          (os)
+              24 LOAD_ATTR            (path)
+              34 LOAD_METHOD          (join)
+              56 LOAD_DEREF           (self)
+              58 LOAD_ATTR            (hr_dir)
+              68 LOAD_FAST            (x)
+              70 PRECALL              2
+              74 CALL                 2
+              84 LIST_APPEND          2
+              86 JUMP_BACKWARD        (to 8)
+         >>   88 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          /home/dake/Documents/Projects/Graduction_Projects/codes/base/datasets/div2k.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        6
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        44
+# Constants:
+#    0: None
+#    1: 1
+#    2: 4
+#    3: 0
+#    4: ('interpolation',)
+# Names:
+#    0: transforms
+#    1: Resize
+#    2: size
+#    3: InterpolationMode
+#    4: BICUBIC
+# Varnames:
+#	x
+# Positional arguments:
+#	x
+
+ 44:           0 RESUME               0
+               2 PUSH_NULL
+               4 LOAD_GLOBAL          (NULL + transforms)
+              16 LOAD_ATTR            (Resize)
+              26 LOAD_FAST            (x)
+              28 LOAD_ATTR            (size)
+              38 LOAD_CONST           (1)
+              40 BINARY_SUBSCR
+              50 LOAD_CONST           (4)
+              52 BINARY_OP            (//)
+              56 LOAD_FAST            (x)
+              58 LOAD_ATTR            (size)
+              68 LOAD_CONST           (0)
+              70 BINARY_SUBSCR
+              80 LOAD_CONST           (4)
+              82 BINARY_OP            (//)
+              86 BUILD_TUPLE          2
+              88 LOAD_GLOBAL          (InterpolationMode)
+             100 LOAD_ATTR            (BICUBIC)
+             110 KW_NAMES             (('interpolation',))
+             112 PRECALL              2
+             116 CALL                 2
+             126 LOAD_FAST            (x)
+             128 PRECALL              1
+             132 CALL                 1
+             142 RETURN_VALUE
+

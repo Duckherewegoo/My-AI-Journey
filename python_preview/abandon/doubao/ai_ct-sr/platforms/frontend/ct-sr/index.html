@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>医学影像深度学习超分辨率平台</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <style>
+        /* ========== 基础重置（医疗系统极简风格） ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #F7F8FA;
+            color: #333;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* ========== 顶部标题栏（医疗蓝主题） ========== */
+        .banner {
+            background: linear-gradient(90deg, #165DFF, #4080FF);
+            color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(22, 93, 255, 0.15);
+        }
+
+        .banner h1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .banner p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 0.2rem;
+        }
+
+        /* ========== 主容器 ========== */
+        .container {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        /* ========== 左侧影像显示区（核心区域） ========== */
+        .image-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #image-display {
+            width: 100%;
+            height: 700px;
+            background: #1A1A1A;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ========== 右侧控制面板（医疗系统模块化） ========== */
+        .control-panel {
+            width: 450px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            height: fit-content;
+        }
+
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #165DFF;
+            padding-bottom: 0.6rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #E5E6EB;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ========== 功能模块 ========== */
+        .control-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .group-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #4E5969;
+            margin-bottom: 0.8rem;
+        }
+
+        /* ========== 信息展示区 ========== */
+        .info-list {
+            list-style: none;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .info-list li {
+            padding: 0.3rem 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #F0F0F0;
+        }
+
+        .info-list span {
+            color: #165DFF;
+            font-weight: 500;
+        }
+
+        .detail-info {
+            display: none;
+            margin-top: 0.8rem;
+            padding: 0.8rem;
+            background: #F7F8FA;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .toggle-detail {
+            font-size: 0.85rem;
+            color: #165DFF;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========== 表单控件 ========== */
+        input[type="file"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #E5E6EB;
+            border-radius: 4px;
+            background: #F7F8FA;
+            margin: 0.5rem 0;
+            cursor: pointer;
+        }
+
+        input[type="number"],
+        select {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #E5E6EB;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #165DFF;
+            box-shadow: 0 0 0 2px rgba(22, 93, 255, 0.1);
+        }
+        /* ========== 按钮基础样式（修复：添加完整默认状态） ========== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 0.5rem 1rem;
+            border: 1px solid #165DFF;  /* 🔥 新增：默认边框 */
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #165DFF;  /* 🔥 修改：蓝色文字 */
+            background: #E8F3FF;  /* 🔥 新增：浅蓝色背景 */
+            cursor: pointer;
+            transition: all 0.2s;
+            outline: none;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* 🔥 新增：轻微阴影 */
+        }
+        
+        .btn:hover {
+            background: #165DFF;  /* 悬停时变蓝 */
+            color: white;  /* 悬停时文字变白 */
+            border-color: #0E42D2;  /* 悬停时边框加深 */
+            box-shadow: 0 2px 6px rgba(22, 93, 255, 0.2);  /* 悬停时阴影加深 */
+        }
+        
+        /* 主要按钮样式（AI超分按钮等） */
+        .btn-primary {
+            background: #165DFF;
+            color: #165DFF; 
+            border-color: #165DFF;
+        }
+        
+        .btn-primary:hover {
+        background: #0E42D2;
+        border-color: #0E42D2;
+        }
+
+        /* 成功按钮样式（AI超分按钮） */
+        .btn-success {
+            background: #00B42A;  /* 绿色 */
+            color: #00B42A;
+            border-color: #00B42A;
+        }       
+        
+        .btn-success:hover {
+            background: #009A25;
+            border-color: #009A25;
+        }
+
+        /* 警告按钮样式（强制重置按钮） */
+        .btn-warning {
+            background: #FF7D00;  /* 橙色 */
+            color: #FF7D00;
+            border-color: #FF7D00;
+        }
+        
+        .btn-warning:hover {
+            background: #E66F00;
+            border-color: #E66F00;
+        }
+    
+        /* 信息按钮样式（视口诊断按钮） */
+        .btn-info {
+            background: #4080FF;  /* 浅蓝色 */
+            color: #4080FF;
+            border-color: #4080FF;
+        }
+
+        .btn-info:hover {
+            background: #3370E6;
+            border-color: #3370E6;
+        }
+
+        /* 全宽按钮（AI超分按钮） */
+        .btn-full {
+            width: 100%;
+            padding: 0.7rem;
+            font-size: 1rem;
+        }
+
+        /* 禁用状态 */
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed !important;
+            background: #C9CDD4 !important;
+            border-color: #C9CDD4 !important;
+            color: #8A8E99 !important;
+        }
+        /* ========== 超分状态面板 ========== */
+        .sr-status {
+            margin: 0.8rem 0;
+            padding: 0.8rem;
+            border-radius: 4px;
+            display: none;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .sr-loading {
+            background: #E8F3FF;
+            color: #165DFF;
+            border: 1px solid #BAE3FF;
+        }
+
+        .sr-done {
+            background: #E8FFEA;
+            color: #00B42A;
+            border: 1px solid #BAFFC2;
+        }
+
+        /* ========== 超分信息 ========== */
+        .sr-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.4rem 0;
+        }
+
+        .sr-info span {
+            color: #165DFF;
+            font-weight: 500;
+        }
+
+        /* ========== 服务状态 ========== */
+        .service-status {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-online {
+            background: #E8FFEA;
+            color: #00B42A;
+        }
+
+        .status-offline {
+            background: #FFECE8;
+            color: #F53F3F;
+        }
+
+        /* ========== 布局间距 ========== */
+        .control-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+
+        /* ========== 响应式适配 ========== */
+        @media (max-width: 1200px) {
+            .container {
+                flex-direction: column;
+            }
+            .control-panel {
+                width: 100%;
+            }
+            #image-display {
+                height: 500px;
+            }
+        }
+
+        /* ========== 加载动画 ========== */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .fa-spin {
+            animation: spin 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="banner">
+        <h1><i class="fa fa-heartbeat"></i> 医学影像深度学习超分辨率系统</h1>
+        <p>Medical Image Super-Resolution Platform | 基于AI的医学影像增强工具</p>
+    </div>
+
+    <div class="container">
+        <!-- 左侧：影像显示区域 -->
+        <div class="image-panel">
+            <div id="image-display"></div>
+        </div>
+
+        <!-- 右侧：控制面板 -->
+        <div class="control-panel">
+            <p class="panel-title"><i class="fa fa-cogs"></i> 系统控制面板</p>
+
+            <!-- 1. 远程服务状态 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-server" style="color:#165DFF"></i>
+                    推理服务状态
+                </div>
+                <div>
+                    服务地址：<span id="remote-ip">N/A</span><br>
+                    运行状态：<span id="remote-status" class="service-status status-offline">未连接</span>
+                </div>
+            </div>
+
+            <!-- 2. 文件上传 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-file-image-o" style="color:#165DFF"></i>
+                    影像文件加载
+                </div>
+                <input type="file" id="open-dicom" accept=".dcm,.png,.jpg,.jpeg,.tiff,.bmp" />
+            </div>
+
+            <!-- 3. 图像信息 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-info-circle" style="color:#165DFF"></i>
+                    影像基础信息
+                </div>
+                <ul class="info-list">
+                  <li>文件名：<span id="info-filename">N/A</span></li>
+                  <li>影像类型：<span id="info-type">N/A</span></li>
+                  <li>高度：<span id="info-h">N/A</span></li>
+                  <li>宽度：<span id="info-w">N/A</span></li>
+                  <li>格式：<span id="info-transfer">N/A</span></li>
+                  <li>模式：<span id="info-mode">N/A</span></li>
+                  
+                </ul>
+                <span class="toggle-detail" id="show-more-info">[ 查看详细信息 ]</span>
+                <div class="detail-info" id="detail-info">
+                    <div id="detail-filesize">文件大小: N/A</div>
+                    <div id="detail-patientid">患者ID: N/A</div>
+                    <div id="detail-studyid">研究ID: N/A</div>
+                    <div id="detail-modality">模态: N/A</div>
+                    <div id="detail-institution">机构: N/A</div>
+                    <div id="detail-window">窗宽/窗位: N/A / N/A</div>
+                    <div id="detail-bitdepth">位深度: N/A</div>
+                    <div id="info-error">错误信息：N/A</div>
+                </div>
+            </div>
+
+            <!-- 4. 影像调节 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-sliders" style="color:#165DFF"></i>
+                    影像调节
+                </div>
+                <!-- 窗宽窗位 -->
+                <div class="control-row">
+                    <span>窗预设：</span>
+                    <select id="presetWWWL"></select>
+                    <span>WW</span>
+                    <input id="ww-input" type="number" value="400">
+                    <span>WL</span>
+                    <input id="wl-input" type="number" value="40">
+                    <button id="apply-btn" class="btn"><i class="fa fa-check"></i>应用</button>
+                </div>
+                <!-- 缩放控制 -->
+                <div class="control-row">
+                    <span>缩放：<span id="current-zoom-rate">1.00</span>×</span>
+                    <button id="zoomIn-btn" class="btn"><i class="fa fa-search-plus"></i>放大</button>
+                    <button id="zoomOut-btn" class="btn"><i class="fa fa-search-minus"></i>缩小</button>
+                </div>
+                <!-- 重置/反相 -->
+                <div class="control-row">
+                    <button id="invert-btn" class="btn"><i class="fa fa-adjust"></i>反相</button>
+                    <button id="reset-btn" class="btn"><i class="fa fa-refresh"></i>重置视图</button>
+                    <button id="toggle-rgb-mode-btn" class="btn"><i class="fa fa-palette"></i>切换显示模式</button>
+                </div>
+            </div>
+
+            <!-- 5. AI超分核心 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-bolt" style="color:#00B42A"></i>
+                    AI超分辨率
+                </div>
+                <button id="sr-btn" class="btn btn-success btn-full"><i class="fa fa-magic"></i>执行超分处理</button>
+                
+                <div id="sr-loading" class="sr-status sr-loading">
+                    <i class="fa fa-spinner fa-spin"></i>
+                    <span>AI推理处理中...</span>
+                </div>
+                <div id="sr-done" class="sr-status sr-done">
+                    <i class="fa fa-check-circle"></i>
+                    <span>处理完成</span>
+                    <button id="sr-replace" class="btn"><i class="fa fa-exchange"></i>应用结果</button>
+                </div>
+
+                <div class="sr-info">
+                    超分次数：<span id="info-sr-count">0 次</span><br>
+                    超分倍率：<span id="info-sr-scale">1.0x</span>
+                </div>
+            </div>
+
+            <!-- 6. 系统工具 -->
+            <div class="control-group">
+                <div class="group-label">
+                    <i class="fa fa-wrench" style="color:#165DFF"></i>
+                    系统工具
+                </div>
+                <div class="control-row">
+                    <button id="forceReset" class="btn btn-warning"><i class="fa fa-sync"></i>强制重置</button>
+                    <button id="diagnoseBtn" class="btn btn-info"><i class="fa fa-stethoscope"></i>视口诊断</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局状态 -->
+    <script>
+        window._ctsr = {};
+    </script>
+
+    <!-- 核心依赖库 -->
+    <script src="./lib/cornerstoneMath.min.js"></script>
+    <script src="./lib/cornerstone.js"></script>
+    <script src="./lib/dicomParser.min.js"></script>
+    <script src="./lib/dicomTransferUids.js"></script>
+    <script src="./lib/cornerstoneWebImageLoader.js"></script>
+    <script src="./lib/cornerstoneWADOImageLoader.js"></script>  
+    <script src="./lib/cornerstoneTools.min.js"></script>
+    <script src="./bundle.js"></script>
+</body>
+</html>

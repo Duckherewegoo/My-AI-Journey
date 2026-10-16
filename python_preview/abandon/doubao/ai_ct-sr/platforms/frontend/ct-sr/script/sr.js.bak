@@ -1,0 +1,474 @@
+// ct-sr/script/sr.js 
+import { BackendUrl } from './config.js'
+import { doms, isDomAvailable } from './doms.js'
+import { updateImageInfo, updateSRInfo } from './info.js'
+
+// 统一状态管理
+window._ctsr = window._ctsr || {}
+window._ctsr.srState = window._ctsr.srState || {
+    isProcessing: false,
+    srKey: null,
+    srCount: 0,
+    remoteAvailable: false,
+    fileOpened: false,
+    isSRProcessed: false,
+    imageHW: null,
+    originalImageHW: null
+}
+
+// 状态同步函数
+function syncSRState() {
+    // 确保 srState 和直接属性同步
+    if (window._ctsr.fileOpened !== undefined) {
+        window._ctsr.srState.fileOpened = window._ctsr.fileOpened
+    }
+    if (window._ctsr.imageHW) {
+        window._ctsr.srState.imageHW = window._ctsr.imageHW
+        window._ctsr.srState.originalImageHW = window._ctsr.originalImageHW
+    }
+    
+    console.log('状态同步完成:', {
+        fileOpened: window._ctsr.srState.fileOpened,
+        remoteAvailable: window._ctsr.srState.remoteAvailable
+    })
+}
+
+// 状态显示更新函数
+function updateStatusDisplay() {
+    console.log('更新状态显示...')
+    
+    // 同步状态
+    syncSRState()
+    
+    // 更新远程状态显示
+    if (isDomAvailable(doms.remoteStatus)) {
+        const status = window._ctsr.srState.remoteAvailable
+        doms.remoteStatus.textContent = status ? '运行中' : '未连接'
+        doms.remoteStatus.style.color = status ? 'green' : 'red'
+        doms.remoteStatus.style.fontWeight = 'bold'
+    }
+    
+    // 更新远程IP显示
+    if (isDomAvailable(doms.remoteIP)) {
+        doms.remoteIP.textContent = BackendUrl
+    }
+    
+    // 关键修复：优化按钮状态更新
+    updateButtonState()
+}
+
+// 优化按钮状态更新
+function updateButtonState() {
+    if (!isDomAvailable(doms.srBtn)) return
+    
+    const canProcess = window._ctsr.srState.remoteAvailable && window._ctsr.srState.fileOpened
+    const isProcessing = window._ctsr.srState.isProcessing
+    
+    // 只有当状态实际变化时才更新，避免闪烁
+    if (doms.srBtn.disabled === !canProcess && !isProcessing) {
+        return // 状态未变化，跳过
+    }
+    
+    doms.srBtn.disabled = !canProcess || isProcessing
+    
+    // 添加视觉反馈
+    if (isProcessing) {
+        doms.srBtn.style.opacity = '0.7'
+        doms.srBtn.innerHTML = '处理中...'
+    } else {
+        doms.srBtn.style.opacity = canProcess ? '1' : '0.5'
+        doms.srBtn.innerHTML = '超分辨率'
+    }
+    
+    console.log('按钮状态更新:', {
+        可处理: canProcess,
+        处理中: isProcessing,
+        禁用状态: doms.srBtn.disabled
+    })
+}
+
+// 初始化远程服务
+export function initRemote() {
+    console.log('初始化远程服务监控...')
+    
+    // 立即检查一次状态
+    checkRemoteStatus()
+    
+    // 每30秒检查一次服务状态（减少频率）
+    window._ctsr.heartbeat = setInterval(checkRemoteStatus, 30000)
+    
+    console.log('✅ 远程服务监控已启动')
+}
+
+// 远程状态检查
+async function checkRemoteStatus() {
+    try {
+        console.log('检查远程服务状态...')
+        
+        const controller = new AbortController()
+        const timeoutId = setTimeout(() => controller.abort(), 5000)
+        
+        const response = await fetch(BackendUrl + 'ping', {
+            method: 'GET',
+            mode: 'cors',
+            signal: controller.signal
+        })
+        
+        clearTimeout(timeoutId)
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`)
+        }
+        
+        const data = await response.json()
+        const newStatus = !!(data && data.success)
+        
+        // 只有状态变化时才更新显示
+        if (window._ctsr.srState.remoteAvailable !== newStatus) {
+            window._ctsr.srState.remoteAvailable = newStatus
+            console.log('远程服务状态变化:', newStatus ? '可用' : '不可用')
+            updateStatusDisplay() // 状态变化时更新显示
+        }
+        
+    } catch (error) {
+        console.warn('远程服务检查失败:', error.message)
+        if (window._ctsr.srState.remoteAvailable !== false) {
+            window._ctsr.srState.remoteAvailable = false
+            updateStatusDisplay() // 状态变化时更新显示
+        }
+    }
+}
+
+// 事件绑定
+function bindEvents() {
+    if (isDomAvailable(doms.srBtn)) {
+        // 移除旧监听器
+        doms.srBtn.replaceWith(doms.srBtn.cloneNode(true))
+        const newBtn = document.getElementById('sr-btn')
+        
+        newBtn.addEventListener('click', handleSuperResolution)
+        console.log('超分按钮事件已绑定')
+    }
+    
+    if (isDomAvailable(doms.srReplace)) {
+        doms.srReplace.replaceWith(doms.srReplace.cloneNode(true))
+        const newReplace = document.getElementById('sr-replace')
+        
+        newReplace.addEventListener('click', handleReplaceSRResult)
+        console.log('替换按钮事件已绑定')
+    }
+}
+
+// 主函数：处理超分辨率请求
+async function handleSuperResolution() {
+    console.log('点击超分辨率按钮...')
+    
+    if (window._ctsr.srState.isProcessing) {
+        showNotification('正在处理中，请稍候...', 'info')
+        return
+    }
+
+    if (!validatePreconditions()) return
+
+    try {
+        window._ctsr.srState.isProcessing = true
+        updateButtonState() // 立即更新按钮状态
+        
+        console.log('开始超分处理...')
+        
+        // 显示处理中的通知（非阻塞）
+        showNotification('开始超分处理，请稍候...', 'info', 3000)
+        
+        const result = await sendSRRequest()
+        
+        if (result.success && result.filename) {
+            window._ctsr.srState.srKey = result.filename
+            
+            // 使用非阻塞的成功通知
+            showNotification('超分处理完成！准备应用结果', 'success', 5000)
+            
+            // 更新UI状态
+            setUIState('ready')
+            
+        } else {
+            throw new Error(result.error || '处理失败')
+        }
+
+    } catch (error) {
+        console.error('超分处理失败:', error)
+        handleError(error)
+    } finally {
+        window._ctsr.srState.isProcessing = false
+        updateButtonState() // 恢复按钮状态
+    }
+}
+
+// 优化前置验证
+function validatePreconditions() {
+    console.log('验证前置条件...')
+    
+    // 同步状态
+    syncSRState()
+    
+    // 检查文件状态
+    if (!window._ctsr.srState.fileOpened) {
+        showNotification('请先加载DICOM图像文件', 'warning')
+        return false
+    }
+    
+    // 检查远程服务
+    if (!window._ctsr.srState.remoteAvailable) {
+        showNotification('远程推理服务不可用', 'error')
+        return false
+    }
+    
+    console.log('✅ 所有前置条件验证通过')
+    return true
+}
+
+// 发送超分请求
+async function sendSRRequest() {
+    const imageBlob = await prepareImage()
+    const formData = new FormData()
+    formData.append('image', imageBlob, 'image.png')
+    
+    const response = await fetch(BackendUrl + 'predict', {
+        method: 'POST',
+        mode: 'cors',
+        body: formData
+    })
+    
+    if (!response.ok) {
+        throw new Error(`HTTP错误: ${response.status}`)
+    }
+    
+    const result = await response.json()
+    
+    if (!result || typeof result !== 'object') {
+        throw new Error('服务器返回了无效的响应格式')
+    }
+    
+    return result
+}
+
+// 准备图像数据
+async function prepareImage() {
+    return new Promise((resolve, reject) => {
+        const canvas = document.querySelector('.cornerstone-canvas')
+        if (!canvas) {
+            reject(new Error('无法找到图像画布'))
+            return
+        }
+        
+        canvas.toBlob(blob => {
+            if (!blob) {
+                reject(new Error('图像转换失败'))
+                return
+            }
+            resolve(blob)
+        }, 'image/png', 0.9)
+    })
+}
+
+// 处理结果替换
+async function handleReplaceSRResult() {
+    if (!window._ctsr.srState.srKey) {
+        showNotification('没有可用的超分结果', 'warning')
+        return
+    }
+    
+    try {
+        setUIState('loading')
+        
+        // 显示处理通知
+        showNotification('正在应用超分结果...', 'info', 3000)
+        
+        await loadAndDisplaySRResult(window._ctsr.srState.srKey)
+        
+        // 更新状态
+        window._ctsr.srState.srCount++
+        window._ctsr.srState.isSRProcessed = true
+        
+        // 更新图像信息
+        updateSRInfo(window._ctsr.srState.srCount)
+        
+        setUIState('idle')
+        
+        // 显示成功通知
+        showSuccessNotification()
+        
+    } catch (error) {
+        console.error('加载结果失败:', error)
+        showNotification(`加载失败: ${error.message}`, 'error')
+        setUIState('ready')
+    }
+}
+
+// 加载并显示超分结果
+async function loadAndDisplaySRResult(filename) {
+    const response = await fetch(BackendUrl + `get_output?filename=${filename}`, {
+        method: 'GET',
+        mode: 'cors'
+    })
+    
+    if (!response.ok) {
+        throw new Error(`HTTP错误: ${response.status}`)
+    }
+    
+    const imageBlob = await response.blob()
+    await displaySRImage(imageBlob)
+}
+
+// 显示超分图像
+async function displaySRImage(imageBlob) {
+    return new Promise((resolve, reject) => {
+        const imageUrl = URL.createObjectURL(imageBlob)
+        const imageId = `webimage:${imageUrl}`
+        
+        cornerstone.loadImage(imageId).then(image => {
+            const element = doms.root
+            const viewport = cornerstone.getViewport(element) || cornerstone.getDefaultViewportForImage(element, image)
+            
+            // 重置视图
+            viewport.scale = 1
+            viewport.translation = { x: 0, y: 0 }
+            
+            cornerstone.displayImage(element, image, viewport)
+            
+            // 更新状态
+            window._ctsr.srState.imageHW = [image.width, image.height]
+            
+            URL.revokeObjectURL(imageUrl)
+            resolve()
+            
+        }).catch(error => {
+            URL.revokeObjectURL(imageUrl)
+            reject(error)
+        })
+    })
+}
+
+// UI状态管理
+function setUIState(state) {
+    if (!isDomAvailable(doms.srLoading) || !isDomAvailable(doms.srDone)) {
+        return
+    }
+    
+    switch (state) {
+        case 'loading':
+            doms.srLoading.style.display = 'block'
+            doms.srDone.style.display = 'none'
+            break
+        case 'ready':
+            doms.srLoading.style.display = 'none'
+            doms.srDone.style.display = 'block'
+            break
+        case 'idle':
+            doms.srLoading.style.display = 'none'
+            doms.srDone.style.display = 'none'
+            break
+    }
+}
+
+// 优化错误处理
+function handleError(error) {
+    let message = '处理失败'
+    
+    if (error.message.includes('Network') || error.message.includes('Failed to fetch')) {
+        message = '网络连接失败，请检查服务器状态'
+    } else if (error.message.includes('timeout')) {
+        message = '请求超时，请重试'
+    } else {
+        message = error.message
+    }
+    
+    showNotification(`超分处理失败：${message}`, 'error')
+}
+
+// 优化通知系统（替代alert）
+function showNotification(message, type = 'info', duration = 0) {
+    console.log(`通知 [${type}]:`, message)
+    
+    // 移除现有通知
+    const existingNotification = document.getElementById('ctsr-notification')
+    if (existingNotification) {
+        existingNotification.remove()
+    }
+    
+    // 创建通知元素
+    const notification = document.createElement('div')
+    notification.id = 'ctsr-notification'
+    notification.innerHTML = `
+        <div style="
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            z-index: 10000;
+            max-width: 300px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            ${type === 'error' ? 'background: #f44336;' : ''}
+            ${type === 'success' ? 'background: #4caf50;' : ''}
+            ${type === 'warning' ? 'background: #ff9800;' : ''}
+            ${type === 'info' ? 'background: #2196f3;' : ''}
+        ">
+            ${message}
+        </div>
+    `
+    
+    document.body.appendChild(notification)
+    
+    // 自动消失
+    if (duration > 0) {
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.remove()
+            }
+        }, duration)
+    }
+    
+    return notification
+}
+
+// 优化成功通知
+function showSuccessNotification() {
+    const originalDims = window._ctsr.srState.originalImageHW || [512, 512]
+    const scale = Math.pow(2, window._ctsr.srState.srCount)
+    const newDims = [originalDims[0] * scale, originalDims[1] * scale]
+    
+    const message = `超分处理完成！<br>
+                    处理次数: 第 ${window._ctsr.srState.srCount} 次<br>
+                    图像尺寸: ${newDims[0]}×${newDims[1]}<br>
+                    放大倍数: ${scale}倍`
+    
+    showNotification(message, 'success', 8000)
+}
+
+// 重置状态
+export function resetSRState() {
+    window._ctsr.srState.srKey = null
+    window._ctsr.srState.isSRProcessed = false
+    window._ctsr.srState.srCount = 0
+    setUIState('idle')
+}
+
+// 文件加载后更新状态
+export function updateFileState(fileInfo) {
+    window._ctsr.srState.fileOpened = true
+    window._ctsr.srState.imageHW = fileInfo.dimensions
+    window._ctsr.srState.originalImageHW = fileInfo.dimensions
+    // 重置超分状态
+    resetSRState()
+    // 更新状态显示
+    updateStatusDisplay()
+}
+
+// 自动初始化远程服务
+console.log('初始化远程服务监控...')
+initRemote()
+
+// 绑定事件
+bindEvents()

@@ -1,0 +1,66 @@
+import { doms, isDomAvailable } from './doms.js';
+import { fileState } from './file.js';
+
+// 🔥 补全：缺失的默认窗宽窗位（修复 DefaultWWWL 警告）
+export const DefaultWWWL = { ww: 255, wc: 128 };
+
+// 官方标准医学窗预设 + 自定义预设
+export const windowPresets = [
+  { name: '肺窗', ww: 1500, wc: -600 },
+  { name: '脑窗', ww: 80, wc: 40 },
+  { name: '骨窗', ww: 1500, wc: 300 },
+  { name: '软组织', ww: 350, wc: 50 },
+  { name: '原始尺寸', ww: 255, wc: 128 }
+];
+
+// 初始化窗宽窗位
+export function initWWWL() {
+  if (!isDomAvailable(doms.presetWWWL)) return;
+  windowPresets.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = `${p.ww},${p.wc}`;
+    opt.textContent = p.name;
+    doms.presetWWWL.appendChild(opt);
+  });
+
+  doms.presetWWWL.addEventListener('change', applyPreset);
+  doms.wwInput.addEventListener('change', syncManualWWWL);
+  doms.wlInput.addEventListener('change', syncManualWWWL);
+}
+
+// 🔥 补全：缺失的 initWWWLDisplay（修复 initWWWLDisplay 警告）
+export function initWWWLDisplay() {
+  // 空兼容函数，不影响功能，仅消除警告
+  if(isDomAvailable(doms.wwInput) && isDomAvailable(doms.wlInput)) {
+    doms.wwInput.value = DefaultWWWL.ww;
+    doms.wlInput.value = DefaultWWWL.wc;
+  }
+}
+
+// 加载图片后，自动同步原始尺寸到窗预设
+export function syncImageSizeToWWWL(ww, wc) {
+  if (!isDomAvailable(doms.wwInput) || !isDomAvailable(doms.wlInput)) return;
+  doms.wwInput.value = ww;
+  doms.wlInput.value = wc;
+}
+
+// 应用预设
+function applyPreset() {
+  const [ww, wc] = doms.presetWWWL.value.split(',').map(Number);
+  doms.wwInput.value = ww;
+  doms.wlInput.value = wc;
+}
+
+// 手动输入同步
+function syncManualWWWL() {
+  const ww = Number(doms.wwInput.value) || 255;
+  const wc = Number(doms.wlInput.value) || 128;
+  doms.presetWWWL.value = `${ww},${wc}`;
+}
+
+// 获取当前窗预设尺寸（超分输出用）
+export function getCurrentWindowSize() {
+  const ww = Number(doms.wwInput.value) || 255;
+  const wc = Number(doms.wlInput.value) || 128;
+  return { ww, wc, size: [ww, wc] };
+}

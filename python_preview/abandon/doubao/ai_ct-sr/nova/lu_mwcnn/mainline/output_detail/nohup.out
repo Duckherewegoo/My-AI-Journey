@@ -1,0 +1,84 @@
+[2026-01-27 21:12:29.097]: Info: Sunshine version: 2025.924.154138 commit: 86188d47a7463b0f73b35de18a628353adeaa20e
+[2026-01-27 21:12:29.097]: Info: Package Publisher: LizardByte
+[2026-01-27 21:12:29.097]: Info: Publisher Website: https://app.lizardbyte.dev
+[2026-01-27 21:12:29.097]: Info: Get support: https://app.lizardbyte.dev/support
+[2026-01-27 21:12:29.134]: Error: Failed to create session: 
+[2026-01-27 21:12:29.134]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.135]: Info: /dev/dri/card1 -> nvidia-drm
+[2026-01-27 21:12:29.135]: Error: Environment variable WAYLAND_DISPLAY has not been defined
+[2026-01-27 21:12:29.248]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2026-01-27 21:12:29.248]: Info: Trying encoder [nvenc]
+[2026-01-27 21:12:29.248]: Info: Screencasting with KMS
+[2026-01-27 21:12:29.248]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.248]: Info: /dev/dri/card1 -> nvidia-drm
+[2026-01-27 21:12:29.248]: Error: Couldn't find monitor [0]
+[2026-01-27 21:12:29.248]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.248]: Info: /dev/dri/card1 -> nvidia-drm
+[2026-01-27 21:12:29.249]: Error: Couldn't find monitor [0]
+[2026-01-27 21:12:29.449]: Info: Screencasting with KMS
+[2026-01-27 21:12:29.449]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.449]: Info: /dev/dri/card1 -> nvidia-drm
+[2026-01-27 21:12:29.450]: Error: Couldn't find monitor [0]
+[2026-01-27 21:12:29.450]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.450]: Info: /dev/dri/card1 -> nvidia-drm
+[2026-01-27 21:12:29.450]: Error: Couldn't find monitor [0]
+[2026-01-27 21:12:29.650]: Info: Encoder [nvenc] failed
+[2026-01-27 21:12:29.650]: Info: Trying encoder [vaapi]
+[2026-01-27 21:12:29.650]: Info: Screencasting with KMS
+[2026-01-27 21:12:29.650]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.650]: Info: Found monitor for DRM screencasting
+[2026-01-27 21:12:29.651]: Info: Found connector ID [100]
+[2026-01-27 21:12:29.652]: Info: Found cursor plane [83]
+[2026-01-27 21:12:29.667]: Info: Creating encoder [h264_vaapi]
+[2026-01-27 21:12:29.667]: Info: Color coding: SDR (Rec. 601)
+[2026-01-27 21:12:29.667]: Info: Color depth: 8-bit
+[2026-01-27 21:12:29.667]: Info: Color range: JPEG
+[2026-01-27 21:12:29.699]: Info: vaapi vendor: Mesa Gallium driver 25.3.4-arch1.1 for AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.18.6-zen1-1-zen)
+[2026-01-27 21:12:29.699]: Info: Streaming bitrate is 1000000
+[2026-01-27 21:12:29.699]: Info: Using normal encoding mode
+[2026-01-27 21:12:29.699]: Info: Using default rate control
+[2026-01-27 21:12:29.738]: Info: Creating encoder [hevc_vaapi]
+[2026-01-27 21:12:29.738]: Info: Color coding: SDR (Rec. 601)
+[2026-01-27 21:12:29.738]: Info: Color depth: 8-bit
+[2026-01-27 21:12:29.738]: Info: Color range: JPEG
+[2026-01-27 21:12:29.762]: Info: vaapi vendor: Mesa Gallium driver 25.3.4-arch1.1 for AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.18.6-zen1-1-zen)
+[2026-01-27 21:12:29.763]: Info: Streaming bitrate is 1000000
+[2026-01-27 21:12:29.763]: Info: Using normal encoding mode
+[2026-01-27 21:12:29.763]: Info: Using default rate control
+[2026-01-27 21:12:29.802]: Info: Creating encoder [av1_vaapi]
+[2026-01-27 21:12:29.802]: Info: Color coding: SDR (Rec. 601)
+[2026-01-27 21:12:29.802]: Info: Color depth: 8-bit
+[2026-01-27 21:12:29.802]: Info: Color range: JPEG
+[2026-01-27 21:12:29.818]: Info: vaapi vendor: Mesa Gallium driver 25.3.4-arch1.1 for AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.18.6-zen1-1-zen)
+[2026-01-27 21:12:29.819]: Info: Streaming bitrate is 1000000
+[2026-01-27 21:12:29.819]: Error: [av1_vaapi @ 0x561cb1ef1500] No usable encoding profile found.
+[2026-01-27 21:12:29.819]: Error: Could not open codec [av1_vaapi]: Function not implemented
+[2026-01-27 21:12:29.821]: Info: Screencasting with KMS
+[2026-01-27 21:12:29.822]: Info: /dev/dri/card2 -> amdgpu
+[2026-01-27 21:12:29.822]: Info: Found monitor for DRM screencasting
+[2026-01-27 21:12:29.822]: Info: Found connector ID [100]
+[2026-01-27 21:12:29.823]: Info: Found cursor plane [83]
+[2026-01-27 21:12:29.831]: Info: Creating encoder [hevc_vaapi]
+[2026-01-27 21:12:29.831]: Info: Color coding: SDR (Rec. 709)
+[2026-01-27 21:12:29.831]: Info: Color depth: 10-bit
+[2026-01-27 21:12:29.831]: Info: Color range: JPEG
+[2026-01-27 21:12:29.849]: Info: vaapi vendor: Mesa Gallium driver 25.3.4-arch1.1 for AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.18.6-zen1-1-zen)
+[2026-01-27 21:12:29.852]: Info: Streaming bitrate is 1000000
+[2026-01-27 21:12:29.852]: Info: Using normal encoding mode
+[2026-01-27 21:12:29.852]: Info: Using default rate control
+[2026-01-27 21:12:29.891]: Info: 
+[2026-01-27 21:12:29.891]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2026-01-27 21:12:29.891]: Info: 
+[2026-01-27 21:12:29.891]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2026-01-27 21:12:29.891]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2026-01-27 21:12:29.891]: Info: Open the Web UI to set your new username and password and getting started
+[2026-01-27 21:12:29.891]: Info: File /home/dake/.config/sunshine/sunshine_state.json doesn't exist
+[2026-01-27 21:12:29.891]: Info: Starting system tray
+[2026-01-27 21:12:29.893]: Warning: Failed to create system tray
+[2026-01-27 21:12:29.893]: Info: Starting main loop
+[2026-01-27 21:12:29.893]: Info: Configuration UI available at [https://localhost:47990]
+[2026-01-27 21:12:29.894]: Info: Adding avahi service drch
+[2026-01-27 21:12:30.820]: Info: Avahi service drch successfully established.
+[2026-01-27 21:17:19.642]: Info: Terminate handler called
+[2026-01-27 21:17:19.643]: Error: Couldn't accept incoming connections: Operation canceled
+[2026-01-27 21:17:19.664]: Info: Shutdown event detected, breaking main loop
