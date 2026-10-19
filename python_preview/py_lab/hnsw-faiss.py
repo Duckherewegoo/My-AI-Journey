@@ -24,7 +24,7 @@ index.hnsw.efSearch = 50
 # 向索引中添加数据库向量（构建索引）
 index.add(db_vectors)
 
-print(f"✅ HNSW索引构建完成，数据库向量数量：{index.ntotal}")
+print(f"HNSW索引构建完成，数据库向量数量：{index.ntotal}")
 
 # ===================== 3. 近邻搜索：找每个查询向量的Top-K最相似向量 =====================
 k = 10  # 找每个查询的前10个最相似向量

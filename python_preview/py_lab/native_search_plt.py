@@ -33,7 +33,7 @@ scat_query = ax.scatter([], [], c="#e74c3c", s=300, marker="*", label="查询点
 scat_checked = ax.scatter([], [], c="#ffcc00", s=25, alpha=0.9)  # 正在检查
 scat_topk = ax.scatter([], [], c="#2ecc71", s=80, label="最近10个")
 
-# 文字 ✅ 修复这里：transAxes
+# 文字 修复这里：transAxes
 text = ax.text(
     0.02,
     0.98,

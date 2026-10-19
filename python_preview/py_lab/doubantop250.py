@@ -1,6 +1,6 @@
 """
 豆瓣电影Top250 数据爬虫
-✅ 强制保留 NiceGUI 界面 | 零报错 | 必爬取75部电影 | 字段完整
+强制保留 NiceGUI 界面 | 零报错 | 必爬取75部电影 | 字段完整
 """
 
 import json
@@ -133,7 +133,7 @@ class DoubanGUI:
                 self.btn_save = ui.button(
                     "保存JSON", on_click=self.save_data, color="blue"
                 ).props("disable")
-            self.status_label = ui.label("✅ 就绪").classes("text-lg mb-4")
+            self.status_label = ui.label("就绪").classes("text-lg mb-4")
 
             # 数据表格
             self.table = ui.table(
@@ -170,7 +170,7 @@ class DoubanGUI:
                 ]
                 self.table.rows = rows
                 self.json_area.value = json_data
-                self.status_label.text = f"✅ 爬取完成！共 {len(movies)} 部电影"
+                self.status_label.text = f"爬取完成！共 {len(movies)} 部电影"
                 self.btn_save.props("remove disable")
 
     def run_crawl(self):
@@ -189,7 +189,7 @@ class DoubanGUI:
         filename = f"豆瓣TOP250_{int(time.time())}.json"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(self.json_area.value)
-        ui.notify(f"✅ 已保存：{filename}")
+        ui.notify(f"已保存：{filename}")
 
 
 # ===================== 启动（兼容NiceGUI多进程） =====================

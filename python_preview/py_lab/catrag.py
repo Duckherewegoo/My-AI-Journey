@@ -24,7 +24,7 @@ try:
     # 1. 文本分割器 - 独立包
     from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-    print("✅ langchain_text_splitters 导入成功")
+    print("langchain_text_splitters 导入成功")
 except ImportError as e:
     print(f"❌ langchain_text_splitters 导入失败: {e}")
     print("请运行: pip install langchain-text-splitters")
@@ -34,7 +34,7 @@ try:
     # 2. 文档加载器 - 社区包
     from langchain_community.document_loaders import TextLoader, PyPDFLoader
 
-    print("✅ langchain_community.document_loaders 导入成功")
+    print("langchain_community.document_loaders 导入成功")
 except ImportError as e:
     print(f"❌ langchain_community.document_loaders 导入失败: {e}")
     sys.exit(1)
@@ -46,7 +46,7 @@ try:
     from langchain_core.output_parsers import StrOutputParser
     from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
-    print("✅ langchain_core 模块导入成功")
+    print("langchain_core 模块导入成功")
 except ImportError as e:
     print(f"❌ langchain_core 导入失败: {e}")
     sys.exit(1)
@@ -55,7 +55,7 @@ try:
     # 4. 向量数据库 - Chroma集成
     from langchain_chroma import Chroma
 
-    print("✅ langchain_chroma 导入成功")
+    print("langchain_chroma 导入成功")
 except ImportError as e:
     print(f"❌ langchain_chroma 导入失败: {e}")
     sys.exit(1)
@@ -69,7 +69,7 @@ try:
     )
     from langchain_classic.retrievers.document_compressors import LLMChainExtractor
 
-    print("✅ langchain_classic.retrievers 导入成功")
+    print("langchain_classic.retrievers 导入成功")
 except ImportError as e:
     print(f"❌ langchain_classic 导入失败: {e}")
     print("请运行: pip install langchain-classic")
@@ -81,7 +81,7 @@ try:
     import numpy as np
     from dotenv import load_dotenv
 
-    print("✅ 其他依赖导入成功")
+    print("其他依赖导入成功")
 except ImportError as e:
     print(f"❌ 依赖导入失败: {e}")
     sys.exit(1)
@@ -117,7 +117,7 @@ class QwenClient:
         from openai import OpenAI
 
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
-        print(f"✅ 千问API客户端初始化完成 (模型: {self.model})")
+        print(f"千问API客户端初始化完成 (模型: {self.model})")
 
     def chat_completion(self, messages: List[Dict[str, str]], **kwargs) -> str:
         """聊天补全 - 使用 client.responses.create"""
@@ -263,7 +263,7 @@ class DocumentProcessor:
                     )
 
                 all_docs.extend(docs)
-                print(f"✅ 已加载: {path.name} ({len(docs)}个文档)")
+                print(f"已加载: {path.name} ({len(docs)}个文档)")
 
             except Exception as e:
                 print(f"❌ 加载失败 {path.name}: {e}")
@@ -361,7 +361,7 @@ class NativeRAGSystem:
         self.retriever = None
         self.rag_chain = None
 
-        print(f"✅ Native RAG 系统初始化完成 (使用千问API: {model})")
+        print(f"Native RAG 系统初始化完成 (使用千问API: {model})")
 
     def build_knowledge_base(self, documents: List[Document]) -> "NativeRAGSystem":
         """构建知识库"""
@@ -382,7 +382,7 @@ class NativeRAGSystem:
         # 构建RAG Chain
         self._build_rag_chain()
 
-        print(f"✅ Native RAG 知识库构建完成: {len(documents)}个文档块")
+        print(f"Native RAG 知识库构建完成: {len(documents)}个文档块")
         return self
 
     def _build_rag_chain(self):
@@ -497,7 +497,7 @@ class AdvancedRAGSystem:
         self.retriever = None
         self.rag_pipeline = None
 
-        print(f"✅ Advanced RAG 系统初始化完成 (使用千问API: {model})")
+        print(f"Advanced RAG 系统初始化完成 (使用千问API: {model})")
 
     def build_knowledge_base(self, documents: List[Document]) -> "AdvancedRAGSystem":
         """构建高级知识库"""
@@ -535,7 +535,7 @@ class AdvancedRAGSystem:
                 base_compressor=compressor, base_retriever=ensemble_retriever
             )
 
-            print("✅ 使用 langchain_classic 高级检索器")
+            print("使用 langchain_classic 高级检索器")
 
         except Exception as e:
             print(f"⚠️ 创建高级检索器失败: {e}")
@@ -545,7 +545,7 @@ class AdvancedRAGSystem:
         # 4. 构建RAG pipeline
         self._build_rag_pipeline()
 
-        print("✅ Advanced RAG 知识库构建完成")
+        print("Advanced RAG 知识库构建完成")
         return self
 
     def _build_rag_pipeline(self):
@@ -820,7 +820,7 @@ def test_qwen_api():
             model="qwen-plus", input="你好，请简单介绍一下你自己"
         )
 
-        print(f"✅ API连接成功!")
+        print(f"API连接成功!")
         print(f"🤖 模型回复: {response.output_text}")
         return True
 
@@ -885,7 +885,7 @@ def interactive_mode():
             else:
                 result = rag_system.query(question)
 
-            print(f"\n✅ 回答:")
+            print(f"\n回答:")
             print(f"{result['answer']}")
             print(f"\n⏱️  用时: {result['response_time']:.2f}s")
             print(f"📚 来源文档: {result['source_count']}个")

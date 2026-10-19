@@ -143,10 +143,10 @@ ax1.scatter(
 
 ax1.legend(fontsize=10)
 plt.tight_layout()
-plt.suptitle("✅ 真正的 HNSW 分层导航小世界 可视化", fontsize=16, y=1.02)
+plt.suptitle("真正的 HNSW 分层导航小世界 可视化", fontsize=16, y=1.02)
 plt.show()
 
 # 打印搜索逻辑
 print("\n🔍 HNSW 搜索路径（层级从高到低）：")
 print(" → ".join(map(str, path)))
-print("\n✅ 原理：顶层长跳快速靠近 → 中层缩圈 → 底层精确定位")
+print("\n原理：顶层长跳快速靠近 → 中层缩圈 → 底层精确定位")

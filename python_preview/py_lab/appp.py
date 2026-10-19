@@ -110,7 +110,7 @@ class NativeRAGSystem:
             # 清理临时文件
             os.remove(temp_path)
 
-            return f"✅ 文档 '{file.name}' 处理成功！\n分割成 {len(chunks)} 个文本块，已存入知识库。", len(
+            return f"文档 '{file.name}' 处理成功！\n分割成 {len(chunks)} 个文本块，已存入知识库。", len(
                 chunks
             )
 
@@ -201,7 +201,7 @@ class NativeRAGSystem:
             self.collection = self.chroma_client.create_collection(
                 name=self.collection_name, metadata={"hnsw:space": "cosine"}
             )
-            return "✅ 知识库已清空！"
+            return "知识库已清空！"
         except Exception as e:
             return f"❌ 清空知识库时出错: {str(e)}"
 

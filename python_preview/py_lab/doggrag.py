@@ -28,7 +28,7 @@ try:
     # 1. 文本分割器 - 独立包
     from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-    print("✅ langchain_text_splitters 导入成功")
+    print("langchain_text_splitters 导入成功")
 except ImportError as e:
     print(f"❌ langchain_text_splitters 导入失败: {e}")
     print("请运行: pip install langchain-text-splitters")
@@ -38,7 +38,7 @@ try:
     # 2. 文档加载器 - 社区包
     from langchain_community.document_loaders import TextLoader, PyPDFLoader
 
-    print("✅ langchain_community.document_loaders 导入成功")
+    print("langchain_community.document_loaders 导入成功")
 except ImportError as e:
     print(f"❌ langchain_community.document_loaders 导入失败: {e}")
     sys.exit(1)
@@ -50,7 +50,7 @@ try:
     from langchain_core.output_parsers import StrOutputParser
     from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
-    print("✅ langchain_core 模块导入成功")
+    print("langchain_core 模块导入成功")
 except ImportError as e:
     print(f"❌ langchain_core 导入失败: {e}")
     sys.exit(1)
@@ -59,7 +59,7 @@ try:
     # 4. 向量数据库 - Chroma集成
     from langchain_chroma import Chroma
 
-    print("✅ langchain_chroma 导入成功")
+    print("langchain_chroma 导入成功")
 except ImportError as e:
     print(f"❌ langchain_chroma 导入失败: {e}")
     sys.exit(1)
@@ -68,7 +68,7 @@ try:
     # 5. OpenAI集成 (用于DashScope)
     from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-    print("✅ langchain_openai 导入成功")
+    print("langchain_openai 导入成功")
 except ImportError as e:
     print(f"❌ langchain_openai 导入失败: {e}")
     sys.exit(1)
@@ -83,7 +83,7 @@ try:
     )
     from langchain_classic.retrievers.document_compressors import LLMChainExtractor
 
-    print("✅ langchain_classic.retrievers 导入成功")
+    print("langchain_classic.retrievers 导入成功")
 except ImportError as e:
     print(f"❌ langchain_classic 导入失败: {e}")
     print("请运行: pip install langchain-classic")
@@ -95,7 +95,7 @@ try:
     import numpy as np
     from dotenv import load_dotenv
 
-    print("✅ 其他依赖导入成功")
+    print("其他依赖导入成功")
 except ImportError as e:
     print(f"❌ 依赖导入失败: {e}")
     sys.exit(1)
@@ -138,7 +138,7 @@ class QueryResult:
             f" (置信度: {self.confidence:.1%})" if self.confidence > 0 else ""
         )
         return (
-            f"[{self.system_name}] ✅ 用时: {self.response_time:.2f}s{confidence_str}\n"
+            f"[{self.system_name}] 用时: {self.response_time:.2f}s{confidence_str}\n"
             f"    回答: {self.answer[:100]}..."
         )
 
@@ -194,7 +194,7 @@ class DocumentProcessor:
                     )
 
                 all_docs.extend(docs)
-                print(f"✅ 已加载: {path.name} ({len(docs)}个文档)")
+                print(f"已加载: {path.name} ({len(docs)}个文档)")
 
             except Exception as e:
                 print(f"❌ 加载失败 {path.name}: {e}")
@@ -304,7 +304,7 @@ class NativeRAGSystem:
         self.retriever = None
         self.rag_chain = None
 
-        print(f"✅ Native RAG 系统初始化完成")
+        print(f"Native RAG 系统初始化完成")
 
     def _create_embeddings(self):
         """创建嵌入模型"""
@@ -343,7 +343,7 @@ class NativeRAGSystem:
         # 构建RAG Chain
         self._build_rag_chain()
 
-        print(f"✅ Native RAG 知识库构建完成: {len(documents)}个文档块")
+        print(f"Native RAG 知识库构建完成: {len(documents)}个文档块")
         return self
 
     def _build_rag_chain(self):
@@ -460,7 +460,7 @@ class AdvancedRAGSystem:
         self.retriever = None
         self.rag_chain = None
 
-        print(f"✅ Advanced RAG 系统初始化完成")
+        print(f"Advanced RAG 系统初始化完成")
 
     def _create_embeddings(self):
         """创建嵌入模型"""
@@ -517,7 +517,7 @@ class AdvancedRAGSystem:
             )
 
             print(
-                "✅ 使用 langchain_classic 高级检索器: ContextualCompressionRetriever + EnsembleRetriever"
+                "使用 langchain_classic 高级检索器: ContextualCompressionRetriever + EnsembleRetriever"
             )
 
         except Exception as e:
@@ -528,7 +528,7 @@ class AdvancedRAGSystem:
         # 4. 构建RAG链
         self._build_rag_chain()
 
-        print("✅ Advanced RAG 知识库构建完成")
+        print("Advanced RAG 知识库构建完成")
         return self
 
     def _build_rag_chain(self):
@@ -871,7 +871,7 @@ def interactive_mode():
                 )
                 with open(filename, "w", encoding="utf-8") as f:
                     f.write(report)
-                print(f"✅ 报告已保存到: {filename}")
+                print(f"报告已保存到: {filename}")
 
         elif choice == "4":
             print("\n👋 感谢使用，再见！")
@@ -996,7 +996,7 @@ async def main_async():
         filename = f"rag_demo_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(report)
-        print(f"\n✅ 报告已保存到: {filename}")
+        print(f"\n报告已保存到: {filename}")
 
     elif mode == "3":
         # 单次测试
@@ -1071,7 +1071,7 @@ def quick_demo():
         print(f"   回答: {advanced_result.answer[:150]}...")
 
     print(f"\n{'='*60}")
-    print("✅ 演示完成！")
+    print("演示完成！")
     print("使用的正确模块:")
     print("  - langchain_text_splitters")
     print("  - langchain_community.document_loaders")

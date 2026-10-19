@@ -28,7 +28,7 @@ llm = ChatOpenAI(
     model="qwen-plus",
 )
 
-# ===================== ✅ 修复嵌入函数：解决【对象不可调用】报错 =====================
+# ===================== 修复嵌入函数：解决【对象不可调用】报错 =====================
 
 
 def simple_embedding(text):
@@ -65,7 +65,7 @@ def crawl_douban():
                 st.error(f"请求失败：{str(e)}")
 
         st.session_state.movies = movies
-        st.success(f"✅ 爬取完成！共 {len(movies)} 部电影")
+        st.success(f"爬取完成！共 {len(movies)} 部电影")
 
 
 # ===================== 纯 LCEL RAG 构建 =====================
@@ -83,7 +83,7 @@ def build_rag():
             for m in st.session_state.movies
         ]
 
-        # ✅ 使用修复后的嵌入函数（无报错）
+        # 使用修复后的嵌入函数（无报错）
         vectorstore = FAISS.from_documents(docs, simple_embedding)
 
         # LCEL 提示词
@@ -109,7 +109,7 @@ def build_rag():
             | StrOutputParser()
         )
         st.session_state.rag_chain = rag_chain
-        st.success("✅ LCEL-RAG 构建完成！")
+        st.success("LCEL-RAG 构建完成！")
 
 
 # ===================== 问答功能 =====================

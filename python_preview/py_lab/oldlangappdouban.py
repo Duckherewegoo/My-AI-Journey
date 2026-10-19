@@ -82,7 +82,7 @@ def crawl_movies():
                         continue
             except Exception as e:
                 continue
-    return f"✅ 爬取完成！共 {len(movie_list)} 部电影"
+    return f"爬取完成！共 {len(movie_list)} 部电影"
 
 
 # ===================== 纯LCEL 原生RAG构建 =====================
@@ -134,7 +134,7 @@ def build_rag_system():
         | llm
         | StrOutputParser()
     )
-    return "✅ RAG 知识库构建完成！"
+    return "RAG 知识库构建完成！"
 
 
 # ===================== 问答函数 =====================

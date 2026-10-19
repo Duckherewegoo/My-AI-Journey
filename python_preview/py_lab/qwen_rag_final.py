@@ -30,7 +30,7 @@ try:
     import dashscope
     from dashscope import TextEmbedding, Generation
 
-    print(f"✅ dashscope SDK 导入成功")
+    print(f"dashscope SDK 导入成功")
 except ImportError as e:
     print(f"❌ dashscope SDK 导入失败: {e}")
     print("请运行: pip install dashscope")
@@ -46,7 +46,7 @@ try:
     from langchain_core.runnables import RunnablePassthrough, RunnableLambda
     from langchain_chroma import Chroma
 
-    print("✅ LangChain 核心库导入成功")
+    print("LangChain 核心库导入成功")
 except ImportError as e:
     print(f"❌ LangChain 库导入失败: {e}")
     sys.exit(1)
@@ -60,7 +60,7 @@ try:
     )
     from langchain_classic.retrievers.document_compressors import LLMChainExtractor
 
-    print("✅ langchain_classic 检索器导入成功")
+    print("langchain_classic 检索器导入成功")
 except ImportError as e:
     print(f"⚠️ langchain_classic 导入警告: {e}")
     print("高级检索功能将受限，但基础RAG仍可运行。")
@@ -85,7 +85,7 @@ if not API_KEY:
     print("或创建 .env 文件并添加: DASHSCOPE_API_KEY=your-key-here")
     sys.exit(1)
 
-print(f"✅ API Key 检查通过 (前8位: {API_KEY[:8]}...)")
+print(f"API Key 检查通过 (前8位: {API_KEY[:8]}...)")
 print("=" * 60)
 
 # ============================================
@@ -105,7 +105,7 @@ class QwenEmbeddings:
         self.model = model
         # 设置 API Key
         dashscope.api_key = self.api_key
-        print(f"✅ QwenEmbeddings 初始化 (模型: {self.model})")
+        print(f"QwenEmbeddings 初始化 (模型: {self.model})")
 
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         """为多个文档生成嵌入向量"""
@@ -125,7 +125,7 @@ class QwenEmbeddings:
                     embedding = resp.output["embeddings"][0]["embedding"]
                     embeddings.append(embedding)
                     if (i + 1) % 10 == 0:
-                        print(f"  ✅ 已处理 {i+1}/{len(texts)} 个文本")
+                        print(f"  已处理 {i+1}/{len(texts)} 个文本")
                 else:
                     print(
                         f"❌ Embedding API 调用失败 (文本 {i}): {resp.code} - {resp.message}"
@@ -139,7 +139,7 @@ class QwenEmbeddings:
                 zero_vec = [0.0] * 1536
                 embeddings.append(zero_vec)
 
-        print(f"✅ 所有文本嵌入完成")
+        print(f"所有文本嵌入完成")
         return embeddings
 
     def embed_query(self, text: str) -> List[float]:
@@ -168,7 +168,7 @@ class QwenChatLLM:
         self.api_key = api_key or API_KEY
         self.model = model
         dashscope.api_key = self.api_key
-        print(f"✅ QwenChatLLM 初始化 (模型: {self.model})")
+        print(f"QwenChatLLM 初始化 (模型: {self.model})")
 
     def invoke(self, input_text: str) -> str:
         """同步调用 - LangChain 兼容接口"""
@@ -275,7 +275,7 @@ class DocumentProcessor:
             doc = Document(page_content=item["content"], metadata=item["metadata"])
             documents.append(doc)
 
-        print(f"✅ 创建了 {len(documents)} 个示例文档")
+        print(f"创建了 {len(documents)} 个示例文档")
         return documents
 
     def split_documents(self, documents: List[Document]) -> List[Document]:
@@ -325,7 +325,7 @@ class NativeRAGSystem:
         self.retriever = None
         self.rag_chain = None
 
-        print(f"✅ 使用模型: Embedding({embedding_model}), Chat({chat_model})")
+        print(f"使用模型: Embedding({embedding_model}), Chat({chat_model})")
 
     def build_knowledge_base(self, documents: List[Document]):
         """构建知识库"""
@@ -347,7 +347,7 @@ class NativeRAGSystem:
         # 3. 构建RAG链
         self._build_rag_chain()
 
-        print(f"✅ Native RAG 知识库构建完成")
+        print(f"Native RAG 知识库构建完成")
         print(f"   存储路径: {self.persist_dir}")
         print(f"   文档数量: {len(documents)}")
 
@@ -461,7 +461,7 @@ class AdvancedRAGSystem:
         self.retriever = None
         self.documents = []  # 保存文档用于BM25
 
-        print(f"✅ 使用模型: Embedding({embedding_model}), Chat({chat_model})")
+        print(f"使用模型: Embedding({embedding_model}), Chat({chat_model})")
 
     def build_knowledge_base(self, documents: List[Document]):
         """构建高级知识库"""
@@ -500,14 +500,14 @@ class AdvancedRAGSystem:
                 base_compressor=compressor, base_retriever=ensemble_retriever
             )
 
-            print("✅ 使用高级混合检索器 (向量 + BM25 + 上下文压缩)")
+            print("使用高级混合检索器 (向量 + BM25 + 上下文压缩)")
 
         except Exception as e:
             print(f"⚠️ 创建高级检索器失败: {e}")
             print("使用基础向量检索器作为回退")
             self.retriever = self.vectorstore.as_retriever(search_kwargs={"k": 5})
 
-        print(f"✅ Advanced RAG 知识库构建完成")
+        print(f"Advanced RAG 知识库构建完成")
         print(f"   存储路径: {self.persist_dir}")
 
         return self
@@ -761,7 +761,7 @@ def quick_test():
         )
 
         if response.status_code == 200:
-            print(f"✅ Chat API 测试成功")
+            print(f"Chat API 测试成功")
             print(f"   回复: {response.output.choices[0].message.content}")
         else:
             print(f"❌ Chat API 测试失败: {response.code} - {response.message}")
@@ -770,7 +770,7 @@ def quick_test():
         resp = TextEmbedding.call(model="text-embedding-v2", input="测试文本")
 
         if resp.status_code == 200:
-            print(f"✅ Embedding API 测试成功")
+            print(f"Embedding API 测试成功")
             print(f"   向量维度: {len(resp.output['embeddings'][0]['embedding'])}")
         else:
             print(f"❌ Embedding API 测试失败: {resp.code} - {resp.message}")

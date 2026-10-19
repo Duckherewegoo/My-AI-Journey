@@ -185,7 +185,7 @@ class VideoDatabase:
                 settings=Settings(anonymized_telemetry=False)
             )
             self._init_collections()
-            logger.info(f"✅ 数据库初始化完成: {persist_dir}")
+            logger.info(f"数据库初始化完成: {persist_dir}")
         except Exception as e:
             logger.error(f"数据库初始化失败: {e}")
             raise
@@ -246,7 +246,7 @@ class VideoDatabase:
                     metadatas=metadatas[i:i+batch_size]
                 )
                 added_count += batch_size
-            logger.info(f"✅ 成功添加 {added_count} 个视频")
+            logger.info(f"成功添加 {added_count} 个视频")
             return added_count
         except Exception as e:
             logger.error(f"添加视频失败: {e}")
@@ -336,7 +336,7 @@ class BilibiliCrawler:
         adapter = requests.adapters.HTTPAdapter(max_retries=3)
         self.session.mount('http://', adapter)
         self.session.mount('https://', adapter)
-        logger.info("✅ B站爬虫初始化完成")
+        logger.info("B站爬虫初始化完成")
 
     def test_cookie(self) -> Tuple[bool, str]:
         """测试Cookie是否有效（B站登录校验）"""
@@ -360,7 +360,7 @@ class BilibiliCrawler:
                 return False, f"❌ 缺少关键Cookie：{', '.join(missing)}"
 
             uname = data.get("data", {}).get("uname", "未知用户")
-            return True, f"✅ Cookie有效，用户：{uname}"
+            return True, f"Cookie有效，用户：{uname}"
         except Exception as e:
             return False, f"❌ 测试失败：{str(e)}"
 
@@ -506,7 +506,7 @@ class EmbeddingManager:
                 model_path) else SentenceTransformer("all-MiniLM-L6-v2")
             self.model.save(model_path)  # 保存到本地
             self.dimension = self.model.get_sentence_embedding_dimension()
-            logger.info(f"✅ 模型加载成功，向量维度：{self.dimension}")
+            logger.info(f"模型加载成功，向量维度：{self.dimension}")
         except Exception as e:
             logger.error(f"模型加载失败：{e}")
             raise
@@ -575,7 +575,7 @@ class VideoRecommender:
         cost = time.time() - start
 
         return (
-            f"✅ 爬取完成\n关键词：{keyword}\n获取：{len(videos)}个\n入库：{added}个\n耗时：{cost:.2f}s",
+            f"爬取完成\n关键词：{keyword}\n获取：{len(videos)}个\n入库：{added}个\n耗时：{cost:.2f}s",
             videos
         )
 
@@ -735,7 +735,7 @@ class VideoApp:
         if not cookie_str:
             return "❌ 请输入Cookie"
         success, msg = self.recommender.set_cookie(cookie_str)
-        return f"✅ {msg}" if success else f"❌ {msg}"
+        return f"{msg}" if success else f"❌ {msg}"
 
     def handle_search(self, query, top_k):
         """处理搜索请求，渲染结果"""
@@ -770,14 +770,14 @@ class VideoApp:
         s = self.recommender.get_system_stats()
         return f"""## 系统统计
 视频总数：{s['video_count']} 个
-Cookie状态：{'✅ 有效' if s['cookie_valid'] else '❌ 无效'}
-AI服务：{'✅ 可用' if s['ai_available'] else '❌ 不可用'}
+Cookie状态：{'有效' if s['cookie_valid'] else '❌ 无效'}
+AI服务：{'可用' if s['ai_available'] else '❌ 不可用'}
 向量维度：{s['model_dimension']}"""
 
     def get_db_status(self):
         """获取数据库状态"""
         cnt = self.recommender.get_system_stats()['video_count']
-        return f"✅ 视频库：{cnt} 个" if cnt else "⚠️ 数据库为空，请先爬取", self.get_sample_videos()
+        return f"视频库：{cnt} 个" if cnt else "⚠️ 数据库为空，请先爬取", self.get_sample_videos()
 
     def get_sample_videos(self):
         """获取样本视频表格"""
@@ -802,7 +802,7 @@ def main():
         app = VideoApp(recommender)
         demo = app.create_interface()
 
-        print("\n✅ 系统初始化完成！")
+        print("\n系统初始化完成！")
         print(f"📊 视频库现有：{recommender.database.get_video_count()} 个")
         print("🌐 访问地址：http://localhost:7860")
         print("⚠️ 首次使用必须先设置B站Cookie！")
