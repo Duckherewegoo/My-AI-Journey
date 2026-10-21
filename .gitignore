@@ -29,9 +29,6 @@ bili_video_db/
 *.mp4
 *.mp3
 
-# 笔记本
-*.ipynb
-
 # 环境与密钥
 .env
 .env.local
